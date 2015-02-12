@@ -1,0 +1,6 @@
+<html>
+<body>
+	<h1>Users List</h1>
+	<?php echo $__env->yieldContent('content'); ?>
+</body>
+</html>

@@ -1,0 +1,6 @@
+<html>
+<body>
+	<h1>Login</h1>
+	<?php echo $__env->yieldContent('content'); ?>
+</body>
+</html>

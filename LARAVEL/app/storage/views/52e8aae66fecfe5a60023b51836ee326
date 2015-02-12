@@ -1,0 +1,8 @@
+<?php $__env->startSection('content'); ?>
+	Users!
+	
+	<?php foreach($users as $user): ?>
+		<p><?php echo $user->sEmail; ?> <?php echo $user->sFirstName; ?></p>
+	<?php endforeach; ?>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layout_users', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

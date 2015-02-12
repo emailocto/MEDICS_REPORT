@@ -1,0 +1,3321 @@
+
+
+
+
+
+Network Working Group                                         J. Callas
+Request for Comments: 2440                           Network Associates
+Category: Standards Track                                L. Donnerhacke
+                                     IN-Root-CA Individual Network e.V.
+                                                              H. Finney
+                                                     Network Associates
+                                                              R. Thayer
+                                                        EIS Corporation
+                                                          November 1998
+
+
+                         OpenPGP Message Format
+
+Status of this Memo
+
+   This document specifies an Internet standards track protocol for the
+   Internet community, and requests discussion and suggestions for
+   improvements.  Please refer to the current edition of the "Internet
+   Official Protocol Standards" (STD 1) for the standardization state
+   and status of this protocol.  Distribution of this memo is unlimited.
+
+Copyright Notice
+
+   Copyright (C) The Internet Society (1998).  All Rights Reserved.
+
+IESG Note
+
+   This document defines many tag values, yet it doesn't describe a
+   mechanism for adding new tags (for new features).  Traditionally the
+   Internet Assigned Numbers Authority (IANA) handles the allocation of
+   new values for future expansion and RFCs usually define the procedure
+   to be used by the IANA.  However, there are subtle (and not so
+   subtle) interactions that may occur in this protocol between new
+   features and existing features which result in a significant
+   reduction in over all security.  Therefore, this document does not
+   define an extension procedure.  Instead requests to define new tag
+   values (say for new encryption algorithms for example) should be
+   forwarded to the IESG Security Area Directors for consideration or
+   forwarding to the appropriate IETF Working Group for consideration.
+
+Abstract
+
+   This document is maintained in order to publish all necessary
+   information needed to develop interoperable applications based on the
+   OpenPGP format. It is not a step-by-step cookbook for writing an
+   application. It describes only the format and methods needed to read,
+   check, generate, and write conforming packets crossing any network.
+   It does not deal with storage and implementation questions.  It does,
+
+
+
+Callas, et. al.             Standards Track                     [Page 1]
+
+RFC 2440                 OpenPGP Message Format            November 1998
+
+
+   however, discuss implementation issues necessary to avoid security
+   flaws.
+
+   Open-PGP software uses a combination of strong public-key and
+   symmetric cryptography to provide security services for electronic
+   communications and data storage.  These services include
+   confidentiality, key management, authentication, and digital
+   signatures. This document specifies the message formats used in
+   OpenPGP.
+
+Table of Contents
+
+            Status of this Memo                                       1
+            IESG Note                                                 1
+            Abstract                                                  1
+            Table of Contents                                         2
+   1.       Introduction                                              4
+   1.1.     Terms                                                     5
+   2.       General functions                                         5
+   2.1.     Confidentiality via Encryption                            5
+   2.2.     Authentication via Digital signature                      6
+   2.3.     Compression                                               7
+   2.4.     Conversion to Radix-64                                    7
+   2.5.     Signature-Only Applications                               7
+   3.       Data Element Formats                                      7
+   3.1.     Scalar numbers                                            8
+   3.2.     Multi-Precision Integers                                  8
+   3.3.     Key IDs                                                   8
+   3.4.     Text                                                      8
+   3.5.     Time fields                                               9
+   3.6.     String-to-key (S2K) specifiers                            9
+   3.6.1.   String-to-key (S2k) specifier types                       9
+   3.6.1.1. Simple S2K                                                9
+   3.6.1.2. Salted S2K                                               10
+   3.6.1.3. Iterated and Salted S2K                                  10
+   3.6.2.   String-to-key usage                                      11
+   3.6.2.1. Secret key encryption                                    11
+   3.6.2.2. Symmetric-key message encryption                         11
+   4.       Packet Syntax                                            12
+   4.1.     Overview                                                 12
+   4.2.     Packet Headers                                           12
+   4.2.1.   Old-Format Packet Lengths                                13
+   4.2.2.   New-Format Packet Lengths                                13
+   4.2.2.1. One-Octet Lengths                                        14
+   4.2.2.2. Two-Octet Lengths                                        14
+   4.2.2.3. Five-Octet Lengths                                       14
+   4.2.2.4. Partial Body Lengths                                     14
+   4.2.3.   Packet Length Examples                                   14
+
+
+
+Callas, et. al.             Standards Track                     [Page 2]
+
+RFC 2440                 OpenPGP Message Format            November 1998
+
+
+   4.3.     Packet Tags                                              15
+   5.       Packet Types                                             16
+   5.1.     Public-Key Encrypted Session Key Packets (Tag 1)         16
+   5.2.     Signature Packet (Tag 2)                                 17
+   5.2.1.   Signature Types                                          17
+   5.2.2.   Version 3 Signature Packet Format                        19
+   5.2.3.   Version 4 Signature Packet Format                        21
+   5.2.3.1. Signature Subpacket Specification                        22
+   5.2.3.2. Signature Subpacket Types                                24
+   5.2.3.3. Signature creation time                                  25
+   5.2.3.4. Issuer                                                   25
+   5.2.3.5. Key expiration time                                      25
+   5.2.3.6. Preferred symmetric algorithms                           25
+   5.2.3.7. Preferred hash algorithms                                25
+   5.2.3.8. Preferred compression algorithms                         26
+   5.2.3.9. Signature expiration time                                26
+   5.2.3.10.Exportable Certification                                 26
+   5.2.3.11.Revocable                                                27
+   5.2.3.12.Trust signature                                          27
+   5.2.3.13.Regular expression                                       27
+   5.2.3.14.Revocation key                                           27
+   5.2.3.15.Notation Data                                            28
+   5.2.3.16.Key server preferences                                   28
+   5.2.3.17.Preferred key server                                     29
+   5.2.3.18.Primary user id                                          29
+   5.2.3.19.Policy URL                                               29
+   5.2.3.20.Key Flags                                                29
+   5.2.3.21.Signer's User ID                                         30
+   5.2.3.22.Reason for Revocation                                    30
+   5.2.4.   Computing Signatures                                     31
+   5.2.4.1. Subpacket Hints                                          32
+   5.3.     Symmetric-Key Encrypted Session-Key Packets (Tag 3)      32
+   5.4.     One-Pass Signature Packets (Tag 4)                       33
+   5.5.     Key Material Packet                                      34
+   5.5.1.   Key Packet Variants                                      34
+   5.5.1.1. Public Key Packet (Tag 6)                                34
+   5.5.1.2. Public Subkey Packet (Tag 14)                            34
+   5.5.1.3. Secret Key Packet (Tag 5)                                35
+   5.5.1.4. Secret Subkey Packet (Tag 7)                             35
+   5.5.2.   Public Key Packet Formats                                35
+   5.5.3.   Secret Key Packet Formats                                37
+   5.6.     Compressed Data Packet (Tag 8)                           38
+   5.7.     Symmetrically Encrypted Data Packet (Tag 9)              39
+   5.8.     Marker Packet (Obsolete Literal Packet) (Tag 10)         39
+   5.9.     Literal Data Packet (Tag 11)                             40
+   5.10.    Trust Packet (Tag 12)                                    40
+   5.11.    User ID Packet (Tag 13)                                  41
+   6.       Radix-64 Conversions                                     41
+
+
+
+Callas, et. al.             Standards Track                     [Page 3]
+
+RFC 2440                 OpenPGP Message Format            November 1998
+
+
+   6.1.     An Implementation of the CRC-24 in "C"                   42
+   6.2.     Forming ASCII Armor                                      42
+   6.3.     Encoding Binary in Radix-64                              44
+   6.4.     Decoding Radix-64                                        46
+   6.5.     Examples of Radix-64                                     46
+   6.6.     Example of an ASCII Armored Message                      47
+   7.       Cleartext signature framework                            47
+   7.1.     Dash-Escaped Text                                        47
+   8.       Regular Expressions                                      48
+   9.       Constants                                                49
+   9.1.     Public Key Algorithms                                    49
+   9.2.     Symmetric Key Algorithms                                 49
+   9.3.     Compression Algorithms                                   50
+   9.4.     Hash Algorithms                                          50
+   10.      Packet Composition                                       50
+   10.1.    Transferable Public Keys                                 50
+   10.2.    OpenPGP Messages                                         52
+   10.3.    Detached Signatures                                      52
+   11.      Enhanced Key Formats                                     52
+   11.1.    Key Structures                                           52
+   11.2.    Key IDs and Fingerprints                                 53
+   12.      Notes on Algorithms                                      54
+   12.1.    Symmetric Algorithm Preferences                          54
+   12.2.    Other Algorithm Preferences                              55
+   12.2.1.  Compression Preferences                                  56
+   12.2.2.  Hash Algorithm Preferences                               56
+   12.3.    Plaintext                                                56
+   12.4.    RSA                                                      56
+   12.5.    Elgamal                                                  57
+   12.6.    DSA                                                      58
+   12.7.    Reserved Algorithm Numbers                               58
+   12.8.    OpenPGP CFB mode                                         58
+   13.      Security Considerations                                  59
+   14.      Implementation Nits                                      60
+   15.      Authors and Working Group Chair                          62
+   16.      References                                               63
+   17.      Full Copyright Statement                                 65
+
+1. Introduction
+
+   This document provides information on the message-exchange packet
+   formats used by OpenPGP to provide encryption, decryption, signing,
+   and key management functions. It builds on the foundation provided in
+   RFC 1991 "PGP Message Exchange Formats."
+
+
+
+
+
+
+
+Callas, et. al.             Standards Track                     [Page 4]
+
+RFC 2440                 OpenPGP Message Format            November 1998
+
+
+1.1. Terms
+
+     * OpenPGP - This is a definition for security software that uses
+       PGP 5.x as a basis.
+
+     * PGP - Pretty Good Privacy. PGP is a family of software systems
+       developed by Philip R. Zimmermann from which OpenPGP is based.
+
+     * PGP 2.6.x - This version of PGP has many variants, hence the term
+       PGP 2.6.x. It used only RSA, MD5, and IDEA for its cryptographic
+       transforms. An informational RFC, RFC 1991, was written
+       describing this version of PGP.
+
+     * PGP 5.x - This version of PGP is formerly known as "PGP 3" in the
+       community and also in the predecessor of this document, RFC 1991.
+       It has new formats and corrects a number of problems in the PGP
+       2.6.x design. It is referred to here as PGP 5.x because that
+       software was the first release of the "PGP 3" code base.
+
+   "PGP", "Pretty Good", and "Pretty Good Privacy" are trademarks of
+   Network Associates, Inc. and are used with permission.
+
+   This document uses the terms "MUST", "SHOULD", and "MAY" as defined
+   in RFC 2119, along with the negated forms of those terms.
+
+2. General functions
+
+   OpenPGP provides data integrity services for messages and data files
+   by using these core technologies:
+
+     - digital signatures
+
+     - encryption
+
+     - compression
+
+     - radix-64 conversion
+
+   In addition, OpenPGP provides key management and certificate
+   services, but many of these are beyond the scope of this document.
+
+2.1. Confidentiality via Encryption
+
+   OpenPGP uses two encryption methods to provide confidentiality:
+   symmetric-key encryption and public key encryption. With public-key
+   encryption, the object is encrypted using a symmetric encryption
+   algorithm.  Each symmetric key is used only once. A new "session key"
+   is generated as a random number for each message. Since it is used
+
+
+
+Callas, et. al.             Standards Track                     [Page 5]
+
+RFC 2440                 OpenPGP Message Format            November 1998
+
+
+   only once, the session key is bound to the message and transmitted
+   with it.  To protect the key, it is encrypted with the receiver's
+   public key. The sequence is as follows:
+
+   1.  The sender creates a message.
+
+   2.  The sending OpenPGP generates a random number to be used as a
+       session key for this message only.
+
+   3.  The session key is encrypted using each recipient's public key.
+       These "encrypted session keys" start the message.
+
+   4.  The sending OpenPGP encrypts the message using the session key,
+       which forms the remainder of the message. Note that the message
+       is also usually compressed.
+
+   5.  The receiving OpenPGP decrypts the session key using the
+       recipient's private key.
+
+   6.  The receiving OpenPGP decrypts the message using the session key.
+       If the message was compressed, it will be decompressed.
+
+   With symmetric-key encryption, an object may be encrypted with a
+   symmetric key derived from a passphrase (or other shared secret), or
+   a two-stage mechanism similar to the public-key method described
+   above in which a session key is itself encrypted with a symmetric
+   algorithm keyed from a shared secret.
+
+   Both digital signature and confidentiality services may be applied to
+   the same message. First, a signature is generated for the message and
+   attached to the message. Then, the message plus signature is
+   encrypted using a symmetric session key. Finally, the session key is
+   encrypted using public-key encryption and prefixed to the encrypted
+   block.
+
+2.2. Authentication via Digital signature
+
+   The digital signature uses a hash code or message digest algorithm,
+   and a public-key signature algorithm. The sequence is as follows:
+
+   1.  The sender creates a message.
+
+   2.  The sending software generates a hash code of the message.
+
+   3.  The sending software generates a signature from the hash code
+       using the sender's private key.
+
+   4.  The binary signature is attached to the message.
+
+
+
+Callas, et. al.             Standards Track                     [Page 6]
+
+RFC 2440                 OpenPGP Message Format            November 1998
+
+
+   5.  The receiving software keeps a copy of the message signature.
+
+   6.  The receiving software generates a new hash code for the
+       received message and verifies it using the message's signature.
+       If the verification is successful, the message is accepted as
+       authentic.
+
+2.3. Compression
+
+   OpenPGP implementations MAY compress the message after applying the
+   signature but before encryption.
+
+2.4. Conversion to Radix-64
+
+   OpenPGP's underlying native representation for encrypted messages,
+   signature certificates, and keys is a stream of arbitrary octets.
+   Some systems only permit the use of blocks consisting of seven-bit,
+   printable text. For transporting OpenPGP's native raw binary octets
+   through channels that are not safe to raw binary data, a printable
+   encoding of these binary octets is needed.  OpenPGP provides the
+   service of converting the raw 8-bit binary octet stream to a stream
+   of printable ASCII characters, called Radix-64 encoding or ASCII
+   Armor.
+
+   Implementations SHOULD provide Radix-64 conversions.
+
+   Note that many applications, particularly messaging applications,
+   will want more advanced features as described in the OpenPGP-MIME
+   document, RFC 2015. An application that implements OpenPGP for
+   messaging SHOULD implement OpenPGP-MIME.
+
+2.5. Signature-Only Applications
+
+   OpenPGP is designed for applications that use both encryption and
+   signatures, but there are a number of problems that are solved by a
+   signature-only implementation. Although this specification requires
+   both encryption and signatures, it is reasonable for there to be
+   subset implementations that are non-comformant only in that they omit
+   encryption.
+
+3. Data Element Formats
+
+   This section describes the data elements used by OpenPGP.
+
+
+
+
+
+
+
+
+Callas, et. al.             Standards Track                     [Page 7]
+
+RFC 2440                 OpenPGP Message Format            November 1998
+
+
+3.1. Scalar numbers
+
+   Scalar numbers are unsigned, and are always stored in big-endian
+   format. Using n[k] to refer to the kth octet being interpreted, the
+   value of a two-octet scalar is ((n[0] << 8) + n[1]). The value of a
+   four-octet scalar is ((n[0] << 24) + (n[1] << 16) + (n[2] << 8) +
+   n[3]).
+
+3.2. Multi-Precision Integers
+
+   Multi-Precision Integers (also called MPIs) are unsigned integers
+   used to hold large integers such as the ones used in cryptographic
+   calculations.
+
+   An MPI consists of two pieces: a two-octet scalar that is the length
+   of the MPI in bits followed by a string of octets that contain the
+   actual integer.
+
+   These octets form a big-endian number; a big-endian number can be
+   made into an MPI by prefixing it with the appropriate length.
+
+   Examples:
+
+   (all numbers are in hexadecimal)
+
+   The string of octets [00 01 01] forms an MPI with the value 1. The
+   string [00 09 01 FF] forms an MPI with the value of 511.
+
+   Additional rules:
+
+   The size of an MPI is ((MPI.length + 7) / 8) + 2 octets.
+
+   The length field of an MPI describes the length starting from its
+   most significant non-zero bit. Thus, the MPI [00 02 01] is not formed
+   correctly. It should be [00 01 01].
+
+3.3. Key IDs
+
+   A Key ID is an eight-octet scalar that identifies a key.
+   Implementations SHOULD NOT assume that Key IDs are unique. The
+   section, "Enhanced Key Formats" below describes how Key IDs are
+   formed.
+
+3.4. Text
+
+   The default character set for text is the UTF-8 [RFC2279] encoding of
+   Unicode [ISO10646].
+
+
+
+
+Callas, et. al.             Standards Track                     [Page 8]
+
+RFC 2440                 OpenPGP Message Format            November 1998
+
+
+3.5. Time fields
+
+   A time field is an unsigned four-octet number containing the number
+   of seconds elapsed since midnight, 1 January 1970 UTC.
+
+3.6. String-to-key (S2K) specifiers
+
+   String-to-key (S2K) specifiers are used to convert passphrase strings
+   into symmetric-key encryption/decryption keys.  They are used in two
+   places, currently: to encrypt the secret part of private keys in the
+   private keyring, and to convert passphrases to encryption keys for
+   symmetrically encrypted messages.
+
+3.6.1. String-to-key (S2k) specifier types
+
+   There are three types of S2K specifiers currently supported, as
+   follows:
+
+3.6.1.1. Simple S2K
+
+   This directly hashes the string to produce the key data.  See below
+   for how this hashing is done.
+
+       Octet 0:        0x00
+       Octet 1:        hash algorithm
+
+   Simple S2K hashes the passphrase to produce the session key.  The
+   manner in which this is done depends on the size of the session key
+   (which will depend on the cipher used) and the size of the hash
+   algorithm's output. If the hash size is greater than or equal to the
+   session key size, the high-order (leftmost) octets of the hash are
+   used as the key.
+
+   If the hash size is less than the key size, multiple instances of the
+   hash context are created -- enough to produce the required key data.
+   These instances are preloaded with 0, 1, 2, ... octets of zeros (that
+   is to say, the first instance has no preloading, the second gets
+   preloaded with 1 octet of zero, the third is preloaded with two
+   octets of zeros, and so forth).
+
+   As the data is hashed, it is given independently to each hash
+   context. Since the contexts have been initialized differently, they
+   will each produce different hash output.  Once the passphrase is
+   hashed, the output data from the multiple hashes is concatenated,
+   first hash leftmost, to produce the key data, with any excess octets
+   on the right discarded.
+
+
+
+
+
+Callas, et. al.             Standards Track                     [Page 9]
+
+RFC 2440                 OpenPGP Message Format            November 1998
+
+
+3.6.1.2. Salted S2K
+
+   This includes a "salt" value in the S2K specifier -- some arbitrary
+   data -- that gets hashed along with the passphrase string, to help
+   prevent dictionary attacks.
+
+       Octet 0:        0x01
+       Octet 1:        hash algorithm
+       Octets 2-9:     8-octet salt value
+
+   Salted S2K is exactly like Simple S2K, except that the input to the
+   hash function(s) consists of the 8 octets of salt from the S2K
+   specifier, followed by the passphrase.
+
+3.6.1.3. Iterated and Salted S2K
+
+   This includes both a salt and an octet count.  The salt is combined
+   with the passphrase and the resulting value is hashed repeatedly.
+   This further increases the amount of work an attacker must do to try
+   dictionary attacks.
+
+       Octet  0:        0x03
+       Octet  1:        hash algorithm
+       Octets 2-9:      8-octet salt value
+       Octet  10:       count, a one-octet, coded value
+
+   The count is coded into a one-octet number using the following
+   formula:
+
+       #define EXPBIAS 6
+           count = ((Int32)16 + (c & 15)) << ((c >> 4) + EXPBIAS);
+
+   The above formula is in C, where "Int32" is a type for a 32-bit
+   integer, and the variable "c" is the coded count, Octet 10.
+
+   Iterated-Salted S2K hashes the passphrase and salt data multiple
+   times. The total number of octets to be hashed is specified in the
+   encoded count in the S2K specifier.  Note that the resulting count
+   value is an octet count of how many octets will be hashed, not an
+   iteration count.
+
+   Initially, one or more hash contexts are set up as with the other S2K
+   algorithms, depending on how many octets of key data are needed.
+   Then the salt, followed by the passphrase data is repeatedly hashed
+   until the number of octets specified by the octet count has been
+   hashed.  The one exception is that if the octet count is less than
+   the size of the salt plus passphrase, the full salt plus passphrase
+   will be hashed even though that is greater than the octet count.
+
+
+
+Callas, et. al.             Standards Track                    [Page 10]
+
+RFC 2440                 OpenPGP Message Format            November 1998
+
+
+   After the hashing is done the data is unloaded from the hash
+   context(s) as with the other S2K algorithms.
+
+3.6.2. String-to-key usage
+
+   Implementations SHOULD use salted or iterated-and-salted S2K
+   specifiers, as simple S2K specifiers are more vulnerable to
+   dictionary attacks.
+
+3.6.2.1. Secret key encryption
+
+   An S2K specifier can be stored in the secret keyring to specify how
+   to convert the passphrase to a key that unlocks the secret data.
+   Older versions of PGP just stored a cipher algorithm octet preceding
+   the secret data or a zero to indicate that the secret data was
+   unencrypted. The MD5 hash function was always used to convert the
+   passphrase to a key for the specified cipher algorithm.
+
+   For compatibility, when an S2K specifier is used, the special value
+   255 is stored in the position where the hash algorithm octet would
+   have been in the old data structure.  This is then followed
+   immediately by a one-octet algorithm identifier, and then by the S2K
+   specifier as encoded above.
+
+   Therefore, preceding the secret data there will be one of these
+   possibilities:
+
+       0:           secret data is unencrypted (no pass phrase)
+       255:         followed by algorithm octet and S2K specifier
+       Cipher alg:  use Simple S2K algorithm using MD5 hash
+
+   This last possibility, the cipher algorithm number with an implicit
+   use of MD5 and IDEA, is provided for backward compatibility; it MAY
+   be understood, but SHOULD NOT be generated, and is deprecated.
+
+   These are followed by an 8-octet Initial Vector for the decryption of
+   the secret values, if they are encrypted, and then the secret key
+   values themselves.
+
+3.6.2.2. Symmetric-key message encryption
+
+   OpenPGP can create a Symmetric-key Encrypted Session Key (ESK) packet
+   at the front of a message.  This is used to allow S2K specifiers to
+   be used for the passphrase conversion or to create messages with a
+   mix of symmetric-key ESKs and public-key ESKs. This allows a message
+   to be decrypted either with a passphrase or a public key.
+
+
+
+
+
+Callas, et. al.             Standards Track                    [Page 11]
+
+RFC 2440                 OpenPGP Message Format            November 1998
+
+
+   PGP 2.X always used IDEA with Simple string-to-key conversion when
+   encrypting a message with a symmetric algorithm. This is deprecated,
+   but MAY be used for backward-compatibility.
+
+4. Packet Syntax
+
+   This section describes the packets used by OpenPGP.
+
+4.1. Overview
+
+   An OpenPGP message is constructed from a number of records that are
+   traditionally called packets. A packet is a chunk of data that has a
+   tag specifying its meaning. An OpenPGP message, keyring, certificate,
+   and so forth consists of a number of packets. Some of those packets
+   may contain other OpenPGP packets (for example, a compressed data
+   packet, when uncompressed, contains OpenPGP packets).
+
+   Each packet consists of a packet header, followed by the packet body.
+   The packet header is of variable length.
+
+4.2. Packet Headers
+
+   The first octet of the packet header is called the "Packet Tag." It
+   determines the format of the header and denotes the packet contents.
+   The remainder of the packet header is the length of the packet.
+
+   Note that the most significant bit is the left-most bit, called bit
+   7. A mask for this bit is 0x80 in hexadecimal.
+
+              +---------------+
+         PTag |7 6 5 4 3 2 1 0|
+              +---------------+
+         Bit 7 -- Always one
+         Bit 6 -- New packet format if set
+
+   PGP 2.6.x only uses old format packets. Thus, software that
+   interoperates with those versions of PGP must only use old format
+   packets. If interoperability is not an issue, either format may be
+   used. Note that old format packets have four bits of content tags,
+   and new format packets have six; some features cannot be used and
+   still be backward-compatible.
+
+   Old format packets contain:
+
+         Bits 5-2 -- content tag
+         Bits 1-0 - length-type
+
+
+
+
+
+Callas, et. al.             Standards Track                    [Page 12]
+
+RFC 2440                 OpenPGP Message Format            November 1998
+
+
+   New format packets contain:
+
+         Bits 5-0 -- content tag
+
+4.2.1. Old-Format Packet Lengths
+
+   The meaning of the length-type in old-format packets is:
+
+   0 - The packet has a one-octet length. The header is 2 octets long.
+
+   1 - The packet has a two-octet length. The header is 3 octets long.
+
+   2 - The packet has a four-octet length. The header is 5 octets long.
+
+   3 - The packet is of indeterminate length.  The header is 1 octet
+       long, and the implementation must determine how long the packet
+       is. If the packet is in a file, this means that the packet
+       extends until the end of the file. In general, an implementation
+       SHOULD NOT use indeterminate length packets except where the end
+       of the data will be clear from the context, and even then it is
+       better to use a definite length, or a new-format header. The
+       new-format headers described below have a mechanism for precisely
+       encoding data of indeterminate length.
+
+4.2.2. New-Format Packet Lengths
+
+   New format packets have four possible ways of encoding length:
+
+    1. A one-octet Body Length header encodes packet lengths of up to
+       191 octets.
+
+   2. A two-octet Body Length header encodes packet lengths of 192 to
+       8383 octets.
+
+    3. A five-octet Body Length header encodes packet lengths of up to
+       4,294,967,295 (0xFFFFFFFF) octets in length. (This actually
+       encodes a four-octet scalar number.)
+
+    4. When the length of the packet body is not known in advance by the
+       issuer, Partial Body Length headers encode a packet of
+       indeterminate length, effectively making it a stream.
+
+
+
+
+
+
+
+
+
+
+Callas, et. al.             Standards Track                    [Page 13]
+
+RFC 2440                 OpenPGP Message Format            November 1998
+
+
+4.2.2.1. One-Octet Lengths
+
+   A one-octet Body Length header encodes a length of from 0 to 191
+   octets. This type of length header is recognized because the one
+   octet value is less than 192.  The body length is equal to:
+
+       bodyLen = 1st_octet;
+
+4.2.2.2. Two-Octet Lengths
+
+   A two-octet Body Length header encodes a length of from 192 to 8383
+   octets.  It is recognized because its first octet is in the range 192
+   to 223.  The body length is equal to:
+
+       bodyLen = ((1st_octet - 192) << 8) + (2nd_octet) + 192
+
+4.2.2.3. Five-Octet Lengths
+
+   A five-octet Body Length header consists of a single octet holding
+   the value 255, followed by a four-octet scalar. The body length is
+   equal to:
+
+       bodyLen = (2nd_octet << 24) | (3rd_octet << 16) |
+                 (4th_octet << 8)  | 5th_octet
+
+4.2.2.4. Partial Body Lengths
+
+   A Partial Body Length header is one octet long and encodes the length
+   of only part of the data packet. This length is a power of 2, from 1
+   to 1,073,741,824 (2 to the 30th power).  It is recognized by its one
+   octet value that is greater than or equal to 224, and less than 255.
+   The partial body length is equal to:
+
+       partialBodyLen = 1 << (1st_octet & 0x1f);
+
+   Each Partial Body Length header is followed by a portion of the
+   packet body data. The Partial Body Length header specifies this
+   portion's length. Another length header (of one of the three types --
+   one octet, two-octet, or partial) follows that portion. The last
+   length header in the packet MUST NOT be a partial Body Length header.
+   Partial Body Length headers may only be used for the non-final parts
+   of the packet.
+
+4.2.3. Packet Length Examples
+
+   These examples show ways that new-format packets might encode the
+   packet lengths.
+
+
+
+
+Callas, et. al.             Standards Track                    [Page 14]
+
+RFC 2440                 OpenPGP Message Format            November 1998
+
+
+   A packet with length 100 may have its length encoded in one octet:
+   0x64. This is followed by 100 octets of data.
+
+   A packet with length 1723 may have its length coded in two octets:
+   0xC5, 0xFB.  This header is followed by the 1723 octets of data.
+
+   A packet with length 100000 may have its length encoded in five
+   octets: 0xFF, 0x00, 0x01, 0x86, 0xA0.
+
+   It might also be encoded in the following octet stream: 0xEF, first
+   32768 octets of data; 0xE1, next two octets of data; 0xE0, next one
+   octet of data; 0xF0, next 65536 octets of data; 0xC5, 0xDD, last 1693
+   octets of data.  This is just one possible encoding, and many
+   variations are possible on the size of the Partial Body Length
+   headers, as long as a regular Body Length header encodes the last
+   portion of the data. Note also that the last Body Length header can
+   be a zero-length header.
+
+   An implementation MAY use Partial Body Lengths for data packets, be
+   they literal, compressed, or encrypted. The first partial length MUST
+   be at least 512 octets long. Partial Body Lengths MUST NOT be used
+   for any other packet types.
+
+   Please note that in all of these explanations, the total length of
+   the packet is the length of the header(s) plus the length of the
+   body.
+
+4.3. Packet Tags
+
+   The packet tag denotes what type of packet the body holds. Note that
+   old format headers can only have tags less than 16, whereas new
+   format headers can have tags as great as 63. The defined tags (in
+   decimal) are:
+
+       0        -- Reserved - a packet tag must not have this value
+       1        -- Public-Key Encrypted Session Key Packet
+       2        -- Signature Packet
+       3        -- Symmetric-Key Encrypted Session Key Packet
+       4        -- One-Pass Signature Packet
+       5        -- Secret Key Packet
+       6        -- Public Key Packet
+       7        -- Secret Subkey Packet
+       8        -- Compressed Data Packet
+       9        -- Symmetrically Encrypted Data Packet
+       10       -- Marker Packet
+       11       -- Literal Data Packet
+       12       -- Trust Packet
+
+
+
+
+Callas, et. al.             Standards Track                    [Page 15]
+
+RFC 2440                 OpenPGP Message Format            November 1998
+
+
+       13       -- User ID Packet
+       14       -- Public Subkey Packet
+       60 to 63 -- Private or Experimental Values
+
+5. Packet Types
+
+5.1. Public-Key Encrypted Session Key Packets (Tag 1)
+
+   A Public-Key Encrypted Session Key packet holds the session key used
+   to encrypt a message. Zero or more Encrypted Session Key packets
+   (either Public-Key or Symmetric-Key) may precede a Symmetrically
+   Encrypted Data Packet, which holds an encrypted message.  The message
+   is encrypted with the session key, and the session key is itself
+   encrypted and stored in the Encrypted Session Key packet(s).  The
+   Symmetrically Encrypted Data Packet is preceded by one Public-Key
+   Encrypted Session Key packet for each OpenPGP key to which the
+   message is encrypted.  The recipient of the message finds a session
+   key that is encrypted to their public key, decrypts the session key,
+   and then uses the session key to decrypt the message.
+
+   The body of this packet consists of:
+
+     - A one-octet number giving the version number of the packet type.
+       The currently defined value for packet version is 3. An
+       implementation should accept, but not generate a version of 2,
+       which is equivalent to V3 in all other respects.
+
+     - An eight-octet number that gives the key ID of the public key
+       that the session key is encrypted to.
+
+     - A one-octet number giving the public key algorithm used.
+
+     - A string of octets that is the encrypted session key. This string
+       takes up the remainder of the packet, and its contents are
+       dependent on the public key algorithm used.
+
+   Algorithm Specific Fields for RSA encryption
+
+     - multiprecision integer (MPI) of RSA encrypted value m**e mod n.
+
+   Algorithm Specific Fields for Elgamal encryption:
+
+     - MPI of Elgamal (Diffie-Hellman) value g**k mod p.
+
+     - MPI of Elgamal (Diffie-Hellman) value m * y**k mod p.
+
+
+
+
+
+
+Callas, et. al.             Standards Track                    [Page 16]
+
+RFC 2440                 OpenPGP Message Format            November 1998
+
+
+   The value "m" in the above formulas is derived from the session key
+   as follows.  First the session key is prefixed with a one-octet
+   algorithm identifier that specifies the symmetric encryption
+   algorithm used to encrypt the following Symmetrically Encrypted Data
+   Packet.  Then a two-octet checksum is appended which is equal to the
+   sum of the preceding session key octets, not including the algorithm
+   identifier, modulo 65536.  This value is then padded as described in
+   PKCS-1 block type 02 [RFC2313] to form the "m" value used in the
+   formulas above.
+
+   Note that when an implementation forms several PKESKs with one
+   session key, forming a message that can be decrypted by several keys,
+   the implementation MUST make new PKCS-1 padding for each key.
+
+   An implementation MAY accept or use a Key ID of zero as a "wild card"
+   or "speculative" Key ID. In this case, the receiving implementation
+   would try all available private keys, checking for a valid decrypted
+   session key. This format helps reduce traffic analysis of messages.
+
+5.2. Signature Packet (Tag 2)
+
+   A signature packet describes a binding between some public key and
+   some data. The most common signatures are a signature of a file or a
+   block of text, and a signature that is a certification of a user ID.
+
+   Two versions of signature packets are defined.  Version 3 provides
+   basic signature information, while version 4 provides an expandable
+   format with subpackets that can specify more information about the
+   signature. PGP 2.6.x only accepts version 3 signatures.
+
+   Implementations MUST accept V3 signatures. Implementations SHOULD
+   generate V4 signatures.  Implementations MAY generate a V3 signature
+   that can be verified by PGP 2.6.x.
+
+   Note that if an implementation is creating an encrypted and signed
+   message that is encrypted to a V3 key, it is reasonable to create a
+   V3 signature.
+
+5.2.1. Signature Types
+
+   There are a number of possible meanings for a signature, which are
+   specified in a signature type octet in any given signature. These
+   meanings are:
+
+   0x00: Signature of a binary document.
+         Typically, this means the signer owns it, created it, or
+         certifies that it has not been modified.
+
+
+
+
+Callas, et. al.             Standards Track                    [Page 17]
+
+RFC 2440                 OpenPGP Message Format            November 1998
+
+
+   0x01: Signature of a canonical text document.
+         Typically, this means the signer owns it, created it, or
+         certifies that it has not been modified.  The signature is
+         calculated over the text data with its line endings converted
+         to <CR><LF> and trailing blanks removed.
+
+   0x02: Standalone signature.
+         This signature is a signature of only its own subpacket
+         contents. It is calculated identically to a signature over a
+         zero-length binary document. Note that it doesn't make sense to
+         have a V3 standalone signature.
+
+   0x10: Generic certification of a User ID and Public Key packet.
+         The issuer of this certification does not make any particular
+         assertion as to how well the certifier has checked that the
+         owner of the key is in fact the person described by the user
+         ID.  Note that all PGP "key signatures" are this type of
+         certification.
+
+   0x11: Persona certification of a User ID and Public Key packet.
+         The issuer of this certification has not done any verification
+         of the claim that the owner of this key is the user ID
+         specified.
+
+   0x12: Casual certification of a User ID and Public Key packet.
+         The issuer of this certification has done some casual
+         verification of the claim of identity.
+
+   0x13: Positive certification of a User ID and Public Key packet.
+         The issuer of this certification has done substantial
+         verification of the claim of identity.
+
+         Please note that the vagueness of these certification claims is
+         not a flaw, but a feature of the system. Because PGP places
+         final authority for validity upon the receiver of a
+         certification, it may be that one authority's casual
+         certification might be more rigorous than some other
+         authority's positive certification. These classifications allow
+         a certification authority to issue fine-grained claims.
+
+   0x18: Subkey Binding Signature
+         This signature is a statement by the top-level signing key
+         indicates that it owns the subkey. This signature is calculated
+         directly on the subkey itself, not on any User ID or other
+         packets.
+
+
+
+
+
+
+Callas, et. al.             Standards Track                    [Page 18]
+
+RFC 2440                 OpenPGP Message Format            November 1998
+
+
+   0x1F: Signature directly on a key
+         This signature is calculated directly on a key.  It binds the
+         information in the signature subpackets to the key, and is
+         appropriate to be used for subpackets that provide information
+         about the key, such as the revocation key subpacket. It is also
+         appropriate for statements that non-self certifiers want to
+         make about the key itself, rather than the binding between a
+         key and a name.
+
+   0x20: Key revocation signature
+         The signature is calculated directly on the key being revoked.
+         A revoked key is not to be used.  Only revocation signatures by
+         the key being revoked, or by an authorized revocation key,
+         should be considered valid revocation signatures.
+
+   0x28: Subkey revocation signature
+         The signature is calculated directly on the subkey being
+         revoked.  A revoked subkey is not to be used.  Only revocation
+         signatures by the top-level signature key that is bound to this
+         subkey, or by an authorized revocation key, should be
+         considered valid revocation signatures.
+
+   0x30: Certification revocation signature
+         This signature revokes an earlier user ID certification
+         signature (signature class 0x10 through 0x13). It should be
+         issued by the same key that issued the revoked signature or an
+         authorized revocation key The signature should have a later
+         creation date than the signature it revokes.
+
+   0x40: Timestamp signature.
+         This signature is only meaningful for the timestamp contained
+         in it.
+
+5.2.2. Version 3 Signature Packet Format
+
+   The body of a version 3 Signature Packet contains:
+
+     - One-octet version number (3).
+
+     - One-octet length of following hashed material.  MUST be 5.
+
+         - One-octet signature type.
+
+         - Four-octet creation time.
+
+     - Eight-octet key ID of signer.
+
+     - One-octet public key algorithm.
+
+
+
+Callas, et. al.             Standards Track                    [Page 19]
+
+RFC 2440                 OpenPGP Message Format            November 1998
+
+
+     - One-octet hash algorithm.
+
+     - Two-octet field holding left 16 bits of signed hash value.
+
+     - One or more multi-precision integers comprising the signature.
+       This portion is algorithm specific, as described below.
+
+   The data being signed is hashed, and then the signature type and
+   creation time from the signature packet are hashed (5 additional
+   octets).  The resulting hash value is used in the signature
+   algorithm. The high 16 bits (first two octets) of the hash are
+   included in the signature packet to provide a quick test to reject
+   some invalid signatures.
+
+   Algorithm Specific Fields for RSA signatures:
+
+     - multiprecision integer (MPI) of RSA signature value m**d.
+
+   Algorithm Specific Fields for DSA signatures:
+
+     - MPI of DSA value r.
+
+     - MPI of DSA value s.
+
+   The signature calculation is based on a hash of the signed data, as
+   described above.  The details of the calculation are different for
+   DSA signature than for RSA signatures.
+
+   With RSA signatures, the hash value is encoded as described in PKCS-1
+   section 10.1.2, "Data encoding", producing an ASN.1 value of type
+   DigestInfo, and then padded using PKCS-1 block type 01 [RFC2313].
+   This requires inserting the hash value as an octet string into an
+   ASN.1 structure. The object identifier for the type of hash being
+   used is included in the structure.  The hexadecimal representations
+   for the currently defined hash algorithms are:
+
+     - MD2:        0x2A, 0x86, 0x48, 0x86, 0xF7, 0x0D, 0x02, 0x02
+
+     - MD5:        0x2A, 0x86, 0x48, 0x86, 0xF7, 0x0D, 0x02, 0x05
+
+     - RIPEMD-160: 0x2B, 0x24, 0x03, 0x02, 0x01
+
+     - SHA-1:      0x2B, 0x0E, 0x03, 0x02, 0x1A
+
+
+
+
+
+
+
+
+Callas, et. al.             Standards Track                    [Page 20]
+
+RFC 2440                 OpenPGP Message Format            November 1998
+
+
+   The ASN.1 OIDs are:
+
+     - MD2:        1.2.840.113549.2.2
+
+     - MD5:        1.2.840.113549.2.5
+
+     - RIPEMD-160: 1.3.36.3.2.1
+
+     - SHA-1:      1.3.14.3.2.26
+
+   The full hash prefixes for these are:
+
+       MD2:        0x30, 0x20, 0x30, 0x0C, 0x06, 0x08, 0x2A, 0x86,
+                   0x48, 0x86, 0xF7, 0x0D, 0x02, 0x02, 0x05, 0x00,
+                   0x04, 0x10
+
+       MD5:        0x30, 0x20, 0x30, 0x0C, 0x06, 0x08, 0x2A, 0x86,
+                   0x48, 0x86, 0xF7, 0x0D, 0x02, 0x05, 0x05, 0x00,
+                   0x04, 0x10
+
+       RIPEMD-160: 0x30, 0x21, 0x30, 0x09, 0x06, 0x05, 0x2B, 0x24,
+                   0x03, 0x02, 0x01, 0x05, 0x00, 0x04, 0x14
+
+       SHA-1:      0x30, 0x21, 0x30, 0x09, 0x06, 0x05, 0x2b, 0x0E,
+                   0x03, 0x02, 0x1A, 0x05, 0x00, 0x04, 0x14
+
+   DSA signatures MUST use hashes with a size of 160 bits, to match q,
+   the size of the group generated by the DSA key's generator value.
+   The hash function result is treated as a 160 bit number and used
+   directly in the DSA signature algorithm.
+
+5.2.3. Version 4 Signature Packet Format
+
+   The body of a version 4 Signature Packet contains:
+
+     - One-octet version number (4).
+
+     - One-octet signature type.
+
+     - One-octet public key algorithm.
+
+     - One-octet hash algorithm.
+
+     - Two-octet scalar octet count for following hashed subpacket
+       data. Note that this is the length in octets of all of the hashed
+       subpackets; a pointer incremented by this number will skip over
+       the hashed subpackets.
+
+
+
+
+Callas, et. al.             Standards Track                    [Page 21]
+
+RFC 2440                 OpenPGP Message Format            November 1998
+
+
+     - Hashed subpacket data. (zero or more subpackets)
+
+     - Two-octet scalar octet count for following unhashed subpacket
+       data. Note that this is the length in octets of all of the
+       unhashed subpackets; a pointer incremented by this number will
+       skip over the unhashed subpackets.
+
+     - Unhashed subpacket data. (zero or more subpackets)
+
+     - Two-octet field holding left 16 bits of signed hash value.
+
+     - One or more multi-precision integers comprising the signature.
+       This portion is algorithm specific, as described above.
+
+   The data being signed is hashed, and then the signature data from the
+   version number through the hashed subpacket data (inclusive) is
+   hashed. The resulting hash value is what is signed.  The left 16 bits
+   of the hash are included in the signature packet to provide a quick
+   test to reject some invalid signatures.
+
+   There are two fields consisting of signature subpackets.  The first
+   field is hashed with the rest of the signature data, while the second
+   is unhashed.  The second set of subpackets is not cryptographically
+   protected by the signature and should include only advisory
+   information.
+
+   The algorithms for converting the hash function result to a signature
+   are described in a section below.
+
+5.2.3.1. Signature Subpacket Specification
+
+   The subpacket fields consist of zero or more signature subpackets.
+   Each set of subpackets is preceded by a two-octet scalar count of the
+   length of the set of subpackets.
+
+   Each subpacket consists of a subpacket header and a body.  The header
+   consists of:
+
+     - the subpacket length (1,  2, or 5 octets)
+
+     - the subpacket type (1 octet)
+
+   and is followed by the subpacket specific data.
+
+   The length includes the type octet but not this length. Its format is
+   similar to the "new" format packet header lengths, but cannot have
+   partial body lengths. That is:
+
+
+
+
+Callas, et. al.             Standards Track                    [Page 22]
+
+RFC 2440                 OpenPGP Message Format            November 1998
+
+
+       if the 1st octet <  192, then
+           lengthOfLength = 1
+           subpacketLen = 1st_octet
+
+       if the 1st octet >= 192 and < 255, then
+           lengthOfLength = 2
+           subpacketLen = ((1st_octet - 192) << 8) + (2nd_octet) + 192
+
+       if the 1st octet = 255, then
+           lengthOfLength = 5
+           subpacket length = [four-octet scalar starting at 2nd_octet]
+
+   The value of the subpacket type octet may be:
+
+       2 = signature creation time
+       3 = signature expiration time
+       4 = exportable certification
+       5 = trust signature
+       6 = regular expression
+       7 = revocable
+       9 = key expiration time
+       10 = placeholder for backward compatibility
+       11 = preferred symmetric algorithms
+       12 = revocation key
+       16 = issuer key ID
+       20 = notation data
+       21 = preferred hash algorithms
+       22 = preferred compression algorithms
+       23 = key server preferences
+       24 = preferred key server
+       25 = primary user id
+       26 = policy URL
+       27 = key flags
+       28 = signer's user id
+       29 = reason for revocation
+       100 to 110 = internal or user-defined
+
+   An implementation SHOULD ignore any subpacket of a type that it does
+   not recognize.
+
+   Bit 7 of the subpacket type is the "critical" bit.  If set, it
+   denotes that the subpacket is one that is critical for the evaluator
+   of the signature to recognize.  If a subpacket is encountered that is
+   marked critical but is unknown to the evaluating software, the
+   evaluator SHOULD consider the signature to be in error.
+
+
+
+
+
+
+Callas, et. al.             Standards Track                    [Page 23]
+
+RFC 2440                 OpenPGP Message Format            November 1998
+
+
+   An evaluator may "recognize" a subpacket, but not implement it. The
+   purpose of the critical bit is to allow the signer to tell an
+   evaluator that it would prefer a new, unknown feature to generate an
+   error than be ignored.
+
+   Implementations SHOULD implement "preferences".
+
+5.2.3.2. Signature Subpacket Types
+
+   A number of subpackets are currently defined.  Some subpackets apply
+   to the signature itself and some are attributes of the key.
+   Subpackets that are found on a self-signature are placed on a user id
+   certification made by the key itself. Note that a key may have more
+   than one user id, and thus may have more than one self-signature, and
+   differing subpackets.
+
+   A self-signature is a binding signature made by the key the signature
+   refers to. There are three types of self-signatures, the
+   certification signatures (types 0x10-0x13), the direct-key signature
+   (type 0x1f), and the subkey binding signature (type 0x18). For
+   certification self-signatures, each user ID may have a self-
+   signature, and thus different subpackets in those self-signatures.
+   For subkey binding signatures, each subkey in fact has a self-
+   signature. Subpackets that appear in a certification self-signature
+   apply to the username, and subpackets that appear in the subkey
+   self-signature apply to the subkey. Lastly, subpackets on the direct
+   key signature apply to the entire key.
+
+   Implementing software should interpret a self-signature's preference
+   subpackets as narrowly as possible. For example, suppose a key has
+   two usernames, Alice and Bob. Suppose that Alice prefers the
+   symmetric algorithm CAST5, and Bob prefers IDEA or Triple-DES. If the
+   software locates this key via Alice's name, then the preferred
+   algorithm is CAST5, if software locates the key via Bob's name, then
+   the preferred algorithm is IDEA. If the key is located by key id,
+   then algorithm of the default user id of the key provides the default
+   symmetric algorithm.
+
+   A subpacket may be found either in the hashed or unhashed subpacket
+   sections of a signature. If a subpacket is not hashed, then the
+   information in it cannot be considered definitive because it is not
+   part of the signature proper.
+
+
+
+
+
+
+
+
+
+Callas, et. al.             Standards Track                    [Page 24]
+
+RFC 2440                 OpenPGP Message Format            November 1998
+
+
+5.2.3.3. Signature creation time
+
+   (4 octet time field)
+
+   The time the signature was made.
+
+   MUST be present in the hashed area.
+
+5.2.3.4. Issuer
+
+   (8 octet key ID)
+
+   The OpenPGP key ID of the key issuing the signature.
+
+5.2.3.5. Key expiration time
+
+   (4 octet time field)
+
+   The validity period of the key.  This is the number of seconds after
+   the key creation time that the key expires.  If this is not present
+   or has a value of zero, the key never expires. This is found only on
+   a self-signature.
+
+5.2.3.6. Preferred symmetric algorithms
+
+   (sequence of one-octet values)
+
+   Symmetric algorithm numbers that indicate which algorithms the key
+   holder prefers to use.  The subpacket body is an ordered list of
+   octets with the most preferred listed first. It is assumed that only
+   algorithms listed are supported by the recipient's software.
+   Algorithm numbers in section 9. This is only found on a self-
+   signature.
+
+5.2.3.7. Preferred hash algorithms
+
+   (array of one-octet values)
+
+   Message digest algorithm numbers that indicate which algorithms the
+   key holder prefers to receive. Like the preferred symmetric
+   algorithms, the list is ordered. Algorithm numbers are in section 6.
+   This is only found on a self-signature.
+
+
+
+
+
+
+
+
+
+Callas, et. al.             Standards Track                    [Page 25]
+
+RFC 2440                 OpenPGP Message Format            November 1998
+
+
+5.2.3.8. Preferred compression algorithms
+
+   (array of one-octet values)
+
+   Compression algorithm numbers that indicate which algorithms the key
+   holder prefers to use. Like the preferred symmetric algorithms, the
+   list is ordered. Algorithm numbers are in section 6. If this
+   subpacket is not included, ZIP is preferred. A zero denotes that
+   uncompressed data is preferred; the key holder's software might have
+   no compression software in that implementation. This is only found on
+   a self-signature.
+
+5.2.3.9. Signature expiration time
+
+   (4 octet time field)
+
+   The validity period of the signature.  This is the number of seconds
+   after the signature creation time that the signature expires. If this
+   is not present or has a value of zero, it never expires.
+
+5.2.3.10. Exportable Certification
+
+   (1 octet of exportability, 0 for not, 1 for exportable)
+
+   This subpacket denotes whether a certification signature is
+   "exportable", to be used by other users than the signature's issuer.
+   The packet body contains a boolean flag indicating whether the
+   signature is exportable. If this packet is not present, the
+   certification is exportable; it is equivalent to a flag containing a
+   1.
+
+   Non-exportable, or "local", certifications are signatures made by a
+   user to mark a key as valid within that user's implementation only.
+   Thus, when an implementation prepares a user's copy of a key for
+   transport to another user (this is the process of "exporting" the
+   key), any local certification signatures are deleted from the key.
+
+   The receiver of a transported key "imports" it, and likewise trims
+   any local certifications. In normal operation, there won't be any,
+   assuming the import is performed on an exported key. However, there
+   are instances where this can reasonably happen. For example, if an
+   implementation allows keys to be imported from a key database in
+   addition to an exported key, then this situation can arise.
+
+   Some implementations do not represent the interest of a single user
+   (for example, a key server). Such implementations always trim local
+   certifications from any key they handle.
+
+
+
+
+Callas, et. al.             Standards Track                    [Page 26]
+
+RFC 2440                 OpenPGP Message Format            November 1998
+
+
+5.2.3.11. Revocable
+
+   (1 octet of revocability, 0 for not, 1 for revocable)
+
+   Signature's revocability status.  Packet body contains a boolean flag
+   indicating whether the signature is revocable.  Signatures that are
+   not revocable have any later revocation signatures ignored.  They
+   represent a commitment by the signer that he cannot revoke his
+   signature for the life of his key.  If this packet is not present,
+   the signature is revocable.
+
+5.2.3.12. Trust signature
+
+   (1 octet "level" (depth), 1 octet of trust amount)
+
+   Signer asserts that the key is not only valid, but also trustworthy,
+   at the specified level.  Level 0 has the same meaning as an ordinary
+   validity signature.  Level 1 means that the signed key is asserted to
+   be a valid trusted introducer, with the 2nd octet of the body
+   specifying the degree of trust. Level 2 means that the signed key is
+   asserted to be trusted to issue level 1 trust signatures, i.e. that
+   it is a "meta introducer". Generally, a level n trust signature
+   asserts that a key is trusted to issue level n-1 trust signatures.
+   The trust amount is in a range from 0-255, interpreted such that
+   values less than 120 indicate partial trust and values of 120 or
+   greater indicate complete trust.  Implementations SHOULD emit values
+   of 60 for partial trust and 120 for complete trust.
+
+5.2.3.13. Regular expression
+
+   (null-terminated regular expression)
+
+   Used in conjunction with trust signature packets (of level > 0) to
+   limit the scope of trust that is extended.  Only signatures by the
+   target key on user IDs that match the regular expression in the body
+   of this packet have trust extended by the trust signature subpacket.
+   The regular expression uses the same syntax as the Henry Spencer's
+   "almost public domain" regular expression package. A description of
+   the syntax is found in a section below.
+
+5.2.3.14. Revocation key
+
+   (1 octet of class, 1 octet of algid, 20 octets of fingerprint)
+
+   Authorizes the specified key to issue revocation signatures for this
+   key.  Class octet must have bit 0x80 set. If the bit 0x40 is set,
+   then this means that the revocation information is sensitive.  Other
+   bits are for future expansion to other kinds of authorizations. This
+
+
+
+Callas, et. al.             Standards Track                    [Page 27]
+
+RFC 2440                 OpenPGP Message Format            November 1998
+
+
+   is found on a self-signature.
+
+   If the "sensitive" flag is set, the keyholder feels this subpacket
+   contains private trust information that describes a real-world
+   sensitive relationship. If this flag is set, implementations SHOULD
+   NOT export this signature to other users except in cases where the
+   data needs to be available: when the signature is being sent to the
+   designated revoker, or when it is accompanied by a revocation
+   signature from that revoker.  Note that it may be appropriate to
+   isolate this subpacket within a separate signature so that it is not
+   combined with other subpackets that need to be exported.
+
+5.2.3.15. Notation Data
+
+       (4 octets of flags, 2 octets of name length (M),
+                           2 octets of value length (N),
+                           M octets of name data,
+                           N octets of value data)
+
+   This subpacket describes a "notation" on the signature that the
+   issuer wishes to make. The notation has a name and a value, each of
+   which are strings of octets. There may be more than one notation in a
+   signature. Notations can be used for any extension the issuer of the
+   signature cares to make. The "flags" field holds four octets of
+   flags.
+
+   All undefined flags MUST be zero. Defined flags are:
+
+       First octet: 0x80 = human-readable. This note is text, a note
+                           from one person to another, and has no
+                           meaning to software.
+       Other octets: none.
+
+5.2.3.16. Key server preferences
+
+   (N octets of flags)
+
+   This is a list of flags that indicate preferences that the key holder
+   has about how the key is handled on a key server. All undefined flags
+   MUST be zero.
+
+   First octet: 0x80 = No-modify
+       the key holder requests that this key only be modified or updated
+       by the key holder or an administrator of the key server.
+
+   This is found only on a self-signature.
+
+
+
+
+
+Callas, et. al.             Standards Track                    [Page 28]
+
+RFC 2440                 OpenPGP Message Format            November 1998
+
+
+5.2.3.17. Preferred key server
+
+   (String)
+
+   This is a URL of a key server that the key holder prefers be used for
+   updates. Note that keys with multiple user ids can have a preferred
+   key server for each user id. Note also that since this is a URL, the
+   key server can actually be a copy of the key retrieved by ftp, http,
+   finger, etc.
+
+5.2.3.18. Primary user id
+
+   (1 octet, boolean)
+
+   This is a flag in a user id's self signature that states whether this
+   user id is the main user id for this key. It is reasonable for an
+   implementation to resolve ambiguities in preferences, etc. by
+   referring to the primary user id. If this flag is absent, its value
+   is zero. If more than one user id in a key is marked as primary, the
+   implementation may resolve the ambiguity in any way it sees fit.
+
+5.2.3.19. Policy URL
+
+   (String)
+
+   This subpacket contains a URL of a document that describes the policy
+   that the signature was issued under.
+
+5.2.3.20. Key Flags
+
+   (Octet string)
+
+   This subpacket contains a list of binary flags that hold information
+   about a key. It is a string of octets, and an implementation MUST NOT
+   assume a fixed size. This is so it can grow over time. If a list is
+   shorter than an implementation expects, the unstated flags are
+   considered to be zero. The defined flags are:
+
+       First octet:
+
+       0x01 - This key may be used to certify other keys.
+
+       0x02 - This key may be used to sign data.
+
+       0x04 - This key may be used to encrypt communications.
+
+       0x08 - This key may be used to encrypt storage.
+
+
+
+
+Callas, et. al.             Standards Track                    [Page 29]
+
+RFC 2440                 OpenPGP Message Format            November 1998
+
+
+       0x10 - The private component of this key may have been split by a
+       secret-sharing mechanism.
+
+       0x80 - The private component of this key may be in the possession
+       of more than one person.
+
+   Usage notes:
+
+   The flags in this packet may appear in self-signatures or in
+   certification signatures. They mean different things depending on who
+   is making the statement -- for example, a certification signature
+   that has the "sign data" flag is stating that the certification is
+   for that use. On the other hand, the "communications encryption" flag
+   in a self-signature is stating a preference that a given key be used
+   for communications. Note however, that it is a thorny issue to
+   determine what is "communications" and what is "storage." This
+   decision is left wholly up to the implementation; the authors of this
+   document do not claim any special wisdom on the issue, and realize
+   that accepted opinion may change.
+
+   The "split key" (0x10) and "group key" (0x80) flags are placed on a
+   self-signature only; they are meaningless on a certification
+   signature. They SHOULD be placed only on a direct-key signature (type
+   0x1f) or a subkey signature (type 0x18), one that refers to the key
+   the flag applies to.
+
+5.2.3.21. Signer's User ID
+
+   This subpacket allows a keyholder to state which user id is
+   responsible for the signing. Many keyholders use a single key for
+   different purposes, such as business communications as well as
+   personal communications. This subpacket allows such a keyholder to
+   state which of their roles is making a signature.
+
+5.2.3.22. Reason for Revocation
+
+   (1 octet of revocation code, N octets of reason string)
+
+   This subpacket is used only in key revocation and certification
+   revocation signatures. It describes the reason why the key or
+   certificate was revoked.
+
+   The first octet contains a machine-readable code that denotes the
+   reason for the revocation:
+
+
+
+
+
+
+
+Callas, et. al.             Standards Track                    [Page 30]
+
+RFC 2440                 OpenPGP Message Format            November 1998
+
+
+       0x00 - No reason specified (key revocations or cert revocations)
+       0x01 - Key is superceded (key revocations)
+       0x02 - Key material has been compromised (key revocations)
+       0x03 - Key is no longer used (key revocations)
+       0x20 - User id information is no longer valid (cert revocations)
+
+   Following the revocation code is a string of octets which gives
+   information about the reason for revocation in human-readable form
+   (UTF-8). The string may be null, that is, of zero length. The length
+   of the subpacket is the length of the reason string plus one.
+
+5.2.4. Computing Signatures
+
+   All signatures are formed by producing a hash over the signature
+   data, and then using the resulting hash in the signature algorithm.
+
+   The signature data is simple to compute for document signatures
+   (types 0x00 and 0x01), for which the document itself is the data.
+   For standalone signatures, this is a null string.
+
+   When a signature is made over a key, the hash data starts with the
+   octet 0x99, followed by a two-octet length of the key, and then body
+   of the key packet. (Note that this is an old-style packet header for
+   a key packet with two-octet length.) A subkey signature (type 0x18)
+   then hashes the subkey, using the same format as the main key. Key
+   revocation signatures (types 0x20 and 0x28) hash only the key being
+   revoked.
+
+   A certification signature (type 0x10 through 0x13) hashes the user id
+   being bound to the key into the hash context after the above data. A
+   V3 certification hashes the contents of the name packet, without any
+   header. A V4 certification hashes the constant 0xb4 (which is an
+   old-style packet header with the length-of-length set to zero), a
+   four-octet number giving the length of the username, and then the
+   username data.
+
+   Once the data body is hashed, then a trailer is hashed. A V3
+   signature hashes five octets of the packet body, starting from the
+   signature type field. This data is the signature type, followed by
+   the four-octet signature time. A V4 signature hashes the packet body
+   starting from its first field, the version number, through the end of
+   the hashed subpacket data. Thus, the fields hashed are the signature
+   version, the signature type, the public key algorithm, the hash
+   algorithm, the hashed subpacket length, and the hashed subpacket
+   body.
+
+
+
+
+
+
+Callas, et. al.             Standards Track                    [Page 31]
+
+RFC 2440                 OpenPGP Message Format            November 1998
+
+
+   V4 signatures also hash in a final trailer of six octets: the version
+   of the signature packet, i.e. 0x04; 0xFF; a four-octet, big-endian
+   number that is the length of the hashed data from the signature
+   packet (note that this number does not include these final six
+   octets.
+
+   After all this has been hashed, the resulting hash field is used in
+   the signature algorithm, and placed at the end of the signature
+   packet.
+
+5.2.4.1. Subpacket Hints
+
+   An implementation SHOULD put the two mandatory subpackets, creation
+   time and issuer, as the first subpackets in the subpacket list,
+   simply to make it easier for the implementer to find them.
+
+   It is certainly possible for a signature to contain conflicting
+   information in subpackets. For example, a signature may contain
+   multiple copies of a preference or multiple expiration times. In most
+   cases, an implementation SHOULD use the last subpacket in the
+   signature, but MAY use any conflict resolution scheme that makes more
+   sense. Please note that we are intentionally leaving conflict
+   resolution to the implementer; most conflicts are simply syntax
+   errors, and the wishy-washy language here allows a receiver to be
+   generous in what they accept, while putting pressure on a creator to
+   be stingy in what they generate.
+
+   Some apparent conflicts may actually make sense -- for example,
+   suppose a keyholder has an V3 key and a V4 key that share the same
+   RSA key material. Either of these keys can verify a signature created
+   by the other, and it may be reasonable for a signature to contain an
+   issuer subpacket for each key, as a way of explicitly tying those
+   keys to the signature.
+
+5.3. Symmetric-Key Encrypted Session-Key Packets (Tag 3)
+
+   The Symmetric-Key Encrypted Session Key packet holds the symmetric-
+   key encryption of a session key used to encrypt a message.  Zero or
+   more Encrypted Session Key packets and/or Symmetric-Key Encrypted
+   Session Key packets may precede a Symmetrically Encrypted Data Packet
+   that holds an encrypted message.  The message is encrypted with a
+   session key, and the session key is itself encrypted and stored in
+   the Encrypted Session Key packet or the Symmetric-Key Encrypted
+   Session Key packet.
+
+   If the Symmetrically Encrypted Data Packet is preceded by one or more
+   Symmetric-Key Encrypted Session Key packets, each specifies a
+   passphrase that may be used to decrypt the message.  This allows a
+
+
+
+Callas, et. al.             Standards Track                    [Page 32]
+
+RFC 2440                 OpenPGP Message Format            November 1998
+
+
+   message to be encrypted to a number of public keys, and also to one
+   or more pass phrases. This packet type is new, and is not generated
+   by PGP 2.x or PGP 5.0.
+
+   The body of this packet consists of:
+
+     - A one-octet version number. The only currently defined version
+       is 4.
+
+     - A one-octet number describing the symmetric algorithm used.
+
+     - A string-to-key (S2K) specifier, length as defined above.
+
+     - Optionally, the encrypted session key itself, which is decrypted
+       with the string-to-key object.
+
+   If the encrypted session key is not present (which can be detected on
+   the basis of packet length and S2K specifier size), then the S2K
+   algorithm applied to the passphrase produces the session key for
+   decrypting the file, using the symmetric cipher algorithm from the
+   Symmetric-Key Encrypted Session Key packet.
+
+   If the encrypted session key is present, the result of applying the
+   S2K algorithm to the passphrase is used to decrypt just that
+   encrypted session key field, using CFB mode with an IV of all zeros.
+    The decryption result consists of a one-octet algorithm identifier
+   that specifies the symmetric-key encryption algorithm used to encrypt
+   the following Symmetrically Encrypted Data Packet, followed by the
+   session key octets themselves.
+
+   Note: because an all-zero IV is used for this decryption, the S2K
+   specifier MUST use a salt value, either a Salted S2K or an Iterated-
+   Salted S2K.  The salt value will insure that the decryption key is
+   not repeated even if the passphrase is reused.
+
+5.4. One-Pass Signature Packets (Tag 4)
+
+   The One-Pass Signature packet precedes the signed data and contains
+   enough information to allow the receiver to begin calculating any
+   hashes needed to verify the signature.  It allows the Signature
+   Packet to be placed at the end of the message, so that the signer can
+   compute the entire signed message in one pass.
+
+   A One-Pass Signature does not interoperate with PGP 2.6.x or earlier.
+
+   The body of this packet consists of:
+
+
+
+
+
+Callas, et. al.             Standards Track                    [Page 33]
+
+RFC 2440                 OpenPGP Message Format            November 1998
+
+
+     - A one-octet version number. The current version is 3.
+
+     - A one-octet signature type. Signature types are described in
+       section 5.2.1.
+
+     - A one-octet number describing the hash algorithm used.
+
+     - A one-octet number describing the public key algorithm used.
+
+     - An eight-octet number holding the key ID of the signing key.
+
+     - A one-octet number holding a flag showing whether the signature
+       is nested.  A zero value indicates that the next packet is
+       another One-Pass Signature packet that describes another
+       signature to be applied to the same message data.
+
+   Note that if a message contains more than one one-pass signature,
+   then the signature packets bracket the message; that is, the first
+   signature packet after the message corresponds to the last one-pass
+   packet and the final signature packet corresponds to the first one-
+   pass packet.
+
+5.5. Key Material Packet
+
+   A key material packet contains all the information about a public or
+   private key.  There are four variants of this packet type, and two
+   major versions. Consequently, this section is complex.
+
+5.5.1. Key Packet Variants
+
+5.5.1.1. Public Key Packet (Tag 6)
+
+   A Public Key packet starts a series of packets that forms an OpenPGP
+   key (sometimes called an OpenPGP certificate).
+
+5.5.1.2. Public Subkey Packet (Tag 14)
+
+   A Public Subkey packet (tag 14) has exactly the same format as a
+   Public Key packet, but denotes a subkey. One or more subkeys may be
+   associated with a top-level key.  By convention, the top-level key
+   provides signature services, and the subkeys provide encryption
+   services.
+
+   Note: in PGP 2.6.x, tag 14 was intended to indicate a comment packet.
+   This tag was selected for reuse because no previous version of PGP
+   ever emitted comment packets but they did properly ignore them.
+   Public Subkey packets are ignored by PGP 2.6.x and do not cause it to
+   fail, providing a limited degree of backward compatibility.
+
+
+
+Callas, et. al.             Standards Track                    [Page 34]
+
+RFC 2440                 OpenPGP Message Format            November 1998
+
+
+5.5.1.3. Secret Key Packet (Tag 5)
+
+   A Secret Key packet contains all the information that is found in a
+   Public Key packet, including the public key material, but also
+   includes the secret key material after all the public key fields.
+
+5.5.1.4. Secret Subkey Packet (Tag 7)
+
+   A Secret Subkey packet (tag 7) is the subkey analog of the Secret Key
+   packet, and has exactly the same format.
+
+5.5.2. Public Key Packet Formats
+
+   There are two versions of key-material packets. Version 3 packets
+   were first generated by PGP 2.6. Version 2 packets are identical in
+   format to Version 3 packets, but are generated by PGP 2.5 or before.
+   V2 packets are deprecated and they MUST NOT be generated.  PGP 5.0
+   introduced version 4 packets, with new fields and semantics.  PGP
+   2.6.x will not accept key-material packets with versions greater than
+   3.
+
+   OpenPGP implementations SHOULD create keys with version 4 format. An
+   implementation MAY generate a V3 key to ensure interoperability with
+   old software; note, however, that V4 keys correct some security
+   deficiencies in V3 keys. These deficiencies are described below. An
+   implementation MUST NOT create a V3 key with a public key algorithm
+   other than RSA.
+
+   A version 3 public key or public subkey packet contains:
+
+     - A one-octet version number (3).
+
+     - A four-octet number denoting the time that the key was created.
+
+     - A two-octet number denoting the time in days that this key is
+       valid. If this number is zero, then it does not expire.
+
+     - A one-octet number denoting the public key algorithm of this key
+
+     - A series of multi-precision integers comprising the key
+       material:
+
+         - a multiprecision integer (MPI) of RSA public modulus n;
+
+         - an MPI of RSA public encryption exponent e.
+
+
+
+
+
+
+Callas, et. al.             Standards Track                    [Page 35]
+
+RFC 2440                 OpenPGP Message Format            November 1998
+
+
+   V3 keys SHOULD only be used for backward compatibility because of
+   three weaknesses in them. First, it is relatively easy to construct a
+   V3 key that has the same key ID as any other key because the key ID
+   is simply the low 64 bits of the public modulus. Secondly, because
+   the fingerprint of a V3 key hashes the key material, but not its
+   length, which increases the opportunity for fingerprint collisions.
+   Third, there are minor weaknesses in the MD5 hash algorithm that make
+   developers prefer other algorithms. See below for a fuller discussion
+   of key IDs and fingerprints.
+
+   The version 4 format is similar to the version 3 format except for
+   the absence of a validity period.  This has been moved to the
+   signature packet.  In addition, fingerprints of version 4 keys are
+   calculated differently from version 3 keys, as described in section
+   "Enhanced Key Formats."
+
+   A version 4 packet contains:
+
+     - A one-octet version number (4).
+
+     - A four-octet number denoting the time that the key was created.
+
+     - A one-octet number denoting the public key algorithm of this key
+
+     - A series of multi-precision integers comprising the key
+       material.  This algorithm-specific portion is:
+
+       Algorithm Specific Fields for RSA public keys:
+
+         - multiprecision integer (MPI) of RSA public modulus n;
+
+         - MPI of RSA public encryption exponent e.
+
+       Algorithm Specific Fields for DSA public keys:
+
+         - MPI of DSA prime p;
+
+         - MPI of DSA group order q (q is a prime divisor of p-1);
+
+         - MPI of DSA group generator g;
+
+         - MPI of DSA public key value y (= g**x where x is secret).
+
+       Algorithm Specific Fields for Elgamal public keys:
+
+         - MPI of Elgamal prime p;
+
+         - MPI of Elgamal group generator g;
+
+
+
+Callas, et. al.             Standards Track                    [Page 36]
+
+RFC 2440                 OpenPGP Message Format            November 1998
+
+
+         - MPI of Elgamal public key value y (= g**x where x is
+           secret).
+
+5.5.3. Secret Key Packet Formats
+
+   The Secret Key and Secret Subkey packets contain all the data of the
+   Public Key and Public Subkey packets, with additional algorithm-
+   specific secret key data appended, in encrypted form.
+
+   The packet contains:
+
+     - A Public Key or Public Subkey packet, as described above
+
+     - One octet indicating string-to-key usage conventions.  0
+       indicates that the secret key data is not encrypted.  255
+       indicates that a string-to-key specifier is being given.  Any
+       other value is a symmetric-key encryption algorithm specifier.
+
+     - [Optional] If string-to-key usage octet was 255, a one-octet
+       symmetric encryption algorithm.
+
+     - [Optional] If string-to-key usage octet was 255, a string-to-key
+       specifier.  The length of the string-to-key specifier is implied
+       by its type, as described above.
+
+     - [Optional] If secret data is encrypted, eight-octet Initial
+       Vector (IV).
+
+     - Encrypted multi-precision integers comprising the secret key
+       data. These algorithm-specific fields are as described below.
+
+     - Two-octet checksum of the plaintext of the algorithm-specific
+       portion (sum of all octets, mod 65536).
+
+       Algorithm Specific Fields for RSA secret keys:
+
+       - multiprecision integer (MPI) of RSA secret exponent d.
+
+       - MPI of RSA secret prime value p.
+
+       - MPI of RSA secret prime value q (p < q).
+
+       - MPI of u, the multiplicative inverse of p, mod q.
+
+       Algorithm Specific Fields for DSA secret keys:
+
+       - MPI of DSA secret exponent x.
+
+
+
+
+Callas, et. al.             Standards Track                    [Page 37]
+
+RFC 2440                 OpenPGP Message Format            November 1998
+
+
+       Algorithm Specific Fields for Elgamal secret keys:
+
+       - MPI of Elgamal secret exponent x.
+
+   Secret MPI values can be encrypted using a passphrase.  If a string-
+   to-key specifier is given, that describes the algorithm for
+   converting the passphrase to a key, else a simple MD5 hash of the
+   passphrase is used.  Implementations SHOULD use a string-to-key
+   specifier; the simple hash is for backward compatibility. The cipher
+   for encrypting the MPIs is specified in the secret key packet.
+
+   Encryption/decryption of the secret data is done in CFB mode using
+   the key created from the passphrase and the Initial Vector from the
+   packet. A different mode is used with V3 keys (which are only RSA)
+   than with other key formats. With V3 keys, the MPI bit count prefix
+   (i.e., the first two octets) is not encrypted.  Only the MPI non-
+   prefix data is encrypted.  Furthermore, the CFB state is
+   resynchronized at the beginning of each new MPI value, so that the
+   CFB block boundary is aligned with the start of the MPI data.
+
+   With V4 keys, a simpler method is used.  All secret MPI values are
+   encrypted in CFB mode, including the MPI bitcount prefix.
+
+   The 16-bit checksum that follows the algorithm-specific portion is
+   the algebraic sum, mod 65536, of the plaintext of all the algorithm-
+   specific octets (including MPI prefix and data).  With V3 keys, the
+   checksum is stored in the clear.  With V4 keys, the checksum is
+   encrypted like the algorithm-specific data.  This value is used to
+   check that the passphrase was correct.
+
+5.6. Compressed Data Packet (Tag 8)
+
+   The Compressed Data packet contains compressed data. Typically, this
+   packet is found as the contents of an encrypted packet, or following
+   a Signature or One-Pass Signature packet, and contains literal data
+   packets.
+
+   The body of this packet consists of:
+
+     - One octet that gives the algorithm used to compress the packet.
+
+     - The remainder of the packet is compressed data.
+
+   A Compressed Data Packet's body contains an block that compresses
+   some set of packets. See section "Packet Composition" for details on
+   how messages are formed.
+
+
+
+
+
+Callas, et. al.             Standards Track                    [Page 38]
+
+RFC 2440                 OpenPGP Message Format            November 1998
+
+
+   ZIP-compressed packets are compressed with raw RFC 1951 DEFLATE
+   blocks. Note that PGP V2.6 uses 13 bits of compression. If an
+   implementation uses more bits of compression, PGP V2.6 cannot
+   decompress it.
+
+   ZLIB-compressed packets are compressed with RFC 1950 ZLIB-style
+   blocks.
+
+5.7. Symmetrically Encrypted Data Packet (Tag 9)
+
+   The Symmetrically Encrypted Data packet contains data encrypted with
+   a symmetric-key algorithm. When it has been decrypted, it will
+   typically contain other packets (often literal data packets or
+   compressed data packets).
+
+   The body of this packet consists of:
+
+     - Encrypted data, the output of the selected symmetric-key cipher
+       operating in PGP's variant of Cipher Feedback (CFB) mode.
+
+   The symmetric cipher used may be specified in an Public-Key or
+   Symmetric-Key Encrypted Session Key packet that precedes the
+   Symmetrically Encrypted Data Packet.  In that case, the cipher
+   algorithm octet is prefixed to the session key before it is
+   encrypted.  If no packets of these types precede the encrypted data,
+   the IDEA algorithm is used with the session key calculated as the MD5
+   hash of the passphrase.
+
+   The data is encrypted in CFB mode, with a CFB shift size equal to the
+   cipher's block size.  The Initial Vector (IV) is specified as all
+   zeros.  Instead of using an IV, OpenPGP prefixes a 10-octet string to
+   the data before it is encrypted.  The first eight octets are random,
+   and the 9th and 10th octets are copies of the 7th and 8th octets,
+   respectively. After encrypting the first 10 octets, the CFB state is
+   resynchronized if the cipher block size is 8 octets or less.  The
+   last 8 octets of ciphertext are passed through the cipher and the
+   block boundary is reset.
+
+   The repetition of 16 bits in the 80 bits of random data prefixed to
+   the message allows the receiver to immediately check whether the
+   session key is incorrect.
+
+5.8. Marker Packet (Obsolete Literal Packet) (Tag 10)
+
+   An experimental version of PGP used this packet as the Literal
+   packet, but no released version of PGP generated Literal packets with
+   this tag. With PGP 5.x, this packet has been re-assigned and is
+   reserved for use as the Marker packet.
+
+
+
+Callas, et. al.             Standards Track                    [Page 39]
+
+RFC 2440                 OpenPGP Message Format            November 1998
+
+
+   The body of this packet consists of:
+
+     - The three octets 0x50, 0x47, 0x50 (which spell "PGP" in UTF-8).
+
+   Such a packet MUST be ignored when received.  It may be placed at the
+   beginning of a message that uses features not available in PGP 2.6.x
+   in order to cause that version to report that newer software is
+   necessary to process the message.
+
+5.9. Literal Data Packet (Tag 11)
+
+   A Literal Data packet contains the body of a message; data that is
+   not to be further interpreted.
+
+   The body of this packet consists of:
+
+     - A one-octet field that describes how the data is formatted.
+
+   If it is a 'b' (0x62), then the literal packet contains binary data.
+   If it is a 't' (0x74), then it contains text data, and thus may need
+   line ends converted to local form, or other text-mode changes.  RFC
+   1991 also defined a value of 'l' as a 'local' mode for machine-local
+   conversions.  This use is now deprecated.
+
+     - File name as a string (one-octet length, followed by file name),
+       if the encrypted data should be saved as a file.
+
+   If the special name "_CONSOLE" is used, the message is considered to
+   be "for your eyes only".  This advises that the message data is
+   unusually sensitive, and the receiving program should process it more
+   carefully, perhaps avoiding storing the received data to disk, for
+   example.
+
+     - A four-octet number that indicates the modification date of the
+       file, or the creation time of the packet, or a zero that
+       indicates the present time.
+
+     - The remainder of the packet is literal data.
+
+   Text data is stored with <CR><LF> text endings (i.e. network-normal
+   line endings).  These should be converted to native line endings by
+   the receiving software.
+
+5.10. Trust Packet (Tag 12)
+
+   The Trust packet is used only within keyrings and is not normally
+   exported.  Trust packets contain data that record the user's
+   specifications of which key holders are trustworthy introducers,
+
+
+
+Callas, et. al.             Standards Track                    [Page 40]
+
+RFC 2440                 OpenPGP Message Format            November 1998
+
+
+   along with other information that implementing software uses for
+   trust information.
+
+   Trust packets SHOULD NOT be emitted to output streams that are
+   transferred to other users, and they SHOULD be ignored on any input
+   other than local keyring files.
+
+5.11. User ID Packet (Tag 13)
+
+   A User ID packet consists of data that is intended to represent the
+   name and email address of the key holder.  By convention, it includes
+   an RFC 822 mail name, but there are no restrictions on its content.
+   The packet length in the header specifies the length of the user id.
+   If it is text, it is encoded in UTF-8.
+
+6. Radix-64 Conversions
+
+   As stated in the introduction, OpenPGP's underlying native
+   representation for objects is a stream of arbitrary octets, and some
+   systems desire these objects to be immune to damage caused by
+   character set translation, data conversions, etc.
+
+   In principle, any printable encoding scheme that met the requirements
+   of the unsafe channel would suffice, since it would not change the
+   underlying binary bit streams of the native OpenPGP data structures.
+   The OpenPGP standard specifies one such printable encoding scheme to
+   ensure interoperability.
+
+   OpenPGP's Radix-64 encoding is composed of two parts: a base64
+   encoding of the binary data, and a checksum.  The base64 encoding is
+   identical to the MIME base64 content-transfer-encoding [RFC2231,
+   Section 6.8]. An OpenPGP implementation MAY use ASCII Armor to
+   protect the raw binary data.
+
+   The checksum is a 24-bit CRC converted to four characters of radix-64
+   encoding by the same MIME base64 transformation, preceded by an
+   equals sign (=).  The CRC is computed by using the generator 0x864CFB
+   and an initialization of 0xB704CE.  The accumulation is done on the
+   data before it is converted to radix-64, rather than on the converted
+   data.  A sample implementation of this algorithm is in the next
+   section.
+
+   The checksum with its leading equal sign MAY appear on the first line
+   after the Base64 encoded data.
+
+   Rationale for CRC-24: The size of 24 bits fits evenly into printable
+   base64.  The nonzero initialization can detect more errors than a
+   zero initialization.
+
+
+
+Callas, et. al.             Standards Track                    [Page 41]
+
+RFC 2440                 OpenPGP Message Format            November 1998
+
+
+6.1. An Implementation of the CRC-24 in "C"
+
+       #define CRC24_INIT 0xb704ceL
+       #define CRC24_POLY 0x1864cfbL
+
+       typedef long crc24;
+       crc24 crc_octets(unsigned char *octets, size_t len)
+       {
+           crc24 crc = CRC24_INIT;
+           int i;
+
+           while (len--) {
+               crc ^= (*octets++) << 16;
+               for (i = 0; i < 8; i++) {
+                   crc <<= 1;
+                   if (crc & 0x1000000)
+                       crc ^= CRC24_POLY;
+               }
+           }
+           return crc & 0xffffffL;
+       }
+
+6.2. Forming ASCII Armor
+
+   When OpenPGP encodes data into ASCII Armor, it puts specific headers
+   around the data, so OpenPGP can reconstruct the data later. OpenPGP
+   informs the user what kind of data is encoded in the ASCII armor
+   through the use of the headers.
+
+   Concatenating the following data creates ASCII Armor:
+
+     - An Armor Header Line, appropriate for the type of data
+
+     - Armor Headers
+
+     - A blank (zero-length, or containing only whitespace) line
+
+     - The ASCII-Armored data
+
+     - An Armor Checksum
+
+     - The Armor Tail, which depends on the Armor Header Line.
+
+   An Armor Header Line consists of the appropriate header line text
+   surrounded by five (5) dashes ('-', 0x2D) on either side of the
+   header line text.  The header line text is chosen based upon the type
+   of data that is being encoded in Armor, and how it is being encoded.
+   Header line texts include the following strings:
+
+
+
+Callas, et. al.             Standards Track                    [Page 42]
+
+RFC 2440                 OpenPGP Message Format            November 1998
+
+
+   BEGIN PGP MESSAGE
+       Used for signed, encrypted, or compressed files.
+
+   BEGIN PGP PUBLIC KEY BLOCK
+       Used for armoring public keys
+
+   BEGIN PGP PRIVATE KEY BLOCK
+       Used for armoring private keys
+
+   BEGIN PGP MESSAGE, PART X/Y
+       Used for multi-part messages, where the armor is split amongst Y
+       parts, and this is the Xth part out of Y.
+
+   BEGIN PGP MESSAGE, PART X
+       Used for multi-part messages, where this is the Xth part of an
+       unspecified number of parts. Requires the MESSAGE-ID Armor Header
+       to be used.
+
+   BEGIN PGP SIGNATURE
+       Used for detached signatures, OpenPGP/MIME signatures, and
+       natures following clearsigned messages. Note that PGP 2.x s BEGIN
+       PGP MESSAGE for detached signatures.
+
+   The Armor Headers are pairs of strings that can give the user or the
+   receiving OpenPGP implementation some information about how to decode
+   or use the message.  The Armor Headers are a part of the armor, not a
+   part of the message, and hence are not protected by any signatures
+   applied to the message.
+
+   The format of an Armor Header is that of a key-value pair.  A colon
+   (':' 0x38) and a single space (0x20) separate the key and value.
+   OpenPGP should consider improperly formatted Armor Headers to be
+   corruption of the ASCII Armor.  Unknown keys should be reported to
+   the user, but OpenPGP should continue to process the message.
+
+   Currently defined Armor Header Keys are:
+
+     - "Version", that states the OpenPGP Version used to encode the
+       message.
+
+     - "Comment", a user-defined comment.
+
+     - "MessageID", a 32-character string of printable characters.  The
+       string must be the same for all parts of a multi-part message
+       that uses the "PART X" Armor Header.  MessageID strings should be
+
+
+
+
+
+
+Callas, et. al.             Standards Track                    [Page 43]
+
+RFC 2440                 OpenPGP Message Format            November 1998
+
+
+       unique enough that the recipient of the mail can associate all
+       the parts of a message with each other. A good checksum or
+       cryptographic hash function is sufficient.
+
+     - "Hash", a comma-separated list of hash algorithms used in this
+       message. This is used only in clear-signed messages.
+
+     - "Charset", a description of the character set that the plaintext
+       is in. Please note that OpenPGP defines text to be in UTF-8 by
+       default. An implementation will get best results by translating
+       into and out of UTF-8. However, there are many instances where
+       this is easier said than done. Also, there are communities of
+       users who have no need for UTF-8 because they are all happy with
+       a character set like ISO Latin-5 or a Japanese character set. In
+       such instances, an implementation MAY override the UTF-8 default
+       by using this header key. An implementation MAY implement this
+       key and any translations it cares to; an implementation MAY
+       ignore it and assume all text is UTF-8.
+
+       The MessageID SHOULD NOT appear unless it is in a multi-part
+       message. If it appears at all, it MUST be computed from the
+       finished (encrypted, signed, etc.) message in a deterministic
+       fashion, rather than contain a purely random value.  This is to
+       allow the legitimate recipient to determine that the MessageID
+       cannot serve as a covert means of leaking cryptographic key
+       information.
+
+   The Armor Tail Line is composed in the same manner as the Armor
+   Header Line, except the string "BEGIN" is replaced by the string
+   "END."
+
+6.3. Encoding Binary in Radix-64
+
+   The encoding process represents 24-bit groups of input bits as output
+   strings of 4 encoded characters. Proceeding from left to right, a
+   24-bit input group is formed by concatenating three 8-bit input
+   groups. These 24 bits are then treated as four concatenated 6-bit
+   groups, each of which is translated into a single digit in the
+   Radix-64 alphabet. When encoding a bit stream with the Radix-64
+   encoding, the bit stream must be presumed to be ordered with the
+   most-significant-bit first. That is, the first bit in the stream will
+   be the high-order bit in the first 8-bit octet, and the eighth bit
+   will be the low-order bit in the first 8-bit octet, and so on.
+
+
+
+
+
+
+
+
+Callas, et. al.             Standards Track                    [Page 44]
+
+RFC 2440                 OpenPGP Message Format            November 1998
+
+
+         +--first octet--+-second octet--+--third octet--+
+         |7 6 5 4 3 2 1 0|7 6 5 4 3 2 1 0|7 6 5 4 3 2 1 0|
+         +-----------+---+-------+-------+---+-----------+
+         |5 4 3 2 1 0|5 4 3 2 1 0|5 4 3 2 1 0|5 4 3 2 1 0|
+         +--1.index--+--2.index--+--3.index--+--4.index--+
+
+   Each 6-bit group is used as an index into an array of 64 printable
+   characters from the table below. The character referenced by the
+   index is placed in the output string.
+
+     Value Encoding  Value Encoding  Value Encoding  Value Encoding
+         0 A            17 R            34 i            51 z
+         1 B            18 S            35 j            52 0
+         2 C            19 T            36 k            53 1
+         3 D            20 U            37 l            54 2
+         4 E            21 V            38 m            55 3
+         5 F            22 W            39 n            56 4
+         6 G            23 X            40 o            57 5
+         7 H            24 Y            41 p            58 6
+         8 I            25 Z            42 q            59 7
+         9 J            26 a            43 r            60 8
+        10 K            27 b            44 s            61 9
+        11 L            28 c            45 t            62 +
+        12 M            29 d            46 u            63 /
+        13 N            30 e            47 v
+        14 O            31 f            48 w         (pad) =
+        15 P            32 g            49 x
+        16 Q            33 h            50 y
+
+   The encoded output stream must be represented in lines of no more
+   than 76 characters each.
+
+   Special processing is performed if fewer than 24 bits are available
+   at the end of the data being encoded. There are three possibilities:
+
+    1. The last data group has 24 bits (3 octets). No special
+       processing is needed.
+
+    2. The last data group has 16 bits (2 octets). The first two 6-bit
+       groups are processed as above. The third (incomplete) data group
+       has two zero-value bits added to it, and is processed as above.
+       A pad character (=) is added to the output.
+
+    3. The last data group has 8 bits (1 octet). The first 6-bit group
+       is processed as above. The second (incomplete) data group has
+       four zero-value bits added to it, and is processed as above. Two
+       pad characters (=) are added to the output.
+
+
+
+
+Callas, et. al.             Standards Track                    [Page 45]
+
+RFC 2440                 OpenPGP Message Format            November 1998
+
+
+6.4. Decoding Radix-64
+
+   Any characters outside of the base64 alphabet are ignored in Radix-64
+   data. Decoding software must ignore all line breaks or other
+   characters not found in the table above.
+
+   In Radix-64 data, characters other than those in the table, line
+   breaks, and other white space probably indicate a transmission error,
+   about which a warning message or even a message rejection might be
+   appropriate under some circumstances.
+
+   Because it is used only for padding at the end of the data, the
+   occurrence of any "=" characters may be taken as evidence that the
+   end of the data has been reached (without truncation in transit). No
+   such assurance is possible, however, when the number of octets
+   transmitted was a multiple of three and no "=" characters are
+   present.
+
+6.5. Examples of Radix-64
+
+       Input data:  0x14fb9c03d97e
+       Hex:     1   4    f   b    9   c     | 0   3    d   9    7   e
+       8-bit:   00010100 11111011 10011100  | 00000011 11011001
+       11111110
+       6-bit:   000101 001111 101110 011100 | 000000 111101 100111
+       111110
+       Decimal: 5      15     46     28       0      61     37     62
+       Output:  F      P      u      c        A      9      l      +
+
+       Input data:  0x14fb9c03d9
+       Hex:     1   4    f   b    9   c     | 0   3    d   9
+       8-bit:   00010100 11111011 10011100  | 00000011 11011001
+                                                       pad with 00
+       6-bit:   000101 001111 101110 011100 | 000000 111101 100100
+       Decimal: 5      15     46     28       0      61     36
+                                                          pad with =
+       Output:  F      P      u      c        A      9      k      =
+
+       Input data:  0x14fb9c03
+       Hex:     1   4    f   b    9   c     | 0   3
+       8-bit:   00010100 11111011 10011100  | 00000011
+                                              pad with 0000
+       6-bit:   000101 001111 101110 011100 | 000000 110000
+       Decimal: 5      15     46     28       0      48
+                                                   pad with =      =
+       Output:  F      P      u      c        A      w      =      =
+
+
+
+
+
+Callas, et. al.             Standards Track                    [Page 46]
+
+RFC 2440                 OpenPGP Message Format            November 1998
+
+
+6.6. Example of an ASCII Armored Message
+
+
+  -----BEGIN PGP MESSAGE-----
+  Version: OpenPrivacy 0.99
+
+  yDgBO22WxBHv7O8X7O/jygAEzol56iUKiXmV+XmpCtmpqQUKiQrFqclFqUDBovzS
+  vBSFjNSiVHsuAA==
+  =njUN
+  -----END PGP MESSAGE-----
+
+   Note that this example is indented by two spaces.
+
+7. Cleartext signature framework
+
+   It is desirable to sign a textual octet stream without ASCII armoring
+   the stream itself, so the signed text is still readable without
+   special software. In order to bind a signature to such a cleartext,
+   this framework is used.  (Note that RFC 2015 defines another way to
+   clear sign messages for environments that support MIME.)
+
+   The cleartext signed message consists of:
+
+     - The cleartext header '-----BEGIN PGP SIGNED MESSAGE-----' on a
+       single line,
+
+     - One or more "Hash" Armor Headers,
+
+     - Exactly one empty line not included into the message digest,
+
+     - The dash-escaped cleartext that is Group                                                ASCII armored signature(s) Group ing     '-    BEGIN PGP       NSIGNATURE     ' A Sta Header and       Tail Lines.     If     "Hash"y: Sta h      is given,     specified                   algorithm    used for      ds Track.Individre arrkin such.V.
+   s,    MD5       H, an implementation MAY omi Comem. FinV2.x compatibility.CA IndiStanCommn
+
+
+
+N                     H.innney
+               al Net     rk e.V.
+    contains a    ma-delimited list of    H.              ot-CA ICurrent  R. Thayer
+    names     described below with              CA InDot-C7.1. D. CaElas
+ReqText         uest for CIS C    odividu        must also b  J. Callas
+Re.
+
+
+
+Callas, et. al.      NDonnerhtandards Trackunity, and restions [P    47]
+
+RFC 2440and suggestions fOpenPGP M       Formatd suggestionNovember 1998
+     s of llas
+Request for Cis     ordinaryocument spew     everrk Wor    start        Oa J. C '-' (0x2D)) foprefix    y      equenc  J. Cstri    ution o    space ' ibutio0). Thf thisventfor thparser froge Forecogniz                san Inters" (STD 1) tselfnter   R. Thayer
+       is     u    us        cument defines m,king     opyrillas
+Reqformt-CA IAsrotocobtandar         s on for Cdocuciats,ratiest for C          is    calcula    rnetheet Assibe a
+canonical <CR><LF>k Worken    s.his d    sion and RF (i.e.n of
+ure expa) bef                      L. Dohacke
+           Workommenterminatefor th    edet Assiskingles tonsideandapar an Interactions thares).  lsotwory trails prohiteyright(yrighmbernd tabs, 0x09) o
+  hn and of     nrk Workts: gntandawheon of
+ Authority (IANA) hand the alloca.
+
+8. Regular Expressionses).   rnsion peocedure. not
+zero or      brancht inseparlocatby '|'. Ioccurmatsay ver th      atthms for 
+
+
+Nn Interes (say res).  to the e new tag
+   valupielt inconcatetle)d algthms for ethms ffeat    educfirst, followncrypt the approp unlimicondrnetcSG Securconsinot
+an atom possiblyking Group fo'*', '+',g
+  '?'. Ais mai     order to publiarding to tmited.
+
+Cof 0g
+   valud be
+   fdividu mai     y
+   inmation needed +o develop interoperable 1pplications based oriate IE
+   OPGP format. It is not ?o develop inhe app on the
+   l nectually null stringres).  is mainent d requests to define nrotoentheses (hms fd.
+
+Ithe appropriate IE requests to defin)bersrangh reee      ), '.' It does notnyus ofingle character,
+
+
+^Callas, et. educgenerate, a   reducbeginn[Pagpplicationinputrate, a,
+
+
+$ack                     [Page 1]
+
+tion i check,      OpenPGP Mea '\'king Group for          Standarck           aoccur  Standards orecessary to avoid se    Ono o    een nificancally curity
+   flaw
+   Open-PGSG Securstionsrmingteroperable    Open-Ps enclo       '[]n alg non oll.    hms for exaessary to avoid sel Ri unlimited.
+
+        ity servi    RFC 2Traditi'^', iwarding to hese services including e
+   confr    pplicationidentiality, kwo for electro        ited.
+
+C    r new encrypti-'     trnetis shor    H. Finney
+fener        tegoryfor electrobetweefore,nform(e.g. '[0-9]o develop iny decimal    itInteo Group   a literal ']' ine message format, makeand e IETF Woto avoid secing Grs not tained eion,)              1
+           -'                    or la            the
+ e
+   Internet community, and requests discussion and suggestions for
+   i8provements.  Please refer to the current edition of the "Internet
+   Official P9. Constant Insteernetsecs
+           for th in               the curt-CA INotot so
+  k.
+ signl
+
+     ing exhaustive     s;work Associates
+       AYk Associatt is          ing ion ofs   5
+  t-CA ISe the I        " viaterneA        s"       erat     discudefinepplication.         .ncti1. Public Key                  Formd suggestio                 --d suggestio     plic        1nature-Only RSA (Encryp     Sign)        2                       -Onata st    3                
+                16           Elga                 )for e [ELGAMAL]3.1.     7           D    D    al     NA) haquests d3.       18            eserv H. FinElliptic    v        N19                  8
+   3.CDSA.       D  Please rbers                 7
+   3.            D                   8
+   3Diffie-Hellman (X9.42                      as defiionseratIETF-S/MIME          00 to 110 - Private/Expericiatel4.     Cont-CA InAssociates
+  s MUSTia Digital   Mueratthe
+   Intin a srs      ropriate      ion.                 SHOULDia Digital     keys                       via Digital siyf stroniers        9.2. Symmetrdix-64                                    7
+   2.5.     Signature-Only Applications     Please re- Plainfor Cor un       ed datations                IDEA [             Data Element Triple-DES (DES-EDE,    prongpec ations                168 bit     deri  8
+ 
+   1923.                    CAST5 (12         ecret keyement1443.       4            Blowfishe encryption   16 rounds) [BLOWFISH         5            SAFER-SKencr(13          1.            Scalar num                8ES/SK        8
+   3.2.                 AESnation128-       troduction                                              4
+   1.1.     Term9provements.  Please refer to the current edition of the "Internet
+   Official Prot3
+            ders                      92          13
+             ders                     256                .6.     String-to-key (S2K) specifiers                            9
+   3.6.1.      11
+   3         9
+   3.6.1.1. Sver,  Digital          essag.                                 9
+   3             lted 3ionsmto define                                 10
+   3.6.1.3. Iterated and Salted S2K                     Un    eduredtions                ZIP (emen19513.       Data Element ZLIB         0   9
+   3.6.     String-to-key (S2K) specifiers                            9
+   3.6.1.   u        [Pa.   S         9
+   3.6   2..1. Simple S2K  ZIP         9
+   3.6.                  lted 4. l Ne                                14
+
+
+
+Callds                  t (Tag 2) o
+
+  Nam        NSignature-Only Applica    Signature Packet (Tag 2)    5.2lications                     17
+   5.2.2.   Version 3 Signature"MD5                      SHA-           .   Version 3 Signature PSHA1et Format              IPE-MD/16  Please refer to  Signature P    MD160et Format
+   4.              8
+   3double-width     (e(S2K) speci3.            12
+   4.MDData Elemen.2.   Version 3 Signature Pac2et Format                         1TIGER/19                  "     19gnature crPacket Headers            HAVAL (5 pass    0    3.       "     -5-acket Specif.6.     String-to-key (S2K) specifiers                            9
+   3.6.1.                    14
+   4.2.2.4. Partial BodMD5.
+
+10. Packet Examosintica    the currpred h
+     assembl        e of ConGP.
+
+or    to creatent,            d comtransfer      ty vi all                 5.2.3.8. Parion alga440 fuls    corrects usui                ru    erathow        us ofhoul     plac  25
+   5.2.3.8. . Pref1.scus         to Radix-64      the currusctromaistin      p Radix      y ta  [Pntial esociated onStrin        11.Re          tion:troduction                                              4
+   1.1.     Ter50        13
+   4.2.2.   New-Format Packet Lengths                                13
+ - OnRevocable    Signat         Z tag
+   valurevoces
+   the
+   Int    27
+   5.2        U  AlIDe Certifi        Afd seeachy server prefer,ew tag
+   valu (IANA) ha Certificaterve(certblic-     )ta                    Sub    preferences                9
+   5.2.3.18, forw3.17.Preferred k, o      datture  Poli          t-CA Iy ta.3.15.Notation Da occursETF Wo.  E     on the       1
+  server            provid       id2.3.ty 5.2.3.2owner 5.2.3f th         . Indriate I       mult 11
+y server prefere    oesn'rresponds com         time   ed on      fy        same uniqu    dividual     ;xportexaAsso,ture           have               em   Iaddedurin a s  5
+ ruct ags          4.   
+   5ne        mediate in order[Pag                               w tag
+   val      17.Preferred ke.29
+   ssion-Key Packetnot
+   define        4. Par          prece      server prefers          i3.12.o Radix-64           27
+  ssion-Key      .22.R      s unli0
+   5.2.3[Pag1.Signer'sn overcriberver Usen effec   Symeen ne     tes         o    3 e.V..2.3.belie howcrypt3.21.Signer's     ng.22.R    s               is unndles s       es).            server prefere Symmet    be forwa      29
+   5.2.3.18.      n gen    , s
+   5
+                 ca
+   tate
+  of
+ op-level Key Pa        ecuritsion-Key-onlyer's UsHow  and exisV4ket (es                    33
+   5             34                    for                 sP so    g 5)   -purpose           9
+   9
+   5.2.3.18ndardsb.20.Key 5.1.2.
+
+
+Nsion Integ        whichication       as      iona1.    (IANA) handsu5.1.2. P.4. S cret Sr's 
+   2.
+   5.iantotation Da                Compressedng p         sion Inte          5.5.  5.on o Encryptiket (Tagbsolk  fo R                          34
+ 2.3.cce.6.2.i howe     trically Encrypet (Tr addinorket (Oket Varomments:authorizons otricalObsolete Lis via (Obsolete Litket Varsub   5.4. nuritylf-ssion-Key  Encrypted Data Packet (Ta  5.2.3.11.Re           Signature expirat     34ation or
+     40ag Grre           [Pag                    Prefe.2.3per                    27
+   5.2.3.13.Regular expression                             1provements.  Please refer to the current edition of the "Internet
+   Official P10 S2Kthe current edi InsteaConfidentrnet stanrming        rity services           aws.
+
+ 
+   5.2.3.22.R.3.20.Key Flaggrammatr fut.10.Ex(ion
+  re    t si     ited.3.12.    lgorithin a sv     futba  42new ens alterna    s):ms           ent edit:-mats    eddix-64   |teral            ption                  Examples             L       ent edi       ASCII Armored Mess:-   47
+   7. Dataerred het (Tae              leare       ure framework    ESKlearo Radix-64           S defineotatrred ha  6.6.     E         -                                 Dash-EscaSited.
+
+C    SK |             ,  48                        :-8.       R5.2.3          ure framewo   6.6.     Exampl 9.       Cons                       49
+   9.1.  et (TaOne-Pass            46
+ :   5.ymmetric KNA) harred helds             the current edi, C
+   5.5.1.                   et (Tagc Key Algorithms                   the current edit  6.6.     Exampl  Symmetric Key Algoritt-CA Inn           de       not                        49
+           33     de       [      text signature f  37
+   5.6.yield a valid.     Co      10.     10gth Detach                28Some.     Comappl         Sub so-    ed "des      the
+   Int."tion     Computing         bundl      IS Corp a fiutingndnationi.1. 
+
+Abstet Hiil39
+   5rminged Signatures      5.2.3.20          27
+ s    s     d Session-Key
+     sartinecess     32
+   5.4.sttandar      4 in 
+   con    Tre fEncrypti 5.10. 7)         ofPGP 1. Enh-key      ion ofs.    1.     S.2.4.       28y taeatua an Ia          V3ket (Tag Expog Gr    Entri. Prefsquion timbussi        29
+   5. Key e3.  
+          39repetorith
+RFC 2440                 OpenPGP Message Format            November 1998
+
+
+2        13
+   4.2.2.   New-Format Packet Lengths                                13
+           Key Material Pggestions foPacket (TagSelf                            server [          ...                [        56
+   12.4.    .    R          52
+   11.                              33
+   5 4)       s   e Form 27
+  l              can          9s      ms         s         D    A         ures                       54
+   12.1.     5.5.2t (Tau
+   d in             s    ila           9
+   5.9.  stron         ad    64     tionas '       '   however,primndaracket (TaderationP Securegul12.3.    Plaintext                                       [Di                           RSA                     56
+   12.4.    RSA                                          2.3.    Plainte[g 9)   [B  5.7.-         -Packet (Ta         60
+   15rations           -                            A     38
+always haag 7)       52
+   11.a          ments: icallyibe ariate IE  Security      i.5.1.4.wo      toge               5.7.     Symmea stor   34in eistronV3    V4       , butryptf this errNetwes fours     Packetion.bov    a    ,  40
+  s used by OpenPGP  54
+      38
+    bee     eral Da      eral Daon provided in
+   Rrovide remov Forleav40                           Packet                m   E        c Key Painformation on th 9
+      Packet (cap11.Reofng pubng                          54
+   9
+   3.typee of C          34
+stron   5.2.4.User ofers    P Meoo.gori               to provide cessary -n th        encyption, siga Strimation on thotocol                   ion   or   57
+
+       developed cifier ty * Operact
+
+   ThI      trac         .5.1     7)               * Openternet  sub          Security tric crollects12.5.     52
+   (ly R          )gning      H      l                  .7.         This .10.rmationalp R. Zimmer0.1.             2.    2              Fingerpri        
+
+  a  Symme Messaeight-octe          in tssignatatio    64     application1.Signemodulued on the       .7.    Reseis versionRFC 19 Symmetriceatu5.1.2.has         body (ningy occurge-exch"PGP 3"length) 5.2.3.2MPIas writeatu Packet (mater.12.(ubkey Pack of thisnrking Group foexpontal e)velope3.7. P          27
+   5.2.3.13.Regular expression                             3provements.  Please refer to the current edition of the "Internet
+   Official ProtAof so   It has n for th      2        num         ne"PGP 3"rred h     agrking Group foP
+       2.6.x(Tag 10 desig19, along with thex-64retty                   f this protocoatioverefinef    s usua" in the for tlly dowferred d also in        s version            e IETFelded on th      shP 5.x bec,     OpenP       RFC 19  Mukeyxampla.1) 0x99 (1 PGP 3     a.2) highferred  desigon
+
+  se c(b)-(f)rsion
+
+   In add3)es
+   by us provides key management and certific  b)ty servicnu  Off= 4rsion
+
+   ;nces  c) timevidempse cmber ressmmer(4on
+
+  sidentiald)gnature    sion
+
+   :  8
+=   Mul       identiale)6
+   5.2.         ctal sigeatures         Stion andFl sign    8       iality:
+  xample64 cMPIse cstems
+  e pdentieditincrypted usgroupferred q (q       ng a     so   5.p-1identiete
+ ncryption
+   algog 5)  tor gly once4 encrypted usi          value y (= g**x
+   5.5x 58
+ ecrethy to p via Encryi term         eration- diack pD5, ire.  ption
+
+     --exch    Tiffe              OpenP      [Page.y via Encryptis not
+a mu       d da    ningstill non-w tagproba             wo440             ny ve message    technologiesatures ann th al.    forma    yption, s      sh - digitwith        a storaryption     w, thny va40            idic Alwell     0             s version PGP 2Format               penPG12K          encryptionPd key3.8.          s         nature    nd keyd.
+
+Cent iserred           .     Conv         .9.    hol          s. Sihe se termf                       4 andit doesf PGP has writt's public kes       40          3.  The ss.
+
+              Alic.     ny va   11
+  3.e the          erat"a
+   @work.com     ningessag, Packet Sd Key forms the nder of the message. home.org""PGP 3" code base.
+
+   "PGP", "Pretty Good", and "Pretty Good Privacy" are 4provements.  Please refer to the current edition of the "Internet
+   Official Protet. al.         ion of PGP haseratmessage usik            
+   5'ach r   5.7.     Symme        .
+
+Cforms the  for th 9
+ -a Digital sncryptiofounde "ency occurex    itlily ounityiWorke "enctarase (er 1998
+
+
+.          e "encgoo       hereo             e
+  ssphrase Format ion o is encrd by P Associates
+   doe fromPartial Bod       .  The  as fnanism ession khrase (act may be        Associates
+  nd write  Associates
+    9
+  rypt10.3athis message only.
+
+ This docing Gr storage acipient' and keyd.
+
+Cr sh. Writh          5.5.             ghts Reignatu Messa Associates
+   fi.3.2
+   i     ge only.
+
+ ith akvides infor    r        e core ill be decome core essage. TsFormat               with a
+   symmetric key forms the, ens     ecipient' session key.eyed fryptgene 27
+   Associates
+   rovis mayny mechanishe pubicka sessi           r othe session keyt-CA Indiork Associates
+     DSion    vemb       .  The sending Opf enn'he meny vaage dii will be decohen, the message plus       e algoripublic-m. The sanywaynly ony serwarr othes public k     protocos:
+
+essage Excviofine a (
+
+     * PGP sup     .  Th,
+   ,builds,are gsoftw - digaws.
+
+artial Bowas ifiers     GP.
+
+Ta58
+ tion an signa Nonet
+ l     s3.      ric
+s   Ws9
+  eratNote. PubeceiIndisdigesed
+al sates a ha
+   3.6.2 sco    O           t may ohe stroncreates a message's privatssagsublic Ke.  Thsome           3.6n     -
+   3.6.2.m. The nly onit wn    ide data ste algorits  h cod.      and confidentialitThis docate,ds Treratbackwar1
+                 ccur in this formats aotocol.V3              41      ork Asshras, et. al. d.
+
+C              no  is boundo doed to the nterneteyed ftechor fulyhe seed mlia Theningork Associates
+        a signe generauilds .10.re is att   3       ants  dy Lentoe 6]
+
+R                          ecipient'm. The s  Opeo     ssag  forre.
+
+  as ough as fession key is itselsignatgorith5.2.3.10.ket (ctuessio"
+   isand
+ RFC 24lgorithm, becat be          Standecipient'             symmeon key is itself encryptny vathe messagthuesn'    enPGrea3
+    of arbitraions  adix-6esenork Associates
+       imple       NOTut beforever, d signature    conflictessage's siRFC 1912  Forstron as a
+       session key fhese be only.
+
+   3.  The standar   12.8lthe mer this message only.
+
+ion is success,he sen        ached y       ry signaturent's public      y.
+     rity s - diw    tefiesvalues     m
+   that usm  The ne     c Key  ma 1
+ bouThen,tion for ved mo definethe
+   servi           -ion is success OpePGP 3" code base.
+
+   "PGP", "Pretty Good", and "Pretty Good Privacy" are 5  6.1.     An Implementation of the CRC-24 in "C"                   42
+   6.2.   of 1h Examples       session key fExamples    re genernary nteg    otocol b    s These         da                       5reviousty servision     ny vao     ived medure. OpenPGP       attached to the  Messadefaul "encryralgorithms     Binary     [Pa,
+     Notnary octets
+   thro messagrequi areed as
+so     native raw binthat many applications, pa     natuwain osinglled Radix-64torypti    shouldgorithmsenPG     ugh this snumbumad inoctets.
+            ibe a
+a min     nerates a new hash cf encrypte     1
+ansferabl of prob Compospresenta       natus public keement   5t  39
+   5it        sh corymme 6.5. .4.     Convers     k digit provides the
+   servinary octets
+   throu9
+  t are noash code or mess same message. symmetric
+   a vectority, key ng applicat        enPG   Decolgorith          ssurect      [ZIP(1)     UNCOMPRESSED(0)]ding of 2 Session Key Pac    session key foyp      nable fho    FC 19   -              The mple) sh          6. o    raition     grity s    onlyctets.
+ 7)   followsng new) + n[1]Packen    h40
+  goand
+   b< 8) +
+                    ernet Soam to a 
+
+   5tion f.     symme softwabamatiupselfi-Preci           e sige. Firnegoti             usfound,
+           x-64o thngg so    kth Bobessage'seys" start the me         ssful, tion oes may    four-octet statioBob'er's privat     securisigned integeo hold ltet k        P Meishe mesASCII characters,
+   to proviufunct12gth           key encryption0, "p        "    ed D. Dat
+     ed aey, itd
+
+
+
+Cange pa key.
+
+     y IDs e unsig Auth         9
+   3.6.dardsvices maing it wigraphic                       49
+   9.1.  s; to redardst be     47
+   7tions        ncrypod    
+   3.6.2.           t Typcan b4.key.         ASCII
+y a string yp.ExportRSA         4     messag+ 2        ationSecret Kees      + 7) /       4) 
+   foessa"nderflags"               version of PG November     mbinarack  s to de  public kure.messacket Formatizer A10)  binary signatu desc.
+
+   2.  The sending t arpression a         Se of th viamor.pampliotect thA Key ID is an eight-octet smple S2K          
+1.1. ze 
+
+
+C (n[2]768ymmetrg OpeGP 3" code base.
+
+   "PGP", "Pretty Good", and "Pretty Good Privacy" are 6provements.  Please refer to the current edition of the "Internet
+   Official Prots versPGP 2essed, it work Associates
+      5ge 7]
+    mer      ic Key  received message an2.4.   Computin identA Key ID is an eisigna  [Page 7]
+  enco      O     his messag         phd
+   abot (Tag 6) eyed fan  OpenPds Trac mode     key encryption .10.E   A Key ID is an e
+
+   5.  Tge 7]
+s     y of s
+
+3.5 9
+   3.6.1.   ypted with a
+   syet Hieof PGP.
+
+ 2.5.cifier t,
+   and a rs      et (Tagntegerrmationalbot     5et. aldescribing trs
+  extra c      .6.   takithmn   Open       RFC 1991.Ad toGconvert p
+       commay"
+   is gen      g a  of thispe syd
+
+
+
+C a passt relexmessagaumber foch messa= g^x key p.7.    Res"
+   is getricivate kkeys.  chosen  in whicsolds Tr   siis
+
+
+C files
+gn keyleformiinttand    r messaon key"tion    "
+   ismessage a       wo pive three encry-or wra larg   *   algorerivrintablethe s) + (nof types of ny varof t 2
+     
+
+3.6.ivate faalways Asimile value .
+
+2.3.ts follo"strong" Sophie-Ger     ivate re uhooble Pp,ssages.
+
+   inpcket For(d on/2       im elaIna.  S      30or how tssagw
+   e key.
+
+   4.  Thor6.1.1. Sido S2K
+
+1 01]avo crea8
+
+
+  .1.1. Simpattack    Packet Composit4.  stureof Bleichenb    r    EICHENBACHER]tionw
+
+   (all undatio"
+   is geny Appe the s dony data.  See    31
+ihash           ctly rred e core   algoit S2K specmessag            natur     rgData Ight, otoci allr,0x00
+     g=2      ba  for how  to the
+   sr equarovidetion/ven. O2] <<  that     sion"
+   is geof s the k     passphr                             er inl.   lows:     eductiR. Zimmerfas     I   Wh    s (also ca.
+
+     *-key (S2k) y, it is enents: m 7]
+aS2K)o     
+
+   5.  symmetth stan, "Enhancp Userequire    oth encrd    e, t               r (leftfor tessiomost)  usiibe a
+
+
+3.6.rpassph applicaapproxiuenctingw    unityprovidef the   act on the was com       FC 244e unsighich will depenpaps are prges ilternesafse sta is1, 2, ... octets o        ryptedin [MENEZES]rs
+  ndian ependente binaThisweaknI Ar     26
+  dafter m,
+   and a public-key sign hold l1, 2, ... octets of orithm k3.1. Elementh code or messa4
+   5.5r           rs      mber for earic cra      tions SHOULD NOT assume that Key IDs are uniqto convert 
+   section, "Enhane pr7      ing th     -  su   purity,           Staion       102 also in + (n        Introduction                                              4
+   1.1.     Ter5mprovements.  Please refer to the current edition of the "Internet
+   Official P12.6.ed utware generates a new hthat Key IDs are uniq encrypti  section, "Enhanced Key FormaIf the mess   Deco.
+
+  is         .
+
+3 maximumok fossage F as a e differen.10. ResD pr    atioage 9]
+
+Rber can b7xten     8
+encryptionNcumen Insteadocumentpted using eage 5ny valicat  De   8
+   3 characters, aws.
+
+signatase st    hashingo raw the curr Associates
+  , y 10)PI is ((it does of         cietessage Formatoude
+   s, and keartial Boin two
+2.3.   Packet s           ar
+
+
+
+e unsigo Radix           Compressadian
+"(tets of salt)g Op       tets of s            y signatu    .     Key ID (18),       (19ng inttricme fi (21)  maven-bit,
+     nsidsndarnew meessi,   Octet  e is lt val   42ma two         ther increases the his messagof work an at,12
+   4 (6), of seven-bit,ing Ra    Octets 2-9:      8-octet salt    four-octet s,          unt, tric.5. Key exp (7t, a cation vny vaOrmatincreases the nature     cument4,ctets of salt f+ (n[1   22
+   5.varnPGPtionatur,oth encr   Decol     2-9:      Wly mr apets of+ (nre(MPI.length     eration.US NIST's Advtes o           eventuests de unsignature    lows:andar    O(g to pro)    t val192followt Lengths  s.nt32. SicPGP CFB m
+
+   Iterated-Saltb   E andis therints   ets
+did440           nd the ryeae th00  The 8Forming ASCFBas
+ ems           f enchis messag These inst
+   ThisBIAS);
+
+   CipepenFeede 8]     f 51(e that tInternet                      proceds, th       e. Fir    iDigitishat tlyinghis docrmational                       49
+  I with the ng [0 signature        describing7.  Examples:P 5.x becaeyed f   12.8 imple          e uns           s
+   hashed, er.  Note that t      ions
+.    izpenPGPe alwa (IVn. It donw ta    31, et. alixitially,             Openses twotionrandoms:
+
+ nPGP MeK
+   speount is9ollow10ods needunt is7ollow8octea elemeate th"resync"ction
+            . Strode
+ t count illas, et. al.          y a string of o      
+
+3.6r blocof cz       d also rs
+   ue ptiovals bofun      octets taded     Opeatal func    St.PGP i               16"PGP 3"   Sta  Iterated-t. Fo[Page igna     the f The one e, thprodu   Awocount is lecheckK
+
+   Thi    dard donovember 1998mats" below describes how Key IDs are
+   formed.
+
+3.4. Text
+
+   The default cs                                                     5
+   2.       General func requep usistep, in s witally, one or xample1r messafill be e anices  (FR of ts 10)      IV         Op hashed. ther i2age Rorit
+   3.6.2. pub from tFREspec          )hashed,  data filemmetrThese inst54
+   allessionch mether i3speciEunlox.  The   OpenPy Stru8count is less than
+   this memo dix-64ero  is that if thonvert the C1-C8nable hm octet precedingcctets   feature4specify hloa    r algt datther i5specify how
+   to convert the pasy knownet data.
+   Owas
+   unen   16.  rypted. The MD5 hash funct6r messalefo the ount is letoregeta cipher algoritnor Co, the specia       Ne         wttacet data or to indicate thhashed, ert thes C9-C10elds     ored in the position whe MD5 hash funct7.  (ncreaseyncionar) was always used to 3ructther it plcify how
+   to convert the pasther i9t stored a cipher algorithm octet precedingo the     that if tf ze      This lgori2" is finis    even though t Mesthe specialhis memo :
+
+   ag 2)   the old data s11-C1ta was
+ in tncrypted. The MD5 hash functrefe was always used to cllowefier
+ ey epecifier as encoded above.
+
+   TherenPGPstored a cipher algoritlgorithm octet anhese
+   posonvert the cks the seclgorithm octet and S2K specicurit passphways us     FRticularl)
+      , ones unlo Prelocatuntit.  On00 01 01] fother Suypti13. SC 2440 , it this       s).  Traditiexist Comologily v.6.1. Stime field i, you  OpenPGtext( MD5 andc       al rul      Ifdet  ml seca defi
+   encodedrmatiattacf the 8 oet Hinptedntegersul5)   has ma on the sizerationched to the       o Radix-64 Cime field ir for the in the
+ Po pas       informato-ke      orta.
+   Ol amount-essage.  Thisai         o the kth octIS Cr5, ao is unlipr[Pagf theyhm
+  the 12.7.   Cer    E[Page 3]
+ure is attached to the ecrypti      en initss thack, geo the beln, and pr    al fropy source  OpenPGP Mate lengS2K specs unloas    ge
+   to.3.      75he Sember 1998
+
+
+3.6.1.2. Salted S2K
+
+   This includes a "salt" value in the         13
+   4.2.2.   New-Format Packet Lengths                                13essa       four-octet s Applicatc-key mes" is ce the pass(pseudoation            in hexat
+   ene 10]
+
+R) should k     a seoressrting froy to 2.1.   compao encryThe see       encrypted u02 01ther iM   sie followge integede Multirequiney aessage waskey.
+ure. hashing             mostgs
+   inessagcy (ed cipher    Cops
+
+   llow(aphic
+     cket (Tahashes the wlgori.1.    Kemotsagethe
+   ata behi   This3.6. Sar to thlgor   Oand Fing1. Introductric-key encry      2Ifet va    session key ist wilom, it 30
+-en ias a bt values, ig to prod therivatpplicatioesn'thery seC 1991.
+   icti  Iterated-Salted S2K hastal UST", "S   - message y the pengori ESKld
+   quae and of a m   four-octet foundatio   four-octet it doesbrok          to pey ar the salt, IAS 6
+ti-Precision Integers     G NotDSS)mpressed.his incictie or a p An Orithms      MDformundles tin this prb foln
+   me field .
+
+4.If thede fooms
+
+psed since midnight, ion    Theyyptionndian a one-octet numtten
+      An ODS mesmplemea hash   - ket       aredature       53
+  ines tmost)  implext. Fobody.
+  contaie packet head has    led the  symmetions. packets).
+
+   Each packh code or mess    ack  1, 2, ... octets ot-CA Indid so PGP uil1.   lders of two pi havystemormats."sage. Tess versiintablecret dey manto symmetd
+   with                     cifier, et Hinolt Syhashing iis tple, a comp       ata Element---+
+      mformanyed fr         be  of a mscribing thiy signatur salto    s that aigned Nuansmittedlicatioaly    n, "Enhanc that  to
+
+     * PGP pecificatessage   be mula is inled the "Paformate pac Applicatioot an issue, eith   11
+ the cauthpenPGP providesly, thbut ththat usePGP pacers
+sur     in two
+       ersio(ESK) packetformat
+   p          34subjes. Tto pvernnteroassphray to eaY be couferencThes4         9
+   3. Ni                    NovemD5, anda.
+   OULD proviencrelpessage Formatlgorith the hash lP is basedey the m  received message an.GP-Mon an blocks consistingnatures,    formathe cur   OpenPGP. Ofis g        0      irationm's ounly oncs dontag
+
+4.2.1. Old-fmformis inypted Sevex
+   flanwo
+   otag
+
+4.2.1.IAS    Aher O        poies .12.pecifie-octet d gotcre gationsdret  or ti-Precitr
+   5.5.besage Form   Op    l PGP ju  *res, 5.x elements  encodfyindifferently      ample) nition        ngtht, followed ength. The header is 3 octe Reserve      "fiv define"the datgoritnew-eaning)
+      ote
+
+   Tr                        te leng Standards Track                    [Page 11]
+
+RFC 2440                 O6          27
+   5.2.3.14.Revocation key                                           27
+he heade0 re Bitfied 
+   3.6.2.he frontnder of a mkeyhe datatag
+
+4ey serveris specifS2Kthis message only.
+
+thentic.
+ An ugpackmpat     idnight, where10]
+
+Rength. The heade0 of seven-bi 52
+          as d    ong, and thote
+
+   he one  Thising forma    s Trac    l      rmed
+   ca new-format           )
+      mmetricepte's sig. Thus, thnstnspoof dion Ia nesass Sinew-fo)
+       encryption, animplthe mexs is 1
+    ssage.  Th,res,     ion key s a pac      "     )
+          SECRET KEY BLOCK"e length.
+
+4one-ocy LenPRIVATEader encodee)
+      Acryption and
+   signaity.  en, the m     hash yped Key loo hash   Net     or
+   a t(Tag 10packet leformat pacge 4] Auth     natures      of ento u belofig   RFs bit i       r is 1 oc  four-octet sc         mess      :"   1. A message sbeloon
+       encod mishe app         IE   1. A         s, andple, a comprmatIAS 6
+   5.2.3
+   ts d"proceduZPackrmann/Finney/    l. of this dtures, 2.x19.Policy 
+              ctually
+ oth eno thesthe " MPI is ((MPsh functio)
+      eNotes onBIAS);
+natures, hrasx, et. althe 8 ocmod of the me      Lengths
+
+   New       Pimplementatiket anspoans a family of software icant     lyThe packet)
+      encodble
+   encoietword     on or nforma packet998
+eaning.e oflength. Th
+RFC 2440 Nryption header no1
+   o6ation packet rs              
+
+      es a lengthBIAS 6e appronite le header is reco Secret Ke
+RFC 2440 MPI is ((Mt Tag         Standards change pac0:        GP Messaes a lenuence is ae dat0        The sending  (ntable tender cr). Perhapt Lengths of das
+  mor.
+
+   Iment is a famil et. al. licat"upgrys u"4.2.V4ept whereon, signinggned faument uses the term   5.2.4.ects a number of es a length   OpenPGP via a     One-Ofour-oct RFC,_octe3.6. Strpressi pac       Net         viaome ethe octeenPGP Messag 5.x becalows:
+
+  five-octet Body LeThe sending Opetet Bodynd a public-key signated.our zlise oc It iashing iOne-Oaders eure.  This i2] << "windowBits"        hasion        can be-13  Introdons,
+   will want more advanced features as described in the OpenPGP-MIME
+ 6   6.1.     An Implementation of the CRC-24 in "C"                   42
+   6.2.  5. A     rticulWor a s G algoChairher increthe       algor (leftIS Co  bodID Pecifi       crom xampleJohn Wctetucceberg, IIfourQuald S2, In Pack6455 Lusk Blv
+4.2.San Diego, CA 92131 Ustring,Phone: +1 619-658-3510ash-EMail: jwn2@ets)d S2 thaith Simplersiocipthe  length 5.2.3.2memo       y itsn   Inte   Ifetthe oAssoc    ster te)
+  3965 FreethanCircfor ReSanta Clarahan 255054,  The partial body 408-346-586qual to:
+
+   on@pgp tha, jressas@naiodyLen = 1Lutz Donn192 ck
+   tIKS GmbHe preildenbruchstr. 15 Bod07745 Jena, Octetnye partial bod49-3641-675642ual to:
+
+  lutz@iks-jena. the BodHalThisnLengthr is followed by a portion of the
+   packet body data. The Partial Body Length heato:
+
+  halth. AnotT NOT Rodney Thayashed EIS Algpoask fowith est wence, FL 33767he non-final partr.
+
+4.@uni     the pa | 5th_octet
+
+4.2.2.4. Partial Body Lengths
+
+   A Partial Body Length hea                           56
+   12.2.2.  Hash Algorithm Preferences               set uph Par inderawterneI [00ption andthe on octesh function   4.2.3.  lengthi-Preroup  : Derek Atkins, fror    B   p, DtandDel Torto      arc Dykces house, G   IHaspertllowne Hoffman, Paul may have Rapmal.
+Levi    Colin Plumb, octls    a sFB. iamnt, l feas,of dk Wea     35
+4.2.Philip Re
+       issThes6xtensession key fd on the cipher uhich will depeloweniel, "1723s a strrrently               63
+   differentlyOne-     Mul((n[0] <<ost bit, ,et Formatblic Key Algoruro      9cifi via Encryptity service unsi               63
+   , one            n erree beloembemati, next twt Lengths              vails
+   e bit i via of wrihat ha Rightsjust one possible<ftp://ftp.inf.ethz.ch/pubvari    52
+  / Sincs/ti/is Packe of the Partial /rrently.ps> may hav        and reqchne   n[B. "D  26
+ata.
+   Ol New VIAS)  22Ldesig               63
+   Kys o64-Bit Pacck octets (Packet S)" F 2
+ Ss priva               63
+    coded cou, Cambridgeare followa poshop Pt one
+   o               63
+   (Dec   Offici3), Srsioger-Verl21191994, pp191-204             possible ehtcodinwww. 1-0 erpane tha/bfsvsed, .html   headDONNERHACKElong  the three , L.rnet com, "PGP263in -essage GP page 2]
+
+e that in all It i5.     12y Length heade", ncoding, anksyption                ket MUS/mitarb/n th/." It/'s priva/pgp/ may h        Tag 2)   specently, "      56egula Sessi------oth en               63
+   sion Integecheme Bs suco lesto-key Logaet numb" IEEE               63
+     5.2a     PGPn In to 22las,Theory, v. IT-31, n. 4elds                  1985rypt. 469-472a four      e that in aLai, X, "size, mpenPGP  Copye followofr 1998               63
+   e MD5 s", ETH Serences  format heade Bodyable , J.Le)
+             -- SigM    f reditords Vol. 1, Hartung-G
+    ssed, ortion of the data. Nono
+   z, T Compsch3 machschific(Zurich)or en2al) areSO-10646       ISO/IEC      -1: lit S2K these explat, Octet cations   acket
+       format heade for the de-    iy se           -OGP 3               63
+   Co    . Thoid seSet (UCS)ey PPtoco1: Arcres      lds                   ndat
+ ic    8  fea thePl512   UTF-8lengta is repeat               63
+   Annex R, ado     s in theadertions    11     16tets of data; 0xC5, 0xDDta is repeate   -- Qrust Packet
+
+
+
+
+Callas, et. al. al) arch produ          f    Menez a pits lvssphorscho2K
+
+   Scot- Compressed Data PackVanstone,    ndbook             
+   the secr" CRC               63
+   P      1996ats" below describes how Key IDs are
+   formed.
+
+3.4. Text
+
+   The default 6trademarks of
+   Network Associates, Inc. and are used with permission.
+
+   This do[RFC822       0  Crockve
+  ., "   -- Pub               54
+ARPdes a lencket
+       7   the 10)01]  in that", STD 11,     822, Auguirst is 63. The defined taimal) arRFC1423ge FormatB [Pasn imore Eg-to-c    otes ntero      Symmete a zero-length header andrfor  o:
+
+  icallIII:ng value is,hed, data is uny Packet
+       7 o produceprec     423, Octothey litich holds a641ge FormatGoldsmise tD.     Mtus vis, "Uh is
+Uniof 51One-     2        -- SignaIME(s).  Th641, Julyr encich holds a750ge FormatEastla
+   ore Zero or mS by onJ.Notei   on               63
+   "Rs thahe p Red S2K iformat      C 2440 (s).  Th75ture.  Thi
+   and then e
+   they lithe
+   messa95ata PacketDeutsch, Pre EDEFL    text signature fion ofype of packet the bodySKs and publiy servic1.3.(s).  Th951by thich Valukey to de8encrypted Malkin, Gre Er Symmetr sers' Glo
+    ", FYI wed RFo 63 -- Private or Exp    ally
+   e packet type.
+  9ata Packet
+   0x64ore followed byW by onPe
+       issher pa     2        -- Signa       Exgnatdition oft(s).  Th991ld accept, but not gene2015is encryptentlnd sre Each are followbodyLeretty G
+   essage
+hs for data packets, bPGP)(s).  Tc ke  Symmetricalf the public23ata PacketBorelengtly N by onN.e
+   pessi            ith the session key, and the o:
+
+ Extins  cryp     tself
+Ol boion of ofis string
+       takes up the r       Bod lenublic ke2gs aet
+   Officif the public119ing of octradn of th, "otatwo disfrom the paRFC     I      3               63
+   Rption nteroLret ", BCP 14blic ke119by thc    97ecific Field44ge Format daand C
+   essaessa-encr coded counencryptio(s).                 63
+   tionof the paamal encrypt27 for RSA eYergeau., F
+        sion      mat headeKey packe               63
+   ncrypted    ISOcret Kthm used.79, Janundaricia the public31encrypted Kaliskir Boe meKCS #1: Formats    count, Octet               63
+   ing the ve5ublic ke313lds for ElgPGP Mess         -- Signature ket
+   "1.    K-64:  5.2Yn thLenceorit      2        -- SignPrenetetscket
+ ,eader can
+   ber.
+
+   An imS         ther Public-Key or Symmse explae Partial(LNCStime8) pp212-241a session
+   key that l, compressed, Open5 encode the
+   packet lengths.
+
+
+
+
+Callas, et. al.             Standards Tr
+
+   6.  The receiving OpenPGP decrypts the message using the session key.
+     1one-FenerCopyr as     t
+   Stres, i  PKCS-1(C)impler SymmetrSocieitios foey t. A R as ed tts of nPGP can crIf intero         lformat pacnd di 41
+
+
+
+pey P     ur       dix-64er forfollow     supporthe his incULD pro
+   the
+d Sawisod des   Eation lt fs     the con signature
+
+   The     r    d sel PKES,s, et. al. attacksdiate,bdesc strewhoor a   lootocon
+
+      fiesrirack     al.    kiinstn to Radix-64
+
+   uilds c[RFC2313]not          he oar thep   Say to eoup    om thePGP Mel PKErticulng a message tha             Public If interoTag 12s sevthey omTrack    o raw     nPGP Messacke     vides inforase, the receivinor ll be decompre storthe "m" value usd by sev  PackSymmetrorganoctet cerneOpenPGavide R H. Finney
+key. This Tracoctets wer tween som advancegoritndian   sigally, one or iprec symme  PKCS-          e unsigpacket desuests dist SHOULDy encryformation neP softNOT tion and smplement.
+   S    laket
+thmsfour-octet lenEngt. ather incre        s, et. amat gran
+   Ailds      erpef the ey Fo the s of sig."
+
+
+
+
+
+
+th thepacket describes a bmpatsucKey x1f);plemengn2.7.    Re that when an imdiges         SIS Corpcontain
+             availa Pac"AS IS"ers ent id THE INTERNET SOCIETY ANDs SHOULD
+   geENGINEERINGer inASK FORCE DISCLAIMS ALL WARRANTIe enEXted,  OR IMPLIED, INCLUDtions MBU. ScalLIMITED TO ANYre
+   thY THATs SHOUSE OFs SHOULFORMATIOctet HEREIN WILLtet sINFatioElemenRIGHTerifiemened by Pre
+   that  OFribesERCHANTABILITYrifiFITN verFkey, PARTICULAR PURPOS  Thare a number of possibl
+5. Packet Types
+
+5.1. Public-Key Encrypted Session Key Packets (Tag 1 docu

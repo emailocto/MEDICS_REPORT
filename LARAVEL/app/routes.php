@@ -26,6 +26,7 @@ Route::get('users', function()
 
 Route::get('logout', function()
 {
+	//add logout hashing for security
   Auth::logout();
   return Redirect::to('login');
 });

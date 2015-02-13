@@ -1,6 +1,6 @@
 @import url(//fonts.googleapis.com/css?family=Lato:700);
 
-body {
+html, body {
 	margin:0;
 	font-family:'Lato', sans-serif;
 	text-align:center;
@@ -42,6 +42,8 @@ h1.home_header {
 }
 
 .top{
+	/*position: absolute;
+	top: 0;*/
 	height: 200px;
 	background-image: url("../img/home_bg_top.png");
 	background-repeat: repeat;

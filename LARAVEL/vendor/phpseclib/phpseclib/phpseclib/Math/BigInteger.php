@@ -2909,654 +2909,843 @@ class Math_BigInteger
 
         $temp = str_pad($temp, strlen($leading_ones), chr(0), STR_PAD_LEFT);
 
- ary prereturn $this->_normalize(new Math_BigInteger($leading_ones | $temp, 256));rary }trary /**rary p* Logical Right Shiftumbers.umbers. or BCs  *
- * Supp's by $sr BC bits, effectively divibaseand 2**an int.Math extensions@param  * Supp an intons 4 andision iary.
- *
- * Suppons 4 andaccess publicons 4 andinternal The only version that yields any speed increases is the one that  refer HP versi/rary functer tbitwise_r GMPor BC(an int)rary {rary prec-10,  = library.
- *
- * Suppobitrary precswitch ( MATH_BIGINTEGER_MODE )s base-2**2. twcasend division and
- * ba_GMP:**52 (ie. twoiplictatic $twoitrary prece largesif (!isset(n.  )e-2**52 (ie. twoase-2**26 wo = gmp_init('2'6, and er is a basebase-25number, doub-10, ->value-2**26 div_q(nteger sion ,**26 pow * va, an int16, cause the largestbreakogether is a b base 2**26 digits) to perBCd dim addition and sube precision flobcdivpoint numbers -bcbers'2't should, *
- *0be supported on most hardware and whosedefault: // could just replace _ln intewith tege, butDE_In allhough th() calls wts innTH_Bto be rewrittencause the largestd sho// and I don't wantsuchdoto th..HP vers As a consequence, bitwiseoint numbersogether is a base-e preci_rary doshould ogether is2**52 numbeision integer arithmetic -10, 6, and base-256 numbers.  Uses thLefP or BCMath extensions, if available,
- * and an internal implementatiomultiplyherwise.
- *
- * PHP versions 4 and 5
- *
- * {@internal (all DocBlock comments regarding implementation - such as the one that follows - refer to the
- * {@link MATH_BIGINTEGER_MODE_INTERNAL MATH_BIGINTEGER_MODE_INTERNAL} mode)
- *
-lefath_BigInteger uses base-2**26 to perform operations such as multiplication and division and
- * base-2**52 (ie. two base 2**26 digits) to perform addition and subtraction.  Because the largest possible
- * value when multiplying two base-2**26 numbers together is a base-2**52 number, double precision floatinmulpoint numbers - numbers that should be supported on most hardware and whose significand is 53 bits - are
- * used.  As a consequence, bitwise oeby granted, free > and << cannot be used, nor can the modulo operator %,
- * which only supports integers.  Althotle enis fact will slow this library down, the fact that such a high
- * base is being used should more than compensate.
- *
- * Numbers are stored in {@link http://en.wikipedia.org/wiki/Endianness litrary doian} format.  ie.
- * (new Math_BigInteger(pow(2, 26)))->value = array(0, 1)
- *
- * Useful resourcRotateMath extensionsInstead ofDE_INtop xernal beherwdroppt suhey're appendt suchE_INn intedmode stringHP versions 4 and 5
- *
- * {@internal (all DocBlock comments regarding implementation - such as thava/math in jdk-1_5_0-src-jftwaregInteger uses base-2**26 IS",p://en.witoBytesh as multipli posnteger precifer t> 0e-2**52 (ie. two$AMAGES OR p://en.wiAMAGES ORogether is a b posnd division and
- * bas==nificand is 53 bits - are
- *se-2**52 (ie. twoITY, maskN AN ACTIObitSE O->subtract library.
- *
- * Suppo116, and WARE OR THE USE OR OTNGS INDERS BE LIAr is a base-2 elseHE SOFTWARE OR THE USE OR OTHER DEALINGS INeger
- * @author    Jim Wmat.  ie.
-igginton <terrafrost6 to perord(R COP[0]@author    Jim for ($i = 0;g/licen>> $i; ++$i@author    Jim  WHETHER IN A8 *IED,lenit-lic) - 8 +tp:/hp.net/packageSE OR O
-
-/*(1 << ( WHETHER IN& 0x7)
- * 1) .IED,_repeat(
-
-/**xFF),ge/Math_BigI>> 3ormat.  ie.
- * (new MaNY CLn inte<THER
- * LIABILITY, n int+=ge/Math_Bigrmat.  ie.
- r::_prepMontgo%ery()
- */
-defigomery()
- * @!should -2**52 (ie. twoision integer copy @author    2**52 numbe$rc-jR OTHER DEALI5_0-src-jrl.zip
- *
- * ion consta);
-/**
- *rc-je Math_Bigand library.
- *
- * SupporSE Obase-16, and fine( * Ma*
- * @see Math_Big * Math_BigIAMAGES OR - should r::_remaindeesul
- */d division and
- * bas! OUT OF OR IN CONNECTION WITH ?BIGINTEGER_POWERor(der()
-) :BIGINTEGaddArray coion constath_BigInteger(pow(2, 26)))igInte6, and base-256 numbers.  Uses the GMP ftware.
- *
- * THE SOFTWARE IS PROVIDbottom"AS IS", WITHOUT WARRANTY OF ApeducIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. I * Ma EVENT SHALL THE
- * AUTHORS Oision integer EMENT. IN NO EVENT -/**
- * @see Mbase-256 numbers. Set random number generatorNTERNAL} Math extensionsThisNTERNAL} mis deAMAGatedHP versions 4 and 5
- *
-SD, IN $GER_SIGN'NESS FOR A PARTICULAR PURPOSE AND NONINFRINGsetR'MATHGER_SIGN'( * @see Mar uses base-base-256 numbers.  *
- * $es ae('MATH_s regarding impleumbers. RS B lengthvateequalsuch$define. UGER_crypt_('MATH_if it's loaND, morem;
-/**
- $cache[MnoPHP versions 4 and 5
- *
- * {@intedefine(all DocBlock comments regarding implementation rivare.
- *
- *ODE_INTERNAL} m
-/**
- *_BIGINT_helppporsizer uses base-2**2 posTERNAL} _exists(', 0);
-/**
- *_ED, IN'lue when multiply$('MATH_=', 0);
-/**
- *plementer::MatIGINTEGER_B//www.opensource.org/ATH_BIGIN''e supported on  * @seize &ntegE SOFTWARE OR THE U('MATH.@accesGER_DAT(0base5ory  Math
- * @pa2**52 number, d$blockPYRIGthe i>> 1.html  MIT License
- * @link i <;
-/**
- *//pear.nal implementation //EGER_DAT(-2147483648,ath_Fll be ) alwaynstaoduces mplementati e coome systemsl implementation will be uspack('n',nternal i0on wbe usginton
- * @license   http:trary precision ilibrary.
- *
- * Suppor('MATHbase-1, and base-256 numbers. ether ornot the caBIGINTis still valid.Rsion  not the caBIGINTEbetween $minGINTE$max where-PHP arbitraryumbers. canh a defined usy()
-oneS PROVIDEwo methodsm additll valid.PHP ->('MATHath_xr uses56
- *axumbers.
- *
-in @packagons 4 and 5
- *
-ary.
- *
- * Supp $arg1ons 4 and 5
- *
-opAL} alton <terrafrost@php.n2(all DocBlock comments regarding implementation - such as the one that follAPIcenseINTEty()
-('MATH_BIGINTs ust such a $ah_BigInteger
-,e Mat), precisia wa noton <terrafrost@pobjecPHP versith
- * @packT the base-vatestill suppor * IenseBC purposesNTEGER_MODE_INTERNAL} mbers.
- *p.ne,gInteg = falsath_BigInteger()
- */
-* Ran ==er genereger::_barrett()
- */
-d geneteger::_montgomery()
- * @s numbe* @see setRandomGeneratorary =php.neion constants
- *iIN AN ACT/**
- * To use the BCMath library   *
-       * Precision
-     /**
-   2IGINTEGER_BARRETT', 1)comparttp:/Math_* Precieger
- /**
- * @see Math_* Preciteger::_barrett()
- */
-define('pow(2, 26)))*
-    *
- * To use the    ** Precish_BigInteger::_prep// /**cess is bigst@pw thin Bi, swapsion integer arithmerce.org/licensen Bi
-     */
-    var $precmiTRACT, TORT OR     *
-   empIGINTEGER_BARRETT', 1tractionon@access pri possible
- *onetion
- */
-define('Mase-erform operations such1BIGINTEGER_BARRETT', 1)s->valueath_
- * THE S * numhis->value be s */
-define(the i=r
- */
-
-/ltri
- *
- *VI Jim Wigghp
-
-/**
- be supported/hor  Ji * whichoy()
- ('MATH_%ed.  Udoesn comork because_MODE_    */
- wrivabe more likatioto occuatioan otheregative **
-    eg.used fax ser140arbitr('MATH's ts base255tion.
-o th'd me libothry
- *
- * (i5 base-10, ba = 145uthor    Jim fact tdefine( 5 preciaODE_INows - ion fofrivate
- o therts inameter -139ond parbhe nu. ie
-    /**
-     notis ling
-     *er's areTH_BIlyivate
- ._MODE_t.  The ss private
-   var $hex;
-
- are and whose ccess pra wholeation('MATH_BIGINTEuntil you findbase-o thei  * thi stren exge__wakeup()
-  uthor    Jim   * @va,/
-   sufficiently sms lide 'Ms,incluvate
-ihooRANTthe
-ou'd get a);
-
-/**
- *    incane('Mge.
- *
- he second parb diretth_BigIn. * Cos fac-10, base-16,  WITHO binDATA] cyourerts b WITHO1incluprobabilitytring(); // outputs 50
-     *higact at()
-     *t.  The sgcceszatioa.
-    me as 10 is.
-  phpseclib()
-  s arounRANTi
-   y()
-OVIDEechniquraryscribed reci:e as 10 is.
-  http://, 0);o.stackexch>toS.com/quesAL} s/5708/   *
-   -a-BigIn-BIGINT-from-a- {
-   graphes tly-secure-('MATH-ED, INk = false@accessne('MATH_BI_r $prelibrary.
- *
- * Suppo
-
-/*teger::_reduce()"\0"t sh:Matltiplicationne('MATH_BIGINnteger a* @see Math_BigInteger::Mat/**
- * @seelislue,axrebyc/abe)              ->n, ot $biaxthis->hex ismath'):
-    ons areh'):
-    ->/hac/abo'MATH_BIk = falsewhile  long mutmask
-     *ath'):
-      >=THER
- * LIABILITY,           
-       his->value,ath'):
-     ion constants
-                          dMODE', MATH_BIGINTEGER_MODE_INTERNAL);
-        }
-     esult[MATH_BIGth_Big8xists('openssl_public_encrypt') &&
- * R   break;
-                cagory  Math
- * @pa;
-            }
-        }
-
- !defined('MATH_BIGINTEGER_OPENSSLed('bcmath'):
-                    define('MATH_BIGINTEGER';
-
-    E', MATH_BIGINTEGER_MODE_BCMATH);
-         ne('MATH_BIGINTEGEed('b,     //             define('MATH_BIhan create a thousands and thousands& !defined('er
- ication?
- *
- * @access private
- */
-define('pritring
-   HP versions 4 anIPROVIretains  asions = *    inclugive/**
- g *  gene * @accesision ed.  if s pri* @rettimeout seconds have elapsed,@package     up optir()
-     * @HP versions 4 and 5
- *
-on <terrafrost@php.net>
- * @access  public
- */
-class Math_BigInteger
-{
-    cess  public
- *afrost@ph {
-    (all DocBlock comixedg implementation - such as the one that See {@link 10)
-   www.cacr.math.uw    loo.ca/hac/about/chap4.pdf#page=15 HAC 4.44}gative = false;
-
-    /**
-    Pons  * Random number gene,+) {
-     er generator function
-     *
-     * @see setRandomGenerator()
-     * @access private
-     */
-    var $generator = 'mt_rand';
-
-    /**
-     * Precision
-     *
-     * @see setPrecision()
-     * @access private
-     */
-    var $precision = -1;
-
-    /**
-     * Precision Bitmask
-     *
-     * @see setPrecision()
-     * @access private
-* numis      )/**#   *:   * @access priv
-
-    /**
-     * Mode independent value used for serialization.
-     *
-     * If the bcmath or gmp extensions are installed $this->value will be a non-serializable resource, hence the need for
-   ons[  Be* a variable that'll be serializable regardless of whether or not extensions artwo base-2*library.
- *
- * Suppo2BIGINTEGER_BARRETT', 1)starer'] {
- h as multipli$ /**
-teger 
-    /**
-     * Holed.
-     *
-/**26 nextions () requires PHP 5    5.2.0 per <10)
-   php.net/gmp-NTEGER_MS>
-    /**
- OTHERWISE, ARISING FROM,
- * OUT OF OR IN CONNECTIOGMP &&NTERNAL} o use theBIGINTEGER_MS')se-2**52 (ie. two$ perform operations such as000000000);
-  cision floatinNTEGER_MSB$xnumbersbe supported on     *p           def) <              defin', 0);
-/**
-  resource, R_MODE_BCMATH', 2); Math_* numTH_BIs($xlue when multiplying 7FFFFF}
-
-        if be _BIGINTEGER_MODE_BCMATH', 2);ision inth_BigInt       
-     H_BIGINTEGERntgomery()
- * @sxEGER_MAX_D value when multiply// use 64IGINTEGER_BARRETT', 1)x->_make_oddne('MATH_BIG       dit that may beOTHER
- * LIABILITY,e used x >erts bion.
-    ('MAT    DATA] ccess pns are      nosions = array  use t
- * Pure-RESS pecifieda->toString(); // o    *INTEGER_MAX_Day ber the BCMath or ther()
-     * @access priMATH_BIGINTEGE);
-       * numMATH_BIGINTEGER_SE',       26);
-             BARRETT', 1)numbial_        MATH_BIG           breaktru)
-     * @access NY CLA{
-     !* @see s   dR_MAX_);
-/*GINTE>OpenSSL v000000);
-                    // 10**7 is the clo('MATH_BIGINTEGER_x      if (!000000);
-                  'MATH_BIGINTR_MODE_BCMATH', 2);
-        ned('Mwo      // the largest   define('MATH_BIGINTEGER_BASE_FULL'2**26 without passing it
-                     default:
-                    52) instead of using 4503599627he closest to 2**2SE',       26);
-                      define('MATH_B   default:
-10',     2000000);
-                    // 10**7 is the closest to _BIGINbase-256 numbers. Mak); $e current);
-
-/**
-odd upon u        if (!e($x) == 'GMP intistegeache@accesun( !defmatchesche[M    ,base-* @accesadND, EXPiPHP versions 4 andselude floats if @packageode constants.
- *
- * @access private
-   26);
-    uses base-2**2cation and division and
- * base-2**52 (ie. two base 2**26 digits) to perform addition and sub*26 setbi
- * nt numbers -, noupported on most hardware and whose significand is 53 bits - are
- * used.  As a conseNY CLAIM, De, th[
- */
-
-/*      case igInt] % r $gill truncate 450359962.org/l   defaultise oned('MATH_Bmbers -'1 together is a base-2* can the modulo operator %,
- * which only sa.org/wiki/Endianne   default:0] |= GMP libraryesource($x) && get_resouChe
- *   *
- zatio && g$cache[Mions , and base-256
-Assum/
-    fu$t  5
- *e    iy($matset0x32@access privhntegn error e
- */ofe.
- -80.an
- e main motnts.er tenseth')) {
-        }
-
-        diED, bute-$base. p_tags($matches[::et_class($x) ic librar ~$x;
-  BIGIcrossa/hac/abe     ATH_3);
-/***GER_a websitINTEARE IS PRtegeron_replace('=>', '', strippublic
- */
-class Math_BigIversions were repBoolea*#@-*/
-
-mentation - such as the one that ABLE') {
-       uses ) {
-         en.wikipedia.org/this/Miller%E2%80%93Rabin_ionsabase_test nit($s-' . b== '0x($x) ;
-  }.  (tr'';
-                             case !isset($versions['Header']):
-           8   case2!isset($versions['Library    if ($er'] == $versions['LibrarTH_BIGIy calculatGHT HOLDERS BE L    * @see setPrecrgest digit that // 256   case 9 "Note (controll/
-    fuase -2 base-$base)"        $x = str@cobaseStandardsIgnoreSGINT();
-        }
-
-   BIGINdefine(>= 163) {    =  2; } strfloor(1300 / 8 @packa*
-     *    /**
-     $this->06lue = bcmu3($this->value 854294967296', 0); // 4294967296 == 2**3281se-2 = bcmu4              6$this->value = bcadd($this->value, 0x1006800 * ord($x5              5$this->value = bcadd($this->value, 0x1005600 * ord($x6              4                     }
-
-                 000 * ord($x7his->is_negativ'4294967296', 0); // 4294967296 == 2**324300 * ord($x8              3$this->value = bcadd($this->value, 0x1003700 * ord($x9k;
-            '4294967296', 0); // 4294967296 == 2**323000 * ord($1l($this->value 2$this->value = bcadd($this->value, 0x10025   default: + 3])), 0);
-  2'4294967296', 0); // 4294967296 == 2**32
- | ord($x[$1ak;
-           1$this->value = bcadd($thi      }
-            * ord($2 $th        for ($i = 0; $i < $len; $i+= 4End upon _BIGINTEGER_MAe use.break;
-           MATH    if (MATH_BIGisEven() or !isO
-                  return;
-                }
-                $this->value = gmp_init(0);
-                bision i numbrobin2heJ!)
-y() but when    !@lin
-                $this->value = '0';
-                break;
-            default $genrs tay();
-        }
-
-      ision i def base is 256 '0' is equal to ord('0'         default:
-                $this->value = array();
-        }
-
-               // 10**7 is the c0' is equal to ord('0') or 48
-        // '0' is the only value lik      break;
-       array(2lue when multiplying two ase -16:
-                if ($base > 0 && $x[0] == ~e this per http:nternal implementation        $x = substr($x, 1);
-                }hence the need for
-ions s, $zerat sefine('MATHH_BIGINTEGER_BASE',  bin2hetion
- */
-define('Mbin2he , $x);
-
- equal to ord('0'3,is->5     7     11    1     1ase M19    2     2GMP:
-3H_BIG3ase M4H_BIG4     4ase M5     59ions[$mx' . $x : '6H_BIG6ase M7H_BIG7     7GMP:
-8     8GMP:
-9_MODE_0H_BI10    10ase 10GMP:1INTEG12);
-       137 ? '-0x' . $x : '013     4     5   $t5);
-  6     x;
-  1     1     18   $t9           lue =19GMP:2TH_BI2     22is->is_negative = f2     23ATH:
-lse;
-2$temp2     2     2     26len($     27' . $     2   $t2 MATH3p);
- 3TH_BI313 ? '-0x' . $x : '03R_MOD3     3     3s->is3     3negat35     x;
-  3     3     3   $t3is->v3lue =4mp_in4     41e ? '-0x' . $x : '042>valu     4= ( s4lse;
-4= $th4     4     4x' . 4     4x;
-  4     48       cas4EGER_5t($te50e ? '-0x' . $x : '05     5     5$temp5s->is5     5     5;
-   5     5     5 brea5 MATH5EGER_6mp_in6p);
- 6INTEG61is->is_negative = f6_GMP:6     6$temp6= $th6s->is6negat6->val6x' . 6     6     6   $t6  cas7mp_in7     7_GMP:7                    7= ( s7lse;
-7= $th7     7     7x' . 7;
-   7     7 brea7lue =8     8TH_BI8     8     8     82e ? '-0x' . $x : '08lse;
-8negat8     8->val8     8     8     8   $t8 brea9p);
- 9TH_BI9_GMP:9     9     9$temp94is->is_negative = f9negat9x;
-  9     9     9   $t9  cas997 equal to ord      // the largestr::__clone()
- */
-define('MATH_BIGINTEGER_NONE'on aRNAL THE SOFTWARE OR THE  * (if present; otcoun          , either the BCMath or the ( MATH_BIG[$i]0x80000000);
-          a - (ie. oce base is 256 '0' is equal to ordDE_BCMATH', 2);
-pack                  define('MATH_BIGINTEG         define('MATH_BIGINTEGER_BASE_FULL',  0x80000000);
-                    define('MATH_NY CLAIM, DER_MAX_D be serializable regr()
-     * @access private
-     *str_pad($x, $l.1 "tants
- searchind a base-  cain2he         fning and then any characters that follow that
-                // (?<=^|-)0*foreaon aATH_BIGIasMATH_BI case  16:
-                       '-1'))efine('M      _BIGINTEGER_MODE_BBIGINrNTEGER_MODpack               $is_negative = fa_BIGINTEGER_MODssary, here, since doingric characters a*
- * To use the BCMath librarynk http://en.wikipedia.org/wiki/EnMATH:
-                        // explicitly casting $x to a stringng
- ide_dig    ;
-      ssary, here, since doing $x[!x toDIGIT2', pow(2, 52));
-       e prece   $thi== 1   dmultipttp:H_BIp_ining it on '-1' does (modInverse does $x[0])
-IGIT',  0x7n         breMATH_BIGINTEGER_$n_1   }     * however, $);
-
-         mber           if                $r     _1ER_MAX10);
-
-       r_nk http:/rwikipedia.org/wikATH_BIG$GINTreak;can1($nMATH base-1floating
- * pon - numbers*26 numbers tt sh$this->hex iOTHERWISE, ARISING FROM,
- * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR , 1);        $this->e used ngIntendomrnteger $ba, basebase)t.  The san infnumbe loop, hence  $x bBIGINTEGER_MODE )  c& (a earli_BIGINTE         break;
-default:
-               his->value = array();
-        }
-
-  temp = $tise operat        ,    MATH_BIGINTEGER_MODE_B++$* @see setPse does $x[0])
-                    ense
- * @li    _len = (ste prece       )ent; othEGER_MAX, either the BCMath or the6 to per~        . octMathll be _BIGINTEGER_MODE_Bense
- j, MA; CLA    httpj)    //peaj, here, since doing $x[0j    25Integer();
-
-             hardware and whosedoes (modInverse does $x[0])_MAX10_LE26    ieducjgInt')) {
-          little endiaormat.  ie.
- * (new Ma * (if present; otht, either the BCMath or$aFFFFFF);
-         that sn_          deubstry/**
- ->modPers r   }      // the largest!$yemp = $temp->mu&& x);
-         n_1we do pow(2, 52) inst             $j oths   $x = str_pad($x, s  case nteger();
-
-             $x = yreg_replac      }, here, since doingoing $x[0;
-               $str = '0x';
-                $x = substr($x, 1);
-       0' is equal to ord('0'raction
-        '$1', $x);
-         x, strlen($x) + (3 * str       $x = substr($x, 1);
-                }
-
-   case is_resourcgative = false;
-     rray(0, 1)
- *
- * Useful resources are as follows:
- *
- *  - {@link http://www.cacr.matHP versions 4 and 5
- *
- * {@internal (all DocBde constants.
- *
- * @access private
-  notice and thh_BigInteger()
- */
- an inte= arse-2**52 (ie. twoision e('MATH_BIGINTEGER_MAXnumt:
-   GINT(int) @see Mat/r::__clone()
- */
-BASEthis->hex is , dis%er::__clone()
- */
-
-
-   /**
-     * Conver = < STRr BC      $this-carr$x =0
-          nd any 0's that are prece         $th            $x = substrensions  this per ht oct* * Conve+ Negati('MATH_BIGINTEGegative  a BigInteger to a b $gen26 ?NTERvay grto p/ 0x40     onstbreak;
-   3NTEGER_BASE_FULL', which point, t'll let $t * <c-omplimen*.
-     *
-     * Here'_FULL             switch ( MATHomplimenpliment is set to    default:numbers, unless $tw;
-   * saved as two'e = array(M  break;rted, so w--  $str = '0x';
- $x);
-_unnotice       case MATH_BIGINTEGEesource($x) && get_resou Uses the GMP or BCMath extensions, if available,
- * and an internal         $this->value = $temp->value;
-                $this->is_negative = $temp->itle endian} foator function
-     *
-           default:
-                // base not supported, so we'll let $this == 0
-        }
+        return $this->_normalize(new Math_BigInteger($leading_ones | $temp, 256));
     }
 
     /**
-     * Converts a BigInteger to a byte string egati_(eg. bas
+     * Logical Right Shift
      *
-     * Here's;
-/**
- *       $temp = $cSE OR Os priv_BigInte& $x[  echo $a->toByrted, so we // outputs chr(65)
-     * ?INTEGER__slicer('-1'));
-      rted, so wBIGINTEGER_BARRETT', 1)egative numbers are saved as pnumbers, unless $tw     ase     ; --ompliment is set to true, at which point, thttp Conve|
-     * @param Bo                   default:mp->va1)) : $this)-256)p = $compar('MATH_BIGINTEGigInteger.php';
-  able resource, hence the n  // '0' counts'MATH_BId when, unless $two            $temp = newNithmeticIGINTEGER_KARATSUmoves ts base pack    d6:
- nsee s (if neatioary) != f (ot (or    appropri
- */AMAGES OReplace('=>', '', strip_tags($matches[(all DocBlock comments regarding impleme&& gER_MOD == 'GMP':
-                        $this->valuend thousands of ne uses base-2**26igInte DAMAGES OR  AN ACTION OF CONTRACT, TORT: $temp;
-ALINGS R OTHER DEALINGS as multiplication and division and
- * base-2**52 (ie. two base 2**26 digits) to perform addition and sub possemptynds of nDEALINGS IN        $str = '0x';
-          precisiosion floatinal iemp, chr(0));
-    recision >> 3)) :
-    ogether is a base-2**52 number, doublision inEGER_M       $this->value = $temp->value;
-                }
-              ($this->precision >> 3)) :
-                    ltrim($temp, chr(0));
-   bcmo   case MATH_BIGINTEGER_MODE_BCMATH:
-                if ($this->value === '0') {
-                    ree = array(MAsion flo&emp, chr(0));
-  $bytes = $temp!     $multipliteger::_barrett()
- */
-de             $current = substr($currIGINTEGER_MODE           // the>precision + 1) >> 3) : '';
-                }
-
-    $len = (stmin(     $multipl,           }
-
-n >> 3)) :
-     ('MATH_BIGINTEGsion flo) { // eg. ifcase MAT, chr($tebe supported on  * (if present; oth     }
-
-                        $ch ( MATH_BIGn $comparisone;
-                 mpar do we switch between Karatsuba multiplica0', 0) > 0) {base-256 numbers. Trime, gmp_init(0)) == 0) {
-            P versions 4 and 5
- *
-Ax);
-str(strNTEGER_DATA', 1);
-/**#@-*/
-
-/**#@+
- * Mode constants.
- *
- * @access private
- od($current, uses base-2**2chr(0);
-          = $temp->  if (ord($bytes[0]) & 0x80) {
-->toBy = $temp->  $str = '0x';
-      hardware and whose           if unle
- *cision >>ormat.  ie.
- * (new Math_BigInkipedia.orgbase-256 numbers. value)Rduce(P versions 4 and 5
- *
-$inputft($reINTEGER_BASE);
- '):
-   ier mrted upon untision i     $result =de constants.
- *
- * @access private
- ) { //educe()         * | str_paNTEGER_VALUE', 0);
-/**
-(    return $ ?rent, 'fillt wh    return ,
-      onst$x);
-
-lue = array(0, 1)
- *
- * Useful resources are as follows:
- *
- *  -binaryIED, INs an internal imssen,   .ca/hac/about/chap14.pdf Handbook of Applied Crypt$xomery()string (eg. base Conve           }
-
-         6)).
+     * Shifts BigInteger's by $shift bits, effectively dividing by 2**$shift.
      *
-   de constants.
- *
- * @access private
- base256is_negat&$xt should ger());
-            if ($comparison == 0) {
-                return $this->precbS BE To u, dis *  ;LEFT* Co>value * <?p/967296', 0) * <?ph&=. $t *    i* Conver 8is -1
-                      }
-        $r
- */
-
-/*x       if (ord($bytes[0]) & 0x80) {
-        s/mitx>valu-256).
-   $bytes;
-            }
-
- e>
-   @acces)->value = a -1
-             reak;
-   8_get_contents();
-              egativ    str_
-    egationstf endirectly becauegativ.se-1er::_reduce()
- */
-_pad <code>
- 6, and base-256 numbers.  Uses the GMP or BCMath extensions, if av          $result;
-    }
-
-    /**
-     *n, otherwise.
- *
- * P[$i]] = tri/
-    furef (oday();
-            eg. base-16)).
-     *
-     * Negative numbers are saved as positive numbers, unless $twos_compliment is set to true, at wtle endint, they're
-     * saved as two's compliment.
-     *
-     becaed whenxp() is ca       $this->ision i8
+     * @param Integer $shift
+     * @return Math_BigInteger
+     * @access public
+     * @internal The only version that yields any speed increases is the internal version.
      */
-  mple:
-     * <code>
-     * <?php
-     *    include 'Math/BigInteger.php';
-     *
-     *    $a = new Math_BigI Negative (if ence doing $x[0se)
+    function bitwise_rightShift($shift)
     {
-_BIGINTEGER_MAX10GINTEGE* <code>
-  >   echo $a->? extecho $a->: -lean $twos')) {
-          e>
+        $temp = new Math_BigInteger();
+
+        switch ( MATH_BIGINTEGER_MODE ) {
+            case MATH_BIGINTEGER_MODE_GMP:
+                static $two;
+
+                if (!isset($two)) {
+                    $two = gmp_init('2');
+                }
+
+                $temp->value = gmp_div_q($this->value, gmp_pow($two, $shift));
+
+                break;
+            case MATH_BIGINTEGER_MODE_BCMATH:
+                $temp->value = bcdiv($this->value, bcpow('2', $shift, 0), 0);
+
+                break;
+            default: // could just replace _lshift with this, but then all _lshift() calls would need to be rewritten
+                     // and I don't want to do that...
+                $temp->value = $this->value;
+                $temp->_rshift($shift);
+        }
+
+        return $this->_normalize($temp);
+    }
+
+    /**
+     * Logical Left Shift
      *
- substrude ' * @re  $current = bcd /**o base-2**20,internal Con to convert is -1
-                     $temp = $compariso8ew Math_BigInteger( * (if present; otlic
-     *os_compliment is set to true, (</code>
-    chr(0) . )$bytes;
+     * Shifts BigInteger's by $shift bits, effectively multiplying by 2**$shift.
+     *
+     * @param Integer $shift
+     * @return Math_BigInteger
+     * @access public
+     * @internal The only version that yields any speed increases is the internal version.
+     */
+    function bitwise_leftShift($shift)
+    {
+        $temp = new Math_BigInteger();
+
+        switch ( MATH_BIGINTEGER_MODE ) {
+            case MATH_BIGINTEGER_MODE_GMP:
+                static $two;
+
+                if (!isset($two)) {
+                    $two = gmp_init('2');
+                }
+
+                $temp->value = gmp_mul($this->value, gmp_pow($two, $shift));
+
+                break;
+            case MATH_BIGINTEGER_MODE_BCMATH:
+                $temp->value = bcmul($this->value, bcpow('2', $shift, 0), 0);
+
+                break;
+            default: // could just replace _rshift with this, but then all _lshift() calls would need to be rewritten
+                     // and I don't want to do that...
+                $temp->value = $this->value;
+                $temp->_lshift($shift);
+        }
+
+        return $this->_normalize($temp);
+    }
+
+    /**
+     * Logical Left Rotate
+     *
+     * Instead of the top x bits being dropped they're appended to the shifted bit string.
+     *
+     * @param Integer $shift
+     * @return Math_BigInteger
+     * @access public
+     */
+    function bitwise_leftRotate($shift)
+    {
+        $bits = $this->toBytes();
+
+        if ($this->precision > 0) {
+            $precision = $this->precision;
+            if ( MATH_BIGINTEGER_MODE == MATH_BIGINTEGER_MODE_BCMATH ) {
+                $mask = $this->bitmask->subtract(new Math_BigInteger(1));
+                $mask = $mask->toBytes();
+            } else {
+                $mask = $this->bitmask->toBytes();
+            }
+        } else {
+            $temp = ord($bits[0]);
+            for ($i = 0; $temp >> $i; ++$i);
+            $precision = 8 * strlen($bits) - 8 + $i;
+            $mask = chr((1 << ($precision & 0x7)) - 1) . str_repeat(chr(0xFF), $precision >> 3);
+        }
+
+        if ($shift < 0) {
+            $shift+= $precision;
+        }
+        $shift%= $precision;
+
+        if (!$shift) {
+            return $this->copy();
+        }
+
+        $left = $this->bitwise_leftShift($shift);
+        $left = $left->bitwise_and(new Math_BigInteger($mask, 256));
+        $right = $this->bitwise_rightShift($precision - $shift);
+        $result = MATH_BIGINTEGER_MODE != MATH_BIGINTEGER_MODE_BCMATH ? $left->bitwise_or($right) : $left->add($right);
+        return $this->_normalize($result);
+    }
+
+    /**
+     * Logical Right Rotate
+     *
+     * Instead of the bottom x bits being dropped they're prepended to the shifted bit string.
+     *
+     * @param Integer $shift
+     * @return Math_BigInteger
+     * @access public
+     */
+    function bitwise_rightRotate($shift)
+    {
+        return $this->bitwise_leftRotate(-$shift);
+    }
+
+    /**
+     * Set random number generator function
+     *
+     * This function is deprecated.
+     *
+     * @param String $generator
+     * @access public
+     */
+    function setRandomGenerator($generator)
+    {
+    }
+
+    /**
+     * Generates a random BigInteger
+     *
+     * Byte length is equal to $length. Uses crypt_random if it's loaded and mt_rand if it's not.
+     *
+     * @param Integer $length
+     * @return Math_BigInteger
+     * @access private
+     */
+    function _random_number_helper($size)
+    {
+        if (function_exists('crypt_random_string')) {
+            $random = crypt_random_string($size);
+        } else {
+            $random = '';
+
+            if ($size & 1) {
+                $random.= chr(mt_rand(0, 255));
             }
 
-          </code>
-     *
- p = $compar    lue;oolean $twos_compliment
-     * @return Stri_BIGINTEGER*    include 'Math/BigI    * </code>
-     *
- er to basestartbstr($hex, $i.2**26 numbereg_match_all('#Oped when*26 numbe 'Math/BigIntegbase-256/base-    k eader how_repefollow    TERNAL} ss pe implemen    MODE_at0x400ry. Sus Nsuch a an couigSupplo
-     *ld mt 32-rnal i  breajavae[MATresu($bi64ment me as 1(empty($x) &onvertsplimentNTERNg*/
- uch S BEHP versions 4 and 5
- *
- * {@intearithmetied as positive numbers, unless $twos_compliment is set to trint2      $a-TEGER_VALUE', 0);
-/**
-ed wheba CutN canHold . $bits;
+            $blocks = $size >> 1;
+            for ($i = 0; $i < $blocks; ++$i) {
+                // mt_rand(-2147483648, 0x7FFFFFFF) always produces -2147483648 on some systems
+                $random.= pack('n', mt_rand(0, 0xFFFF));
+            }
         }
-  > 0 && $this->precde>
-  tocision <= 0) {
- th_BigInteger::_montgomery()
- }
 
-        return*/
+        return new Math_BigInteger($random, 256);
+    }
 
-/**#@+
- * Mode constants.
- *
- * @access private
-      2irece-10 number.
-     o true, un's an eint',r::_rpacode, 4hp
-
-/**
- * Pure-PHP arb than create a thousemp['retu> 3, chbase-256 numbers. DER-encod)) {
-  data is still valid.   ie-$base'Mat(which is p= 0) {
-     seeND, EXP   *
-e RSAn - suc keys
-    @vars facOpenSSLe is_object($x) && gg_repla == 'GMP':
-                    .
- */
-define('MATH_BIGINTEGER_DATA', 1)6)).
+    /**
+     * Generate a random number
      *
- access private
- ch is ASN1Lefine296 == 2e
-     * saved as twodefine( usex7FetRandomGenerator()
-   
-             R_MODE ) {
-          to per* Here's an examphis->va:
-     * <code>hp';
-     *ba CutCa*BIGIx80 |trlen($x) >val    >value = array(0, 1)
- *
- * USingl    git a bi->precision + 1) >>TERN || $nt64 seriWITHO   varh    
-      op_SIGN',* @acision iainclaalse {
-          iPROVIDdefaulATA]y($mat    to a bisi= gmbreatsor = nor.= $tc*/
-d   $divi_wakeup
-            r or bAGES OR o = falsebase)ibs($_Biglem solds tetty lse;
-
-        $dions[$matweP frguarante<?php
- lt = '';BIGINTEG        $resufirstits( THE *
-     * Negative numbers are save      return gmp_strval($this->value);}
-
-        5
- *
- * {@inte $result =teger('50');
+     * Returns a random number between $min and $max where $min and $max
+     * can be defined using one of the two methods:
      *
- access private
- saflt:
-ine('M**2
-ye
-     * saved as tw
+     * $min->random($max)
+     * $max->random($min)
      *
-     * Here's an exetRandomGenerator()
-   l let $tx /}
+     * @param Math_BigInteger $arg1
+     * @param optional Math_BigInteger $arg2
+     * @return Math_BigInteger
+     * @access public
+     * @internal The API for creating random numbers used to be $a->random($min, $max), where $a was a Math_BigInteger object.
+     *           That method is still supported for BC purposes.
+     */
+    function random($arg1, $arg2 = false)
+    {
+        if ($arg1 === false) {
+            return false;
+        }
 
- ATH_BIGINTEGER_MODE_GMP:
+        if ($arg2 === false) {
+            $max = $arg1;
+            $min = $this;
+        } else {
+            $min = $arg1;
+            $max = $arg2;
+        }
+
+        $compare = $max->compare($min);
+
+        if (!$compare) {
+            return $this->_normalize($min);
+        } else if ($compare < 0) {
+            // if $min is bigger then $max, swap $min and $max
+            $temp = $max;
+            $max = $min;
+            $min = $temp;
+        }
+
+        static $one;
+        if (!isset($one)) {
+            $one = new Math_BigInteger(1);
+        }
+
+        $max = $max->subtract($min->subtract($one));
+        $size = strlen(ltrim($max->toBytes(), chr(0)));
+
+        /*
+            doing $random % $max doesn't work because some numbers will be more likely to occur than others.
+            eg. if $max is 140 and $random's max is 255 then that'd mean both $random = 5 and $random = 145
+            would produce 5 whereas the only value of random that could produce 139 would be 139. ie.
+            not all numbers would be equally likely. some would be more likely than others.
+
+            creating a whole new random number until you find one that is within the range doesn't work
+            because, for sufficiently small ranges, the likelihood that you'd get a number within that range
+            would be pretty small. eg. with $random's max being 255 and if your $max being 1 the probability
+            would be pretty high that $random would be greater than $max.
+
+            phpseclib works around this using the technique described here:
+
+            http://crypto.stackexchange.com/questions/5708/creating-a-small-number-from-a-cryptographically-secure-random-string
+        */
+        $random_max = new Math_BigInteger(chr(1) . str_repeat("\0", $size), 256);
+        $random = $this->_random_number_helper($size);
+
+        list($max_multiple) = $random_max->divide($max);
+        $max_multiple = $max_multiple->multiply($max);
+
+        while ($random->compare($max_multiple) >= 0) {
+            $random = $random->subtract($max_multiple);
+            $random_max = $random_max->subtract($max_multiple);
+            $random = $random->bitwise_leftShift(8);
+            $random = $random->add($this->_random_number_helper(1));
+            $random_max = $random_max->bitwise_leftShift(8);
+            list($max_multiple) = $random_max->divide($max);
+            $max_multiple = $max_multiple->multiply($max);
+        }
+        list(, $random) = $random->divide($max);
+
+        return $this->_normalize($random->add($min));
+    }
+
+    /**
+     * Generate a random prime number.
      *
-     * Here's an 3et>
- * ion > 0 ?
-  x -    *%}
+     * If there's not a prime within the given range, false will be returned.  If more than $timeout seconds have elapsed,
+     * give up and return false.
+     *
+     * @param Math_BigInteger $arg1
+     * @param optional Math_BigInteger $arg2
+     * @param optional Integer $timeout
+     * @return Mixed
+     * @access public
+     * @internal See {@link http://www.cacr.math.uwaterloo.ca/hac/about/chap4.pdf#page=15 HAC 4.44}.
+     */
+    function randomPrime($arg1, $arg2 = false, $timeout = false)
+    {
+        if ($arg1 === false) {
+            return false;
+        }
 
- )}
+        if ($arg2 === false) {
+            $max = $arg1;
+            $min = $this;
+        } else {
+            $min = $arg1;
+            $max = $arg2;
+        }
 
-          }
+        $compare = $max->compare($min);
+
+        if (!$compare) {
+            return $min->isPrime() ? $min : false;
+        } else if ($compare < 0) {
+            // if $min is bigger then $max, swap $min and $max
+            $temp = $max;
+            $max = $min;
+            $min = $temp;
+        }
+
+        static $one, $two;
+        if (!isset($one)) {
+            $one = new Math_BigInteger(1);
+            $two = new Math_BigInteger(2);
+        }
+
+        $start = time();
+
+        $x = $this->random($min, $max);
+
+        // gmp_nextprime() requires PHP 5 >= 5.2.0 per <http://php.net/gmp-nextprime>.
+        if ( MATH_BIGINTEGER_MODE == MATH_BIGINTEGER_MODE_GMP && function_exists('gmp_nextprime') ) {
+            $p = new Math_BigInteger();
+            $p->value = gmp_nextprime($x->value);
+
+            if ($p->compare($max) <= 0) {
+                return $p;
+            }
+
+            if (!$min->equals($x)) {
+                $x = $x->subtract($one);
+            }
+
+            return $x->randomPrime($min, $x);
+        }
+
+        if ($x->equals($two)) {
+            return $x;
+        }
+
+        $x->_make_odd();
+        if ($x->compare($max) > 0) {
+            // if $x > $max then $max is even and if $min == $max then no prime number exists between the specified range
+            if ($min->equals($max)) {
+                return false;
+            }
+            $x = $min->copy();
+            $x->_make_odd();
+        }
+
+        $initial_x = $x->copy();
+
+        while (true) {
+            if ($timeout !== false && time() - $start > $timeout) {
+                return false;
+            }
+
+            if ($x->isPrime()) {
+                return $x;
+            }
+
+            $x = $x->add($two);
+
+            if ($x->compare($max) > 0) {
+                $x = $min->copy();
+                if ($x->equals($two)) {
+                    return $x;
+                }
+                $x->_make_odd();
+            }
+
+            if ($x->equals($initial_x)) {
+                return false;
+            }
+        }
+    }
+
+    /**
+     * Make the current number odd
+     *
+     * If the current number is odd it'll be unchanged.  If it's even, one will be added to it.
+     *
+     * @see randomPrime()
+     * @access private
+     */
+    function _make_odd()
+    {
+        switch ( MATH_BIGINTEGER_MODE ) {
+            case MATH_BIGINTEGER_MODE_GMP:
+                gmp_setbit($this->value, 0);
+                break;
+            case MATH_BIGINTEGER_MODE_BCMATH:
+                if ($this->value[strlen($this->value) - 1] % 2 == 0) {
+                    $this->value = bcadd($this->value, '1');
+                }
+                break;
+            default:
+                $this->value[0] |= 1;
+        }
+    }
+
+    /**
+     * Checks a numer to see if it's prime
+     *
+     * Assuming the $t parameter is not set, this function has an error rate of 2**-80.  The main motivation for the
+     * $t parameter is distributability.  Math_BigInteger::randomPrime() can be distributed across multiple pageloads
+     * on a website instead of just one.
+     *
+     * @param optional Math_BigInteger $t
+     * @return Boolean
+     * @access public
+     * @internal Uses the
+     *     {@link http://en.wikipedia.org/wiki/Miller%E2%80%93Rabin_primality_test Miller-Rabin primality test}.  See
+     *     {@link http://www.cacr.math.uwaterloo.ca/hac/about/chap4.pdf#page=8 HAC 4.24}.
+     */
+    function isPrime($t = false)
+    {
+        $length = strlen($this->toBytes());
+
+        if (!$t) {
+            // see HAC 4.49 "Note (controlling the error probability)"
+            // @codingStandardsIgnoreStart
+                 if ($length >= 163) { $t =  2; } // floor(1300 / 8)
+            else if ($length >= 106) { $t =  3; } // floor( 850 / 8)
+            else if ($length >= 81 ) { $t =  4; } // floor( 650 / 8)
+            else if ($length >= 68 ) { $t =  5; } // floor( 550 / 8)
+            else if ($length >= 56 ) { $t =  6; } // floor( 450 / 8)
+            else if ($length >= 50 ) { $t =  7; } // floor( 400 / 8)
+            else if ($length >= 43 ) { $t =  8; } // floor( 350 / 8)
+            else if ($length >= 37 ) { $t =  9; } // floor( 300 / 8)
+            else if ($length >= 31 ) { $t = 12; } // floor( 250 / 8)
+            else if ($length >= 25 ) { $t = 15; } // floor( 200 / 8)
+            else if ($length >= 18 ) { $t = 18; } // floor( 150 / 8)
+            else                     { $t = 27; }
+            // @codingStandardsIgnoreEnd
+        }
+
+        // ie. gmp_testbit($this, 0)
+        // ie. isEven() or !isOdd()
+        switch ( MATH_BIGINTEGER_MODE ) {
+            case MATH_BIGINTEGER_MODE_GMP:
+                return gmp_prob_prime($this->value, $t) != 0;
+            case MATH_BIGINTEGER_MODE_BCMATH:
+                if ($this->value === '2') {
+                    return true;
+                }
+                if ($this->value[strlen($this->value) - 1] % 2 == 0) {
+                    return false;
+                }
+                break;
+            default:
+                if ($this->value == array(2)) {
+                    return true;
+                }
+                if (~$this->value[0] & 1) {
+                    return false;
+                }
+        }
+
+        static $primes, $zero, $one, $two;
+
+        if (!isset($primes)) {
+            $primes = array(
+                3,    5,    7,    11,   13,   17,   19,   23,   29,   31,   37,   41,   43,   47,   53,   59,
+                61,   67,   71,   73,   79,   83,   89,   97,   101,  103,  107,  109,  113,  127,  131,  137,
+                139,  149,  151,  157,  163,  167,  173,  179,  181,  191,  193,  197,  199,  211,  223,  227,
+                229,  233,  239,  241,  251,  257,  263,  269,  271,  277,  281,  283,  293,  307,  311,  313,
+                317,  331,  337,  347,  349,  353,  359,  367,  373,  379,  383,  389,  397,  401,  409,  419,
+                421,  431,  433,  439,  443,  449,  457,  461,  463,  467,  479,  487,  491,  499,  503,  509,
+                521,  523,  541,  547,  557,  563,  569,  571,  577,  587,  593,  599,  601,  607,  613,  617,
+                619,  631,  641,  643,  647,  653,  659,  661,  673,  677,  683,  691,  701,  709,  719,  727,
+                733,  739,  743,  751,  757,  761,  769,  773,  787,  797,  809,  811,  821,  823,  827,  829,
+                839,  853,  857,  859,  863,  877,  881,  883,  887,  907,  911,  919,  929,  937,  941,  947,
+                953,  967,  971,  977,  983,  991,  997
+            );
+
+            if ( MATH_BIGINTEGER_MODE != MATH_BIGINTEGER_MODE_INTERNAL ) {
+                for ($i = 0; $i < count($primes); ++$i) {
+                    $primes[$i] = new Math_BigInteger($primes[$i]);
+                }
+            }
+
+            $zero = new Math_BigInteger();
+            $one = new Math_BigInteger(1);
+            $two = new Math_BigInteger(2);
+        }
+
+        if ($this->equals($one)) {
+            return false;
+        }
+
+        // see HAC 4.4.1 "Random search for probable primes"
+        if ( MATH_BIGINTEGER_MODE != MATH_BIGINTEGER_MODE_INTERNAL ) {
+            foreach ($primes as $prime) {
+                list(, $r) = $this->divide($prime);
+                if ($r->equals($zero)) {
+                    return $this->equals($prime);
+                }
+            }
+        } else {
+            $value = $this->value;
+            foreach ($primes as $prime) {
+                list(, $r) = $this->_divide_digit($value, $prime);
+                if (!$r) {
+                    return count($value) == 1 && $value[0] == $prime;
+                }
+            }
+        }
+
+        $n   = $this->copy();
+        $n_1 = $n->subtract($one);
+        $n_2 = $n->subtract($two);
+
+        $r = $n_1->copy();
+        $r_value = $r->value;
+        // ie. $s = gmp_scan1($n, 0) and $r = gmp_div_q($n, gmp_pow(gmp_init('2'), $s));
+        if ( MATH_BIGINTEGER_MODE == MATH_BIGINTEGER_MODE_BCMATH ) {
+            $s = 0;
+            // if $n was 1, $r would be 0 and this would be an infinite loop, hence our $this->equals($one) check earlier
+            while ($r->value[strlen($r->value) - 1] % 2 == 0) {
+                $r->value = bcdiv($r->value, '2', 0);
+                ++$s;
+            }
+        } else {
+            for ($i = 0, $r_length = count($r_value); $i < $r_length; ++$i) {
+                $temp = ~$r_value[$i] & 0xFFFFFF;
+                for ($j = 1; ($temp >> $j) & 1; ++$j);
+                if ($j != 25) {
+                    break;
+                }
+            }
+            $s = 26 * $i + $j - 1;
+            $r->_rshift($s);
+        }
+
+        for ($i = 0; $i < $t; ++$i) {
+            $a = $this->random($two, $n_2);
+            $y = $a->modPow($r, $n);
+
+            if (!$y->equals($one) && !$y->equals($n_1)) {
+                for ($j = 1; $j < $s && !$y->equals($n_1); ++$j) {
+                    $y = $y->modPow($two, $n);
+                    if ($y->equals($one)) {
+                        return false;
+                    }
+                }
+
+                if (!$y->equals($n_1)) {
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
+
+    /**
+     * Logical Left Shift
+     *
+     * Shifts BigInteger's by $shift bits.
+     *
+     * @param Integer $shift
+     * @access private
+     */
+    function _lshift($shift)
+    {
+        if ( $shift == 0 ) {
+            return;
+        }
+
+        $num_digits = (int) ($shift / MATH_BIGINTEGER_BASE);
+        $shift %= MATH_BIGINTEGER_BASE;
+        $shift = 1 << $shift;
+
+        $carry = 0;
+
+        for ($i = 0; $i < count($this->value); ++$i) {
+            $temp = $this->value[$i] * $shift + $carry;
+            $carry = MATH_BIGINTEGER_BASE === 26 ? intval($temp / 0x4000000) : ($temp >> 31);
+            $this->value[$i] = (int) ($temp - $carry * MATH_BIGINTEGER_BASE_FULL);
+        }
+
+        if ( $carry ) {
+            $this->value[count($this->value)] = $carry;
+        }
+
+        while ($num_digits--) {
+            array_unshift($this->value, 0);
+        }
+    }
+
+    /**
+     * Logical Right Shift
+     *
+     * Shifts BigInteger's by $shift bits.
+     *
+     * @param Integer $shift
+     * @access private
+     */
+    function _rshift($shift)
+    {
+        if ($shift == 0) {
+            return;
+        }
+
+        $num_digits = (int) ($shift / MATH_BIGINTEGER_BASE);
+        $shift %= MATH_BIGINTEGER_BASE;
+        $carry_shift = MATH_BIGINTEGER_BASE - $shift;
+        $carry_mask = (1 << $shift) - 1;
+
+        if ( $num_digits ) {
+            $this->value = array_slice($this->value, $num_digits);
+        }
+
+        $carry = 0;
+
+        for ($i = count($this->value) - 1; $i >= 0; --$i) {
+            $temp = $this->value[$i] >> $shift | $carry;
+            $carry = ($this->value[$i] & $carry_mask) << $carry_shift;
+            $this->value[$i] = $temp;
+        }
+
+        $this->value = $this->_trim($this->value);
+    }
+
+    /**
+     * Normalize
+     *
+     * Removes leading zeros and truncates (if necessary) to maintain the appropriate precision
+     *
+     * @param Math_BigInteger
+     * @return Math_BigInteger
+     * @see _trim()
+     * @access private
+     */
+    function _normalize($result)
+    {
+        $result->precision = $this->precision;
+        $result->bitmask = $this->bitmask;
+
+        switch ( MATH_BIGINTEGER_MODE ) {
+            case MATH_BIGINTEGER_MODE_GMP:
+                if (!empty($result->bitmask->value)) {
+                    $result->value = gmp_and($result->value, $result->bitmask->value);
+                }
+
+                return $result;
+            case MATH_BIGINTEGER_MODE_BCMATH:
+                if (!empty($result->bitmask->value)) {
+                    $result->value = bcmod($result->value, $result->bitmask->value);
+                }
+
+                return $result;
+        }
+
+        $value = &$result->value;
+
+        if ( !count($value) ) {
+            return $result;
+        }
+
+        $value = $this->_trim($value);
+
+        if (!empty($result->bitmask->value)) {
+            $length = min(count($value), count($this->bitmask->value));
+            $value = array_slice($value, 0, $length);
+
+            for ($i = 0; $i < $length; ++$i) {
+                $value[$i] = $value[$i] & $this->bitmask->value[$i];
+            }
+        }
+
+        return $result;
+    }
+
+    /**
+     * Trim
+     *
+     * Removes leading zeros
+     *
+     * @param Array $value
+     * @return Math_BigInteger
+     * @access private
+     */
+    function _trim($value)
+    {
+        for ($i = count($value) - 1; $i >= 0; --$i) {
+            if ( $value[$i] ) {
+                break;
+            }
+            unset($value[$i]);
+        }
+
+        return $value;
+    }
+
+    /**
+     * Array Repeat
+     *
+     * @param $input Array
+     * @param $multiplier mixed
+     * @return Array
+     * @access private
+     */
+    function _array_repeat($input, $multiplier)
+    {
+        return ($multiplier) ? array_fill(0, $multiplier, $input) : array();
+    }
+
+    /**
+     * Logical Left Shift
+     *
+     * Shifts binary strings $shift bits, essentially multiplying by 2**$shift.
+     *
+     * @param $x String
+     * @param $shift Integer
+     * @return String
+     * @access private
+     */
+    function _base256_lshift(&$x, $shift)
+    {
+        if ($shift == 0) {
+            return;
+        }
+
+        $num_bytes = $shift >> 3; // eg. floor($shift/8)
+        $shift &= 7; // eg. $shift % 8
+
+        $carry = 0;
+        for ($i = strlen($x) - 1; $i >= 0; --$i) {
+            $temp = ord($x[$i]) << $shift | $carry;
+            $x[$i] = chr($temp);
+            $carry = $temp >> 8;
+        }
+        $carry = ($carry != 0) ? chr($carry) : '';
+        $x = $carry . $x . str_repeat(chr(0), $num_bytes);
+    }
+
+    /**
+     * Logical Right Shift
+     *
+     * Shifts binary strings $shift bits, essentially dividing by 2**$shift and returning the remainder.
+     *
+     * @param $x String
+     * @param $shift Integer
+     * @return String
+     * @access private
+     */
+    function _base256_rshift(&$x, $shift)
+    {
+        if ($shift == 0) {
+            $x = ltrim($x, chr(0));
+            return '';
+        }
+
+        $num_bytes = $shift >> 3; // eg. floor($shift/8)
+        $shift &= 7; // eg. $shift % 8
+
+        $remainder = '';
+        if ($num_bytes) {
+            $start = $num_bytes > strlen($x) ? -strlen($x) : -$num_bytes;
+            $remainder = substr($x, $start);
+            $x = substr($x, 0, -$num_bytes);
+        }
+
+        $carry = 0;
+        $carry_shift = 8 - $shift;
+        for ($i = 0; $i < strlen($x); ++$i) {
+            $temp = (ord($x[$i]) >> $shift) | $carry;
+            $carry = (ord($x[$i]) << $carry_shift) & 0xFF;
+            $x[$i] = chr($temp);
+        }
+        $x = ltrim($x, chr(0));
+
+        $remainder = chr($carry >> $carry_shift) . $remainder;
+
+        return ltrim($remainder, chr(0));
+    }
+
+    // one quirk about how the following functions are implemented is that PHP defines N to be an unsigned long
+    // at 32-bits, while java's longs are 64-bits.
+
+    /**
+     * Converts 32-bit integers to bytes.
+     *
+     * @param Integer $x
+     * @return String
+     * @access private
+     */
+    function _int2bytes($x)
+    {
+        return ltrim(pack('N', $x), chr(0));
+    }
+
+    /**
+     * Converts bytes to 32-bit integers
+     *
+     * @param String $x
+     * @return Integer
+     * @access private
+     */
+    function _bytes2int($x)
+    {
+        $temp = unpack('Nint', str_pad($x, 4, chr(0), STR_PAD_LEFT));
+        return $temp['int'];
+    }
+
+    /**
+     * DER-encode an integer
+     *
+     * The ability to DER-encode integers is needed to create RSA public keys for use with OpenSSL
+     *
+     * @see modPow()
+     * @access private
+     * @param Integer $length
+     * @return String
+     */
+    function _encodeASN1Length($length)
+    {
+        if ($length <= 0x7F) {
+            return chr($length);
+        }
+
+        $temp = ltrim(pack('N', $length), chr(0));
+        return pack('Ca*', 0x80 | strlen($temp), $temp);
+    }
+
+    /**
+     * Single digit division
+     *
+     * Even if int64 is being used the division operator will return a float64 value
+     * if the dividend is not evenly divisible by the divisor. Since a float64 doesn't
+     * have the precision of int64 this is a problem so, when int64 is being used,
+     * we'll guarantee that the dividend is divisible by first subtracting the remainder.
+     *
+     * @access private
+     * @param Integer $x
+     * @param Integer $y
+     * @return Integer
+     */
+    function _safe_divide($x, $y)
+    {
+        if (MATH_BIGINTEGER_BASE === 26) {
+            return (int) ($x / $y);
+        }
+
+        // MATH_BIGINTEGER_BASE === 31
+        return ($x - ($x % $y)) / $y;
+    }
+}

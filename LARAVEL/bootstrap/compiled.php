@@ -2875,7375 +2875,8167 @@ class ExceptionHandler
             .sf-reset a img { border:none; }
             .sf-reset a:hover { text-decoration:underline; }
             .sf-reset em { font-style:italic; }
-            .sf-reset h1, .sf-res<?ph2 { font: 20px Georgia, "Times New Roman", Class, serif }
- c $directoramespace Illuspan { background-color: #fff; tic $reg333; padding: 6px; float: left; margin-right: 10stattic $directories = array.traces liuminate-size:12stat   public2px 4statlist-style-type:decimal load($cltion:uppo        $class = static::noblock protected static $r#FRATOR    foreac  {
- 28    oad($clbottom      ic $directori    -webkit-border  requilass)
--radius: 1 stae $path;
-                return true;
- tion      }
-        }
-        returnmoz return      }  requiass)
-   ction normalizeClass($class)
-    {
-        if      s[0] == '\\') {
-       return true;
+            .sf-reset h1, .sf-reset h2 { font: 20px Georgia, "Times New Roman", Times, serif }
+            .sf-reset h2 span { background-color: #fff; color: #333; padding: 6px; float: left; margin-right: 10px; }
+            .sf-reset .traces li { font-size:12px; padding: 2px 4px; list-style-type:decimal; margin-left:20px; }
+            .sf-reset .block { background-color:#FFFFFF; padding:10px 28px; margin-bottom:20px;
+                -webkit-border-bottom-right-radius: 16px;
+                -webkit-border-bottom-left-radius: 16px;
+                -moz-border-radius-bottomright: 16px;
+                -moz-border-radius-bottomleft: 16px;
+                border-bottom-right-radius: 16px;
+                border-bottom-left-radius: 16px;
+                border-bottom:1px solid #ccc;
+                border-right:1px solid #ccc;
+                border-left:1px solid #ccc;
             }
-        }
-        retur
-    }
-    public static function normalizeClass(return true;
-:1px solid #ccc   public static functionass)
- er()
-    {
-        if (!static::$regist     er()
-    {
-        if (!statif (file_exists($path = $direc_exceptio  protected static $r#dddered = false;
-    publie_once $path;
-                return topblic static function normalizeClass($)
-    {
-        st           }
-        }
-        returnclass)
-    {
-     topss, 1);
-        }
-        re;
-    }
-    public sta($class[0] == '\\') {
-       
-        static::$directories = array_unique(age(static::$directories, (array) $directories))
-        ster()
-    {
-        if (!static::$registered) {
-            static::$registered = spl_autoload_register(array('\\Illumorieoverflow: hidden   }
-        returword-wrap: break-irecarray('\\Illuminate\\Support\\ClassLoali a protected st:noneered = f#86lect; text-decora));
-ccess;
-inate\Container;
-
-use Closur:h()
- e;
-use ArrayAccess;
-use Ref31ed $nClass;
-use ReflecunderlionParameter;
-class Containerol {   foreach {
-  0Parameter;
-class Containerh1tory . DIRECTORY_SEPARATOR . $class)) 15
-                requirSuppo   }
-        return false;
-    }
-     }
-      protected $resolviclass)
-    {
-    );
-    protected $globalvingCallbacks = array();
-    protected func: load_register(array('\\Illumi'   }
- tic $dprivate func));
- 
-use Ree($content, $css)ic $d{ic $direcreturn "<!DOCTYPE html>\n<    retorie<headsset($tt($thmeta charset=\"UTF-8\" /bindings[$abstracname=\"robots\"     pub=\"noindex,nofollowhis->instances[$ectorbindings[$a iss/* Copyass)
- (c) 2010, Yahoo! Inc. All ass)
-s pacerved. Code licensed     p the BSD Lact]);: http://developer.yact].com/yui/ract]);.     */   return isse    {use Ref000;use ArrayAcARAT;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,lassarea,p,direcquote,th,td{oad($c:0;   publi0;}table{return collapse:actAlias;return spacalias)        ifimgis->extas) address,ca'));
-,citlse)
-  dfn,em,strong   lvar{($clasctor:norrect($clawess)
- ct);
-  }li{:$directorccess;}       }th{lass;align:tion }= null, $shared =nces($as);
- 00%       if (is_null($cq:before,q:after{    pub:'';}abbr,acronymbstract, $($clavarianis_null($csup{vertical $abstrlass;top    b
-        $this->bindi requi;}ray($abstract))selectnces($family:inheritct, $cconcrlved($abstrac if (islved($ab 'shared');
-        if *f (!$concrete i} (is_a]);
-    }
-  }\nhis->aliases[$namee;
-use ArrayAc #eeerotected $re{
-  }   return isseimg pro
-      ance   return isse#mespace     pub { width:97     ($abstra autoe($abstract, $con{c fu$abstract, </
-        ret</is->binding< binbindings[$a{
-    pub$abstra</($concr</    r"t) || $this->isAlias($abstracs->gClass($cconcnction bound($ab$parts = explode('\\'lic e = n   }
-     stract)sprintf('<s->g title="%s">%s</s->g> if (!$th, array_pop(false))is->bou$this->isAlias($abstrac  {
-atArgs(rete, $arg null, $shared = if (PHP_VERSION_ID >= 50400)n bound($abd = fflag)
-  ENT_QUOTES |e, trSUBSTITUTE   }
-     } elseind($abstract, $concrete, true);
- unction shashared = fresult =crete,(is->bound($    ach (bstra as $key => $itembind($abstract, null'object' ===      [0]bind($abstract, ct, $cion stedValue =ct)) {
-    em>t)) {
-</em>(%s) if this->ct, $concre     1]        ction share(Clobjecrete,                $object = $closure($container);
+            .sf-reset .block_exception { background-color:#ddd; color: #333; padding:20px;
+                -webkit-border-top-left-radius: 16px;
+                -webkit-border-top-right-radius: 16px;
+                -moz-border-radius-topleft: 16px;
+                -moz-border-radius-topright: 16px;
+                border-top-left-radius: 16px;
+                border-top-right-radius: 16px;
+                border-top:1px solid #ccc;
+                border-right:1px solid #ccc;
+                border-left:1px solid #ccc;
+                overflow: hidden;
+                word-wrap: break-word;
             }
-   rete,   return $ois_closur
+            .sf-reset li a { background:none; color:#868686; text-decoration:none; }
+            .sf-reset li a:hover { background:none; color:#313131; text-decoration:underline; }
+            .sf-reset ol { padding: 10px 0; }
+            .sf-reset h1 { background-color:#FFFFFF; padding: 15px 28px; margin-bottom: 20px;
+                -webkit-border-radius: 10px;
+                -moz-border-radius: 10px;
+                border-radius: 10px;
+                border: 1px solid #ccc;
+            }';
     }
-   ?object;
-tion singlee);
-    }
-:       1]is->bound($nction bindSharstring                $object = $closure($container);
-            }\'%s\'',$namespecialt]) | extend($, $concr$object;
-t]) ||    public function bindSharnull                $object = $closure($container);
-    }
-   sset   rect) || c function bindSharboolean($this->instances[$abstract])) {
-            $this->insta' . strtolower(var_exportn("Type {$atrue)) . '[$abstract] = $closure($this->iresource($this->instances[$abstract])) {
-            $this->instalosure);[$abstract] = $closure($th $object = $closure($container);
-     tr_replace('
-', alidlse {
-     ArgumentException(    if)tract, Cl$abstract} is not bound."extenderarray('\\Illuminate\\Supportner) us[] =sureint(ct;
-}
-   $container);
-  : throw new \Inva    %s if key$abscontainer);
-     return n ($contaistract)im{
-     ,  if er) us       }
-    }ublics($abstraccatchOutput($buffernull, $shared = fis not aughtBs_arr = (is_arrs->bound($abstrac'ct) || $this->instance)
-    {
-ance    if (is_array($abstract)) {null
-            Lengthbind($abstract, $     list($abssubabstract, Cl(is_arrre $cl0t} is not  }
-        u   }
-        rnullissetretes[$abstra      $object = $closure(is_arrabstact] = $insarray('\\Illuminate\\Sup  };
-    }
-    putract, $alias}
-}
-act]    e Illuminate\Sup    ;
-
-use Ref  ifion$conc;
-a
-   act (!$th ServiceProvider
- boundprotected $app   }
- ected functde
-     false extracinstance)
-    {__construct(tionay($abstract)) {
-      appabstion extralias($abstract);
-     boot(nction bound($ab   }
-    public fus[$alias]($abstracregisterre) {
-   {
-        returpackageared$call, $alias($abs= sset, falthis->bounull, $shared = f  if ($this-
-      getPk;
-   Nlias($abback;
-        if ($th   $this->i($abstra($abst?:>make($abuessract);
-Pathre) {
-      
-   figbstract, . '/$this-tract] = $cas);
-      app['files']->isDirectory}
-   figce;
-        if ($pp, $instancbstract]->= $callback;
-      d) {
-   public function refren ($containlan->rebinding($act)
-t, function ($app, $instance) use($target, $methoct)
-           $target->{$method}translatoranceadd        }
- alias($ab,ract)
-nction rebound($abstraappViews->make($abstA$insta{
-   ack;
-      $this->i ($app, $instance) use($target, $metho $insta           $target->{$method}viewcallback) {
-            call_u        ction rebound($abstraback>rebinding($abackst, function ($app, $instance) use($target, $methoback if (isset($this->reboundCallbacks[$abstract])) {
-            rn makction rebound($alias($abstract);
-     method)
-    {
-    ull, $shared = falbstra(nader   $this->alia;
-    ))$abstFil
-    re) {
-      stract)real
-   (diract]  pr  ung($a..ete('       }
-    }
-ted func  if (issestract);
-        }
-    }
-    public func$abstract, $alias);is_sset        calce;
-        if ($:$di($vendor  public func
-    {
-     / if protected function      }
-    }
-    alias($ab($abstract, $instance)
-    {
-ommandcretract)) es[$abstract])) {        resolv), true         
-   ces[$abst:his->_get_stra      return evene)
-  pp, $instancks($ab']vingCallbacks($ab->:$dienaredtisan.start',his->isBuiatic = tr) us }
-  t;
-     nd($abstract, $object;-SharelveCract)) {
-         oncrete, $ptract);
-        if ($this->isBuilda }
-    }
-    protectection bound($abstract)pp, $instanc>get'] . "     }/ck;
-   s/{->make($}public functios[$abstract][] =    }
-sces[$abstract])) stract)closure) {
-                 $abstrawhen' . $abstract;
-            }
-            return $abstract;
-isDy $dred' . $abstract;
-         
-      ay $d function alias($abstract, $aliEoad'));
- {
-    Whoops\Run;ring($abstraHandler\PrettyPagebstract && strpos($abstract,JsonRespons= 0;
-    }
-   tract, $alias)
-   \stract;
-    }
- ;
- = $abeturn is_stract;
-    }
-  exteabststract;
-    }
-    proteinstance)
-    {->reboundCy($abstract)) {
-      ->rebounDisplayersolvingCallbaclector = new Rbstract            ret  if ($this->isBui = new ReflectionCla  }
-        $reflector = new RPlaineflectionlass($concrete);
-        ifDebugable.";
-         isInstantiable()) {
-            $ (!$reflenition), current($definit['load'));
-'$respp, $insta->share(   return $oppected function gstract)     (!$refl      retuor();
-     .panti'ings       $dependedReso'losure $clos($this->bindings[$abstract])) {
-  not instantiable.";
-    $reflector->getConstructor();
-     encies = if (is_null($constructor)) {
-            return neas);
-ll($crunningInConsole(ce;
-        if ($bounion missonstructor->getParametarray('\\Illumire(Closure $closure)n new $concretetantiable.";
-            t$abstract);
-   ption($message);
-        }
-        $consgResolutionExcep  }
-        $reflector = new R$abstrlass($concrete);
-  onstructor->getParamet if (is_null($constructor)) {
-            return new $concrete$abstrable.";
-      }
-wabstr = $conseturn $reflector->newrs();
-        $parameters = $this->keyParametersByAarameter{
-            $dependency = $paramet (!$reflector->arget->{$method}ves[$par if (is_null($constructor)) {
-            return newi    ves[$pis->aderun(ces[aved(Quit(nitio   $this->insta;
-     ->writeTo    if   return (array) $deion missendenciepush();
-        
-       .hstracteters();
-        $parameters = $this->keyParametersByAs($parameter);
-$abstract, $alias);
-      shouldRtractn bunewInstanceArgs($i  } else {
-       eter)
-     if (is_null($constructor)) {
- wInstanceArgs($instances);
-    n build($concrete,     {
-        $de } elseif (ire(Closure $closure)
-e}] is not inst'\\')s($parameter);
-          ($abstract);
-  if ($this->isBuiultValue();
-      ssingLeadingSlash($abstract) && eturn $reflector->ne ||($message)questWants      tion($message);
-        }
-       name);
-        }ssingLeadingSlash($abstract) && ision $e)callbjaxr->getClass()l()) {
-         w
-        } catch (BindingResolutionExceptio;
-    }
-    protected funct $reflector->getConstructorsolvable dependency resolving [{$parameter}] in class {$parameteter);ter)
-          '\\') !== 0;
-        setEditor('sinstmestract);ction resolveNonter)
-  rs();
-        $paramn alias($abstract, $aliRouting {
-    eters = array())
-    {
-        if ($concre      $ceof Closure) {
-            return $concrete($this, $parameters);
-        }
-        $reflector = new R    
-            throw new BindinUrlGeneras $lass($concrete);
-        ifRedet, $me);
-            }
-            throw $e;
-  llback)
- $reflector->getConstructorrlback         $dependencies[] = $this->resolveClass($param$lResol       }lback)    }
- ;
-      $cons   $this->instances    }
- nvdenc= 'tes   $'  $object = $closure(lResol->dis $thFiltonClass($concrelluminate\\Supportion misslResolrs();
-        $parameters = $this->keyParametersByAlvingCallbacks $reflector->getConstructorurlvingCallbacks[] = $callback;
-    }
-    protected function fbstraglobalResolvi$abstvingCthis->fireCallbacgetDeclarinlvingCallbackllbackAameter->nebinpubl$clo           return $o  }
- call_us  $object = $closure(lobalResolue) {Rall_us($object, ;
-        throw  } elseif (is_null($dependency)) {
-                $;
-    }
-    
-    {
-        $this->global
-    }
-vingCallbacks[] = $callback;
-    }
-    protected functi
-    }
-         }
-    }
-      }
-    pu   $this->instances[$abstreter sesstancstore'nce;
-        if ($boundared = falue) {S]) || abstract]) || $shared =s->fireCallbackArray($object, $this->
-    }
-         unset($parameters[$key]);
-          Es($abparameters[$dependencies[$key]->name] = $value;
- 
-    ceof Closure) {
-            return $concrete($this, $parameters);
-        }
-        $reflectorbacks($abstra if (is_null($constructor)) {
-            return new $concreteefle    Callbac } elseif (is_null($dn alias($abstract, $alias)
-   \FacadeprotecteMockery\es[$Interf     s[$alias] = $ab$this-   protected funcstaticction extractAlias(arunction ($abstrdInstan      ifthis, $unctioneter $parawap($i    uns          $shareunctio::    {
-        uns[forgetIn$absthis-Access    etBin  }
-       }
-     forgetIns$this  }
-    (      $this->instances = ar,();
-    }
-e($abstract, $instantances[$abstract]ltValueceive           $sharedact]r($ab    $this->instances = ard function get return ises[$    }
-        $messmrect   return stances()
-    {
-  
-    nction getDgResolutionException($e)
-    {
-      createFreshract],Exists(
-    er);
-        };
-    }
-    pucall_user_this-closur), truee)
- , 'function offs')     r->fireResol} catch (BindingResoluttances[$abstracte($value) {
-                reublic function forgetInstances()
-    {
-  anceof if  function () use($vales[$Byct];
-    return $valunces[$abst function ofce;
-        if ($ function offsetExists(
-    ,_get($er);
-        };
-    }
-    puget($ion offsetUnset($key)
-    {
-        unset($t  return $this[$k   $this->instanc= $ab   return $thes[$ $th$concre   return $valuSymfony\Compon? tractery::e)
- rete = n :
-{
-    const MAStion offsetUnset($key)
-    {
-        union offsGet($key)
-    {
-        return $this->make($key);
-    }
-    
-    pubpublic functio  }
-    public function) &&$key]);
-    }
-    public function   }
-    ofces[$], $this->an offsetUnset($key)
-    {
-        unundation\Response return $parameter->groose($ return $this->maRindin       return new $conc>firCompo functs->getAlias($abstract);
-      Response;
-interfaceRequest $reqction bound($abstract) return ($abstr->inst          return $this->make($key);
-tion offsetUnset($key)
-    {
-        unhis->instances = arction bound($abthrowlarinact)timeeturn is_('->inst does notublicem    his->instances =  method.stract);
-        if ($thtances[$abstractrepareResponse($value)\Request;
-use Symfonyhis->but)) {
-se Illu       return new $conc;
-intoncrete, $parameters
-    public functio\Component\HttpKernel;
-
-       return new $conc{
-        if (!$value instanceof Closure) {
-{
-    public function p   }
-    public function __ function oftanceof Closurt\Contracts;
-
-interface Respact]rR  {
-        unsse Illuminate\Filesystuns\EventServiceProvider;
-use Illuminatr;
-use Symfony\Component\HttpKernel\HttpKernelInterface;nterface
-{
-    pubr;
-use Illuminate\Config\e($closure) {
-  rt\Contracts;
-
-interface ResponsePrepaApplicReflenterface
-{
-    public function p));
-    }
-    public futances[$abstract]esponsePreparerInter$definition), currennent\HttpFouion));
-    }
-    public futances[$abstract__
-   Sretur($ Illum $cotract, $concrete = );
-    }
-ion terminate(Request $req    public wit stacour, $ttpExected function gcase 0:$parameters, array $prim);
-    }
-->{\NotFou}his->fireCallbac, Res1onsePreparerInterface
-{
-    const VERSION = '4e, Te    2.16';
-    protecte2 $booted = false;
-    protected $bootingCallbacks = arndHttpE Closure $closure), Res3$bootedCallbacks = array();
-    protected $finishCallbacks = arracks = a2rray();
-    protected4shutdownCallbacks = array();
-    protected $middlewares = array();
-    proacks = a3rray();
-    protdefaultonsePreparerInterface
-{
- 
-        }
-        $this->bi  }
-    = $vIllum issttpExion resolveClass(R$abstract)
-    {
-        unset(Trai prott  $t MtClo $th   $t   }
-    public function mtCloonenclosure) {
-  mfony\Component\HttpKerteNew$key] = 
-    $theateNewhis->instances[$key]);
-  teNewRunction __getCloonse;
-use Symfony\Component\HttpKerhasterBase Illuminate\Filesyst);
-}
-namespace Symfonyares();
-    }ymfony\Component\HttpKernel\Exceptionel\Exception\NotFoundHparame  $t return $parameter-> return    {
-     public        return new $conc
-        }
-        $tay(static::$requepubliceferisterBaseBioncrete, $parametersk\Builder;
-BadMIllumCalluminate\Ht"ction  RSION = 'est;
-use Iexist."e($abstract, $instance)
-    {nel\Exunction registerBaseBindings($requestgServiceProvide protected function registerBaseBi function alias($abstract, $alias)
-    {
-    Closure$parameters = array())
-     $th\terBaseBinding($concreAr    prottancew ExceptionServ       $this->registerBaseSaddacksrantaicontaivtaine   $object = $this->build($ return $throvider()
-   )_set($key, $value)
-    {
-s[$absider()
-    {
-      oncrete, $parameters);
-      regionse;
-use Symfony\Component\HttpKerbuilProvider()vider() $
-   otecRequest $request,er) usRequest());
-               staticn($abject;
-           arameters);
-        }innerKontaiforeantaine =);
-        $thi(tion bindsterEventProvider()
-    {(array $path[ foreach ray();
-y_exceptoncrete, $parameters);
-     y $pathonse;
-use Symfony\Component\HttpKerdi  }
-on regi . $abstract;
-            }
- rete, keys)
-    {
-ncrete,      \\MyFirstymfony\Component\HttpKernel\Exceptiodorovider($thprepends->i'InstallPaths(array $paths)
-    {
-        $this->instance('path', realpath($paths['app']));
-  his->bu), true      == true;
-    }
-    prot$paths)
-    {_merllbathis['e,ponse as ate\\     ation' . '/.ect;
- . '.'     return functencies($parameters, arrathis->instg']);
-    }
-  n __g     ->rebound($abstract);
-        }
-    }
-      }
-    public static function getBootstraload')on registerEvunction bound($abstract)rete, diffdocson registrete, flip(EW\\ht)    }
- ymfony\Component\HttpKernel\Exceptiofetchovider($this))ction bound($ab      sta  {
-     .er($con)ath',segnate{
-            $shar$paths)
-    {
-        $th $this->instance('path',h($paths['app']));
-  ']->regiW\\htdocs_    fs( ? $_SER {
-         env'] ==->environment());
-           if (count() > 0) {
- [ ? $_SERnction getDepenlluminate\\Supporttion ($containece('paception'\laravell;
-    der()
-    {
-        $this->rrn $this['env'] == 'testing'  }
-    public function detectirion  registe)) as $key 
-    prtract)) {
-            rtionHandling()
-    {
-        $this['exception']->regiths, array('app')) as $key => $value) {wInstanceArgs($instances);
- ) {
-            return in_array($this['env'],      (gister($ymfony\Component\HttpKernel\Exceptiola      return $this->register($provider, $options, trugServiceProvide
-     rete, rever  }
-yFirstLan $this->register($al';
-    }
-    public function detectltainnt\H   {
-        return $stract)($closure) {
-      rete, walk_recursffse   retur   return $x
-    }&      ${
-            $sharract() ==   protectedw new Bindinenv'], funractl';
-    }
-    public function detectorePro&env'];
-    }
-    public funct$original =&register(new  true);
-    }'env'] == 'loath', reected function gealse)
-    {
-     RVER['arg   }
-        rwhileInterfaceed);
-  > 1  $object = $closure(alseeturn $thshifis->loade   }
-        returstances[$abse('p[   re
-
-use ster($this($key, $value  {
-        return php_sa    ret  {
-    , $valu   }
-        returrunningUnitTests()
-    {
-   \HttpK{
-     n array_first($thisrray();
-    protlue) == $naovider)
-ion resolveClass(Reflecracts;
-
-interface Responson registerEventister($provider, $options, truhis->build($cis));luminate\Support\Facade
-        $name Illuminate\Events\Ev{
-      s())t_class($provider), array($proders[]vider));
-        $th$args = isset($_SERVER['argv']) ? $_SERVER['argv'] : nunull!e($name) {
-    ->get!s);
-    }
-    public functio\\vendos($parameters, array $prim          return $reggUnitTests()
-    {
-        retu{
-          }
-    public f
-        $this->register(new EventServiceProvider($this));ha\\MyFirs($envs)
-    {
-        nullempt  foreach ($t($class = get_class($provider), arranition)
-   );
-        $this->s);
-    }
-    publcontaivice => $provider) {
- stract)tendroviders[$class] = true;
-    }
-    public function loadDeferredProviders()
-    {
-        foreach ($this->deferredServices as $service => $provider) {
-            !isset($this->ler($service);
-        }
-        $this->deferredServices = array();
-   ovider($prprotected function markAsRegionl        re   }
-    public function isLocal()i, $tsect {
-        return $this['env'] == 'local';
-    }
-    public function detecpluMAST registeapp.debut;
-  act)) {
-            rel;
-        return $this['enis->instance('path',       if (is_null($getAlr);
-    ilesystem;
-      ?
-     VERS     }bstract, s[$abs     });
-      fire($class = get_class($providerhp_sapi_name() ==        if function environment()
-    {
-        if    Kmake(sset($this->deferredServiceskeytract])) {
-dedProviders[$       $this->insta    pu    return parent::make($abstrn in_array($this['env'], func_get_args());
-        }
-        return pld($blic function)
-    {
-        $this['events']->on runninngServiceProvider($this)$provider->registResponse as 
-    puvider($this))provider->boot();
-) {
-       protected function markAsRegiabst  {
-        $abs        $this->register(new Routi= get_class($provider), array($pro > 0) {
-           n ($containder) der);
-        if (array_key_ex($name, $this-  }
- dProviders)) {
-     n make(n array_first  }
-       $this->loadD!serviceProviders[]  ($the($name) {
-      rs[] = $provider;
-   return newlback)    return $this['env'] ts()
-    {
-        ret$name;
-   dedProviders[$class] = troviderClass($provid  }
- ) > 0) {
-           this->register(new EventServiceProvider($this));s         public function bindInstallPaths(arrstract)Col $this-::mak;
-       ->CallBobjeon bindI    }st SUB_REQUEST fony\Component\HttpKerwher$this->marlic function bindInstallPaths(arraf    $e'/stnction startExceptionHandling()
-    {
-        $this['exception']->regitions = array(), $force = false)
-    {
-        if ($registeon.rejecthCallback0) {
-            return in_array($this['env'], fn.reject function alias($abstract, $alias)
-    {
-    P    work\Utf8
-    {
-        $this->register(new ExceptionServiceProStder($this));
-    }
-    protected ance($abstract)
- snakeCachorException;
-use s->bootApplicationcamel   }
-    protected function bootApplicastudly   }
-    protected funfunction registerRoutinsciiis->enviction bound($abstract)lk($::toAtrue;
-      r;
-use Symfony\Component\HttpKernel\ion(;
-        $this->fireAp
-    public functiotion()
-   {
-      te\Routing\RoutingServiceProviderallbacks[] = $callrredServices = array();
-   unction booted($callback)
-  = lc
-     cted func$thisis->envirr;
-use Symfony\Component\HttpKernel\ontainsforeyst $key needleBindings($request= is_string($provi   }
-  ath',   }
-  $parameters);
-         }
-  !staruse Syrpolback));
-        }
- ) !=finitio> $provider) {
-            ovider($provid$abstract);
-        }
-    }
-   nition)
-   ));
-        }
-        return $ndsW   fore));
-        }
-    }
-    public function run(SymfonyRequest $request = null)
-    {
-      er = $this $reque    );
-   te($request,-strl $keest'];
-=> $provider) {
-            is->getStackedClient())->handle($request);
-        $response->send();
-        $stack-finish['app.debucafinition), current     '/stpreg_         p, 'bstract);this->shutde'])-ract, Clo/(?:t);
-his['coo. ')+$thisalidetector(.e\\Coblic function useArraySessions(Closiss->geternbstract, $closure);
-    }
-     retur($thetector())->detect($enerredProvider($provider, $servi   }
-    pie'])->push('  return '#ate\\Session)
-    {
-   abstract, Clo\\*ect).  lih ($thisConcr\\ztract] = $cstract)(nsta)lewarem    ('#^sion'  }
-    .>midentProvider()
- istered;
-        }
-        if      ;
-        $this->fireAppCallbamb_') ? $thedCallbacks);
-    }
-    public function blimi]['app.debuegist = 10ound. '/sta...rt.php';
-    }
-  nullarameters);
-      <=ddlewar_class($provider), array    return $this['router'       $trimnctiond('sesapp.deboundegist, 'et($t'er =  {
-    }
-    }
-    protected function re  } etract, $closure);
-    h'), $paramet     } e;
-        }
-    }
-    protected function rirecs['app.debues, fes()
+    private function decorate($content, $css)
     {
-        
-    }
-    publicare);
-      /^\\s*+(?:\\S++ss;
- ){1,sion'm) use. '}/u($paramet= $vted fr']->after($back);
-    }mfonyRe     ||re) middleware($->bouface::M HttpKernelray $parameters = array())
-    {
-        $this->middlewares[] = HttpKernelI   return $this;
-    }
-    public functiop) ||regiotecp')) as $key ovider->erface
-{
-    public function pay($callba)) as $key'@'erre  {
-     @ if () as $key2QUES = $obje       $provider->register();
-        foreach ($optioplurang($call   }
-unres(2his->dispatch($request)P    }izer::     }
-            re         $this->fireAppCallbacks(arrrandom($func_aes()6   $this->register(n($abstra
-    pub'openssl_st $re_pseudo_bytes    nd($abstract, $espon = ce()) {
-            $responquest)
-  * 2bject)
-    {
-       ]->unti      $response = with($stack\Builder;
-use Illuminate\HttUn;
-   to ggCallbeest $reEST,inginate\ConeCallbackArray($object, $thisompact(abstract, Clclosur$this'+arte=  }
-alidbase64_ene)
- se)) {
-))', 'par        $this->iionServiceProvider;
-use IquickRt $request)
-          $this->fireAppCallbacks(arr']->dispatch($this-   {
-        if ($thi$pools->i0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ) = array_values($ && !$this[shuffle);
-straceais->oound(();
-   ->start();
-        }unction useArraySessions(ClosupporgetMiddleware($class)
-    {
-        $trequest)
-    blic function useArraySessions(Clos   $tgetMiddleware($class)
-    {
-     con    _, Re('class',MB_CASE_TITLEers');
-   s->fireAppCallbacks($this->shutdownCingulargetMiddleware($class)
-    {
-  ndleExceptio
-    {
-        fs->fireAppCallbacks($this->shutdownClug($   $t,) ? istefalse;'-rt.php';
-    }
-      $t        if  true;
-   $tdlewares as this    ponse);
-         ? '_' :    ss($concretected fueware', $this[![t);
-e'])->push('thisConcr]+!ion hponse);
- $objllbacks(array $c$callback) {
-                e'])->push('ponse);
- rameterpL\\pN\\s, $thisalid      $this->mi    }
-
-    public function prepareRequest(equest $request)
-    {
-        iull($thi);
-        }
-    }
-    public
-        est st, $response);
-           call_user_func($callback, $);
- ['app.debudeegistfireR'_
-    }
-    public funmespace Symfony();
-    }
-{
-     crea {
-      lback;
-    }
-    public function b {
-            $value = new Resvider));
-        $this->!ces a_n forgetMiddl{
-            $sharct, C  if$1sion' {
-       . '$2allbacks asbstract);
-      $this->meware', $this['s.)([A-Z])this-{
-     e)
-    {
- ion\ExceptionServiceProvider;
-use Il {
-            $value = new Res    }
-    publieAppCallbacks($this->shutdownC;
-  rminate($request, $response);
-    }
-    protected function getStackedClient()
-    {
-        $sess  $request = $request ?: $this['request'];
-     >bind($abstract, stack = $this->getStackedClient())->handle($request);
-        $response->send();
-        $stack-ooted()) {
-   $value instanceof SymfonyResponse) $this->boo = $callback;
-    }
-    public function bublic function misshis->reboundCallbacks[);
-    uces, fuhis['session']->isS-this_
-    ion ixists($this['confback)
-    {
-        $this->error(fuware) {
-        ion );
-        stances($abstract)
- Symfony\Component\gReso
-       sr\LoglbacLs($n && stcallback);
-ger], $this->a       $this['exception']->return is_\C   pxtErroreturn is_stClosure $callback)
-    {
-        $thisFataltion']->pushError($callback);
-    }
-    public functioOutOfMemory]->pushError($callback);
-    }
-    publn fatal(Clbstract,UndefinedF$abstra        return cation $e) use($callback) {
-            return call_user_fuction back, $e);
-        });
-    }
-    public function getConfigLoader($concNotFd stback, $e);
-        });
-    }
-    public function getConfigLoader(        return ca], $this->a
-        return ca   protarray 
-   _DEPRECATION = -100ted funcsAlias$ls($nRequest())E_WARNING    'War $re', E_NOTICEitoryNotice{
-   USER_ERRORitoryUserLoader$this['conerRepository.mani()
-    {
-   ['con     $manif.maniest = $thisSTRICTitoryuse Ill$manifest);
-RECOVERABLEnfig']['appC    ;
-   n fatifest'];
-  'path.baEDitoryDeprecatedsitory(newdedProviders;
- .mani   }
-    publicfig']['appfest'];
-  CORders()
-    {
-oreifest'];
-  COMPIiders()
-    {
-ompnamefest'];
-  PARS$manifP) ||functiocted funcublic functie)
-    {
-      instanceFatalEe)
-    {
-      dflectioader  publi {
-     unction lctionRequest());
-      tatic function );
-  ed
-    pClass($class = null)
-    {
-        if (!is_n    }Request());
-        $this->registerBaseS->reboundfunctiis->bound(;
-    }
-    p =xtendete(SymfonyRequesreach ($parame retur      return ter)
-  ue) {    }stClass        $url = $this['coeflecti
-    p(   public func
-    }
-    pni_abst';
-    }_e    p->boements HttpKet), arr_ter)
-  this->biter)
-  , 'ter)
- lic function w $e;
-  e);
-tdown}
-   Inter$this->refreshRequest(sn fatlic function l = $this[->deferredServware) {
-  s->s'x', 1024, array(), $y)) {
-                              $abstra'config']->get('y($abstract)) {
-      Class;
-    }      Class;? VER);
-re        abstr  return isay(array(static::requestChost');
-        $parameters =y($abstract)) {
-        public functio);
-    }
-    public t);
-        }
-        return parnction(nction pushErron requeste\\hannss;
- 'd  }
-       his->instances[$kelf:: request[($localeon doreques)) {
-                $abstrater)
- stClass   puss      e) u);
- unknowns['srote =, 'pa    pxse($closure return $parameter->gClass;& (ic function setDef|loadedProvideorResponses()
-   of SymfonyR'locale.change        $this      return get_class)
-   'local::$requestClass =   {
-        return php_s.repository' => 'Ile() ==this->fireResolvingCallbagetDependencies($parameters, arrae = null)
-    {
-       <this->bind($abstract,      return $);
-  xception']apuctor)) {
-  row  {
-        return php_sction resolvePrrow['ttpEbstract)
-    {
-  tanceArgs($instances);
- row   }
-        retur   }
-    return $sract(Param_otecrmaliprotect', 'p10     return funcluminate\\View\\Compilers\\BladeCompi, 'cache.stor\Encryption\\EncDEBUG_BACKTRACE_IGN$thiARGS'db' \\CookieJar', 'encrypttic $directori']->fire('locale.changeate\\Auth\\Autfaul
-    s->inerAlia']->isSes a$reso.reposthis['path.base'key,;
-  $resoache.s => 'Illuminate\\Datm', 'form' => 'Ill
-        $client = (new Builder())->n bindSha($locale)
-    {
-     &&tLocale()
-    {
-   &nction g&&rs);
-    }
-   e\\Mail\Console\\Application, 'cache' => 'Illumina) use(abstrarray('['GLOBALS'ue) use($name) { 'Illumironment());
-        $c     rray('   }
-        retursolvePrcinate\\Auth = array('\\Filesystem\\Files array('app$(array('\\Illuminate\\Support$load'));
-           }%s: %s inate\$alia%publder' =>);
-    }
-  s[n\\App }
-    publi'Illuminate\\R      retontainerAliases()   $alibject)
-    {
-       array('a&&] = $aMaintenan   $thiss['exceptio  {
-         $thiss['exception']->pushErse = $this['eventsabase', 'request'    ['exception']->pushEr(e', 'reque>start()Illumiion\\Sessioluminate\\Routing\\Redireronment()
-    {
-        ifte\\Routing\\Url\or', 'validator' => 'Illuminate\\Validation\\Factotract)
-    {
-        return $ler', 'cache' => 'Il$this-7=> 'l)
-    {
-        $this->Inteamespace Illuminate\317ironment());
-        $load'));
-->, arrbstractCanars =     oader(new FieArgs his->fireCallbackArray($objectk\Built($environvider));
-        $this->servicth' => 'Illuminase($vmth\\Rem!(ler' => 'Illuminate\\Mail\\Console\\Application.repository' => 'Illuminate\\Auth\\Reminders\inderRepositoryInterface', 'blade.compiler' => 'Illumironment()
-    {
-        iKernelInr' => 'Illuminate\\Pag   protected is['config']onsePreparerInterfer_func($enoadedProviders()
-);
-        }
-        fbstrac;
-    } = );
-    }::fig']\\CookieJar', 'encrypter' 
-    \\CookieJar', 'encryptunc($enerRepos);
-        }
-        foreach       return $environment => $hosts) {
-            foreach (erReposy) $hosts as $host) {
-                if ($this->isMa
-    protected static $rehosts) {
-            foreach (     $y) $hosts as $host) {
-                if ($this->m', 'form' => 'Illments, $consoleArgs);
-  ->log(
-        ontainerAliaashing\\HasherIne\\Validce) u     }ion\\S'rote     }
-ctoryArgs);
-     Locale()
-    {
-       return function ($coneption($message);
-        }
-        throw new HttpExceptionack
-      ['events']->fire('local::$requestClass = () ==Locale()
-    {
- Locale()
-    {
-   > 'IDeferr> 'Ifig'][> 'I $this->defon isMices;
-    }ed function refreshRequest(Request $r    t($args, function ($k, $vtClass;
- rete, $sha.repository' => 'Illuminatuest $request,ublic    r' => 'Illuminate\\Pag$iaseLocale()
-    {
- ->get('app.url', );
-      uest=ion\\Appl }
-    public function isMachine($name)
-    {
-       > $provider) {
-     ent\HttpFoundatio$key, $alias);
-        }
- Illuminate\Eveder = .repository' => 'Illuminatg;
-use Symfony\Com functioinderRepositoryInter   }
-        rinderRepositoryInter    return $this['env'] 
-     bstract  retERVER);
-        'lse dump (is_numeric($key)shareRVER);
-        uest as SymfonyRequesrtrim($this> $provider) {
-           stat       bjecresponse = with($stacisMach       }
-        $t   {
-           {lBuilder', 'translator' => 'Illumabstract);
-    }}
-    public function registn fatencies[] = $this->resolveN $parameters = extractAfuncgc_actA($incyclacks)
-    {
-  \?.*/'ponent\Ht>fir (is_       $patteoad'));
-m($this->getSchoad'));
-ndHttpHost() . $this->getBaseU, '/');
- ern == '' ? '/' :ent\HttpFoutryers)
-    {
-     $name,vironments);
-    }
-    protected function detereturn );
-    }
-}
-nameion\\Translator', 'log' =>
-     (return is_'/');
-      $parameters);
-      ');
-        retu> $provider) {
-     ths, array('app'');
-        retu   {>segments   }
-        retur        }
-  lias);
-        }
-    }
-}
-n($locale)
-    {
-    Manager', 'auth.remin, 'GET', array(), array()1$consoleArgs) {
-            return $this->detectConsoleEnvironment($e!tern = ($ther' => 'Illus $pation fu[\\Hash]licatifunction isMachine($name)
-    {
-      uest extenssion.reject'] : n        return aEnvironment($environments, $consoleAe]->sencyuthManager', 'auth.$fturn , functi;
-        }  if (str_is(    return $t  if (s retut();tectWebEnv  if (stectWrray();
-    protalse;
-    }
-    public func->public fu    if (sminate\Illum     $this['config']['app.luminate\\Log\\Writer', 'maifault);
-    }
-    public functioner' => his->url() oader        $segments = exion'tion resolveClass(ReflectionParameter $paronseP      return ca\' . $abstract;
-            }
- ch ($_user_func($callback, $e);
-      n isall();
-             return new FileLe) {
-   ');
-    }
-    public function dyForResponses();sAlias($abstracntIps();
-    }
-    public function eton($abists($'events']->fire('SchemeAndHttpHost() . $thi(), array(), $  return $v != '';
-        }));
-    }
-tClass;
-  'router' => 'Illumin  if (str_is(Routing\\Router', 's$this->isEmptybstr  if (str_is(ach ($keys minate\st' => 'Illuminate\\Http\\Request',e\\Valida()
-    {
-        re public functio
-    {
-        return $thnull0REQUEST,t ?: ()
-    {
-        r'Aved(ed matalE'lInteool($this->input($key)) || is_arrOut ofs->input(g;
-use Symfony\Come\\Routing\\Urlion (FatalErrorExcepluminate\\H    {lHttpRequest()tring($key)
-    {
-        $boo, 3,    $re Closure) {
-            $value =ey)) === '';
-   n fatal(Closure $caon all()
-    {
-        return array_replace_recursive($this->inputende   }
-        r      statake($abst$key : func_get_args '', ter)
-  Manager', 'auth.reminderomponl = $this[ter)
-   }
-    ion'= explode('/'  {
-        return php_saey)) === '';$rent::make($abse = $this->getEnvironmentArgument($args))) {
-abstract);
-    }
-          return rawuments()
-    {
-        $segments = explode('/', $this->peturn array_get($this- = $this['eventseturn $this->detectConsoleEnvirouestablesLoader(new FieArgs    protecatic function   public functiossettected functi    return array(key(ssage, null, $headerublic fun.reposiments, function ($v) {
-      sults, $keys);
-     alue return $v != '';
-        }));
-    }
-;
-        return $query ? $t__dehis->all();
-        array_forget;
-clsults, $keys);
-        return $resulnction query($key = null, sults, $keys);
-      return $this->isSecur $keys : func_get_args();
-struct(Request $request    $this['exceptioHttpKernelon']->error($ure $callback)
-    {
-    rtrim($this-as gReso $e);
-        ablesLoader(new Fi
-        
-    public funct   protest $request = null)
-   C) {
- tionProvider()
-    {Ae('pances $parameters = array())
-          }dItemKernelI$value;
-  epos    y
-        le($key)
-    {
-       Illuminaterovid;
-    }
-   protected functloaif ($xtractAlias(arrenvironnate    foreach ($filicesull($class)) {
-    ted functgs['\\'     protected function boo$  $coLoat', function () u {
-        return array(key( }
- anslator']->setcted   {
- as $filehod), $parameters);
-    Valid($loca        fois->getCliee($file)
-  rgs()s as $file) {
-  }
-    public function re
-     nction setLocale(ister($promicro Ill(ll() + $this->qion missingLeastere>deferredServiParame
-    pr   public function header($key Group= null, $default = nu     }      call_uted  }
-       if (is_nuis->bK
-   is->loadDeferredProvidn $file inst->    publ$this->rublic function rract);
-        if (issers', $key, $defauke($abstract, $paramete {
-        return $this->retrieveItem('server', $key, $default);
-$ path()t_args(('headersownCallbacd($key = null, $default = return $file ind($key = null, $def = arnCallbac>loadDeferredProvirete, turn ject;
-f ($t[        $thrn aices$provider->register();
-         return pare
-    {
-        $this->regist$default);
-    }
-    public function flash($filter = null, $keys = array())
-    {
-        $flash = !is_null($filter) ? $this->{$filter}($keys) : $this->input();
-        $this->sessionhis->build($c       return $this->getClie    }
-    public f        return $thisre(Closure $closure)'Illumi($flash);
-    }
-    public function flProvider()
-    {
-     (ReflectionParameter $par$keys) : $this->input();
-        $thispace IlluminateenvveItem('se'';
-    }
-    pubders, function     public function flus
-    {
-        try {
-  eturn $this['router']f ($this   public funct$keys)envrn $this->rublic function refre  return $this->{      }
- unctios($abction ajax()
-    {
- merge(array $i   }A     }
-        return $this->retritesting';
-    }
-    pu
-    public function flush()
-inputract);
-        if ($this->isBui $this->getInputSource()->replace($input)   $this->instancot();
-  if (is_nul  public function rethis->retrieveIteths, array('app')) as $key ject->replace($input);
-    (ReflectionParameter $paris->ble($key)
- S $_SER = null, $default = nu {
-        return etrieveI  {
-     ::  if (array_key_exof Syner($this->input();
- em('serv['\\' 
-    {
-        try {
-    em('server'ract);
-array_get($thhis->input();
-           }
-        return $thispare = :        return array_get($thi return $this->json;
-        }
-     ();
-        }
-        return $this->getMception;
-class Aptemarray_gefore($callback);
->getMethod() ==et_arg  public function old(');
-    }
-  llbackoncrete, $parameters);
-             }
- {
-        if}($instais->getMethod() == 'GET' ? $this->query : $this->request;
-    }
-    public function is[$abstract][] = $callback;
-      hinctio  if ($this->bouRequest $request, $ty $this->make($abstract);
-        }
-    }
-    public function refres($this->isJson() ==    }
-        if$message = "ack) {
-            call_utAccr->getClass();
-         }
- 'Illu->input();
-   return $] = $eplace($input)    }
-protecte());
+        return "<!DOCTYPE html>\n<html>\n    <head>\n        <meta charset=\"UTF-8\" />\n        <meta name=\"robots\" content=\"noindex,nofollow\" />\n        <style>\n            /* Copyright (c) 2010, Yahoo! Inc. All rights reserved. Code licensed under the BSD License: http://developer.yahoo.com/yui/license.html */\n            html{color:#000;background:#FFF;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}li{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}q:before,q:after{content:'';}abbr,acronym{border:0;font-variant:normal;}sup{vertical-align:text-top;}sub{vertical-align:text-bottom;}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;}input,textarea,select{*font-size:100%;}legend{color:#000;}\n\n            html { background: #eee; padding: 10px }\n            img { border: 0; }\n            #sf-resetcontent { width:970px; margin:0 auto; }\n            {$css}\n        </style>\n    </head>\n    <body>\n        {$content}\n    </body>\n</html>";
     }
-    pu$sourcmeadersE($file)
-   {
-        returne instance       tectedks)
+    private function abbrClass($class)
     {
-        forea
-         $shis-ract);
-        ck;
-      eplace($input);
+        $parts = explode('\\', $class);
+        return sprintf('<abbr title="%s">%s</abbr>', $class, array_pop($parts));
     }
-   lic function isJson()
+    private function formatArgs(array $args)
     {
-    ldable($concrete, $abstract)) {
-            $object = $this->build($concrete, $parameters);
+        if (PHP_VERSION_ID >= 50400) {
+            $flags = ENT_QUOTES | ENT_SUBSTITUTE;
         } else {
-            $object = $this->make($concrete, $parameters);
+            $flags = ENT_QUOTES;
         }
-        if ($this->isShared($abscreateFromBase(SymfonyReqlic function bindInstallPaths(arra json_decode($this->getConts' =>ot();
- ract);
-        if ($this->isBuilda $flash = !is_null($filter) ?tract)) {
-            return $this->m          ?: '*) = array_values($
-class Fram. ted crea$thisre not set on request.');
-   urn $default;
-    }
-    public {
-        return $file instreturn $default;
-    }
-    public statinull)
-    {
-        retur        }\' . $abstract;
-                $acceptat $request, $tyault = 'html')
-    {
-        (new statipe = HttpKernelInterface::MASTER_REll_array(array(static::requestClw stattected function isValid  {
-        return $file instanceof SplFileIn   {
-        $response =  return $requpe = HttpKernelInterface::MAS'';
-    }
-    public function header($k         }
- oot();
- $type = HttpKernelInterface::MAScreateFrodation\Session\SessionInterface   {$type = HttpKernelInterface::MASfault = null)
-    instance)
-    {off) {
-)) {
-     undation;
-
-use Symfony\Componeey = nullPROTO = 'client_proto';
-    const Gis_arraundation;
-
-use Symfony\Componeturn $th static $trustedProxies = array();
-Sis_array($keys) ? $keys : func_getDefauis_array($keys) PROTO = 'client_proto';
-    const UolvePrnull, $default = nultatic $trustedHeypes( function alias($abstract, $alias)
-    {
-Componle($key)
-    {
-          protected functis->b        }
-        return false;
- rver', $key, $ack)
-    {
-        $this- $this->jsonooted;
-()) {
-            return $this->jsonooted;
-  }
-        }
-        rehis->inp     ted      i   $response = with($his->defefore($callback);
-    }
-    publd = falsRT =>  $this->jsonBasicarray_get(ies;
-   $this->files->all());
-    }
-    ptent;
-    protected $>request;
-    }
-    public funrvices = array();
-    ic $request;
-    pbstracnt;
- return $this->json;
-        }
-     languages;
-   ton($abprotected
-    protected s$thisacks)
-etAcceptasJson()
-    {
-terfaceprotected    oviders)) {
-     put = $this->abound($this->=> 'X_FORWAre) {
-            $value =');
-aluelic funcRVER'Illuminate\tected $l   }s)
-    {
-        foreaLocale = 'en';
-    p->getMethod() == 'GET'n $this->json;
-        }
-        return array_get($this->json->all(), $key, $default);
-    }
-    protected function getInputn');
-    }
-    public function wantsJson()
-  ';
-   An    {return $th    puprotected $languages;
-    ');
-    }
-  )   }));
-    }
-()->flashInpu]->setset($acceptable[  }
- $attributes= array(self::HEADER_CLIENT_Isstrant;
-, $key, ner\\Csedface $app)
-    {
-      cted $requestUri;
-    protecteeturn array_get($this->files->all(),tract, $alistrasystemst = new Paion filestraet('X-         $fitected function   protected functe) us extractAlias(array   pr{
-      foreach ($filtAcc         return true;
-          puequest());
-        $thi    return array(key(t = new Pa        return $t{
-  face $app)
-    {
-      e) us         $this-cale($locale= new Para    $= new ParameterB= 'client_proto';
-      {
-     as $file   $this->getInputSoke($abstract, $parameterf ($this->isValidFileefresh($abstrake($abstra_arretInputSource()->add($inpuuild($c>getC_class($provider), arrayfault = nul$this['router']es()
-  " $abth}/{$reque}.phppublic p();
-    }
-    e) usction old(e) uplace(array $input)
-    {
-        $caequi $caUrl =
-        $this->pathInfo = null;
-       $this->con      $this->requestUri = null;
-        $this->baseUrl = null;
-        $this->basePath =]->se return $req null;idationder()
-    {
-        $this->refault = null)
-    {
-        if (!iss       if ('cli-ston($abrver' === php   public function isLocal(){
-     
-        $thrver' ==Path = null;
-        $t= array(self::HEADER_CLIENT_Iion old($key = null, $defke($abstract, $parameter make( $forma.      }
-        }
-   eterOverride = fa    puders[] = $provider;
-        $thTENT_TYPE'];
-     wares(Builder $stack)
-   = null;
-        $this->encodings = null;
-        $this->acceptableContentTypes = TENT_TYPE'];
-     efinition)
-      $this->pathInfo = null;
-        $this->requestUri =new Paramel;
-        $this->baseUrl =this->retrieveItem('head->headers->get(new Par($abstract, $instance)
-    {
- >all(), $request->request->all(), $request->is->bind('session.r = nugs['\\' . $abstract     $this->requestUri = null;
-        $this->basetory($_GET, $_eaders = newg($a
-    Url = null;
-        $this->basption']->setDENT_LENGTH'];
-            is->ac:createRequestFromFactory($_GET, $_POST,
-    {
-   est->request->all(), $ent\HttpFoundatturn $request;
-    }
-    p$method = 'GET', $parameters = array(), $cookies = array(), $files = array(), $server = arr        if (array_key_exists('HTTP_CONTENT_Lldable($co  {
-        $server = array_      $request->request = new ParameterBag($daenv($data);
-        }
-      ion missingLeadinfunction create($uri, ract);
-        if ($this->isBuildabl $this->encodi   $object = $this->build($concrete, $parameters);
-   8859-1,utf-8;q=0.7,*;q=0. Closure) {
-    eterOverride = fates); function replace(array $input_port';
-    pr] = '';
-        efault = null)
-    {
-        return $ton __construct(HttpKernelInterface $app)
-    {
-      toupper($method);unctiiundation\Session\SessionInterfacerequest, $type = HttpKernelInterface::MAStouppract);
-        if ($this->isBuilda(), $files = ape = HttpKernelInterface::MAS    $th$components['schedation\Session\SessionInterfacet = new Paoundation;
-
-use Symfony\Compone     $this-y(), $content = null)
-    {
-      () usr']->y = new ParameterBag($qetHeaders());
-        $this->content = $content;
-        $th$cookies);
-        $th('HTTP_CONTENT_TYPE', $_SERVER)) $cookies);
-        $thturn $default;
-    }
-    public statits['host'];
-            $server$cookies);
-        $thrse_str($request->ghis->contenquest->all(), $request->atT'] = 443;
+        $result = array();
+        foreach ($args as $key => $item) {
+            if ('object' === $item[0]) {
+                $formattedValue = sprintf('<em>object</em>(%s)', $this->abbrClass($item[1]));
+            } elseif ('array' === $item[0]) {
+                $formattedValue = sprintf('<em>array</em>(%s)', is_array($item[1]) ? $this->formatArgs($item[1]) : $item[1]);
+            } elseif ('string' === $item[0]) {
+                $formattedValue = sprintf('\'%s\'', htmlspecialchars($item[1], $flags, $this->charset));
+            } elseif ('null' === $item[0]) {
+                $formattedValue = '<em>null</em>';
+            } elseif ('boolean' === $item[0]) {
+                $formattedValue = '<em>' . strtolower(var_export($item[1], true)) . '</em>';
+            } elseif ('resource' === $item[0]) {
+                $formattedValue = '<em>resource</em>';
             } else {
-           return $reVncrebles      unset($server['HTTPS']);
-                $server['port'])) ), $content = null)
-    {
-        $this->request = new ParameterBag($request);
-  $server['PHP_AUTH_USER']          $fi $server['PHP_AUTH_USER'] = $components['usuery);
-        $this->attributestory$cookies);
-        $this->files = new FileBag($files);$abstract)) {
-            re ServerBag($server);
-        $this->hh($abstract, $ta    _creteheme']) {
-                $se
-        if (isset($compo$abstract, $alias);
-   if (isset(= 'produy())
-lvingCallbacks[$a    if (isset($comp     foreach (func_get_argurn $request;
-    }
-    public statrver['Hm-urlencoded' return true;
-           function () use($  }
-    public functionate\\ ('https' === $components['sch>all(), $request->cookies->all(), $y();
-             lication/x-www-form-urlencoded')) {
-            return $this->jon crea.env.
-       if (isset pubphpallbacks asted $pathInfo;
-    protect     parse_s($componeny(), $content = null)
-    {
-      
-      $server['PHP_AUTH_U($files);
+                $formattedValue = str_replace('
+', '', var_export(htmlspecialchars((string) $item[1], $flags, $this->charset), true));
+            }
+            $result[] = is_int($key) ? $formattedValue : sprintf('\'%s\' => %s', $key, $formattedValue);
         }
-        for{
-        return array(key( $server['PHP_AUTH_USER'] = $compon'SAMEORIGIN', false);
+        return implode(', ', $result);
+    }
+    public function catchOutput($buffer)
+    {
+        $this->caughtBuffer = $buffer;
+        return '';
+    }
+    public function cleanOutput($buffer)
+    {
+        if ($this->caughtLength) {
+            $cleanBuffer = substr_replace($buffer, '', 0, $this->caughtLength);
+            if (isset($cleanBuffer[0])) {
+                $buffer = $cleanBuffer;
+            }
+        }
+        return $buffer;
+    }
+}
+namespace Illuminate\Support;
+
+use ReflectionClass;
+abstract class ServiceProvider
+{
+    protected $app;
+    protected $defer = false;
+    public function __construct($app)
+    {
+        $this->app = $app;
+    }
+    public function boot()
+    {
+        
+    }
+    public abstract function register();
+    public function package($package, $namespace = null, $path = null)
+    {
+        $namespace = $this->getPackageNamespace($package, $namespace);
+        $path = $path ?: $this->guessPackagePath();
+        $config = $path . '/config';
+        if ($this->app['files']->isDirectory($config)) {
+            $this->app['config']->package($package, $config, $namespace);
+        }
+        $lang = $path . '/lang';
+        if ($this->app['files']->isDirectory($lang)) {
+            $this->app['translator']->addNamespace($namespace, $lang);
+        }
+        $appView = $this->getAppViewPath($package);
+        if ($this->app['files']->isDirectory($appView)) {
+            $this->app['view']->addNamespace($namespace, $appView);
+        }
+        $view = $path . '/views';
+        if ($this->app['files']->isDirectory($view)) {
+            $this->app['view']->addNamespace($namespace, $view);
+        }
+    }
+    public function guessPackagePath()
+    {
+        $path = (new ReflectionClass($this))->getFileName();
+        return realpath(dirname($path) . '/../../');
+    }
+    protected function getPackageNamespace($package, $namespace)
+    {
+        if (is_null($namespace)) {
+            list($vendor, $namespace) = explode('/', $package);
+        }
+        return $namespace;
+    }
+    public function commands($commands)
+    {
+        $commands = is_array($commands) ? $commands : func_get_args();
+        $events = $this->app['events'];
+        $events->listen('artisan.start', function ($artisan) use($commands) {
+            $artisan->resolveCommands($commands);
+        });
+    }
+    protected function getAppViewPath($package)
+    {
+        return $this->app['path'] . "/views/packages/{$package}";
+    }
+    public function provides()
+    {
+        return array();
+    }
+    public function when()
+    {
+        return array();
+    }
+    public function isDeferred()
+    {
+        return $this->defer;
+    }
+}
+namespace Illuminate\Exception;
+
+use Whoops\Run;
+use Whoops\Handler\PrettyPageHandler;
+use Whoops\Handler\JsonResponseHandler;
+use Illuminate\Support\ServiceProvider;
+class ExceptionServiceProvider extends ServiceProvider
+{
+    public function register()
+    {
+        $this->registerDisplayers();
+        $this->registerHandler();
+    }
+    protected function registerDisplayers()
+    {
+        $this->registerPlainDisplayer();
+        $this->registerDebugDisplayer();
+    }
+    protected function registerHandler()
+    {
+        $this->app['exception'] = $this->app->share(function ($app) {
+            return new Handler($app, $app['exception.plain'], $app['exception.debug']);
+        });
+    }
+    protected function registerPlainDisplayer()
+    {
+        $this->app['exception.plain'] = $this->app->share(function ($app) {
+            if ($app->runningInConsole()) {
+                return $app['exception.debug'];
+            } else {
+                return new PlainDisplayer();
+            }
+        });
+    }
+    protected function registerDebugDisplayer()
+    {
+        $this->registerWhoops();
+        $this->app['exception.debug'] = $this->app->share(function ($app) {
+            return new WhoopsDisplayer($app['whoops'], $app->runningInConsole());
+        });
+    }
+    protected function registerWhoops()
+    {
+        $this->registerWhoopsHandler();
+        $this->app['whoops'] = $this->app->share(function ($app) {
+            with($whoops = new Run())->allowQuit(false);
+            $whoops->writeToOutput(false);
+            return $whoops->pushHandler($app['whoops.handler']);
+        });
+    }
+    protected function registerWhoopsHandler()
+    {
+        if ($this->shouldReturnJson()) {
+            $this->app['whoops.handler'] = $this->app->share(function () {
+                return new JsonResponseHandler();
+            });
+        } else {
+            $this->registerPrettyWhoopsHandler();
+        }
+    }
+    protected function shouldReturnJson()
+    {
+        return $this->app->runningInConsole() || $this->requestWantsJson();
+    }
+    protected function requestWantsJson()
+    {
+        return $this->app['request']->ajax() || $this->app['request']->wantsJson();
+    }
+    protected function registerPrettyWhoopsHandler()
+    {
+        $this->app['whoops.handler'] = $this->app->share(function () {
+            with($handler = new PrettyPageHandler())->setEditor('sublime');
+            return $handler;
+        });
+    }
+}
+namespace Illuminate\Routing;
+
+use Illuminate\Support\ServiceProvider;
+class RoutingServiceProvider extends ServiceProvider
+{
+    public function register()
+    {
+        $this->registerRouter();
+        $this->registerUrlGenerator();
+        $this->registerRedirector();
+    }
+    protected function registerRouter()
+    {
+        $this->app['router'] = $this->app->share(function ($app) {
+            $router = new Router($app['events'], $app);
+            if ($app['env'] == 'testing') {
+                $router->disableFilters();
+            }
+            return $router;
+        });
+    }
+    protected function registerUrlGenerator()
+    {
+        $this->app['url'] = $this->app->share(function ($app) {
+            $routes = $app['router']->getRoutes();
+            return new UrlGenerator($routes, $app->rebinding('request', function ($app, $request) {
+                $app['url']->setRequest($request);
+            }));
+        });
+    }
+    protected function registerRedirector()
+    {
+        $this->app['redirect'] = $this->app->share(function ($app) {
+            $redirector = new Redirector($app['url']);
+            if (isset($app['session.store'])) {
+                $redirector->setSession($app['session.store']);
+            }
+            return $redirector;
+        });
+    }
+}
+namespace Illuminate\Events;
+
+use Illuminate\Support\ServiceProvider;
+class EventServiceProvider extends ServiceProvider
+{
+    public function register()
+    {
+        $this->app['events'] = $this->app->share(function ($app) {
+            return new Dispatcher($app);
+        });
+    }
+}
+namespace Illuminate\Support\Facades;
+
+use Mockery\MockInterface;
+abstract class Facade
+{
+    protected static $app;
+    protected static $resolvedInstance;
+    public static function swap($instance)
+    {
+        static::$resolvedInstance[static::getFacadeAccessor()] = $instance;
+        static::$app->instance(static::getFacadeAccessor(), $instance);
+    }
+    public static function shouldReceive()
+    {
+        $name = static::getFacadeAccessor();
+        if (static::isMock()) {
+            $mock = static::$resolvedInstance[$name];
+        } else {
+            $mock = static::createFreshMockInstance($name);
+        }
+        return call_user_func_array(array($mock, 'shouldReceive'), func_get_args());
+    }
+    protected static function createFreshMockInstance($name)
+    {
+        static::$resolvedInstance[$name] = $mock = static::createMockByName($name);
+        if (isset(static::$app)) {
+            static::$app->instance($name, $mock);
+        }
+        return $mock;
+    }
+    protected static function createMockByName($name)
+    {
+        $class = static::getMockableClass($name);
+        return $class ? \Mockery::mock($class) : \Mockery::mock();
+    }
+    protected static function isMock()
+    {
+        $name = static::getFacadeAccessor();
+        return isset(static::$resolvedInstance[$name]) && static::$resolvedInstance[$name] instanceof MockInterface;
+    }
+    protected static function getMockableClass()
+    {
+        if ($root = static::getFacadeRoot()) {
+            return get_class($root);
+        }
+    }
+    public static function getFacadeRoot()
+    {
+        return static::resolveFacadeInstance(static::getFacadeAccessor());
+    }
+    protected static function getFacadeAccessor()
+    {
+        throw new \RuntimeException('Facade does not implement getFacadeAccessor method.');
+    }
+    protected static function resolveFacadeInstance($name)
+    {
+        if (is_object($name)) {
+            return $name;
+        }
+        if (isset(static::$resolvedInstance[$name])) {
+            return static::$resolvedInstance[$name];
+        }
+        return static::$resolvedInstance[$name] = static::$app[$name];
+    }
+    public static function clearResolvedInstance($name)
+    {
+        unset(static::$resolvedInstance[$name]);
+    }
+    public static function clearResolvedInstances()
+    {
+        static::$resolvedInstance = array();
+    }
+    public static function getFacadeApplication()
+    {
+        return static::$app;
+    }
+    public static function setFacadeApplication($app)
+    {
+        static::$app = $app;
+    }
+    public static function __callStatic($method, $args)
+    {
+        $instance = static::getFacadeRoot();
+        switch (count($args)) {
+            case 0:
+                return $instance->{$method}();
+            case 1:
+                return $instance->{$method}($args[0]);
+            case 2:
+                return $instance->{$method}($args[0], $args[1]);
+            case 3:
+                return $instance->{$method}($args[0], $args[1], $args[2]);
+            case 4:
+                return $instance->{$method}($args[0], $args[1], $args[2], $args[3]);
+            default:
+                return call_user_func_array(array($instance, $method), $args);
+        }
+    }
+}
+namespace Illuminate\Support\Traits;
+
+trait MacroableTrait
+{
+    protected static $macros = array();
+    public static function macro($name, callable $macro)
+    {
+        static::$macros[$name] = $macro;
+    }
+    public static function hasMacro($name)
+    {
+        return isset(static::$macros[$name]);
+    }
+    public static function __callStatic($method, $parameters)
+    {
+        if (static::hasMacro($method)) {
+            return call_user_func_array(static::$macros[$method], $parameters);
+        }
+        throw new \BadMethodCallException("Method {$method} does not exist.");
+    }
+    public function __call($method, $parameters)
+    {
+        return static::__callStatic($method, $parameters);
+    }
+}
+namespace Illuminate\Support;
+
+use Closure;
+use Illuminate\Support\Traits\MacroableTrait;
+class Arr
+{
+    use MacroableTrait;
+    public static function add($array, $key, $value)
+    {
+        if (is_null(static::get($array, $key))) {
+            static::set($array, $key, $value);
+        }
+        return $array;
+    }
+    public static function build($array, Closure $callback)
+    {
+        $results = array();
+        foreach ($array as $key => $value) {
+            list($innerKey, $innerValue) = call_user_func($callback, $key, $value);
+            $results[$innerKey] = $innerValue;
+        }
+        return $results;
+    }
+    public static function divide($array)
+    {
+        return array(array_keys($array), array_values($array));
+    }
+    public static function dot($array, $prepend = '')
+    {
+        $results = array();
+        foreach ($array as $key => $value) {
+            if (is_array($value)) {
+                $results = array_merge($results, static::dot($value, $prepend . $key . '.'));
+            } else {
+                $results[$prepend . $key] = $value;
+            }
+        }
+        return $results;
+    }
+    public static function except($array, $keys)
+    {
+        return array_diff_key($array, array_flip((array) $keys));
+    }
+    public static function fetch($array, $key)
+    {
+        foreach (explode('.', $key) as $segment) {
+            $results = array();
+            foreach ($array as $value) {
+                if (array_key_exists($segment, $value = (array) $value)) {
+                    $results[] = $value[$segment];
+                }
+            }
+            $array = array_values($results);
+        }
+        return array_values($results);
+    }
+    public static function first($array, $callback, $default = null)
+    {
+        foreach ($array as $key => $value) {
+            if (call_user_func($callback, $key, $value)) {
+                return $value;
+            }
+        }
+        return value($default);
+    }
+    public static function last($array, $callback, $default = null)
+    {
+        return static::first(array_reverse($array), $callback, $default);
+    }
+    public static function flatten($array)
+    {
+        $return = array();
+        array_walk_recursive($array, function ($x) use(&$return) {
+            $return[] = $x;
+        });
+        return $return;
+    }
+    public static function forget(&$array, $keys)
+    {
+        $original =& $array;
+        foreach ((array) $keys as $key) {
+            $parts = explode('.', $key);
+            while (count($parts) > 1) {
+                $part = array_shift($parts);
+                if (isset($array[$part]) && is_array($array[$part])) {
+                    $array =& $array[$part];
+                }
+            }
+            unset($array[array_shift($parts)]);
+            $array =& $original;
+        }
+    }
+    public static function get($array, $key, $default = null)
+    {
+        if (is_null($key)) {
+            return $array;
+        }
+        if (isset($array[$key])) {
+            return $array[$key];
+        }
+        foreach (explode('.', $key) as $segment) {
+            if (!is_array($array) || !array_key_exists($segment, $array)) {
+                return value($default);
+            }
+            $array = $array[$segment];
+        }
+        return $array;
+    }
+    public static function has($array, $key)
+    {
+        if (empty($array) || is_null($key)) {
+            return false;
+        }
+        if (array_key_exists($key, $array)) {
+            return true;
+        }
+        foreach (explode('.', $key) as $segment) {
+            if (!is_array($array) || !array_key_exists($segment, $array)) {
+                return false;
+            }
+            $array = $array[$segment];
+        }
+        return true;
+    }
+    public static function only($array, $keys)
+    {
+        return array_intersect_key($array, array_flip((array) $keys));
+    }
+    public static function pluck($array, $value, $key = null)
+    {
+        $results = array();
+        foreach ($array as $item) {
+            $itemValue = is_object($item) ? $item->{$value} : $item[$value];
+            if (is_null($key)) {
+                $results[] = $itemValue;
+            } else {
+                $itemKey = is_object($item) ? $item->{$key} : $item[$key];
+                $results[$itemKey] = $itemValue;
+            }
+        }
+        return $results;
+    }
+    public static function pull(&$array, $key, $default = null)
+    {
+        $value = static::get($array, $key, $default);
+        static::forget($array, $key);
+        return $value;
+    }
+    public static function set(&$array, $key, $value)
+    {
+        if (is_null($key)) {
+            return $array = $value;
+        }
+        $keys = explode('.', $key);
+        while (count($keys) > 1) {
+            $key = array_shift($keys);
+            if (!isset($array[$key]) || !is_array($array[$key])) {
+                $array[$key] = array();
+            }
+            $array =& $array[$key];
+        }
+        $array[array_shift($keys)] = $value;
+        return $array;
+    }
+    public static function sort($array, Closure $callback)
+    {
+        return Collection::make($array)->sortBy($callback)->all();
+    }
+    public static function where($array, Closure $callback)
+    {
+        $filtered = array();
+        foreach ($array as $key => $value) {
+            if (call_user_func($callback, $key, $value)) {
+                $filtered[$key] = $value;
+            }
+        }
+        return $filtered;
+    }
+}
+namespace Illuminate\Support;
+
+use Patchwork\Utf8;
+use Illuminate\Support\Traits\MacroableTrait;
+class Str
+{
+    use MacroableTrait;
+    protected static $snakeCache = array();
+    protected static $camelCache = array();
+    protected static $studlyCache = array();
+    public static function ascii($value)
+    {
+        return Utf8::toAscii($value);
+    }
+    public static function camel($value)
+    {
+        if (isset(static::$camelCache[$value])) {
+            return static::$camelCache[$value];
+        }
+        return static::$camelCache[$value] = lcfirst(static::studly($value));
+    }
+    public static function contains($haystack, $needles)
+    {
+        foreach ((array) $needles as $needle) {
+            if ($needle != '' && strpos($haystack, $needle) !== false) {
+                return true;
+            }
+        }
+        return false;
+    }
+    public static function endsWith($haystack, $needles)
+    {
+        foreach ((array) $needles as $needle) {
+            if ((string) $needle === substr($haystack, -strlen($needle))) {
+                return true;
+            }
+        }
+        return false;
+    }
+    public static function finish($value, $cap)
+    {
+        $quoted = preg_quote($cap, '/');
+        return preg_replace('/(?:' . $quoted . ')+$/', '', $value) . $cap;
+    }
+    public static function is($pattern, $value)
+    {
+        if ($pattern == $value) {
+            return true;
+        }
+        $pattern = preg_quote($pattern, '#');
+        $pattern = str_replace('\\*', '.*', $pattern) . '\\z';
+        return (bool) preg_match('#^' . $pattern . '#', $value);
+    }
+    public static function length($value)
+    {
+        return mb_strlen($value);
+    }
+    public static function limit($value, $limit = 100, $end = '...')
+    {
+        if (mb_strlen($value) <= $limit) {
+            return $value;
+        }
+        return rtrim(mb_substr($value, 0, $limit, 'UTF-8')) . $end;
+    }
+    public static function lower($value)
+    {
+        return mb_strtolower($value);
+    }
+    public static function words($value, $words = 100, $end = '...')
+    {
+        preg_match('/^\\s*+(?:\\S++\\s*+){1,' . $words . '}/u', $value, $matches);
+        if (!isset($matches[0]) || strlen($value) === strlen($matches[0])) {
+            return $value;
+        }
+        return rtrim($matches[0]) . $end;
+    }
+    public static function parseCallback($callback, $default)
+    {
+        return static::contains($callback, '@') ? explode('@', $callback, 2) : array($callback, $default);
+    }
+    public static function plural($value, $count = 2)
+    {
+        return Pluralizer::plural($value, $count);
+    }
+    public static function random($length = 16)
+    {
+        if (function_exists('openssl_random_pseudo_bytes')) {
+            $bytes = openssl_random_pseudo_bytes($length * 2);
+            if ($bytes === false) {
+                throw new \RuntimeException('Unable to generate random string.');
+            }
+            return substr(str_replace(array('/', '+', '='), '', base64_encode($bytes)), 0, $length);
+        }
+        return static::quickRandom($length);
+    }
+    public static function quickRandom($length = 16)
+    {
+        $pool = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        return substr(str_shuffle(str_repeat($pool, $length)), 0, $length);
+    }
+    public static function upper($value)
+    {
+        return mb_strtoupper($value);
+    }
+    public static function title($value)
+    {
+        return mb_convert_case($value, MB_CASE_TITLE, 'UTF-8');
+    }
+    public static function singular($value)
+    {
+        return Pluralizer::singular($value);
+    }
+    public static function slug($title, $separator = '-')
+    {
+        $title = static::ascii($title);
+        $flip = $separator == '-' ? '_' : '-';
+        $title = preg_replace('![' . preg_quote($flip) . ']+!u', $separator, $title);
+        $title = preg_replace('![^' . preg_quote($separator) . '\\pL\\pN\\s]+!u', '', mb_strtolower($title));
+        $title = preg_replace('![' . preg_quote($separator) . '\\s]+!u', $separator, $title);
+        return trim($title, $separator);
+    }
+    public static function snake($value, $delimiter = '_')
+    {
+        if (isset(static::$snakeCache[$value . $delimiter])) {
+            return static::$snakeCache[$value . $delimiter];
+        }
+        if (!ctype_lower($value)) {
+            $replace = '$1' . $delimiter . '$2';
+            $value = strtolower(preg_replace('/(.)([A-Z])/', $replace, $value));
+        }
+        return static::$snakeCache[$value . $delimiter] = $value;
+    }
+    public static function startsWith($haystack, $needles)
+    {
+        foreach ((array) $needles as $needle) {
+            if ($needle != '' && strpos($haystack, $needle) === 0) {
+                return true;
+            }
+        }
+        return false;
+    }
+    public static function studly($value)
+    {
+        if (isset(static::$studlyCache[$value])) {
+            return static::$studlyCache[$value];
+        }
+        $value = ucwords(str_replace(array('-', '_'), ' ', $value));
+        return static::$studlyCache[$value] = str_replace(' ', '', $value);
+    }
+}
+namespace Symfony\Component\Debug;
+
+use Psr\Log\LogLevel;
+use Psr\Log\LoggerInterface;
+use Symfony\Component\Debug\Exception\ContextErrorException;
+use Symfony\Component\Debug\Exception\FatalErrorException;
+use Symfony\Component\Debug\Exception\OutOfMemoryException;
+use Symfony\Component\Debug\FatalErrorHandler\UndefinedFunctionFatalErrorHandler;
+use Symfony\Component\Debug\FatalErrorHandler\UndefinedMethodFatalErrorHandler;
+use Symfony\Component\Debug\FatalErrorHandler\ClassNotFoundFatalErrorHandler;
+use Symfony\Component\Debug\FatalErrorHandler\FatalErrorHandlerInterface;
+class ErrorHandler
+{
+    const TYPE_DEPRECATION = -100;
+    private $levels = array(E_WARNING => 'Warning', E_NOTICE => 'Notice', E_USER_ERROR => 'User Error', E_USER_WARNING => 'User Warning', E_USER_NOTICE => 'User Notice', E_STRICT => 'Runtime Notice', E_RECOVERABLE_ERROR => 'Catchable Fatal Error', E_DEPRECATED => 'Deprecated', E_USER_DEPRECATED => 'User Deprecated', E_ERROR => 'Error', E_CORE_ERROR => 'Core Error', E_COMPILE_ERROR => 'Compile Error', E_PARSE => 'Parse Error');
+    private $level;
+    private $reservedMemory;
+    private $displayErrors;
+    private static $loggers = array();
+    private static $stackedErrors = array();
+    private static $stackedErrorLevels = array();
+    public static function register($level = null, $displayErrors = true)
+    {
+        $handler = new static();
+        $handler->setLevel($level);
+        $handler->setDisplayErrors($displayErrors);
+        ini_set('display_errors', 0);
+        set_error_handler(array($handler, 'handle'));
+        register_shutdown_function(array($handler, 'handleFatal'));
+        $handler->reservedMemory = str_repeat('x', 10240);
+        return $handler;
+    }
+    public function setLevel($level)
+    {
+        $this->level = null === $level ? error_reporting() : $level;
+    }
+    public function setDisplayErrors($displayErrors)
+    {
+        $this->displayErrors = $displayErrors;
+    }
+    public static function setLogger(LoggerInterface $logger, $channel = 'deprecation')
+    {
+        self::$loggers[$channel] = $logger;
+    }
+    public function handle($level, $message, $file = 'unknown', $line = 0, $context = array())
+    {
+        if ($level & (E_USER_DEPRECATED | E_DEPRECATED)) {
+            if (isset(self::$loggers['deprecation'])) {
+                if (self::$stackedErrorLevels) {
+                    self::$stackedErrors[] = func_get_args();
+                } else {
+                    if (PHP_VERSION_ID < 50400) {
+                        $stack = array_map(function ($row) {
+                            unset($row['args']);
+                            return $row;
+                        }, array_slice(debug_backtrace(false), 0, 10));
+                    } else {
+                        $stack = debug_backtrace(DEBUG_BACKTRACE_IGNORE_ARGS, 10);
+                    }
+                    self::$loggers['deprecation']->warning($message, array('type' => self::TYPE_DEPRECATION, 'stack' => $stack));
+                }
+                return true;
+            }
+        } elseif ($this->displayErrors && error_reporting() & $level && $this->level & $level) {
+            if (PHP_VERSION_ID < 50400 && isset($context['GLOBALS']) && is_array($context)) {
+                $c = $context;
+                unset($c['GLOBALS'], $context);
+                $context = $c;
+            }
+            $exception = sprintf('%s: %s in %s line %d', isset($this->levels[$level]) ? $this->levels[$level] : $level, $message, $file, $line);
+            if ($context && class_exists('Symfony\\Component\\Debug\\Exception\\ContextErrorException')) {
+                $exception = new ContextErrorException($exception, 0, $level, $file, $line, $context);
+            } else {
+                $exception = new \ErrorException($exception, 0, $level, $file, $line);
+            }
+            if (PHP_VERSION_ID <= 50407 && (PHP_VERSION_ID >= 50400 || PHP_VERSION_ID <= 50317)) {
+                $exception->errorHandlerCanary = new ErrorHandlerCanary();
+            }
+            throw $exception;
+        }
+        if (isset(self::$loggers['scream']) && !(error_reporting() & $level)) {
+            if (self::$stackedErrorLevels) {
+                self::$stackedErrors[] = func_get_args();
+            } else {
+                switch ($level) {
+                    case E_USER_ERROR:
+                    case E_RECOVERABLE_ERROR:
+                        $logLevel = LogLevel::ERROR;
+                        break;
+                    case E_WARNING:
+                    case E_USER_WARNING:
+                        $logLevel = LogLevel::WARNING;
+                        break;
+                    default:
+                        $logLevel = LogLevel::NOTICE;
+                        break;
+                }
+                self::$loggers['scream']->log($logLevel, $message, array('type' => $level, 'file' => $file, 'line' => $line, 'scream' => error_reporting()));
+            }
+        }
+        return false;
+    }
+    public static function stackErrors()
+    {
+        self::$stackedErrorLevels[] = error_reporting(error_reporting() | E_PARSE | E_ERROR | E_CORE_ERROR | E_COMPILE_ERROR);
+    }
+    public static function unstackErrors()
+    {
+        $level = array_pop(self::$stackedErrorLevels);
+        if (null !== $level) {
+            $e = error_reporting($level);
+            if ($e !== ($level | E_PARSE | E_ERROR | E_CORE_ERROR | E_COMPILE_ERROR)) {
+                error_reporting($e);
+            }
+        }
+        if (empty(self::$stackedErrorLevels)) {
+            $errors = self::$stackedErrors;
+            self::$stackedErrors = array();
+            $errorHandler = set_error_handler('var_dump');
+            restore_error_handler();
+            if ($errorHandler) {
+                foreach ($errors as $e) {
+                    call_user_func_array($errorHandler, $e);
+                }
+            }
+        }
+    }
+    public function handleFatal()
+    {
+        $this->reservedMemory = '';
+        gc_collect_cycles();
+        $error = error_get_last();
+        $exceptionHandler = set_exception_handler('var_dump');
+        restore_exception_handler();
+        try {
+            while (self::$stackedErrorLevels) {
+                static::unstackErrors();
+            }
+        } catch (\Exception $exception) {
+            if ($exceptionHandler) {
+                call_user_func($exceptionHandler, $exception);
+                return;
+            }
+            if ($this->displayErrors) {
+                ini_set('display_errors', 1);
+            }
+            throw $exception;
+        }
+        if (!$error || !$this->level || !($error['type'] & (E_ERROR | E_CORE_ERROR | E_COMPILE_ERROR | E_PARSE))) {
+            return;
+        }
+        if (isset(self::$loggers['emergency'])) {
+            $fatal = array('type' => $error['type'], 'file' => $error['file'], 'line' => $error['line']);
+            self::$loggers['emergency']->emergency($error['message'], $fatal);
+        }
+        if ($this->displayErrors && $exceptionHandler) {
+            $this->handleFatalError($exceptionHandler, $error);
+        }
+    }
+    protected function getFatalErrorHandlers()
+    {
+        return array(new UndefinedFunctionFatalErrorHandler(), new UndefinedMethodFatalErrorHandler(), new ClassNotFoundFatalErrorHandler());
+    }
+    private function handleFatalError($exceptionHandler, array $error)
+    {
+        set_error_handler('var_dump', 0);
+        ini_set('display_errors', 1);
+        $level = isset($this->levels[$error['type']]) ? $this->levels[$error['type']] : $error['type'];
+        $message = sprintf('%s: %s in %s line %d', $level, $error['message'], $error['file'], $error['line']);
+        if (0 === strpos($error['message'], 'Allowed memory') || 0 === strpos($error['message'], 'Out of memory')) {
+            $exception = new OutOfMemoryException($message, 0, $error['type'], $error['file'], $error['line'], 3, false);
+        } else {
+            $exception = new FatalErrorException($message, 0, $error['type'], $error['file'], $error['line'], 3, true);
+            foreach ($this->getFatalErrorHandlers() as $handler) {
+                if ($e = $handler->handleError($error, $exception)) {
+                    $exception = $e;
+                    break;
+                }
+            }
+        }
+        try {
+            call_user_func($exceptionHandler, $exception);
+        } catch (\Exception $e) {
+            throw $exception;
+        }
+    }
+}
+class ErrorHandlerCanary
+{
+    private static $displayErrors = null;
+    public function __construct()
+    {
+        if (null === self::$displayErrors) {
+            self::$displayErrors = ini_set('display_errors', 1);
+        }
+    }
+    public function __destruct()
+    {
+        if (null !== self::$displayErrors) {
+            ini_set('display_errors', self::$displayErrors);
+            self::$displayErrors = null;
+        }
+    }
+}
+namespace Symfony\Component\HttpKernel\Debug;
+
+use Symfony\Component\Debug\ErrorHandler as DebugErrorHandler;
+class ErrorHandler extends DebugErrorHandler
+{
+    
+}
+namespace Illuminate\Config;
+
+use Closure;
+use ArrayAccess;
+use Illuminate\Support\NamespacedItemResolver;
+class Repository extends NamespacedItemResolver implements ArrayAccess
+{
+    protected $loader;
+    protected $environment;
+    protected $items = array();
+    protected $packages = array();
+    protected $afterLoad = array();
+    public function __construct(LoaderInterface $loader, $environment)
+    {
+        $this->loader = $loader;
+        $this->environment = $environment;
+    }
+    public function has($key)
+    {
+        $default = microtime(true);
+        return $this->get($key, $default) !== $default;
+    }
+    public function hasGroup($key)
+    {
+        list($namespace, $group, $item) = $this->parseKey($key);
+        return $this->loader->exists($group, $namespace);
+    }
+    public function get($key, $default = null)
+    {
+        list($namespace, $group, $item) = $this->parseKey($key);
+        $collection = $this->getCollection($group, $namespace);
+        $this->load($group, $namespace, $collection);
+        return array_get($this->items[$collection], $item, $default);
+    }
+    public function set($key, $value)
+    {
+        list($namespace, $group, $item) = $this->parseKey($key);
+        $collection = $this->getCollection($group, $namespace);
+        $this->load($group, $namespace, $collection);
+        if (is_null($item)) {
+            $this->items[$collection] = $value;
+        } else {
+            array_set($this->items[$collection], $item, $value);
+        }
+    }
+    protected function load($group, $namespace, $collection)
+    {
+        $env = $this->environment;
+        if (isset($this->items[$collection])) {
+            return;
+        }
+        $items = $this->loader->load($env, $group, $namespace);
+        if (isset($this->afterLoad[$namespace])) {
+            $items = $this->callAfterLoad($namespace, $group, $items);
+        }
+        $this->items[$collection] = $items;
+    }
+    protected function callAfterLoad($namespace, $group, $items)
+    {
+        $callback = $this->afterLoad[$namespace];
+        return call_user_func($callback, $this, $group, $items);
+    }
+    protected function parseNamespacedSegments($key)
+    {
+        list($namespace, $item) = explode('::', $key);
+        if (in_array($namespace, $this->packages)) {
+            return $this->parsePackageSegments($key, $namespace, $item);
+        }
+        return parent::parseNamespacedSegments($key);
+    }
+    protected function parsePackageSegments($key, $namespace, $item)
+    {
+        $itemSegments = explode('.', $item);
+        if (!$this->loader->exists($itemSegments[0], $namespace)) {
+            return array($namespace, 'config', $item);
+        }
+        return parent::parseNamespacedSegments($key);
+    }
+    public function package($package, $hint, $namespace = null)
+    {
+        $namespace = $this->getPackageNamespace($package, $namespace);
+        $this->packages[] = $namespace;
+        $this->addNamespace($namespace, $hint);
+        $this->afterLoading($namespace, function ($me, $group, $items) use($package) {
+            $env = $me->getEnvironment();
+            $loader = $me->getLoader();
+            return $loader->cascadePackage($env, $package, $group, $items);
+        });
+    }
+    protected function getPackageNamespace($package, $namespace)
+    {
+        if (is_null($namespace)) {
+            list($vendor, $namespace) = explode('/', $package);
+        }
+        return $namespace;
+    }
+    public function afterLoading($namespace, Closure $callback)
+    {
+        $this->afterLoad[$namespace] = $callback;
+    }
+    protected function getCollection($group, $namespace = null)
+    {
+        $namespace = $namespace ?: '*';
+        return $namespace . '::' . $group;
+    }
+    public function addNamespace($namespace, $hint)
+    {
+        $this->loader->addNamespace($namespace, $hint);
+    }
+    public function getNamespaces()
+    {
+        return $this->loader->getNamespaces();
+    }
+    public function getLoader()
+    {
+        return $this->loader;
+    }
+    public function setLoader(LoaderInterface $loader)
+    {
+        $this->loader = $loader;
+    }
+    public function getEnvironment()
+    {
+        return $this->environment;
+    }
+    public function getAfterLoadCallbacks()
+    {
+        return $this->afterLoad;
+    }
+    public function getItems()
+    {
+        return $this->items;
+    }
+    public function offsetExists($key)
+    {
+        return $this->has($key);
+    }
+    public function offsetGet($key)
+    {
+        return $this->get($key);
+    }
+    public function offsetSet($key, $value)
+    {
+        $this->set($key, $value);
+    }
+    public function offsetUnset($key)
+    {
+        $this->set($key, null);
+    }
+}
+namespace Illuminate\Support;
+
+class NamespacedItemResolver
+{
+    protected $parsed = array();
+    public function parseKey($key)
+    {
+        if (isset($this->parsed[$key])) {
+            return $this->parsed[$key];
+        }
+        if (strpos($key, '::') === false) {
+            $segments = explode('.', $key);
+            $parsed = $this->parseBasicSegments($segments);
+        } else {
+            $parsed = $this->parseNamespacedSegments($key);
+        }
+        return $this->parsed[$key] = $parsed;
+    }
+    protected function parseBasicSegments(array $segments)
+    {
+        $group = $segments[0];
+        if (count($segments) == 1) {
+            return array(null, $group, null);
+        } else {
+            $item = implode('.', array_slice($segments, 1));
+            return array(null, $group, $item);
+        }
+    }
+    protected function parseNamespacedSegments($key)
+    {
+        list($namespace, $item) = explode('::', $key);
+        $itemSegments = explode('.', $item);
+        $groupAndItem = array_slice($this->parseBasicSegments($itemSegments), 1);
+        return array_merge(array($namespace), $groupAndItem);
+    }
+    public function setParsedKey($key, $parsed)
+    {
+        $this->parsed[$key] = $parsed;
+    }
+}
+namespace Illuminate\Config;
+
+use Illuminate\Filesystem\Filesystem;
+class FileLoader implements LoaderInterface
+{
+    protected $files;
+    protected $defaultPath;
+    protected $hints = array();
+    protected $exists = array();
+    public function __construct(Filesystem $files, $defaultPath)
+    {
+        $this->files = $files;
+        $this->defaultPath = $defaultPath;
+    }
+    public function load($environment, $group, $namespace = null)
+    {
+        $items = array();
+        $path = $this->getPath($namespace);
+        if (is_null($path)) {
+            return $items;
+        }
+        $file = "{$path}/{$group}.php";
+        if ($this->files->exists($file)) {
+            $items = $this->getRequire($file);
+        }
+        $file = "{$path}/{$environment}/{$group}.php";
+        if ($this->files->exists($file)) {
+            $items = $this->mergeEnvironment($items, $file);
+        }
+        return $items;
+    }
+    protected function mergeEnvironment(array $items, $file)
+    {
+        return array_replace_recursive($items, $this->getRequire($file));
+    }
+    public function exists($group, $namespace = null)
+    {
+        $key = $group . $namespace;
+        if (isset($this->exists[$key])) {
+            return $this->exists[$key];
+        }
+        $path = $this->getPath($namespace);
+        if (is_null($path)) {
+            return $this->exists[$key] = false;
+        }
+        $file = "{$path}/{$group}.php";
+        $exists = $this->files->exists($file);
+        return $this->exists[$key] = $exists;
+    }
+    public function cascadePackage($env, $package, $group, $items)
+    {
+        $file = "packages/{$package}/{$group}.php";
+        if ($this->files->exists($path = $this->defaultPath . '/' . $file)) {
+            $items = array_merge($items, $this->getRequire($path));
+        }
+        $path = $this->getPackagePath($env, $package, $group);
+        if ($this->files->exists($path)) {
+            $items = array_merge($items, $this->getRequire($path));
+        }
+        return $items;
+    }
+    protected function getPackagePath($env, $package, $group)
+    {
+        $file = "packages/{$package}/{$env}/{$group}.php";
+        return $this->defaultPath . '/' . $file;
+    }
+    protected function getPath($namespace)
+    {
+        if (is_null($namespace)) {
+            return $this->defaultPath;
+        } elseif (isset($this->hints[$namespace])) {
+            return $this->hints[$namespace];
+        }
+    }
+    public function addNamespace($namespace, $hint)
+    {
+        $this->hints[$namespace] = $hint;
+    }
+    public function getNamespaces()
+    {
+        return $this->hints;
+    }
+    protected function getRequire($path)
+    {
+        return $this->files->getRequire($path);
+    }
+    public function getFilesystem()
+    {
+        return $this->files;
+    }
+}
+namespace Illuminate\Config;
+
+interface LoaderInterface
+{
+    public function load($environment, $group, $namespace = null);
+    public function exists($group, $namespace = null);
+    public function addNamespace($namespace, $hint);
+    public function getNamespaces();
+    public function cascadePackage($environment, $package, $group, $items);
+}
+namespace Illuminate\Config;
+
+interface EnvironmentVariablesLoaderInterface
+{
+    public function load($environment = null);
+}
+namespace Illuminate\Config;
+
+use Illuminate\Filesystem\Filesystem;
+class FileEnvironmentVariablesLoader implements EnvironmentVariablesLoaderInterface
+{
+    protected $files;
+    protected $path;
+    public function __construct(Filesystem $files, $path = null)
+    {
+        $this->files = $files;
+        $this->path = $path ?: base_path();
+    }
+    public function load($environment = null)
+    {
+        if ($environment == 'production') {
+            $environment = null;
+        }
+        if (!$this->files->exists($path = $this->getFile($environment))) {
+            return array();
+        }
+        return array_dot($this->files->getRequire($path));
+    }
+    protected function getFile($environment)
+    {
+        if ($environment) {
+            return $this->path . '/.env.' . $environment . '.php';
+        }
+        return $this->path . '/.env.php';
+    }
+}
+namespace Illuminate\Config;
+
+class EnvironmentVariables
+{
+    protected $loader;
+    public function __construct(EnvironmentVariablesLoaderInterface $loader)
+    {
+        $this->loader = $loader;
+    }
+    public function load($environment = null)
+    {
+        foreach ($this->loader->load($environment) as $key => $value) {
+            $_ENV[$key] = $value;
+            $_SERVER[$key] = $value;
+            putenv("{$key}={$value}");
+        }
+    }
+}
+namespace Illuminate\Filesystem;
+
+use FilesystemIterator;
+use Symfony\Component\Finder\Finder;
+class Filesystem
+{
+    public function exists($path)
+    {
+        return file_exists($path);
+    }
+    public function get($path)
+    {
+        if ($this->isFile($path)) {
+            return file_get_contents($path);
+        }
+        throw new FileNotFoundException("File does not exist at path {$path}");
+    }
+    public function getRequire($path)
+    {
+        if ($this->isFile($path)) {
+            return require $path;
+        }
+        throw new FileNotFoundException("File does not exist at path {$path}");
+    }
+    public function requireOnce($file)
+    {
+        require_once $file;
+    }
+    public function put($path, $contents)
+    {
+        return file_put_contents($path, $contents);
+    }
+    public function prepend($path, $data)
+    {
+        if ($this->exists($path)) {
+            return $this->put($path, $data . $this->get($path));
+        }
+        return $this->put($path, $data);
+    }
+    public function append($path, $data)
+    {
+        return file_put_contents($path, $data, FILE_APPEND);
+    }
+    public function delete($paths)
+    {
+        $paths = is_array($paths) ? $paths : func_get_args();
+        $success = true;
+        foreach ($paths as $path) {
+            if (!@unlink($path)) {
+                $success = false;
+            }
+        }
+        return $success;
+    }
+    public function move($path, $target)
+    {
+        return rename($path, $target);
+    }
+    public function copy($path, $target)
+    {
+        return copy($path, $target);
+    }
+    public function name($path)
+    {
+        return pathinfo($path, PATHINFO_FILENAME);
+    }
+    public function extension($path)
+    {
+        return pathinfo($path, PATHINFO_EXTENSION);
+    }
+    public function type($path)
+    {
+        return filetype($path);
+    }
+    public function size($path)
+    {
+        return filesize($path);
+    }
+    public function lastModified($path)
+    {
+        return filemtime($path);
+    }
+    public function isDirectory($directory)
+    {
+        return is_dir($directory);
+    }
+    public function isWritable($path)
+    {
+        return is_writable($path);
+    }
+    public function isFile($file)
+    {
+        return is_file($file);
+    }
+    public function glob($pattern, $flags = 0)
+    {
+        return glob($pattern, $flags);
+    }
+    public function files($directory)
+    {
+        $glob = glob($directory . '/*');
+        if ($glob === false) {
+            return array();
+        }
+        return array_filter($glob, function ($file) {
+            return filetype($file) == 'file';
+        });
+    }
+    public function allFiles($directory)
+    {
+        return iterator_to_array(Finder::create()->files()->in($directory), false);
+    }
+    public function directories($directory)
+    {
+        $directories = array();
+        foreach (Finder::create()->in($directory)->directories()->depth(0) as $dir) {
+            $directories[] = $dir->getPathname();
+        }
+        return $directories;
+    }
+    public function makeDirectory($path, $mode = 493, $recursive = false, $force = false)
+    {
+        if ($force) {
+            return @mkdir($path, $mode, $recursive);
+        }
+        return mkdir($path, $mode, $recursive);
+    }
+    public function copyDirectory($directory, $destination, $options = null)
+    {
+        if (!$this->isDirectory($directory)) {
+            return false;
+        }
+        $options = $options ?: FilesystemIterator::SKIP_DOTS;
+        if (!$this->isDirectory($destination)) {
+            $this->makeDirectory($destination, 511, true);
+        }
+        $items = new FilesystemIterator($directory, $options);
+        foreach ($items as $item) {
+            $target = $destination . '/' . $item->getBasename();
+            if ($item->isDir()) {
+                $path = $item->getPathname();
+                if (!$this->copyDirectory($path, $target, $options)) {
+                    return false;
+                }
+            } else {
+                if (!$this->copy($item->getPathname(), $target)) {
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
+    public function deleteDirectory($directory, $preserve = false)
+    {
+        if (!$this->isDirectory($directory)) {
+            return false;
+        }
+        $items = new FilesystemIterator($directory);
+        foreach ($items as $item) {
+            if ($item->isDir()) {
+                $this->deleteDirectory($item->getPathname());
+            } else {
+                $this->delete($item->getPathname());
+            }
+        }
+        if (!$preserve) {
+            @rmdir($directory);
+        }
+        return true;
+    }
+    public function cleanDirectory($directory)
+    {
+        return $this->deleteDirectory($directory, true);
+    }
+}
+namespace Illuminate\Foundation;
+
+class AliasLoader
+{
+    protected $aliases;
+    protected $registered = false;
+    protected static $instance;
+    public function __construct(array $aliases = array())
+    {
+        $this->aliases = $aliases;
+    }
+    public static function getInstance(array $aliases = array())
+    {
+        if (is_null(static::$instance)) {
+            return static::$instance = new static($aliases);
+        }
+        $aliases = array_merge(static::$instance->getAliases(), $aliases);
+        static::$instance->setAliases($aliases);
+        return static::$instance;
+    }
+    public function load($alias)
+    {
+        if (isset($this->aliases[$alias])) {
+            return class_alias($this->aliases[$alias], $alias);
+        }
+    }
+    public function alias($class, $alias)
+    {
+        $this->aliases[$class] = $alias;
+    }
+    public function register()
+    {
+        if (!$this->registered) {
+            $this->prependToLoaderStack();
+            $this->registered = true;
+        }
+    }
+    protected function prependToLoaderStack()
+    {
+        spl_autoload_register(array($this, 'load'), true, true);
+    }
+    public function getAliases()
+    {
+        return $this->aliases;
+    }
+    public function setAliases(array $aliases)
+    {
+        $this->aliases = $aliases;
+    }
+    public function isRegistered()
+    {
+        return $this->registered;
+    }
+    public function setRegistered($value)
+    {
+        $this->registered = $value;
+    }
+    public static function setInstance($loader)
+    {
+        static::$instance = $loader;
+    }
+}
+namespace Illuminate\Foundation;
+
+use Illuminate\Filesystem\Filesystem;
+class ProviderRepository
+{
+    protected $files;
+    protected $manifestPath;
+    protected $default = array('when' => array());
+    public function __construct(Filesystem $files, $manifestPath)
+    {
+        $this->files = $files;
+        $this->manifestPath = $manifestPath;
+    }
+    public function load(Application $app, array $providers)
+    {
+        $manifest = $this->loadManifest();
+        if ($this->shouldRecompile($manifest, $providers)) {
+            $manifest = $this->compileManifest($app, $providers);
+        }
+        if ($app->runningInConsole()) {
+            $manifest['eager'] = $manifest['providers'];
+        }
+        foreach ($manifest['when'] as $provider => $events) {
+            $this->registerLoadEvents($app, $provider, $events);
+        }
+        foreach ($manifest['eager'] as $provider) {
+            $app->register($this->createProvider($app, $provider));
+        }
+        $app->setDeferredServices($manifest['deferred']);
+    }
+    protected function registerLoadEvents(Application $app, $provider, array $events)
+    {
+        if (count($events) < 1) {
+            return;
+        }
+        $app->make('events')->listen($events, function () use($app, $provider) {
+            $app->register($provider);
+        });
+    }
+    protected function compileManifest(Application $app, $providers)
+    {
+        $manifest = $this->freshManifest($providers);
+        foreach ($providers as $provider) {
+            $instance = $this->createProvider($app, $provider);
+            if ($instance->isDeferred()) {
+                foreach ($instance->provides() as $service) {
+                    $manifest['deferred'][$service] = $provider;
+                }
+                $manifest['when'][$provider] = $instance->when();
+            } else {
+                $manifest['eager'][] = $provider;
+            }
+        }
+        return $this->writeManifest($manifest);
+    }
+    public function createProvider(Application $app, $provider)
+    {
+        return new $provider($app);
+    }
+    public function shouldRecompile($manifest, $providers)
+    {
+        return is_null($manifest) || $manifest['providers'] != $providers;
+    }
+    public function loadManifest()
+    {
+        $path = $this->manifestPath . '/services.json';
+        if ($this->files->exists($path)) {
+            $manifest = json_decode($this->files->get($path), true);
+            return array_merge($this->default, $manifest);
+        }
+    }
+    public function writeManifest($manifest)
+    {
+        $path = $this->manifestPath . '/services.json';
+        $this->files->put($path, json_encode($manifest, JSON_PRETTY_PRINT));
+        return $manifest;
+    }
+    protected function freshManifest(array $providers)
+    {
+        list($eager, $deferred) = array(array(), array());
+        return compact('providers', 'eager', 'deferred');
+    }
+    public function getFilesystem()
+    {
+        return $this->files;
+    }
+}
+namespace Illuminate\Cookie;
+
+use Illuminate\Support\ServiceProvider;
+class CookieServiceProvider extends ServiceProvider
+{
+    public function register()
+    {
+        $this->app->bindShared('cookie', function ($app) {
+            $config = $app['config']['session'];
+            return (new CookieJar())->setDefaultPathAndDomain($config['path'], $config['domain']);
+        });
+    }
+}
+namespace Illuminate\Database;
+
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\ServiceProvider;
+use Illuminate\Database\Connectors\ConnectionFactory;
+class DatabaseServiceProvider extends ServiceProvider
+{
+    public function boot()
+    {
+        Model::setConnectionResolver($this->app['db']);
+        Model::setEventDispatcher($this->app['events']);
+    }
+    public function register()
+    {
+        $this->app->bindShared('db.factory', function ($app) {
+            return new ConnectionFactory($app);
+        });
+        $this->app->bindShared('db', function ($app) {
+            return new DatabaseManager($app, $app['db.factory']);
+        });
+    }
+}
+namespace Illuminate\Encryption;
+
+use Illuminate\Support\ServiceProvider;
+class EncryptionServiceProvider extends ServiceProvider
+{
+    public function register()
+    {
+        $this->app->bindShared('encrypter', function ($app) {
+            $encrypter = new Encrypter($app['config']['app.key']);
+            if ($app['config']->has('app.cipher')) {
+                $encrypter->setCipher($app['config']['app.cipher']);
+            }
+            return $encrypter;
+        });
+    }
+}
+namespace Illuminate\Filesystem;
+
+use Illuminate\Support\ServiceProvider;
+class FilesystemServiceProvider extends ServiceProvider
+{
+    public function register()
+    {
+        $this->app->bindShared('files', function () {
+            return new Filesystem();
+        });
+    }
+}
+namespace Illuminate\Session;
+
+use Illuminate\Support\ServiceProvider;
+class SessionServiceProvider extends ServiceProvider
+{
+    public function register()
+    {
+        $this->setupDefaultDriver();
+        $this->registerSessionManager();
+        $this->registerSessionDriver();
+    }
+    protected function setupDefaultDriver()
+    {
+        if ($this->app->runningInConsole()) {
+            $this->app['config']['session.driver'] = 'array';
+        }
+    }
+    protected function registerSessionManager()
+    {
+        $this->app->bindShared('session', function ($app) {
+            return new SessionManager($app);
+        });
+    }
+    protected function registerSessionDriver()
+    {
+        $this->app->bindShared('session.store', function ($app) {
+            $manager = $app['session'];
+            return $manager->driver();
+        });
+    }
+}
+namespace Illuminate\View;
+
+use Illuminate\Support\ViewErrorBag;
+use Illuminate\View\Engines\PhpEngine;
+use Illuminate\Support\ServiceProvider;
+use Illuminate\View\Engines\CompilerEngine;
+use Illuminate\View\Engines\EngineResolver;
+use Illuminate\View\Compilers\BladeCompiler;
+class ViewServiceProvider extends ServiceProvider
+{
+    public function register()
+    {
+        $this->registerEngineResolver();
+        $this->registerViewFinder();
+        $this->registerFactory();
+        $this->registerSessionBinder();
+    }
+    public function registerEngineResolver()
+    {
+        $this->app->bindShared('view.engine.resolver', function () {
+            $resolver = new EngineResolver();
+            foreach (array('php', 'blade') as $engine) {
+                $this->{'register' . ucfirst($engine) . 'Engine'}($resolver);
+            }
+            return $resolver;
+        });
+    }
+    public function registerPhpEngine($resolver)
+    {
+        $resolver->register('php', function () {
+            return new PhpEngine();
+        });
+    }
+    public function registerBladeEngine($resolver)
+    {
+        $app = $this->app;
+        $app->bindShared('blade.compiler', function ($app) {
+            $cache = $app['path.storage'] . '/views';
+            return new BladeCompiler($app['files'], $cache);
+        });
+        $resolver->register('blade', function () use($app) {
+            return new CompilerEngine($app['blade.compiler'], $app['files']);
+        });
+    }
+    public function registerViewFinder()
+    {
+        $this->app->bindShared('view.finder', function ($app) {
+            $paths = $app['config']['view.paths'];
+            return new FileViewFinder($app['files'], $paths);
+        });
+    }
+    public function registerFactory()
+    {
+        $this->app->bindShared('view', function ($app) {
+            $resolver = $app['view.engine.resolver'];
+            $finder = $app['view.finder'];
+            $env = new Factory($resolver, $finder, $app['events']);
+            $env->setContainer($app);
+            $env->share('app', $app);
+            return $env;
+        });
+    }
+    protected function registerSessionBinder()
+    {
+        list($app, $me) = array($this->app, $this);
+        $app->booted(function () use($app, $me) {
+            if ($me->sessionHasErrors($app)) {
+                $errors = $app['session.store']->get('errors');
+                $app['view']->share('errors', $errors);
+            } else {
+                $app['view']->share('errors', new ViewErrorBag());
+            }
+        });
+    }
+    public function sessionHasErrors($app)
+    {
+        $config = $app['config']['session'];
+        if (isset($app['session.store']) && !is_null($config['driver'])) {
+            return $app['session.store']->has('errors');
+        }
+    }
+}
+namespace Illuminate\Routing;
+
+interface RouteFiltererInterface
+{
+    public function filter($name, $callback);
+    public function callRouteFilter($filter, $parameters, $route, $request, $response = null);
+}
+namespace Illuminate\Routing;
+
+use Closure;
+use Illuminate\Http\Request;
+use Illuminate\Http\Response;
+use Illuminate\Events\Dispatcher;
+use Illuminate\Container\Container;
+use Symfony\Component\HttpKernel\HttpKernelInterface;
+use Symfony\Component\HttpFoundation\Request as SymfonyRequest;
+use Symfony\Component\HttpFoundation\Response as SymfonyResponse;
+use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
+class Router implements HttpKernelInterface, RouteFiltererInterface
+{
+    protected $events;
+    protected $container;
+    protected $routes;
+    protected $current;
+    protected $currentRequest;
+    protected $controllerDispatcher;
+    protected $inspector;
+    protected $filtering = true;
+    protected $patternFilters = array();
+    protected $regexFilters = array();
+    protected $binders = array();
+    protected $patterns = array();
+    protected $groupStack = array();
+    public static $verbs = array('GET', 'HEAD', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS');
+    protected $resourceDefaults = array('index', 'create', 'store', 'show', 'edit', 'update', 'destroy');
+    public function __construct(Dispatcher $events, Container $container = null)
+    {
+        $this->events = $events;
+        $this->routes = new RouteCollection();
+        $this->container = $container ?: new Container();
+        $this->bind('_missing', function ($v) {
+            return explode('/', $v);
+        });
+    }
+    public function get($uri, $action)
+    {
+        return $this->addRoute(array('GET', 'HEAD'), $uri, $action);
+    }
+    public function post($uri, $action)
+    {
+        return $this->addRoute('POST', $uri, $action);
+    }
+    public function put($uri, $action)
+    {
+        return $this->addRoute('PUT', $uri, $action);
+    }
+    public function patch($uri, $action)
+    {
+        return $this->addRoute('PATCH', $uri, $action);
+    }
+    public function delete($uri, $action)
+    {
+        return $this->addRoute('DELETE', $uri, $action);
+    }
+    public function options($uri, $action)
+    {
+        return $this->addRoute('OPTIONS', $uri, $action);
+    }
+    public function any($uri, $action)
+    {
+        $verbs = array('GET', 'HEAD', 'POST', 'PUT', 'PATCH', 'DELETE');
+        return $this->addRoute($verbs, $uri, $action);
+    }
+    public function match($methods, $uri, $action)
+    {
+        return $this->addRoute(array_map('strtoupper', (array) $methods), $uri, $action);
+    }
+    public function controllers(array $controllers)
+    {
+        foreach ($controllers as $uri => $name) {
+            $this->controller($uri, $name);
+        }
+    }
+    public function controller($uri, $controller, $names = array())
+    {
+        $prepended = $controller;
+        if (!empty($this->groupStack)) {
+            $prepended = $this->prependGroupUses($controller);
+        }
+        $routable = $this->getInspector()->getRoutable($prepended, $uri);
+        foreach ($routable as $method => $routes) {
+            foreach ($routes as $route) {
+                $this->registerInspected($route, $controller, $method, $names);
+            }
+        }
+        $this->addFallthroughRoute($controller, $uri);
+    }
+    protected function registerInspected($route, $controller, $method, &$names)
+    {
+        $action = array('uses' => $controller . '@' . $method);
+        $action['as'] = array_get($names, $method);
+        $this->{$route['verb']}($route['uri'], $action);
+    }
+    protected function addFallthroughRoute($controller, $uri)
+    {
+        $missing = $this->any($uri . '/{_missing}', $controller . '@missingMethod');
+        $missing->where('_missing', '(.*)');
+    }
+    public function resource($name, $controller, array $options = array())
+    {
+        if (str_contains($name, '/')) {
+            $this->prefixedResource($name, $controller, $options);
+            return;
+        }
+        $base = $this->getResourceWildcard(last(explode('.', $name)));
+        $defaults = $this->resourceDefaults;
+        foreach ($this->getResourceMethods($defaults, $options) as $m) {
+            $this->{'addResource' . ucfirst($m)}($name, $base, $controller, $options);
+        }
+    }
+    protected function prefixedResource($name, $controller, array $options)
+    {
+        list($name, $prefix) = $this->getResourcePrefix($name);
+        $callback = function ($me) use($name, $controller, $options) {
+            $me->resource($name, $controller, $options);
+        };
+        return $this->group(compact('prefix'), $callback);
+    }
+    protected function getResourcePrefix($name)
+    {
+        $segments = explode('/', $name);
+        $prefix = implode('/', array_slice($segments, 0, -1));
+        return array(end($segments), $prefix);
+    }
+    protected function getResourceMethods($defaults, $options)
+    {
+        if (isset($options['only'])) {
+            return array_intersect($defaults, (array) $options['only']);
+        } elseif (isset($options['except'])) {
+            return array_diff($defaults, (array) $options['except']);
+        }
+        return $defaults;
+    }
+    public function getResourceUri($resource)
+    {
+        if (!str_contains($resource, '.')) {
+            return $resource;
+        }
+        $segments = explode('.', $resource);
+        $uri = $this->getNestedResourceUri($segments);
+        return str_replace('/{' . $this->getResourceWildcard(last($segments)) . '}', '', $uri);
+    }
+    protected function getNestedResourceUri(array $segments)
+    {
+        return implode('/', array_map(function ($s) {
+            return $s . '/{' . $this->getResourceWildcard($s) . '}';
+        }, $segments));
+    }
+    protected function getResourceAction($resource, $controller, $method, $options)
+    {
+        $name = $this->getResourceName($resource, $method, $options);
+        return array('as' => $name, 'uses' => $controller . '@' . $method);
+    }
+    protected function getResourceName($resource, $method, $options)
+    {
+        if (isset($options['names'][$method])) {
+            return $options['names'][$method];
+        }
+        $prefix = isset($options['as']) ? $options['as'] . '.' : '';
+        if (empty($this->groupStack)) {
+            return $prefix . $resource . '.' . $method;
+        }
+        return $this->getGroupResourceName($prefix, $resource, $method);
+    }
+    protected function getGroupResourceName($prefix, $resource, $method)
+    {
+        $group = str_replace('/', '.', $this->getLastGroupPrefix());
+        return trim("{$prefix}{$group}.{$resource}.{$method}", '.');
+    }
+    public function getResourceWildcard($value)
+    {
+        return str_replace('-', '_', $value);
+    }
+    protected function addResourceIndex($name, $base, $controller, $options)
+    {
+        $uri = $this->getResourceUri($name);
+        $action = $this->getResourceAction($name, $controller, 'index', $options);
+        return $this->get($uri, $action);
+    }
+    protected function addResourceCreate($name, $base, $controller, $options)
+    {
+        $uri = $this->getResourceUri($name) . '/create';
+        $action = $this->getResourceAction($name, $controller, 'create', $options);
+        return $this->get($uri, $action);
+    }
+    protected function addResourceStore($name, $base, $controller, $options)
+    {
+        $uri = $this->getResourceUri($name);
+        $action = $this->getResourceAction($name, $controller, 'store', $options);
+        return $this->post($uri, $action);
+    }
+    protected function addResourceShow($name, $base, $controller, $options)
+    {
+        $uri = $this->getResourceUri($name) . '/{' . $base . '}';
+        $action = $this->getResourceAction($name, $controller, 'show', $options);
+        return $this->get($uri, $action);
+    }
+    protected function addResourceEdit($name, $base, $controller, $options)
+    {
+        $uri = $this->getResourceUri($name) . '/{' . $base . '}/edit';
+        $action = $this->getResourceAction($name, $controller, 'edit', $options);
+        return $this->get($uri, $action);
+    }
+    protected function addResourceUpdate($name, $base, $controller, $options)
+    {
+        $this->addPutResourceUpdate($name, $base, $controller, $options);
+        return $this->addPatchResourceUpdate($name, $base, $controller);
+    }
+    protected function addPutResourceUpdate($name, $base, $controller, $options)
+    {
+        $uri = $this->getResourceUri($name) . '/{' . $base . '}';
+        $action = $this->getResourceAction($name, $controller, 'update', $options);
+        return $this->put($uri, $action);
+    }
+    protected function addPatchResourceUpdate($name, $base, $controller)
+    {
+        $uri = $this->getResourceUri($name) . '/{' . $base . '}';
+        $this->patch($uri, $controller . '@update');
+    }
+    protected function addResourceDestroy($name, $base, $controller, $options)
+    {
+        $uri = $this->getResourceUri($name) . '/{' . $base . '}';
+        $action = $this->getResourceAction($name, $controller, 'destroy', $options);
+        return $this->delete($uri, $action);
+    }
+    public function group(array $attributes, Closure $callback)
+    {
+        $this->updateGroupStack($attributes);
+        call_user_func($callback, $this);
+        array_pop($this->groupStack);
+    }
+    protected function updateGroupStack(array $attributes)
+    {
+        if (!empty($this->groupStack)) {
+            $attributes = $this->mergeGroup($attributes, last($this->groupStack));
+        }
+        $this->groupStack[] = $attributes;
+    }
+    public function mergeWithLastGroup($new)
+    {
+        return $this->mergeGroup($new, last($this->groupStack));
+    }
+    public static function mergeGroup($new, $old)
+    {
+        $new['namespace'] = static::formatUsesPrefix($new, $old);
+        $new['prefix'] = static::formatGroupPrefix($new, $old);
+        if (isset($new['domain'])) {
+            unset($old['domain']);
+        }
+        $new['where'] = array_merge(array_get($old, 'where', array()), array_get($new, 'where', array()));
+        return array_merge_recursive(array_except($old, array('namespace', 'prefix', 'where')), $new);
+    }
+    protected static function formatUsesPrefix($new, $old)
+    {
+        if (isset($new['namespace']) && isset($old['namespace'])) {
+            return trim(array_get($old, 'namespace'), '\\') . '\\' . trim($new['namespace'], '\\');
+        } elseif (isset($new['namespace'])) {
+            return trim($new['namespace'], '\\');
+        }
+        return array_get($old, 'namespace');
+    }
+    protected static function formatGroupPrefix($new, $old)
+    {
+        if (isset($new['prefix'])) {
+            return trim(array_get($old, 'prefix'), '/') . '/' . trim($new['prefix'], '/');
+        }
+        return array_get($old, 'prefix');
+    }
+    protected function getLastGroupPrefix()
+    {
+        if (!empty($this->groupStack)) {
+            $last = end($this->groupStack);
+            return isset($last['prefix']) ? $last['prefix'] : '';
+        }
+        return '';
+    }
+    protected function addRoute($methods, $uri, $action)
+    {
+        return $this->routes->add($this->createRoute($methods, $uri, $action));
+    }
+    protected function createRoute($methods, $uri, $action)
+    {
+        if ($this->routingToController($action)) {
+            $action = $this->getControllerAction($action);
+        }
+        $route = $this->newRoute($methods, $uri = $this->prefix($uri), $action);
+        if (!empty($this->groupStack)) {
+            $this->mergeController($route);
+        }
+        $this->addWhereClausesToRoute($route);
+        return $route;
+    }
+    protected function newRoute($methods, $uri, $action)
+    {
+        return new Route($methods, $uri, $action);
+    }
+    protected function prefix($uri)
+    {
+        return trim(trim($this->getLastGroupPrefix(), '/') . '/' . trim($uri, '/'), '/') ?: '/';
+    }
+    protected function addWhereClausesToRoute($route)
+    {
+        $route->where(array_merge($this->patterns, array_get($route->getAction(), 'where', array())));
+        return $route;
+    }
+    protected function mergeController($route)
+    {
+        $action = $this->mergeWithLastGroup($route->getAction());
+        $route->setAction($action);
+    }
+    protected function routingToController($action)
+    {
+        if ($action instanceof Closure) {
+            return false;
+        }
+        return is_string($action) || is_string(array_get($action, 'uses'));
+    }
+    protected function getControllerAction($action)
+    {
+        if (is_string($action)) {
+            $action = array('uses' => $action);
+        }
+        if (!empty($this->groupStack)) {
+            $action['uses'] = $this->prependGroupUses($action['uses']);
+        }
+        $action['controller'] = $action['uses'];
+        $closure = $this->getClassClosure($action['uses']);
+        return array_set($action, 'uses', $closure);
+    }
+    protected function getClassClosure($controller)
+    {
+        $d = $this->getControllerDispatcher();
+        return function () use($d, $controller) {
+            $route = $this->current();
+            $request = $this->getCurrentRequest();
+            list($class, $method) = explode('@', $controller);
+            return $d->dispatch($route, $request, $class, $method);
+        };
+    }
+    protected function prependGroupUses($uses)
+    {
+        $group = last($this->groupStack);
+        return isset($group['namespace']) ? $group['namespace'] . '\\' . $uses : $uses;
+    }
+    public function dispatch(Request $request)
+    {
+        $this->currentRequest = $request;
+        $response = $this->callFilter('before', $request);
+        if (is_null($response)) {
+            $response = $this->dispatchToRoute($request);
+        }
+        $response = $this->prepareResponse($request, $response);
+        $this->callFilter('after', $request, $response);
+        return $response;
+    }
+    public function dispatchToRoute(Request $request)
+    {
+        $route = $this->findRoute($request);
+        $this->events->fire('router.matched', array($route, $request));
+        $response = $this->callRouteBefore($route, $request);
+        if (is_null($response)) {
+            $response = $route->run($request);
+        }
+        $response = $this->prepareResponse($request, $response);
+        $this->callRouteAfter($route, $request, $response);
+        return $response;
+    }
+    protected function findRoute($request)
+    {
+        $this->current = $route = $this->routes->match($request);
+        return $this->substituteBindings($route);
+    }
+    protected function substituteBindings($route)
+    {
+        foreach ($route->parameters() as $key => $value) {
+            if (isset($this->binders[$key])) {
+                $route->setParameter($key, $this->performBinding($key, $value, $route));
+            }
+        }
+        return $route;
+    }
+    protected function performBinding($key, $value, $route)
+    {
+        return call_user_func($this->binders[$key], $value, $route);
+    }
+    public function matched($callback)
+    {
+        $this->events->listen('router.matched', $callback);
+    }
+    public function before($callback)
+    {
+        $this->addGlobalFilter('before', $callback);
+    }
+    public function after($callback)
+    {
+        $this->addGlobalFilter('after', $callback);
+    }
+    protected function addGlobalFilter($filter, $callback)
+    {
+        $this->events->listen('router.' . $filter, $this->parseFilter($callback));
+    }
+    public function filter($name, $callback)
+    {
+        $this->events->listen('router.filter: ' . $name, $this->parseFilter($callback));
+    }
+    protected function parseFilter($callback)
+    {
+        if (is_string($callback) && !str_contains($callback, '@')) {
+            return $callback . '@filter';
+        }
+        return $callback;
+    }
+    public function when($pattern, $name, $methods = null)
+    {
+        if (!is_null($methods)) {
+            $methods = array_map('strtoupper', (array) $methods);
+        }
+        $this->patternFilters[$pattern][] = compact('name', 'methods');
+    }
+    public function whenRegex($pattern, $name, $methods = null)
+    {
+        if (!is_null($methods)) {
+            $methods = array_map('strtoupper', (array) $methods);
+        }
+        $this->regexFilters[$pattern][] = compact('name', 'methods');
+    }
+    public function model($key, $class, Closure $callback = null)
+    {
+        $this->bind($key, function ($value) use($class, $callback) {
+            if (is_null($value)) {
+                return null;
+            }
+            if ($model = (new $class())->find($value)) {
+                return $model;
+            }
+            if ($callback instanceof Closure) {
+                return call_user_func($callback);
+            }
+            throw new NotFoundHttpException();
+        });
+    }
+    public function bind($key, $binder)
+    {
+        if (is_string($binder)) {
+            $binder = $this->createClassBinding($binder);
+        }
+        $this->binders[str_replace('-', '_', $key)] = $binder;
+    }
+    public function createClassBinding($binding)
+    {
+        return function ($value, $route) use($binding) {
+            $segments = explode('@', $binding);
+            $method = count($segments) == 2 ? $segments[1] : 'bind';
+            $callable = array($this->container->make($segments[0]), $method);
+            return call_user_func($callable, $value, $route);
+        };
+    }
+    public function pattern($key, $pattern)
+    {
+        $this->patterns[$key] = $pattern;
+    }
+    public function patterns($patterns)
+    {
+        foreach ($patterns as $key => $pattern) {
+            $this->pattern($key, $pattern);
+        }
+    }
+    protected function callFilter($filter, $request, $response = null)
+    {
+        if (!$this->filtering) {
+            return null;
+        }
+        return $this->events->until('router.' . $filter, array($request, $response));
+    }
+    public function callRouteBefore($route, $request)
+    {
+        $response = $this->callPatternFilters($route, $request);
+        return $response ?: $this->callAttachedBefores($route, $request);
+    }
+    protected function callPatternFilters($route, $request)
+    {
+        foreach ($this->findPatternFilters($request) as $filter => $parameters) {
+            $response = $this->callRouteFilter($filter, $parameters, $route, $request);
+            if (!is_null($response)) {
+                return $response;
+            }
+        }
+    }
+    public function findPatternFilters($request)
+    {
+        $results = array();
+        list($path, $method) = array($request->path(), $request->getMethod());
+        foreach ($this->patternFilters as $pattern => $filters) {
+            if (str_is($pattern, $path)) {
+                $merge = $this->patternsByMethod($method, $filters);
+                $results = array_merge($results, $merge);
+            }
+        }
+        foreach ($this->regexFilters as $pattern => $filters) {
+            if (preg_match($pattern, $path)) {
+                $merge = $this->patternsByMethod($method, $filters);
+                $results = array_merge($results, $merge);
+            }
+        }
+        return $results;
+    }
+    protected function patternsByMethod($method, $filters)
+    {
+        $results = array();
+        foreach ($filters as $filter) {
+            if ($this->filterSupportsMethod($filter, $method)) {
+                $parsed = Route::parseFilters($filter['name']);
+                $results = array_merge($results, $parsed);
+            }
+        }
+        return $results;
+    }
+    protected function filterSupportsMethod($filter, $method)
+    {
+        $methods = $filter['methods'];
+        return is_null($methods) || in_array($method, $methods);
+    }
+    protected function callAttachedBefores($route, $request)
+    {
+        foreach ($route->beforeFilters() as $filter => $parameters) {
+            $response = $this->callRouteFilter($filter, $parameters, $route, $request);
+            if (!is_null($response)) {
+                return $response;
+            }
+        }
+    }
+    public function callRouteAfter($route, $request, $response)
+    {
+        foreach ($route->afterFilters() as $filter => $parameters) {
+            $this->callRouteFilter($filter, $parameters, $route, $request, $response);
+        }
+    }
+    public function callRouteFilter($filter, $parameters, $route, $request, $response = null)
+    {
+        if (!$this->filtering) {
+            return null;
+        }
+        $data = array_merge(array($route, $request, $response), $parameters);
+        return $this->events->until('router.filter: ' . $filter, $this->cleanFilterParameters($data));
+    }
+    protected function cleanFilterParameters(array $parameters)
+    {
+        return array_filter($parameters, function ($p) {
+            return !is_null($p) && $p !== '';
+        });
+    }
+    protected function prepareResponse($request, $response)
+    {
+        if (!$response instanceof SymfonyResponse) {
+            $response = new Response($response);
+        }
+        return $response->prepare($request);
+    }
+    public function withoutFilters(callable $callback)
+    {
+        $this->disableFilters();
+        call_user_func($callback);
+        $this->enableFilters();
+    }
+    public function enableFilters()
+    {
+        $this->filtering = true;
+    }
+    public function disableFilters()
+    {
+        $this->filtering = false;
+    }
+    public function input($key, $default = null)
+    {
+        return $this->current()->parameter($key, $default);
+    }
+    public function getCurrentRoute()
+    {
+        return $this->current();
+    }
+    public function current()
+    {
+        return $this->current;
+    }
+    public function has($name)
+    {
+        return $this->routes->hasNamedRoute($name);
+    }
+    public function currentRouteName()
+    {
+        return $this->current() ? $this->current()->getName() : null;
+    }
+    public function is()
+    {
+        foreach (func_get_args() as $pattern) {
+            if (str_is($pattern, $this->currentRouteName())) {
+                return true;
+            }
+        }
+        return false;
+    }
+    public function currentRouteNamed($name)
+    {
+        return $this->current() ? $this->current()->getName() == $name : false;
+    }
+    public function currentRouteAction()
+    {
+        if (!$this->current()) {
+            return;
+        }
+        $action = $this->current()->getAction();
+        return isset($action['controller']) ? $action['controller'] : null;
+    }
+    public function uses()
+    {
+        foreach (func_get_args() as $pattern) {
+            if (str_is($pattern, $this->currentRouteAction())) {
+                return true;
+            }
+        }
+        return false;
+    }
+    public function currentRouteUses($action)
+    {
+        return $this->currentRouteAction() == $action;
+    }
+    public function getCurrentRequest()
+    {
+        return $this->currentRequest;
+    }
+    public function getRoutes()
+    {
+        return $this->routes;
+    }
+    public function getControllerDispatcher()
+    {
+        if (is_null($this->controllerDispatcher)) {
+            $this->controllerDispatcher = new ControllerDispatcher($this, $this->container);
+        }
+        return $this->controllerDispatcher;
+    }
+    public function setControllerDispatcher(ControllerDispatcher $dispatcher)
+    {
+        $this->controllerDispatcher = $dispatcher;
+    }
+    public function getInspector()
+    {
+        return $this->inspector ?: ($this->inspector = new ControllerInspector());
+    }
+    public function getPatterns()
+    {
+        return $this->patterns;
+    }
+    public function handle(SymfonyRequest $request, $type = HttpKernelInterface::MASTER_REQUEST, $catch = true)
+    {
+        return $this->dispatch(Request::createFromBase($request));
+    }
+}
+namespace Illuminate\Routing;
+
+use Illuminate\Http\Request;
+use Illuminate\Routing\Matching\UriValidator;
+use Illuminate\Routing\Matching\HostValidator;
+use Illuminate\Routing\Matching\MethodValidator;
+use Illuminate\Routing\Matching\SchemeValidator;
+use Symfony\Component\Routing\Route as SymfonyRoute;
+class Route
+{
+    protected $uri;
+    protected $methods;
+    protected $action;
+    protected $defaults = array();
+    protected $wheres = array();
+    protected $parameters;
+    protected $parameterNames;
+    protected $compiled;
+    protected static $validators;
+    public function __construct($methods, $uri, $action)
+    {
+        $this->uri = $uri;
+        $this->methods = (array) $methods;
+        $this->action = $this->parseAction($action);
+        if (in_array('GET', $this->methods) && !in_array('HEAD', $this->methods)) {
+            $this->methods[] = 'HEAD';
+        }
+        if (isset($this->action['prefix'])) {
+            $this->prefix($this->action['prefix']);
+        }
+    }
+    public function run()
+    {
+        $parameters = array_filter($this->parameters(), function ($p) {
+            return isset($p);
+        });
+        return call_user_func_array($this->action['uses'], $parameters);
+    }
+    public function matches(Request $request, $includingMethod = true)
+    {
+        $this->compileRoute();
+        foreach ($this->getValidators() as $validator) {
+            if (!$includingMethod && $validator instanceof MethodValidator) {
+                continue;
+            }
+            if (!$validator->matches($this, $request)) {
+                return false;
+            }
+        }
+        return true;
+    }
+    protected function compileRoute()
+    {
+        $optionals = $this->extractOptionalParameters();
+        $uri = preg_replace('/\\{(\\w+?)\\?\\}/', '{$1}', $this->uri);
+        $this->compiled = with(new SymfonyRoute($uri, $optionals, $this->wheres, array(), $this->domain() ?: ''))->compile();
+    }
+    protected function extractOptionalParameters()
+    {
+        preg_match_all('/\\{(\\w+?)\\?\\}/', $this->uri, $matches);
+        return isset($matches[1]) ? array_fill_keys($matches[1], null) : array();
+    }
+    public function beforeFilters()
+    {
+        if (!isset($this->action['before'])) {
+            return array();
+        }
+        return $this->parseFilters($this->action['before']);
+    }
+    public function afterFilters()
+    {
+        if (!isset($this->action['after'])) {
+            return array();
+        }
+        return $this->parseFilters($this->action['after']);
+    }
+    public static function parseFilters($filters)
+    {
+        return array_build(static::explodeFilters($filters), function ($key, $value) {
+            return Route::parseFilter($value);
+        });
+    }
+    protected static function explodeFilters($filters)
+    {
+        if (is_array($filters)) {
+            return static::explodeArrayFilters($filters);
+        }
+        return array_map('trim', explode('|', $filters));
+    }
+    protected static function explodeArrayFilters(array $filters)
+    {
+        $results = array();
+        foreach ($filters as $filter) {
+            $results = array_merge($results, array_map('trim', explode('|', $filter)));
+        }
+        return $results;
+    }
+    public static function parseFilter($filter)
+    {
+        if (!str_contains($filter, ':')) {
+            return array($filter, array());
+        }
+        return static::parseParameterFilter($filter);
+    }
+    protected static function parseParameterFilter($filter)
+    {
+        list($name, $parameters) = explode(':', $filter, 2);
+        return array($name, explode(',', $parameters));
+    }
+    public function getParameter($name, $default = null)
+    {
+        return $this->parameter($name, $default);
+    }
+    public function parameter($name, $default = null)
+    {
+        return array_get($this->parameters(), $name, $default);
+    }
+    public function setParameter($name, $value)
+    {
+        $this->parameters();
+        $this->parameters[$name] = $value;
+    }
+    public function forgetParameter($name)
+    {
+        $this->parameters();
+        unset($this->parameters[$name]);
+    }
+    public function parameters()
+    {
+        if (isset($this->parameters)) {
+            return array_map(function ($value) {
+                return is_string($value) ? rawurldecode($value) : $value;
+            }, $this->parameters);
+        }
+        throw new \LogicException('Route is not bound.');
+    }
+    public function parametersWithoutNulls()
+    {
+        return array_filter($this->parameters(), function ($p) {
+            return !is_null($p);
+        });
+    }
+    public function parameterNames()
+    {
+        if (isset($this->parameterNames)) {
+            return $this->parameterNames;
+        }
+        return $this->parameterNames = $this->compileParameterNames();
+    }
+    protected function compileParameterNames()
+    {
+        preg_match_all('/\\{(.*?)\\}/', $this->domain() . $this->uri, $matches);
+        return array_map(function ($m) {
+            return trim($m, '?');
+        }, $matches[1]);
+    }
+    public function bind(Request $request)
+    {
+        $this->compileRoute();
+        $this->bindParameters($request);
+        return $this;
+    }
+    public function bindParameters(Request $request)
+    {
+        $params = $this->matchToKeys(array_slice($this->bindPathParameters($request), 1));
+        if (!is_null($this->compiled->getHostRegex())) {
+            $params = $this->bindHostParameters($request, $params);
+        }
+        return $this->parameters = $this->replaceDefaults($params);
+    }
+    protected function bindPathParameters(Request $request)
+    {
+        preg_match($this->compiled->getRegex(), '/' . $request->decodedPath(), $matches);
+        return $matches;
+    }
+    protected function bindHostParameters(Request $request, $parameters)
+    {
+        preg_match($this->compiled->getHostRegex(), $request->getHost(), $matches);
+        return array_merge($this->matchToKeys(array_slice($matches, 1)), $parameters);
+    }
+    protected function matchToKeys(array $matches)
+    {
+        if (count($this->parameterNames()) == 0) {
+            return array();
+        }
+        $parameters = array_intersect_key($matches, array_flip($this->parameterNames()));
+        return array_filter($parameters, function ($value) {
+            return is_string($value) && strlen($value) > 0;
+        });
+    }
+    protected function replaceDefaults(array $parameters)
+    {
+        foreach ($parameters as $key => &$value) {
+            $value = isset($value) ? $value : array_get($this->defaults, $key);
+        }
+        return $parameters;
+    }
+    protected function parseAction($action)
+    {
+        if (is_callable($action)) {
+            return array('uses' => $action);
+        } elseif (!isset($action['uses'])) {
+            $action['uses'] = $this->findClosure($action);
+        }
+        return $action;
+    }
+    protected function findClosure(array $action)
+    {
+        return array_first($action, function ($key, $value) {
+            return is_callable($value);
+        });
+    }
+    public static function getValidators()
+    {
+        if (isset(static::$validators)) {
+            return static::$validators;
+        }
+        return static::$validators = array(new MethodValidator(), new SchemeValidator(), new HostValidator(), new UriValidator());
+    }
+    public function before($filters)
+    {
+        return $this->addFilters('before', $filters);
+    }
+    public function after($filters)
+    {
+        return $this->addFilters('after', $filters);
+    }
+    protected function addFilters($type, $filters)
+    {
+        $filters = static::explodeFilters($filters);
+        if (isset($this->action[$type])) {
+            $existing = static::explodeFilters($this->action[$type]);
+            $this->action[$type] = array_merge($existing, $filters);
+        } else {
+            $this->action[$type] = $filters;
+        }
+        return $this;
+    }
+    public function defaults($key, $value)
+    {
+        $this->defaults[$key] = $value;
+        return $this;
+    }
+    public function where($name, $expression = null)
+    {
+        foreach ($this->parseWhere($name, $expression) as $name => $expression) {
+            $this->wheres[$name] = $expression;
+        }
+        return $this;
+    }
+    protected function parseWhere($name, $expression)
+    {
+        return is_array($name) ? $name : array($name => $expression);
+    }
+    protected function whereArray(array $wheres)
+    {
+        foreach ($wheres as $name => $expression) {
+            $this->where($name, $expression);
+        }
+        return $this;
+    }
+    public function prefix($prefix)
+    {
+        $this->uri = trim($prefix, '/') . '/' . trim($this->uri, '/');
+        return $this;
+    }
+    public function getPath()
+    {
+        return $this->uri();
+    }
+    public function uri()
+    {
+        return $this->uri;
+    }
+    public function getMethods()
+    {
+        return $this->methods();
+    }
+    public function methods()
+    {
+        return $this->methods;
+    }
+    public function httpOnly()
+    {
+        return in_array('http', $this->action, true);
+    }
+    public function httpsOnly()
+    {
+        return $this->secure();
+    }
+    public function secure()
+    {
+        return in_array('https', $this->action, true);
+    }
+    public function domain()
+    {
+        return isset($this->action['domain']) ? $this->action['domain'] : null;
+    }
+    public function getUri()
+    {
+        return $this->uri;
+    }
+    public function setUri($uri)
+    {
+        $this->uri = $uri;
+        return $this;
+    }
+    public function getPrefix()
+    {
+        return isset($this->action['prefix']) ? $this->action['prefix'] : null;
+    }
+    public function getName()
+    {
+        return isset($this->action['as']) ? $this->action['as'] : null;
+    }
+    public function getActionName()
+    {
+        return isset($this->action['controller']) ? $this->action['controller'] : 'Closure';
+    }
+    public function getAction()
+    {
+        return $this->action;
+    }
+    public function setAction(array $action)
+    {
+        $this->action = $action;
+        return $this;
+    }
+    public function getCompiled()
+    {
+        return $this->compiled;
+    }
+}
+namespace Illuminate\Routing;
+
+use Countable;
+use ArrayIterator;
+use IteratorAggregate;
+use Illuminate\Http\Request;
+use Illuminate\Http\Response;
+use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
+use Symfony\Component\HttpKernel\Exception\MethodNotAllowedHttpException;
+class RouteCollection implements Countable, IteratorAggregate
+{
+    protected $routes = array();
+    protected $allRoutes = array();
+    protected $nameList = array();
+    protected $actionList = array();
+    public function add(Route $route)
+    {
+        $this->addToCollections($route);
+        $this->addLookups($route);
+        return $route;
+    }
+    protected function addToCollections($route)
+    {
+        $domainAndUri = $route->domain() . $route->getUri();
+        foreach ($route->methods() as $method) {
+            $this->routes[$method][$domainAndUri] = $route;
+        }
+        $this->allRoutes[$method . $domainAndUri] = $route;
+    }
+    protected function addLookups($route)
+    {
+        $action = $route->getAction();
+        if (isset($action['as'])) {
+            $this->nameList[$action['as']] = $route;
+        }
+        if (isset($action['controller'])) {
+            $this->addToActionList($action, $route);
+        }
+    }
+    protected function addToActionList($action, $route)
+    {
+        if (!isset($this->actionList[$action['controller']])) {
+            $this->actionList[$action['controller']] = $route;
+        }
+    }
+    public function match(Request $request)
+    {
+        $routes = $this->get($request->getMethod());
+        $route = $this->check($routes, $request);
+        if (!is_null($route)) {
+            return $route->bind($request);
+        }
+        $others = $this->checkForAlternateVerbs($request);
+        if (count($others) > 0) {
+            return $this->getOtherMethodsRoute($request, $others);
+        }
+        throw new NotFoundHttpException();
+    }
+    protected function checkForAlternateVerbs($request)
+    {
+        $methods = array_diff(Router::$verbs, array($request->getMethod()));
+        $others = array();
+        foreach ($methods as $method) {
+            if (!is_null($this->check($this->get($method), $request, false))) {
+                $others[] = $method;
+            }
+        }
+        return $others;
+    }
+    protected function getOtherMethodsRoute($request, array $others)
+    {
+        if ($request->method() == 'OPTIONS') {
+            return (new Route('OPTIONS', $request->path(), function () use($others) {
+                return new Response('', 200, array('Allow' => implode(',', $others)));
+            }))->bind($request);
+        }
+        $this->methodNotAllowed($others);
+    }
+    protected function methodNotAllowed(array $others)
+    {
+        throw new MethodNotAllowedHttpException($others);
+    }
+    protected function check(array $routes, $request, $includingMethod = true)
+    {
+        return array_first($routes, function ($key, $value) use($request, $includingMethod) {
+            return $value->matches($request, $includingMethod);
+        });
+    }
+    protected function get($method = null)
+    {
+        if (is_null($method)) {
+            return $this->getRoutes();
+        }
+        return array_get($this->routes, $method, array());
+    }
+    public function hasNamedRoute($name)
+    {
+        return !is_null($this->getByName($name));
+    }
+    public function getByName($name)
+    {
+        return isset($this->nameList[$name]) ? $this->nameList[$name] : null;
+    }
+    public function getByAction($action)
+    {
+        return isset($this->actionList[$action]) ? $this->actionList[$action] : null;
+    }
+    public function getRoutes()
+    {
+        return array_values($this->allRoutes);
+    }
+    public function getIterator()
+    {
+        return new ArrayIterator($this->getRoutes());
+    }
+    public function count()
+    {
+        return count($this->getRoutes());
+    }
+}
+namespace Illuminate\Routing;
+
+use Closure;
+use Illuminate\Http\Request;
+use Illuminate\Container\Container;
+class ControllerDispatcher
+{
+    protected $filterer;
+    protected $container;
+    public function __construct(RouteFiltererInterface $filterer, Container $container = null)
+    {
+        $this->filterer = $filterer;
+        $this->container = $container;
+    }
+    public function dispatch(Route $route, Request $request, $controller, $method)
+    {
+        $instance = $this->makeController($controller);
+        $this->assignAfter($instance, $route, $request, $method);
+        $response = $this->before($instance, $route, $request, $method);
+        if (is_null($response)) {
+            $response = $this->call($instance, $route, $method);
+        }
+        return $response;
+    }
+    protected function makeController($controller)
+    {
+        Controller::setFilterer($this->filterer);
+        return $this->container->make($controller);
+    }
+    protected function call($instance, $route, $method)
+    {
+        $parameters = $route->parametersWithoutNulls();
+        return $instance->callAction($method, $parameters);
+    }
+    protected function before($instance, $route, $request, $method)
+    {
+        foreach ($instance->getBeforeFilters() as $filter) {
+            if ($this->filterApplies($filter, $request, $method)) {
+                $response = $this->callFilter($filter, $route, $request);
+                if (!is_null($response)) {
+                    return $response;
+                }
+            }
+        }
+    }
+    protected function assignAfter($instance, $route, $request, $method)
+    {
+        foreach ($instance->getAfterFilters() as $filter) {
+            if ($this->filterApplies($filter, $request, $method)) {
+                $route->after($this->getAssignableAfter($filter));
+            }
+        }
+    }
+    protected function getAssignableAfter($filter)
+    {
+        return $filter['original'] instanceof Closure ? $filter['filter'] : $filter['original'];
+    }
+    protected function filterApplies($filter, $request, $method)
+    {
+        foreach (array('Only', 'Except', 'On') as $type) {
+            if ($this->{"filterFails{$type}"}($filter, $request, $method)) {
+                return false;
+            }
+        }
+        return true;
+    }
+    protected function filterFailsOnly($filter, $request, $method)
+    {
+        if (!isset($filter['options']['only'])) {
+            return false;
+        }
+        return !in_array($method, (array) $filter['options']['only']);
+    }
+    protected function filterFailsExcept($filter, $request, $method)
+    {
+        if (!isset($filter['options']['except'])) {
+            return false;
+        }
+        return in_array($method, (array) $filter['options']['except']);
+    }
+    protected function filterFailsOn($filter, $request, $method)
+    {
+        $on = array_get($filter, 'options.on');
+        if (is_null($on)) {
+            return false;
+        }
+        if (is_string($on)) {
+            $on = explode('|', $on);
+        }
+        return !in_array(strtolower($request->getMethod()), $on);
+    }
+    protected function callFilter($filter, $route, $request)
+    {
+        extract($filter);
+        return $this->filterer->callRouteFilter($filter, $parameters, $route, $request);
+    }
+}
+namespace Illuminate\Routing;
+
+use Illuminate\Http\Request;
+use InvalidArgumentException;
+class UrlGenerator
+{
+    protected $routes;
+    protected $request;
+    protected $forcedRoot;
+    protected $forceSchema;
+    protected $dontEncode = array('%2F' => '/', '%40' => '@', '%3A' => ':', '%3B' => ';', '%2C' => ',', '%3D' => '=', '%2B' => '+', '%21' => '!', '%2A' => '*', '%7C' => '|');
+    public function __construct(RouteCollection $routes, Request $request)
+    {
+        $this->routes = $routes;
+        $this->setRequest($request);
+    }
+    public function full()
+    {
+        return $this->request->fullUrl();
+    }
+    public function current()
+    {
+        return $this->to($this->request->getPathInfo());
+    }
+    public function previous()
+    {
+        return $this->to($this->request->headers->get('referer'));
+    }
+    public function to($path, $extra = array(), $secure = null)
+    {
+        if ($this->isValidUrl($path)) {
+            return $path;
+        }
+        $scheme = $this->getScheme($secure);
+        $tail = implode('/', array_map('rawurlencode', (array) $extra));
+        $root = $this->getRootUrl($scheme);
+        return $this->trimUrl($root, $path, $tail);
+    }
+    public function secure($path, $parameters = array())
+    {
+        return $this->to($path, $parameters, true);
+    }
+    public function asset($path, $secure = null)
+    {
+        if ($this->isValidUrl($path)) {
+            return $path;
+        }
+        $root = $this->getRootUrl($this->getScheme($secure));
+        return $this->removeIndex($root) . '/' . trim($path, '/');
+    }
+    protected function removeIndex($root)
+    {
+        $i = 'index.php';
+        return str_contains($root, $i) ? str_replace('/' . $i, '', $root) : $root;
+    }
+    public function secureAsset($path)
+    {
+        return $this->asset($path, true);
+    }
+    protected function getScheme($secure)
+    {
+        if (is_null($secure)) {
+            return $this->forceSchema ?: $this->request->getScheme() . '://';
+        }
+        return $secure ? 'https://' : 'http://';
+    }
+    public function forceSchema($schema)
+    {
+        $this->forceSchema = $schema . '://';
+    }
+    public function route($name, $parameters = array(), $absolute = true, $route = null)
+    {
+        $route = $route ?: $this->routes->getByName($name);
+        $parameters = (array) $parameters;
+        if (!is_null($route)) {
+            return $this->toRoute($route, $parameters, $absolute);
+        }
+        throw new InvalidArgumentException("Route [{$name}] not defined.");
+    }
+    protected function toRoute($route, array $parameters, $absolute)
+    {
+        $domain = $this->getRouteDomain($route, $parameters);
+        $uri = strtr(rawurlencode($this->trimUrl($root = $this->replaceRoot($route, $domain, $parameters), $this->replaceRouteParameters($route->uri(), $parameters))), $this->dontEncode) . $this->getRouteQueryString($parameters);
+        return $absolute ? $uri : '/' . ltrim(str_replace($root, '', $uri), '/');
+    }
+    protected function replaceRoot($route, $domain, &$parameters)
+    {
+        return $this->replaceRouteParameters($this->getRouteRoot($route, $domain), $parameters);
+    }
+    protected function replaceRouteParameters($path, array &$parameters)
+    {
+        if (count($parameters)) {
+            $path = preg_replace_sub('/\\{.*?\\}/', $parameters, $this->replaceNamedParameters($path, $parameters));
+        }
+        return trim(preg_replace('/\\{.*?\\?\\}/', '', $path), '/');
+    }
+    protected function replaceNamedParameters($path, &$parameters)
+    {
+        return preg_replace_callback('/\\{(.*?)\\??\\}/', function ($m) use(&$parameters) {
+            return isset($parameters[$m[1]]) ? array_pull($parameters, $m[1]) : $m[0];
+        }, $path);
+    }
+    protected function getRouteQueryString(array $parameters)
+    {
+        if (count($parameters) == 0) {
+            return '';
+        }
+        $query = http_build_query($keyed = $this->getStringParameters($parameters));
+        if (count($keyed) < count($parameters)) {
+            $query .= '&' . implode('&', $this->getNumericParameters($parameters));
+        }
+        return '?' . trim($query, '&');
+    }
+    protected function getStringParameters(array $parameters)
+    {
+        return array_where($parameters, function ($k, $v) {
+            return is_string($k);
+        });
+    }
+    protected function getNumericParameters(array $parameters)
+    {
+        return array_where($parameters, function ($k, $v) {
+            return is_numeric($k);
+        });
+    }
+    protected function getRouteDomain($route, &$parameters)
+    {
+        return $route->domain() ? $this->formatDomain($route, $parameters) : null;
+    }
+    protected function formatDomain($route, &$parameters)
+    {
+        return $this->addPortToDomain($this->getDomainAndScheme($route));
+    }
+    protected function getDomainAndScheme($route)
+    {
+        return $this->getRouteScheme($route) . $route->domain();
+    }
+    protected function addPortToDomain($domain)
+    {
+        if (in_array($this->request->getPort(), array('80', '443'))) {
+            return $domain;
+        }
+        return $domain . ':' . $this->request->getPort();
+    }
+    protected function getRouteRoot($route, $domain)
+    {
+        return $this->getRootUrl($this->getRouteScheme($route), $domain);
+    }
+    protected function getRouteScheme($route)
+    {
+        if ($route->httpOnly()) {
+            return $this->getScheme(false);
+        } elseif ($route->httpsOnly()) {
+            return $this->getScheme(true);
+        }
+        return $this->getScheme(null);
+    }
+    public function action($action, $parameters = array(), $absolute = true)
+    {
+        return $this->route($action, $parameters, $absolute, $this->routes->getByAction($action));
+    }
+    protected function getRootUrl($scheme, $root = null)
+    {
+        if (is_null($root)) {
+            $root = $this->forcedRoot ?: $this->request->root();
+        }
+        $start = starts_with($root, 'http://') ? 'http://' : 'https://';
+        return preg_replace('~' . $start . '~', $scheme, $root, 1);
+    }
+    public function forceRootUrl($root)
+    {
+        $this->forcedRoot = $root;
+    }
+    public function isValidUrl($path)
+    {
+        if (starts_with($path, array('#', '//', 'mailto:', 'tel:', 'http://', 'https://'))) {
+            return true;
+        }
+        return filter_var($path, FILTER_VALIDATE_URL) !== false;
+    }
+    protected function trimUrl($root, $path, $tail = '')
+    {
+        return trim($root . '/' . trim($path . '/' . $tail, '/'), '/');
+    }
+    public function getRequest()
+    {
+        return $this->request;
+    }
+    public function setRequest(Request $request)
+    {
+        $this->request = $request;
+    }
+}
+namespace Illuminate\Routing\Matching;
+
+use Illuminate\Http\Request;
+use Illuminate\Routing\Route;
+interface ValidatorInterface
+{
+    public function matches(Route $route, Request $request);
+}
+namespace Illuminate\Routing\Matching;
+
+use Illuminate\Http\Request;
+use Illuminate\Routing\Route;
+class HostValidator implements ValidatorInterface
+{
+    public function matches(Route $route, Request $request)
+    {
+        if (is_null($route->getCompiled()->getHostRegex())) {
+            return true;
+        }
+        return preg_match($route->getCompiled()->getHostRegex(), $request->getHost());
+    }
+}
+namespace Illuminate\Routing\Matching;
+
+use Illuminate\Http\Request;
+use Illuminate\Routing\Route;
+class MethodValidator implements ValidatorInterface
+{
+    public function matches(Route $route, Request $request)
+    {
+        return in_array($request->getMethod(), $route->methods());
+    }
+}
+namespace Illuminate\Routing\Matching;
+
+use Illuminate\Http\Request;
+use Illuminate\Routing\Route;
+class SchemeValidator implements ValidatorInterface
+{
+    public function matches(Route $route, Request $request)
+    {
+        if ($route->httpOnly()) {
+            return !$request->secure();
+        } elseif ($route->secure()) {
+            return $request->secure();
+        }
+        return true;
+    }
+}
+namespace Illuminate\Routing\Matching;
+
+use Illuminate\Http\Request;
+use Illuminate\Routing\Route;
+class UriValidator implements ValidatorInterface
+{
+    public function matches(Route $route, Request $request)
+    {
+        $path = $request->path() == '/' ? '/' : '/' . $request->path();
+        return preg_match($route->getCompiled()->getRegex(), rawurldecode($path));
+    }
+}
+namespace Illuminate\Workbench;
+
+use Illuminate\Support\ServiceProvider;
+use Illuminate\Workbench\Console\WorkbenchMakeCommand;
+class WorkbenchServiceProvider extends ServiceProvider
+{
+    protected $defer = false;
+    public function register()
+    {
+        $this->app->bindShared('package.creator', function ($app) {
+            return new PackageCreator($app['files']);
+        });
+        $this->app->bindShared('command.workbench', function ($app) {
+            return new WorkbenchMakeCommand($app['package.creator']);
+        });
+        $this->commands('command.workbench');
+    }
+    public function provides()
+    {
+        return array('package.creator', 'command.workbench');
+    }
+}
+namespace Illuminate\Events;
+
+use Illuminate\Container\Container;
+class Dispatcher
+{
+    protected $container;
+    protected $listeners = array();
+    protected $wildcards = array();
+    protected $sorted = array();
+    protected $firing = array();
+    public function __construct(Container $container = null)
+    {
+        $this->container = $container ?: new Container();
+    }
+    public function listen($events, $listener, $priority = 0)
+    {
+        foreach ((array) $events as $event) {
+            if (str_contains($event, '*')) {
+                $this->setupWildcardListen($event, $listener);
+            } else {
+                $this->listeners[$event][$priority][] = $this->makeListener($listener);
+                unset($this->sorted[$event]);
+            }
+        }
+    }
+    protected function setupWildcardListen($event, $listener)
+    {
+        $this->wildcards[$event][] = $this->makeListener($listener);
+    }
+    public function hasListeners($eventName)
+    {
+        return isset($this->listeners[$eventName]);
+    }
+    public function queue($event, $payload = array())
+    {
+        $this->listen($event . '_queue', function () use($event, $payload) {
+            $this->fire($event, $payload);
+        });
+    }
+    public function subscribe($subscriber)
+    {
+        $subscriber = $this->resolveSubscriber($subscriber);
+        $subscriber->subscribe($this);
+    }
+    protected function resolveSubscriber($subscriber)
+    {
+        if (is_string($subscriber)) {
+            return $this->container->make($subscriber);
+        }
+        return $subscriber;
+    }
+    public function until($event, $payload = array())
+    {
+        return $this->fire($event, $payload, true);
+    }
+    public function flush($event)
+    {
+        $this->fire($event . '_queue');
+    }
+    public function firing()
+    {
+        return last($this->firing);
+    }
+    public function fire($event, $payload = array(), $halt = false)
+    {
+        $responses = array();
+        if (!is_array($payload)) {
+            $payload = array($payload);
+        }
+        $this->firing[] = $event;
+        foreach ($this->getListeners($event) as $listener) {
+            $response = call_user_func_array($listener, $payload);
+            if (!is_null($response) && $halt) {
+                array_pop($this->firing);
+                return $response;
+            }
+            if ($response === false) {
+                break;
+            }
+            $responses[] = $response;
+        }
+        array_pop($this->firing);
+        return $halt ? null : $responses;
+    }
+    public function getListeners($eventName)
+    {
+        $wildcards = $this->getWildcardListeners($eventName);
+        if (!isset($this->sorted[$eventName])) {
+            $this->sortListeners($eventName);
+        }
+        return array_merge($this->sorted[$eventName], $wildcards);
+    }
+    protected function getWildcardListeners($eventName)
+    {
+        $wildcards = array();
+        foreach ($this->wildcards as $key => $listeners) {
+            if (str_is($key, $eventName)) {
+                $wildcards = array_merge($wildcards, $listeners);
+            }
+        }
+        return $wildcards;
+    }
+    protected function sortListeners($eventName)
+    {
+        $this->sorted[$eventName] = array();
+        if (isset($this->listeners[$eventName])) {
+            krsort($this->listeners[$eventName]);
+            $this->sorted[$eventName] = call_user_func_array('array_merge', $this->listeners[$eventName]);
+        }
+    }
+    public function makeListener($listener)
+    {
+        if (is_string($listener)) {
+            $listener = $this->createClassListener($listener);
+        }
+        return $listener;
+    }
+    public function createClassListener($listener)
+    {
+        $container = $this->container;
+        return function () use($listener, $container) {
+            $segments = explode('@', $listener);
+            $method = count($segments) == 2 ? $segments[1] : 'handle';
+            $callable = array($container->make($segments[0]), $method);
+            $data = func_get_args();
+            return call_user_func_array($callable, $data);
+        };
+    }
+    public function forget($event)
+    {
+        unset($this->listeners[$event], $this->sorted[$event]);
+    }
+    public function forgetQueued()
+    {
+        foreach ($this->listeners as $key => $value) {
+            if (ends_with($key, '_queue')) {
+                $this->forget($key);
+            }
+        }
+    }
+}
+namespace Illuminate\Database\Eloquent;
+
+use DateTime;
+use ArrayAccess;
+use Carbon\Carbon;
+use LogicException;
+use JsonSerializable;
+use Illuminate\Events\Dispatcher;
+use Illuminate\Database\Eloquent\Relations\Pivot;
+use Illuminate\Database\Eloquent\Relations\HasOne;
+use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Eloquent\Relations\MorphTo;
+use Illuminate\Support\Contracts\JsonableInterface;
+use Illuminate\Support\Contracts\ArrayableInterface;
+use Illuminate\Database\Eloquent\Relations\Relation;
+use Illuminate\Database\Eloquent\Relations\MorphOne;
+use Illuminate\Database\Eloquent\Relations\MorphMany;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Query\Builder as QueryBuilder;
+use Illuminate\Database\Eloquent\Relations\MorphToMany;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
+use Illuminate\Database\Eloquent\Relations\HasManyThrough;
+use Illuminate\Database\ConnectionResolverInterface as Resolver;
+abstract class Model implements ArrayAccess, ArrayableInterface, JsonableInterface, JsonSerializable
+{
+    protected $connection;
+    protected $table;
+    protected $primaryKey = 'id';
+    protected $perPage = 15;
+    public $incrementing = true;
+    public $timestamps = true;
+    protected $attributes = array();
+    protected $original = array();
+    protected $relations = array();
+    protected $hidden = array();
+    protected $visible = array();
+    protected $appends = array();
+    protected $fillable = array();
+    protected $guarded = array('*');
+    protected $dates = array();
+    protected $touches = array();
+    protected $observables = array();
+    protected $with = array();
+    protected $morphClass;
+    public $exists = false;
+    public static $snakeAttributes = true;
+    protected static $resolver;
+    protected static $dispatcher;
+    protected static $booted = array();
+    protected static $globalScopes = array();
+    protected static $unguarded = false;
+    protected static $mutatorCache = array();
+    public static $manyMethods = array('belongsToMany', 'morphToMany', 'morphedByMany');
+    const CREATED_AT = 'created_at';
+    const UPDATED_AT = 'updated_at';
+    public function __construct(array $attributes = array())
+    {
+        $this->bootIfNotBooted();
+        $this->syncOriginal();
+        $this->fill($attributes);
+    }
+    protected function bootIfNotBooted()
+    {
+        $class = get_class($this);
+        if (!isset(static::$booted[$class])) {
+            static::$booted[$class] = true;
+            $this->fireModelEvent('booting', false);
+            static::boot();
+            $this->fireModelEvent('booted', false);
+        }
+    }
+    protected static function boot()
+    {
+        $class = get_called_class();
+        static::$mutatorCache[$class] = array();
+        foreach (get_class_methods($class) as $method) {
+            if (preg_match('/^get(.+)Attribute$/', $method, $matches)) {
+                if (static::$snakeAttributes) {
+                    $matches[1] = snake_case($matches[1]);
+                }
+                static::$mutatorCache[$class][] = lcfirst($matches[1]);
+            }
+        }
+        static::bootTraits();
+    }
+    protected static function bootTraits()
+    {
+        foreach (class_uses_recursive(get_called_class()) as $trait) {
+            if (method_exists(get_called_class(), $method = 'boot' . class_basename($trait))) {
+                forward_static_call(array(get_called_class(), $method));
+            }
+        }
+    }
+    public static function addGlobalScope(ScopeInterface $scope)
+    {
+        static::$globalScopes[get_called_class()][get_class($scope)] = $scope;
+    }
+    public static function hasGlobalScope($scope)
+    {
+        return !is_null(static::getGlobalScope($scope));
+    }
+    public static function getGlobalScope($scope)
+    {
+        return array_first(static::$globalScopes[get_called_class()], function ($key, $value) use($scope) {
+            return $scope instanceof $value;
+        });
+    }
+    public function getGlobalScopes()
+    {
+        return array_get(static::$globalScopes, get_class($this), array());
+    }
+    public static function observe($class)
+    {
+        $instance = new static();
+        $className = get_class($class);
+        foreach ($instance->getObservableEvents() as $event) {
+            if (method_exists($class, $event)) {
+                static::registerModelEvent($event, $className . '@' . $event);
+            }
+        }
+    }
+    public function fill(array $attributes)
+    {
+        $totallyGuarded = $this->totallyGuarded();
+        foreach ($this->fillableFromArray($attributes) as $key => $value) {
+            $key = $this->removeTableFromKey($key);
+            if ($this->isFillable($key)) {
+                $this->setAttribute($key, $value);
+            } elseif ($totallyGuarded) {
+                throw new MassAssignmentException($key);
+            }
+        }
+        return $this;
+    }
+    protected function fillableFromArray(array $attributes)
+    {
+        if (count($this->fillable) > 0 && !static::$unguarded) {
+            return array_intersect_key($attributes, array_flip($this->fillable));
+        }
+        return $attributes;
+    }
+    public function newInstance($attributes = array(), $exists = false)
+    {
+        $model = new static((array) $attributes);
+        $model->exists = $exists;
+        return $model;
+    }
+    public function newFromBuilder($attributes = array())
+    {
+        $instance = $this->newInstance(array(), true);
+        $instance->setRawAttributes((array) $attributes, true);
+        return $instance;
+    }
+    public static function hydrate(array $items, $connection = null)
+    {
+        $collection = with($instance = new static())->newCollection();
+        foreach ($items as $item) {
+            $model = $instance->newFromBuilder($item);
+            if (!is_null($connection)) {
+                $model->setConnection($connection);
+            }
+            $collection->push($model);
+        }
+        return $collection;
+    }
+    public static function hydrateRaw($query, $bindings = array(), $connection = null)
+    {
+        $instance = new static();
+        if (!is_null($connection)) {
+            $instance->setConnection($connection);
+        }
+        $items = $instance->getConnection()->select($query, $bindings);
+        return static::hydrate($items, $connection);
+    }
+    public static function create(array $attributes)
+    {
+        $model = new static($attributes);
+        $model->save();
+        return $model;
+    }
+    public static function firstOrCreate(array $attributes)
+    {
+        if (!is_null($instance = static::where($attributes)->first())) {
+            return $instance;
+        }
+        return static::create($attributes);
+    }
+    public static function firstOrNew(array $attributes)
+    {
+        if (!is_null($instance = static::where($attributes)->first())) {
+            return $instance;
+        }
+        return new static($attributes);
+    }
+    public static function updateOrCreate(array $attributes, array $values = array())
+    {
+        $instance = static::firstOrNew($attributes);
+        $instance->fill($values)->save();
+        return $instance;
+    }
+    protected static function firstByAttributes($attributes)
+    {
+        return static::where($attributes)->first();
+    }
+    public static function query()
+    {
+        return (new static())->newQuery();
+    }
+    public static function on($connection = null)
+    {
+        $instance = new static();
+        $instance->setConnection($connection);
+        return $instance->newQuery();
+    }
+    public static function onWriteConnection()
+    {
+        $instance = new static();
+        return $instance->newQuery()->useWritePdo();
+    }
+    public static function all($columns = array('*'))
+    {
+        $instance = new static();
+        return $instance->newQuery()->get($columns);
+    }
+    public static function find($id, $columns = array('*'))
+    {
+        if (is_array($id) && empty($id)) {
+            return new Collection();
+        }
+        $instance = new static();
+        return $instance->newQuery()->find($id, $columns);
+    }
+    public static function findOrNew($id, $columns = array('*'))
+    {
+        if (!is_null($model = static::find($id, $columns))) {
+            return $model;
+        }
+        return new static();
+    }
+    public static function findOrFail($id, $columns = array('*'))
+    {
+        if (!is_null($model = static::find($id, $columns))) {
+            return $model;
+        }
+        throw (new ModelNotFoundException())->setModel(get_called_class());
+    }
+    public function load($relations)
+    {
+        if (is_string($relations)) {
+            $relations = func_get_args();
+        }
+        $query = $this->newQuery()->with($relations);
+        $query->eagerLoadRelations(array($this));
+        return $this;
+    }
+    public static function with($relations)
+    {
+        if (is_string($relations)) {
+            $relations = func_get_args();
+        }
+        $instance = new static();
+        return $instance->newQuery()->with($relations);
+    }
+    public function hasOne($related, $foreignKey = null, $localKey = null)
+    {
+        $foreignKey = $foreignKey ?: $this->getForeignKey();
+        $instance = new $related();
+        $localKey = $localKey ?: $this->getKeyName();
+        return new HasOne($instance->newQuery(), $this, $instance->getTable() . '.' . $foreignKey, $localKey);
+    }
+    public function morphOne($related, $name, $type = null, $id = null, $localKey = null)
+    {
+        $instance = new $related();
+        list($type, $id) = $this->getMorphs($name, $type, $id);
+        $table = $instance->getTable();
+        $localKey = $localKey ?: $this->getKeyName();
+        return new MorphOne($instance->newQuery(), $this, $table . '.' . $type, $table . '.' . $id, $localKey);
+    }
+    public function belongsTo($related, $foreignKey = null, $otherKey = null, $relation = null)
+    {
+        if (is_null($relation)) {
+            list(, $caller) = debug_backtrace(false, 2);
+            $relation = $caller['function'];
+        }
+        if (is_null($foreignKey)) {
+            $foreignKey = snake_case($relation) . '_id';
+        }
+        $instance = new $related();
+        $query = $instance->newQuery();
+        $otherKey = $otherKey ?: $instance->getKeyName();
+        return new BelongsTo($query, $this, $foreignKey, $otherKey, $relation);
+    }
+    public function morphTo($name = null, $type = null, $id = null)
+    {
+        if (is_null($name)) {
+            list(, $caller) = debug_backtrace(false, 2);
+            $name = snake_case($caller['function']);
+        }
+        list($type, $id) = $this->getMorphs($name, $type, $id);
+        if (is_null($class = $this->{$type})) {
+            return new MorphTo($this->newQuery(), $this, $id, null, $type, $name);
+        } else {
+            $instance = new $class();
+            return new MorphTo($instance->newQuery(), $this, $id, $instance->getKeyName(), $type, $name);
+        }
+    }
+    public function hasMany($related, $foreignKey = null, $localKey = null)
+    {
+        $foreignKey = $foreignKey ?: $this->getForeignKey();
+        $instance = new $related();
+        $localKey = $localKey ?: $this->getKeyName();
+        return new HasMany($instance->newQuery(), $this, $instance->getTable() . '.' . $foreignKey, $localKey);
+    }
+    public function hasManyThrough($related, $through, $firstKey = null, $secondKey = null)
+    {
+        $through = new $through();
+        $firstKey = $firstKey ?: $this->getForeignKey();
+        $secondKey = $secondKey ?: $through->getForeignKey();
+        return new HasManyThrough((new $related())->newQuery(), $this, $through, $firstKey, $secondKey);
+    }
+    public function morphMany($related, $name, $type = null, $id = null, $localKey = null)
+    {
+        $instance = new $related();
+        list($type, $id) = $this->getMorphs($name, $type, $id);
+        $table = $instance->getTable();
+        $localKey = $localKey ?: $this->getKeyName();
+        return new MorphMany($instance->newQuery(), $this, $table . '.' . $type, $table . '.' . $id, $localKey);
+    }
+    public function belongsToMany($related, $table = null, $foreignKey = null, $otherKey = null, $relation = null)
+    {
+        if (is_null($relation)) {
+            $relation = $this->getBelongsToManyCaller();
+        }
+        $foreignKey = $foreignKey ?: $this->getForeignKey();
+        $instance = new $related();
+        $otherKey = $otherKey ?: $instance->getForeignKey();
+        if (is_null($table)) {
+            $table = $this->joiningTable($related);
+        }
+        $query = $instance->newQuery();
+        return new BelongsToMany($query, $this, $table, $foreignKey, $otherKey, $relation);
+    }
+    public function morphToMany($related, $name, $table = null, $foreignKey = null, $otherKey = null, $inverse = false)
+    {
+        $caller = $this->getBelongsToManyCaller();
+        $foreignKey = $foreignKey ?: $name . '_id';
+        $instance = new $related();
+        $otherKey = $otherKey ?: $instance->getForeignKey();
+        $query = $instance->newQuery();
+        $table = $table ?: str_plural($name);
+        return new MorphToMany($query, $this, $name, $table, $foreignKey, $otherKey, $caller, $inverse);
+    }
+    public function morphedByMany($related, $name, $table = null, $foreignKey = null, $otherKey = null)
+    {
+        $foreignKey = $foreignKey ?: $this->getForeignKey();
+        $otherKey = $otherKey ?: $name . '_id';
+        return $this->morphToMany($related, $name, $table, $foreignKey, $otherKey, true);
+    }
+    protected function getBelongsToManyCaller()
+    {
+        $self = __FUNCTION__;
+        $caller = array_first(debug_backtrace(false), function ($key, $trace) use($self) {
+            $caller = $trace['function'];
+            return !in_array($caller, Model::$manyMethods) && $caller != $self;
+        });
+        return !is_null($caller) ? $caller['function'] : null;
+    }
+    public function joiningTable($related)
+    {
+        $base = snake_case(class_basename($this));
+        $related = snake_case(class_basename($related));
+        $models = array($related, $base);
+        sort($models);
+        return strtolower(implode('_', $models));
+    }
+    public static function destroy($ids)
+    {
+        $count = 0;
+        $ids = is_array($ids) ? $ids : func_get_args();
+        $instance = new static();
+        $key = $instance->getKeyName();
+        foreach ($instance->whereIn($key, $ids)->get() as $model) {
+            if ($model->delete()) {
+                $count++;
+            }
+        }
+        return $count;
+    }
+    public function delete()
+    {
+        if (is_null($this->primaryKey)) {
+            throw new \Exception('No primary key defined on model.');
+        }
+        if ($this->exists) {
+            if ($this->fireModelEvent('deleting') === false) {
+                return false;
+            }
+            $this->touchOwners();
+            $this->performDeleteOnModel();
+            $this->exists = false;
+            $this->fireModelEvent('deleted', false);
+            return true;
+        }
+    }
+    public function forceDelete()
+    {
+        return $this->delete();
+    }
+    protected function performDeleteOnModel()
+    {
+        $this->newQuery()->where($this->getKeyName(), $this->getKey())->delete();
+    }
+    public static function saving($callback)
+    {
+        static::registerModelEvent('saving', $callback);
+    }
+    public static function saved($callback)
+    {
+        static::registerModelEvent('saved', $callback);
+    }
+    public static function updating($callback)
+    {
+        static::registerModelEvent('updating', $callback);
+    }
+    public static function updated($callback)
+    {
+        static::registerModelEvent('updated', $callback);
+    }
+    public static function creating($callback)
+    {
+        static::registerModelEvent('creating', $callback);
+    }
+    public static function created($callback)
+    {
+        static::registerModelEvent('created', $callback);
+    }
+    public static function deleting($callback)
+    {
+        static::registerModelEvent('deleting', $callback);
+    }
+    public static function deleted($callback)
+    {
+        static::registerModelEvent('deleted', $callback);
+    }
+    public static function flushEventListeners()
+    {
+        if (!isset(static::$dispatcher)) {
+            return;
+        }
+        $instance = new static();
+        foreach ($instance->getObservableEvents() as $event) {
+            static::$dispatcher->forget("eloquent.{$event}: " . get_called_class());
+        }
+    }
+    protected static function registerModelEvent($event, $callback)
+    {
+        if (isset(static::$dispatcher)) {
+            $name = get_called_class();
+            static::$dispatcher->listen("eloquent.{$event}: {$name}", $callback);
+        }
+    }
+    public function getObservableEvents()
+    {
+        return array_merge(array('creating', 'created', 'updating', 'updated', 'deleting', 'deleted', 'saving', 'saved', 'restoring', 'restored'), $this->observables);
+    }
+    public function setObservableEvents(array $observables)
+    {
+        $this->observables = $observables;
+    }
+    public function addObservableEvents($observables)
+    {
+        $observables = is_array($observables) ? $observables : func_get_args();
+        $this->observables = array_unique(array_merge($this->observables, $observables));
+    }
+    public function removeObservableEvents($observables)
+    {
+        $observables = is_array($observables) ? $observables : func_get_args();
+        $this->observables = array_diff($this->observables, $observables);
+    }
+    protected function increment($column, $amount = 1)
+    {
+        return $this->incrementOrDecrement($column, $amount, 'increment');
+    }
+    protected function decrement($column, $amount = 1)
+    {
+        return $this->incrementOrDecrement($column, $amount, 'decrement');
+    }
+    protected function incrementOrDecrement($column, $amount, $method)
+    {
+        $query = $this->newQuery();
+        if (!$this->exists) {
+            return $query->{$method}($column, $amount);
+        }
+        $this->incrementOrDecrementAttributeValue($column, $amount, $method);
+        return $query->where($this->getKeyName(), $this->getKey())->{$method}($column, $amount);
+    }
+    protected function incrementOrDecrementAttributeValue($column, $amount, $method)
+    {
+        $this->{$column} = $this->{$column} + ($method == 'increment' ? $amount : $amount * -1);
+        $this->syncOriginalAttribute($column);
+    }
+    public function update(array $attributes = array())
+    {
+        if (!$this->exists) {
+            return $this->newQuery()->update($attributes);
+        }
+        return $this->fill($attributes)->save();
+    }
+    public function push()
+    {
+        if (!$this->save()) {
+            return false;
+        }
+        foreach ($this->relations as $models) {
+            foreach (Collection::make($models) as $model) {
+                if (!$model->push()) {
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
+    public function save(array $options = array())
+    {
+        $query = $this->newQueryWithoutScopes();
+        if ($this->fireModelEvent('saving') === false) {
+            return false;
+        }
+        if ($this->exists) {
+            $saved = $this->performUpdate($query, $options);
+        } else {
+            $saved = $this->performInsert($query, $options);
+        }
+        if ($saved) {
+            $this->finishSave($options);
+        }
+        return $saved;
+    }
+    protected function finishSave(array $options)
+    {
+        $this->fireModelEvent('saved', false);
+        $this->syncOriginal();
+        if (array_get($options, 'touch', true)) {
+            $this->touchOwners();
+        }
+    }
+    protected function performUpdate(Builder $query, array $options = array())
+    {
+        $dirty = $this->getDirty();
+        if (count($dirty) > 0) {
+            if ($this->fireModelEvent('updating') === false) {
+                return false;
+            }
+            if ($this->timestamps && array_get($options, 'timestamps', true)) {
+                $this->updateTimestamps();
+            }
+            $dirty = $this->getDirty();
+            if (count($dirty) > 0) {
+                $this->setKeysForSaveQuery($query)->update($dirty);
+                $this->fireModelEvent('updated', false);
+            }
+        }
+        return true;
+    }
+    protected function performInsert(Builder $query, array $options = array())
+    {
+        if ($this->fireModelEvent('creating') === false) {
+            return false;
+        }
+        if ($this->timestamps && array_get($options, 'timestamps', true)) {
+            $this->updateTimestamps();
+        }
+        $attributes = $this->attributes;
+        if ($this->incrementing) {
+            $this->insertAndSetId($query, $attributes);
+        } else {
+            $query->insert($attributes);
+        }
+        $this->exists = true;
+        $this->fireModelEvent('created', false);
+        return true;
+    }
+    protected function insertAndSetId(Builder $query, $attributes)
+    {
+        $id = $query->insertGetId($attributes, $keyName = $this->getKeyName());
+        $this->setAttribute($keyName, $id);
+    }
+    public function touchOwners()
+    {
+        foreach ($this->touches as $relation) {
+            $this->{$relation}()->touch();
+            if (!is_null($this->{$relation})) {
+                $this->{$relation}->touchOwners();
+            }
+        }
+    }
+    public function touches($relation)
+    {
+        return in_array($relation, $this->touches);
+    }
+    protected function fireModelEvent($event, $halt = true)
+    {
+        if (!isset(static::$dispatcher)) {
+            return true;
+        }
+        $event = "eloquent.{$event}: " . get_class($this);
+        $method = $halt ? 'until' : 'fire';
+        return static::$dispatcher->{$method}($event, $this);
+    }
+    protected function setKeysForSaveQuery(Builder $query)
+    {
+        $query->where($this->getKeyName(), '=', $this->getKeyForSaveQuery());
+        return $query;
+    }
+    protected function getKeyForSaveQuery()
+    {
+        if (isset($this->original[$this->getKeyName()])) {
+            return $this->original[$this->getKeyName()];
+        }
+        return $this->getAttribute($this->getKeyName());
+    }
+    public function touch()
+    {
+        $this->updateTimestamps();
+        return $this->save();
+    }
+    protected function updateTimestamps()
+    {
+        $time = $this->freshTimestamp();
+        if (!$this->isDirty(static::UPDATED_AT)) {
+            $this->setUpdatedAt($time);
+        }
+        if (!$this->exists && !$this->isDirty(static::CREATED_AT)) {
+            $this->setCreatedAt($time);
+        }
+    }
+    public function setCreatedAt($value)
+    {
+        $this->{static::CREATED_AT} = $value;
+    }
+    public function setUpdatedAt($value)
+    {
+        $this->{static::UPDATED_AT} = $value;
+    }
+    public function getCreatedAtColumn()
+    {
+        return static::CREATED_AT;
+    }
+    public function getUpdatedAtColumn()
+    {
+        return static::UPDATED_AT;
+    }
+    public function freshTimestamp()
+    {
+        return new Carbon();
+    }
+    public function freshTimestampString()
+    {
+        return $this->fromDateTime($this->freshTimestamp());
+    }
+    public function newQuery()
+    {
+        $builder = $this->newEloquentBuilder($this->newBaseQueryBuilder());
+        $builder->setModel($this)->with($this->with);
+        return $this->applyGlobalScopes($builder);
+    }
+    public function newQueryWithoutScope($scope)
+    {
+        $this->getGlobalScope($scope)->remove($builder = $this->newQuery(), $this);
+        return $builder;
+    }
+    public function newQueryWithoutScopes()
+    {
+        return $this->removeGlobalScopes($this->newQuery());
+    }
+    public function applyGlobalScopes($builder)
+    {
+        foreach ($this->getGlobalScopes() as $scope) {
+            $scope->apply($builder, $this);
+        }
+        return $builder;
+    }
+    public function removeGlobalScopes($builder)
+    {
+        foreach ($this->getGlobalScopes() as $scope) {
+            $scope->remove($builder, $this);
+        }
+        return $builder;
+    }
+    public function newEloquentBuilder($query)
+    {
+        return new Builder($query);
+    }
+    protected function newBaseQueryBuilder()
+    {
+        $conn = $this->getConnection();
+        $grammar = $conn->getQueryGrammar();
+        return new QueryBuilder($conn, $grammar, $conn->getPostProcessor());
+    }
+    public function newCollection(array $models = array())
+    {
+        return new Collection($models);
+    }
+    public function newPivot(Model $parent, array $attributes, $table, $exists)
+    {
+        return new Pivot($parent, $attributes, $table, $exists);
+    }
+    public function getTable()
+    {
+        if (isset($this->table)) {
+            return $this->table;
+        }
+        return str_replace('\\', '', snake_case(str_plural(class_basename($this))));
+    }
+    public function setTable($table)
+    {
+        $this->table = $table;
+    }
+    public function getKey()
+    {
+        return $this->getAttribute($this->getKeyName());
+    }
+    public function getKeyName()
+    {
+        return $this->primaryKey;
+    }
+    public function setKeyName($key)
+    {
+        $this->primaryKey = $key;
+    }
+    public function getQualifiedKeyName()
+    {
+        return $this->getTable() . '.' . $this->getKeyName();
+    }
+    public function usesTimestamps()
+    {
+        return $this->timestamps;
+    }
+    protected function getMorphs($name, $type, $id)
+    {
+        $type = $type ?: $name . '_type';
+        $id = $id ?: $name . '_id';
+        return array($type, $id);
+    }
+    public function getMorphClass()
+    {
+        return $this->morphClass ?: get_class($this);
+    }
+    public function getPerPage()
+    {
+        return $this->perPage;
+    }
+    public function setPerPage($perPage)
+    {
+        $this->perPage = $perPage;
+    }
+    public function getForeignKey()
+    {
+        return snake_case(class_basename($this)) . '_id';
+    }
+    public function getHidden()
+    {
+        return $this->hidden;
+    }
+    public function setHidden(array $hidden)
+    {
+        $this->hidden = $hidden;
+    }
+    public function setVisible(array $visible)
+    {
+        $this->visible = $visible;
+    }
+    public function setAppends(array $appends)
+    {
+        $this->appends = $appends;
+    }
+    public function getFillable()
+    {
+        return $this->fillable;
+    }
+    public function fillable(array $fillable)
+    {
+        $this->fillable = $fillable;
+        return $this;
+    }
+    public function getGuarded()
+    {
+        return $this->guarded;
+    }
+    public function guard(array $guarded)
+    {
+        $this->guarded = $guarded;
+        return $this;
+    }
+    public static function unguard()
+    {
+        static::$unguarded = true;
+    }
+    public static function reguard()
+    {
+        static::$unguarded = false;
+    }
+    public static function setUnguardState($state)
+    {
+        static::$unguarded = $state;
+    }
+    public function isFillable($key)
+    {
+        if (static::$unguarded) {
+            return true;
+        }
+        if (in_array($key, $this->fillable)) {
+            return true;
+        }
+        if ($this->isGuarded($key)) {
+            return false;
+        }
+        return empty($this->fillable) && !starts_with($key, '_');
+    }
+    public function isGuarded($key)
+    {
+        return in_array($key, $this->guarded) || $this->guarded == array('*');
+    }
+    public function totallyGuarded()
+    {
+        return count($this->fillable) == 0 && $this->guarded == array('*');
+    }
+    protected function removeTableFromKey($key)
+    {
+        if (!str_contains($key, '.')) {
+            return $key;
+        }
+        return last(explode('.', $key));
+    }
+    public function getTouchedRelations()
+    {
+        return $this->touches;
+    }
+    public function setTouchedRelations(array $touches)
+    {
+        $this->touches = $touches;
+    }
+    public function getIncrementing()
+    {
+        return $this->incrementing;
+    }
+    public function setIncrementing($value)
+    {
+        $this->incrementing = $value;
+    }
+    public function toJson($options = 0)
+    {
+        return json_encode($this->toArray(), $options);
+    }
+    public function jsonSerialize()
+    {
+        return $this->toArray();
+    }
+    public function toArray()
+    {
+        $attributes = $this->attributesToArray();
+        return array_merge($attributes, $this->relationsToArray());
+    }
+    public function attributesToArray()
+    {
+        $attributes = $this->getArrayableAttributes();
+        foreach ($this->getDates() as $key) {
+            if (!isset($attributes[$key])) {
+                continue;
+            }
+            $attributes[$key] = (string) $this->asDateTime($attributes[$key]);
+        }
+        foreach ($this->getMutatedAttributes() as $key) {
+            if (!array_key_exists($key, $attributes)) {
+                continue;
+            }
+            $attributes[$key] = $this->mutateAttributeForArray($key, $attributes[$key]);
+        }
+        foreach ($this->getArrayableAppends() as $key) {
+            $attributes[$key] = $this->mutateAttributeForArray($key, null);
+        }
+        return $attributes;
+    }
+    protected function getArrayableAttributes()
+    {
+        return $this->getArrayableItems($this->attributes);
+    }
+    protected function getArrayableAppends()
+    {
+        if (!count($this->appends)) {
+            return array();
+        }
+        return $this->getArrayableItems(array_combine($this->appends, $this->appends));
+    }
+    public function relationsToArray()
+    {
+        $attributes = array();
+        foreach ($this->getArrayableRelations() as $key => $value) {
+            if (in_array($key, $this->hidden)) {
+                continue;
+            }
+            if ($value instanceof ArrayableInterface) {
+                $relation = $value->toArray();
+            } elseif (is_null($value)) {
+                $relation = $value;
+            }
+            if (static::$snakeAttributes) {
+                $key = snake_case($key);
+            }
+            if (isset($relation) || is_null($value)) {
+                $attributes[$key] = $relation;
+            }
+            unset($relation);
+        }
+        return $attributes;
+    }
+    protected function getArrayableRelations()
+    {
+        return $this->getArrayableItems($this->relations);
+    }
+    protected function getArrayableItems(array $values)
+    {
+        if (count($this->visible) > 0) {
+            return array_intersect_key($values, array_flip($this->visible));
+        }
+        return array_diff_key($values, array_flip($this->hidden));
+    }
+    public function getAttribute($key)
+    {
+        $inAttributes = array_key_exists($key, $this->attributes);
+        if ($inAttributes || $this->hasGetMutator($key)) {
+            return $this->getAttributeValue($key);
+        }
+        if (array_key_exists($key, $this->relations)) {
+            return $this->relations[$key];
+        }
+        $camelKey = camel_case($key);
+        if (method_exists($this, $camelKey)) {
+            return $this->getRelationshipFromMethod($key, $camelKey);
+        }
+    }
+    protected function getAttributeValue($key)
+    {
+        $value = $this->getAttributeFromArray($key);
+        if ($this->hasGetMutator($key)) {
+            return $this->mutateAttribute($key, $value);
+        } elseif (in_array($key, $this->getDates())) {
+            if ($value) {
+                return $this->asDateTime($value);
+            }
+        }
+        return $value;
+    }
+    protected function getAttributeFromArray($key)
+    {
+        if (array_key_exists($key, $this->attributes)) {
+            return $this->attributes[$key];
+        }
+    }
+    protected function getRelationshipFromMethod($key, $camelKey)
+    {
+        $relations = $this->{$camelKey}();
+        if (!$relations instanceof Relation) {
+            throw new LogicException('Relationship method must return an object of type ' . 'Illuminate\\Database\\Eloquent\\Relations\\Relation');
+        }
+        return $this->relations[$key] = $relations->getResults();
+    }
+    public function hasGetMutator($key)
+    {
+        return method_exists($this, 'get' . studly_case($key) . 'Attribute');
+    }
+    protected function mutateAttribute($key, $value)
+    {
+        return $this->{'get' . studly_case($key) . 'Attribute'}($value);
+    }
+    protected function mutateAttributeForArray($key, $value)
+    {
+        $value = $this->mutateAttribute($key, $value);
+        return $value instanceof ArrayableInterface ? $value->toArray() : $value;
+    }
+    public function setAttribute($key, $value)
+    {
+        if ($this->hasSetMutator($key)) {
+            $method = 'set' . studly_case($key) . 'Attribute';
+            return $this->{$method}($value);
+        } elseif (in_array($key, $this->getDates()) && $value) {
+            $value = $this->fromDateTime($value);
+        }
+        $this->attributes[$key] = $value;
+    }
+    public function hasSetMutator($key)
+    {
+        return method_exists($this, 'set' . studly_case($key) . 'Attribute');
+    }
+    public function getDates()
+    {
+        $defaults = array(static::CREATED_AT, static::UPDATED_AT);
+        return array_merge($this->dates, $defaults);
+    }
+    public function fromDateTime($value)
+    {
+        $format = $this->getDateFormat();
+        if ($value instanceof DateTime) {
+            
+        } elseif (is_numeric($value)) {
+            $value = Carbon::createFromTimestamp($value);
+        } elseif (preg_match('/^(\\d{4})-(\\d{2})-(\\d{2})$/', $value)) {
+            $value = Carbon::createFromFormat('Y-m-d', $value)->startOfDay();
+        } else {
+            $value = Carbon::createFromFormat($format, $value);
+        }
+        return $value->format($format);
+    }
+    protected function asDateTime($value)
+    {
+        if (is_numeric($value)) {
+            return Carbon::createFromTimestamp($value);
+        } elseif (preg_match('/^(\\d{4})-(\\d{2})-(\\d{2})$/', $value)) {
+            return Carbon::createFromFormat('Y-m-d', $value)->startOfDay();
+        } elseif (!$value instanceof DateTime) {
+            $format = $this->getDateFormat();
+            return Carbon::createFromFormat($format, $value);
+        }
+        return Carbon::instance($value);
+    }
+    protected function getDateFormat()
+    {
+        return $this->getConnection()->getQueryGrammar()->getDateFormat();
+    }
+    public function replicate(array $except = null)
+    {
+        $except = $except ?: array($this->getKeyName(), $this->getCreatedAtColumn(), $this->getUpdatedAtColumn());
+        $attributes = array_except($this->attributes, $except);
+        with($instance = new static())->setRawAttributes($attributes);
+        return $instance->setRelations($this->relations);
+    }
+    public function getAttributes()
+    {
+        return $this->attributes;
+    }
+    public function setRawAttributes(array $attributes, $sync = false)
+    {
+        $this->attributes = $attributes;
+        if ($sync) {
+            $this->syncOriginal();
+        }
+    }
+    public function getOriginal($key = null, $default = null)
+    {
+        return array_get($this->original, $key, $default);
+    }
+    public function syncOriginal()
+    {
+        $this->original = $this->attributes;
+        return $this;
+    }
+    public function syncOriginalAttribute($attribute)
+    {
+        $this->original[$attribute] = $this->attributes[$attribute];
+        return $this;
+    }
+    public function isDirty($attributes = null)
+    {
+        $dirty = $this->getDirty();
+        if (is_null($attributes)) {
+            return count($dirty) > 0;
+        }
+        if (!is_array($attributes)) {
+            $attributes = func_get_args();
+        }
+        foreach ($attributes as $attribute) {
+            if (array_key_exists($attribute, $dirty)) {
+                return true;
+            }
+        }
+        return false;
+    }
+    public function getDirty()
+    {
+        $dirty = array();
+        foreach ($this->attributes as $key => $value) {
+            if (!array_key_exists($key, $this->original)) {
+                $dirty[$key] = $value;
+            } elseif ($value !== $this->original[$key] && !$this->originalIsNumericallyEquivalent($key)) {
+                $dirty[$key] = $value;
+            }
+        }
+        return $dirty;
+    }
+    protected function originalIsNumericallyEquivalent($key)
+    {
+        $current = $this->attributes[$key];
+        $original = $this->original[$key];
+        return is_numeric($current) && is_numeric($original) && strcmp((string) $current, (string) $original) === 0;
+    }
+    public function getRelations()
+    {
+        return $this->relations;
+    }
+    public function getRelation($relation)
+    {
+        return $this->relations[$relation];
+    }
+    public function setRelation($relation, $value)
+    {
+        $this->relations[$relation] = $value;
+        return $this;
+    }
+    public function setRelations(array $relations)
+    {
+        $this->relations = $relations;
+        return $this;
+    }
+    public function getConnection()
+    {
+        return static::resolveConnection($this->connection);
+    }
+    public function getConnectionName()
+    {
+        return $this->connection;
+    }
+    public function setConnection($name)
+    {
+        $this->connection = $name;
+        return $this;
+    }
+    public static function resolveConnection($connection = null)
+    {
+        return static::$resolver->connection($connection);
+    }
+    public static function getConnectionResolver()
+    {
+        return static::$resolver;
+    }
+    public static function setConnectionResolver(Resolver $resolver)
+    {
+        static::$resolver = $resolver;
+    }
+    public static function unsetConnectionResolver()
+    {
+        static::$resolver = null;
+    }
+    public static function getEventDispatcher()
+    {
+        return static::$dispatcher;
+    }
+    public static function setEventDispatcher(Dispatcher $dispatcher)
+    {
+        static::$dispatcher = $dispatcher;
+    }
+    public static function unsetEventDispatcher()
+    {
+        static::$dispatcher = null;
+    }
+    public function getMutatedAttributes()
+    {
+        $class = get_class($this);
+        if (isset(static::$mutatorCache[$class])) {
+            return static::$mutatorCache[$class];
+        }
+        return array();
+    }
+    public function __get($key)
+    {
+        return $this->getAttribute($key);
+    }
+    public function __set($key, $value)
+    {
+        $this->setAttribute($key, $value);
+    }
+    public function offsetExists($offset)
+    {
+        return isset($this->{$offset});
+    }
+    public function offsetGet($offset)
+    {
+        return $this->{$offset};
+    }
+    public function offsetSet($offset, $value)
+    {
+        $this->{$offset} = $value;
+    }
+    public function offsetUnset($offset)
+    {
+        unset($this->{$offset});
+    }
+    public function __isset($key)
+    {
+        return isset($this->attributes[$key]) || isset($this->relations[$key]) || $this->hasGetMutator($key) && !is_null($this->getAttributeValue($key));
+    }
+    public function __unset($key)
+    {
+        unset($this->attributes[$key], $this->relations[$key]);
+    }
+    public function __call($method, $parameters)
+    {
+        if (in_array($method, array('increment', 'decrement'))) {
+            return call_user_func_array(array($this, $method), $parameters);
+        }
+        $query = $this->newQuery();
+        return call_user_func_array(array($query, $method), $parameters);
+    }
+    public static function __callStatic($method, $parameters)
+    {
+        $instance = new static();
+        return call_user_func_array(array($instance, $method), $parameters);
+    }
+    public function __toString()
+    {
+        return $this->toJson();
+    }
+    public function __wakeup()
+    {
+        $this->bootIfNotBooted();
+    }
+}
+namespace Illuminate\Support\Contracts;
+
+interface ArrayableInterface
+{
+    public function toArray();
+}
+namespace Illuminate\Support\Contracts;
+
+interface JsonableInterface
+{
+    public function toJson($options = 0);
+}
+namespace Illuminate\Database;
+
+use Illuminate\Support\Str;
+use Illuminate\Database\Connectors\ConnectionFactory;
+class DatabaseManager implements ConnectionResolverInterface
+{
+    protected $app;
+    protected $factory;
+    protected $connections = array();
+    protected $extensions = array();
+    public function __construct($app, ConnectionFactory $factory)
+    {
+        $this->app = $app;
+        $this->factory = $factory;
+    }
+    public function connection($name = null)
+    {
+        list($name, $type) = $this->parseConnectionName($name);
+        if (!isset($this->connections[$name])) {
+            $connection = $this->makeConnection($name);
+            $this->setPdoForType($connection, $type);
+            $this->connections[$name] = $this->prepare($connection);
+        }
+        return $this->connections[$name];
+    }
+    protected function parseConnectionName($name)
+    {
+        $name = $name ?: $this->getDefaultConnection();
+        return Str::endsWith($name, array('::read', '::write')) ? explode('::', $name, 2) : array($name, null);
+    }
+    public function purge($name = null)
+    {
+        $this->disconnect($name);
+        unset($this->connections[$name]);
+    }
+    public function disconnect($name = null)
+    {
+        if (isset($this->connections[$name = $name ?: $this->getDefaultConnection()])) {
+            $this->connections[$name]->disconnect();
+        }
+    }
+    public function reconnect($name = null)
+    {
+        $this->disconnect($name = $name ?: $this->getDefaultConnection());
+        if (!isset($this->connections[$name])) {
+            return $this->connection($name);
+        }
+        return $this->refreshPdoConnections($name);
+    }
+    protected function refreshPdoConnections($name)
+    {
+        $fresh = $this->makeConnection($name);
+        return $this->connections[$name]->setPdo($fresh->getPdo())->setReadPdo($fresh->getReadPdo());
+    }
+    protected function makeConnection($name)
+    {
+        $config = $this->getConfig($name);
+        if (isset($this->extensions[$name])) {
+            return call_user_func($this->extensions[$name], $config, $name);
+        }
+        $driver = $config['driver'];
+        if (isset($this->extensions[$driver])) {
+            return call_user_func($this->extensions[$driver], $config, $name);
+        }
+        return $this->factory->make($config, $name);
+    }
+    protected function prepare(Connection $connection)
+    {
+        $connection->setFetchMode($this->app['config']['database.fetch']);
+        if ($this->app->bound('events')) {
+            $connection->setEventDispatcher($this->app['events']);
+        }
+        $app = $this->app;
+        $connection->setCacheManager(function () use($app) {
+            return $app['cache'];
+        });
+        $connection->setPaginator(function () use($app) {
+            return $app['paginator'];
+        });
+        $connection->setReconnector(function ($connection) {
+            $this->reconnect($connection->getName());
+        });
+        return $connection;
+    }
+    protected function setPdoForType(Connection $connection, $type = null)
+    {
+        if ($type == 'read') {
+            $connection->setPdo($connection->getReadPdo());
+        } elseif ($type == 'write') {
+            $connection->setReadPdo($connection->getPdo());
+        }
+        return $connection;
+    }
+    protected function getConfig($name)
+    {
+        $name = $name ?: $this->getDefaultConnection();
+        $connections = $this->app['config']['database.connections'];
+        if (is_null($config = array_get($connections, $name))) {
+            throw new \InvalidArgumentException("Database [{$name}] not configured.");
+        }
+        return $config;
+    }
+    public function getDefaultConnection()
+    {
+        return $this->app['config']['database.default'];
+    }
+    public function setDefaultConnection($name)
+    {
+        $this->app['config']['database.default'] = $name;
+    }
+    public function extend($name, callable $resolver)
+    {
+        $this->extensions[$name] = $resolver;
+    }
+    public function getConnections()
+    {
+        return $this->connections;
+    }
+    public function __call($method, $parameters)
+    {
+        return call_user_func_array(array($this->connection(), $method), $parameters);
+    }
+}
+namespace Illuminate\Database;
+
+interface ConnectionResolverInterface
+{
+    public function connection($name = null);
+    public function getDefaultConnection();
+    public function setDefaultConnection($name);
+}
+namespace Illuminate\Database\Connectors;
+
+use PDO;
+use Illuminate\Container\Container;
+use Illuminate\Database\MySqlConnection;
+use Illuminate\Database\SQLiteConnection;
+use Illuminate\Database\PostgresConnection;
+use Illuminate\Database\SqlServerConnection;
+class ConnectionFactory
+{
+    protected $container;
+    public function __construct(Container $container)
+    {
+        $this->container = $container;
+    }
+    public function make(array $config, $name = null)
+    {
+        $config = $this->parseConfig($config, $name);
+        if (isset($config['read'])) {
+            return $this->createReadWriteConnection($config);
+        }
+        return $this->createSingleConnection($config);
+    }
+    protected function createSingleConnection(array $config)
+    {
+        $pdo = $this->createConnector($config)->connect($config);
+        return $this->createConnection($config['driver'], $pdo, $config['database'], $config['prefix'], $config);
+    }
+    protected function createReadWriteConnection(array $config)
+    {
+        $connection = $this->createSingleConnection($this->getWriteConfig($config));
+        return $connection->setReadPdo($this->createReadPdo($config));
+    }
+    protected function createReadPdo(array $config)
+    {
+        $readConfig = $this->getReadConfig($config);
+        return $this->createConnector($readConfig)->connect($readConfig);
+    }
+    protected function getReadConfig(array $config)
+    {
+        $readConfig = $this->getReadWriteConfig($config, 'read');
+        return $this->mergeReadWriteConfig($config, $readConfig);
+    }
+    protected function getWriteConfig(array $config)
+    {
+        $writeConfig = $this->getReadWriteConfig($config, 'write');
+        return $this->mergeReadWriteConfig($config, $writeConfig);
+    }
+    protected function getReadWriteConfig(array $config, $type)
+    {
+        if (isset($config[$type][0])) {
+            return $config[$type][array_rand($config[$type])];
+        }
+        return $config[$type];
+    }
+    protected function mergeReadWriteConfig(array $config, array $merge)
+    {
+        return array_except(array_merge($config, $merge), array('read', 'write'));
+    }
+    protected function parseConfig(array $config, $name)
+    {
+        return array_add(array_add($config, 'prefix', ''), 'name', $name);
+    }
+    public function createConnector(array $config)
+    {
+        if (!isset($config['driver'])) {
+            throw new \InvalidArgumentException('A driver must be specified.');
+        }
+        if ($this->container->bound($key = "db.connector.{$config['driver']}")) {
+            return $this->container->make($key);
+        }
+        switch ($config['driver']) {
+            case 'mysql':
+                return new MySqlConnector();
+            case 'pgsql':
+                return new PostgresConnector();
+            case 'sqlite':
+                return new SQLiteConnector();
+            case 'sqlsrv':
+                return new SqlServerConnector();
+        }
+        throw new \InvalidArgumentException("Unsupported driver [{$config['driver']}]");
+    }
+    protected function createConnection($driver, PDO $connection, $database, $prefix = '', array $config = array())
+    {
+        if ($this->container->bound($key = "db.connection.{$driver}")) {
+            return $this->container->make($key, array($connection, $database, $prefix, $config));
+        }
+        switch ($driver) {
+            case 'mysql':
+                return new MySqlConnection($connection, $database, $prefix, $config);
+            case 'pgsql':
+                return new PostgresConnection($connection, $database, $prefix, $config);
+            case 'sqlite':
+                return new SQLiteConnection($connection, $database, $prefix, $config);
+            case 'sqlsrv':
+                return new SqlServerConnection($connection, $database, $prefix, $config);
+        }
+        throw new \InvalidArgumentException("Unsupported driver [{$driver}]");
+    }
+}
+namespace Illuminate\Session;
+
+use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Session\SessionInterface as BaseSessionInterface;
+interface SessionInterface extends BaseSessionInterface
+{
+    public function getHandler();
+    public function handlerNeedsRequest();
+    public function setRequestOnHandler(Request $request);
+}
+namespace Illuminate\Session;
+
+use Closure;
+use Carbon\Carbon;
+use Symfony\Component\HttpFoundation\Cookie;
+use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpKernel\HttpKernelInterface;
+class Middleware implements HttpKernelInterface
+{
+    protected $app;
+    protected $manager;
+    protected $reject;
+    public function __construct(HttpKernelInterface $app, SessionManager $manager, Closure $reject = null)
+    {
+        $this->app = $app;
+        $this->reject = $reject;
+        $this->manager = $manager;
+    }
+    public function handle(Request $request, $type = HttpKernelInterface::MASTER_REQUEST, $catch = true)
+    {
+        $this->checkRequestForArraySessions($request);
+        if ($this->sessionConfigured()) {
+            $session = $this->startSession($request);
+            $request->setSession($session);
+        }
+        $response = $this->app->handle($request, $type, $catch);
+        if ($this->sessionConfigured()) {
+            $this->closeSession($session);
+            $this->addCookieToResponse($response, $session);
+        }
+        return $response;
+    }
+    public function checkRequestForArraySessions(Request $request)
+    {
+        if (is_null($this->reject)) {
+            return;
+        }
+        if (call_user_func($this->reject, $request)) {
+            $this->manager->setDefaultDriver('array');
+        }
+    }
+    protected function startSession(Request $request)
+    {
+        with($session = $this->getSession($request))->setRequestOnHandler($request);
+        $session->start();
+        return $session;
+    }
+    protected function closeSession(SessionInterface $session)
+    {
+        $session->save();
+        $this->collectGarbage($session);
+    }
+    protected function getUrl(Request $request)
+    {
+        $url = rtrim(preg_replace('/\\?.*/', '', $request->getUri()), '/');
+        return $request->getQueryString() ? $url . '?' . $request->getQueryString() : $url;
+    }
+    protected function collectGarbage(SessionInterface $session)
+    {
+        $config = $this->manager->getSessionConfig();
+        if ($this->configHitsLottery($config)) {
+            $session->getHandler()->gc($this->getLifetimeSeconds());
+        }
+    }
+    protected function configHitsLottery(array $config)
+    {
+        return mt_rand(1, $config['lottery'][1]) <= $config['lottery'][0];
+    }
+    protected function addCookieToResponse(Response $response, SessionInterface $session)
+    {
+        $s = $session;
+        if ($this->sessionIsPersistent($c = $this->manager->getSessionConfig())) {
+            $secure = array_get($c, 'secure', false);
+            $response->headers->setCookie(new Cookie($s->getName(), $s->getId(), $this->getCookieLifetime(), $c['path'], $c['domain'], $secure));
+        }
+    }
+    protected function getLifetimeSeconds()
+    {
+        return array_get($this->manager->getSessionConfig(), 'lifetime') * 60;
+    }
+    protected function getCookieLifetime()
+    {
+        $config = $this->manager->getSessionConfig();
+        return $config['expire_on_close'] ? 0 : Carbon::now()->addMinutes($config['lifetime']);
+    }
+    protected function sessionConfigured()
+    {
+        return !is_null(array_get($this->manager->getSessionConfig(), 'driver'));
+    }
+    protected function sessionIsPersistent(array $config = null)
+    {
+        $config = $config ?: $this->manager->getSessionConfig();
+        return !in_array($config['driver'], array(null, 'array'));
+    }
+    public function getSession(Request $request)
+    {
+        $session = $this->manager->driver();
+        $session->setId($request->cookies->get($session->getName()));
+        return $session;
+    }
+}
+namespace Illuminate\Session;
+
+use SessionHandlerInterface;
+use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Session\SessionBagInterface;
+use Symfony\Component\HttpFoundation\Session\Storage\MetadataBag;
+class Store implements SessionInterface
+{
+    protected $id;
+    protected $name;
+    protected $attributes = array();
+    protected $bags = array();
+    protected $metaBag;
+    protected $bagData = array();
+    protected $handler;
+    protected $started = false;
+    public function __construct($name, SessionHandlerInterface $handler, $id = null)
+    {
+        $this->setId($id);
+        $this->name = $name;
+        $this->handler = $handler;
+        $this->metaBag = new MetadataBag();
+    }
+    public function start()
+    {
+        $this->loadSession();
+        if (!$this->has('_token')) {
+            $this->regenerateToken();
+        }
+        return $this->started = true;
+    }
+    protected function loadSession()
+    {
+        $this->attributes = $this->readFromHandler();
+        foreach (array_merge($this->bags, array($this->metaBag)) as $bag) {
+            $this->initializeLocalBag($bag);
+            $bag->initialize($this->bagData[$bag->getStorageKey()]);
+        }
+    }
+    protected function readFromHandler()
+    {
+        $data = $this->handler->read($this->getId());
+        return $data ? unserialize($data) : array();
+    }
+    protected function initializeLocalBag($bag)
+    {
+        $this->bagData[$bag->getStorageKey()] = $this->pull($bag->getStorageKey(), array());
+    }
+    public function getId()
+    {
+        return $this->id;
+    }
+    public function setId($id)
+    {
+        if (!$this->isValidId($id)) {
+            $id = $this->generateSessionId();
+        }
+        $this->id = $id;
+    }
+    public function isValidId($id)
+    {
+        return is_string($id) && preg_match('/^[a-f0-9]{40}$/', $id);
+    }
+    protected function generateSessionId()
+    {
+        return sha1(uniqid('', true) . str_random(25) . microtime(true));
+    }
+    public function getName()
+    {
+        return $this->name;
+    }
+    public function setName($name)
+    {
+        $this->name = $name;
+    }
+    public function invalidate($lifetime = null)
+    {
+        $this->attributes = array();
+        $this->migrate();
+        return true;
+    }
+    public function migrate($destroy = false, $lifetime = null)
+    {
+        if ($destroy) {
+            $this->handler->destroy($this->getId());
+        }
+        $this->setExists(false);
+        $this->id = $this->generateSessionId();
+        return true;
+    }
+    public function regenerate($destroy = false)
+    {
+        return $this->migrate($destroy);
+    }
+    public function save()
+    {
+        $this->addBagDataToSession();
+        $this->ageFlashData();
+        $this->handler->write($this->getId(), serialize($this->attributes));
+        $this->started = false;
+    }
+    protected function addBagDataToSession()
+    {
+        foreach (array_merge($this->bags, array($this->metaBag)) as $bag) {
+            $this->put($bag->getStorageKey(), $this->bagData[$bag->getStorageKey()]);
+        }
+    }
+    public function ageFlashData()
+    {
+        foreach ($this->get('flash.old', array()) as $old) {
+            $this->forget($old);
+        }
+        $this->put('flash.old', $this->get('flash.new', array()));
+        $this->put('flash.new', array());
+    }
+    public function has($name)
+    {
+        return !is_null($this->get($name));
+    }
+    public function get($name, $default = null)
+    {
+        return array_get($this->attributes, $name, $default);
+    }
+    public function pull($key, $default = null)
+    {
+        return array_pull($this->attributes, $key, $default);
+    }
+    public function hasOldInput($key = null)
+    {
+        $old = $this->getOldInput($key);
+        return is_null($key) ? count($old) > 0 : !is_null($old);
+    }
+    public function getOldInput($key = null, $default = null)
+    {
+        $input = $this->get('_old_input', array());
+        return array_get($input, $key, $default);
+    }
+    public function set($name, $value)
+    {
+        array_set($this->attributes, $name, $value);
+    }
+    public function put($key, $value = null)
+    {
+        if (!is_array($key)) {
+            $key = array($key => $value);
+        }
+        foreach ($key as $arrayKey => $arrayValue) {
+            $this->set($arrayKey, $arrayValue);
+        }
+    }
+    public function push($key, $value)
+    {
+        $array = $this->get($key, array());
+        $array[] = $value;
+        $this->put($key, $array);
+    }
+    public function flash($key, $value)
+    {
+        $this->put($key, $value);
+        $this->push('flash.new', $key);
+        $this->removeFromOldFlashData(array($key));
+    }
+    public function flashInput(array $value)
+    {
+        $this->flash('_old_input', $value);
+    }
+    public function reflash()
+    {
+        $this->mergeNewFlashes($this->get('flash.old', array()));
+        $this->put('flash.old', array());
+    }
+    public function keep($keys = null)
+    {
+        $keys = is_array($keys) ? $keys : func_get_args();
+        $this->mergeNewFlashes($keys);
+        $this->removeFromOldFlashData($keys);
+    }
+    protected function mergeNewFlashes(array $keys)
+    {
+        $values = array_unique(array_merge($this->get('flash.new', array()), $keys));
+        $this->put('flash.new', $values);
+    }
+    protected function removeFromOldFlashData(array $keys)
+    {
+        $this->put('flash.old', array_diff($this->get('flash.old', array()), $keys));
+    }
+    public function all()
+    {
+        return $this->attributes;
+    }
+    public function replace(array $attributes)
+    {
+        foreach ($attributes as $key => $value) {
+            $this->put($key, $value);
+        }
+    }
+    public function remove($name)
+    {
+        return array_pull($this->attributes, $name);
+    }
+    public function forget($key)
+    {
+        array_forget($this->attributes, $key);
+    }
+    public function clear()
+    {
+        $this->attributes = array();
+        foreach ($this->bags as $bag) {
+            $bag->clear();
+        }
+    }
+    public function flush()
+    {
+        $this->clear();
+    }
+    public function isStarted()
+    {
+        return $this->started;
+    }
+    public function registerBag(SessionBagInterface $bag)
+    {
+        $this->bags[$bag->getStorageKey()] = $bag;
+    }
+    public function getBag($name)
+    {
+        return array_get($this->bags, $name, function () {
+            throw new \InvalidArgumentException('Bag not registered.');
+        });
+    }
+    public function getMetadataBag()
+    {
+        return $this->metaBag;
+    }
+    public function getBagData($name)
+    {
+        return array_get($this->bagData, $name, array());
+    }
+    public function token()
+    {
+        return $this->get('_token');
+    }
+    public function getToken()
+    {
+        return $this->token();
+    }
+    public function regenerateToken()
+    {
+        $this->put('_token', str_random(40));
+    }
+    public function setExists($value)
+    {
+        if ($this->handler instanceof ExistenceAwareInterface) {
+            $this->handler->setExists($value);
+        }
+    }
+    public function getHandler()
+    {
+        return $this->handler;
+    }
+    public function handlerNeedsRequest()
+    {
+        return $this->handler instanceof CookieSessionHandler;
+    }
+    public function setRequestOnHandler(Request $request)
+    {
+        if ($this->handlerNeedsRequest()) {
+            $this->handler->setRequest($request);
+        }
+    }
+}
+namespace Illuminate\Session;
+
+use Illuminate\Support\Manager;
+use Symfony\Component\HttpFoundation\Session\Storage\Handler\NullSessionHandler;
+class SessionManager extends Manager
+{
+    protected function callCustomCreator($driver)
+    {
+        return $this->buildSession(parent::callCustomCreator($driver));
+    }
+    protected function createArrayDriver()
+    {
+        return new Store($this->app['config']['session.cookie'], new NullSessionHandler());
+    }
+    protected function createCookieDriver()
+    {
+        $lifetime = $this->app['config']['session.lifetime'];
+        return $this->buildSession(new CookieSessionHandler($this->app['cookie'], $lifetime));
+    }
+    protected function createFileDriver()
+    {
+        return $this->createNativeDriver();
+    }
+    protected function createNativeDriver()
+    {
+        $path = $this->app['config']['session.files'];
+        return $this->buildSession(new FileSessionHandler($this->app['files'], $path));
+    }
+    protected function createDatabaseDriver()
+    {
+        $connection = $this->getDatabaseConnection();
+        $table = $this->app['config']['session.table'];
+        return $this->buildSession(new DatabaseSessionHandler($connection, $table));
+    }
+    protected function getDatabaseConnection()
+    {
+        $connection = $this->app['config']['session.connection'];
+        return $this->app['db']->connection($connection);
+    }
+    protected function createApcDriver()
+    {
+        return $this->createCacheBased('apc');
+    }
+    protected function createMemcachedDriver()
+    {
+        return $this->createCacheBased('memcached');
+    }
+    protected function createWincacheDriver()
+    {
+        return $this->createCacheBased('wincache');
+    }
+    protected function createRedisDriver()
+    {
+        $handler = $this->createCacheHandler('redis');
+        $handler->getCache()->getStore()->setConnection($this->app['config']['session.connection']);
+        return $this->buildSession($handler);
+    }
+    protected function createCacheBased($driver)
+    {
+        return $this->buildSession($this->createCacheHandler($driver));
+    }
+    protected function createCacheHandler($driver)
+    {
+        $minutes = $this->app['config']['session.lifetime'];
+        return new CacheBasedSessionHandler($this->app['cache']->driver($driver), $minutes);
+    }
+    protected function buildSession($handler)
+    {
+        return new Store($this->app['config']['session.cookie'], $handler);
+    }
+    public function getSessionConfig()
+    {
+        return $this->app['config']['session'];
+    }
+    public function getDefaultDriver()
+    {
+        return $this->app['config']['session.driver'];
+    }
+    public function setDefaultDriver($name)
+    {
+        $this->app['config']['session.driver'] = $name;
+    }
+}
+namespace Illuminate\Support;
+
+use Closure;
+abstract class Manager
+{
+    protected $app;
+    protected $customCreators = array();
+    protected $drivers = array();
+    public function __construct($app)
+    {
+        $this->app = $app;
+    }
+    public abstract function getDefaultDriver();
+    public function driver($driver = null)
+    {
+        $driver = $driver ?: $this->getDefaultDriver();
+        if (!isset($this->drivers[$driver])) {
+            $this->drivers[$driver] = $this->createDriver($driver);
+        }
+        return $this->drivers[$driver];
+    }
+    protected function createDriver($driver)
+    {
+        $method = 'create' . ucfirst($driver) . 'Driver';
+        if (isset($this->customCreators[$driver])) {
+            return $this->callCustomCreator($driver);
+        } elseif (method_exists($this, $method)) {
+            return $this->{$method}();
+        }
+        throw new \InvalidArgumentException("Driver [{$driver}] not supported.");
+    }
+    protected function callCustomCreator($driver)
+    {
+        return $this->customCreators[$driver]($this->app);
+    }
+    public function extend($driver, Closure $callback)
+    {
+        $this->customCreators[$driver] = $callback;
+        return $this;
+    }
+    public function getDrivers()
+    {
+        return $this->drivers;
+    }
+    public function __call($method, $parameters)
+    {
+        return call_user_func_array(array($this->driver(), $method), $parameters);
+    }
+}
+namespace Illuminate\Cookie;
+
+use Symfony\Component\HttpFoundation\Cookie;
+class CookieJar
+{
+    protected $path = '/';
+    protected $domain = null;
+    protected $queued = array();
+    public function make($name, $value, $minutes = 0, $path = null, $domain = null, $secure = false, $httpOnly = true)
+    {
+        list($path, $domain) = $this->getPathAndDomain($path, $domain);
+        $time = $minutes == 0 ? 0 : time() + $minutes * 60;
+        return new Cookie($name, $value, $time, $path, $domain, $secure, $httpOnly);
+    }
+    public function forever($name, $value, $path = null, $domain = null, $secure = false, $httpOnly = true)
+    {
+        return $this->make($name, $value, 2628000, $path, $domain, $secure, $httpOnly);
+    }
+    public function forget($name, $path = null, $domain = null)
+    {
+        return $this->make($name, null, -2628000, $path, $domain);
+    }
+    public function hasQueued($key)
+    {
+        return !is_null($this->queued($key));
+    }
+    public function queued($key, $default = null)
+    {
+        return array_get($this->queued, $key, $default);
+    }
+    public function queue()
+    {
+        if (head(func_get_args()) instanceof Cookie) {
+            $cookie = head(func_get_args());
+        } else {
+            $cookie = call_user_func_array(array($this, 'make'), func_get_args());
+        }
+        $this->queued[$cookie->getName()] = $cookie;
+    }
+    public function unqueue($name)
+    {
+        unset($this->queued[$name]);
+    }
+    protected function getPathAndDomain($path, $domain)
+    {
+        return array($path ?: $this->path, $domain ?: $this->domain);
+    }
+    public function setDefaultPathAndDomain($path, $domain)
+    {
+        list($this->path, $this->domain) = array($path, $domain);
+        return $this;
+    }
+    public function getQueuedCookies()
+    {
+        return $this->queued;
+    }
+}
+namespace Illuminate\Cookie;
+
+use Illuminate\Encryption\Encrypter;
+use Illuminate\Encryption\DecryptException;
+use Symfony\Component\HttpFoundation\Cookie;
+use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpKernel\HttpKernelInterface;
+class Guard implements HttpKernelInterface
+{
+    protected $app;
+    protected $encrypter;
+    public function __construct(HttpKernelInterface $app, Encrypter $encrypter)
+    {
+        $this->app = $app;
+        $this->encrypter = $encrypter;
+    }
+    public function handle(Request $request, $type = HttpKernelInterface::MASTER_REQUEST, $catch = true)
+    {
+        return $this->encrypt($this->app->handle($this->decrypt($request), $type, $catch));
+    }
+    protected function decrypt(Request $request)
+    {
+        foreach ($request->cookies as $key => $c) {
+            try {
+                $request->cookies->set($key, $this->decryptCookie($c));
+            } catch (DecryptException $e) {
+                $request->cookies->set($key, null);
+            }
+        }
+        return $request;
+    }
+    protected function decryptCookie($cookie)
+    {
+        return is_array($cookie) ? $this->decryptArray($cookie) : $this->encrypter->decrypt($cookie);
+    }
+    protected function decryptArray(array $cookie)
+    {
+        $decrypted = array();
+        foreach ($cookie as $key => $value) {
+            $decrypted[$key] = $this->encrypter->decrypt($value);
+        }
+        return $decrypted;
+    }
+    protected function encrypt(Response $response)
+    {
+        foreach ($response->headers->getCookies() as $key => $c) {
+            $encrypted = $this->encrypter->encrypt($c->getValue());
+            $response->headers->setCookie($this->duplicate($c, $encrypted));
+        }
+        return $response;
+    }
+    protected function duplicate(Cookie $c, $value)
+    {
+        return new Cookie($c->getName(), $value, $c->getExpiresTime(), $c->getPath(), $c->getDomain(), $c->isSecure(), $c->isHttpOnly());
+    }
+}
+namespace Illuminate\Cookie;
+
+use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpKernel\HttpKernelInterface;
+class Queue implements HttpKernelInterface
+{
+    protected $app;
+    protected $cookies;
+    public function __construct(HttpKernelInterface $app, CookieJar $cookies)
+    {
+        $this->app = $app;
+        $this->cookies = $cookies;
+    }
+    public function handle(Request $request, $type = HttpKernelInterface::MASTER_REQUEST, $catch = true)
+    {
+        $response = $this->app->handle($request, $type, $catch);
+        foreach ($this->cookies->getQueuedCookies() as $cookie) {
+            $response->headers->setCookie($cookie);
+        }
         return $response;
     }
 }
-namespace Symfony\Cer['CONTENT_TYPE'] = 'application/x-www-->all();
-       nput)
-    {
-      (isset($cth', realpath($paths['app']));
-  $_ENVoted;
-    }
-    public functi$_SERVERoted;
-    }
-    public functiputenv(")
-    =es[$abstreach (astruct(Request $request = null)
-   ameterBag($ror($ct = new PaItallbacror($callback);
-    }
-  Ftionrequest,$request);
- new Parver['HTTPS']);
-       => 'localhostction bound($abstract)requ
-    publ['scheme']) {
-                $serve    public static funcray('SERVERisy();
- is->acceptableContentTypes =tFacte);
-}   pubcallable)
-    is);
-    }
-    protectedstrac  }
-   sterBaseSerstra    {
-        f at     ill;
-   reach (array('Event', 'Excepti$components['scheme'])) {
-        }
-    public function duplicate(array $query calliuncttrtoupper( array $attributes = null, array $cookies = null, array $files = null, array $server = null)
-    {
-        $dup ameterBOce;
-u     $server['CONTENT_eterB_oatioTE_ADDR' => '127.0ORT');
-    proteif (     = arraythod;
-    protected$query = nulpu array $request utes);
-     )) {
-                $abstract' . 'attributedata return $parameter->getDefa=> 'localhost', 'SERVER_PORT'Interface::MASg($attribute }
- ONTEtPatterns =arameters;
- ts['query']), $qs);
-         les);
-        }cookies = new ParameterBag($capies);
-        }
-        if ($file ($cookies !== null) {
-           }
- , Fes;
-APPENDcookies = new ParameterBag($cdeleeach ($h null, $shared = falthstract] = $objnull;
-rredcoding $this->fireResolvingCallbacsunces tion se{
-        $abstract codingbjec>getCoedProviders()
-    {@unlinknction duplicate(array ll;
-        $du$this->deferredServices[$servnamespace Symfony\       attributes = new ParameterBamo $th       ta   pblic static function sere$this->get_format')     if ($this->isShared($abstrp
-      _format') && $this->get('_format $this->get('_formatattributes = new ParameterBa$this->getCction bound($abstract)codiinfo>get('_fPATHINFO_dup-NAME         if (array_key_exists('tensBuild->setRequestFormat($format = $this->getRequestFormatEXTEN
-   estFormat(null)) {
-          es a    public static function setFac->request =ay(), array $attributes = arrizequest = clone $this->request;
-   ttributes;
-onents['query'];
-            astModifie);
-    blic static function setFacm  retllable)
-    {
-        self::$requearget, $metho    }
-  tected static $trustedHois_dirlone $this->his->server;
-        $this->heWri= $th    public function __clone()is_s;
- tf('%s %s %his->server;
-        $this->hey();
-      $server['CONTENT_LENGTis_requ     $this->ml)
-    {
-        $dup =lob    return $concrete0tRequestFormat($format }
-    public functionstUri(), $this->server->get('e) uslone $this->headers;
-    }
-$}
-   =       ne $this- crea*        if (ray('ery($t $files;
-    public $coo     default:
-                $request = array(n.reje    $_equest $reque= phpuplicate(array $query = nu->requr->all
-    returs();
-        $parameters           $dup-llies, lone $this->headers;
-    }
-    publeReques_toer($thiquest,use($val()ver['SEey))inlone $this->put(), $this->ull;
-        $dup->charet, $meializeQueryString(http_build_quTENT_LENGTH', function () use($callback)e('-', '_', $key))     if (in_arale)NT_LENGTH' $_Septh(0, '', di   return $this->gSERVER['HTT() == diEQUEST=> '$thisder()
-    {
-        $this->reSERVER['HTTormat = null;
-        if (!$dakeget, $metho->get('mabst= 493retur      $Path = ntainer_SERV   $re      if ($query !==variall();
-        $_COOKIE @mk func = ini_get(st_order') ?Method() == 'GET' ? $this->q]#', '', strtolower($requestOrder)) ?ibutes->set('_format', $thaders = clone $this-    {>res $thi, $o'));
-c_get_arer');
-        $requearameterheaders = clone $this->$service];
-        if (!isset($this->loadedProviy_merge($_Ry_merge($?: self::createReques::SKIP_DOTurn functioder]);
-        }
-    }
-   QUEST = art', $keys);
-    }
-    pu  $requestOrderEQUEST = arra511>all() + $this->qic function merge(a null, a::createReques           $_R_merge( {
-        $abstract f ($ths->getAlias($abstract);
- rmat')w HeadUEST = ar create($uServicgetBas)) {
- bject)
-    {
-       ServicargetnewInstanceArgs($insta    publiprintf('{       $request = ar
-    public static fs $order) {
-   ->get('_forma        selthis->getUri()), '/');
-  unset($this->deferredServ  }
-    }
-    publiencies($parameters, array();
-    }
-    p}', $hos     self::$t_format') ts()
-    {
-        return self::$trustedHostPatterns;
-    }
-    publi->register($instance = new $provider($this));
-   $dup->charsets rder) {
-            $_Rpurl();
-bles_order');
-        $reque);
-        }
-    }
-    public static function setTrustedProxies(array $proxies)
-tTrustedHosts(array $hostPatterns)
-    {
-lf::$trustedHostPatterns = array_map(function ($hos'\\}', $hostPattern));
-        }, $hostc staticted header namey, $value)
-    {
-  ' => 'Illuminate\\View\\Factory');
-      rintf('Unablthe trusted header name for key "%s".    foreach (func_get_arg".', $kell();
-        $_@rm function __toString(nvalidArgumentException(sprintf('Unable to set the tract] aders = clone $this->headers;
-    }
-    pubprintf('Unable to get th         $_ll() + $thiY_STRING'] = $queryString;d st $thie($qs, $qAliaUSER']    protected functi {
-   $this->attributesw $e;
-  T => nition)
-    ance($abstract)
- ;
-    }
-    puuery($query, '', '&');
-     ton($abs      app' => 'Illuminate\\Foundace Illu rawurlen;
-            protected function markAsRegiste         ir[1]) ? rawurlencode(urldecode($keyValuer(new RoutingServic   }
-    pe\Routing\RoutingServiceProviderpplication nt()
-    {
- ? rawurfunc($callback, $this,  rawurlencode(y $quer[] = urldecode($k                 r, SORT_ASC, $partparts);
-    }
-    psblic statiunction enableHttpM        }
-        array_onents['query'];
-            }
-    retu$httpMethodParameterOverride = fa return[functiblic $attributes;
-    pubIllumi retuOverride()
-    {
-       functios->getAlias($abstract);
-        if (issmeterOv, $concfunction getHttpMethodverride()
-    {
-CompoER_NA retuBag($request);
-        }
-     ;
-        }
-        $reelf::$truste   $keyVal  return $this->getClieookies)Toet('X-S     {
-        return
-        if ($th$dup->pathInfo = ay(), array $attributes = array(>attributes->get($keyFoundation\Respopl_== $of S_      retset($ac($key)'of S  }
-tendram) {
-        ort'];
-            $seric staticssingLeadingSlash($abstract) &rawurlencode(urldecode($kutes = arrayic statiir[1]) ? rawurldecode($keyValuePair[0])) . '=' . rawurlencode(urldecode($k  $this->heR  $keyValublic function getSession()
-      $keyValay(), array $attributes = array>cookies->hrray();
-    protected static    $keyValuePder($abstract);
-        }
-        return par          AMEORIGIN', false);
-  [] = urldecode($k$response;
-    }
-}    if ('' === $param || '=' === $pa  $this->request = new ParameterBag($request
-    }
- _array($fierBag($query);
-        $this->attributesmanifes ParameterBag($attribu>session()return     ironm' => 'Il$cookies);
-        $this->files = new FileBag($files); array($ip);his->server = new ServerBag($server);
-        $this->h array($ip);
-    prray($ip);
-     ['query'];
-            }
-  reparerInte    }ublic funct = '\function setLocale(      $ce(array $inputM     $c;
-    }
-    publgetDefaultValuecublic t = rray($"%s".lf::$truetSet($key, $value:HEADER_CLIENT_IPip = $c;
-       back, $        fo  }
-        }
-        re   return $reflector->newInstanceArgs($is as $key['eagolvingCa       $cl        f            class] = true;
-    ey] = $cliestedH]dup->rsure) {
-e()
- s($ab  return $this->getClie      reet('
-    p    if (preg_matn arself::ch[1];
-            }
-            if (IpUientIps[heckIp($clieected function get {
-   $request$client($val
-    }
-     if (preg_matarray(), $server = arrall($coet    }
-  stract;s     if (IpUay $dred   returnisInstantiable()) {
-            $      unset',', $this->headerntIps[$key]lic funcself::rn $result;
-       terface self::$<e;
-    protected $defaul {
-        $ipAddresses = [] = s($abstr)d[$abstraerver->equest $requif ($reetClientIp()
-  $clientIps) : array($ip);
-    }ntIp()
-  rs();
-        $parameters = $this->keyParamtIp) {
-         me()
-    {
-        return $rustedHeaders[self::HEADER_CLIENT_IPfe) {
-         preg_match('{((?:\\dnull;
-            farray_reverse($clientIps) : ar= $session;
+namespace Illuminate\Encryption;
 
-    public function getClientIp()
-  _replace('}', '\\}',  }
-    p;
-    }
-    return rtrim(preg_replace('/\\Url()
-    ct = '\\' v']) ? ract;  {
-        return php_sa;
-        return $ipthisract;stUri;    if ($nvironmentArgument($args))) {
-        if (IpUtils::(fun   }
- ray();
-    }
-->       => 'Illuminate\\View\\Factory');
-             $clientIps() == l;
-    }
-    public fuabstract);
-    }
-    public ject;
-s;
-  is->basePa as $keyp->attributes->set('_format', blic function me()
-    {
-        return $blic function getSessio    self::$trnction dropSarray $attributes = arr      $ip = $clientIps[0];
-        foOL')) . '
-' . $this->heaild($cDER_CLIEN>getCy] = $clientIp = $matest Path = $thonents['query'];
-            }
- ;
-        s[$abstract])) {
-      rray($ip);
-        }g($athis->bs.jsont, function ($app, $in_NAME' => 'localhost', 'SERVER_PORT'  as $key =>  if_
-use'ses ('https' === $clone $t>all() + $this->querytialize(array $queric static funcrustedHeades->getAlias($abstract);
-        if (issaders[self::HEADER_CLIEN              return 443;
-            }
-        }
-        if ($host = $           $poer = new Se'[') his['sesentIps[0];JSON_PRETTY_PRINTer_func($callback,  'https' ract);
-        if ($this->isBui= $this->basePs->get(self::$trustedHeaders[sel     }ientI retururn $eveI    $this->btLaravelname for key         impact(entIp = $ma, ntIps ?,
-   turn $iheme']) {
-                $server['HTTPS'] = 'on';
-                $server['SERVER_PORT'] = 443;
-            } okie        $ip = $thiay())
-    {
-        if ($concre  $useturn isset($this->aliases[$abstract]) ? $this->aliases[$abstract] : $abstract;
-    }
-    public f->    Snstrd('c $useer_func($callbackunset($this->aliasthis->rebthod}($instanact]) || unction getDepenalues($m\UrlGe$useJa$value) {D0.7,*;q=0.AndDoma      {
-  isset($t   }
-    ['dp' ==eters();
-        $paramn alias($abstract, $aliData            $ip = $thiturn $th\EloquptioMod }
-    peters = array())
-    {
-        if ($>getHost();
-        }
-  Conn, $messtUri()
-allba $metion fileturn $thceof Closure) {
-            return $concrete($this, $parameterbinding($abstract, Clurn $uncti{
-        
-       app, $instancdb   return $th      retu
-    otected func public function gerBag($request);
-        }
-     $pass}";
-        }
-        return $userinfo;
-  db.ff (nul  public function getHttpHost()
- ]))) {
-    {
-        if (nulnction dropStaleInstance
-    }
-    public function get  {
-        if (null !== ($qs = $this->getQuturn $thManentI     }
-      etUri()
-    == $scheme && $port == 443) {
-            reEncryn is_string(eters = array())
-    {
-        if ($concret   {
-    sword();
-        if ('' != $pass) {
-            $userinfo .= ":{$pass}";
-        }
-        return $userinfo;
-  e   {
-  getPback;
-    }
-    protected funct>server->= null)
-server->abstracheme = $thapp.ke    }
-    publ);
-        rd}($instanceey =lic fcipherer', 'url' => 'Illuminatserver->= $thCdProxs;
-    }
-    public fedProxistract)
-    {
-        return $concreteaders[sel= $scheme && $port == 443) {
-            re;
-        return eters = array())
-    {
-        if ($concres(array $hsword();
-        if ('' != $pass) {
-            $userinfo .= ":{$pass}";
-        }
-        return $userinfo;
-  e) use if (null === l !== ($qs = $this->getQur['HTTPS'] = dropStaleInstances($abstract)
-    {
-       ]) || rinfo = $this->getUser();
-        $pass = $this->es && sceof Closure) {
-            return $concrete($this, $parameters);
-        }
-        $reflectorsetup       DristUrass($concrete);
-        ifes && s $this->$host);
-            $host = $eleme(',', $host);(ReflectionParameter $parats = explode(',', $      if ($query !== null):\\d+}', $clientIp, $match)) {
-         ->{$method}($instanact]) || $d(',',getBired($ab $result;
-        }
-        if ($this !==  $host = $elements[coun
-        }
-        return $userinfo;
-  is->getS {
-        if (null !== ($qs = $this->getQu= $elements[couction dropStaleInstances(      }
-        $host = strtolower(pre        if (!($host = $, trim($host)));
-        if ($h$sharedet('QUERY_STRING'));
-        retum$this-      $scis->getScheme();
-        $portrns) > 0->'SERVEtHost()
-    {
-        if (self::$trustedProxinstarinfo = $this->getUser();
-nsta$defaBag public function nsta\Engines\Php {
-    public function  ':' . $port;
-    }
-    public function tern) {
-     public r        if (preg_match(tern) {
-      {
-   
-        i;
-                  dHosts[]s\Bladractsts[]ion filenstaceof Closure) {
-            return $concrete($this, $parameters);
-        }
-        $reflector = new R $host;
-      unt($elements) - 1];
-      nstaquest,unt($elements) - 1];
-      ))) {
-  $host);
-            $host = $elemB$this->methodgetScheme() . '://' . $this->glic function setntf('Invalid Host "%s"', $host));
-     back.e{
-   .($abstr>get('QUERY_STVER['argv'] : null;
+use Symfony\Component\Security\Core\Util\StringUtils;
+use Symfony\Component\Security\Core\Util\SecureRandom;
+class Encrypter
 {
-    $qs ? nuc function setMethod($me  $this->basereturn ($co, 'b    'aseUrl>methodArgumentException(sprintf({'$this->g
-   u if ($t   if ($m. 'ET'));'}v'] =strtotract)
+    protected $key;
+    protected $cipher = MCRYPT_RIJNDAEL_128;
+    protected $mode = MCRYPT_MODE_CBC;
+    protected $block = 16;
+    public function __construct($key)
     {
-        return $concrete =       i      foreach ($this->headers->all() aw $e;
-                     $ract, $parameters =strto          hod) {
- er($this->server->get('REQy $primitiveide) {
-  parePathInfo();
-        }
-httpMethodParameterOver     e) {
-                    $this->mymfonyR>server->t, $pos + 1urn $userinfo;
-       
-   sts[]if (count(self::$trustedHostPatterc  }
-      $sccodi$shar     
-        }
-        re, $this->query-      throw nabstrace) use(te\\Cchrder)) ?: 'gpy, $request,ethod = strtoupper($       if (null === $this->pull !== ($qs = $this->getQuerosts[] = $hoabstrac    {
-        ract, $o
-        hod', 'POST')));
-                }
-            }
-     $this->null === $this->method) {
-            $this-fuest,if (count(self::$trustedHostPattercodings    $scheme = $ththis-codinScheme();
-        $portic funct     $this-   {
-        if null;
-        } elseif (self::$httpMethodParameterOverhis->servnull === $this->method) {
-            $thisif (count(self::$trustedHostPatterEST_METHOD'   $scthis->method = strtou     });
-      $meTypemeTypes)) {
-  meType,turn $format;
-   {
-   on inp $methoethod = idatiest, $construreturn $this->        casef::HEAy($cal\\.?/', '', $host)static::$fonstrulic ccep $object)
-    {
-  edHeaders[v        } elseif (self::$ }
-        $host = strtolower(pred);
-    ic function getUser()ack, $mt($pa         rever->ENGTH']y, $request,urn $uo['coameter}] in c$this->pathion  {
-            thro    t]) || Has
-       n __set($key, $value$pattern =str($mimeTt]) || $shared terns ', arrayRouting\\Redirector'dCallbacks[$azeForma, array()\?.*/', 'http';
-    }
-    public function getPor setRequestFormat($format)
-      :$trustedHoss[$key];
-    }
-    public stray(), array $attributes = arrarmat = $this->get('_   $this->instance{
-        $scheme = $this->getScheme();
-  stances[$abstract]) || $shared =     ] && 'htt= 80 || 'SERVER_t_class($provider), array(      return $this->ff::$t;
-    }
-    publicct(Request $request = null)
-         $par          vingC     $  unset($server['HTTPS']);
-         $_SERVey] = $  }
-    }ST'] = $server['HTTP_HOSlln $this->de>cookt)
-   isterBaseBretulbac, $object,n inst($cont($components['pass'])) {
-             $parametvider()
-    {
-        $t   r\functio>locale ? $this->defaultic fun          }
-     
-    p\otected fu          }
-     ats) {
-  urn $this-ror($callback);
-    }
-     return $   return  pushError(Closure $callback)
-      r| '=' === ultLocalarra   $thiltLocale : $todSafe()
-    {
-        return in_aric funchis->getMeth
-    public  strtoupper($method);
-    }
-      $thisrray $co   return is_stlue;
-     components['pa   public function ,rn $this->defaultLocale;
-    }
-ookies = ne    proxtractAlias(array($cal:HEADER_}
-          llbacent() can only be urry :urce return type.');
-   ltLocale t() can only be calr    Reflehod)
-   {
-            ifnmentbstract | '/';
-        te   }$dup->pathInf  switch (strtetur     $t        return true;
-      regexl === $this->content) {
-              = $this->content) {
-          if (nul$this->content) {
-          $thiset($kequest());
-        $this->regi$verb$this->con'GET{
-  HEAD{
-  POS\s*,\PUs->heaATCH{
-  DELETE{
-  OPase'Sice)
-    {           sure);       reg_split('tion {
-  eaders{
-       if y, $    'ediser_'updhe()
-  s->reoyice)
-    {
-        return array(key(is->conten'getCont,lGeneled obe called oe 'PUT':
-            case 'DELks($abstraetContent() xies)) {
-   backArraesolvingC $flash = !        return $fo'Pragma');
- ('Pragma');?:\\UrlGene {
-           return $fo    ('_mis
-   if (count(selfv$https);
-    }
-    publbject = $this-vc::initializeFormats();
-        }
-       s = suri;
-          return $this-sh($abstract) &ddvingCs->metho/\\s*,\\s*/'    uages) {
-    attributes = new ParameterBagoVERRuages) {
-            return $locales[0];
-        }
-$this->hrredLanguages = array();
-        foreach ($if (rredLanguages as $language) {
-            $extendedPrders-rredLanguages = array();
-        foreach ($     e !== ($position = strpos($language, '_'))) {
-        et('if_rredLanguages = array();
-        foreach (rsets = rredLanguages as $language) {
-            $extendedPone_matchrredLanguages = array();
-        foreach (_merge(rredLanguages[] = $superLanguage;
-                }
-  ), null,   }
-        }
-        $preferredLanguages =anyrredLanguages[] = $superLanguaurn preg_split('/\\s*,\\s*/', $this->headers->get('if_none_matEQUEST_METHOD', 'GET')),        }
-urn pr   }
-        }
-        $preferredLanguages =
-     \\Conta         return $        return $locales[0];
-        }
-      'Ill    equest'',ngInConsol$languaeferredLanguages = array();
-        foreach (       $thpublic fueys($langua)
-    {
-        $args = i $lang) {
-  arrayurintIp,   re{
-                $hos       $thrredLang   return $value;
-         foreach (array_keys($langurredLang       $theptableClencode(urldecode($keyValue ($resu }
-          $th }
-    public sder = $ry = arc functiooreach ($clientIpsodes[1];
-     $this->attrinull,U   {
-       $thrray(), $server = arra = n;
-    null;
-     I     retP_'  $callbtf('%s des[1];
-   }
-          $this->baseP      if bjecpublicntIp, = nulodes = explode('s[0]);
-       est $re = nudArgumentException(sprintf($this->g           ale);
-  es) > 1) {
-  NotFoundH     unction instance()
-    {
-        rehis->languFallk\Buughages) {es) > 1) {
-  rtolower($        throw new \UnexpectedValu              }
-                    }
-  &       rn $this->method;y())
-   split('uses     }       $th{
-  @
-    public = 'html')
-       ['a getBishInput($fl        public t, $pos + 1));
-  {    }
-['rn p']    $this-uri$forma  $this->ses        throw new \Unexpe>languages[] = $lang;
-        }
-      stedHeaders[self:turn i if (is_nul) ? $pr     {return i} if (n $this->chars>encodiction ddlewares as >encodittps'ormareturn isse'(.*)
-    {
-        return $this->hTY);
-   etLocale($s) > 1) {
- ton($ab_merge($_R' => 'Illuminate\\Foundatio   $ay($callbaey] = inatis !== ($result = $this->afixedKern'Accept-Encoding'))->all(      self::$truste            }
-        }
-      $     ($i == 0) {
-bleConteWildcard( (is_r);
-        ifuse IlptHeader::fr=0.7,*;upper($requTY);
-    }
-    p        $this->basePreturn $this->accction => $fromStr    return       odes = explode('-', $la{'    osure);
- ETHOD-OVERRm)}etLocale(    s) {
-            return $this->acc        }
-        if ($this !== ($ceptableContentTypes) {
-          ));
-    }
-    ault = null)
-    {
-       "%s".'fixeveItem('se $this->accP     e;
-interface HttperBag((arrayuest $request=== $thTypes) {
-            return rustedHostPatternes->headers>headers->remove('X_ORIGINAL_U        } ethis->retrieveItem('headeull,     }
-    p    refer$locale)
-    {
-     }
-        if (isset($comp= $this->headers->gguages[0] : $locies;
-    public $heathis-rs->get('X_ORIGI_URL')tatic $requethisctory;
-    public funct0, -ion __constru     default:es);
-protected
-         $this->server->remove('IIS_WasUrlRewrittennction isXmlHttpRequest()
-  httpMethodParameterOverrid_merge(['>boo            $this->setPhpDction () use($iisXmlHttpReqgInConsolet('UNENCODED_URrver);
-        $server['PATet('UNENCey)) =_URL') != '') {
-            $req
-    $this->server->get('UNENCODEDUNENCODEDquest = array('g' => $_GET, '>get('Accept'    return $default;
-    ewrittenUriormat,re);     }
-        self::ontentTypes()
-TY);
-   list      if (null !==ethod);
-    re);ic static function seies;
-    public $headers;->server-et('X_ORIGI            if (NesttableConte$thisprotected $charsetsbootedCalstract, Clo/{
-    return $this->acceptableContentsubstr($re {
-  >enc);
-        return $this->languages;
-           $requestUri = rotected $method;
-    protected
-    public func$this->hea'Illuminate\\Ca_URL');
-                 $ returost));
-            }
-        } ERY_rver-        } e['ses$this->s$this->server->remove('IIS_WasUrlRewrittenAsh = !ischemeAndH                  }
-   headers->has('X_ORIGINA
-       );
-            }
- rn $th_INFO');
-     $this->server-');
-            $this->$thi       $cis->     return $this->charsets;
-        }
-   >server->remove('IIS_WasUrlRewritten return $requestUri;
-    }
-    pro== '1' && $this->server->get('UNENC     rn $\ContaiacceptableContentTypes =  {
-            $baseUrl =wares(Builder $stack)
-   $requeerver->remove('this $dupSELF')) === $  publh ($t, function ($a         } else {
-                    fost, selferver->.hemeAndHtt      $s;
-      mponents['query']), $qs);
-        getnull,      if (baseerver-chemeAndHttkeys(AcceptHeadeNFO')) {
-            $reques $baseUrl = $this->server->get('ORIG_SCRIPT_NA;
-    protected $format;$schemeAndHttp list $object;
- (neas  $pats->headRL');
-            $    rull;URL')}    $this{rn $reque
-   ION = '"dHttpHEST_URI')) {
-            $requestUri = his->servetMiddleware($class)
-    {
-  $schemeAndHtt       $parameters, $class);
-  }
-    public functiewrittenIion ('X-Requested-With');
-    }
-    prote>set('REQUEST_UR) {
-            equestUri = srs->get('X_ORIGIarsets) {);
-            }
- RIG_PATHt-Encoding'))->all(ction isN      self::$trusteustedHostPatterns =redLanguages = array();
-              $seg = $segs[$indC', $ke               $baseUrl = '/' . $seg . $baseUrl;
-                ++$index;
-           ng($abache() } while ($last > $index && false !== ($pos = strpos($path, $baseUCache()
- 0 != $pos);
-        }
-        $requestUri = $this->getRequestUri();
-        if ($baseUrl && fShare== ($prefix = $this->getUrlencodedPrefix($requestUri, $baseUrl))) {
-            return  } while ($last > $index && false !== ($pos = strpos($path, $baseU     if 0 != $pos);
-        }
-        $re$preferredLanguages return rtrim($prefix, '/');
-        }
-    how== ($prefix = $this->getUrlencodedPrefix($requestUri, $baseUrl))) {
-            return $pref$reque     get('QUERY_STRI          $truncatedRequestUri = substr($requestUri, 0, $  retu0 != $pos);
-        }
-        $requestUri = $this->getRequestUri();
-        if ($baseUrl && f
-   ode($truncatedRequestUri), $basename)) {
-            return '';
-        }
-        if (strlen($requestUri) >/n $th strlen($baseUrl) && false !== ($pos = strpos($requestUri, $baseUrn $this0 != $pos);
-        }
-        $requestUri = $this->getRequestUri();
-        if ($baseUrl && fUheade== ($prefix = $this->getUrlencodedPrefix($requestUri,is->languPu$index;
-  me($baseUrl) === $filename) {
-              if (null !== $this->langu  arrf (basename($baseUrl) === $filename) {
-       if (empty($basename) || !strpUrl);
-        } else {
-            $basePath = $baseUr) {
-            return '';
-        }
-        if (strlen($requestUri) >= strlen($baseUrl) && false !== ($pos = strpos($requestUri, $baseUr>headers-       }
-        $basename = basenalse !== ($positiePath = str_replace('\\', '/', $bas' === DIRECTORY_SEPARATOR) {
-            $bas) {
-            return '';
-        }
-        if (strlen($requestUri) >= strlen($ba(!isset($ition);
-  dings;
-        >header      if (empty($basename) || !strpos(rawurDasCachode($truncatedRequestUri), $basename)) {
-            return '';
-        }
-        if (strlen($requestUri) >= strlen($baseUrl) && false !== ($pos = strpos($requestUri, $baseUrhasCachequestUri())) {
-            return 'dPreferredLanguages[]    }
-        if (!$preferredull, ton($absttriballbachis->getSession();
-    }
-}
-namespace Ill>headenull,et($kearray('textrl;
-             }
-        if (is_null($ke] = $value;
-     $shar  } else {
-      ract);
-        if ($this->isBuicript', 'applicatt' => array('text     }
-        self::         } else {
-                    forrray('text_SERVER;
-      null, $rray('text/p (is_s  } else {
-       ;
-    }
-    public functionse {
-     () == rray('textthis->languages;
-        }
-  ->semina '');
-   e = wder::fromString($this->headers => array('anew/atom+xml'), 'rss' => array('appuse Symfony\Component\HttpKerocale', false)) {$ol
-            $filenew       ($abgetBiact])) {
-  mat $i s->headeratch (\Ex strlen($ba     _URL');    }
-    }
-    pr;
-          ion getUrlencodedPrefnces[$abstr     'https' =URL');
-         solveProld| 'https' == $scheme &codedPrefix($st arrais->charset $query = aut($flold, x);
-   ers->get('his->heas = ar)) {it:]]{2}|.){{$lenotected function preparpreg_m
-        $trete, $this['e:xdigrepareB     
-    ,    RL');match)) {en}} {
-  ponent\HttpFoundation\Response;
-interf    private function getUrlehttpMethodParameterOverrid          
-     e) use(alse;
-    kies = arrayhis->registerDeferredProvimatch("#^(%[[:xdigi     
-        \\'rameterORIG    re          
-     if (selrver);
-        $server['PAT $cookies = arrayarray $server = array(), $coory) {
-            $request = call_->session()->flashInput($fll)
-    {
-        Factory(array $query = array(), array $reque    if (0 !== strpos(rattributes = array(), array $cooring, $p array $server = array(), $content = null)
-   _URL');
-  inat create($ibutes, $coring, $puminate\\Sessiontent);
-            if (!$request i_URL');
-ract);
-        if ($this->isBuilda '');
-           ication/xml', 'application/x-xml'), 'rdf' => array('applicaties =
-   s);
-> array('application/jsrward_static_call(arrrBag  of Symfonyrredcted $paramete$baseUrl = $thitent);
-          extractAlias($a            $seg = $seges) {$languages = AcceptHeader::fromString($this->headers = nullangu }
-    public arameters = $parameters;
-    }();
-        }
-        return $thithis->parameters;
-    }
-    public       if ($query !== null)>getingToats)if (counpublic fcted function gety())
-    {
-        $ay $paraRIG_PATHarset'))->all                        returnnewarameters = $paramet    protect->headertol-Charset'))->all', 'application/x-xml'), 'rdf' => array('applicatists('Localeters = $pas->get(ay('application/rss+xml'));
-addWarraCla    Toaramete, $default = nul, $this->resoract);
-        if ($this->isBuimeters = array())
-    {es) {
-            return $localeesolvingCters = $parameters;
-    } return $this->json;
-        }
- his->paramection bound($abstract), $co    retLENAME', '');
-           }
-            return s($painat}
-     eGua/s = array())
-    {
-        $this->p  {
-        if (!$deep || fvalue) {
-        dd(a = array']'));
-            turn $th}}#", $string   for    }$prefermatch)) {
-          rl;
-        }
-     trpos($path, '['))) {
-            reunction get($path, $defll !== $this->charsets) {ublic functi {
-        try  {
-            $ch:$formats) {
-  for    }ameters;
-    }
-    p        throw new \Unexpeceplace(array $parameters =       if ($query !==      $Request;
-usvider()$service];
-        if (!isset($this->loadedProvi$this->hea     }rs;
-    }deferre throw #", $string       {
-           }
-            $this->server->rters = $parameters;
-    }ir[0]));
-            $ throw new \Invarray())
-    {
-        $th
-            retu;
-    }
-    public functionapplication/x-xml'), 'rdf' => array('applicatioeturn $     etBindings(unt($codes); $i <      $value =   {
-        $ipAddresseeturn $ing'))->al= $val     $value = et('X_ORIGINic func   {
-        concvider()           $currentKey = nu         $reqrvicePntf('Malformeif (!      path. Unexpected "]" at position %d        throw           $requestUri = su
-    protecn %d.', $i));otected funrl;
-        }
-    f (null === $this= st       $bas protected function f => $client);
-    {
-        returncall_us{
-            (true === $as: 'http';
-    }
-     }
-    {
- public 
-    protect    ifmax; $i++) {
-       ' => $_GET, 'ale)
- lse ==ale);
-    }
-    pueturn $value;
- RL');
-             }
-        if ($this !== ($resudes); $i <                 $file = $thistom+xml'), 'rss' => arrtch = true);
-}
-namespaclic fuookies = array(?blic fu       
-      ::$requesey_exbstr    , array('CONTENT_TYPE', 'CONTE  $thisarray($t$object, ntf('Invalid Host "%s" (true === $as{
-  call_us$formats) {
-  c functi        $thultLoca'      schemeShared($abstracthis->build($c->get($korResponses()
-    {
-get($key, $defaut = '', if (!$deeppublic function gn ($container)et($key, $defau  $lart;
- ($conplace('/[ public funrredLanguages = $tht, $deep));creat
-    public public function getDienv'], func    pubion getAlpha($key, $default = '', if (!$dedeep = false)
-    {
-        returvalidArgumentExypeseg_replace('/[^[:alnum:]]tion getPrefe   }ormalResol.mfonyRpublset($acale);
-    }
-    path. Unexpec>get($key, $default, arameB            return (intfunction getAlnum($key, $default = '', $deep = false)
-    {
- cted "[ruATH_Ie('/[^[:alnum:]]/', '', $this->get($key, $default, $deep));
-    }
-    public function getDigits($key, arame;
-clas->parameters[$key] e)
-    {
-        return str_replace(array('-', '$this->server->get(}
-    public funct {
-        return preg_replacLTER_DEFAing($this-> {
-           ptions = array())
-       foreachompacit
-         mespa$default =(ReflectionParameter $para  return filter_var($valury) {
-            $queryScted "[isterBaseBbaseUrl
-        $this['exception']->regist(array());
-hp://inlback)
-    {
-        $this->cted "[" aPsterBase_array($, $defaer    filter__array($keys)locale);protected function getEnvironmentArgument(a= $char) {
-                if (null !e Symfony\Component\HttpFoundation;
-'));
-        }
-        hs, array('app'on count()
-    {
-  ic function($value, $filter, $es;
-        }
-          ession();
-    }
-}
-namespace Illesolved[$abstrac$deep = false)
-            $this->servers->prepareReques }
-    ession();
-    }
-}
-namespace IlluddGloba $deep));
-    }
-   public function replace(array $files creaty())
-    {
-        $this->parameters = array();
-   = '', $d         $this->server->remove('IIS_WasUers = array();
- le($this-> = array())
-    {
-        $this->replace($parameters);te($uri,this->es = array(ultLocal  }
-    }set('QUERY_STRING', static::normn setLocale($locale)
-))
-    {
-        $this->replace($parameters);s->con: ORIG_)) {
-  UploadedFile.');
-        }
-        parent:->json;
-        }
-     e.');
-        }
-   }
-                if (!is_ar  }
-    }     ontentTypes()
-(\Exception $e_class($provider), arrayrBag((arrharss->con);
-            }
-     if ($file insta          return $abstract;
-        return $ey] = $vction $_REQUEST, $request[$order])] && 'httpthis->lURL');
-            le);
-   cept-Language'))->all();
-        $this->l;
-    }
-    public functionif (null === $, $v (nul  if (    }
-   act]n cr$file);everse($segs);
-            $in    R $th>fixPhpFilesArray($file);
-        if (is_array($file)) {
-            $keys = array_keys($file);
-            sort($keys);
-            if ($keys == self::$fileKeys) {
-   $this->con if (UPLOAD_ERR_NO_FILE == $file['error']) {
-                    $filget(ic funy] = $valulic function binde 'PUT':
-            case 'DEL     r;
-   t($preferredware($   }
-     {
- ected func'exception']->registeild($c    {
-        if ($registered = $              rray_values(array_filteileIn         fixPh     rrayis_array($data)) {
-            retuarray_  return array_values(array_filterBag((arr=== $char) {
-                if (n true));
-        }
-        if (is_n$consoleArgs) {
-            return     this->content || truethod', 'POST')));
-                }
-      ile;
-    }
-php://ifile);
-        }
-    }
-    protray_key = $this['events']         
-    public 
-    ny\Componray_key;
-    }
-    public functionnt()
-         $baseUrl = '';
-   arrER_NA $thisT_PORT] && ($port = $this->headersay(array('error' = $thlic static function set   protected fu public fction        
-    public $cookies;
-    public $hea    iiles;
-  urn $format;
-              protected $locale2this    prote1ction $th   }
-    public rs();
-   getRequestForma called otion ge
-    protecteter;
-    }
-    publi true));
-        }
-        if (UTH_e');
-    public functioublic function has$language, 0, $posetur_array($ss, $paray(), array $files = arrrn $threquestUri;
-s $ke(array('-', '+'), '', $this-trpos($k>fixPhpFi           if (strstr($langturn $thibject;
-     ss, $para !== ($result = $this-as $key => $value) {
- cted function prepareRequestUri()
-    {
- ey, $defaulle($this->  }
-    public function gern $result;
-        }
-     input', '$https);
-    }
-    publi              $request OD', 'GET')), adefaultse Ilrray or an instance of  {
-    ep = false)
-    {
-e($abstract, $instance)
-    {
- ep);
-    }
-    public function ract, $parameters =et($key, $default, Pf (null === $  public function filter($keturn str_replace $target, $ $thittnulld  }
-  is->parameters['HTTP_AUTH      }
-        if (isset($thif (isset($this->parameters['HTTry) {
-            $queryString rrayif (isset($this->bject, $bjecs->coneaders[terBaseBi= '', $deep = false)
-    {
-       etPhpDefaultLocale($this->locale = $locale);
-    }
-   ']->after($callback);
-m($key, $default = '', $deep = f  return str_replace(array->getQueryString();
-        return $query ? $tTION'])) {
-                $ract, $parameters = array())
-    {
-             } = ini_glue;
-    PHP_AUTH_PW'])set($s     == 2) {
- undafile)d path. Unexpall());
-    }
-  if (null === $tup->req
-    p $this$this->parameters['RbleConte      return $aseUrl = null;
-        $du)
-       protecte = $vaBy  list(Uri;
-    }oded;
-  outing\\Redirector'this['exception']->setDebug($thiameterunction instance()
-    {
-        reall());
-    }
-    $this->contTH_PW']) = $exploded;
-                    }are);
-               } elseif (empty($this->parameters['PHP_AUTH_DIGEST']) && 0 === stripos($authorizationHeader, 'digest ')) {
-                    $headers['PHP_AUTH_DIGEST'] = $authorizatienv'], func_get_args());
-   ->json;
-        }
-  DIGEST']) && 0 === stripos($authoract, $parameters = array())
-    {
-        $abstract oded;
- authorizatiat) {
-            $thTH_USER'] = as)
-   s) && 0 =tance of >instance('request', $r $content;
-   arame $this-et($this-oded;
-es = aRepository', 'cookie'igest ')) {
-                    $hs = arr' . base64_encode($headers['PHP_AUTH_USER'] . ':' . $headers['PHP_AUTH_PW']);
-          return $headers;
-    }
-}
-namesstedHeaders[self:file);
-  erBag imp['error'tent(), true));
-   {
-            $kdefere()
-    {NotFoundH  if ($keys ==l)
-    {
-        if (!isset($thorizationHeader = $this->parametor()
-    {
-        return new \= arra     $thiauthorizationHeader = $this->parameters['REDIRECT_HTTP_AUTHORIZATION'];
-            }
-            if (null !== $authorizationHeader) {
-                if (0 === stripos($authorizationHeader, 'basic ')) {
-                    $exploded = exploptions) && $options) {
-            $optionstor()
-    {
-        return new \creatmax(array_map('strlen', array_keys($this->headers)))AUTHORIZATION'];
-            }
-            if (null !== $aut    $options = array('xplode('-', $name)));
-            forultLocale($this->locale = $locale);
-    }
-    public function ge     $headers['PHP_AUTH_USER'] = $this->parameters['PHP_AUTH_USER'];
-            $h    }
-ters = array()  {
-        return (in    $optionsner\\Container', $this);eaders['PHP_AUTH_PW'] = isset($this-ay $files = atance of Uploadact]      $ters);
-  => $erBa();
-        }
-        return $thi {
-            $this-s->get(s $name) {
-            $this->{"r        $_SERVlocale = $lo));
-          }
-        return isse
-         pnctio$pefauln __construct       }
-        $root = substr($pat, $deep));
-    }
-    public funcrn $result;
-        }r = null;Request;
-usetContent($asRes->parameters['REDIRECT_HTTP     rep));
-      {
-        return $thiORIZATION'])) {
-    efault, $TER_REQUIRE_ARRA                  $fileithou   }this-rs();
-    nformation($value));
-    }
-                $this->fireCal;
-        }
-        $files = $data;Component         $this->fir  if (array_key_exists(ce = true)
-   is->server = new ServerBaut', 'rb');
-       getAlpha($key, $default =ower($key), '_', '-');
-        $values = array_      $response->send();  $this->hay($n $this->session()->getOldInput($key,        foreachception(s \ArrayIter', $key, $defaul    }
-        if (!$preferredLand with amete} else {
-            $this->headers[$ke();
-        foreach (array_keeption(s else {
-            $this->headers[$   public function header($key =    return forward_static_cations['flags'] has        publ   return $->cacheControl = $this->parse  if ct];
-  else {
-            $this->headers[$ke
-    publiaders[$key]            H_USER'];
-erver;
-        $this->hec function contai      sta    public func  $this->parctWebEnvironment($env                }n preg_replace   public sion.reject'] : null;
-        $client = (new Builder())->push('Illuminate\\Cookie\\Guard', $this[headers);
-    }
-    publinputSou function contains($key, $value)
-    {
-        return in_array($value,rame     :key])) {
-            $this->header
-    }
-    p     $chrn $result;
-        }
-     ->parseCaORIG_SCRIPT_NAME', ''));
-    }
-    public fuy())
-    {
-    turn in_array(     $chfunction remove($key)
-       } else {
-      
-         } else {
-        $this->get($key, null, false));
-      }
-    public function remove($key)
-    {
-        $key = strtr(strtolower($key), '_', '-');
-        unset($thlformed pders[$key]);
-        if ('cache-control' === $key) {
-            $this->cacheControl = array();
-        }
-    }
-    p             function contains($key, $value)
-    cheControl[$k== ($, $valders[$key], $values);
-        }
-       "]".'));ve($key)
-    {
-        return array_ka:]]/', '', I')) {
-            $requesllbacks{
-        return array_key_exists(sders[$key], $values);
-        }
-      $this->conten        }
-        if          ', $lang);
-     is->conten     if (null !== $this-t($this->cacheControng\\UrlGeneremoveCacheControl($key))ay();
-        $
-    protected $pathInfo;
-    prote       $this->content = faarray $attributes = arrayion removeCacheControion removeCacheContr ? $keControl {
-        return preg_set('Cache-Control', $ return cou;
-    const HEADER_CLIENT_HOST =          nt_host';
-    const HEADER_CLI     ret    $this->{$heControl $this->getCacheparts = arraders[$key], $values);
-        }if (issheControl) ? $this->cacheControl      } ;
-    }
-    public function registe->getMethod(),'PHP_AUTH_USes a =!== $this->content) ::MASTER_REQUESTpFilen arion setRequestForConso       foreach  = '', $deep = use($valueom%s}i         $t($parameters[$key]);
-                $parameters[$dependdefaultLocale : $this->locale      $\Mvalu funUriValidquestFromF}
-    protected function parHostacheControl($header)
-    {
-        $cacheCo  listacheControl($header)
-    {
-        $cacheCoSchemeacheControl($he   $this['exceptiocted fun->cacon getContenrpos($== $asResou   protected functuri           return file);turn true;
-       his->cacheC   }
-        if (!$this->content) {
-           arranput');
-        }
-        retuterBaseB     return $cacheControl;     Resource) {
-            T_NAME'de('=', $param, 2)vcheContronent\Ht{
-        return array(key($$languages = AcceptHeader::fromString(n/javasc {
-   heControlrn array($ipfile);
-  
-        $this->->getClass();
-    y())
-    {
-    s = arameters;
-    }
-    publiSource()
-      $exteublic functionf (nullction set\s*/', name);
-    publ()
-    {
-        return file);() ==validavider));
-        $this->servicesetId($id);
- of Symfony\\Component\\Htt      $this->pa  public function save(     return $this->headers;
-    }
-    T, $null, $shared = falserBaseB= array()s->convepublic fuayIterator(strtolower($key), '_', '-');
-       functi       $qs = '?' . $qs;
-equest);
-        $this->instme);
-    publiclue = ner\\Container', $thn __construct(array $parametsdefault, $deep, F(arracluize'viceProion setRequestForConsol$clientIp) {
-  if ('eaders['PHP_AUTH_USER'], $geol = array  {
-    nt\HttpFoestUri = null;
-      face $bag);
-    pkey_nt\HttpFo\Request;
-use-Z][a-zA-Z_-]* public function segmontin
-            return in_arr
-        }nt\HttpFo] = FILader($key))$key}={$vvice) {
-            unset($this->deferredServices[$servr($instance = new $provider($this)        return $this->pat  if ('cache-control' name) {a= $clrequest->aliasOsionBag     $this-pHost) === 0) {
-  eware', $this['\\{(\\w+?)\\?\\}('SCR{$1>encoic functirredLanguages = $thi\Sessi =     f-zA-Zch ($matchestUri = ssionBagI($name);
-);
-   ers->get(($name);
-'https{
-  baseces[ip = $cl"%s" at position %d.', $char, $iinterface AttributeBagInter   return $m['class'] != _   pce
-{
-    public functiname);
-   (SymfonyRequest $requtributes);
-    HttpKer  }
-    public ldocs\\Mplements A protec| $this->unction replace(array $files = arra($key), '_', '-');
-     back);
-    }  public funct
-    }
-URL') != '') {
-            $rerequest = array('g' => $_GET, UploadedFile.');
-rOverride;ed $attributes =iles);
-    }
-    public function utes';
-    private $storageKey;
-    protected $att = '', = array();
-    public function __construct($storageKey = '_sf2_attributes')
-    {
-        $th->name;
-romBase($request));
-            $this->bass HeaderBag i= null, $first = true)
-    {
- 
-    }egment($  {
-          $this->attr(strtolower(($abstract, https);
-    }
-    publndation;
-
-class Hemiddlewares =         $parameters = $this-
-        return $tction getStorageKey()
-ir[0]));
-            $ction coded;
-  e\Routing\RoutingServiceProvidethis->ales =       $this->att
-        return new static($queryangua, $c',rredLangua|datie, $defauponent\HttpFoundation\Response;
-interfn array_key_exists($ton($abers['PHP_AUTH_DIGEST'])) {
-            $headers['AUTHORIZATION'] = $headers['PHP_AUTH_DIGEST'];igest ')) {
-                    $tributes[$name] : $default;
+        $this->key = (string) $key;
     }
-              if 
-    }
-    public function extend($abstract, Closure $closure  $this->set->attri>get('REQUEST_URI');
-            $tance of':ile)
-    {
-        if ($fet($name, $deers->get('PHP_AUTH_UionServiceProvider;
-use I    ret);
-    ultLocale($thiblic function set($name, $value)
-    {
-, $this->attributes)) {
-     >has('X_ORIGINAL_URL')) {
-   er = $this-    protecte    }
-    ch |');
-            $this->sArray(  {
-     ,$classterBaseBi=> $value) {
-            if (true  array_me)) {
-  lues;
-        } else {
-            $this->he = array_mey();
-        ruage = substr($language, 0, $poes = array();
-        return $return;
-    }
-    publishInput($flash);
-l();
-    publirator()
-    {
-        return new \ArrayIteraameters);
-    )) {
-  ray();
-    protected static l();
-    pub        if (!isset();
-    punction __gwn(Closure $callback)
-  er;
-    }
-    putes = array();Session\Storage;
-
-use Symfony\Component\HttpFsolvePrundation\Session\Sessio       return new \ArrayIterator($thisnterface
-{
-    public  function cou = $this->at') != '') {
-            $req'Illuminate\\Catector())->detect($envs,            throw ned func? rawurl{
-      ed func:  }
-    public functio())
-    {
-  ontainer', $this);
-    }
-    protected Logicuminate\Htt     fi
-use Ibd streverse($segs);
-            $inconstruct(minaoutNull\' . $abstract;
-            }
-lic function all();
-    public function replace(array $attribute  if (!array        } elseif (self::$httpMethodParam Symfony\Compoa';
-    private $storageKey;
-    protected      ()) {
-            return $this->jsmfony\Component\Hts['query']), $qs);
-          p = time();
- => $clientIp) {
-utes = arD])) {
-);
-        }
-        return $this->patteThreshold) {
- ve($name);
-}
-namespace Symfony\Compo.*ubliundation\Sesction allt));
-    sion\Attribute;
-
-class AttributED => 0, self::UPDATE       return 'XM, $attributesm, '?quest = call_(SymfonyRe Closure $k]);
-        }
-        fore(preg_match('#[^nt($this->headers);
-    }   public function gete', 'tmp_na     $this->R_REQUIRE_ARRAY;
-        }
-   iles[$k]);
-        }
-        for     $this-)
-    {
-        $this->stampCreaty[sell'), 'atom' ter($kKcs\\cookies, $files, $sic funthgetStorageKey()
-    ction __construr) {
-         $clientIp) {
-d
-}
-nantronull;
-key] = $value;
-   this->meta[self:: $thntrogetStorageKey()
-   s->localthis->attributes) ? $this->at= 'u';
-    const ing($this->hct, C }
-    p $key =>set('QUERY_STR  if ($this->isBuition getLastUsed()
-)
-    {
-        $this->stampCreathorizationH    }
-    public fuon clea$defais->se 2) {
- {
-    n get publttribute;
-
-class Attributmeta[sel->name = $name;
-    }
-    private fnction getName((preg_match('#[^a-z$default = null, $first =       $timeStamp = time();
-    nction clea               ntrois->meta[self::UPDATED] = $thi']'));
-            CREATED];
-    }
-    publimfonyRectionunction isStarted();
-    pu        if (null !=REATED];
-    }
- >meta[selft('SCRIPT_NAME', $this->sed = $this->meta[selfte =  if ($code == 404)      default:
-                $reqe, $value);
-    publ() use($instancvate $quaturn $this[ct($value, array $attrib   return $match[0];
-          $key = strtr(strtolower(n $this->storageKey;
-    }
-   private $lastUserequesmiddleware($>   }
-           $parameters = $this->keyParamete)
-    {
-     ($key, $default = null, $first =  } elseif (i$value);
-bject;
-    &       }
-        $servexception functilastUsed;        $this-ut($flash);
-XmlHttpReques;
-    protected $pathInfo;
-   eControl;
-    }
-n $this->json;
-        }
-     
-                }
-                ifrue, 'COmeters = array())
-    {
- ction prepareBtKey, $value)) {
-               $serv);
-    }
-        $currearray())
-    {
-        value = $value[$curray    throw new \der()
-    {
-        $this->reghis->cacheControl)}
-        if (is_array    throton($absirective($key)
-    {
-                     ntf('Ma  {
-        return $this->storageKey;
-    }
- ) && ($start Provider()
-    {
-on initialize(array &$attributes)
-  
-namespace Symfack)
-    {
-        $this->bootingCnt\HttpFoueyValuePair[0]);
-        }
-      nt\HttpFoundatioceptionServiceProvider;
-use Ilnt\HttpFouexploded)    blic function ge) {
-   )))?#', $headere) {
-   ntrol = arraye) {
-    eCacheContry => $value) {
-            if (= array(his->attributes =& $attributes $this->laney][0] ;
-    }
-   ame, $this->at
-    }
-    public function se>value . ($this->quality < 1 ? ';q=' . $this->qua = '', $d;
-        if (count($  }
-    public functioes')
-    ypliases(->attributes =& $attON'] = $h  }
-    }
-this->attributes);
-    }rce()->add($input);
-    }
-   elseiintf(, -1);
-                fodings%s"' : '%s=%s', $name, $keys($this->attribut, $this, $deep))) {
- this->attribueters = array(),butes));ipos($authorizationHegResolutionException($message($value)
-    {
-nction (mponents['query']), $qs);
-                          $extendedP{
-      s = array();
-    protected static Quality(oted;
-    }
-    public fuis->value;
-    }
-    public function seture $ca)) {
-  ex".', || if ($query) {
-            $queryString        {
-   {
-        return {
-          ()
-     {
-     
-    public function );
-   unction __gex = $inde{
-        return $this->value;
-    }
-    publ->json;
-        }
-     tIndex($index)
-    {
-    OL')) . '
-' . $this->heaear()
-    {
-    value =ear()
-    {->index = $indexract);
-        if ($this->isBui arrales =bit] = n);
-             $content .= spri);
-       $this->index = $index;
-        return $this;
-   x($index)
-    {
-    {
-        return $this->value;
-    }
-    public function set$path, 0       rface
-{
-    public function     reserver->            return ;
-        }inate\\Session\\Middlue;
-    }
-    public function setE' => ''ray();
-        ksort($this->caurintable
-{
-    private $name = '$name           $this->attributes[$na= (double) $value;
-        } elnction i           if (class_exists('Location;
- setPhpDefaultLocale($locale)
-ation;
-
-class AcceptHeader
-{
-    private $i;
-    }
-    public function rttpOboot
-    {
-        return isction set for $object;
- ntf('Ma     }
-        return $default;
-  forseach ($items as $item) {
-   ADER_CLIEcthros);
-    }
-}
-namespace Symfony\C   $in$items as $item) {
-            $this Unexd($item);
-        }
-    }
-    public static function alOL')) . '
-' . $this->he);
-    public funct'https' =
-    publiex($index++);
-  $key, $value));
-        }
-        rget$thi       return $this;
-    }
-}
-namespace Symfony\Component\Http> 'Xthis if (null !== $this-ic function start();
-    pis->quality = (double) $value;
-        } els    }
-}
-namespace Symftributes);
-     public function save(         return $ilic functio  }, preg_split('/\\s*(?:,*("[^"]+"ublic function contains($key
-        return $this-= $filen       return issesset($this->items[$value]);
-    }
-    t posipublic function get($value)
-    {
-        return HTTP header is no$item)
-    {
-        $thish ($vider()xtractAlias($abstract);
-     hrow new \R ($this->quality < 1 ? ';q=' .his->cacheControl);
-    }
-    pub" at positit] = null;
-            } elsems[$item->ge           public function __toString()
-    {
-        return imatic::$>has($this->session->getName());on\Session;
-
-umeters[$key]);
-                $parametC  reUTH_$default);
-teRequestFromFteRequesAggregaos($ocale ? $this->defaultLocale : $this->locale;
-    }
-    public  = false)
-    {
-        if (false === $this->content || true =
-        return !empty($this->items) ? reseblic fNotay($thintent || true === $asResouownCallbac         $fi_match($p,));
-        }));
-    protected funct = null)
-     return true;
-       ions) &$this->content) {
-          act]L= nu();
-                $qB = $     A === $qB) {
-                 $server['(     f{
-                    tarameters(arrnCallbacis->parar->getClass();
-    ddLookup> $qB ? -1 : 1;
-   on\File\UploadedFile;
-class FileBag extends     return $qA > $qB ? -          $currenp' ==AndU {
-   cted "[ampCreated() {
-       ),*|,ower($codes[0]);
-       eion migra {
-    count($etionException($message $lanbaseUrl =[nent\HttpFounER_NAtrpos($path }
-            $this->b->getQubaseUrl rn $tption;
-class ExceptionHandl }
-    }
-}
-namespace Symfony);
-                           throw new \ {
-            $ch$this->defaultLocale =eturn $thisull);
-    public functio ($qA ==[t = 'UTF-8')
-s ExceptionHandler
-{
-    privae, $charset = 'UTF-HTTP header iComponent\Debug\Excepti    rt posiA ==  $parts =ep || false === (ay(), array $attributes = array  {
-        $handler = new stati  private $storageKey;
-    protected $a $debug;
-     lse {
-      egister($debug = true)
-   lic function setHandler($handler ExceptionHandler
-{
-    planguages;
-        }
-       efault, $deep, FILTER_SANITIZE_NUMBER_>basePath = nu) == 2) {
-      list($headers['PHUMBER_INT));
-   checati$callback public function getAl
-          ion;
-
-luminate\Support\Facade      $m sortptions = array())
-    {
-     othon setName($nthis-ForAmatc $alVn prn $exception)
-    {
-, $this->se(null '/\\s     if (0 === strpos($requestgetOnullnction eg_replace('/[c fu) {
-  ', $this);
-    }
-    protectedeKeys as $k) {
-            un      }
-        if (isset(handler || $exception instanceo  foreach ($headers as $keis->server-vingCa== '      loded) == 2) {
-      list($honent\HttpFo(null ===closure) {
-            statunction e Symfony\Component\Debug\is->lastUsed;
-    }
- his->hble.');
-   public funH_PW']) ?   $reironment());
-        $      () == SCRIPT_NAME')) =es) {
-            if (self::$tru      ract);
-        if ($this->isBuildaption);
-            return;
-));
-    ) {
-  rface
-{
-    public fuelf::CREorted $key, '), null, https);
-    }
-    publ      es, $locales));
- == 2) {
-         f (null === $thisn) {
-   ($parameters, array $primitiv($defaultalid2
-   ion setay($teUrl(blic funct     ) {
-  ame for key "%s".ces[ption $exception)
-    {
-        if    private $if (!$thisgth) {
-  r) {
-                if (null !==s('Symfony\\Comnc($this->handler, $exceptionk\Builder;      if (!$this->sorted) {
- mponent\\HttpFoundation\\Response', falsy($thi= arrayandler = $handleerface $bag);
-    public function getBag(e {
-                $callbac  {
-        return $this   }
-H_PW']) ? ace $bag);
-    ray $parameters = array())
-  ction getStponse($exception)
-    {
-  attributes->all(), $request->cookies->all(), $utput'))      $this['events']->fire($class =>instance('request', $request));
-        llbacks)
-    {
-  tent);
-            if (!$reql()
-    {
-  stUri;
-    s->get('PHP_AUlic function header($key strtolower($key),ction bound($abstract)lastUsed;
-    }
-('{%urn $this[$kaders[$key], $values);
-        }ndation\Request;
-use Symfonyvalue)
-    {
-       ug = $debunel;
-
-uitems[$itet($exception))sset($this->items[$value]);
-    }
-    By
-                }
-           value)
-    {
-        retur $debug;
-   alue)
-    {
-            $exceptsset($this->items[$value]);
-    }
-    ->cacheControl) ? $this->cachern $this['env'e $debug;
-    paders[$key], $values);
-        }ostPatteris->parameters) ? $this->pa, $item->getV    }
-    pullbacksp->attributes->set('_format', $rfact'));
-        }
-        istruct($val));
-    }
-    publicocale()
-    {
-        return null === $this->locale ? $this->defaultLocale : $this->localern $this->getMethod()this->gegetCacheControlHeaerBag($query);
-      >defaent() can only be called once whe{
-        return array(key(n $this->defaultLocale ($this->rheaders->get('Pragma');
-    }
-    public function ge       dalue()
-           }
-      }
-    publicanguages();
- (array('-', '+'), '', $this->filter(: -1;
-       , (preg_match('#[^a-z                 }
-xception;
-class Application  return selon get($pathunction set($key, $vatent($exssign& $optiuest';
-    ale);
-    }
-    pus(AcceptHeader::frr = null;
-        = array(           $class = $this->abbrClass($e['classetAlnum($key, $default = '', $deep = false)
-    {
-       ', 'Ro           $class =;
-    }
-    public= array('flags' => $options);
-        }
-        if (is_a                 $ind = $coction bound($ab found.';
-unctiis->defa      }
-      ic function g()
-    {
-        r    $contentHunction set($key,      }
-        if (isset($th"block_exception clear_fix">nction set($name, $value);
-  rn new \ArrayIterais->updateThre                  Url()
-     $thish = !i"}();
-        }
-    }
-    pr $name;
-    }
-    privat     $message = nl2br($e['message']);
-     PTY | PREG_SPLIT_DELIM_CA   }
-    publ  }
-  max(array_map('strleP_AUTH_DIGEST'];
-        }
-      reparadermeters['PHP_AUTH_US}
-namespace Symfony\Componen->get($key, $default, $deep))           (null !== $authorizationHeade           ob_star       if (0 === stripos($aut$authorizationHeader, 'basic ')) {  }
-    }
-    public functio
-        set_exception_handler(a1;
-                    $class = $this->abbrClassis->abbrClass($trace['class']), $trace;
-cla'], $trace['function'], $this->formatArgs($trace['args']));
-                        }
-                        tf("%-{$maxis, 'cleanOA1;
-  UTH_& $opti->attribustedProxies) {
-            ifbindings[$abstract])) {
-          } else {
-         tring($headerValue)
-   rBag impovider)
-'n\Request;
-uslic funcre) Bag imp Upload  ret                }
-   public function __construct(array s']));
-                        }
-  PTY | PREG_SPLIT_DELIM_Cion seteachn creturn tch')    bjecntf(P_AUTH_DIGEST'];
-        }
-{" }
-   Fails{eptio}"}                        }
-                      ar();
-}
-namespace Symfony\Component\HttpFoundation\Session\Attribute;
-
-use Symfony\Compothis->debugeach         $content .= '    </ol>
-</div>
-';
- tribute] = s         merge(servODED_URL') != '') {
-           $currentKey) {
-                unction in  if ($trgInConsolwent wrong.';
-            ->getMessage());
-                } else {
-eturn                 $title = 'Whoops, looks like something went wrong.';
-     UNENCODED_URL');
-            $th $currentKey) {
-                  <div id=\"sf-resetcontent\" class=\"sf-reset);
-        } elessage());
-                } else {
-                  $title = 'Whoops, looks lik$ists($currstringublic funng.';
- .                   $content'"' || $start === '\'')) {!isset($this->loadedProviders if (!is_ar$value) || !array_ke func$default;
-    ion getAttributes()
-    {
-    unction in   $this->mihtBuffer && ob_end_fl                  }
-        if (isset($this->parameters['PHs) {
-            return '';
-  interfa) {
-                       $server['     ORIZATION'];
-            }
-            if (null !== $authorizat;
-            }
-        }
-        return implode(', ', $parts);
-    }nnt\HtArgunatet || true === $aslvingCallbac     $qA = $a->getQualitent) {
-            :]]/', '',  '/';
-      ariadt $rt = false;
-       a im)))?#a
-        }
-       ontEis['sts($curren%2FeUrl(t('SCR%40ine; }    '%3Aine; }al;
-'%3Bine; };ont-s2Cine; }func'%3DeUrl '=', '%2B' => '+hp
-nam1space !hp
-namAspace *hp
-na7Cspace |');
-    public function __construct(RouteColle $dire$ray()s, Request $rc $reg)rotec{rotec pub$this->ted st =ected stprotecpublic statsetic $reg(stered = protec}rotected static $direfull( false;
-    publreturnlic static $reg->    Url(ic::normalizeClass($class);
- current   foreach (static::$directorieto(ectories as $dirgetPathInfo()ic::normalizeClass($class);
- previous= $directory . DIRECTORY_SEPARATOR . $class)) {
-  headers     ('referer'  require_once $path;
-        TOR path, $extra = array(), $secure = null false;
-    publif R . $claisValidry) s($cl))e;
-    publtatic::$dire($cl($class)
- malizepublischemass[ic statgetS\\', (f ($claic::norpublicail = implode('/',
-     _map('rawurlencode', (     )ss)
-     requirpubliroot'_'), DIRECTORootstr($'\\',    if (!staRECTORY_SEPARATrimstr($ic::,  retu,'.php'ic::normalizeClass($class);
-  ($class($classparameterncti        $directory . DIRECTORY_SEPARATOR oad'));
-        }, trustatic::malizeClass($class);
- assettories($d ($class[0] == '\\') {
-            $class = substr($class, 1);
-        }
-        return str_replace(array(ic::$registered) {
-       , DIRECTORY_SEPARATOR, $tatic::$registered = spl_removeIndexd_regi) . '/' . autotories($'/  protecmalizeCrotectedatic $dire       static::$difalse;
-    publii = 'istat.php'atic::$registeredstrtoritainsd_registei) ?oriesreplac   pu . $i, '',ctorie) :ctorielluminate\\Support\\ClassLoader', A = array_u  foreach (static::$directories = array_uni    {
-        stat            staticCTORY_SEPARATOR, $ '\\') {
-          is_0] =if (is_nul 1);
-        }
-        c statforceRY_SEa ?:rectories as $dirCTORY_SEPAirect://, (array) $lace(arrayc::$dire ($clas? 'httpsindi :ces = indings = malizeClass($class);
-  otected $r       a false;
-    public statrotected $re=y('\\',ad $bindings = malizeClass($class);
- ted s($name));
-        }
-    }
-   , $absolutass[    getDiprotec0] == '\\') {
-      nction renction solved = ared st
-    ByNaEPARlRes   if (!stat
-        }
-  r()
-    {
-        }  if (!sta    !class Con->bou implements ArrayAccess
-{
-    ptoray()t)
-    ($directories)
-;
-    pro   if (!stalace(arraythrow new Inv subArgumentExcep$dir("ray() [{ || $}] not defined."sure;
-use ArrayAccess;
-use Refleindings[$abstrac     ct]) || isset($this->insfalse;
-    publidomain$registered) {
-uteDnctio[$abstract]) || isse   if (!statur::$dstrtr(unction regil)
-    {autoload_regi'_'), DIRElic sta{
-  [$abstractunctioreturn isset($ray(ct, $concrete uteP        }t)
-    ->uriay();urn isset($)        ifdontE regiirecsAlias($name)
- QueryStringtorin isset($this->aliac::$dire
-    prot?ases[$:ctoriesl = ar public stat_registn geturi);
-        } else {
-            static::ncrete = null, $shared = fa&     $this-> foreach (static::$directories is_array($abstract)) {Alias($name)
- e = null, $shared =   list($abstrac        if (is_null($concrete)) {
-      y($abstract)) {($clasis->inbstract;
-        }
-        i    counarray($abstract 1);
-        }
-act]  =    gblic sta_sub('/\\{.*?\\}publt]) || isset($    if (is_arractdings[$abstract] = this->resolvengs = array();
-    protecte = ar     $this->und($abstratract);
-n gets;
-  act);
-        if (is_null($concrete)) {
-    ed function getClosure(bstract;
-        }
-        if (!$co     $this->rcallbackund($a(.*?)\\?tract);
-tic $dire($m) use(bstract;
-     1);
-        }
-       i = array       }[$m[1]]
-   ic staps Con]) || isset($ $shctorim[0]tances[$abs) use($aure;
-use ArrayAccess;
-use Reflectibstract);
-       is->instances[$ab, 'shared');
-        if ($this->resolv == 0nction bindIf($abstract'ings = array();
-    p$qt);
- = s = _build_bstra($keyed'_'), DIRECTOR     ings[$abstractstract, $concrete)
-      if ($t
-    ) <  if ($this->resolved($abstract)) {
-bstrac.= '& fun   }
-    &);
- , DIRECTONumericon share(Closure $closure)
-    {
- y();
-    protecte'?ries = arrbstra, sta           $this->bind($abstract, $function share(Cl);
-        }
-    }
-    public func::$diric stawhe, 'loaectories)
-        };
-k, $vnction bindIf($abstract, _s       kconcrete)
-             $this->bind($abstract, $f (is_null($object  public function bindShared($abstract, Closure $closure)
+    public function encrypt($value)
     {
-        $this->bind($abstract, $this->sharen (is_nure), true);
+        $iv = mcrypt_create_iv($this->getIvSize(), $this->getRandomizer());
+        $value = base64_encode($this->padAndMcrypt($value, $iv));
+        $mac = $this->hash($iv = base64_encode($iv), $value);
+        return base64_encode(json_encode(compact('iv', 'value', 'mac')));
     }
-    public function extend($absme)
+    protected function padAndMcrypt($value, $iv)
     {
-        rebstract;
-        }
-        if (!$con
-      unctio(
-   {
-    protmat   {
-        return isset($ :esolv    } else {
-            static = $closure($this->inbstract;
-        }
-        if (!$concrete addPortTo   {
-   , DIRECTO   {
- AndRY_SEPAR
-    {
-ure;
-use ArrayAccess;
-use Reflecticlosure);
-            $ foreach (static::$directorie   if (i
-            $trachis->instances[    } else {
-            static->getExtender($ab>getCloflectionParameter;
-cn_       . $class)) {
-      ortay()      '80ray(443') implements ArrayAccess
-{unctiongs = array();
-    protectedunction $bi func    return function ($cos not bound.");
-        }
-        if (icrete = $this->getClo));
-        }
-    }
-    protected = null)
-    {
-  d function getExtenis->getClos not bound.");
-        }
-        if (iared($abstract));
-        }
-      
-      s = Onl    mplements ArrayAccess
-{
-    pCTORY_SEPAfalsnstances[$abs else      }
-        sunset($this->aliases[$abstract]);
-        $bou    {
-     array();
-    protected]);
-        $bou0] ==
-        static::$directories $dir($functiolvingCallbacks = array();
-    protected      }
-        if (!$concrete iings[$ alias($abstract, $t($this->in   }
-    p>bound($abstAunction alias$this->bind($abstract, $extender, $t{
-            sgetDiress[0] == '\\') {
-          abstract)
- otved($abstract)) {
-ic::$registere  prod    esolved = array();
- stra    publ_replace(array('tar  }
-     s_witheInstance    prot
-   tract)) {();
-    arrayalias($abstract, nction ($c, $p~ func      . '~);
- nition));
-   , 1ic::normalizeClass($class);
-  otec         s = array_diff(static {
-        $this-     ()
-    {
-        return statics = substr($classct, $alias);
-       ($this->bounct] = compa('#ray(/rray(mailto:ray(telted f    proton reboarrayver, $closure) {
-            ($bound) {
-            $thifilter_vare);
-    FILTER_VALIDATE_URL) !== nd =  isset($this->resolved[$abstractutoload_register(array('\\:$di'    if (is_array($abstr = arric::$ectories = array()tected fu.php';
-    ;
-        } else {
-ed static $direurre  $clas  foreach (static::$directories as $dlluminate\\Support\\ClassLoades->rebounic $registered = false;
-    public static $regi           return }
-lResspace Illuminate\>bining\Matching;
-
-usract, $parameHttp\->rebou;  {
-        $absters = a>bind;
-interfstra= subatorIf (isset
-;
-        if (isset($tmray(esrray()r($abstatic $registered = ; make($abstract, $parameters = array())
-    {
-        $abstract = $this->getAlias($abstract);
-        class Host$this->inc $obetions($this->instances[$abstract])) {
-            return $this->instances[$abstract];
-ublic function rebinding($abst     getCompiled()ers);act)Regex(   {
-        $instance = $this->make($abstract);
-               reparameters);
-        }
-        if ($thgetDray();
-    act)   require_      }
-        $concrete = $this->getConcrete($abstract);
-        if ($this->isBuildable($concrete, $abstrMethod) {
-            $object = $this->build($concrete, $parameters);
-        } else {
-            $object = $this->make($bstract,e'];
-    eResolvingCaon get->fireametermn getscks($abstract, $object);
-        $this->resolved[$abstract] = true;
-        return $object;
-    }
-    protected functiRY_SEP) {
-            $object = $this->build($concrete, $parameters);
-        } else {
-            $object = $this->make($conc  }
-        unset($this->aliases[$abstrac! isset($thder', '$this->bound($abstract);
-    ;
+        $value = $this->addPadding(serialize($value));
+        return mcrypt_encrypt($this->cipher, $this->key, $value, $this->mode, $iv);
     }
-$this->aliases[$abstract\') !== 0;
-    }
-    public );
-        }
-    }his->makract, $object);
-        $this->resolved[$abstract] = true;
-        return $object;
-    }
-    protected functiUri) {
-            $object = $this->build($concrete, $parameters);
-        } else {
-            $object = $this->make($
-       
+    public function decrypt($payload)
     {
-   ($cl(ract,ic f?lutio}
-      row new BindingR>make($abstract);
-    tract] = $object;
-        }
-    $this->fiunctiode  publclass,{
-            return $concrete(Workbench    {
-        $absSupport\ServiceProviders->getAlias($abst $concret\ConsolParameters(MakeCommand, $abstr $concretpendencies = $c extends pendencies = $cabstract         $d     tract) as $ca);
-    protected egisterndCallbacks[$abst= $this-pp->bindShared('package.cre->in);
-        };
-app$this->aliases[$abstrac    PInstanCArgs($    }['files']), true);
-    }
-          return $reflector->nec= $thi.w$concretinstances);
+        $payload = $this->getJsonPayload($payload);
+        $value = base64_decode($payload['value']);
+        $iv = base64_decode($payload['iv']);
+        return unserialize($this->stripPadding($this->mcryptDecrypt($value, $iv)));
     }
-    protected function get  $parameters = $thiparametwInstanceArgs($irray $primitives = array())
-   denciessendencies = array(); require_once $path;
-          s = $ return true;
-               });wInstanceArgs($inssts($parameter->name, $primimake($abstract, $parameEv$obj    {
-        $absC;
-    er] = $this-, $abstrDisp  ret
-        $instances);
-    NonC     $instancesls, $n  }
-    }
-               $depewildcard[] = $this->resolveClass($pasor     = $this->resolveClass($pafi    return (array) $ded static $directories = ar = $this-else {
-     resolvable($abstract)
-  (array_eter $pararameter $pa?:n get = $this- {
-            if (file_existsndenci($e     ,pendencies) usrioritact,0 = $this->make($foreach (r()
-    {
-      asy resol$this->aliases[$ethod}es);
-       resol, Cla, $parameters = as)
-    {
-     upWameter)LgetDefaultVaue();
-      }
-        bound($absss()->getName()}";
-       ndencies[[tDecla][ }
-      ][]'_'), DIREmakendingRer(Exception($message);
-   n $tun= arr  {
-        flection($message);
-    t][] = $callbacse ArrayAccess;
-use Refle throw new BindingResolutionException(false;
-    public statrameter);flectionParameter)
+    protected function mcryptDecrypt($value, $iv)
     {
         try {
-          malizeClass($class);
- has
-       getDeclaract    if (is_array($abstr, $concresolveClass(Reflectioractass()->nmalizeClass($class);
- queueesolutionEpayloa return (arOptional()) {
-         >getDefaultVatect, truiste        };   }
-    foreach ($pared($abstract)) {
- {
-    i, 'l     unset($para, true);
-    }
-    publicpport\\ClassLoadubscribPARA       }sOptional()) {
-          }
- bstract, $cosolveS      }
- 
-        }
-  es = array(       }
- ->        }
-     t, $concrete);
-        }
-        $blic function resolving($absublic function rebindi($closur       }
-  $this->aliases[$abstract]);
-  arameter-
-    {esolving($abstract, Clo instanceof Closuy(Closure $es, array $parameters)
-    {until    foreach ($parameters as $key => $value)Access
-{
-    pr        $parameters[)
-    {
-        static::$directorieflush     $pdCallbacks = array();
-          $ps_numeric($ic::normalizeClass($class);
-  ;
-   ndCallbacks[$abstract]))lalassllbacks[$ing }
-        $this->fireCallbackAr     foreach ($parameters as, $hal    nd = $ble($abstract)
-  esponsuncti $this->resoln bound($abs];
-    et($paraed($abstract)) {
-  ($parameters aameters[$dependencieesolvingCallbacks[$ingrameteresols $callbaclvable des->rebound      }
-    }
-  )ing [xception(, Closure $callbaeach ($ = hod}_user_tic         );
-        }eters[$dependencin bound($abstract)
-each ($) &&ay $caass()->getName()}";
-= falseopvingCallbacks);
-    }es[$abstractrray())
-  ach ($stances[$abstr
-    publi;
-               $sstract) ass()->getName()}";
-break true;
-    }
-    protected foreach ($crameteared === true;
-   
-    publi  return isset($this->instances[$ac::$dire $cal?esolvtorieeach ($c)
-    {
-        if (isset($this      }
-    }
-    protected functionarameter);
-  s->reboundw new BindingR}
-    }
-    pros $callback) {
-  ->make($parameter->getClndenciameters[$key]);
-       ametction getBindings()
-    {
-      instanceof Closuic statergublic funindings;
-    }
-   , $abstract;ractAlias($abstract);
-            $blic function getBindings()
- s[$abstract] : $abstract;
-  backs as $callbac {
-        if (irameter);
-ng [keypaceendencies[ameter}] in class {$paraisturn ass)}
-    proass()->getName()}";
- rameter);
-       ances[$arameter);ue();
-     ($this->alia
-        unset;
-    }
-    protecrameter);    } else {
-            staticStaleInstances($abstract)false;
-    public statindings;
-    }
-   allbacks as $callback) {turn $this->bment(array $dependencishared'])) {
-   krametrsByArgument(array $dependencies, aric function offsetSet($key, $value)
-ared = $this->binding')
-    {
-             value) {
-                return tch (BindingR])) {
-            {
-        try {
-      public function resolvingAnyxception(shared'])) {
-    ndencies
-    }
-   eArgseCabst
-        try {
-            re;
-    }
-    protecndencies
-            if (file_exists(eturn $this[$key];
-    }
-    false;
-    publiarameter->isDthis->globalRestion getAlias($aby)) {
-           );
-        arameter-shared'])) {
-    seg $obje= ex }
-    @);
- xception($message);
-   $abstra  }
-if ($tnse;
-intract,2$absnse;
-int[1]();
- andle->make($absnt\Httallabl $sh, $thisglobalResolvingCalUEST = 20]rrayabstrae
-{
-    const MAdated $is->bget_args  }
-        etAlias($abared = $this->bindings(Requestsharata$dependencieected $aliases = array();
-    p    ect, $this->resolvingCis->make($pareClass(Reflection         ameter->getClass()->nonent\HttpFoundation\ResponsQric(dndCallbacks[$abst {
-        if (indencies[]tInstances()valuoncrete, $abstrac    ciess->bounay();
-        ass()->getName()}";
-       esponse;keyss()->name);
-        } catch (Binmake($abstract, $parameDatabase\Eloquabstr  {
- DateTimes->getA    Accesss->getCarbon\ Illums->getLogic resolveds->getJsonSerializuests->getAlias($abst      \parameter)s->getAlias($abstre;
-use Stack\Bui\Rela$dirs\Piv()
- iner;
-use Illuminate\Filesystem\Filesystem;HasOnoader;
-use Illumint\Facades\Facade;
-use IlluminatManyIlluminate\Support\Facades\Facade;
-use IllumiMorphToIlluminate\Suppor     $de = $racts\te\Cueststances[$ptionServiceProvider;
-use IlluminatHttp\nfig\FileEnvironmentVariablesLinate\Filesystem\Filesystem;ilesysteoutingServiceProvider;
-use Illuminate\Exception\Exe\Events\EventServiceProvider;
-use Illuminate\Roon\Exng\RoutingServiceProvider;
-use Illuminate\ExceptiBelongsceptionServiceProvire;
-use Sct);
-\Breteersponct);
-nterfacoutingServiceProvider;
-use Illuminate\Exception\Excent\Debug\Exception\FatalErrorException;
-use Illuminate\Supng\RoutingServiceProvider;
-use Illuminate\Exceptiuting\RThroughIlluminate\Support\FacadesConn  protRract][nstances[$sponContaine;
-abslumin functioodel       $objeHttp\Reques, Responfig\FileEnvi,ate\Cterface
-{
-    constonfig\FileLo;
-            } else xtends             $depetleLoad     $instancesprimaryKance 'id->make(rray();
-    erPag $sh15protected sta$incr  $ob    }
-re) {
-     $finishtimestampterfay();
-    p$instancesattrib functi $this->resolveClass($paoriginais,  $this->resolveClass($parlesystemcted $serviceProviders = arhiddeon i $this->resolveClass($pavisiest $request->resolveClass($paappcies,eturn (array) $dependencies;equest $request->resolveClass($paguard  return (angClks = array();
-   dacted $middlewares = array();
- touretud $middlewares = array();
-  bservuest[] = $this->resolveClass($para     Request';
-    public funmn\Ex $thitected $finishexisnterf->getDependencies(statnishsnakeA protected $llbacks = array();
-  protecttract][             $dep protectdainer\Contaard_static_call(array(boo   return (array) $dependenci protectglobalScopwRequest());
-        $this-> protectunction __co->getDependet)
-    {
-        mut->inCachtp\\Request';
-     }
-    protectmanyon geteBindings('bmfonyRespons    pest;
-use Sotected fedByctionequest ories CREATED_AT $bo$valued_at->make(iders(UPllba{
-      upnullach (array( function resolveNonClass(Reis->ins  protected $middlew    public function offGlobIfNotBlobal  }
-        ke($parayncO  proteion registerExceptiate\(ter{$name}PractAlias($abstract);
-          protected functioony\Component\Httabstr=this_giste        $this       return $ prote::mGlobal[egiste      $value = funregister(new RoutingSerateNewRequestsolvingCallbacks[$ainabl     ('Globing$keyd = $this->boun$this));
-   Globnt\HttpKernel;
-
-entProvider()
-    {
-       edhis->register(new Etch (BindingResolution protecr($this));
-  tected function registerRoutingalledngProvi    {
-     register(     $this->protected fabstract]);
-    }
-    publutingProv_abstractegistes[$abscatch =face
-{
-    public fuctor = $re'/^    .+)nction cr$t);
- abstration  retu$value);
-    public fethod}(ister(ed function creass()->getName()}";
-st MAS  retu2;
- = ed fu_ca    \vendor\\l         return $th   protected f_except($paths, array('app')) as rametlcfirlassrk\\src\\Illuminate\\Foun      } catch (BventServiceProviTraitch (array    {
-        $this->instance('path's->enviruminate\Support\Contractis->inuses_r($clsive  $thi     foreach s[$abst->enpath($value));
-     abstra_aseMidc function environmtion getB $boGlob funis->inuse lRes(
-    {
-$value);
-    public fforward_ 'D:\\nctio{"regi)) > 0) {
-            return$concrete)
- ;
-        } catch (BindingR }
-    protec      $resolGregisterBa(terBar implemen$serBathis['config'][' 'D:\\XAM registerBas[ function environm]$_SERVProvidonmentarameonmenuest, Response $res 'local';
-    }
-has public funcronment($envs)
-    {
- tract, 'class Co 'D:\\XAgetnmentDetector())->d;
+            return mcrypt_decrypt($this->cipher, $this->key, $value, $this->mode, $iv);
+        } catch (\Exception $e) {
+            throw new DecryptException($e->getMessage());
         }
     }
-   'local';
-    }
-unction runningInConsobindShared($abstract, Closureption       $args = isset($_SERVER['argv']) ? 
-        $thisy();
-rInterf     onment 1);
+    protected function getJsonPayload($payload)
+    {
+        $payload = json_decode(base64_decode($payload), true);
+        if (!$payload || $this->invalidPayload($payload)) {
+            throw new DecryptException('Invalid data.');
         }
-        onmen instanceof
-    pudependencies[$key]->name] = $value;
-    unction runnindependencies[] = $primitives[$y\Costs()
-    {
-        re,outingProvider()
-ntainer)ole()
-    {
-        return php_sapi_n>create"path.{$rray_diff(static:ions =  resewreturn ion registerEVER['ractrRoutingProvidath.{$t]);
+        if (!$this->validMac($payload)) {
+            throw new DecryptException('MAC is invalid.');
+        }
+        return $payload;
     }
-    publivider) &ers);OcreateNew      (s[$abs{$parameter}] in class {$unc_get_args()     });
-    }$value);
-    public f 'D:\\XAcies, $p()
+    protected function validMac(array $payload)
     {
-      $paraeturn $reg. '@ func    }
-ocal()
+        if (!function_exists('openssl_random_pseudo_bytes')) {
+            throw new \RuntimeException('OpenSSL extension is required.');
+        }
+        $bytes = (new SecureRandom())->nextBytes(16);
+        $calcMac = hash_hmac('sha256', $this->hash($payload['iv'], $payload['value']), $bytes, true);
+        return StringUtils::equals(hash_hmac('sha256', $payload['mac'], $bytes, true), $calcMac);
+    }
+    protected function hash($iv, $value)
     {
-        return $this['env'] ==reCallbackA['env'];ster{$name}P    public functiootallyGtion __cothis->binif ($this->bact]);
+        return hash_hmac('sha256', $iv . $value, $this->key);
     }
-    public funcate\\HttFromHttp\egister(new EsponsePreparerInterface
-{
-    publstance {
-           T  returnKee);
-            $this      $class Fte\\HttForResass()->getName()}";
-        thnction cr
+    protected function addPadding($value)
+    {
+        $pad = $this->block - strlen($value) % $this->block;
+        return $value . str_repeat(chr($pad), $pad);
     }
-    pub   {
-        $t($abstract           $prass()->getName()}";
+    protected function stripPadding($value)
+    {
+        $pad = ord($value[($len = strlen($value)) - 1]);
+        return $this->paddingIsValid($pad, $value) ? substr($value, 0, $len - $pad) : $value;
     }
-    MassAssigntion resolved(orResponses();
+    protected function paddingIsValid($pad, $value)
+    {
+        $beforePad = strlen($value) - $pad;
+        return substr($value, $beforePad) == str_repeat(substr($value, -1), $pad);
+    }
+    protected function invalidPayload($data)
+    {
+        return !is_array($data) || !isset($data['iv']) || !isset($data['value']) || !isset($data['mac']);
+    }
+    protected function getIvSize()
+    {
+        return mcrypt_get_iv_size($this->cipher, $this->mode);
+    }
+    protected function getRandomizer()
+    {
+        if (defined('MCRYPT_DEV_URANDOM')) {
+            return MCRYPT_DEV_URANDOM;
+        }
+        if (defined('MCRYPT_DEV_RANDOM')) {
+            return MCRYPT_DEV_RANDOM;
+        }
+        mt_srand();
+        return MCRYPT_RAND;
+    }
+    public function setKey($key)
+    {
+        $this->key = (string) $key;
+    }
+    public function setCipher($cipher)
+    {
+        $this->cipher = $cipher;
+        $this->updateBlockSize();
+    }
+    public function setMode($mode)
+    {
+        $this->mode = $mode;
+        $this->updateBlockSize();
+    }
+    protected function updateBlockSize()
+    {
+        $this->block = mcrypt_get_iv_size($this->cipher, $this->mode);
+    }
 }
-namespace Illuminahis->resolvingCa $this);
-            $this->rebo     return $provarkAsRegistered($provider);
-          if ($t  }
-        re) > 0red ! 'D:\\XAM$this->inn forceRegister($providic funif (isect_k = i  protecteblic stafli isset($thier)
-   = $callback;
-    }
-    protec  protecteuest, Response $response);
-}newIions = markAsRegist {
-        ifaseMiddlewaresetRegistered($promnable !$force) {
- r()
-    {ister(new Exceptithis->load->aseMiddlers[] = tion getAlias($abs>loadss($provider), array($provider)turnnterfac   $this->serviceProvietRegistered($provider) && !s($prover));
-              i  if ($bound) {ng($providecks[awnction creclass] = true;
-    }   }
-        $thic::$direvider) &     return $this['env'] = (new Enviydrate);
-    $item    e;
-    pro resolvable($abstract)
- c
-    prote= ->bounvider) && !$force) {
-  )ider(;
-    protact]);
-    }
-    publiedSersponsedSeshared'])) {
-    >loadedPng($providevices as $servic, $sering($provider) ? $abstract)e;
-    pro$provider);
-        iffunctios);
- 
-    proervice = null        return $concrete === this->load->p$obje>load= $callback;
-    }
-    protecthis->load($service)
-    {
-        $provider = $thisRaw);
-      $efleingerviceProvideres[$service];
-        if (!isset($vider) && !$force) {
-            provider, $service = null)
-    {
-        s->deferredSer
-            unset($this->deferre
-    public($prov}
-    public s);
-          )ce)    p       $this->boot }
-        $constr 'D:\\XA= $this-redServices[$servicle()
-    {
-        return php_sapi_n$value   }
-    public function resolvePr->loadedProviders[$ctrue;
-    }
-    public functiosav }
-    public    {
-        foreach ($this->de 'local';
-    }
-eptioOrncies       return parent::make($abstracprovider, $servider) && ! 'D:\\XAe $closgistered($pcks[$backsn forceRegister($provideProvider($serv function __set($key, 'D:\\XA  }
-   true;
-    }
-    put($this->deferredServices[$abstract]New   }
-    public function resolveProvidlic function extend($abstract, Closure $closure)
-    {
-        $abstract = $this->getAlias($abstract);
-        if (ieters);
-    }
-    public funct($this->deferredServices[$ab, 'Rout]) || parent::bound($abstthis->insrIntevider) {
-            $this->loadDeferre 'D:\\XA>loadDeferrtrue;
-    }
-    public g($provides->reghis['r
-   bstract)
-    {
-        Provider($service)
-         $this->instance('p    {Byes = array(egistered($provider);
-       if (isset($th, Closure $closure)
-    {
- allback);
-    }
-    public function true)
-    public function ru(r])) {
-           ct);
-($this->shutdownCallbacks);
-        }     unset($thstance) {
-                $instance->boot();
-            ake($abstract, $parameters = array())
-    {
-   ;
-    }
-    publs[] = $callback;
-        }
-    }
-    public functWri();
-bstract);
+namespace Illuminate\Support\Facades;
+
+class Log extends Facade
 {
-                $instance->boot();
-                     return $callback;
- ->useisBooPdo($this->shutdownCallbacks);
-        }s['ew $pum    protectngCla        return $this->booted;
-    }
-    public function boot()
+    protected static function getFacadeAccessor()
     {
-        ifonse;    arr$this->shutdownCallbacks);
-        }fiepeniBoot    array_walk($this->serviceProviderebindi, $thisidared emptacks($
-    protected function get $this->registerDeferr     $abstrahis->booted;
+        return 'log';
     }
-    public function boot()
+}
+namespace Illuminate\Log;
+
+use Monolog\Logger;
+use Illuminate\Support\ServiceProvider;
+class LogServiceProvider extends ServiceProvider
+{
+    protected $defer = true;
+    public function register()
     {
-        ifnction bootApplicapplication();
-    }
-    protected functin finis bootApplication()
-    {
-        $this->fireA$abstract)>loadedPublic funcooting($callback)       $abstract = $this-      forea {
-        return $this['router')
-    {
-        $this->bootingCallbacks[] Faractllback;
-    }
-    public function booted($callback)
-    {
-        $this->bootedCallbacks[] = $callback;
-        if ($this->isBooted()) {
-       }
-utdowinablNotFound resolved(    setinablc function environme          return $parameter->oadtionesystemhis->instances[$key]);
-    }
-  inate($reqshared'])) {
-      y();
-    pmfony\Component\HttpKerneis->bind($abstract,dProvider(       if->boundnate($req    public bstra->eagerLoadilesystem);
-           }
-        $constrt_class($value) ==->deferredServices[$abhis['session.rejuest, $response);
-    }
-    protected function getStackedClient()
-    {
-        $sessionReject = $this->bAppCallbacks($this->bootedCallbacks);
-    }
-    public functionhis['session.reject'] 
-            throw $e;
-  On    lieneBootlvabignted $b0] =nelIocaliddlewares->serviceProviderCustomMiddleweach ($this-solved = agetFustomMiddis->bind('session.rejedProviction meis->bind('sesilder $stacmiddlewares $middlewareKetract) }
-        $constr$fornate\Eing($provideeject') ?           }($provider))     ted $b. funcCustomMidd(Builder $sponse->send();
-        $stackted f function mergelResolvtypass[0] =   }n inares(Builder $stack)
-    {
-        forelass, $parameters) = array_values($nden( 
-   publi)
-    }
-    puon\ExsbalResolvdlewares[]class) . '.phest $rtack, 'push'), $paramy_values($middleware);
-            array_unshift($parameters, $class);
-    nt\HttpK  call_user_func_array(array($st $thisters);
-  dleware($class) {
-     boot
-    protected function registerBaseM
-    }
-  nction mergeCustomMiddlewares(Buotheriddlewares(Buession.r }
-    public function rebinding($abslient()unction getStackes->miootA    r] = debug_($columiound = , 2er($this));
-    nelInterfac $this-['tic $dir'und($abstracfunction rebinding($abCustomMiddunction getStackedCustomMiddlewvel\\framewo
-    {
-  s_numotedCallb    $this->fireAppCallbacks($trs) = array_values($mound('ses return $callback;
-       ('sest, $type =      retursolvack, 'push'),ift($parameters, $class);
-    inate\Sup       $thray($st      }
-    }t, $typeKernelIntertected function registerBaseMiddlelic lResc function
-    }
-    public funct = $this->make($concrete, $pa|| $t      try {
-            $this->refreshRequest($request = Request::createFr{
-     vel\\framewoest));
-           concrete)
-    {
-     s->middlewares[] = compact('class', 'parameters');
-        returrebinding($abgisterRos($prov{ $res}Callbacks);
-        $this->bon\Excess($provfunc_array(array($stad,        $res{
-     $this->bound($absblic function make($abstnningUnioreach (array_exc);
-        }
-        retcall_user_func_array(array($staBooton']->handleException(meters');
-Request($requestve($this);
-    }
-    protectedng\Rnction mergeCustomMiddlewares(Builder $stack)
-    {
-        foreach ($this->middlewares as $middleware) {
-            list($class, $parameters) = array_values($middleware);
-            array_unshift($parameters, $class);
-        protecall_user_func_array(array($stack, 'push'), $parameters);
-        }
-    }
-    protected function registerBaseM    prondHttpEnction merge    ugre($    {iddlewares(Busecond $stack)
-    {
-        fore
-      nningUni
-      nction forget
-    }
-    h ($callbas $middleware) {
-            list($ced function $callback, solved     eware) {
-            list($equest, SymfonyResequest, utdowrs) = arraks[] = $callbn ($m) use(        }
-    }
- ected functitected function registerBaseMiddle protected funct       
-    }
-    public function middleware($class, array $parameters = array())
-    {
-        $this->middlewares[] = compact('class', 'parameters');
-        return $this;
-    }
-    public function forgetMiddleware($class)
-    {
-        $this->middlewares = array_filter($tyResponse $response)
-    {
-        f($class) {
-            return $m['class'] != $class;
+        $logger = new Writer(new Logger($this->app['env']), $this->app['events']);
+        $this->app->instance('log', $logger);
+        $this->app->bind('Psr\\Log\\LoggerInterface', function ($app) {
+            return $app['log']->getMonolog();
         });
+        if (isset($this->app['log.setup'])) {
+            call_user_func($this->app['log.setup'], $logger);
+        }
     }
-    public functi protected funct $this;
-    pubmfonyRequest $request, $type = HttpKernelInterface::MASTER_REQUEST, $catch = true)
+    public function provides()
     {
-        try {
-    romBase($requiddlewareymfonyResponsCthis-essionReject = $this->bach ($this->middlewares as $middleware) {
-            list($class, $parameters) = array_values($m    return $this['exception']->handleE) {
-            list($rebinding($ab $thi protected function$this;
-     ifjoining $paraction meconcrete)
-    {
-              throw $e;
-            }
-          }
+        return array('log', 'Psr\\Log\\LoggerInterface');
     }
-    publi protefunction dispat     patch(Request $request)
-    {
-        if ($this->isDownForMaintenance()  $request->setSession(${
-        return file_exists($this['config']['app.mainv funllbacks)
-    {
-        fo$this-       $this['events']->listen('illuminate.a$callback);
-    }
-    public f{
-               if (!meters = array())
-    {
-        $thi
-        if ($code == 404) {
-            throw new NotFoundHt         throw $e;
-            }
-             throw$this?:oriesplurap.down')dlewares = array_filter($t
-    {
-        $this->e$callback, $patch(Request $request)
-   $this-or(Closuretected function registerBaseMiddlerBaseSerl_user_func($callback, $e);
-        });
-    }
-    public function err   {
-        foreach ($this->middlewares as $middleware) {
-            list($c    return $this['exceptire $callback)
-    {
-  c::$directorieted functiol_user_func($callback, $patch(Request $request)
-   Closure;
-use ArrayAccess;
-use Reflecti'events']->listen('il      return $parelf = __FUNCTION__          re$this['enningUnitTesreshRequest($request ) 'testing';
-    }
- t($reblic funelfshared'])) {
-    
-    }
-   retur
-            $this->bo, $args);
-   e'];
-    ion getCinablaths\Containerared =
-    }
-!$thislfay $primitives = arrayrgs);
-    }
-     $this->r?quest));
-           tract], $this);
-    ed static $direHttpException($code, $false;
-    publiuse Response($resphis['env'], func_))->push('Illumction me function requestClass($class $code, $ction forget>loaderviceProvction mergeuse  (array_exceon ()Class eferredServices[$absrtolower(   }
-    _ction:$requ$this->shutdownCallbacks);
-        }destroacks($provider);
-      EST =  $m)
-    {
-    er', ppCallbacks(sice($alho:  {
-        $sessionRejectovider) && !$force) {
-            rprovideon']->handleException($e);
-      (is_string($providee $clI, $val $thilbacctio$key}",  $thface
+}
+namespace Illuminate\Log;
+
+use Closure;
+use Illuminate\Events\Dispatcher;
+use Monolog\Handler\StreamHandler;
+use Monolog\Logger as MonologLogger;
+use Monolog\Formatter\LineFormatter;
+use Monolog\Handler\ErrorLogHandler;
+use Monolog\Handler\RotatingFileHandler;
+use Illuminate\Support\Contracts\JsonableInterface;
+use Illuminate\Support\Contracts\ArrayableInterface;
+class Writer
 {
-    public f$servicedelette, $parameters = aet('app.ur++   {
-        $this['exception']->rce = new $ubstract)malizeClass($class);
-  $parameflectionParameter;
-class Con    if protected);
-            if    }
-    \ resolved('No  protec tanc    ret seMiddel.viceProvject = $this->      $clasaseMid function onRequest($ntProvider()
+    protected $monolog;
+    protected $levels = array('debug', 'info', 'notice', 'warning', 'error', 'critical', 'alert', 'emergency');
+    protected $dispatcher;
+    public function __construct(MonologLogger $monolog, Dispatcher $dispatcher = null)
     {
-    $par $thractble($concrete, $abstract)
- oundatioct) as $ca  return $concrete === his->binuchOw getBer($this));
-    }
-    per = $D$paraOn($requer($this));
-    }
-    aseMiddlewares();
-  s));
-    }
-    public function  $paranstallPaths(array $pinstance = $this->make($abstractarget, $method)
-    {
-        pundCallbacks[$abstract])) {
-     $parame    } else {
-            static
-    }
-    public funcfalse;
-    public stateject') ? $th $closrray_unshift($para           i     )\\AuthManager', 'auth.r->deferredServices[$absav     hod}($cot($envs)
-    {
-        $);
-        foreach 'llumin);
- e\\Cache\lers\\BladeCompiler', 'cache' => 'Illuedate\\Cache\\CacheManager', 'cache.store' => 'Illuminate\\Illum\Repository', 'config' => 'Illuminate\\Config, 'Rominate\\Cache\\CacheManager', 'cache.store' => 'Illuminat'db' => rypter' => 'Illuminate\\Encryption\\Encrypter', 'db' epository', 'cookie' => 'Illuminate\\Cookie\\CookieJar',, 'Routrypter' => 'Illuminate\\Encryption\\Encrypter', $valuminate\\Cache\\CacheManager', 'cache.store' => 'Illuminat', 'html 'hash' => 'Illuminate\\Hashing\\HasherInterface', 'hepository', 'cookie' => 'Illuminate\\Cookie\\CookieJar',ate\\Lorypter' => 'Illuminate\\Encryption\\Encrypter', ocale);
-ate\\Cache\\CacheManager', 'cache.store' => 'Illuminatocale);
- ' => 'Illuminate\\Pagination\\Factory', 'auth.remindepository', 'cookie' => 'Illuminate\\Cookie\\CookieJar', => 'Illum\Repository', 'config' => 'Illuminate\\Configy($ob     ction getBfunction booted($callbais->register(static::$rCallbacks);
-        $th     if (!$catch || $this->runningUnce) {
-             (is_string($provider)) {
-            $provider = $this->resolvePro'session' => 'Illumon readyF"eack\Bui.{) {
-  }: " .);
-        foreach concrete)
-    {
- ction shutdown(callable $callbac);
-        foreach ($options \\Cache\\CacheManager',(!$value i'session' => 'Illuminate\\Session\\SepareRes;
-        foreach (array_exc'Illuminate\\Routing\\Url>getDefor', 'validator' => t)
-    "tabase', 'request'et($key)
-    {
-        unset($thr)) {
-            $prbindShared($abstract, Closurnces[$walk($t'Illuminatepaginator' 'Illuminate\uilder', 'hueue' => 'IlRedis\\Datate\\Cache\, 'encryp'reston isis->detectedabst', 'bla>createNewRIlluminate\\Support\\ClassLoade) {
-            $p>deferrts);
-    }
- false;
-    public stat>createNewRequts)
-    {
-  
-        static::$directoriesdd {
-            $pts)
-    {
-        if ($enviro>createNewRequppCallbackts);
-    }
- ce($>createNewRes = array($url, 'GET', arraynments instanceof Clic fununiqurn $thiances[$abstrac>createNewR $res);
-    }
- ponse->send();
-        $stack      $environments);
+        $this->monolog = $monolog;
+        if (isset($dispatcher)) {
+            $this->dispatcher = $dispatcher;
         }
-        foreach ($environments as $environment => $hosts) {
-            foreach ((array) $hosts as $host) {
-                ifdiff($host)) {
-                    ret    } else {
-            staticCallbacksis->boott($tmp.url',1    if (is_array($abstract)) {CallbacksOrDe  return head(array_slic,direllbacks    }
-            return $object;d return $this->detectWebEe(explode('=', $value), 1));
+    }
+    protected function callMonolog($method, $parameters)
+    {
+        if (is_array($parameters[0])) {
+            $parameters[0] = json_encode($parameters[0]);
         }
-        return $this->detectWebEnvid functio    }
-            return $object;   }
-        return $this->detectWebEnv", realpfalse;
-    publiound('session.reject') ?     {
-        $ale)
+        return call_user_func_array(array($this->monolog, $method), $parameters);
+    }
+    public function useFiles($path, $level = 'debug')
     {
-        $this['conc::$direl;
-    {on getB}n head(array_slic$message, null, $heade
+        $level = $this->parseLevel($level);
+        $this->monolog->pushHandler($handler = new StreamHandler($path, $level));
+        $handler->setFormatter($this->getDefaultFormatter());
+    }
+    public function useDailyFiles($path, $days = 0, $level = 'debug')
+    {
+        $level = $this->parseLevel($level);
+        $this->monolog->pushHandler($handler = new RotatingFileHandler($path, $days, $level));
+        $handler->setFormatter($this->getDefaultFormatter());
+    }
+    public function useErrorLog($level = 'debug', $messageType = ErrorLogHandler::OPERATING_SYSTEM)
+    {
+        $level = $this->parseLevel($level);
+        $this->monolog->pushHandler($handler = new ErrorLogHandler($messageType, $level));
+        $handler->setFormatter($this->getDefaultFormatter());
+    }
+    protected function getDefaultFormatter()
+    {
+        return new LineFormatter(null, null, true);
+    }
+    protected function parseLevel($level)
+    {
+        switch ($level) {
+            case 'debug':
+                return MonologLogger::DEBUG;
+            case 'info':
+                return MonologLogger::INFO;
+            case 'notice':
+                return MonologLogger::NOTICE;
+            case 'warning':
+                return MonologLogger::WARNING;
+            case 'error':
+                return MonologLogger::ERROR;
+            case 'critical':
+                return MonologLogger::CRITICAL;
+            case 'alert':
+                return MonologLogger::ALERT;
+            case 'emergency':
+                return MonologLogger::EMERGENCY;
+            default:
+                throw new \InvalidArgumentException('Invalid log level.');
         }
-        return nction crVInte;
     }
-    public function'path.base']);
-   l;
-    erface', 'blade.compiler' => 'Illuminate\\Vietp;
-
-use SplFileInfo;
-use Symfony  return starts_with($v, '--env');
-        })se Symfony\Component\HttpFoundation\Requefalse;
-    public stat{tApplic}      $this[      re+t($meturn i$direv) {
-   ce($y_slice:tion root* -tract, $sterExceptionProvider()ey_exists($    arponse->send();
-        $stack, 'Rou{"register{$name}Provider"}();
+    public function listen(Closure $callback)
+    {
+        if (!isset($this->dispatcher)) {
+            throw new \RuntimeException('Events dispatcher has not been set.');
         }
-   , gethostname());
+        $this->dispatcher->listen('illuminate.log', $callback);
     }
-}
-namespace IllumiinderRepositoryInt   }
-  true;
-    }
-    public
-            $this->rebos->register(new Eacks[] = $calle_once $path;
-         $objfunction booted($callke($parabstran forceRegister($provid$locale);
-     ot();
-     {
-        if (iClient()
- ic static       $this['conlvable de;
-    prot::vingCaetPathInic static function onRequeturn rtrifunctio? $thi\MyFirstLaravel\\laravel public function path(Foundation' . '/start.{
-                return gere) {
-      e\\Support\\ClassLoadbstrronmentsolvedvider) {
-            $this->ound('session.reject') Withoutoptions,    {
-        ]->set('app.locale', $le\\Cach       $this['translator']- public function path()
+    public function getMonolog()
     {
-  $locale)
+        return $this->monolog;
+    }
+    public function getEventDispatcher()
     {
-        $this['con$ 'enc      $thi
+        return $this->dispatcher;
     }
-U   }
-       $thget($thest($request));
-    }
-    public          return $v != Insen ()    }));
-    }
-    public fegments()
-     'encameters[$key]);
-         nishSbstrttern) {
-            if (str_$provider'encss($value) == $name;
-            )))) {
-   array_get($ththis->resolvingCallbacks[$a\CookieJar', 'encryp->register(new EExceptionProvider()
+    public function setEventDispatcher(Dispatcher $dispatcher)
     {
-         ic functio;
+        $this->dispatcher = $dispatcher;
     }
-d fuloca'ifest =ameters[$key]);
-       'locale.changed', array   $this->shueminder.repository' => 'I'';
-   nterface) as $pa array_get($this->segments(), $index - 1,dir    $bstract, $c    n segments()
-   EST = 1
-      {
-       $this['config']->set('app.locale', $lIlluminat       $this['translator']->setLocale($locale);
-        $this['events']      $clasd $shutdown&&lic functiourn $this->i $shutdowure();
-    }
-    public  }
-    publ, 'Roullumhutdownction registerC $concrete === 
-    }
-    public function exists($ts($key)
+    protected function fireLogEvent($level, $message, array $context = array())
     {
-        $keys = is_array($s)
-    {
-     KeysFor {
-  $call) as $);
-    }
-        stances[$abstract] ? $key : func_get_args();
- Illuminate\\Foundation\\Ac function segment($index, $default = null)
-eminder.repository' => 'It_args(unction ips()
-    {
-        return $this->getClientIps()      $claseturn $this->isX'Illumina('/', $this->path());
-        return array_values(array_filter($segmenay_key_exists($value, $input)) {
-                return false;
+        if (isset($this->dispatcher)) {
+            $this->dispatcher->fire('illuminate.log', compact('level', 'message', 'context'));
         }
-        }
-        return true;
-
-    public  protected $= $this-= get_class($prider) ? $provideallbacks =       return array_repli_argse);
-etId() as $pat  public function full));
     }
-    public l;
-       $in    public function fullUrl()
-   oreContainerAliaunction regist($key)) || is_array($this->iIlluminate\\Foundatio     return true;
-    }
-    protected func   $input = $thunction ips()
-  egistered($provider);
-      lic f        returnG= $thi{
-        re     $regis', 'blade.compiler'();
-    }
-    publi_key_exists($namract);
-        ric function normalizeClaocale.changuminate\Support\Contracts;
-
-intterBaseBng [ion $e) {
-    return array_repl{? $keys :}  ifon exnction registerC$callback)
-   
-        $results$provider);
-        if (arra   $resultsion ip()
+    public function write()
     {
-        rethis[$key] = $value;
-        }
-        $thterBaseption $e) {ssingLeadingSlash($abstract) && isesystenvironmenterBasementArgument($args))) {
-        eturn $this->is    $para $callbis->aliases[$alias] \\Router', 'session' => 'Illuminate\\Session\\Session $this->make($abstract);
-stract]= or', 'validator' => 'IlluminaProvider()
+        $level = head(func_get_args());
+        return call_user_func_array(array($this, $level), array_slice(func_get_args(), 1));
+    }
+    public function __call($method, $parameters)
     {
-    ASTER_REQUstract)
-'bstraeption fi, (array) $directoriinate\\Routing\\Urltp;
-
-use SpolutionE      $this->resolvingCallbacks[$abs foreach ($keys as $unction ips()
-n isMachine($name)
-   lass Request extends SymfonyR?php
-', 'blade.comh ($keys as $>push('Illuminate\\Cbstraure;
-use ArrayAccess;
-use Reflecti = array($files); => $alias) {
-           $host) {  prote[', 'blade.compiler'      $value = func::$directorie return true;
+        if (in_array($method, $this->levels)) {
+            $this->formatParameters($parameters);
+            call_user_func_array(array($this, 'fireLogEvent'), array_merge(array($method), $parameters));
+            $method = 'add' . ucfirst($method);
+            return $this->callMonolog($method, $parameters);
+        }
+        throw new \BadMethodCallException("Method [{$method}] does not exist.");
+    }
+    protected function formatParameters(&$parameters)
+    {
+        if (isset($parameters[0])) {
+            if (is_array($parameters[0])) {
+                $parameters[0] = var_export($parameters[0], true);
+            } elseif ($parameters[0] instanceof JsonableInterface) {
+                $parameters[0] = $parameters[0]->toJson();
+            } elseif ($parameters[0] instanceof ArrayableInterface) {
+                $parameters[0] = var_export($parameters[0]->toArray(), true);
             }
- ($bound) {
-            $this->reboundey_exists($ $key, array_get($input, l)
-    {
-        return $thth\\Reminders\\ReminderR     }
-        return true;
-c::$directorieryString();
-                   static     }
-        retfalse;
-    publici, '_'), DIREfresh
-        str_is($name, gethostnamisfuncti    retu', 'Except protected function dropSet'';
-  dA    ict)
-    {
-        unset, gethostname());
-      = null)
-    {
-        )
-    {
-  is->retrieveItem('server', ) || p$default);
-    }
-    publitected function detectWebOldInput($krInternction method()
-    {
- l)
-    {
-        rretury())
-    {
-tected function detectWeb$key, $defanull, $keys = array())
-    {
-        ', 'Exceptis_null($filter) ? $this->{$filter}($ks);
-ldInput(C   ar ($consoleArgs) {
-      l)
-    {
-        r  }
-    public function flashOn$key, $de
-    {
-        $keys = is_array($keys)', 'Exceptuest, Response $response);
-}
-n server($key =_null($callback)) {
-  s->boIllum {
-            if (file_exists     $keys = i           if (is_array($abstract)) {fromse Illum  {
-     n server($key =ponse->send();
-        $stackeject') ?  }
-    public staterfacesession.rejetack\Buis $servicinderRepoBasys as s $servi$input, $key)trieveIandle($requ), $keturn $clc functi
-         $extender = $this-pplyder, $options        )->flashInput(array());
-    }
-    proublic functior())->detect($envs, $anstanceof nmentDetector())->d        t($key, $'session.reject') ? l(), $key, $delt = null)
- trieveIefault, true);
-    }
-    public function merge(a return true;
-            }
-          $source}->get(inderRepositoryI;
         }
     }
-    public fs->{$source}->get($key, $duminate\Support\Contracts;
+}
+namespace Monolog;
 
-intovider, $options,ys) ?nction forceRegister(ntent(this->{t($key, $n replace(array $i;
-    }
-    protec  {
-        $this->getInputSource()ey = null, $default is->json = new ParameterBag((array) json_decode($this->getContent(), true));
-        }
-   d($input);
-    ll($key)) {
-            return $this->json;
-        }
-        return are, $key, $default)
-         if (!is_array   }
-    }
-  'GET' ? $thissessionStore;
-    public functi       if (is_null($kony\Component\HttpKon isAlias($nated()
-    {
-  return rtgramma->isDefanson_dct);
-Gic funrameters, $class);
-    if (is_null($ () u,ublic funon () unction stProqueso($key)) {
-      return $this->getMe $this->reg>deferrClass = $class;  public static functions->booted = truc::$requestCla      return $this->getMe
-use (inablesureutionk)
-    {
-        reerror(fun  {
-   ->query : $this->request;
-cceptatentTypes$type) {
-            if ($for  }
-    public function flashOn $paramidFile($file)) {
-               message);
-        }
-  isset($this->bilbacks = atract);
-        if (issublic stati\\ray()) vel\\framew$e) use($caestClass($class = null       if (!isset($this->json)sturn $de$messagfalse;
-    public stattalErrorExcept  }
-    public function flashOn     ));
-        }
-    }
-    protectern $file instanceof SplFileInfo && $file->getPath() != '';leException(f (isset($this->resolvingCall protectedilter) ? $this->{$filter}($keysift($parorResfalse;
-    public stat protected $b    server->all());
-    }
-    publiQualifienctiunction session()
-    {
-        if '), $parameters);
-  rray_unshift($parameters>getBaseUrl(), '/');
-  ses, $key, $default);
-    }
-  isset($this->bi        rure;
-use ArrayAccess;
-use Reflectilass', 'parameters');
-   false;
-    public    }
- $app;system(), $th$appk)
-    {
-         idblic function is['path.base']);
-  Builder(rs');
-        r->all());
-    }
-    publion\Ex $thiion session()
-    {
-        if         $tblicutingProvider()
-    {
-->all());
-    }
-    publiP();
-  ion session()
-    {
-        if (();
-  ilter) ? $this->{$filter}($keysonse = $ay();
-  meException('Session sto();
-    pay();
-  tch = true)
-    {
-        $resp) {
-        _null($callback)) {
-   ction requestClass($class = nullcallback)
-    ->all());
-    }
-    publiH = arion session()
-    {
-        if s = arilter) ? $this->{$filter}($keysss Requ>deferrs = armeException('Session sts = arrayclient_ilter) ? $this->{$filter}($keysVedServOST = 'credServmeException('Session stredService= 'clienilter) ? $this->{$filter}($keysAd stat   }
-    d statmeException('Session sted static HostPattreturn $response;
-    }
-}
-namesp: get_clif (isset($this->resolvingCallbaequest}
-        $this->fireCallbackA get_cl>deferr{
-       his->resolvingCallbacks[equest $rER_CLIENT    }
-        return $n\Session\SessionInterface;
-cla    $provion();
-    }
-}
-namespace Illumtion _n\Session\SessionInterface;
-ctionf::HEADEw $provifalse;
-    public statction __coalse;
-  LIENT_PROTO => 'X_FORWARDED_PROTO', self:on\\Encrypter', 'this-> => 'X_FORWARDED_  return new $provpublic functilic $server;
-    public $filere
-    public $cookies;
-    public $headers;
-$locale);
- BladeCompiler', 'cache' => 'IletUthis->St }
-      nt($envs)
-    {
-        $a$this->insta    pr $instance) use($target, $meth : get_class($   $target->{$method}(eturn new $provider($this);
-    }
-    unction registot();
-         e'];
-          r
-    {
-        tected $format;
-    protected $session;
-    protec = null)
-    $proass($provider);
-      public function path()
-    {
-  c::$dir->booti($provider)
-          rthis->bounpareRes  }
-        $this->fireCallbacected static $rssingLeadingSlash($abstract) && e;
-    protew $provid||butes;
-    publicconstruct(Request l)
-    {
-        return          $provmponent\HttpFoundationerClass($provider)
-    ct, red =ntent = null)
-    {
-        $this->initi            static::$dir     $name = is_st    }
-    public funparameter->getpareRe.($value);
-    publc::$dire request.          return $thiesolvace HttpK.    ss($p       }
-        }
-        returerBasent = (new  $directory . DIRECTORY_SEPARATOrBase      return (new static())->duprameterBag($requ>deferrnction hest->query->all(), $reqerBaseBinmeterBagn\Session\SessionInterface;
-claIallbacks = uest);
-        $this->query = n null, $defailter) ? $this->{$filter}($keys    $this->fi>input();
-        $this->sessCallbacks = arrull($filter) ? $this->{$filter}($ktote\Cinput)) {  $message = "Unresoc::$dirjson_    public funco $provon r
-    }
-    pubsset($this->deferredSer16';
-    prtic $trustedHeaders = array(self->charset $this->initialize($query, $recharsetfalse;
-    publiles->all());
-    }
-    public Tull;
-        $nset($this->instances[$atype) {
-      ern = trim($thrl = null;
-        }
-    }
-    public fis->baseUrl = null$this->requestUri = null;
-        $trequerInterfes = array(
-        if (is_strinstract, $cull)>getCons_stface
+use Monolog\Handler\HandlerInterface;
+use Monolog\Handler\StreamHandler;
+use Psr\Log\LoggerInterface;
+use Psr\Log\InvalidArgumentException;
+class Logger implements LoggerInterface
 {
-    public feturn $t  }
-    pu[api_      $value = funray('Evtin)
+    const DEBUG = 100;
+    const INFO = 200;
+    const NOTICE = 250;
+    const WARNING = 300;
+    const ERROR = 400;
+    const CRITICAL = 500;
+    const ALERT = 550;
+    const EMERGENCY = 600;
+    const API = 1;
+    protected static $levels = array(100 => 'DEBUG', 200 => 'INFO', 250 => 'NOTICE', 300 => 'WARNING', 400 => 'ERROR', 500 => 'CRITICAL', 550 => 'ALERT', 600 => 'EMERGENCY');
+    protected static $timezone;
+    protected $name;
+    protected $handlers;
+    protected $processors;
+    public function __construct($name, array $handlers = array(), array $processors = array())
     {
-        }
-    public furay_key_exists('t);
-($clos)inate\Cont()
-    {
- ray_key_exists('Htion path()
-    {
-        $pattern =(Sym    put(ver = $_SEsponsePrname()) {
-           ->isMakey($provide));
-  gistered($pTTP_CONTENT_LENGTH', $_SERVER)) {
-                $server['CONTENT_LENGTH'] pKernelITP_COTENT_TYPEFor $proviYPE'] = $_SERVER         }
-            if (array_key_exists('H       $seatic $t $_SERVER)) {
-           equest = self::createRequestFromFactory($_GET, $_POST, aract);
-     'events']->fire($class = get_class($provider)yAccess;
-use Reflecti       $server = $_SE, $request->cookies->all(), $requerInterfadSer'cli-serister(new ExceptionServiceProvider($this))strpos($request->head    }
-    public funerClass($provostPatteider($this);
+        $this->name = $name;
+        $this->handlers = $handlers;
+        $this->processors = $processors;
     }
-    protef ($concrete instanceof Closu(0 === strpos($requta);
- ->isMacombiis->    public st      $fiblic stat
-        }
-        return arrathod = null;
-   $this->requestUri = null;
-   abstract]);
+    public function getName()
+    {
+        return $this->name;
     }
-    public func', 'PATCH'))rBag($requesponsePreparerInterface
-{
-    public fted $locale;
-    protelient_hTTP_CONTENT_LENGTH', $_SERVER)) {
-                $serve     rInteptions = arrnt(), $datf (isset : func_get_args();
- omBase($requrInte= null;
-        $dProviders)) {
-   class ConrInter.5', 'HTTP_ACCEPT_CHARSET' => 'ISO-885cation/xml;q=0.9,*/*;q=0.8', 'HT 'D:\\XAMPP_NEW\\htdocs\\MyFirstLaravel\\lar       ion;
-
-use SorResponses();
-}
-namespace Ile)) {
-         ion $e) {
-||ceptio=> '127.0.0.1', 'SCRIPT_NAME' =quest = self::createerver = le);
-        $this['events']is->mak {
-        if (st->server->get('REQUEST_METHOD', 'GET')), array('PUT', 'DELETE', 'PATCH'))rBag($request);
-        $this->query = nntent(), $data);
-        ient->resolve($this);
- new ParameterBag($data);
-      array(), $$this['rnction resolveProviderClass($prov 'client  $keys = is_array($ }
-    protected function mahis['rered($provider)
-     'client)
+    public function pushHandler(HandlerInterface $handler)
     {
-        unset($this->insta (!i443;
-            } else {
-      xt/html,n\Session\SessionInterface;
-claey_exists($nam->serviceProviders,nction create$server['CONTENT_TYPE']           $request->req.8', 'HTT          $se $content iron'HTTP_C($pac $requestFactory;
-    publll(), $request->fily\Compos_string($prov  if (str_is($er['SERVER_PORT'] = $componentotected function getStackec::$directories esystemists('     if (!$catch || $camer $stacss'])    $server['PATH_INFviderClass($provideray($stss'])) {($this->aliases[$abstract]);
-     ilesystemhipturn>bindinST, arr'];
-             return $this->getClientIp();
-          }
-        if (issfalse;
-    publiP_ACCEts, $key, aractory($_Gurn $provierver['PHP_AUTH_PW] = $server['HTTP_HOST'] . ':' . $components['port'];
-  tFromFactory($_($name, $this->loadedPro 'REMOTE_ADay(), array $server = er' === p.0.1', 'SCRIPT_NA 'HTTP_ACCs['translator']->setLocale(R['HTTP_CONTENT_LEN$this->loadedProvider         $server['SERVER_NAll($filter) ? $thi}
-        switch (strtoupper($PUT':
-             }
-    public fuer['SERVER_PORT'] = $components['port'];
-$this->aliases[$abstract]);
-  ay(), $_COOKIE, 'path'] = '/';
-        }
-        switch (strts['path'])) {
-            $components[    {
-        forey();
-    prn $this->s'])) {}str_is($name, gethponents['qtions = arrilesyste   {
-        return $this[sponse;
-use Il('ts['path'])) ;
-    }musterver['SEtereject of $app; fun'ct, $parameesponsePrelesystem\FFilesystem;nt\HttpKeic function setLocale(ser'];
-        }
-        if (_url($uri);
-mponentssulnvironment());
-  ser_func($callbackr['HTTP_HOST'] .   $this->languages = '] = $components['pas'geay($tstudly    $server    TENT_TYPE    }
-            return $object; {
-                    $servemponent\HttpFoundation\Reques{   $server['REQUEST_URI'] = $components}st = $paramete] . ('' !== $queryString ? '?' . $querySGET, $_POST, arrnull, $keys = array()) 'POST':
-       {
-                    $server['CONTENT array();
-   EPT_LANGUAGE' => 'en-us,en;q=0ce($O-8859-1,utf-8;qt()
-ll($filter) ? $this->{$filter}($keys. $queryString : '');
-        $server[      $clashasS['HTTP_HOST'] . ':' . $componenASTER_REQU's $server['REQUEST_URI'] = $components=0.7,*;q=0.7','QUERY_STRING']p;
-
-use Sp$server['CONTENT_TYPE'] = 'application/x-www-form-urlencodered =nction getRegistered($ 'POST':
-      lush()
-    {
- $server['CONTENT_s = array())
-    uest = self::createll($filter) ? $this->{$filter}($karray $cookies = nuild_query($query, '', '&');
-        }
-      ray $server = null)
-    {
-        $dup       }
-        }
-        if (i' === p>getClientIps();
-efa els 'localhol)
-    {
-        r,   public function est as SymfonyRequ->isMachine($host))null)sharokies);rgs();
-        return $this->fl            $dup->  {
-        foreachma:$registered) ' ==FerBagn segments()
-       self::$requestse Illumname()) {
-      ['CONTENT_TYPE'] = 'ption("Type127.0.0.1', 'SCRIPT_NAquest !==c_get_this->dePUT'rver($key  null) {
-            $dup->   }
+        array_unshift($this->handlers, $handler);
     }
-   (\\d{4})-onten2Types = nulunctioges = null;
-        $dup->charsets = null;
-            $'Y-m-or' =rInter->est =OfD$method = 'GET'));
-    }
-    public     $dup->requestUri = null;
-    rverBag   $server['CONTENT_ $query = array();
-   t] = $cl$dup->fosure $closure)
+    public function popHandler()
     {
-        $res   $request = $paflectionParameter;
-class>languages = null;
-        $dc::$direts = null;
-        $dup->encodings = null;
-        $dup->acceptableContentTypes = null;
-        $dup->pathInfo = null;
-    if (!$dup->getRequestForl;
-        $dup->baseUrl = null;
-        $dup->basePa. $queew HeaderBag($dup->server->getHeaders());rverBag($server);
-            $dup->header       return $dup;
-    }
-    publicdup->format = null;
-        if (!$dup->get(ets = nuack, 'pueateRequestFromFactory($query, $request
-            $dcomponents['host'];
+        if (!$this->handlers) {
+            throw new \LogicException('You tried to pop from an empty handler stack.');
         }
-  $abstract);
-  sJson()
+        return array_shift($this->handlers);
+    }
+    public function getHandlers()
     {
-   );
-            $dup->he   }
-        return arraplic}
-    publieresol resolvable($abstract)
- n sprintfgetMetho?:->app = $ 'blade.compiler' => 'Illuminly($keys)
+        return $this->handlers;
+    }
+    public function pushProcessor($callback)
     {
-       $filesn $this->flash('o   }
-    pub  protected $middl_n spri            $reque  if esol['path'] = roviders[$provider])) {
-        Services = array(nputSource()->all() +          return $ccks[$ = (new $this->method =        }
+        if (!is_callable($callback)) {
+            throw new \InvalidArgumentException('Processors must be valid callables (callback or object with an __invoke method), ' . var_export($callback, true) . ' given');
         }
-        if (isset($com       parse_str($request->getCo   public functin $this->reboundCallbacks[ices = array(() as $type) {
-     onPrllbacks)
-    {
-        fo>request->all();stati  public function input(onPrprotected function dropSnProvider()
-    {
-     ronments, $consoleArgs = null)
- vider()
-           pub     }
- resolvable($abstract)
-   public functiofalse;
+        array_unshift($this->processors, $callback);
     }
-  l)
-   'CONTENT_T       return (new static())->nProvider()
-      if ($environments   protecteoreach ($this->heLIENT_PROTO => 'X_FORWARDED_PROTO', self::HEADER_Chis->getSchemeAndHttpHos->all()         $_SERVER['HTTP_' . $key[' => $_POSarameter)
- $request);
- uestOrder LIENT_PROTO => 'X_FORWARDED_PROTO', self::HEADER_C)
+    public function popProcessor()
     {
->getContent();solvable($abstract)
- 
+        if (!$this->processors) {
+            throw new \LogicException('You tried to pop from an empty processor stack.');
+        }
+        return array_shift($this->processors);
     }
-    public function exists($key)class Conmeters;
+    public function getProcessors()
+    {
+        return $this->processors;
+    }
+    public function addRecord($level, $message, array $context = array())
+    {
+        if (!$this->handlers) {
+            $this->pushHandler(new StreamHandler('php://stderr', static::DEBUG));
+        }
+        $levelName = static::getLevelName($level);
+        $handlerKey = null;
+        foreach ($this->handlers as $key => $handler) {
+            if ($handler->isHandling(array('level' => $level))) {
+                $handlerKey = $key;
                 break;
-   
-    {
-        $k function setLocale($loc
-          meters;
-                bre>getContent(); {
-        $sessionReject = $this-> {
-         protectedng [ => $_POST';
-                $server['CONTENT_Ts->all() 'CON     s['translator']->setLocale(unction registerEv            $query = array(cted $encodings;
-    pro       $this-unctio, strtolower($requestOrdabstract]);
-    }
-    public funcustedProxies(arePreparerInterface
-{
-    public f $server['CONTENT_TYPE'] alse;
-    }
-  .0.1', 'SCRIPT_NAME' =s;
-  
+            }
         }
-        if'CONTENT_TYPE'] = one $thbstrIE);
-        $req;
-   ull, $defau' . $keyIsf (is_nf ($Equivalturn ss($provider);
-        ifr_replace('}', '\\}', $hostPattern)rn $closure($resolver($conta    estFromFactory($query, $requestosts = array();
-    }
-    public statconfig']->get('ap$path ] = implode(', ', $vueryString = '';    protecteatterns);
-        sel;
-        $this->$dup->languakey_exi;
-   $dup->langua    returf::$strcmp(= $_SERVERkey_exi, = $_SERVERder name f    rder) {{
-        if (isset($this->ag($request);
-        $this->query = nponents['dHeaders[$key] = $value;
-    }
-    publ->retrieveItem('query', $key, $de        }
-        ponents[gumentEn $this->reboundCallbacks[$_exists($key, se $server, $content);
-                throw new \Inv}', '\\}', $hostPat         }
+        if (null === $handlerKey) {
+            return false;
         }
-        $request = aquery'])) {      $_inate($request, $responsekey "%s".', $key          }
- LIENT_PROTO => 'X_FORWARDED_PROTO', self::HEADER_CLIEted()
-    {
-        return is_array($keys)tract][
-           this->glois->loadDeferredProvider($a    $parts = array();
-unction session()
-    {
-        if e;
-    protected    public function flash(           Requefalse;
-    public statn useArraySesexplo;
-    public $query;
-    public $server;
-    public $file  foreach (explode(n useArraySessions(Closure $callbis_array($keys)return fo           $   unset($this->def  {
-        return php_sapi_namen extends Containe
-        $keys = is_array($keys)return forward_ings;
-    protected $acceptableCe($keyValuePair[0])Containe return foublic $cookies;
-    publieturn fo| $conc($order, SORT_ASC, $parts);
-        retuis->me($keyValuePair[0]);
+        if (!static::$timezone) {
+            static::$timezone = new \DateTimeZone(date_default_timezone_get() ?: 'UTC');
         }
-    n enableHttpMethodPa  return isset($this->deturn php_sapi_name     parameter));
+        $record = array('message' => (string) $message, 'context' => $context, 'level' => $level, 'level_name' => $levelName, 'channel' => $this->name, 'datetime' => \DateTime::createFromFormat('U.u', sprintf('%.6F', microtime(true)), static::$timezone)->setTimezone(static::$timezone), 'extra' => array());
+        foreach ($this->processors as $processor) {
+            $record = call_user_func($processor, $record);
         }
-        array_multisstatic::$requestings;
-    protected $acceptableC
-        return parameter)y(static::$r true;
-    }
-    public sstatic::$rpartde;
-    }
-    public function get($key, $defais->m
-        return self::$httpMethoresult = $this->query-  return isset($this->deferredSe('HTTP_CONTENT_TYPE', cted function registerRoutingProvider()
-    {
-        ter', 'session's, array('app')) as               break;
-   this->request->get($key, $thi
-    {
-        unset($this->inst       $this->pathInfo = null;_      nents['port'])) {
- kies->all(), $request->filess_string($ function getSession()
- = arring : '');
-        $server[));
+        while (isset($this->handlers[$handlerKey]) && false === $this->handlers[$handlerKey]->handle($record)) {
+            $handlerKey++;
         }
-        ree, $this->loade null)
+        return true;
+    }
+    public function addDebug($message, array $context = array())
     {
-        roff$resprovide}
-    otected function keyParametersByArgu{functioes[$key]->name] = $value;
+        return $this->addRecord(static::DEBUG, $message, $context);
     }
-    G $inpnction hasSession()
+    public function addInfo($message, array $context = array())
     {
-  return null !== s->session->getName());
+        return $this->addRecord(static::INFO, $message, $context);
     }
-    Sction setS   return $this->hasSession() &null !== ->getHeaders());
-        $this->conten setSUs->makn setSession(SessionInis->make($parnull !== $this->session;
-    }
-    pub__turn $t        return $this->sessturn $this->bray_key_exists('HHOD']             }
-        if (), $content eryString = http_buf::$t_forget($result      }
-        if (iss   return array($ip);
-        }is->maknents['port'])) {
- is->make($par$request);
-     r['PHP_AUTH_USER']         }
-  rn array($ip);
-        }is['eon getBoot    }
-    }
-    public functio'applicatin getBoowalk($t public fu$k, $v) {
-     foreach (str_split($requred = $this->bindingBuilder())-c functionreturn isset($this->alia = $this->bound('session.reject') ? ;
-        $this->atch('{((?:\\d+\\.){3}\\d+)\put = $t', $clientIp, $match)) {
-  pMethodParameterOverride()
-  ientIpypes    ] = $ip;
-        $ip = $clientIps[0t);
-        $this->mergeCustomMiddlewaresatch('{((?:\\d+\\.){3}\\d+)\ack, 'puils::checkIp($clientIp, self::$trustedProxitic $directto, $keys);
-    }
-    public function fnt = $c   return array($ip);
-        }wakeuis_array($keys) ?  }
-    protected function regite\Foundation;
-
-use Closuder;
-use Illumina;
- if (isset(' => 'en-us,en;q=0abstract])) {
-         null;
-     this->server->get('SCRIPT_NAME', $this->server->get('onst VERSION = '4 ''));
-    }
-    public f = $content;
-      getPathInfo()
+    public function addNotice($message, array $context = array())
     {
-    re;
-use e();
+        return $this->addRecord(static::NOTICE, $message, $context);
+    }
+    public function addWarning($message, array $context = array())
+    {
+        return $this->addRecord(static::WARNING, $message, $context);
+    }
+    public function addError($message, array $context = array())
+    {
+        return $this->addRecord(static::ERROR, $message, $context);
+    }
+    public function addCritical($message, array $context = array())
+    {
+        return $this->addRecord(static::CRITICAL, $message, $context);
+    }
+    public function addAlert($message, array $context = array())
+    {
+        return $this->addRecord(static::ALERT, $message, $context);
+    }
+    public function addEmergency($message, array $context = array())
+    {
+        return $this->addRecord(static::EMERGENCY, $message, $context);
+    }
+    public static function getLevels()
+    {
+        return array_flip(static::$levels);
+    }
+    public static function getLevelName($level)
+    {
+        if (!isset(static::$levels[$level])) {
+            throw new InvalidArgumentException('Level "' . $level . '" is not defined, use one of: ' . implode(', ', array_keys(static::$levels)));
         }
-        $deptComponent\HttpFoundation\RealuePaiorson extends Fa    ynClass($pe;
-use Man   $       $objen extends Container impleme        $instancesappray) $dependencies $this-> $booted = false;
-    proeBindings($request ?: $this-dencisnction getBaseUrl()
- ed static $directories = ar
-   ,asePath = $= $thisis->basePerns = array();
-    protecstatic    {
-        $thisrepareBf::H>basePath;
-        if (file_exists(luePair = explop]#', '', strtolower($rs->midparameters'] = compactparsach (explodract) || $this->isAli      if (ar);
-            $s[    }  protected functio         $partter)
-    {aluePair = explod   return $value;
-    etPdoForTy(arreturn $thi
-    pub
-    {
-        $alias{
-            if (lic functioreentTrs = array())
-    {
-        $abst              continue;
-    if (ger', 'auth.reminder.repository'n getPort()
-    {
-       false;
-    publi>isSecuEADER_s $middlewareDokies)'/json');
+        return static::$levels[$level];
     }
-    puc::$dirStr::ciesubli
-    }
- walk($t    ahis->::wsBoo($va?face HttpK:ted     }
- 2 funclass;
-lResolact);
+    public static function toMonologLevel($level)
+    {
+        if (is_string($level) && defined(__CLASS__ . '::' . strtoupper($level))) {
+            return constant(__CLASS__ . '::' . strtoupper($level));
         }
+        return $level;
     }
-    public pues[$a>isSecure() ? 'https' : 'htag($fileiseturn $) || $this->isAliis->make($par{
-            if (s::requestClass(), $method), $']'));
-         }
-    public function rebindedProxies) {
-            if _CLIENT_PROTO], 'http')) {
-                protected function dropelf::HEADER_CLIENTt, ']'));
-   fsetUnset($key)
+    public function isHandling($level)
     {
-        unset($thrd fu      if (false !== $pos) {
-     ($host, ']'));
-        _CLIENT_PROTO], 'http')) {
-                  {
-        return $this->b{
-            if (self::$trustedHea              continue;
-) || $this->isAli', $parameters = array()re $thiPdoaluePair =, 'parat, $concrete);
+        $record = array('level' => $level);
+        foreach ($this->handlers as $handler) {
+            if ($handler->isHandling($record)) {
+                return true;
+            }
         }
-        $n getUserInfo()
-    {
-      {
-        forean seHEADER_CLIENT_PORT] && ($port = $this->heustedHeaders[self::HEADER_CLIENTt(self::(            bootQUERY_Seadrn $userinfo;
- blic fun$this->bind($abstract, $extender,ENT_PORT] && ($port =ony\Component\HttpKfir->ge     $this->fig        if (self::$tr       return   if (nulassword()
-    {
-        return atch('{((?:\\d80 || 'https' == $scheme on () fig $response);
-        $thrustedrithodPar      [':' . $   $this->bo$port == 80 || 'https' == $sc:' . $ && $port == 443) {
-            return $this->getHost();
-     if ( }
-        return $this->getHost() . lic function fl $thisolvingCa        return $this
+        return false;
     }
-    protected funct       aluePair =  $this->loads($this->header('CON       }setFetchinabarray(), $s['      ']['uestuse .f>get            }      $clasrn $recked('resolv($value);
-    publHeaders[sel$this
-        return ost();
-    }s = $th    }
-            if (
-   ] = implodes->baseUrl;
- ())) {
-        his->       (y)) {
-             }
-    protected functionarametcis->   $this->boo           re '://' . $thisPaprot_HOShInfo() . $qs;
-    }
-    public function getUriFophemeAndH($path)
+    public function log($level, $message, array $context = array())
     {
-        return $this->getSR'SERVER_dHttpHost() .rvice = nullfunc_get_args();
-     ('SERVER_POurn $this->gabstget($input, $key
-    public functiose;
-    protectedfault);
-    }
-    public funf::$trusted   {
-        return $t   $response == '\\') {
-                }=->dead's->getQueryString())) {
-        rn $u));
-        rettpHost()
-    {
- viders)) {
-     _PROTO]  $this-->getQueryString())) {
-        blic func));
-        retHEADER_CLIENT_PROl : $qs;
-    }
-    public function isSecure()
-    {
-       if ('http' == $Headers[self::HEADER_CLIENT_PROTO], 'http')) {
-                return 4ublic function ost();
-    }
-    public functioelf::HEADERblic function getRr, $servicrt();
-           elf::HEADER $respon    {
-        return $this['public function resolved($th) {
-  act)
-    {
-    edHeadureturn issetgister($instance = new $Headull) {
-            $dup->cookies) {
-                      $_POST = $this->reques   }
-    public functio     }
-   $thisrs[$key];
-    }
-    publis[count($elements)explode('=', $param, 2);
-   st = $this->headers->get('HOST'))parts[] = isse null)
-    {
-        rdencie  if ($h(Request     public static functio0 || 'https' == $scheme dParameterOverride()
-    {
-    ->server->get('fo()
-     $param[0]) {
-                continue;
-$key)
-    {
-        if (!arraientIps[] = $ip;
-        $ip = $clientIps[0 array_reverse($clientIps) : array(this->headers->gefunction issure($abstract, $concr        }
-        return $this->paif (isset(sePath = $this->prepareBasePath();
-    {
-        return $this->isSecure() protected static $diretp')) {
-                retu    if (!($host = $this->server->get('SERVE;
+        if (is_string($level) && defined(__CLASS__ . '::' . strtoupper($level))) {
+            $level = constant(__CLASS__ . '::' . strtoupper($level));
         }
-        return $this- {
-        lder;
-uPDOIlluminate\Suppor = $this->resolveNonCrt\Contracts\ResponsePreMySqlplace('/(?           }
-            }SQLBooted()
-               }
-            }  regres        throw new \UnexpectedValueExcqlpendern(sprintf('Ugister = $this->prepare;
-            } else {
-           function resolveNonClass(ReflectionParameter $pr)
+        return $this->addRecord($level, $message, $context);
+    }
+    public function debug($message, array $context = array())
     {
-        if ($parameter->isDefaultValected function registerBaseMiingC['schem        reture];
-        if (!isset($thort();
-       eaders->http'        return $this->ge$port == 80;
+        return $this->addRecord(static::DEBUG, $message, $context);
     }
-&& ($is, $deep))) {
-                 returnblicisBooted()
-    {f ('POSthod = 'GET', $parameters = array()$valueSingl $this->headers->get('X-HT       break;
-                           $this->ethod) {
-    tiable.";
-        do{
-        return = static:ethodParfunction ders->get('X-HTTP-MRIDE')) {
-          
-            un   }
-    publp;
- do }
-      lic functiOST')('_methoprefix           = strtoupper($method);
-               method = $this->head$httpMethodParameterOverride) ers[self::HEADER_CLI                $this->m }
-    pubsBootedREQUEST_MET>push('Illuminate\\Clower(current(explode(',       if ($methde(',', lic function $this->method;
-    }
-    public f   }$httpMethodParameterOverride) && (  }
-  $registered) {(static::er($this->request->get('_method', $this->querys->mt(static::= strtoupperc function eturn array(key($definition), curreat]) ? sta
-        }
-        return isset(static::$formats[$format]);
-    }
-    publics->de ($p'path.base']);
-    }
-    ces[Type, 0, $pos);
-        }$mimeType)
+    public function info($message, array $context = array())
     {
-        if (false !== ($pos =);
+        return $this->addRecord(static::INFO, $message, $context);
     }
-   $httpMethodParameterOverride)  $thiType = substr($mimeType, 0, $pos);
-        }
- $this-  if (null === static::$formats) {
-            static::es) {
-         {
-        if (false !== ($pos = strh (static::$formats as $f
-    pubidFile($file)) {
-         ('_meth     ]UESTn forceRegister($provide) {
-          
-    }rdepen) {
-         n isValidFile($file)
+    public function notice($message, array $context = array())
     {
-   ) {
-         estFromFactory($query, $request,ormats) {
-          ethod) {
-      cation/jces[($consoleArgs) {
-            
-    pu->isMachine($        r = 'ht}
-       f ($host $this->_PROTO] && 'https' === $this->headers->eTypes)
+        return $this->addRecord(static::NOTICE, $message, $context);
+    }
+    public function warn($message, array $context = array())
     {
-      ');
-        return !->files = newadride = Reque        }
-
-      ay()    lResHOST')) {
-            if (file_exists(        $this->$httpMethodParameterOverride)      if (ar('_method', 'POS($host = $this->headers->get(self::$trustedHeaders[se'A :' . $p_builbe spec$thislic function setLocale($locale)
-  globalResol!== ($       "dbself::$tor.s->g_method', 'POS}"callback)
+        return $this->addRecord(static::WARNING, $message, $context);
+    }
+    public function warning($message, array $context = array())
     {
-        $this->globalResolvingCa(isset($components['userswit     rmat($this->headefunc_get_args()rame 'mysql':tances[$abstract]) || $s}
-              set(, $hostPatternrn $thpg->defaultLocale;
+        return $this->addRecord(static::WARNING, $message, $context);
     }
-    publicst));
-        }tLocale($locale)
+    public function err($message, array $context = array())
     {
- sqlthisfaultLocale;
+        return $this->addRecord(static::ERROR, $message, $context);
     }
-    publicception(sprin$locale);
-    }
-    public srvction getLocale()
+    public function error($message, array $context = array())
     {
-          public functtLocale($localstract]);
+        return $this->addRecord(static::ERROR, $message, $context);
     }
-    t(self::$trustedHeaders[selUns    $dedtDefault[>locale) {
-        ]rn isset($this->resolved[$abstracnction getCon->get:' . $,
-   ies && self::$tc functi   }
-    s, $i($defaultedHeaders[self= is_bool($this->input($key))= $locale;
-        if (null === $thion.{rn in_a     $this->setPhpDefaultLocale($locale);
-        }
- }
-      this->getMethod(), array('GET', }
-          }
-    public function getDe:' . $  {
-        return $this->defaultLocale;
-    }
-    public function sede($keyValuePai  throw new \LogicException('gale($locale)
+    public function crit($message, array $context = array())
     {
-        $this->setPhpDefaultLocale($this->locale = = $asResource) {
-            $this->content = false;
-            ic function getLocale()
+        return $this->addRecord(static::CRITICAL, $message, $context);
+    }
+    public function critical($message, array $context = array())
     {
-        return null   if (null === $this->content) {
-            $this->content = file_>defaultLocale : $this->locale;
+        return $this->addRecord(static::CRITICAL, $message, $context);
     }
-    public = $asResource) {
-            $this->content = false;
-  hod($method)
+    public function alert($message, array $context = array())
     {
-        return $this->getMethod() === strtoupper($this->c  public futhis->server->get('SCRIPes (nulder;
-uSymfony\
-   onem\Ftracackedsystet = $this->gethe' == $this->headers->get('Pragme') || nguage(ar implements     ray $locales = n  if (isset(ray $locales = nudencies,
+        return $this->addRecord(static::ALERT, $message, $context);
+    }
+    public function emerg($message, array $context = array())
     {
-        $prefabstract])) {
-         clasublicLocale($l
-            $querturn Needs->reboundprotected static $direcks[$abstrOnreturn inces[$abstract];
-        }
-        $concree') || 'no-cacClosurironmen Illuminate\Http\Rehe' == $this->headers->get('PragmCookiironmenhe' == $this->headers->get('Pragma');
+        return $this->addRecord(static::EMERGENCY, $message, $context);
     }
-    public function getPreferredLanRred === tpreferredLanguages as $lanKernel= ($positio    $preferfunctioiddleware       $obje = strpos($languagePath();
-        }
-        return $thism      iceProviders = arrary, protected static $directories = ar = strpos($languageetUri,ges = $t               i,       }uperLang;
-    }
-    public function geurn $this->baseUrl;
-    }
- ge;
-     perLanguage, lace('/:\\d      iages      if (!in ($attributes !== null) blic$preferredLanguag   $respon = strpos($language::MASebouREQUEST$comp getkey));
-    }
-    publi  if (nuheck->rebouGET, $_Pe') || s->re static::nor {
-        if (s') ||     re    th()
+    public function emergency($message, array $context = array())
     {
-       $anguagetion getHoest =e') || {
-        if (null !{
-     ) !== 0;
+        return $this->addRecord(static::EMERGENCY, $message, $context);
+    }
 }
-        anguage   return $this->getSc        $sh   return $r));
-   urn isset($prefes[0] :  if (null !== $this->languages) {
-            return $thisResourclo   {
-    s->headers->get('Acc       returddreach Toguage;
- tion isBuiectedeaders->get('Accept-Langua) || $shared === true;       if (file_exists(unction getLanguages()
-    {ic $registered = false;
-    publ public function geerLanginate\\Session\\SessionManager', 'session.skey)
-      return $this->gerLangfireResolv    }
-    public functio      i$thiss[countD' . $($key, Types)) {
-  tch (BindingResolutionException    }
-       ic $registered = false;
-    publ->boun->languages;
-    
-           $languag    publ
-        if (!$
-        if (null !              }ntIp = $match[1];
-         s) {
-            static::initialtrstr($lang,ray $locales = nu         oviderRepository(n        bstract)
-    {
-   if (co    pGarbset('         if ($       break;
-            dery) ic $registered = false;
-    publiurdedPrrn function ($c, $para?.*rray()) ueResolvingCaU    bstract)
-     = array())
-    {
-   sJson()
-, $keys)      l    conta array_keys(Act);
-        funcur, $this);
-            $this->rebCharsets()
-    ;
-        }
-        return $this->languageper($this->servef ($i == '_' . strt    ret segments()
-    {
-    ocale)HitsLottrue);:$format    return $this->languingCaleturn is->g $this->gstracfet asSd funtion\\Factory', 'view' => 'Illuminat        retueader::fromStri$httpMethodParameterOverride)y, '', 't   sta1          }lromStr'](!$th<ort;
-    }
-ceptableCoound($ablosure)
-    {
-        $resol explode('-', $laguage;
- age'))->aldPreferre   }
-        return $this->languages $this         }
-ll !== $this->languageIsPersdencitFor       }
-        return $this->encodis->headers->get('Acc$class[[self::HEADEtes);$claluminate\\Foundation\\Age'))->alurn false;
-hodPaach utdow       $     ifiler' => }
-   Iings['     $this-ach  public tion (   pth      ['unctioOST') (is_null($directo'/';
-        }
-        switch (str public function ONTENT_LENGTH'))) {
-                $_S       return $this->encodi, 'lpublic ') * 6edHeaders[$keys = $this->server->get('X_ORIGINAL_URrn $this->encodings;
-        }
-        return $this->encodings = arraimeTypes) ? $mi'expire_on_ges[]'] ? 0 :s;
-      nowall(addMinstatices;
-     ORIGINALos($host, ':');
-    }
-    public fuguages) {
-       etect($envs, $args);
-    }
-    RL');
-            $this->server->remove('HTTP_X    pubt('_format', $default);
-        }mlHttpRequest()
-    ));
-    }
-    puhis->method = strtoupper($this-per($thsolved = aemove('IIS_WasUrlRewritten');
-        } elsey $services)'_method', 'POST'          pu               }
-        }
-        if (i                 } else {
-                       $lang .= f ($i == :' . $l_user_func($ca        = $thier::fromSc('UNEe;
-    Accept-Encodiurn ''                 }
-            }
-  ntrolDirective('no-cache') || 'no-cach->get(ng'))->\FileEnvironmenhe' == $this->headers->get('Pragma');
-    }
-    public function getPreferredLanguage(array $loBag=== 0) {
-                $requestUri = substr($rguage(arrtorage\MetauestBag     retument       $obje       if (empty($locale$instancesit;
-     if ('' != s[] = issearray();
-    protected $middlewares = array();
- baoting(functition);
-           ei = $thUri .= '?' . $thisth)   protected $loadedProviders[0]) ?   }
-        }
-   st =instance('requestUrl) {
-            $this->balResoleAndHttpHost) === 0) {
-_PATH_INF $this['events']->until('ills->get(sel$thi        return nderRe
-        reay_values(array_iATH_INFile($kH_INFO');
-           if;
-    edProviuestUri = $eturn $ipAddresses[0];
-    }
-     }
- $key => $value) {
-     oad . strtotr_is($name, gethostnamhas('_tokenhis->getQueryStringthis->megn ge  }
-  }      }
-        retlt = null)
-    {
-       $thiturn true;
-    }
-    protected func $this->serve      }
-            }
- es->all());
-    }
-     PUT'return isset($pfunction setT->isMachine($host))his-ntent) {
-   if (basenament()
-baault = null)
-    {
-       it     $Llderr->gE');
+namespace Psr\Log;
 
-    {
-        bag         $parl = $this-th) [_SELF'
-      $re         }
-            $query = array(), array $reT_NAME')) === $, strtolower($req $thisrver->get('SCRCRIPT_OD', 'GET')his-ypes)) {
-               ? {
-        $tquest;         mentArgument($args))) {
-               $path = $this->se;
-        }
-    }
-    p$file = $this->server->get('Shis->serverstrto$this->server->get('), $force = false)
-    {
-    okies);
-     T => 'X_FORWARDED_PORT');
-    pr$this->s = new ServerBag($server);
-    {{
-        return rtrim(pregs = sub $pos);ublic function mak }
-    publicr->gettring($trray_values($new ParameterBag(KernelIn $instance) use($target, $method) { $pos);
-        }
-    his->share($closurs($this   }
-    }
-   [a-f0-9]{40}unctio   }
-    public s = $this->server->gseUrl && false !=decode($keyValuePair[1]ha1( ($tid(EAD'    {erverr   stom(25x, 'microNAL_U();
-  dHeaders[$key] = $value;
-    }
-unction session()
-    {
-        if RVER_ADDR', '');
-            }
- s     ifexplode('=', $param, 2);
-   e = basename($this      $requestOrder = public  }
-  = $this-              }
-            }
-  protected $middlewares =          ifigthis-ypes)) {
-         $default = null)
-    {
-        redReques$url = $otected nelIn($baseUrl);
-        if (empty     url = $($this->server->get('QUgs = arraurl = $thrse($segs);
-            new ParameterBag(   public quest();
-    }
-    publ       if ($baseUrl && false !== ($prefixename)) {
-            return '';
-      erver->get     if (strlen($t $request, $type = HttpKernelI }
-        if (et('SCRIPT_NAME')) === $filenabstra      }
-            }
- ddB$file Tois->server->get('SCoreach (geFlashth) if (empty($baseUrl)gs = arra $thi& $pos !== 0) {,        $las $parameters;
-      return rtrim($th     $this->server->losure)
-    {
-        $resoleUrl();
-        ifuminate\Support\Contract     $baseUrl = $this->server->get('ORIG_SCRIPT_NAME');
-        } else {
-     putg . $baseUrl;
-                  $file = $this->server->get('SCRIPT_FILENAME', '');
-  ic::$directories {
-           = new ParameterBag((array) json_d('f    .olor' blic funes(arolrn, urldecode($this->pathsponse;$reqnput, $key, $default);
-    ', $();
-        i>getBaseUrl();
-   new  if (null        $basePath =        }
-         if ($plve($this);
-    }
-    protectededRequestUri = substr(function isDeferrgetBaseUrldown');dHeaders[$key] = $value;
-    }
+interface LoggerInterface
+{
+    public function emergency($message, array $context = array());
+    public function alert($message, array $context = array());
+    public function critical($message, array $context = array());
+    public function error($message, array $context = array());
+    public function warning($message, array $context = array());
+    public function notice($message, array $context = array());
+    public function info($message, array $context = array());
+    public function debug($message, array $context = array());
+    public function log($level, $message, array $context = array());
+}
+namespace Monolog\Handler;
 
-    }
-  NTENT_TYPE', 'CONTENT_LENGTH'))) {
-                $_Snction overrirequestUri, st0] === '[') {
-                $Ips[ = implode(',YPE', 'CONTENT_LENGTH'))) {
-        reques';
-        } elseif = implode(', ', $value);
-            } elted ldIn', $bey, array(     foreach ($envl }
-    public   static::$foypes)) {
-         f::$trustVER))?questOrd$requ{
-  :)) {
-      ())) {
-   ts, $consoleArgs = null)
-  static::$formats =estUri, strlen($baseUrl)))) {
-   $iaticT':
-         ('_old_ext/c
-            $reqTH'))) {
-             ext/cstatic function initializeFormats()
+use Monolog\Logger;
+use Monolog\Formatter\FormatterInterface;
+use Monolog\Formatter\LineFormatter;
+abstract class AbstractHandler implements HandlerInterface
+{
+    protected $level = Logger::DEBUG;
+    protected $bubble = true;
+    protected $formatter;
+    protected $processors = array();
+    public function __construct($level = Logger::DEBUG, $bubble = true)
     {
-   = arrlResolvs->set('_format', $thstFormthis->headers->get(seeif (null s($this->session->getName());
-    tic::$fo array('ss[0] == '\\') {
-          
-          = null, array $files providivate funceparerInter  public static function setTre)
- s(arr    ted $>s('Locay\Coms->retrieveItem('server', (('Locale''] =e)) {
-    tect($environments, $consoleArgs = nul
-           return $this->hasSessi['sches'), 'json' =->content) {
-' . $this->g    rameteT_FILENAME' => \\', '/', $bYPE'] =)
-        $this->fireCallbackArray(a
-            
+        $this->setLevel($level);
+        $this->bubble = $bubble;
+    }
+    public function isHandling(array $record)
+    {
+        return $record['level'] >= $this->level;
+    }
+    public function handleBatch(array $records)
+    {
+        foreach ($records as $record) {
+            $this->handle($record);
         }
     }
-  if (0 !== strpos(
-        try {
-  }
-      shri, '?')) {
-   }
-    }
-    pujson($key = nPUT'Old
-         ivate functidecode($string), $prefix)) {
-    tatic:['scheme']) _HOST => 'X_FORWARDED_HO     > array('applirray('application/atom+xml'), 'rss'rete sta  $baseUrl = $this->get = 'hNew
-    ult = nulleUrl();
-        if (null os = strpos($requestUri, '?')     if (null cation/javascript', 'applicakeep strpgp]#', '', strtolower($rell)
-    private functs) {
-ll)
- foreach ((array) $hosts as $host) rray(), array $at{
-           $preferredL$len}}#", $string, $mquery, $requray($mimeTypes);
-    }
-    pub), array $a['schem{
-    $content);
-    }
-           if ($this->isMachine($host))nfo = '/';
-        if ($p("#^(%         $basePath =stUri, '?')) {
-  ishCallb    } else {
-            static::$dir}}#", $string, $match) Request) {
-            '/';
-        }
-           if (!is_null($eUrl();
-        if (null  instance of Sy   static::$directories     foreach (static::$directoriest->all();
-        $_SERVER = $this->slic statarkAsRegistered($provider);
-     tion setTrustedProxies(arublic function getRegistered($}
-        $len = strlen($prefix);   return $this->server->get('$inputt;
-    }
-    public function setR;
-    }
-    protected staat = $format;
-    }
-    public fu readyForRes 'rdf' => array('applquestUri}
-    protected static{
-            if (file_exists(le
-         if (empty($basename) || !strpos(rawurldecode($ {
-        if (ihis->NAME');
-        } else {SELF' $paramtect($environments, $consoleArgs = nuly($objde('=', $param, 2);
-    rameters = a      $requestOrder = prS     $^\\[)?[a-zA-Z0-9-:\\]_]+\\.?/', dirnam '/');
-    }
-    protected funcs, $pr->g        } elseif ($ME');
-        $seg = $segs[$inds
-                $baseUrl =b        es->get($key, $this, $dee$thist;
-    }
-    public function setRis->parametis->seation/xy)) {
-      ->get('CONTENT_TYPE'));
-    }
-    public function senam     if (!$d
+    public function close()
     {
-        $ }
-    public function handle(Sym->server->ge $request, $type = HttpKernelI;
-          $this->parameters) ? $this->files,rameters[$path] : $default;
-        }
-        $th) oot = sub      ++$index;
-            } while    }  clone $this->server;
-        $thi      } el
-        $this->request = new Par
-                if (null !== $cur {
-     '/');
-    }
-    protected function prvalidArgumentException static($que    } ees !);
-      40        return (new static())->dupublic fs->set('_format', $this->rver->get('SCRItions = arrpublienceA    us,en;q=0.5', 'HTTP_ACCEP';
-        }
-   = $char) {
-      tect($environments, $consoleArgs = null)
-'/', trim($file, '/'));
-HEADER_CLIENT_IILENAME'));
-redLanguages, $locales));
-  ? $preferredLan       }
-                if (!is_arry) {
-       e('UNEeAndHttpHost) alidArgumentException(sprintf('Un
-        if (!$preferredLanguagearray $attributes = null, ars($currentKey, $val\InvalidArgumentException(sprintf('   $class = static::nore Illuminate\Foundation;
-
-use Closue') || 'no-cac->get('SCRIPT_NAME'                  if (false !== ($p_INFO')) {
-            $reqng'))->\Null      }
-           retueferredLanguagdencies,               if ('' != if (null allCustomncies($pa once w       }
-                if (triev . strtoentTyp::       throw new \InvalidApublic function isMethodSafe()
-    {
- nt(),       rmat = $this->getFormat($tyrver-Host();
-    }
-    publir->get(.      OST'$forentKey .= $char;
- )
-    {
-        $scheme = $this->gnction gach  function set($key, $vaquestUri) >=  $this->parameters[$key] = $v= $this->h    }
-        return $thformed path.  $requestUblic function h (!($host = $tue;
-    questUri)   }
-        return $value;
-    }
-    pFilts($key, $this->parameteRIDE')) {
-          Nativts($key, s) {
-            static::initializeFoy, $default, $iable.";
-            thr $this->parameters[$key] = $vers, ar      unset($this->parameters[$key]);
-   eg_r public function getAlpha($ers, ar) use($a$deep));
-    }
-    public function getth) {
-  s($key, $this->parameterers[self::HEADER_CLI
-     uncti'/json');
-    }
-    pub     throw new ->parameters[$key] = $v $reqace('/[^[:alnum:]]/', '', $this->get($key, , '', $t public functions && self::$tr      $this[ind($abstract, $extender, $th '', $this->filter(     return str_replace(array('-', '->parameters[$key] = $valace('/(?ace('/[^[:alnum:]]/', '', st = db']e(urldecode($keyValuePair[0]));
-      turn $value;
-    }
-    pupc function set($key, $value)
-  ethod', $this-is->    d('apc    }
-            return $object;nctionMemrPathd  if (!is_array($options) && $options) {
-            $om  }
-    ons = array('flags' => $options);
-     WinrPath  if (!is_array($options) && $options) {
-            $owARRAY;
-ons = array('flags' => $options);
-     Rediss($key, $this->parameteret('SCRIPT_ptions) {
-       ng'))->a'r
-   Types)) {
-  ArrayItelias($is->ders;
-       QUERY_QUEST_METHOD', 'GE= null, $deep = false, $filter = FIypes)) {
-                formed path. ArrayIte$deep));
-    }
-    public function get          $InvalidArgumentException(sprintf('Malformed path. or($this->parameters);
-   ;
-        }
-        return $value;
-    }
-    pr', 'name', 'size', '::make($abstract,    $r}
-    public function remove($key)
-    {
-        unset($this func_         public function getAlpha($kPath($estUri = InvalidA        $rExceptionServiceProvider($this)); Symfony\Component\Htn set($key, $value)
-    {
-        $this->parameters[$key] = $value;
-    ponent\HttpFoundation\written');
-        } else->encodi- 1];
-        } elseif (!($host = $this->hear->get())) {
-            if (!($host tp')) {
-    if (!is_array($options) && $options->parameters[$key] = $v    public fun          if (!($host = $this->s       'SERVER_NAME'))) {
-                $host = leInformation($v, 0, $pos);
-    this->server->get('SCRIPT_NAME[0];
-        }
- Interface, Termif (null !== $currentKey
-        return $thisc  throw new eBindings($request ?: $this-:' . $ll === $this->baseUrl) {
-            $this->baseU       }
-            }
-        }
-       null)
-    {
-Interfacef UploadedFile.');
-        protected static $dire    $this->parp]#', '', strtolower($req' . $port== selfROTO], 'http')) {
-  = array_keys($elf::$trustedProxies) {
-          if (null === $this->rile['error']) {
-       $this->server->garray $f once w($bound) {
-            $this->reboror']) {
-       tDigits($key, $default = '', $deep = f   $this->para::make($abstract,eturn in_nction funuceptionH once wh. '], $fip = clone $$port == 80 || 'h      if ($fil     if (null === $this->requestUor($this      throw new \InvalidA_CLIENT_PROTO]))) {
-'] = $components['passtion isL
-    {
-        return $this->$query !==ction isMethod($method)
-    {
-        return $this->getMet], $fis->headers->aramed() === surn isset($this->resolved[$abstrac       throw new \InvalidArgumentException(sprintf('Mal 'convertFileInformatioon getAlphapath. Unexpected "[" at posit       }n in_arrperLanguas as $key => $alias) {
- data['name'])) {
-            rrequest)($coLIENT_PROTO => 'X_FORWARDED_PROTO', self::HEADER_CLIE], $fi:^\\[)?[a-zA-Z0-9-:\\]_]+\\.?/',{
-     ) {
-            throw new \UnexpectedValueException(sprintf('Invalid Host "%s"', $host));
-        }
-        if (tUri = $$trustedHostPatterns) > 0) {
-            if (in_array($reach ($eferredLanguages = array();
-        foreach ($etMethodach Ja
-        $instances       's->make( $instances nction ict], $this if ('' != eric( return (array) $df (null === $this->mation/x-xml')meters = a  $m) use($ array('CONarameterBag
-nique(array_len($req    unse$locales[0];
-    }
-    s->mid($class>getClovate function    And   {
-   
-        forearldecode($trpublic ay())
-     }
-REWRITNAL_UR +0 === strpRL');
-           $this->booestUrirray();
-         ifster(arrayred = fal }
-   T_MD5' => t }
-    public function keys()
-  eay $files();
-       rs = array('CONTENT_LENGTH' => true, 'CONTENT_MD5' => true, 'CONTENT_TYPE' => NTENT_TYPE'])) s = array();
-      262800eaders =lseif (isset($contentHeaders[$key])) {
-                $headestr($requestrs = array('CONTENT_LENGTH'_AUTH_USER'])) {
-            $headers['PHPGTH' =-ER'] = $this->parameter   $requestUri = substr($requestpace Il   if (!self::$trustedHeade) {
-            tion g) {
-            return $match[0];
- THORIZATIONestUri, strlen($baseUrl)))) {
-            return '/';
-   tion gstatic function initializeFormats()
-    {
-   
-     Key = null;
-        n fattpHoy\Component)efault;
-          rn in_array(strtoloach ct,         $authorizatist($request));
-    }
-    public ECT_HTTP_atch('{((?:\\d+\\.){3}\\d+)\\:\\d+'head  $tRIZATION'];
-            }
- ldecode($truncattion g[!== $au  return '';
-    each ($ fireResolvingCallbacks($abs
-      ');
-        return !is->make($par
-       trrpos($host, ':');s = $this->server->gerameters as $key => $value) {  }
-    public function seton getRsolved = a } elseif (is_AUTH_PW'])           $authorizationHeader = n0) {
-                      list($headers['PHP_AUTH_USEs->middPW']) = $exp             ect, $this);e {
-            $arn self::$trustedHeaders[$key];
-    }
-    pumespace Ikey, 5:^\\[)?[a-zA-Z0-9-:\\]_]+\\.?/',tion g, 'size' => $data['size'][$key]));
-        }use Illuminancryolved  }
-    \Component\HttpFoun }
-          reypn resolvedreferredLanguages = array();
-        foreach ($preferredLanguages as $language) {
-            $extendedPreferredLanguages[] = $language;
-            if (false !== ($position = strpos($language, '_')))this-         $superLanguage = substr($language, 0, $position);
-          e   }
-     ge, $preferredLanguages)) {
-                    $extendedP    }
-          retu       }
-            }
-        }
-        $preferre     retuod(),    return $heredLanguages, $locales));
-        return isset($preferredLanguages[0]) ? $preferredLanguages[0] : $locales[0];
-    }
-    c::$directorieaders =on getAlpha$this->lanAuth\\Auy => $v        meters');
-
-     nvironments);
-    }
-    protected fu=> $ic $registered = false;
-    publ {
-       URI');
-         sponsePrepare{
-            $ketry5', 'HTTP_ACCEPT_CHARSI');
-            {
-          $this->set(key, 5)]csLocal()
-    {
-   0] : $(aders['PHP_AUTH_ $0.5', 'HTTP_ACCEPT_CHARS_keys($this->headers))) + pper($request->roxies()
-    {
-        return spublic function  public function __toString()
-ntent = 'his->p  return $prefix;
-       ent) {
-  is->paabstract]s->set( $provi .= spriolved = aaders = a{$max}s %", $name    }
-    public function __toString()
-  }
-    }
-   s as $value) {
-       $s->set( getHeaders()
-    ders) {
-      ECT_HTTn __construct(array $parameters = return $tlf::createRequeslue);
-            }
-
-        try {
-           $index = eturn $t (count($exploded) == 2) {
-    key => $(AcceptHeader::fro(!$this->headers) {
-        eRequestUri()
-   move('UNEhost', 'HTTP_USE{
-            $keyaders =      returnlue);
-     key => $vcay $hy\CompsLocal()
-    {
- pareRequestUri()
-    {
-       1;
-     u{
-      ;
-   as $key =  $this['events']->fire($class                 if (    }
-    protected, $defaulkey, 5 t = n'');
-        $server['QUERY_ $requestUri->set(
         
-       ->set(E>headse Sytion (             return    {
-     retuisS
     }
-;
-      tracunset($, 'size' => $data['size'][$key]));
+    public function pushProcessor($callback)
+    {
+        if (!is_callable($callback)) {
+            throw new \InvalidArgumentException('Processors must be valid callables (callback or object with an __invoke method), ' . var_export($callback, true) . ' given');
         }
-        return $files;
+        array_unshift($this->processors, $callback);
+        return $this;
     }
-}
-na');
-    }
-    public function getPosition = strpos($language, '_')))pace          $superLanguage = substr($language, 0, $position);
-                 rn $headers;
-    }
-}
-namespace Symfony\Component\HttpFoundatny\Componfunction        }
-            }
+    public function popProcessor()
+    {
+        if (!$this->processors) {
+            throw new \LogicException('You tried to pop from an empty processor stack.');
         }
-        $preferreurn '';
-ded = expsArray(array('error' => $data));
-        return isset($preferredLanguages[0]) ? $preferredLanguages[0] : $locales[0];
+        return array_shift($this->processors);
     }
-    pe'))->all();
-        $this->languages = array();
-        foreach {
-        if (i          $snHeader;
-      ion k .= spriared'])) {
+    public function setFormatter(FormatterInterface $formatter)
+    {
+        $this->formatter = $formatter;
+        return $this;
+    }
+    public function getFormatter()
+    {
+        if (!$this->formatter) {
+            $this->formatter = $this->getDefaultFormatter();
+        }
+        return $this->formatter;
+    }
+    public function setLevel($level)
+    {
+        $this->level = Logger::toMonologLevel($level);
+        return $this;
+    }
+    public function getLevel()
+    {
+        return $this->level;
+    }
+    public function setBubble($bubble)
+    {
+        $this->bubble = $bubble;
+        return $this;
+    }
+    public function getBubble()
+    {
+        return $this->bubble;
+    }
+    public function __destruct()
+    {
+        try {
+            $this->close();
+        } catch (\Exception $e) {
             
-    public function g        }
-   e)
-    {
-        $key = strtr(strtolow$dependency)) {
         }
-             }
-        return $f     it $thre\Utilic fingolowst;
-useturn array_key_exists(strtr(strtolower}
-   R     ce Symfo    }
-           if ('' !=  request.  public funipquery-MCRYPT_RIJNDAEL_128viceProviders();
-  dTTP_>get($kMODE_CBC        }
-        locke(ex6s->baseUrl) {
-            $this->banents['port'])) {
-  pos($aprovid= $_SERVER request.');
-        }
-        key => $veturn false;
     }
-   iv = mng()
-_nction_iv& $pos !== 0vS  $th   $pathInfoon conizl($key)) {
-     applicatuse 64;
-        $thispadAndM {
-         x = vtic::$requestCa
-        reh     ntrolt = null)
-    {iv === $defypes)) {
-         t = null)
-    null;
-      compact('iv    rInte    prc) {
-_PROTO] && 'https' === $this->hea if (null === ($value = $content);
-    }
-    public st->gead>boo(       $las127.0.0          $header = arrakey => $values)e, $th+ 1;
-    rray('appli+ 1;
-    publalue =::requestClass(), $method), $p     }
-['sharediable.";
-         ($parameull !== $bte\CP= $valis);
-        }
-    }e $default = nul_null($con($par[DATE_RFponent\HttpF    return $dolHeader());
-    ivmponent\HttpFoundati         $lasault = nripble (%s)get('ORIng()
-aders['=== ($value =     {
-        $scheme = $this->geontrol);
-    }
-    publicfalse;
-    publarray_map('strlen'}
-        retu        $
-    }
-    public function addCacheControlDirective($key,sort($this->h'config']- foreach ($this->he    }
-    aders['PHP_AUTH_($      Mess = $t['path'] = '/';
-        }
-        switch (strthis->set('Cache-ContcheControl[$key] = $value;null;_null($sCacheControlDirective    }
-        $thi. $que = $valu $content ame = b->set('Cache-Contey)
+    protected function getDefaultFormatter()
     {
-        unset($this->cacheControl'public      lic function setLocale($loc, $defaublic Mac    call_user_func($callbaeturn count($this->headers);MAC i    blic lic function setLocale(        re($parstrtolower($key), '_', '-');
-  ader()
-  is->insta;
+        return new LineFormatter();
     }
-    public fucheCotic $dirt_args()'openssl;
-     _pseudo_bytethis->getQueryStrind)
-    {
-  Rbstrme->headers);OpenSSL $dataanguais  as i{
-            ret)) {
-          [$ke  {
- unction con if (!ixtB    (16;
-    }
-    palcMkey))    _hmac('sha256    $pathI      rective($key)each ($par  }
-    pu }
-     ted function loadDeferrer($key), '_::equals(
-            }
-      ());
-    22, de('    protectetabasealuealue))) {
-            throw new         y_exists($key, $this->headers))
-            }
-      iv));
-addCacheContro   public functio
-    {
-        $resolv, $this-eturn false;
-    }
-   palue;
-          $k-urrelDefarInterf%1])] = isset(          $headersapplic '/');
-epeat(ch($thiHostPat$this->getUrlencodedPrefix($reques($key, $this-eControl[strtolower($match[1ordy\Compo[($larraytch[3]) ? $mat) - \Illuminate\\ {
-        if (le (%sI = sub}
-   }
-    publ?     tr=== ($valeademfon-   retfunction duplicate(arr        throw new \RuaBag;
-interface SessionIn }
-    public staeaderParametch[3]) ? $matcion stferredServices[$abace
+}
+namespace Monolog\Handler;
+
+abstract class AbstractProcessingHandler extends AbstractHandler
 {
-    publion getNam
-    rue);
-         public func-1     return $cacheControl;
-    }
-}
-name public functionuest; $pos);
-        }
-        eaders[t = co||rameetDef    ($key)
-nction has($name);}
-    punction has($name); arra    {
-        if (false !== ($pos =
-    pubntentTypes) {
-         = arrautiniv_s           
-    public funpubl    {
-        if (false !== ($pos = getDate($ke               $par    ret('>get($kDEV_URANDOMarray(), array $files = a function isStarte function setLocale($loc   public function iStarted();
-    public function registerBagSessionBagInterface $bag);mt_s  sta);
-        }
-     >get($keANDasSession()) {
-            throw n);
-        unset($this->headers[$key]);
-        if ('cache-control' === $kecoun, $th(ue, $thde('=', $param, 2);
-    , $this-ue, $thrldecode($truncat, 'RouB   $   pub initialize(array &$array);
-   HttpHoes);
-(), array $request = arublic te;
-
- clear();
-}
-namespace Symfony\Component\HttpFou->retrieveItem('headers'ymfony\Comp;
-        }
-    }
-    p   $key  public function replace(array $attributes);
-    publthis->server->get('SCRIPT_NAME'Facad    e SymfoLog
-        ($name        if ('' !=eturn php_sapi_name($nameRequesset(       foreach ($heade'logon\Sessiomake($abstract, $parameLo
+    public function handle(array $record)
     {
- Monologony\osition %      }
-        $dependencies = $conalue);
-  yArgument($dependencies, $parameters);
-        $instances = $thisay();
-    protect$dependencies, $parameters);
-      lundatedProvi);
-  r     oundat $qs;
-        ney)
-r = array(),   }
-        return $values) {
-    $this->ion r'] !=ndat, $request, $attrirn $refle('Psr\ony\
-    g) === 0) {
-instances);
+        if (!$this->isHandling($record)) {
+            return false;
+        }
+        $record = $this->processRecord($record);
+        $record['formatted'] = $this->getFormatter()->format($record);
+        $this->write($record);
+        return false === $this->bubble;
     }
-    protected functionarameton r]ct('cla\Http)) {
-        $scheme && $port == 80 || 'h->name;
-. throaders->get('CONTENT = count($codes); $i <$this->name = $n
-        $this->stor     } catch (\Exception $e)      $dependencies[] = $primitives[$pa   {
- Key;
-    }
-    public funct $first ? $default : array($defany\Compone      }
-     use Illuminate\Container\Containernt\HttpF   $currStreaE')) ===y_exists($name    puion    publoundation\Sent\HttpF      ter\Lin               }ts($name, $this-ErrorLogbutes);
-    }
-    pub   $currRounsengeg_rbutes);
-    }erviceProvider;
-use Illuminate\Config\FileEnvironmentVariablesLoader;
-use Symfony\Component\HttpKerne>keyPar $att        if ('' != m  publ            $depenevss = $class;'reshReKeyinfoeKeynotinctio'warpExcplacee, $onsoleit
-   placalery => e = 'hnc          $instances tatic::$requestCed static $directories = aron get($name, {
-      ,$parameter)     foreachrotected function prepareBaseU
-      oundat       returray_map(array(lias($key, $alias);
-        $host, ']is->query->get($key, $this,ders->get('X_ORIGINAL_URL');
-             publi$clientIps[$key]);
+    protected abstract function write(array $record);
+    protected function processRecord(array $record)
+    {
+        if ($this->processors) {
+            foreach ($this->processors as $processor) {
+                $record = call_user_func($processor, $record);
             }
-   ireAppCallbackrete = null  static::initializ   }
-        retIterat    publ  }
-        reeControl($values[0]);
-     atch('{((?:\\d+\\.){3}\\d+)\\:\\ remove($  }
-    public function getClientIp()
-    {
-        usreg_rtClosure($ttriblass
-    pvate $storageKey;
-       ->server->geLtribSymfv$this->registction remove($odedPaname', 'set('SCRIPT  {
-  ttributes);r()
-    {
-    kies = array(on(sprintf('    retur'cli-server'okies)t\HttpFounray $server = array(), $contenuseDailyerator()
-    {da)
-   ic fun       return new \ArrayIterator($this->attributes);
+        }
+        return $record;
     }
-    public function count()
-    {
-        return count($tbutes[$name] : $defSessionBagInt   }
 }
-namespace Symfony\Component\HttpFoundation\Session\Storage;
+namespace Monolog\Handler;
 
-use Symfony\Component\HttpFoundatiome, $thi  }
-       returnlesAr     uste = me, $this->attr::OPERATING_SYSTEM new \ArrayIterator($this->attributes);
-    }
-    public function count()
-    {
-        return count($tme, $this->attr    ivate $la   }
-}
-namespace Symfony\Component\HttpFoundation\Session\Storage;
-
-use Symfony\Compo>files;
-        $this-ion\Storage;
-
-use->query : $this->request;
-        retur>serverGTH' = Closure;
-use ArrayAccess;
-use Reflebutes);
-    }
-           if ($thison getDe}
-     {
-        return $th
-    pfaultLocale;
-    }
-    puon get($name,::DEBUGale($locale)
-    {
- ic fuf ($timeStamp - $array[self::UPDATED] >=INFOale($locale)
-    {
- ion repf ($timeStamp - $array[self::UPDATED] >=NOTICEale($locale)
-    {
- e(array f ($timeStamp - $array[self::UPDATED] >=WARNINis->updateThreshold) tributf ($timeStamp - $array[self::UPDATED] >=ERRORale($locale)
-    {
- 
-    {
-  f ($timeStamp - $array[self::UPDATED] >=CRITICALale($locale)
-    {
-    $thf ($timeStamp - $array[self::UPDATED] >=ALER flashEmeta[self::LIFEattribute;
-    }
-    public function stampNew($lifMERGENCYpublic functio     }
-faultLocale;
-    }_TYPE'));
-    }
-    public function s
-    }
- e($n
-claslic function setLoc    return $parameter->getDeforeach (self::$fileKeys as $k) {
-_FILE == $file['err=> 'Illuminate\\Session\\Sh('#[^a-zA-Z0-9._-]#', $value      
-           hasaramebee;
-   lic function setLocale(xists($name, $thilass Envi'it, $param.   {
-  Repository', 'config' => 'Ilon handle(Symf public $request, $type = HttpKernelIn       retu_DIGEST'] = $authorizatio
-        return self::$httpMethodParamexists($name, $thi            } elseif (']' === $c= null, $deep = false)
-    {
-        if ($this !== ($xists($name, $this->attributes)) {
-  ie($key)
-    {
-        returnLognull($t
-clas   privateD'));
-    }
-texcss'blic function getContent($aurn $this->name;
-    }
-    public functireated($lifetime = n fir   {
-        $timeateFromFo
-clas    prageKe
-     dex =ve('IIS_W     $this->attributes =& $attri     i new \ArrayIterator($thisAUTHORIZATION'];
-            }
-(preg_match('{((?:\\d+\\.){3}\\d+)\\:\\d+}}
-    st, $attslirequ   $authorizatbstrER_CLIENT_IP])));
-        $clientIps[] = $ip;
-        $ip = $clientIps[0];
-        foreach ($csByArgumtribu  if (null === $currentKverBagon share(Closure $closupublic function zationHeader) {
-                i private $qu  $t      return $thiss::checkIp($clientIp, e
+use Monolog\Logger;
+class StreamHandler extends AbstractProcessingHandler
 {
-    const MASTER_REQU'add   } else {
- catch = true);
-}
-name        }
-        name];
-            unset($thition isMethod($method)
+    protected $stream;
+    protected $url;
+    private $errorMessage;
+    protected $filePermission;
+    protected $useLocking;
+    public function __construct($stream, $level = Logger::DEBUG, $bubble = true, $filePermission = null, $useLocking = false)
     {
-  Badon getsten resolved($on geter($;
-
-use ] doeme;
-  aseMiurn isset($this->resolved[$abstrac   $value = arrayt('concrete', 'shared');
-       , $concrete = null  static::initializname]);
-        }
-        return $retval;
-  ;
-    }
-    public fuvar_ex  $dr()
-    {
-        }
-        $thitern));
-        }
-    public tions = arronst VERSION = '4else {
-                $parts = exploisset($parts[1       return $iutes[$parts[0]] = isset($parts[1]) && strlen' => 'en-us,en;q=0.5', 'HTTP_ACCEPT_CHA  $parts = explode('=', $bit);
-          is->charsets     $attributes[$parw new \InvalidArgumentExcepti:CREATEComponent\HttpF   $currpHost) === 0) {
-      ts($name, $this->attributes);
-    }ey;
-   }    public funclity : '');
-  public function resolvedag implemen      $this->ba    public funcabstraciders( $thie(ex0rder) {iders(= $t = 2e) {
-         eated(   r5) {
-         eturn $ = 3e) {
-         fetim = 4e) {
-         lic func = 5e) {
-         
-     }, ('/[,;=]/', $vEATED];
-  = 6array_keys($thiPIe(exequestClass, 'createFromttributes;
-    100pace  $thi', retpace = $talue5
-    {eated(',%s="pace eturn $',me, pace fetim',, arpace lic func   } $this-
-    ',));
-n $thiATED];
- Request $request = protect9._-zo\Eves->server->get('QUERY_STRING')) {
-  lse {
-  set($keray();
-    prn isse set($key, $values, $replace = true= $path[$i];       $th {
-        iis->instlity;
-    0;
-    private $attributefilename = basename($this->server->get('SCRlues)     $this->qu'Session storn $this->quuality;
-        rtUri = $requestUri;
-        if (false !== ($pos = strpos($requestUri, '?'))) {
-            $  {
-        eturn $requestUri;
-    }
-    return array_keys(uh'])fs->cacheC     $thue instanceof UploadedFile) {
-         pop'/', trim($file, '/'));
-RIPT_NAME');
-    $th 0, $pos);
-        if (!arr
-               You  }
-ed tonull {
-  y($q->booes[0]) ?   }ck       foreach ($this->cacheCoemValue
-    }
-    public fu                   throw new \Inng'))->:^\\[)?[a-zA-Z0-9-:\\]_]+\\.?/',     $this->quc function hasAttribute($nturn issetes as $key => $alias) {
-     ) {
-(Requeste;
-         0, $pos);
-        if (!array_key_exists($root, $thisturn issestLocale($   }
- (Requestsax = c($co orquery, 'egista   }
-nvoke '&');
-TP_X .ode('=', $bits as $ke$prefix, '' giv{
-        ceof Closure;
-    }
-]);
-    }
-    peturn $thimeStamp = time();
-        $this->meta[sepopturn isset(       return isset($this->eturn $thies[$name]) ? $this->attributes[$name] : $default;
-    }
-    public functioeturn $thtributes()
-    {
-        return $this->attributes;
-         }
-    tch = true)
-    {
-        $respoturn $thiion session()
-    {
-        if (! }
-    public function getIndex()
-  addqs =ion;ity = 1.0;
-    private $index = 0;
-    private $attributes = ($this->attributes[$name]) ? $th
-        ifng'))->at($this->attribute'ph prostderutesed $meth $thigetContent() can only rn $it $regispublic func);
-  ract) }
-    public funcattribuiddlewaresRVER;
-        if ('cli-ser     $thin __construcisset($t';
-                }ion countisng'))ared);
-     $thisces()
-
-}
-namelse {
-              ms);
-    }
-  rray(), array tract)
-    {
-        return $concrete  if (str_is($    {    ($this->ite->path());
-        return array_values(array_filter(   return public f', 'url' => 'Illuminate\\public fount($trn $}
-   Zone(base_     }
-_public f    })_AUT'UTC          $lang =       } rettes;
-    }alue = $, fa= $_SERVER0;
-    prlue;
-         fe;
-   P_X_et($value)
-        {
-  _is->falue)
-    turn $'chann($value)ilename = asUratIGINAL, fa$this;
-  p;
-    }
-    public U.uRE))printf('%.6F',       $truncatedE)));
-    m;
-       eaderllumic f => 'HTTP/;
-       is->
-   $itemencodedPrefix($str {
-        if (ieturn $thisng [     $ite) {
-            $th  retur = count($codes)     $ite = ar ret'')) {
-              while= array();
-    attribut[($this->ite]_IP])$loca(Accepd) {
-            uasort($th$this->langu sort) {
-            $ms);
-    }    return f segment($index, $default = null)
-    {
-        raddDeshRstorageKeprivate $index = 0;
-    private $attributetender = $this->g   retu));
-    }
-    1.0;
-    prattern)
-;
-        }
-    }
-    public fdd              return $a->getIndex() > $b->getIndex() ? 1 : -1;
-                }
-      = $t     return $qA > $qB ? -1 : 1;
-            });
-    Non re    $this->sorted = true;
-        }
-    }
-}
-namespace Symfony\Component\Debug;
-
-useeated(     return $qA > $qB ? -1 : 1;
-            });
-    W(array    $this->sorted = true;
-        }
-    }
-}
-namespace Symfony\Component\Debug;
-
-useeturn $     return $qA > $qB ? -1 : 1;
-            });
-    me, $    $this->sorted = true;
-        }
-    }
-}
-namespace Symfony\Component\Debug;
-
-usefetim     return $qA > $qB ? -1 : 1;
-            });
-    C    {
-     $this->sorted = true;
-        }
-    }
-}
-namespace Symfony\Component\Debug;
-
-uselic func     return $qA > $qB ? -1 : 1;
-            });
-    A  $t    $this->sorted = true;
-        }
-    }
-}
-namespace Symfony\Component\Debug;
-
-use
-    h;
-    public function __construct($debug = true, $chattributt = 'UTF-8')
-    {
-        $this->debug = $debug;
-        $this->charset = $charset;ATED];
-      return $qA > $qB ? -1 : 1;
-        eturn php_sapi_name);
-  ers->remove('X_ORIGINAL_URL');
-ovideed $methoEG_SPLI  return $old;
-    }
-    public function haimplode(',',    }
-    public function cookie($kEG_SPL[lSafeHders->get('CONTENT_TYPE'));
-   }
-    public function s);
-   " func
-class. '"            ret,atio    rof:priva   }
-    , est, $attstan       if (null =   unset($server['HTTPS']);
- his->failSafeHandle($ex  return $old;
-    }
-    public funtoon get($->meta[self::UPDATED];
-    key]);
-    }
-   imeSta&&');
-    (__CLASS__, $coontai   puupp   tr    {
-        return iit($requeions t0])) {
-            ob_start(array($thispublic function __set($key, $clas');
-        $requestOrder = prpublic fuMemoryException) {
-        return $this {
-        returERVER;
-        if ('cli-ser    {
-       isset($this->items[$value]);
-    }
-    public fu $a->getQuality();
-     rtrim($baseUrl, '/');tedProxies()
-    {
-        return self::$trustedProxies;
-    }
-    p];
-  ity = 1.0;
-    private $index = 0;
-    private $attributes = arisset($this->caughtBuffer[0])) {
-            ob_start(array($this, 'cleanOutput');
-class M        echo $this->caughtBuffer;
-            $caughtLength = ob_get_length                 private function $qA > $qB ? -1 : 1;
-            });
- reshR    $this->sorted = true;
-        }
-    }
-}
-namespace Symfony\Component\Debug;
-
-use          return $qA > $qB ? -1 : 1;
-            });
- ic f    $this->sorted = true;
-        }
-    }
-}
-namespace Symfony\Component\Debug;
-
-use Symfony\Component\HttpFoundation\Response;
-use Symfoion reent\Debug\Exception\FlattenException;
-use Symfony\Component\Debug\Exception\OutOfMemoryException;
-class ExceptionHandler
-{
-    private $dee(arrivate $charset;
-    private $handler;
-    private $caughtBuffer;
-    private $caughtLength;
-    public function __construct($debug = true,e(arrayrivate $charset;
-    private $handler;
-    private $caughtBuffer;
-    private $caughtLength;
-    public function __construct($debug = true,eret = 'UTF-8')
-    {
-        $this->debug = $debug;
-        $this->charset = $charset;
-    }
-    public static function register($debug = ttribut = 'UTF-8')
-    {
-        $this->debug = $debug;
-        $this->charset = $charset;
-    }
-    public static function register($debug = t
-           $handler = new static($debug);
-        set_exception_handler(array($handler, 'handle'));
-        return $handler;
-    }
-    public f
-    {
-         $handler = new static($debug);
-        set_exception_handler(array($handler, 'handle'));
-        return $handler;
-    }
-    public fuion setHandler($handler)
-    {
-        if (null !== $handler && !is_callable($handler)) {
-            throw new \LogicException('The exceptioreatest be a valid PHP callable.');
-        }
-        $old = $this->handler;
-        $this->handler = $handler;
-        return $old;
-                  r must be a valid PHP callable.');
-        }
-        $old = $this->handler;
-        $this->handler = $handler;
-        returnmake($abstra '');
- lf::$trustedH';', array_map(functio $position + 1;
-                    $class = $this->abbrClassrn $headers;
-    }
-}
-n        $content = '';
-        if ($this-rn $headers;
-    }
-}
-nor could not be found.';
-                brern $headers;
-    }
-}
-n->getStylesheet($exception)), $exception-rn $headers;
-    }
-}
-nheet($exception));
-    }
-    public functiorn $headers;
-    }
-}
-n    header(sprintf('HTTP/1.0 %s', $exceptirn $headers;
-    }
-}
-ntanceof FlattenException) {
-            keys($file);
-                  $this->sendPhpResponse($exceptiorn $headers;
-    }
-}
-n
-    private function failSafeHandle(\Exception getPathInfo()  $string = $thComponent\HttpFoundation\Seult = null)
-    {
-    reture . ($this->quality < 1ll)
-    {
-        return Interface, TermAnterfacng'))->         $supHost) === 0) {
-        if ('' != 
-class MATED] >= $this->upd.= '?' . $thubest $rllbacks = array();
-  verBageturn $heality = $quality;
-   l === $this->baseUrl) {
-            $this->ba{
-                   ncti = str_repla    public function offstion ha  }
-    public function cintf(' inrintf('       }
-        $this->caughtBuffer = unction n sortact])) {
-            $thlse {[ser_fun] >nction ($();
-        }
-        $this->caugattribBract]     } else {tected $parameters;
-    pub;
-     ys) ? $ sortpos = strpos($requestUri, $b\Exceptio  foreach ($attributes as $name => $vages[]       $this->add         $this->quality = (double) $value;
+        parent::__construct($level, $bubble);
+        if (is_resource($stream)) {
+            $this->stream = $stream;
+        } elseif (is_string($stream)) {
+            $this->url = $stream;
         } else {
-            $this->attributes[$name] = (string) $value;
+            throw new \InvalidArgumentException('A stream must either be a resource or a string.');
+        }
+        $this->filePermission = $filePermission;
+        $this->useLocking = $useLocking;
+    }
+    public function close()
+    {
+        if (is_resource($this->stream)) {
+            fclose($this->stream);
+        }
+        $this->stream = null;
+    }
+    protected function write(array $record)
+    {
+        if (!is_resource($this->stream)) {
+            if (!$this->url) {
+                throw new \LogicException('Missing stream url, the stream can not be opened. This may be caused by a premature call to close().');
+            }
+            $this->errorMessage = null;
+            set_error_handler(array($this, 'customErrorHandler'));
+            $this->stream = fopen($this->url, 'a');
+            if ($this->filePermission !== null) {
+                @chmod($this->url, $this->filePermission);
+            }
+            restore_error_handler();
+            if (!is_resource($this->stream)) {
+                $this->stream = null;
+                throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: ' . $this->errorMessage, $this->url));
+            }
+        }
+        if ($this->useLocking) {
+            flock($this->stream, LOCK_EX);
+        }
+        fwrite($this->stream, (string) $record['formatted']);
+        if ($this->useLocking) {
+            flock($this->stream, LOCK_UN);
+        }
+    }
+    private function customErrorHandler($code, $msg)
+    {
+        $this->errorMessage = preg_replace('{^fopen\\(.*?\\): }', '', $msg);
+    }
+}
+namespace Monolog\Handler;
+
+use Monolog\Logger;
+class RotatingFileHandler extends StreamHandler
+{
+    protected $filename;
+    protected $maxFiles;
+    protected $mustRotate;
+    protected $nextRotation;
+    protected $filenameFormat;
+    protected $dateFormat;
+    public function __construct($filename, $maxFiles = 0, $level = Logger::DEBUG, $bubble = true, $filePermission = null, $useLocking = false)
+    {
+        $this->filename = $filename;
+        $this->maxFiles = (int) $maxFiles;
+        $this->nextRotation = new \DateTime('tomorrow');
+        $this->filenameFormat = '{filename}-{date}';
+        $this->dateFormat = 'Y-m-d';
+        parent::__construct($this->getTimedFilename(), $level, $bubble, $filePermission, $useLocking);
+    }
+    public function close()
+    {
+        parent::close();
+        if (true === $this->mustRotate) {
+            $this->rotate();
+        }
+    }
+    public function setFilenameFormat($filenameFormat, $dateFormat)
+    {
+        $this->filenameFormat = $filenameFormat;
+        $this->dateFormat = $dateFormat;
+        $this->url = $this->getTimedFilename();
+        $this->close();
+    }
+    protected function write(array $record)
+    {
+        if (null === $this->mustRotate) {
+            $this->mustRotate = !file_exists($this->url);
+        }
+        if ($this->nextRotation < $record['datetime']) {
+            $this->mustRotate = true;
+            $this->close();
+        }
+        parent::write($record);
+    }
+    protected function rotate()
+    {
+        $this->url = $this->getTimedFilename();
+        $this->nextRotation = new \DateTime('tomorrow');
+        if (0 === $this->maxFiles) {
+            return;
+        }
+        $logFiles = glob($this->getGlobPattern());
+        if ($this->maxFiles >= count($logFiles)) {
+            return;
+        }
+        usort($logFiles, function ($a, $b) {
+            return strcmp($b, $a);
+        });
+        foreach (array_slice($logFiles, $this->maxFiles) as $file) {
+            if (is_writable($file)) {
+                unlink($file);
+            }
+        }
+    }
+    protected function getTimedFilename()
+    {
+        $fileInfo = pathinfo($this->filename);
+        $timedFilename = str_replace(array('{filename}', '{date}'), array($fileInfo['filename'], date($this->dateFormat)), $fileInfo['dirname'] . '/' . $this->filenameFormat);
+        if (!empty($fileInfo['extension'])) {
+            $timedFilename .= '.' . $fileInfo['extension'];
+        }
+        return $timedFilename;
+    }
+    protected function getGlobPattern()
+    {
+        $fileInfo = pathinfo($this->filename);
+        $glob = str_replace(array('{filename}', '{date}'), array($fileInfo['filename'], '*'), $fileInfo['dirname'] . '/' . $this->filenameFormat);
+        if (!empty($fileInfo['extension'])) {
+            $glob .= '.' . $fileInfo['extension'];
+        }
+        return $glob;
+    }
+}
+namespace Monolog\Handler;
+
+use Monolog\Formatter\FormatterInterface;
+interface HandlerInterface
+{
+    public function isHandling(array $record);
+    public function handle(array $record);
+    public function handleBatch(array $records);
+    public function pushProcessor($callback);
+    public function popProcessor();
+    public function setFormatter(FormatterInterface $formatter);
+    public function getFormatter();
+}
+namespace Illuminate\Support\Facades;
+
+class App extends Facade
+{
+    protected static function getFacadeAccessor()
+    {
+        return 'app';
+    }
+}
+namespace Illuminate\Exception;
+
+use Exception;
+interface ExceptionDisplayerInterface
+{
+    public function display(Exception $exception);
+}
+namespace Illuminate\Exception;
+
+use Exception;
+use Symfony\Component\Debug\ExceptionHandler;
+use Symfony\Component\HttpFoundation\JsonResponse;
+class SymfonyDisplayer implements ExceptionDisplayerInterface
+{
+    protected $symfony;
+    protected $returnJson;
+    public function __construct(ExceptionHandler $symfony, $returnJson = false)
+    {
+        $this->symfony = $symfony;
+        $this->returnJson = $returnJson;
+    }
+    public function display(Exception $exception)
+    {
+        if ($this->returnJson) {
+            return new JsonResponse(array('error' => $exception->getMessage(), 'file' => $exception->getFile(), 'line' => $exception->getLine()), 500);
+        }
+        return $this->symfony->createResponse($exception);
+    }
+}
+namespace Illuminate\Exception;
+
+use Exception;
+use Whoops\Run;
+use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpKernel\Exception\HttpExceptionInterface;
+class WhoopsDisplayer implements ExceptionDisplayerInterface
+{
+    protected $whoops;
+    protected $runningInConsole;
+    public function __construct(Run $whoops, $runningInConsole)
+    {
+        $this->whoops = $whoops;
+        $this->runningInConsole = $runningInConsole;
+    }
+    public function display(Exception $exception)
+    {
+        $status = $exception instanceof HttpExceptionInterface ? $exception->getStatusCode() : 500;
+        $headers = $exception instanceof HttpExceptionInterface ? $exception->getHeaders() : array();
+        return new Response($this->whoops->handleException($exception), $status, $headers);
+    }
+}
+namespace Illuminate\Exception;
+
+use Closure;
+use ErrorException;
+use ReflectionFunction;
+use Illuminate\Support\Contracts\ResponsePreparerInterface;
+use Symfony\Component\HttpKernel\Exception\HttpExceptionInterface;
+use Symfony\Component\Debug\Exception\FatalErrorException as FatalError;
+class Handler
+{
+    protected $responsePreparer;
+    protected $plainDisplayer;
+    protected $debugDisplayer;
+    protected $debug;
+    protected $handlers = array();
+    protected $handled = array();
+    public function __construct(ResponsePreparerInterface $responsePreparer, ExceptionDisplayerInterface $plainDisplayer, ExceptionDisplayerInterface $debugDisplayer, $debug = true)
+    {
+        $this->debug = $debug;
+        $this->plainDisplayer = $plainDisplayer;
+        $this->debugDisplayer = $debugDisplayer;
+        $this->responsePreparer = $responsePreparer;
+    }
+    public function register($environment)
+    {
+        $this->registerErrorHandler();
+        $this->registerExceptionHandler();
+        if ($environment != 'testing') {
+            $this->registerShutdownHandler();
+        }
+    }
+    protected function registerErrorHandler()
+    {
+        set_error_handler(array($this, 'handleError'));
+    }
+    protected function registerExceptionHandler()
+    {
+        set_exception_handler(array($this, 'handleUncaughtException'));
+    }
+    protected function registerShutdownHandler()
+    {
+        register_shutdown_function(array($this, 'handleShutdown'));
+    }
+    public function handleError($level, $message, $file = '', $line = 0, $context = array())
+    {
+        if (error_reporting() & $level) {
+            throw new ErrorException($message, 0, $level, $file, $line);
+        }
+    }
+    public function handleException($exception)
+    {
+        $response = $this->callCustomHandlers($exception);
+        if (!is_null($response)) {
+            return $this->prepareResponse($response);
+        }
+        return $this->displayException($exception);
+    }
+    public function handleUncaughtException($exception)
+    {
+        $this->handleException($exception)->send();
+    }
+    public function handleShutdown()
+    {
+        $error = error_get_last();
+        if (!is_null($error)) {
+            extract($error);
+            if (!$this->isFatal($type)) {
+                return;
+            }
+            $this->handleException(new FatalError($message, $type, 0, $file, $line))->send();
+        }
+    }
+    protected function isFatal($type)
+    {
+        return in_array($type, array(E_ERROR, E_CORE_ERROR, E_COMPILE_ERROR, E_PARSE));
+    }
+    public function handleConsole($exception)
+    {
+        return $this->callCustomHandlers($exception, true);
+    }
+    protected function callCustomHandlers($exception, $fromConsole = false)
+    {
+        foreach ($this->handlers as $handler) {
+            if (!$this->handlesException($handler, $exception)) {
+                continue;
+            } elseif ($exception instanceof HttpExceptionInterface) {
+                $code = $exception->getStatusCode();
+            } else {
+                $code = 500;
+            }
+            try {
+                $response = $handler($exception, $code, $fromConsole);
+            } catch (\Exception $e) {
+                $response = $this->formatException($e);
+            }
+            if (isset($response) && !is_null($response)) {
+                return $response;
+            }
+        }
+    }
+    protected function displayException($exception)
+    {
+        $displayer = $this->debug ? $this->debugDisplayer : $this->plainDisplayer;
+        return $displayer->display($exception);
+    }
+    protected function handlesException(Closure $handler, $exception)
+    {
+        $reflection = new ReflectionFunction($handler);
+        return $reflection->getNumberOfParameters() == 0 || $this->hints($reflection, $exception);
+    }
+    protected function hints(ReflectionFunction $reflection, $exception)
+    {
+        $parameters = $reflection->getParameters();
+        $expected = $parameters[0];
+        return !$expected->getClass() || $expected->getClass()->isInstance($exception);
+    }
+    protected function formatException(\Exception $e)
+    {
+        if ($this->debug) {
+            $location = $e->getMessage() . ' in ' . $e->getFile() . ':' . $e->getLine();
+            return 'Error in exception handler: ' . $location;
+        }
+        return 'Error in exception handler.';
+    }
+    public function error(Closure $callback)
+    {
+        array_unshift($this->handlers, $callback);
+    }
+    public function pushError(Closure $callback)
+    {
+        $this->handlers[] = $callback;
+    }
+    protected function prepareResponse($response)
+    {
+        return $this->responsePreparer->prepareResponse($response);
+    }
+    public function runningInConsole()
+    {
+        return php_sapi_name() == 'cli';
+    }
+    public function setDebug($debug)
+    {
+        $this->debug = $debug;
+    }
+}
+namespace Illuminate\Support\Facades;
+
+class Route extends Facade
+{
+    protected static function getFacadeAccessor()
+    {
+        return 'router';
+    }
+}
+namespace Illuminate\View\Engines;
+
+use Closure;
+class EngineResolver
+{
+    protected $resolvers = array();
+    protected $resolved = array();
+    public function register($engine, Closure $resolver)
+    {
+        $this->resolvers[$engine] = $resolver;
+    }
+    public function resolve($engine)
+    {
+        if (isset($this->resolved[$engine])) {
+            return $this->resolved[$engine];
+        }
+        if (isset($this->resolvers[$engine])) {
+            return $this->resolved[$engine] = call_user_func($this->resolvers[$engine]);
+        }
+        throw new \InvalidArgumentException("Engine {$engine} not found.");
+    }
+}
+namespace Illuminate\View;
+
+interface ViewFinderInterface
+{
+    public function find($view);
+    public function addLocation($location);
+    public function addNamespace($namespace, $hints);
+    public function prependNamespace($namespace, $hints);
+    public function addExtension($extension);
+}
+namespace Illuminate\View;
+
+use Illuminate\Filesystem\Filesystem;
+class FileViewFinder implements ViewFinderInterface
+{
+    protected $files;
+    protected $paths;
+    protected $views = array();
+    protected $hints = array();
+    protected $extensions = array('blade.php', 'php');
+    const HINT_PATH_DELIMITER = '::';
+    public function __construct(Filesystem $files, array $paths, array $extensions = null)
+    {
+        $this->files = $files;
+        $this->paths = $paths;
+        if (isset($extensions)) {
+            $this->extensions = $extensions;
+        }
+    }
+    public function find($name)
+    {
+        if (isset($this->views[$name])) {
+            return $this->views[$name];
+        }
+        if ($this->hasHintInformation($name = trim($name))) {
+            return $this->views[$name] = $this->findNamedPathView($name);
+        }
+        return $this->views[$name] = $this->findInPaths($name, $this->paths);
+    }
+    protected function findNamedPathView($name)
+    {
+        list($namespace, $view) = $this->getNamespaceSegments($name);
+        return $this->findInPaths($view, $this->hints[$namespace]);
+    }
+    protected function getNamespaceSegments($name)
+    {
+        $segments = explode(static::HINT_PATH_DELIMITER, $name);
+        if (count($segments) != 2) {
+            throw new \InvalidArgumentException("View [{$name}] has an invalid name.");
+        }
+        if (!isset($this->hints[$segments[0]])) {
+            throw new \InvalidArgumentException("No hint path defined for [{$segments[0]}].");
+        }
+        return $segments;
+    }
+    protected function findInPaths($name, $paths)
+    {
+        foreach ((array) $paths as $path) {
+            foreach ($this->getPossibleViewFiles($name) as $file) {
+                if ($this->files->exists($viewPath = $path . '/' . $file)) {
+                    return $viewPath;
+                }
+            }
+        }
+        throw new \InvalidArgumentException("View [{$name}] not found.");
+    }
+    protected function getPossibleViewFiles($name)
+    {
+        return array_map(function ($extension) use($name) {
+            return str_replace('.', '/', $name) . '.' . $extension;
+        }, $this->extensions);
+    }
+    public function addLocation($location)
+    {
+        $this->paths[] = $location;
+    }
+    public function addNamespace($namespace, $hints)
+    {
+        $hints = (array) $hints;
+        if (isset($this->hints[$namespace])) {
+            $hints = array_merge($this->hints[$namespace], $hints);
+        }
+        $this->hints[$namespace] = $hints;
+    }
+    public function prependNamespace($namespace, $hints)
+    {
+        $hints = (array) $hints;
+        if (isset($this->hints[$namespace])) {
+            $hints = array_merge($hints, $this->hints[$namespace]);
+        }
+        $this->hints[$namespace] = $hints;
+    }
+    public function addExtension($extension)
+    {
+        if (($index = array_search($extension, $this->extensions)) !== false) {
+            unset($this->extensions[$index]);
+        }
+        array_unshift($this->extensions, $extension);
+    }
+    public function hasHintInformation($name)
+    {
+        return strpos($name, static::HINT_PATH_DELIMITER) > 0;
+    }
+    public function getFilesystem()
+    {
+        return $this->files;
+    }
+    public function getPaths()
+    {
+        return $this->paths;
+    }
+    public function getHints()
+    {
+        return $this->hints;
+    }
+    public function getExtensions()
+    {
+        return $this->extensions;
+    }
+}
+namespace Illuminate\Support\Contracts;
+
+interface MessageProviderInterface
+{
+    public function getMessageBag();
+}
+namespace Illuminate\Support;
+
+use Countable;
+use JsonSerializable;
+use Illuminate\Support\Contracts\JsonableInterface;
+use Illuminate\Support\Contracts\ArrayableInterface;
+use Illuminate\Support\Contracts\MessageProviderInterface;
+class MessageBag implements ArrayableInterface, Countable, JsonableInterface, MessageProviderInterface, JsonSerializable
+{
+    protected $messages = array();
+    protected $format = ':message';
+    public function __construct(array $messages = array())
+    {
+        foreach ($messages as $key => $value) {
+            $this->messages[$key] = (array) $value;
+        }
+    }
+    public function add($key, $message)
+    {
+        if ($this->isUnique($key, $message)) {
+            $this->messages[$key][] = $message;
         }
         return $this;
+    }
+    public function merge($messages)
+    {
+        if ($messages instanceof MessageProviderInterface) {
+            $messages = $messages->getMessageBag()->getMessages();
+        }
+        $this->messages = array_merge_recursive($this->messages, $messages);
+        return $this;
+    }
+    protected function isUnique($key, $message)
+    {
+        $messages = (array) $this->messages;
+        return !isset($messages[$key]) || !in_array($message, $messages[$key]);
+    }
+    public function has($key = null)
+    {
+        return $this->first($key) !== '';
+    }
+    public function first($key = null, $format = null)
+    {
+        $messages = is_null($key) ? $this->all($format) : $this->get($key, $format);
+        return count($messages) > 0 ? $messages[0] : '';
+    }
+    public function get($key, $format = null)
+    {
+        $format = $this->checkFormat($format);
+        if (array_key_exists($key, $this->messages)) {
+            return $this->transform($this->messages[$key], $format, $key);
+        }
+        return array();
+    }
+    public function all($format = null)
+    {
+        $format = $this->checkFormat($format);
+        $all = array();
+        foreach ($this->messages as $key => $messages) {
+            $all = array_merge($all, $this->transform($messages, $format, $key));
+        }
+        return $all;
+    }
+    protected function transform($messages, $format, $messageKey)
+    {
+        $messages = (array) $messages;
+        foreach ($messages as &$message) {
+            $replace = array(':message', ':key');
+            $message = str_replace($replace, array($message, $messageKey), $format);
+        }
+        return $messages;
+    }
+    protected function checkFormat($format)
+    {
+        return $format === null ? $this->format : $format;
+    }
+    public function getMessages()
+    {
+        return $this->messages;
+    }
+    public function getMessageBag()
+    {
+        return $this;
+    }
+    public function getFormat()
+    {
+        return $this->format;
+    }
+    public function setFormat($format = ':message')
+    {
+        $this->format = $format;
+        return $this;
+    }
+    public function isEmpty()
+    {
+        return !$this->any();
+    }
+    public function any()
+    {
+        return $this->count() > 0;
+    }
+    public function count()
+    {
+        return count($this->messages, COUNT_RECURSIVE) - count($this->messages);
+    }
+    public function toArray()
+    {
+        return $this->getMessages();
+    }
+    public function jsonSerialize()
+    {
+        return $this->toArray();
+    }
+    public function toJson($options = 0)
+    {
+        return json_encode($this->toArray(), $options);
+    }
+    public function __toString()
+    {
+        return $this->toJson();
+    }
+}
+namespace Illuminate\Support\Facades;
+
+class View extends Facade
+{
+    protected static function getFacadeAccessor()
+    {
+        return 'view';
+    }
+}
+namespace Illuminate\Support\Contracts;
+
+interface RenderableInterface
+{
+    public function render();
+}
+namespace Illuminate\View;
+
+use ArrayAccess;
+use Closure;
+use Illuminate\Support\MessageBag;
+use Illuminate\View\Engines\EngineInterface;
+use Illuminate\Support\Contracts\MessageProviderInterface;
+use Illuminate\Support\Contracts\ArrayableInterface as Arrayable;
+use Illuminate\Support\Contracts\RenderableInterface as Renderable;
+class View implements ArrayAccess, Renderable
+{
+    protected $factory;
+    protected $engine;
+    protected $view;
+    protected $data;
+    protected $path;
+    public function __construct(Factory $factory, EngineInterface $engine, $view, $path, $data = array())
+    {
+        $this->view = $view;
+        $this->path = $path;
+        $this->engine = $engine;
+        $this->factory = $factory;
+        $this->data = $data instanceof Arrayable ? $data->toArray() : (array) $data;
+    }
+    public function render(Closure $callback = null)
+    {
+        $contents = $this->renderContents();
+        $response = isset($callback) ? $callback($this, $contents) : null;
+        $this->factory->flushSectionsIfDoneRendering();
+        return $response ?: $contents;
+    }
+    protected function renderContents()
+    {
+        $this->factory->incrementRender();
+        $this->factory->callComposer($this);
+        $contents = $this->getContents();
+        $this->factory->decrementRender();
+        return $contents;
+    }
+    public function renderSections()
+    {
+        $env = $this->factory;
+        return $this->render(function ($view) use($env) {
+            return $env->getSections();
+        });
+    }
+    protected function getContents()
+    {
+        return $this->engine->get($this->path, $this->gatherData());
+    }
+    protected function gatherData()
+    {
+        $data = array_merge($this->factory->getShared(), $this->data);
+        foreach ($data as $key => $value) {
+            if ($value instanceof Renderable) {
+                $data[$key] = $value->render();
+            }
+        }
+        return $data;
+    }
+    public function with($key, $value = null)
+    {
+        if (is_array($key)) {
+            $this->data = array_merge($this->data, $key);
+        } else {
+            $this->data[$key] = $value;
+        }
+        return $this;
+    }
+    public function nest($key, $view, array $data = array())
+    {
+        return $this->with($key, $this->factory->make($view, $data));
+    }
+    public function withErrors($provider)
+    {
+        if ($provider instanceof MessageProviderInterface) {
+            $this->with('errors', $provider->getMessageBag());
+        } else {
+            $this->with('errors', new MessageBag((array) $provider));
+        }
+        return $this;
+    }
+    public function getFactory()
+    {
+        return $this->factory;
+    }
+    public function getEngine()
+    {
+        return $this->engine;
+    }
+    public function getName()
+    {
+        return $this->view;
+    }
+    public function getData()
+    {
+        return $this->data;
+    }
+    public function getPath()
+    {
+        return $this->path;
+    }
+    public function setPath($path)
+    {
+        $this->path = $path;
+    }
+    public function offsetExists($key)
+    {
+        return array_key_exists($key, $this->data);
+    }
+    public function offsetGet($key)
+    {
+        return $this->data[$key];
+    }
+    public function offsetSet($key, $value)
+    {
+        $this->with($key, $value);
+    }
+    public function offsetUnset($key)
+    {
+        unset($this->data[$key]);
+    }
+    public function &__get($key)
+    {
+        return $this->data[$key];
+    }
+    public function __set($key, $value)
+    {
+        $this->with($key, $value);
+    }
+    public function __isset($key)
+    {
+        return isset($this->data[$key]);
+    }
+    public function __unset($key)
+    {
+        unset($this->data[$key]);
+    }
+    public function __call($method, $parameters)
+    {
+        if (starts_with($method, 'with')) {
+            return $this->with(snake_case(substr($method, 4)), $parameters[0]);
+        }
+        throw new \BadMethodCallException("Method [{$method}] does not exist on view.");
+    }
+    public function __toString()
+    {
+        return $this->render();
+    }
+}
+namespace Illuminate\View\Engines;
+
+interface EngineInterface
+{
+    public function get($path, array $data = array());
+}
+namespace Illuminate\View\Engines;
+
+class PhpEngine implements EngineInterface
+{
+    public function get($path, array $data = array())
+    {
+        return $this->evaluatePath($path, $data);
+    }
+    protected function evaluatePath($__path, $__data)
+    {
+        $obLevel = ob_get_level();
+        ob_start();
+        extract($__data);
+        try {
+            include $__path;
+        } catch (\Exception $e) {
+            $this->handleViewException($e, $obLevel);
+        }
+        return ltrim(ob_get_clean());
+    }
+    protected function handleViewException($e, $obLevel)
+    {
+        while (ob_get_level() > $obLevel) {
+            ob_end_clean();
+        }
+        throw $e;
     }
 }
 namespace Symfony\Component\HttpFoundation;
 
-class AcceptHeader
+class Response
 {
-    private $items = array();
-    private $sorted = true;
-    public function __construct(array $items)
+    const HTTP_CONTINUE = 100;
+    const HTTP_SWITCHING_PROTOCOLS = 101;
+    const HTTP_PROCESSING = 102;
+    const HTTP_OK = 200;
+    const HTTP_CREATED = 201;
+    const HTTP_ACCEPTED = 202;
+    const HTTP_NON_AUTHORITATIVE_INFORMATION = 203;
+    const HTTP_NO_CONTENT = 204;
+    const HTTP_RESET_CONTENT = 205;
+    const HTTP_PARTIAL_CONTENT = 206;
+    const HTTP_MULTI_STATUS = 207;
+    const HTTP_ALREADY_REPORTED = 208;
+    const HTTP_IM_USED = 226;
+    const HTTP_MULTIPLE_CHOICES = 300;
+    const HTTP_MOVED_PERMANENTLY = 301;
+    const HTTP_FOUND = 302;
+    const HTTP_SEE_OTHER = 303;
+    const HTTP_NOT_MODIFIED = 304;
+    const HTTP_USE_PROXY = 305;
+    const HTTP_RESERVED = 306;
+    const HTTP_TEMPORARY_REDIRECT = 307;
+    const HTTP_PERMANENTLY_REDIRECT = 308;
+    const HTTP_BAD_REQUEST = 400;
+    const HTTP_UNAUTHORIZED = 401;
+    const HTTP_PAYMENT_REQUIRED = 402;
+    const HTTP_FORBIDDEN = 403;
+    const HTTP_NOT_FOUND = 404;
+    const HTTP_METHOD_NOT_ALLOWED = 405;
+    const HTTP_NOT_ACCEPTABLE = 406;
+    const HTTP_PROXY_AUTHENTICATION_REQUIRED = 407;
+    const HTTP_REQUEST_TIMEOUT = 408;
+    const HTTP_CONFLICT = 409;
+    const HTTP_GONE = 410;
+    const HTTP_LENGTH_REQUIRED = 411;
+    const HTTP_PRECONDITION_FAILED = 412;
+    const HTTP_REQUEST_ENTITY_TOO_LARGE = 413;
+    const HTTP_REQUEST_URI_TOO_LONG = 414;
+    const HTTP_UNSUPPORTED_MEDIA_TYPE = 415;
+    const HTTP_REQUESTED_RANGE_NOT_SATISFIABLE = 416;
+    const HTTP_EXPECTATION_FAILED = 417;
+    const HTTP_I_AM_A_TEAPOT = 418;
+    const HTTP_UNPROCESSABLE_ENTITY = 422;
+    const HTTP_LOCKED = 423;
+    const HTTP_FAILED_DEPENDENCY = 424;
+    const HTTP_RESERVED_FOR_WEBDAV_ADVANCED_COLLECTIONS_EXPIRED_PROPOSAL = 425;
+    const HTTP_UPGRADE_REQUIRED = 426;
+    const HTTP_PRECONDITION_REQUIRED = 428;
+    const HTTP_TOO_MANY_REQUESTS = 429;
+    const HTTP_REQUEST_HEADER_FIELDS_TOO_LARGE = 431;
+    const HTTP_INTERNAL_SERVER_ERROR = 500;
+    const HTTP_NOT_IMPLEMENTED = 501;
+    const HTTP_BAD_GATEWAY = 502;
+    const HTTP_SERVICE_UNAVAILABLE = 503;
+    const HTTP_GATEWAY_TIMEOUT = 504;
+    const HTTP_VERSION_NOT_SUPPORTED = 505;
+    const HTTP_VARIANT_ALSO_NEGOTIATES_EXPERIMENTAL = 506;
+    const HTTP_INSUFFICIENT_STORAGE = 507;
+    const HTTP_LOOP_DETECTED = 508;
+    const HTTP_NOT_EXTENDED = 510;
+    const HTTP_NETWORK_AUTHENTICATION_REQUIRED = 511;
+    public $headers;
+    protected $content;
+    protected $version;
+    protected $statusCode;
+    protected $statusText;
+    protected $charset;
+    public static $statusTexts = array(100 => 'Continue', 101 => 'Switching Protocols', 102 => 'Processing', 200 => 'OK', 201 => 'Created', 202 => 'Accepted', 203 => 'Non-Authoritative Information', 204 => 'No Content', 205 => 'Reset Content', 206 => 'Partial Content', 207 => 'Multi-Status', 208 => 'Already Reported', 226 => 'IM Used', 300 => 'Multiple Choices', 301 => 'Moved Permanently', 302 => 'Found', 303 => 'See Other', 304 => 'Not Modified', 305 => 'Use Proxy', 306 => 'Reserved', 307 => 'Temporary Redirect', 308 => 'Permanent Redirect', 400 => 'Bad Request', 401 => 'Unauthorized', 402 => 'Payment Required', 403 => 'Forbidden', 404 => 'Not Found', 405 => 'Method Not Allowed', 406 => 'Not Acceptable', 407 => 'Proxy Authentication Required', 408 => 'Request Timeout', 409 => 'Conflict', 410 => 'Gone', 411 => 'Length Required', 412 => 'Precondition Failed', 413 => 'Request Entity Too Large', 414 => 'Request-URI Too Long', 415 => 'Unsupported Media Type', 416 => 'Requested Range Not Satisfiable', 417 => 'Expectation Failed', 418 => 'I\'m a teapot', 422 => 'Unprocessable Entity', 423 => 'Locked', 424 => 'Failed Dependency', 425 => 'Reserved for WebDAV advanced collections expired proposal', 426 => 'Upgrade Required', 428 => 'Precondition Required', 429 => 'Too Many Requests', 431 => 'Request Header Fields Too Large', 500 => 'Internal Server Error', 501 => 'Not Implemented', 502 => 'Bad Gateway', 503 => 'Service Unavailable', 504 => 'Gateway Timeout', 505 => 'HTTP Version Not Supported', 506 => 'Variant Also Negotiates (Experimental)', 507 => 'Insufficient Storage', 508 => 'Loop Detected', 510 => 'Not Extended', 511 => 'Network Authentication Required');
+    public function __construct($content = '', $status = 200, $headers = array())
     {
-       rn self::$trustedHeaders[$key];
-    }
-    putem) {
-            $this->add($item);
+        $this->headers = new ResponseHeaderBag($headers);
+        $this->setContent($content);
+        $this->setStatusCode($status);
+        $this->setProtocolVersion('1.0');
+        if (!$this->headers->has('Date')) {
+            $this->setDate(new \DateTime(null, new \DateTimeZone('UTC')));
         }
     }
-    public static function fromString($headerValue)
+    public static function create($content = '', $status = 200, $headers = array())
     {
-        $index = 0;
-        return new self(array_map(function ($itemValue) use(&$index) {
-            $item = Accepnent\HttpFoun(isset($trace['fil'%l'), arradCallbacks = array();
-    , arra->middl, array($tra    $headers['PHP_AUTH_DIGEST'] = $authorizatio   $this->meta =& $array;
-\'[^\']+\'),         ._DELIM_CAPTURE);
-        $vaa, Ariaation\Session\Storage;
-
-usenction fullUrl()
-    {
-        $que, sans-serif; (FlattenException $except           
-        }
-      = sprintf('            sh()) {
-            
- erif; color: #333 }
-            .sf-reset .clear { cl      ] = $this->meta[self::UPDATED]();
-        }
-        $this->caugsetB = stn->a= stInterface
-{
-    public frace['file'], $trace[    $headers['PHP_AUTH_DIGEST'] = $authorizatio  .sf-rArgumentException(sprintf('Malfo], $trace['line']);
-            __url == arurn array_key_exists($key, $this->   if (strst}
-    public feControlDirective($key)
-    {
-      path'] = '/';
-        }
-        switch (str{
-        $this->meta =& $array;
-        if (isset($array[ $first ? $default : s']));
-           Interfat class AbstractProcessingHandler extendnamespace \Suppor
-{
-    public function hSuppo(array $record)  pro   proctedif (!$this->is\Supping(array();) protected tic return false;rotected }rotected array() = c $regiplluminRray()alse;
-   ($class)
- array()['formatted']ss = statigetF (statir()->h (stalass($class);
-       $regiwritelass($class);
-     unction load ==s = statibubbld($clas   {
- protected aespace  static $d$path ies = array();($clas    requirstatic $dc::normalizeClies = array();
-    protected stat= static::normors public static fforeachatic function norma as $tion norm public static f       $class call_user_stat(== '\\') {, return true;
- class)
-    {
-        {
-     unctionarray()        }
-namespace Monolog\\Suppor;
-
-usp';
+        return new static($content, $status, $headers);
     }
-Loggubliphp
-naStream\Support;
-
-class ClassLoIlluminate\Suppor    prot   requir$s
-    rue;
-           $urlrue;
-   ivate $errorMessagd($clas  static::$filePermissionered = spl_autoloaseLockinge\\Suppected static $d__construct($regist, $level = tion r::DEBUG, $s)) {
- = true,ssLoader', 'load = null,    }
-    pu =n load;
-    protected parent::ddDirectoriesries)tatic::$dass);
-     statis_resourcees($dire  public static fexists(registss =registered =\\',  elseon remostr= falies($directories = null)
-    {ur)
-  if (is_null($directoriepublic static fthrow new \InvalidArgumentExcepic $('A 
-      must either be a veDirect or atoriing.'ass);
-        {
-       $regi = array_unique(asLoader', 'load'));
- ries = arrayge(static::$   }
-    public s       ected static $dclose(;
-    protected statemoveDirector
+    public function __toString()
     {
-       public static ffse CloctionClass;
-us   public static function g
-        rray                requirath;
-                return t
-    protected statis;
-use ReflectionClass;
-use ReflectionParastatic $regiurl
-            $class irectories Logicatic::$direM 'longtories, url, thetories, can notrectopened. This mayrectcaused by a prematurlResll touse Clos}
-    public lic static funnull)
-    {'\\Illuminatotected $resos->boundset_'\\Il_irectoreturn 
-class, 'customE\\Il\Suppor')ted function re)
-    {
-        f  pr
-class CvingC'acted function restatic func = array_unique!=tected
-            $class @chmod{
-        retction getDirectories(ted function resolvable($abstrestorestract) || $thi isset($this->bindi $instances = array();
-    protected $aliasayAccess
-{
-    protected $resocted $reboundCallbacks UnexprequiValueatic::$dirsprintf('Tllbacks = or Load "%s" coulday();
-    prot: ' .tract)
-    {
-       blic func;
-  n str_replace(array('\\', '_'), DIRstatic funcectories;
-e ReflectionParamlock
-class Contain, LOCK_EXer implements ArrayAcf$path =extractAlias($(}
-    )    foreach (static::atic function r       list($abstract, $alias) = $this->extractAlias($abstrUNer implements Arr        (arrayainer;
-
-ustract);
+        return sprintf('HTTP/%s %s %s', $this->version, $this->statusCode, $this->statusText) . '
+' . $this->headers . '
+' . $this->getContent();
     }
-   ($codfalsmsgray();
-    proteract)
+    public function __clone()
     {
-        repreg_replace('{^
-    \\(.*?\\): }', ''nceof COR, $class) . '.php';
+        $this->headers = clone $this->headers;
     }
-    public static function register(RotatingFile\Support;
-
-class)
+    public function prepare(Request $request)
     {
-              static::$Load) . e\\Support\\Classmax    s>rebound($abstractustred')->rebound($abstracnexected oad'));
-        }
-    $this-as $die\\Support\\Classdat  return functatic function addDirectories  $this-nceo);
-     = 0ctories)
-    {
-        static::$directories = array_unique(array_merge(static::$directories, (array) ction getDi) . )
-    {
-his->reboueters);
-         $meth(int)act);
-        }
-eters);
-   e($abstract,otecies DateTime('tomorrow
-    public s);
-        };
-as $di = '{}
-    pu}-{para}'abstract)) {
-    parameters>binY-m-dcrete, $sha$directories));
-    }ectories (!$td    ) . ()ctories)tatic::$dies = array_uniqu_merge(static  }
-     minate\Container;
-
-use Closure;
-use ArrayA$directose Clostic function rctorATOR . $clasrotected frectories = null)
-    {rted f       reture = $abstractected static $dset = null)as $diete) {
-   as $di, $parametersrete, $parameters);
-        };
-   }
-    {
-        return func$shared);
-        }
-    $parameters = arrries = array();
-  act, $concrete = null)
- abstract)) {
-      {
-        rlved = array();
-    protected $bindings = array();
-    protectedrrayon ($container) use($closure) {
-            srotected f = !Load_exists{
-        rer implements ArrayAcInstances($false)
-    {
-<    foreacparatime']      if (!isset($this->bindings[$abctorblic function bound($  {
-        retur   {
-     $directo$path = $directory .lved = array();
-    protetatic $oete, $parameters);
-   re $closure)
-    {
-        $this->bind($abstractfalse)
-    {
-        if (!$this->bound($abstract))stat0on ($containe);
-     public static functio($class)
-    {
-      lo     methglobtract, $conGlobPdirecn(        if (Instances($      $me>=bindn  }
-abstrac  public static functio($class)
-    {
-     usorosure $clos,    }
-    ($atati public static functionstrcmp($b, $aer implementis->bind($a)
-    {
- ies =_slictorstract]['c        $this->bi0] =Loadprotected $aliases =is_$patableete) {tract]);
-    }
-    puunlinklic fun str_replace(array('\\', '_'),lved = array();
-    proteconcrete = null)
- ete, $parametersLoadInfo$thiathinfoings[$abstra) . is->bind($absrete = null) =ontagetClosurs->isAnd($abstracte);, $conc), s->isAl>extract['        '], paratract, $ure($contai    stract]);
-dir    $b . '/ete = null,          retu      return fu!empt$abstract]);
-;
-
-clload']irectories = null)
-as($abstract,.= '.ete ={
-            $this->($class)
-    {
-     ECTORY_S;
-        }
- losure($this->instances[$abstra    }
-    protec$alias) = $this->extractAlias($abstract);
-            $this->al;
-  , $alias);
-        }
-        unset($this->aliases[$abstract]);
-        $bou'*aliat);
-        $this->instances[$abstract] = $instance;
-        if ($bound) {
-            $this->rebound($abstract)rray(  }
-    public function alias($abstract, $alias)
-    {
-    ;
-  OR, $class) . '.php';
-    }
-    public static funcas $directarget, $mInterface;
-i{
-       \Suppor {
-          protected static $dstered = fa      return true;
-  ected static $directories = array(); $method) {
-            $tarBatche) use($targets($instance);
-        })pushIlluminoe inallbacktion rebound($abstract)
-op {
-       ($instance);
-        }))) {s $directthod)
-    {
-       $h (statir($instance);
-        })es as $directo;ass) . '.php'Illuminate\Support\Facad    gister(Appt;
-
-class
-    p         static::stracll_user_func($c    pAc       f
-    protected unction'appcrete, lass) . '.php'e);
-       atic::$dilic stareboundCallreturn $thatic::$diDisplayebinding($abstract, function ($appdreturn(atic::$di $etic::$di$this, $instance);
-       reboundCallbacks[$abstract] staSymfony\Component\Debug  $abstrac    publis($abstract);
-        HttpFoundract,\JsonResponad($ister()stract return a implef(sts }
-        return array();
-    }
-    static::$rstracte\\Support\\Classunctio$thi = array()) use($abstract, $concreset($this->insta       if    re($concrd}($concrete, $parameters);
-        if;
-       if ($thi          st, $parameterable($concrete, $    }
-    public functn make($abstract, $parameters  }
-    public static funce, $parame public static function    $this->insta     }
- '\\Il' => $parameterries luminat
-   
-    abstract, $object);
-     $thilinresolved[$abstract] =Line(trac500er implements ArrayAc  {
-               $o->createeResolvin$parameters = {
-            return $this->reboundCallbacks[$abstract] staWhoops\Rulias($abstract);
-                return s->instancct) && isset($this->bindinKernel  $abstracindinatic::$di {
-        php
-nalash($;
-        }
-        $concrete = $this->getConcrete($abstract);
-   wash($ ($this->isBuildabunningInConso{
-      ay()) use($abstract, $concreRunt]['conc    protected functhis);
-            $this['concters['concrete']          stprotected functters)protected function mi     if ($this->isShared($abstract)) {
-            $this->instance$ct)
-uract,parameter instanceof tract;
+        $headers = $this->headers;
+        if ($this->isInformational() || in_array($this->statusCode, array(204, 304))) {
+            $this->setContent(null);
+            $headers->remove('Content-Type');
+            $headers->remove('Content-Length');
+        } else {
+            if (!$headers->has('Content-Type')) {
+                $format = $request->getRequestFormat();
+                if (null !== $format && ($mimeType = $request->getMimeType($format))) {
+                    $headers->set('Content-Type', $mimeType);
+                }
             }
-  ?ract, $object);
-S     Code() :protabstract)) header     return $concrete($this, $parameters);
-        }
-        $reflHoncretw Refs->isActory . DIRECTORY_      if (!isstrpos($abstr->irectoatic::$dir$parameters,        ,($concret>bindings[$abstract])) {
-            if ($this->Closurt])) {
-);
-  missingLeadingSRefletic $Ftatic $])) {
-e);
-        }
-    }Conpace s$abstractPre$dir  {
-        ) {
-                $abstract = '\\' . $abstract;
+            $charset = $this->charset ?: 'UTF-8';
+            if (!$headers->has('Content-Type')) {
+                $headers->set('Content-Type', 'text/html; charset=' . $charset);
+            } elseif (0 === stripos($headers->get('Content-Type'), 'text/') && false === stripos($headers->get('Content-Type'), 'charset')) {
+                $headers->set('Content-Type', $headers->get('Content-Type') . '; charset=' . $charset);
             }
-   s($abstract);
-        if (isset($this\Fatal();
-        if), $ies, $para        ($abstract)) {
-          r);
+            if ($headers->has('Transfer-Encoding')) {
+                $headers->remove('Content-Length');
+            }
+            if ($request->isMethod('HEAD')) {
+                $length = $headers->get('Content-Length');
+                $this->setContent(null);
+                if ($length) {
+                    $headers->set('Content-Length', $length);
+                }
+            }
         }
-  e\\Support\\Classplai  return an function ($c, $pf (irn $reflector->newInstanceArgs(e\\Support\\Class || $thractet [{$concrettion getDependencass parameters, arsingLeadingSlash($abstract)
-);
+        if ('HTTP/1.0' != $request->server->get('SERVER_PROTOCOL')) {
+            $this->setProtocolVersion('1.1');
         }
-        $dedependencies, $par, }
-        return array();
-    return $refleeter) {
-            $dependencyArgs($instancelosuf (i($this-his);
-            $thisarameterotected funcct)) {
-     return $refle     return $reflector->ves)) {
-        itives[$paramArgs($instances);
-  ke($concrete,;
+        if ('1.0' == $this->getProtocolVersion() && 'no-cache' == $this->headers->get('Cache-Control')) {
+            $this->headers->set('pragma', 'no-cache');
+            $this->headers->set('expires', -1);
         }
-  ters);ndencies, $parameter    }
-    public functregisrect$environf(sthis);
-            $thislse {
-   (!$concrete is->bind($abstracts->resolvet($this->insta       return fu             != 'tes);
- 'losure) {
-            stse {
-  Shutdow      return (array)_array($abstract)) {
-          s->resolveClass($param
-    protected $abstract) || $this->isAlias($abthrow nks($a            {
-        if ($parameter->isDe   }
-        retuilable()) {
-        tic::$direturn $parameter->getDefaultUncaughtatic::$di();
-        }
-        $message = "Unresolv(ReflectionParamereboundCallbacks[e {
-  _sReflect;
-   :$dirarameter->getDefault(Reflect();
-        }
-  ected static $directoValue }
-    pubmed = falsfunct=);
-       ethod =contex    et [{$c $this->instances[$atract)re    = fa) &tories) public static firectories();
-        if(>make($parod = $absarametetClass(object;
-            if (is_null($objectthrow new BindingResolutionof Closure) {
-  resolveNss = stati$insCtract\Supporssset($this->bindint]) || issetrrayalse>insta  public static function= static:  }
-   if (!iss   {
-    cted function getConcrete($abstracn make(new BindingResolution$parameter);
-            } elaringClass()->getName(    }
+        $this->ensureIEOverSSLCompatibility($request);
+        return $this;
     }
-    protected fubstracthrow new BindingResolution->sendis->share($closected static $directo(Reflectd function extract'\\Il = tract)get_last       return fuameters)
- '\\Il  public static fexpace ks[$abstd[$abstract]) || isc $registies, ($typunction instance($abst  $resolver = $tn resolvable($abstract)
- throw new Bindin    ies, $para          rre $c retureter->getDefparameters;
-   arameter)
+    public function sendHeaders()
     {
-        if ($parameny(Closure $careboundCallbacks[$abstin_s->isAlisolvis->isAE_ERROR, E_CORbackArray($obMPILbackArray($PARSEter)
+        if (headers_sent()) {
+            return $this;
+        }
+        header(sprintf('HTTP/%s %s %s', $this->version, $this->statusCode, $this->statusText), true, $this->statusCode);
+        foreach ($this->headers->allPreserveCase() as $name => $values) {
+            foreach ($values as $value) {
+                header($name . ': ' . $value, false, $this->statusCode);
+            }
+        }
+        foreach ($this->headers->getCookies() as $cookie) {
+            setcookie($cookie->getName(), $cookie->getValue(), $cookie->getExpiresTime(), $cookie->getPath(), $cookie->getDomain(), $cookie->isSecure(), $cookie->isHttpOnly());
+        }
+        return $this;
+    }
+    public function sendContent()
+    {
+        echo $this->content;
+        return $this;
+    }
+    public function send()
+    {
+        $this->sendHeaders();
+        $this->sendContent();
+        if (function_exists('fastcgi_finish_request')) {
+            fastcgi_finish_request();
+        } elseif ('cli' !== PHP_SAPI) {
+            static::closeOutputBuffers(0, true);
+        }
+        return $this;
+    }
+    public function setContent($content)
+    {
+        if (null !== $content && !is_string($content) && !is_numeric($content) && !is_callable(array($content, '__toString'))) {
+            throw new \UnexpectedValueException(sprintf('The Response content must be a string or object implementing __toString(), "%s" given.', gettype($content)));
+        }
+        $this->content = (string) $content;
+        return $this;
+    }
+    public function getContent()
+    {
+        return $this->content;
+    }
+    public function setProtocolVersion($version)
+    {
+        $this->version = $version;
+        return $this;
+    }
+    public function getProtocolVersion()
+    {
+        return $this->version;
+    }
+    public function setStatusCode($code, $text = null)
+    {
+        $this->statusCode = $code = (int) $code;
+        if ($this->isInvalid()) {
+            throw new \InvalidArgumentException(sprintf('The HTTP status code "%s" is not valid.', $code));
+        }
+        if (null === $text) {
+            $this->statusText = isset(self::$statusTexts[$code]) ? self::$statusTexts[$code] : '';
+            return $this;
+        }
+        if (false === $text) {
+            $this->statusText = '';
+            return $this;
+        }
+        $this->statusText = $text;
+        return $this;
+    }
+    public function getStatusCode()
+    {
+        return $this->statusCode;
+    }
+    public function setCharset($charset)
+    {
+        $this->charset = $charset;
+        return $this;
+    }
+    public function getCharset()
+    {
+        return $this->charset;
+    }
+    public function isCacheable()
+    {
+        if (!in_array($this->statusCode, array(200, 203, 300, 301, 302, 404, 410))) {
+            return false;
+        }
+        if ($this->headers->hasCacheControlDirective('no-store') || $this->headers->getCacheControlDirective('private')) {
+            return false;
+        }
+        return $this->isValidateable() || $this->isFresh();
+    }
+    public function isFresh()
+    {
+        return $this->getTtl() > 0;
+    }
+    public function isValidateable()
+    {
+        return $this->headers->has('Last-Modified') || $this->headers->has('ETag');
+    }
+    public function setPrivate()
+    {
+        $this->headers->removeCacheControlDirective('public');
+        $this->headers->addCacheControlDirective('private');
+        return $this;
+    }
+    public function setPublic()
+    {
+        $this->headers->addCacheControlDirective('public');
+        $this->headers->removeCacheControlDirective('private');
+        return $this;
+    }
+    public function mustRevalidate()
+    {
+        return $this->headers->hasCacheControlDirective('must-revalidate') || $this->headers->has('proxy-revalidate');
+    }
+    public function getDate()
+    {
+        return $this->headers->getDate('Date', new \DateTime());
+    }
+    public function setDate(\DateTime $date)
+    {
+        $date->setTimezone(new \DateTimeZone('UTC'));
+        $this->headers->set('Date', $date->format('D, d M Y H:i:s') . ' GMT');
+        return $this;
+    }
+    public function getAge()
+    {
+        if (null !== ($age = $this->headers->get('Age'))) {
+            return (int) $age;
+        }
+        return max(time() - $this->getDate()->format('U'), 0);
+    }
+    public function expire()
+    {
+        if ($this->isFresh()) {
+            $this->headers->set('Age', $this->getMaxAge());
+        }
+        return $this;
+    }
+    public function getExpires()
     {
         try {
-           d funct    }
-    }
-    protected frameters as $krsByArgument(array $dependenc,r->nam
-        }
-        $message = "gCallbacks);
-    }
-    protecte$fromunction budirectories, (array) )
-    {
-        endencies0] = || $thprotected $aliases = array()irectosncies[$key] || $th, $parametersract]);
-    }
-    pu);
- ins->instances[$abctories))  return $concrete($this, $parameters);
-     ract]);
-    }
-    pubnsta    return $c$reflector = new  (isset($this->bindi= $this->bindings[$abstractlectionClass(n resolvable($absttry            $class = stion keyPa || $thi
-    {
-      nstance  foreach (e {
-            $c
-    (  $abstrac $d = $this->bindings[$ad === true;
-abstrac (stancies[$key]-ted function resolvable($abst;
-    se      {
-     && ameters)
-    {
-        foreach ($pa DIRECTORY_SEP>instancisset($this->er $parameter)
-    {
-        if ($parame        unset($parameters[$kof Closure) {
-  n make(this-> {
-         ?  } elseif (is_null($de:ies[] = $primitives[$ptory . DIRECTORY_return $th         sset($this->bindingse;
-            }
+            return $this->headers->getDate('Expires');
+        } catch (\RuntimeException $e) {
+            return \DateTime::createFromFormat(DATE_RFC2822, 'Sat, 01 Jan 00 00:00:00 +0000');
         }
     }
-    pubetConst;
-    }
- tion isShared    protected funcl($const
-      ull($constructor))blic funcctory . DIRECTORY_   {
-      ries NumberOfParamet = "Ta== 0 ||      }
- in{
+    public function setExpires(\DateTime $date = null)
     {
-      tion isSharedabstract], $this->aliases[$abstrstancull($constructor))lic function forgetInstance($abstract)
-  pes()
-    ters);function forgces()
-    {
-abstract)) sset($tharamees()
-    [0$abstract, unction!n $this->ries Chp
-n()   $tn offsetSet($key, $vgistIcrete($>instances[$abstract], $this->aliases[$abstcrete instanceof    {
-          }
-    public static funcaramerectories = null)loc    {
-  $ect);
-        $nsta inrete =->bind true;nsta:   }
-    pu  }
-  ]) ? $this->als[$abstrValue);
- return $co || $thcrete =       $cted function getConcrete($et($this->bindings[$key], $.])) {
-    protected static $d'\\Il  public f$instance
-    protected    retunshifstract, $endencied fuinstance = $theturn $this[$key];
-   
-   ed fun public function __set($key, $val     }
-      rs[:$dir$value;
-abstract], $this->aliases[$abstey => $value) {
-          object, $this->globalResolvinresolveNonClass($key => $value) {
-            if (eter);
-            } elprotected funct->reboundCallbacks[$abstphp_sapi_ull)
-     'cli      return $this[$key];
-   setif (i(ndencyme, $primitives)) {
-                $depend           return $this-> }
-    }
-    protected fRoutetion getReboundCallbacks($abstract)
-    {
-        if (isset($this->reboundCallbacks[$abstrrnterr])) {
-            return $this->View\Enginproter->getConstruphp
-nacts;
-
-Resolv>getDependencies($depenace
-{es($parameters, array $primion prep= array())
-    {
-        $dependelse {
-      s;
-
-,getConstblic funcr $dependencies[] = $this- prepar[minate\:$dirr;
-use I$parameter);
-            } els prepuminate\sure;
-use ArrayAccess;n getBuilder;
-use dluminate\     foreach ($parameters as $knate\Container\Cothrow new \InvalidArgumer;
-use Illuminate\CoIlluminate\ntainer;
-use Illuminate\Filesystem\Filesystem;
-ur($class, 1);
-     acade;
-use Illuminate\Eve($class)
-    {
-     irectories = array_diff(static::$dir"cts;
-
- {minate\}ay();f   r.">bindings[$abstract])) {
-       ontr;
-];
-        ontrFindebinding($abstract, function ($appfind($view($instance);
-        })addL      $clos     $terface;
-use Symfony\CompoN . '.php($) . '.php($mestantion rebound($abstract)
-repene Symfony\Component\Debug\Exception\FatalErrorExceptaddE   $this   p  $this$this, $instance);
-       el\Http
-            restracystem
-use SymfonnsePrepa    rface;
-use }
-        $rface;
-use Symfony\Componenete)
-    {
-   crete'];
-    }
-   as($crete'];
-    }
-   leInes($parameters, array $primitstans($parameters, array $primifony\Compements Htt'blade.phpte);nsePceptionDirec HINT_PATH_DELIMITERr->g::crete,         $dependencies = arrause SymfontpKernefireCalFoundHtotingCallTerminableIntthis-ete, $parameters);
-       nctioKernel\Exceencies[] = $ndHtmake($dHttpExceed function getTerminableirectories = null)
-    {TerminableInttdownCallbabject;
-            if (is_null($objectrminab     te\Config\FileLoader;
-use Illumis App[y();
-vents\EventServiceProvider;
-use array();
-   throw new \InvalidArgumentExcephasHintract(stae Symract, $trimay();
-  protected $deferredServices = array();
-   ss = statirmin SymdPathontray();
- cted function getConcrete($abstracst $request = null)
-    {
-In   $stp\\Reesolver($ray()re) {
-            $value = functi {
-        $this->regis
-    protected listComponent\DebuleInt$directories  Symfony\Seg     ->registerBaseBinrameters as $k        $thisleInesolver($imple();
-  '.phpxception$alias] = $abstract;
-    }
-    {
-        return forwof Closure) {
-      retuck)
-xpl newct)
-  ::   const VERSION = , >registerBaseBinstat, Closu$this->i)    2  if ($parameter->isOptionr;
-use Illuminate\Config\Fiontr [{p\\Re}] has a    array ) . er;
-use Snew \InvalidArgume!r;
-use IllumiteFromG$this->i[0]vents\EventServiceiceProvider;
-use Illuminate\Config\FiNokey)
-ias($ defin);
- oreSerg') as $nam}]    foreach (array('Eve   publi$this->iceProviders();
-        $this->regis    $this->regiseServis as $callback) {
-      ss(Ref)is));
- [0] ==athlizeClass($class)
-    {
-        $keyossibation\Releurn forw), $container);
-        }s->bindings[$abstraotect) {
-  leIn   $= array(nstances[$c function instance($abstider()
-    {Provider]) ? $this->aln resolvable($abstiases[$abstract]is);
-    }
-    protected function registerBaseServiceProablesLoader;
-use Symlias] = $abstract;
-    }
- (new RoutingServiceProviobject, $this->globalR   retmap(oncrete'];
-fony\Compo u!issProvid return function ($contagetClosure.te);/
-   Provid.}
-    pufony\Comp($class)
-  esolver($downCallbac    public function handle(Rmponent\HttpKernel\Excony\Component\HttpFounray()equestnstances[$key]D:\\XAMPP_NEW\\htdocs\\My Symfony\Component\Debug\Exceony\Component\Htimplemenon registimpletic function remxception', 'Routinlobals'));
-rectories = null)implements Ht_merge.";
-    teFromGlobals'));ebug\Exception\lic static function gteFromGlobals'));ue;
-        $th
-namespace Symfony\Compon;
-use Illuminate\Support\Contractn startExceptionHandling()
-    {
-        $this['exception']->register($this->environment());
-        $this['exception']->    {ss, 'createFromGlobals'));
-    }
-;
-    }
-    public function environment()
-    {
-        if (count(func_get_rface;
-use Symfony\Compo
-    protected stat($;
-usxs['exceptsearch->instance(e()
-    {
-        rer\\Ccallback", realpath($vaun
-use IllumiTerminable[null;
-xception\ExceptionServue)
-    {
-        $thTerminabletion ny\Compone]);
-                $paramet 'Illuminate\\Http\\Re')) as $key => $value) strpohis->regiquest', $request);
-        ) > ctionCleturn $this[$key];
-    publicSymfon->reboundCallbacks[$abstfunction regn forceRegister($provider, $opt  $thiernelInterface
-{
-    const MASray();
-    eRegister($provider, $opt'Ill    }
-    public function regist    {
-        if (count(func_get_getce;
-use S    }
-    public function registres = array();
- ;
-use Symfony\Component\HttpFound $concretttpKernelInteluminatProviuse Symfony\Component\HttpKernel\Te);
-       Bag $this, $instance);
+        if (null === $date) {
+            $this->headers->remove('Expires');
+        } else {
+            $date = clone $date;
+            $date->setTimezone(new \DateTimeZone('UTC'));
+            $this->headers->set('Expires', $date->format('D, d M Y H:i:s') . ' GMT');
         }
-    nterface Clo pubthis->$thiSerializ ($options         return new $concrete$thi pubeters = $this->         return new $concreteAes =
-        }
-        $this->markAsRegistered($provrovider = $this->resolvensePrepa        }
- }
-        $ider);
-        if ,oreach ($o,s as  public functiorovider = $this->resolvestered$key => $valony\Component\Httpmake($pements HttpKernelInterface, inate\'4.2.make($p6';
-    protected $booted = false;
-ies = aass($provider);
-     }
-    protected functiurn array_0] =keybstravs->a      if (!isset($this->ss($pro[$valnt()on registse($nbject;
-            if (is_null($objectadd($vals->make($p        return $value;
-    isUniqueublic function rame) {
-                return get_claequestreturn cted function getConcrete($abstri';
-    }
-    public functioion']->return g        return $valueass($provncrete($thirovider = $this->resolverectories = null)ass($providovider;
- ct);
-        }
-  ct);
-               returstatic function gass($provider);
-tion']_recursise Inction loadDefs->make($pdebug']);
-  $provider)
-    {
-         (isset($this->resolr)
-    {
-        returony\Component\Htass($providon registnction loadDef
-    public functiption']return get_clavalue!       $thmake($para  protected funi';
-    }
-    public function rublictected $bootedCallbacks   return $this-rctedkeyDetect'      return $this[$key];
-   set($this-e(array_meey_existsted $bootedCallbacks ass($providmeters)
- is->l  }
-    pas)
- inate\ Refosure)
-   ublic fufunctioredServices as $s, Closuis->deferctio  }
-return ge0] :edProviders[$provider])) {
-    DeferredProvider(erredProvider($provider,es[$serviesolvingheck         stance;
-        if (edProvkeyt])) {
-  lic function loadDef     foreach ($parameters as $ktrans= ne       foreach (et_claProvider(, $valsterBaseBindings($request ?:et [{$concret});
-        }
-    }
-   lic functirvice]);
-        }
-        $this->register($instance = new $provider($$ay()array())
-    {
-ack) {
-            ction ($key, $value) ul)
-    {
- ctories = null)bstract);
- tion']->aay_menction () use($inoreach ($th   $instance-sterBaseBindings($request ?: aed $resolved = array();
-    prote);
-        }
-        return parreturn Keyder($service);
-        }
-        $thierredServices = arders, function ($key, &unction r          $this-etClosuInterface,$name, $t, ':keycted function reparent::, $alias);
-    ct, Closiases[$abredProvider($serv$thiProvider($provider, onProvider()
-    {erredServices fireCallbackArray($object,r($instance = new $es[$service];
-        iabstractt($this  }
-    puabstrac:tract, $            unset($this->deferrss] = truees[$service];
-        if (!iss->loadDeferredProvidClass($provider);
-        }
-  es[$service];
-        if (!n forceRegister($provider, $opti      $this['router']->before($callbnction before($callback)
-    {
-   undCallba($abstract,ure)
-    {$bootedCallbacks = array return $ohared($abstracturn $this['router']->after($callback);
- isEound)   {
-        return $thsolvingAan  }
-    }
-    public function ma$thiobject, $this->globalResolving Closnction forceRegister($provider, $tdownCaes[$service];
-        , Closu     foreach ($tCOUNT_RECURSIVE) -seArraySessions(Closur  {
-        $provider = $thistoider)} else {
-            $this->shu     return $i';
-    }
-    public functiojg($provider, $type = self::MASTER_REbstract)($callbasion.reject', function () use($thi($o::$dimetho
-    public function usion _ennstaySessionooted;
-  , {
-         }
-    public function boot__toS       else {
-            $this->shu()
-    >bindings[$abstract])) {
-        }
-    }
-    protected frBaseion getReboundCallbacks($abstract)
-    {
-        if (isset($this->reboundCallbacks[$abstrleIn])) {
-            return $this->g($provider)) {
-            $pRe
-use
-        }
-      protected static $dris->b $this, $instance);
-       st as Symfoider)et($ththis->etConstructore);
-        }
-    }dedProvide$callback;
-    }
-ontracts;
-
-iacts;
-
-      if ($this->booted) {
-            $provider->boot();
-        }
-      $this->markAsRegistered($provider);
-        if ey, ider);
-   {
-            return new $concrete()s->bootedCallbackey, nyRequest nsePreparBasevider;
-    }
-   et($th,ull)
-    {
-ony\Component\HttpKactorf ($this->isBuildainate\tpException;
-class Apn function ($c, $paral\Exception\NotFoundH';
-    protected $booted = false;
-  = witnse = wit,arerInt$dependencyinate\FostClass,rovilosurea    } catch (BindingResolu $this->creis->andle($req\laravel\\frame= array(abstract)) {
-    inate\lewargetStackedCct)) {
-     respons   p = with($sta$shared);
-       {()
-   ncrete($thiider);
-    }
-d',        }
-   :      $thi    $respoeter);
-            } elstion  public function erredProvider($provider,);
-  ->instovider;
-u
-use $coreturass);
-        tion keyPption']$value;
-   }
-$value;
-Alias($aReject);
-QueuAlias($name)
- Builder())->pu->flushS$constsIfDonter
-usetion );
-    }
-    public tion ke?:is);
-    }losure($this->instances[$abstracis->mergeCustomete, $parameters);
-    rgeCustoincr     r $staameter);
-          ues($middrsByA
-   s
-   bstr      returneject);
-        $tt($krgeCustomMiddlewaresnshift($parametdeware);
-            array_eturn $tddlewares as $middlew}
-    public functionlewares(stract, Closure $canv= null)
-   lluminate\\Cookiminate\Filesyste     oncrete'];
-eateNeath.{env    foreach ($parametersenv$refle   }
-    resolver, $closure);
-        foreach (array_ex$class, $parameters) = ar     return $renate\erDeferregister($$abstractga $diDataected fun);
-        foreach (array_r($this->mi
-    {
-        re
-    {
-    tion']->setDebues($middeflehared     \\Guard', closure) {
-         m['clay, $value) use($name) {
-         ngs[$se($nncrypter'])-nyRequest ract]);
-    }
-    pub['clet_class(STER_Ray())
-   nce)
-    {
-        if (is_arrayct)
-    {
-   'cookie'])->push('Illuminate\\Swith!$this->TER_RErredProvider($provider;
-    }s->isAlent::ectories = null)
-    {['class'] != $class;
-     equestance->boot();
-  $shared = false;
-   c function         $this->on markAsRegistered($provider)
-    {
-        $this['events']ne($this-getStackeies = a)
-    {
-        $sessionRejecteturn $this->bt();
-       
-        });
-  makeestClass,ion h   }
-    public function boott();Values     $this        return $valuets']->un$provider));
-        $this->serviceProviders[] = $prouest)
-    {acks($s
-   ts']->un->loadedProviders->runningUnitTests()) {
-               n $this->prepar    dedProvideron registes']->untsterBaseBindings($request ?: $thin forceRegister($provider, $opti = witpublic function finish($callback = with($stathis->getRegistered($provinate\iddleware($class)
-    {
-        $this            unset($this->deferr Symn ($p) {
-            $p->boot()andle($req      unset($this->deferr
-            return $y)) {
-         'cookie'])->push('Illuminate\\Strue);
-   }
-    public function register($ {
-        $this->finishCallbacshReqProvidel\\vendor\\laravel\\frames['session.rejeturn $this[$key];
-   offsovidif (!$thi')) as $key => $value) {
-          if (!$this->bootedion handle(quest');
-    }
-    public fuGeferred else {
-            $this->shu throw $e;ce('request');
-    }
-    public fuSeferredProse($na($abstract) && strpos($();
-               }
-    public function bootlic fuUargs);>finishCallbacks as$args);
-    } throw $e;   }
-    public function boot&_{
-          foreach ($cal $callback) {
-            call_user_func($callback, __ {
-     ponse);
-        }
-    }
-    protected function fireAppCallbacks(array $callba__ption']>finishCallbacks as $callbption']->regillback) {
-            call_user_func($c_   {{
-        foreach ($callbacks as $callback) {
-            call_user_func($c__$valissethodkedCls()
-    ? $_SERVER['argv'] :starts_tected (!$valu'tect'     foreach ($parameters as $ktectesnake_case(suespa  $value =4tract($key);
-    }ception\ExceptionServiceProviderBadM(!$vaCalle\Config\Fises()
-eSer (!$va}] doespath(terEv on leIns['app']));
-    serviceProviders, function ($p) {
-            $p->boot()nction booamespace Illuminate\Support\Contracts;
-
-inte;
-        }   protected fProviderClass($provider);
-est);
-    }
-    public functioooting($callback)
-    {
-     acts;
-
-intephp
-naPhpleEnvir}
-        $cClosure $callback)
-    {
-        $this['events']->listen('illuminate.adleware($class)
-    {
-        se($aterequest);
-ntenancee => $provider) {
-            $ttpException($__message__ion h $sessionReject obLies)
-  ob{
-    ies)equest($requob_
-    equest($requack;
-    e, null]) ? $thiss[$abstract]) || $includeage,ession.reject'bstract)
-    {
-        return $concret     }
-      ontrncies[$key]-    }
-    sterBaseBindings($request ?:lst';
-lic funcleatected funct], $this->aliases[$abstract]) $e);
-        });
-    }
-   
-    protected whunctcallbackction m >
-    }
-             $thisob_endk)
-    {eption\ExceptionServicePro$onyRequesss) . '.php'&& isset($this->bindings['\\' . esponse;
-ih ($thi    proce
-{
-  TTP_CONTINUE = 1ectionClFatalErrorESWITCHING_PROTOCOLS $e) 1se($callback) {
- PROCESSING $e) 2se($callback) {
- OK = 2 use($callback) {
- CREATED funcser_func($callbackACCEP
-    {
- });
-    }
-    publNON_AUTHORITATIVE_INFORMATION func3 Filesystem(), $thiExcepENT func4se($callback) {
- RESETtEnvironmentV5er_func($callback,ARTIALtEnvironmentV6se($callback) {
- MULTI_STATUcall207      return new FLREADY_REPOR
-    {
- 8se($callback) {
- IM_US    {
-2ew Filesystem(), $this[PLE_CHOICEcall3 use($callback) {
- MOVED_PERMANENTLYifestser_func($callbackFOUN   {3ew Filesystem(), $tSEE_OTH= '4.3   public function geT_MODIFI    {3VariablesLoader()
- USEk, $Xositorn new FileEnvironm   {RV     reew Filesystem(), $TEMPORARtionDIRECnmen3]);
-    }
-    publiroviderRepo)
-    {
-      rRepository()
-    BAD_REQUESnmen4 use($callback) {
- UN'path']Z    {4user_func($callback,AYMEllbacQUIR  retur});
-    }
-    publFORBIDDE  }
-4etLoadedProviders()
-   , $manif4VariablesLoader()
- METHOD)
-   ALLOW  return new FileEnvironmull($ileLoABLn $e4rredServices(array iders['patENTIC;
-   rvices[$servic);
-    }
-    publiisDefer_TIMEOUrredSerRepository()
-    CONFLI
-    409se($callback) {
- GONs = $1use($callback) {
- LENGTHrvices[$servi1ser_func($callback, ECONDItic::FAILlhost')});
-    }
-    publ functiorn sTY_TOO_LARGconfig  public function  functioURIRVER);O     41turn $this->loadedPNSUP getPr_MEDIA_TYPconfig }
-    public functiDeferED_RANGE::$reSATISFIlass = $1ew Filesystem(), $EXPEC . 'y($url, 'GET',);
-    }
-    publiI_AM_A_TEAPO   {
-1rRepository()
-    UN, $e);
-lass), $_SEt('c2});
-    }
-    publabst  retu2  public function url, '_DEPENDENCc funcariablesLoader()
-    { setblic_WEBDAV_ADVANCED_COLLECd_stSn fos[$s    POSAL     n new FileEnvironmUPGRADErvices[$servimanifest = $this['cers = array($);
-        $trRepository()
-    VER)MAN$serDefercall42       $url = $thi functioHEADER_FIELDSRVER);
-       3ser_func($callbackINTERNAL_c funRackArr      return    static::$reIMPLEedSe    {5ry(new Filesystem()ion GATEWAc fu5st);
-    }
-    publicRVICE   {VAILlass = 5   public function rtisan'on setReque5VariablesLoader()
- VERS_stameter
-    }
- ', 'an new FileEnvironmVARIANl($cSO_NEGOTIATE     ERIedSenfig'5rredServices(array INSUFFICIdSerSTORA     5s;
-    }
-    publicLOOP_DETECate\\AutrRepository()
-    
-   EXTt('ae\\Aug']->get('app.url',NETWORK return static::$requestCla5);
-     Mainten$concreters, array $primieject);tpException;
-classerload'));
-        }
-        = ne'encrypter' => 'IlluminTexate\\Cookie\\Cookicharses = array()) uct)
-   rypter', 'dements Htt100bstr'y($s  if',l_uste\\ESwitchctedProtocolepar102te\\EIlluminate',unctte\\EOKesystcher',C     desyst\Fileset($pate\\Htm3te\\ENon-Autho    tive uminate\\Htesyst4sh' =>  y($stacesyst5te\\EReset'html' => 'Il6Filesyartial'html' => 'Il7te\\EMulti-ector esyst8\\Formlready Ron $ete\\Ht2der', IM Uste\\H3tem', 'e\\Trple Choiceion\3=> 'IllMonctier',a    lynate\\Files    rnate\ash' =See O $dinate\rface', t Modifi\WriterluminaUse=> 'xator' der', te\\rv\WriteruminatTemporar'logdirec=> '3Translar', 'pagi> 'Illuminat4tem', 'Bad Reques'redircher',Unaluminazte\\H4\\Filesyayes;
- llumiror', 'rash' =ForbiddeerIn4', 'auth.reluminate4Illumineturn $h.reAllowor', 'rder', , 'roBuild pubte\\Huminat\Auth llumenti     $tminate\\Redisranslallumina (!$tou'redir9te\\Evenfli 'redi1em', 'Gon\Rout1cher',Lengthte\\Session\\1\Filesysecondiic $dFaillluminaash' =Manager'Entity Too Lar  {
- 41rface'llumina-URIRoutinoilesy41lluminans}
-    ed Media TypUrlGeninders\\uminaed Range', 'rSatisfing\\Rout1uminatEset($    {
-anager', 'uranslaI\'m a teapo'redi2\FilesUnc::norm('Illnate\\    $ash' =
-   or', '2rface'anager Dn;
-usenc;
-    luminate\\sswoproteWebDAV advte($d col($conststancte\\der)posal}
-namder', Upgrad$thinate\\Redi2\Queue\ote\\RemoteMts, $consoleAtore' outiMan'loguminaion\43cher',Manager'sage = FieldsRouting\\UrlG5tem', ' {
-  nal Sosurrnal())$envicher',h.reI
-       te\\H5 => 'Il> 'IGatewa;
-  5\Paginatirvice Unavailng\\Rou5', 'autvironme', 'session5Illuminrror VJar', w\\Facidation\bEnvider', Varian'rouso Negotiates (ch (rif(stal)bEnviuminatInsufficieManStor   {
- 5SessionLoop De requienvite\\Sesh.rece;
-ud }
-     }
-    etworkn' => 'Illuminate\\Sessio($instance);
-        })ddDirectorieseject);r->getCl         20od =concrete);
-        $sessionReject = $thiconcrete);instantiablesage = }
- message);
-     ion bound($aon forget$host) {
-is->bind($abstractquesctor = new       turn 'production';
-  > 'Illumvironme('1.0tract, $closure);
-       oncretss = (' if Response($value);
-ction';
-   if    pr  if (!$thrray_m      if (!$tZone('UTC')']->isStarted()) {eturn $this[$ct)
-    {
-            $host) {
-                if ($this->isMachine($host)) {
-         is not instct)
-  $host) {
-Exception($message);
-       his->serviceProviders, function ($p) {
-            $p-me]);
-   rror/%s      
-    $this-Jar', eturn stalluminate\h($v, '--env');, 'dstati
-ete = null,concreteblic function ision forget    }
-    public function boot__cl retst)) {
-                    return    }ction isMachine
-        if (count(func_get_argsare(Manager'$r      n_array($this['envoncrete);
-eInfo;
-use Symfony\derClass($provideuminate\\Htack)
-||        $thi, '--env');
-     s->isA204ory',ublic function __c    }
-        }
-  this-$abstract = $th {
-      remove(Eventent-y', ' instance()
-    {
         return $this;
- remote
-    public s$shared = false;
-   static {
-        if $this;
     }
- ract]);
+    public function getMaxAge()
+    {
+        if ($this->headers->hasCacheControlDirective('s-maxage')) {
+            return (int) $this->headers->getCacheControlDirective('s-maxage');
+        }
+        if ($this->headers->hasCacheControlDirective('max-age')) {
+            return (int) $this->headers->getCacheControlDirective('max-age');
+        }
+        if (null !== $this->getExpires()) {
+            return $this->getExpires()->format('U') - $this->getDate()->format('U');
+        }
     }
-    pubwn(callabluse Sym            }
-    pu));
+    public function setMaxAge($value)
+    {
+        $this->headers->addCacheControlDirective('max-age', $value);
+        return $this;
     }
-    publct, Closutects->getSc&&er),imey', chemeAndHttpHostMl()
-   e = new $->register(new EventServic function rett()
+    public function setSharedMaxAge($value)
     {
-    urn l()
-   tBaseUrl(), '/');
- ic function bindInstallP call_\Databis->registereryStr?: 'UTF-8crete, $sha    public function root()
-    {
-        return rtrim($thisgetUri()), '/');
+        $this->setPublic();
+        $this->headers->addCacheControlDirective('s-maxage', $value);
+        return $this;
     }
-    pu'    /html;       r=ete =      re {
-            $sharure);
+    public function getTtl()
+    {
+        if (null !== ($maxAge = $this->getMaxAge())) {
+            return $maxAge - $this->getAge();
+        }
     }
-  nv']  {
-      s['et()
+    public function setTtl($seconds)
     {
-     pattern 'bstraSEPARATOR n == '' ? '/' : $pattern;
+        $this->setSharedMaxAge($this->getAge() + $seconds);
+        return $this;
     }
-    publ      r;
+    public function setClientTtl($seconds)
+    {
+        $this->setMaxAge($this->getAge() + $seconds);
+        return $this;
     }
-    public function path()
+    public function getLastModified()
     {
-        $pa? '/' : $pattern;
+        return $this->headers->getDate('Last-Modified');
     }
-    p($naim($this->getPathInfo(), '/');
-       rnelInterface::MAS {
-        if T() user-E  re prot    }
-    public function pathd()
+    public function setLastModified(\DateTime $date = null)
     {
-        return $this->ge }
-    protected functmeAndHttpHisses()
-('    ts()
-    {
-        $seglemote'e;
- '/' : $pattern;
-    }s->path());
-        reStore;
-    public function instance()
-   face::MAS     rce('/\\?.*/', '', $this->getUri()), '/');
-    }  returctoris $pa));
+        if (null === $date) {
+            $this->headers->remove('Last-Modified');
+        } else {
+            $date = clone $date;
+            $date->setTimezone(new \DateTimeZone('UTC'));
+            $this->headers->set('Last-Modified', $date->format('D, d M Y H:i:s') . ' GMT');
+        }
+        return $this;
     }
-    public function bindInstallPaths(arraystat{
-    iron    meAndHttpHlosure($res('{
-      return _null($value = $this->getEnveEnvironment($envir1
-    public static fun          OR . $clastrueEnvironment($enbstra'no-cachresotion\Request as $patternisSe- $conol_null($value = $this->getgetUri()), '/'pragma$patis->isSecublic function bound($getUri()), '/' publi ret-1er implements ArrayAccess
-{
-enonstIEOverSSL $clatibilind) use Symflback = null)
+    public function getEtag()
     {
-        if (is_null($callback)ametsage = "T
-    protected statn $v !=_sturn     foreach ($parameters as ($class)
-    {
-     n $v !ame]);
-   
-            return starts_with($v, '--env');
-        });
+        return $this->headers->get('ETag');
     }
-    pted fuh($v, '--env');
-   handle(SymfonyRequest
+    public function setEtag($etag = null, $weak = false)
     {
-        allPrClosurCvaluider($ract, ) use($nalizeClass($class)
-    {
-  ey : fquestse($name) {
-         ey_exists($$key) nctirete =se($n,n decorn true;
+        if (null === $etag) {
+            $this->headers->remove('Etag');
+        } else {
+            if (0 !== strpos($etag, '"')) {
+                $etag = '"' . $etag . '"';
+            }
+            $this->headers->set('ETag', (true === $weak ? 'W/' : '') . $etag);
+        }
+        return $this;
     }
-    public funcn bindInstallPaths(array {
-            ca
-    publicCookitruequestc
-        $this['excepsetd func$hos    t()
-    {       {
-       is->aolOrArray = is_bE $this(!$thlOrArray = is_bshRequOrArray = is_bDomainy));
-        isS
-   rray($this->inis    Onlte.appisStarted()) {
-            $this['session']->start();
-    amet  return 
-    protected echohis->shutduminate\\Co    public function all()
+    public function setCache(array $options)
     {
-        return a
-}
-namespace Illuminate\       $inputurn 'production';
-  array_replnstance('Illumstatic $t])) {
- 'fastcgi_finish_use Symts()
-    {
-       l();
-        return arError($callbatories)) e);
-} publPHP_SAPItion isEmptyStrinuest', se ClOutputBuffray 0ted function '';
-    }
-    public function all()
-    {
-        return     }
-        ret extend($abstract, Closupubliost) {
- tract)
-             retstract)
-  mernction getEay_get($i$val publs->isAlon getEnv's, functiohead{
-            $this->{"reg isset($this->aliases[$name]);
-    }
- rror(fun      {
- (arraector}
-    lic objectcode, $mes   $s, function ,tion bgiven }
- getis->$key, arra']->isStarted()) {
-   >input(), $thi    as);
-    ), $this->files->all());
-    }
-    public function input(     return else {
-            $this->shutduminate\\Cois->instance('request', $rEnvironment($enieJar',         }
-    }
-    prorts_wit  $thJar', 'encryl, $default = null)
-    {
-        return $this-  {
-        returresponse)
-    {
-        $this-Jar', 'encry     $this->finishCallbac  }
-    protnstance       ted $bootedCallbacks = arralluminate\uest;   retct, $corn aed function getExtend Reqarrayh ($keys as $valueirectories = array_diff(static::$dirme]);
-    }
- t($en       rn arion bi   }
- array }
- $this']->isStarted()) {
-   ct, Closure $cl   puctories = null)
-    {
-   }
-    );
-      self::', 'events' [$this]$cli    if ($this->isValidFile) {
-      ack = null)
-    {
-        es = array($files)SEPARATOR . 
-        foreach ($files as $file) {
-  rn true;
+        if ($diff = array_diff(array_keys($options), array('etag', 'last_modified', 'max_age', 's_maxage', 'private', 'public'))) {
+            throw new \InvalidArgumentException(sprintf('Response does not support the following options: "%s".', implode('", "', array_values($diff))));
+        }
+        if (isset($options['etag'])) {
+            $this->setEtag($options['etag']);
+        }
+        if (isset($options['last_modified'])) {
+            $this->setLastModified($options['last_modified']);
+        }
+        if (isset($options['max_age'])) {
+            $this->setMaxAge($options['max_age']);
+        }
+        if (isset($options['s_maxage'])) {
+            $this->setSharedMaxAge($options['s_maxage']);
+        }
+        if (isset($options['public'])) {
+            if ($options['public']) {
+                $this->setPublic();
+            } else {
+                $this->setPrivate();
             }
         }
-        return files as $file) {
-     pr = null, $default = null)
+        if (isset($options['private'])) {
+            if ($options['private']) {
+                $this->setPrivate();
+            } else {
+                $this->setPublic();
+            }
+        }
+        return $this;
+    }
+    public function setNotModified()
     {
-        return $this-ector = new is);
+        $this->setStatusCode(304);
+        $this->setContent(null);
+        foreach (array('Allow', 'Content-Encoding', 'Content-Language', 'Content-Length', 'Content-MD5', 'Content-Type', 'Last-Modified') as $header) {
+            $this->headers->remove($header);
+        }
+        return $this;
+    }
+    public function hasVary()
+    {
+        return null !== $this->headers->get('Vary');
+    }
+    public function getVary()
+    {
+        if (!($vary = $this->headers->get('Vary', null, false))) {
+            return array();
+        }
+        $ret = array();
+        foreach ($vary as $item) {
+            $ret = array_merge($ret, preg_split('/[\\s,]+/', $item));
+        }
+        return $ret;
+    }
+    public function setVary($headers, $replace = true)
+    {
+        $this->headers->set('Vary', $headers, $replace);
+        return $this;
+    }
+    public function isNotModified(Request $request)
+    {
+        if (!$request->isMethodSafe()) {
+            return false;
+        }
+        $notModified = false;
+        $lastModified = $this->headers->get('Last-Modified');
+        $modifiedSince = $request->headers->get('If-Modified-Since');
+        if ($etags = $request->getEtags()) {
+            $notModified = in_array($this->getEtag(), $etags) || in_array('*', $etags);
+        }
+        if ($modifiedSince && $lastModified) {
+            $notModified = strtotime($modifiedSince) >= strtotime($lastModified) && (!$etags || $notModified);
+        }
+        if ($notModified) {
+            $this->setNotModified();
+        }
+        return $notModified;
+    }
+    public function isInvalid()
+    {
+        return $this->statusCode < 100 || $this->statusCode >= 600;
+    }
+    public function isInformational()
+    {
+        return $this->statusCode >= 100 && $this->statusCode < 200;
+    }
+    public function isSuccessful()
+    {
+        return $this->statusCode >= 200 && $this->statusCode < 300;
+    }
+    public function isRedirection()
+    {
+        return $this->statusCode >= 300 && $this->statusCode < 400;
+    }
+    public function isClientError()
+    {
+        return $this->statusCode >= 400 && $this->statusCode < 500;
+    }
+    public function isServerError()
+    {
+        return $this->statusCode >= 500 && $this->statusCode < 600;
+    }
+    public function isOk()
+    {
+        return 200 === $this->statusCode;
+    }
+    public function isForbidden()
+    {
+        return 403 === $this->statusCode;
+    }
+    public function isNotFound()
+    {
+        return 404 === $this->statusCode;
+    }
+    public function isRedirect($location = null)
+    {
+        return in_array($this->statusCode, array(201, 301, 302, 303, 307, 308)) && (null === $location ?: $location == $this->headers->get('Location'));
+    }
+    public function isEmpty()
+    {
+        return in_array($this->statusCode, array(204, 304));
+    }
+    public static function closeOutputBuffers($targetLevel, $flush)
+    {
+        $status = ob_get_status(true);
+        $level = count($status);
+        while ($level-- > $targetLevel && (!empty($status[$level]['del']) || isset($status[$level]['flags']) && $status[$level]['flags'] & PHP_OUTPUT_HANDLER_REMOVABLE && $status[$level]['flags'] & ($flush ? PHP_OUTPUT_HANDLER_FLUSHABLE : PHP_OUTPUT_HANDLER_CLEANABLE))) {
+            if ($flush) {
+                ob_end_flush();
+            } else {
+                ob_end_clean();
+            }
         }
     }
-    publlluminate\\Encry   $input = $this->all();
-     r(athInfo() $sessionReject = $thiQueryString\\Database\\Dl, $default = null)
+    protected function ensureIEOverSSLCompatibility(Request $request)
     {
-        return $this->    }
- eItem('query', $key, $default);\Database\\Dif (is_null($callback)) uncti publray();
-    protected $nyRequest
-{
-    protected $json;
-  0, 'haiter'ate\\or' =questinateublic function __construc load($class)
-    {
-     equestClass {
-        iunctin ip()
-Dllumi{
-  
-    isse'value) return true;
-    }$filter) ? $this->{$fit;
-    Response($value);
-        load($class)
-    {
-     eturn $this->bisVrrayatl)
-       $this->iisFresh    }
-    public function bootys) ? $keck) {
-            return $callbaTtck)
-  on forceRegister($provider, $       $keys = ifalse)
-    {
-        if ($regi{
-        if Last-minder' =is_array($ke$keys : func_gETagic functublic function hasCookie($k(arra
+        if (false !== stripos($this->headers->get('Content-Disposition'), 'attachment') && preg_match('/MSIE (.*?);/i', $request->server->get('HTTP_USER_AGENT'), $match) == 1 && true === $request->isSecure()) {
+            if (intval(preg_replace('/(MSIE )(.*?);/', '$2', $match[0])) < 9) {
+                $this->headers->remove('Cache-Control');
+            }
+        }
+    }
 }
 namespace Illuminate\Http;
 
- explode      $this->session()->ected($abstract)) {
-       {
-     dd      $this->session()->flashInp$keys = is_array($key) ? $key : func_get_args();
-   tPectedlush()
-    {
-        $this->sessieItem($source, $key, $defau }
-    protected function retrievon()->flashInput(array());
-   lt)
-    {
-        if (is_null($key)) {
-            return rotecttpE  $ke     $keys = is_array($keys) ? $keys : func      $this->session()-rote-r  }
-    p      return $this->flash('pAuthce()->replacellFinishCallbacks($request, $respopublic function replace(array $input)
-       {
-   (!is_)) {
-           {
-        $thismfony\Component\Htt{
-    if (!$tn bind        return $m['ce)), '(!$tz ret {
-            return heaprotected function retriev, '/'is->jso     if) {
-   'D, d M Y H:i:s  retu GMT  {
-        if (is_null($key)) {
-            return getA   $($keys as $key) {
-          ($getAli $this->input();
-  ('A     ($keys as $value) {
-   ct, $coction markAsRegistered($providmax(;
-  ({
-  osure)
-    {
-   y_get($thiU pubtected feturn $this[$key];
-    publi {
-        if ($this-ray($keys) ? $ke  {
-        return $this->getClientIp>jsorray_filteetMax    {)) === '';
-    }
-    public function all()
-    {
-        retukey)) || i {
-        if ($ts[$abstract]) || $($this->json)) {
-            $th)) || irn $this->getMtract)
- Run;
-     {
-        return $concretunction  if (!$t::      From}
-    pDATE_RFC2822, 'Sinst01 Jan 00 00:      +000onments, arrace(explode('=', $vainishCallbac       rontent(), true)return $this->dispatch($reqClosure $crue)) {
-        return $this->getCli return ';
-    }
-    public fTests()) {
-         mat;
-   SplFil    $abstract = $th    if (is_null($key)) {
-            return $this->jsips()
-    {
-        retur';
-    }rn array_get($this->json->all(), $key, $default);
-   d()) {
-            $this['session']->start();
-       Json()
- rn str_contains($this->heah = !is_null($filter) ? $this->{$fis-max
-    );
-        }
-        return $t$this->input();
-        $this->session()-public fun = array())
-    {
-        $flash = !is_null($filter) ? $this->{$fimax-c function session()
-    {
-        if (!$this->hasSession()) {
-            t       re  $files = array($files);
-   publicure()
-         re    foreach ($parameters as $kSymfony\Comp    }
-    pub : $this->request;
-    }
-    pubmat = $this->getFormat($type)) {
-        Json()
-nse);
-        }
-    }
-    pro}
-        return $this->{$source}->       rnction fireAppC    if (is_null($key)) {
-            return $th
-    p function __construct(HttpKernelInte$this->{$soprotected function retrieveItem($source, $key, $defapublic fu;
-    }
-    public function handle(SymfonyRequest $request,    }
-  
-        if ($this->isJson()) mson()nc_array(arraJson()
-      foreach ($parameterseturn $: $this->req    {mat = $this->getFormat($type)) {
-         }
- $ste\\Rin_array($this['ention';
-   pe = HttpKernation;
-
-use Sy + {
- terfac{
-        if (is_null($key)) {
-            return $thCl_usessionInterface;
-class Request
+use Symfony\Component\HttpFoundation\Cookie;
+trait ResponseTrait
 {
-    coADER_CLIENT_IP = 'client_ip';
-    const HEADER_CLIENT_HOST = 'client_host';
-    constUnsastminder'        if (!isset($this->json)) {
-            $thet_args();
-     {
-        $this->finishCallbac    protectedreturn $format;
-            }
-        }
-        return $default;
-    }
-    public static functioected static $trustede(SymfonyRequest $request)
+    public function header($key, $value, $replace = true)
     {
-        if ($request instanceof static) {
-            return $request;
-        }
-        return (new staet_args();
-   duplicate($request->query->all(), $request->request->all(), $request->attributes->all(), $request->cookiesEt)
+        $this->headers->set($key, $value, $replace);
+        return $this;
+    }
+    public function withCookie(Cookie $cookie)
     {
-        return $this['r   return $this-except', $keys);
+        $this->headers->setCookie($cookie);
+        return $this;
     }
-    public funes;
- $etaeterrray_meweahis[directories, (array) }
-        retues;
-default;
-    }
-    public static functiontcept', $ke->getMethod();
-    }
-    publ0erfac['env'] es;
-, '"ts()
-    {
-        $seges;
-   '" functs;
- .h;
- s->globalResolvingCallbacks[] = $calturn (new statxcep,function ($cted $? 'W/'e) {
- ret    prs();
-        $results = array();
-        $input = $this->all();
-isSe    retu   arrayrn str_contains($thidiffass'] != nctis));
-     s {
-      liases[$a'rote$pat    _minder' => pp =_   {
-  s_uest, $tyay $inputay() }
-    ic function except($keys)
-  hasFile($key)
-    {
-        if (!i$keys : f;
-    }
- lidatioCallbfouter   $r      :is->f }
- }
-  retu'", "' $json;_ey : ffuncti)    return $results;
-  t\Facades\Falize($[ay $re>rebound($abstract);UEST, $canguagublic function i$server, $content);
-    }
-    public funst = array(),  initialize(array $query = a    protected= array(), array $cookies $server, $content);
-    }
-    public funay $attr initialize(array $query = a functio->request = new Par$server, $content);
-    }
-    public funtes = arr initialize(array $query = anst HEADER_CLI>attributes = new Pa$server, $content);
-    }
-    public funookies ronment());
-      ($thi->files = new Fileact]);
-    }
-    public fun$catch = true)
-    {     $shared = false;
-           return $ion flu      if (is_array($abstract)) {
-       $this->files = flashInleBag($files);
-        $this->ser = null;
-w ServerBag($server);
-        ));
-        $this->contfonyRequest $requestrver);
-        $this->headers = new H();
-        $results = array();
-        $input = $this->all();No protected static $trustedction';
-    }
-    prorote}
-            }
-        }
-  tion instance()            re('outery $c$this;
- n segmenton createFrLangu   {
-  rn, urldecode($ther = $_SEMD5        if (    $patet_args();
-     func(oncredefault;
-    }
-    public static functi      if) === '';
-    }
-    public function all()
-    {
-        retuhasVa      return $this['routerlInterface;
-use n $v != '';
-  HTTP$key = null, $default = null)
-   HTTP_CONTENT_LENGTH']statiion push('           if (array_key_,  protedirectmespace Symfony\Componenet [{$concrete}]    {
-             } catcound($abstract);
-   rver[0] =itemn extend($abstract,     } cation']->ret,his->gsplit('/[\\s,]+  pub, arrERVER)) {
-                $sertion old($key = null, $defaultsSERVER)rn $v !=    r Closure->name, $primitives)) {
-   protected $sesVER['HT& in_array(strtoup const HEADER_CLIENT_HOST = 'client_host';
-    consis    $this->beterBag;
-use Symfony\Component\Hstaticrray_filter($segmSaf)
-  public static function load($class)
-    {
-      n   $this->$charsettected func    blic staticONTENT_TYPE'] = $_SER 'X_FORWARDED_HOST', self$array(),Sinosuret = new Pan $v != '';
-  Ifrgs();
-  -les =tract, $closure)protenction ndHttpHostotecomponent\HttpFounda  public staticis->session()->gfiles;
-  tion(arr SymfonyReques'*')),OST' = = array())
-    {
-       y(), $files = &    $uri, $meth('SERVER_NAME' => 'localhost', strto>quer, 'HTTP_ACCEPT)ractn/xml;q=0.9'text/html,appion !$server  $t public staR_AGENT' => 'Symfony/2.X',TTP_ACCEPT_C     foreach ($files as      $this->ba) === '';
-    }
-    public f public sta         parse_str($request->gdefault);)
-    {
-        return $this->retrieveI <e) u   $this->iserver);
-  >= 6ectionCl 'SERVER_PROTOCOL' => 'HTTuest extends  'REQUEST_TIME' => time()), $server);
-  >$e) u' => ()), $server);
-    nction ge   parse_str($request->gSut($thfupper($method);
-        $components = parse_urlstemi);
-        if (isset($st'];
-      parse_str($request->g 'Illumi     return $this->retrieveItem('cts = parse_urler',i);
-        if (isset($Service($($key = null, $default = ADER_ed funer($method);
-        $components = parse_urlireci);
-        if (isset($lectionCls['host'])) {
-           ;
-   TTPS'] = 'on';
-                $server['SERVER_PORviroi);
-        if (isset($';
-        $server['REQUEST_METHOOk] = 'on';
-              stem're();
-    >retrieveItem('headers', $key, $defaulisbase', 'r] = 'on';
-              is\\DRVER_PORT'] = $components['port'];
-            $seNot    rP_HOST'] = $server['HTTP_H4ST'] . ':' . $components['port'];
-        }
-         'IllumipKernel\ExedServices[$service];
-        is->session()->getOldInput($key, $de   pu   publi3t);
-  7ate\\)n-us,eClosure $c       $t->mi       $thd = 'GET', $parameters =rnel\Exeter)
-    {
-        try {
-     ) {
-            $this->fireAppConyRequest
+}
+namespace Illuminate\Http;
+
+use ArrayObject;
+use Illuminate\Support\Contracts\JsonableInterface;
+use Illuminate\Support\Contracts\RenderableInterface;
+class Response extends \Symfony\Component\HttpFoundation\Response
 {
-    protected $json;
-    proteci';
-    }
-    publilue), 1));
-      ys) ? $keys : func$tg\\Ut
-      reMiddeof Closure) {
-           lic funs $filunctinull;
-      ries)
-  inate\\Ccted function deor(Clos['CONT--
-           if -us,enbound)  = 'ap[['CONT]['del   $ymfotion']          case 'flags   $ =>        $request = $para &    {OUTPUT_HANDLER_REMOVlass ters;
-                $query =(isset( ?= array();
-         FLUSHlass := array();
-         CLEANlassTYPE'];
-              $sset($ypes = null;
-      tion']-sset(se {
-            $shared = false;
-       tion']->pushError($callb        if (is_array($abstract)) {
-          c function exists($key)
-    { $data);
-            $request->requeSEPARAi;
-    = '' ?           if (array$this;
-  retosemote publattachf(stnctionis->gm
-    '/MSIE t, $);/i')),turn false;
-    }
-    oadedProR_AGENT($abs     = tru1eak;nction ($crray_filtertrim((stiner);
-        };
-   ntval(is->getClosure/(   } )else {
-    $2 publ
-     }
-) < 9 $this->encodings = null;
- ments = explode('/nction ip()
-  ]) ? $this->aliases[$abstract] :         return $this->    s Symfo&& isset($this->bindings['\\' . $}
-    ;
-trailumi>instaTeryS    protected static $di if ($t    {
-     ay(strtoupper($request->server->get('REQUEST_METHOD',mFactory($query, $requ const HEADER_CLIENT_HOST = 'client_host';
-    constect}
-    (}
-    ted functuest->server->get('REQUEST_METHOD' self::ed functlback = null)
+    use ResponseTrait;
+    public $original;
+    public function setContent($content)
     {
-        ifueryString ? '?' . $queryString : ider)Olts =ue) {
-            $this[$key] = $value;
+        $this->original = $content;
+        if ($this->shouldBeJson($content)) {
+            $this->headers->set('Content-Type', 'application/json');
+            $content = $this->morphToJson($content);
+        } elseif ($content instanceof RenderableInterface) {
+            $content = $content->render();
         }
-        $this->markAsRegistered($provnyRequest $request e', 'sharh ($this;
+        return parent::setContent($content);
+    }
+    protected function morphToJson($content)
+    {
+        if ($content instanceof JsonableInterface) {
+            return $content->toJson();
+        }
+        return json_encode($content);
+    }
+    protected function shouldBeJson($content)
+    {
+        return $content instanceof JsonableInterface || $content instanceof ArrayObject || is_array($content);
+    }
+    public function getOriginalContent()
+    {
+        return $this->original;
+    }
+}
+namespace Symfony\Component\HttpFoundation;
 
-class\&& isset($this->bindings['\\' . $abstract    prois_nulng;
-       e\\Config\\Reporigina_registeut = $this->all();
-        foreach ($keys as $key)       == null)return $this->files->($this->heashnd($Be
-    {);
-       {
-        return $this->getClientIp  {
-        $patapplllumina/ion ic function ips() public fuSessionsorphT)
-    {     return 'produ>bindings[$ public QUEST, $catch = true)>serviceProviders[] = $pro          $ if ($aonfig']['app.manst->all(), $request->$directo       }
-        return 'p);
-        foreach (arrayookies = new Parametern str_contains($thi   }
-        if ($fered($provider)
-     foreach ($parametersFileBag($;
-        });
-st->all(), $request->        retur       $dup->server = new ServerBag($se
-            $dup->attis);
-        }
-    }
-  aderBag($dup->server->getHeaders());', 'H   }
-        if ($f null, arra:
-    st);
-          $dup->server =roxies = array();
-O= null)>retrieveItem('query', $key, $default)== null) {
-   unction fatal(Closure $callback)
-    {
-        $this->error(funt;
-      l) {
-    t;
-      ction (FatalECOOKIES_FLAnmen = $t$method->get('_formatARRn' =>'ies = }
-        ifDISPOSrray($ATTACHedSeeques($query, 'at(null)) {
-            INLI'conf'iact,$this->lokie' => 'Illmputetem($source, s($parameters, array $primi  {
-  ements HttpKernelInterface, uestFr Symf array())
-    {
-        $dependencies = arraies = ais->isMachine($host)) {
-         $directories));
-    }        }
-        nt', 'Exception', 'oncret['>isSe- if ()
-  initialize(array $query = a'REQUEST_URI'] =e);
-ymfony\Component\HttpFoundation\Sessions, function ($p) {
-        ()
-    {
-  rn true;
-       $this->register}
-    protected function isEmptyStri()
-    {
-  }
-Set-}
-    mptyStr  {
-  ($name)) === '';
-    }
-    kgs[$ab   }
-        Symfe(array $query = n$directori function od(), $thienvs)
-    {
-        $args = is   $keys = is_ar)) as $key => $value) {
-    comb   }->get('SERVER_PROTss, 'creatument(array $args)
-    {
-        res);
-        }this->isMachine($host)) {
-                    reis->query;
-        $t clone $thisabstract)
-        $this->cookies = clone $this->cookies;
-        $this->files = clone $this->files;
-        $this->server = clone $this->server;
-        $test)
-    {
-     ray(strtoupper($request->server->ger !== null $value) {
-            $null;
-      u)
-   K$thisn/xmrnctitoter'romFacpubl_is->-  protected function retr Symf[ay($key, ant()
-kenate\\Cookielseifst);
-   y($key, ay(), arras;
-        $th, ay $request =-array(), arrn $this-ected $sessionStorereturn $is->registeeturn       $this-ool($th function ips()
-    {
-      ies;
-        $thiachine($h     }
-  ' => $_GET, 'p' => $_POST, '$_SERV => $_COOKIE);
-    REQUEST_URI'] =>instances[$abstract])eturn $dup;
-    }
-    lewares =rs$request = arrequestOrder = ini_ges->getFormat($type)) {
-     T_LENGTH>finishCallbacks as  $_POST =foreach (sif (in_array($key, array('CONTENT_TYPE', 'CONTENT_LENGTH'))) {
-   $args);
-    }      $_SERVER[$key] = urce()->all() +            $_SST'] .y($key, aributes = new Parameterreturn $dup;
-    }
-    public functilue();
-            }
-            t
-        $this->getInpu) {
-            $request->sRequest $request, SymfonyRespo_replace('#[^cgp]#',key = null, $default = null)
-   es()
-    {
-        return self::$trustedProxies;
-    }
-    public static function setTrustedHosts(ar  }
-    pu_replace('#[^cgp]#',et_clas   protected   $input = $this->all();
- elf::$requestFactory = $callable;
-    }
-  this->galid      return !$bo] static functshRequrustedHosts()
- $boolquest;'] = $q_REQUEST = array();
-        forection dur($this));
-s_or  pubdrn !$
-            }
-        }
-        returovider()
-    {
-    TrustedHeadolver = $this->bindinargs);
-    } public same($k][_key_]();
-    (', ', $value)bound) ow new \InvalidArgumentExcepttributes = new Pa    throw new \InvalidArgumentExcept public function re set the trusted header name nction instance($abstra  throw new \InvalidArgumennce)
-    {
-        if (is_array($abstr     return $this->r    prs->getSche    if'_format')); {
-        return $this->sessio   $inststaticnvalidArgumentExce,InvalidArgument>getR= array(), array $files = array(), array $server = array(), $co   }
-  s->fil
-    {
-(%s)
-       $instquest, $a, butes, $der name for key "%s".', $key));
-        }
-R_AGENT' => 'Symfony/2.X'.', $key));
-       ST'] .function  foreach ($parameters as $kthis->getCont  $request = se    tprot      tract);
-        if (isset($this->defe)
-    {
-ingProvider()
-    {
-        $this-rusteected func            $this public functi            d function isEmptyStri {
-            if ('' ===equest;tedHostPattllUrl()
-    {
-        $query = $thisflashOnly($keys)
-       if ('' ===ace Illuminate\Container;
-
-useearc function setTrustedHeaderName($key, $value)
-    {
-         }
-      elf::    c function setrray_m1kedClient()rn !$e()) {
-            $response =Down http_buildfuncttp_buildgCallba->regis         e', $this['  public functionn $this->sessio
-    public s      if (''            $dup->setRs".', $ks->getRequestForma= array(), array $files = array(), array $server = array(), $co }
- 
-    public_args();
-y) $dirion bo;
-     }
- arameterOverride = true;
-    }
-    public static functiost();
-    }
-    public fucure()on enableHttpMetributes = new Paron enableHttpMethod }
-    public functarray('Event', ');
-         ^[\\x20-\\x7e]*$  pubt = $this->query-array(), array $files = array(), array $server = arr::$ht     };
- fe', $thi(arraonly     ($keASCIIm($thac    }
-    public static funeplace($qs, $quernv'] on enableHttpMet, '%unction session()
-$deep))) {
-            return $result;
-        }
-        ifcany();= ($resuallb"%"$this->reqest->get($key, $this, $deep))) {
-            return $
-    ':
-  PreviousSession()
-    {
-     \\  return $this->hasSession() && result;
-      return $this->hasSession() && result;
-   is->et($key, $this, $deep))) {
-            return $result;
-        }
- and   $th
-    {
-        return $this-/"tSess"\\session;
-  uest->get($key, $this, $$o $key \Ine]);
-   %s;       }
-=ion  fals    public s        }
-       '\\    {is->attributes->gettributes !== n     };
- public = $this->query->get($key, $this   publ.ic functionetClientIp*=utf-8\'\'  retrawurl   retur          'SCRIPT_NAME' => '', 'SCRIPT   pubction fireCallbackArray($object,     $request = array('g'
-    protected static $regi>isSe    }
-  tracstClass =    protetIps = array_map(et_args();
-     Ips = array_map('de(', ', );
-        foreach (ex
-    publi foreach (array('Event',    }
-        $clienelf::HEADER_CLIENT_IP]));
-     ,f ($tce()->replac($class)
-    {
-      atic::nc_array(array     $cliensage =ource()->all() +ption']->regi      $clienserver = new
-         $match)) {
-           = null;
-        $this->ceturn $tatic:: foreach (array('Event', 'Exception', )) {
-         public fu
-            }
-            if (Icted    lashIn) === '';
-    }
-    public f if (IpUtilsunction fatal(Closure $callback)
-    {
-        $this->e}
-    ony\Component\Httphis->rebound($abstrac         }
-tion ($c, $prn !$KernelInterface, Teubli$response->send();
-        $ static::$rrim((ers, array $primitnput($kblic static function addDirectories->regis     return tion ubliethod =rustedHeaderName($key, $va    rim(($charset)), nput($kper($request->server->gstat');
-         [=,; 	
-]  public sn getHttpMethodParameterOverride()
-    {
-        return self::$ht, $thisract,ion bin($res($pr    {
-this->reques      $th->get($key, $this, $deepbound)    $this->pathInfo = $this->preparePathInfo();
-        }
-return $this->pat       Overoundest->get($key, $this, $deepet('ORIGncrete($thi  if (!$tributes = new Part('ORIG_S{
-     s HttpKernelInterface
+class ResponseHeaderBag extends HeaderBag
 {
-tories)) t($input, $ket('ORItributes = new Part('ORIG_Sn/xml;q=0.9eUrl = isset($this->bindiSEPARATOR .t('ORIG|| -1   }
-    pub   protected $reboundCallbacks this->basePath = $this->prepareBasePat('OR  }
-  ;
-  ile($key))) {
-      $this->content = $content;
-           };
-      public function bin     ret== $name;
-      c functime($key,entIps();
-   ;
-    protect       if (nulssion.reject') ? $this['bound) rovide?tance:'session.reject'] : nulic functi(botIps getScriptNamr_func($callhInfo()
-                 return is->server;
-        $this->headers = clone $this->stpreglf::HEADER_quest()
-    {    . '=}
-        }!== ($resfunction queRT' => 80ool($thributes = new Parelf:  }
-deleted;     res>getPgm   puis->j-M-->all() T',blic ry : 3153600tClientIps();fonyRequest $request)       trustedHeaders[self:urn 443;isset($this->bindings[$abkey)) || is_arraoxies0 $this->encodings = n       }  if ($host = $this->headers->get('HOST')e;
-use Symfony\CoarameterBag((if (is_array($abstract)) {
-            key_exists($key, selfos($host, rovi>getPa   {
-        $thn $this->basePath;
-this->requrn !$bo          }
-            retNT_POR'https' === return !$bo->get($key, $this, $deepnction ($contain;
+    const COOKIES_FLAT = 'flat';
+    const COOKIES_ARRAY = 'array';
+    const DISPOSITION_ATTACHMENT = 'attachment';
+    const DISPOSITION_INLINE = 'inline';
+    protected $computedCacheControl = array();
+    protected $cookies = array();
+    protected $headerNames = array();
+    public function __construct(array $headers = array())
+    {
+        parent::__construct($headers);
+        if (!isset($this->headers['cache-control'])) {
+            $this->set('Cache-Control', '');
+        }
+    }
+    public function __toString()
+    {
+        $cookies = '';
+        foreach ($this->getCookies() as $cookie) {
+            $cookies .= 'Set-Cookie: ' . $cookie . '
+';
+        }
+        ksort($this->headerNames);
+        return parent::__toString() . $cookies;
+    }
+    public function allPreserveCase()
+    {
+        return array_combine($this->headerNames, $this->headers);
+    }
+    public function replace(array $headers = array())
+    {
+        $this->headerNames = array();
+        parent::replace($headers);
+        if (!isset($this->headers['cache-control'])) {
+            $this->set('Cache-Control', '');
+        }
+    }
+    public function set($key, $values, $replace = true)
+    {
+        parent::set($key, $values, $replace);
+        $uniqueKey = strtr(strtolower($key), '_', '-');
+        $this->headerNames[$uniqueKey] = $key;
+        if (in_array($uniqueKey, array('cache-control', 'etag', 'last-modified', 'expires'))) {
+            $computed = $this->computeCacheControlValue();
+            $this->headers['cache-control'] = array($computed);
+            $this->headerNames['cache-control'] = 'Cache-Control';
+            $this->computedCacheControl = $this->parseCacheControl($computed);
+        }
+    }
+    public function remove($key)
+    {
+        parent::remove($key);
+        $uniqueKey = strtr(strtolower($key), '_', '-');
+        unset($this->headerNames[$uniqueKey]);
+        if ('cache-control' === $uniqueKey) {
+            $this->computedCacheControl = array();
+        }
+    }
+    public function hasCacheControlDirective($key)
+    {
+        return array_key_exists($key, $this->computedCacheControl);
+    }
+    public function getCacheControlDirective($key)
+    {
+        return array_key_exists($key, $this->computedCacheControl) ? $this->computedCacheControl[$key] : null;
+    }
+    public function setCookie(Cookie $cookie)
+    {
+        $this->cookies[$cookie->getDomain()][$cookie->getPath()][$cookie->getName()] = $cookie;
+    }
+    public function removeCookie($name, $path = '/', $domain = null)
+    {
+        if (null === $path) {
+            $path = '/';
+        }
+        unset($this->cookies[$domain][$path][$name]);
+        if (empty($this->cookies[$domain][$path])) {
+            unset($this->cookies[$domain][$path]);
+            if (empty($this->cookies[$domain])) {
+                unset($this->cookies[$domain]);
             }
-        }         retic fun   $clientIps[] = $ip;
-  
-    {
-        retinput($key)->headers->get('PHP_AUTH_Ulf::is !}
         }
-        return $cstt;
-use Illuminate\Http\Responesponse $response)
+    }
+    public function getCookies($format = self::COOKIES_FLAT)
     {
-        $this->aliases[$alias]ONTENT_TYPE', $_SERV return array($ip);
+        if (!in_array($format, array(self::COOKIES_FLAT, self::COOKIES_ARRAY))) {
+            throw new \InvalidArgumentException(sprintf('Format "%s" invalid (%s).', $format, implode(', ', array(self::COOKIES_FLAT, self::COOKIES_ARRAY))));
+        }
+        if (self::COOKIES_ARRAY === $format) {
+            return $this->cookies;
+        }
+        $flattenedCookies = array();
+        foreach ($this->cookies as $path) {
+            foreach ($path as $cookies) {
+                foreach ($cookies as $cookie) {
+                    $flattenedCookies[] = $cookie;
+                }
+            }
+        }
+        return $flattenedCookies;
+    }
+    public function clearCookie($name, $path = '/', $domain = null)
+    {
+        $this->setCookie(new Cookie($name, null, 1, $path, $domain));
+    }
+    public function makeDisposition($disposition, $filename, $filenameFallback = '')
+    {
+        if (!in_array($disposition, array(self::DISPOSITION_ATTACHMENT, self::DISPOSITION_INLINE))) {
+            throw new \InvalidArgumentException(sprintf('The disposition must be either "%s" or "%s".', self::DISPOSITION_ATTACHMENT, self::DISPOSITION_INLINE));
+        }
+        if ('' == $filenameFallback) {
+            $filenameFallback = $filename;
+        }
+        if (!preg_match('/^[\\x20-\\x7e]*$/', $filenameFallback)) {
+            throw new \InvalidArgumentException('The filename fallback must only contain ASCII characters.');
+        }
+        if (false !== strpos($filenameFallback, '%')) {
+            throw new \InvalidArgumentException('The filename fallback cannot contain the "%" character.');
+        }
+        if (false !== strpos($filename, '/') || false !== strpos($filename, '\\') || false !== strpos($filenameFallback, '/') || false !== strpos($filenameFallback, '\\')) {
+            throw new \InvalidArgumentException('The filename and the fallback cannot contain the "/" and "\\" characters.');
+        }
+        $output = sprintf('%s; filename="%s"', $disposition, str_replace('"', '\\"', $filenameFallback));
+        if ($filename !== $filenameFallback) {
+            $output .= sprintf('; filename*=utf-8\'\'%s', rawurlencode($filename));
+        }
+        return $output;
+    }
+    protected function computeCacheControlValue()
+    {
+        if (!$this->cacheControl && !$this->has('ETag') && !$this->has('Last-Modified') && !$this->has('Expires')) {
+            return 'no-cache';
+        }
+        if (!$this->cacheControl) {
+            return 'private, must-revalidate';
+        }
+        $header = $this->getCacheControlHeader();
+        if (isset($this->cacheControl['public']) || isset($this->cacheControl['private'])) {
+            return $header;
+        }
+        if (!isset($this->cacheControl['s-maxage'])) {
+            return $header . ', private';
+        }
+        return $header;
+    }
+}
+namespace Symfony\Component\HttpFoundation;
 
-        $this-        }
-shCallbacks($request, $resrn !$bois);
-        }
-    }
-    publitIps();
-   ceptableContentTypes();
-        arametorce) {
-            return $reg::$trusted protected function refreshRequest(Request $request)
-    {
-        $this->instance('request';
-        set($components['scheme'])) {
-etScriptNams' == $scheme && $port =input($key  public $cookies;
-    public self::HEADER_CLIENT_PROTO] && 'httpervee   pube = $this->getScheme();
-        $po <)) {
-  pp.manifest'] . '/dolash($$this->missingLeadingS= array_diff(static::$diadingSlash($a$dependenc();
-        if (is_nis->requestUri;
- Inset($tancfunction ge\Suppor\    tanc->instances[${
-        retur>getScheme() . '://' . $this->getHt       if ($query unction (FatalEEXleLo_sta       hodPthrow new Bindiformat = $thickArr= ($qs = $this->get;
-   }
-        ifSHUTDOW== ($qs = $this->ger $parame = $this->getClie'usee {
-  ' => '',c function auterQuiblichis->instac function gend? $key;
-    }
-    public function         retlectionCltion getDependenciSt$this[parameters, array $primistic c     , $cquery;
-        $this->request = c
-   oncrete ibstract]ure;
-use ArrayAccess;
-       re= static:nment());
-        Supportrn $enn $this->getSch$abstract]);
-    }
- ps[] = $ip;
-    ;
-      ncrete($thisblic function gc function except($keys)
- = array_diff(static::$direcdiff(st);
- ete _f (!is_n_$key,args();
-         r,}
-  ncrete($ ofete 'lash($a    returpublic function g
-    public static function gHost() . $thequest;
-     lback = null)
-    {
-        if (is_null($callback)pop$message);
-    }
-    proteies;
-    }
-pop     $this[$key. $thkey = null, $default = null)
-   nt(array ost() . ':' . $port;
-    }
-    HTTPS');
-  urlencode(urldecode($keyValuePairoff' !== strtolower($httpr->get('HTTPS');
-  ract);
-        if (is as $service => $provider) {
-            $getHttpHost(tract)) {
-            $this->instanceis not inst$trustedHerameters[$key]);
-                $paramlse {
-   ;
-    protected static $registseUrl() .   return $this->php
-nquery->al\\ers[self$dependenc    }
-    publirt()
-    {
-     = $this->headers->get('HOST'))) {
- Fs()
-Cector
+class Cookie
 {
- (!($host = $this->server->get('SERVER_NAME'))) {
-       (!($host = $this->server->get('SERVER_NAME'))) {
-  HttpHost(rt()
+    protected $name;
+    protected $value;
+    protected $domain;
+    protected $expire;
+    protected $path;
+    protected $secure;
+    protected $httpOnly;
+    public function __construct($name, $value = null, $expire = 0, $path = '/', $domain = null, $secure = false, $httpOnly = true)
     {
-     $abstract) || $this->isAlias($a    if         $qs trrpos($host, ']meter}] in class {$parameter->getDe' !== p(null !== ($qs =trrpos($host, ']tected function resolveClass(ReflectionP    if   return $this-public function bound($;
-        } ($this->instancesd()) {
-            $this['session']->start();
-    unost = $elements[count($elemens) - 1];
-        } elseif (!($host rn isset(}] in class {$parkey)
-    {
-       isset($this->resolved[$abstract]) f::$trustedHostPatternublic function flashOnly($keys)
-    {etContent();
-    }
-    public f . $qsts =qs;
- urn $this->dispatch($reqstatinpu_arrray     ();
-        foreach (explode('return $h) === '';
-    }
-    public function(sprintfstedHeaderst;
- pplication/x-www-form-urlenco  }
-  is['ev    $thisppublic ctories)= $p1024f ($this->booted)
-         }
-    public functiontion']->setDebhis->server->setutes, $c        $this->)
-    {s->midd     $PE'];
+        if (preg_match('/[=,; 	
+]/', $name)) {
+            throw new \InvalidArgumentException(sprintf('The cookie name "%s" contains invalid characters.', $name));
+        }
+        if (empty($name)) {
+            throw new \InvalidArgumentException('The cookie name cannot be empty.');
+        }
+        if ($expire instanceof \DateTime) {
+            $expire = $expire->format('U');
+        } elseif (!is_numeric($expire)) {
+            $expire = strtotime($expire);
+            if (false === $expire || -1 === $expire) {
+                throw new \InvalidArgumentException('The cookie expiration time is not valid.');
             }
-        }')
-    {abstra)
-    {ques    $abstra      iootstrapFile(on registerRblic trrpos($host_array($key) ? $key : func_get_args();
-      return ion fi               }
-            }
-            throw new \UnexpectedValueExceptio     return   $clientIps[] = $ip;
-         HOD-OVERRIDE')) {
-                    $th                 self::$trusew HeadpMet=er($reqvalue);
-                  return issride) {
-            s['sclic 600 <eturn af::$trustedProxies && self::$trustedHeaders[self::H"default$files = $thi'{strtoset(args();
-4xx}
-  5xxisterExceptionProvider()
-    {seif (self::$httpMeth$this->filey($callable)
+        }
+        $this->name = $name;
+        $this->value = $value;
+        $this->domain = $domain;
+        $this->expire = $expire;
+        $this->path = empty($path) ? '/' : $path;
+        $this->secure = (bool) $secure;
+        $this->httpOnly = (bool) $httpOnly;
+    }
+    public function __toString()
     {
-    pathTo? $keyonInnternif ($method = $this->headers->get('X-HTTP-METHOD-OVERRIDE')) {
-               ? $key('Untrusted Host "%s"', $host));
- ion getUriFor          n => '', 'SERVER_PROTOCOL' => throw new Bindinf ($concrete instanceof Closure) {
-  ittpHost(nc_array(arra  $elements = explode(',', (Closure $callback)
-    ent(expl !== nullisAlias($name)
-             retreookierver->setHTTPS');
-   _func($callback, $object, $tent(expl' => Ru {
-     instance()
-    {    }
-       $elements][0] : null === static::$formats) {
-  unset($parameters[$key]);
+        $str = urlencode($this->getName()) . '=';
+        if ('' === (string) $this->getValue()) {
+            $str .= 'deleted; expires=' . gmdate('D, d-M-Y H:i:s T', time() - 31536001);
+        } else {
+            $str .= urlencode($this->getValue());
+            if ($this->getExpiresTime() !== 0) {
+                $str .= '; expires=' . gmdate('D, d-M-Y H:i:s T', $this->getExpiresTime());
+            }
+        }
+        if ($this->path) {
+            $str .= '; path=' . $this->path;
+        }
+        if ($this->getDomain()) {
+            $str .= '; domain=' . $this->getDomain();
+        }
+        if (true === $this->isSecure()) {
+            $str .= '; secure';
+        }
+        if (true === $this->isHttpOnly()) {
+            $str .= '; httponly';
+        }
+        return $str;
+    }
+    public function getName()
+    {
+        return $this->name;
+    }
+    public function getValue()
+    {
+        return $this->value;
+    }
+    public function getDomain()
+    {
+        return $this->domain;
+    }
+    public function getExpiresTime()
+    {
+        return $this->expire;
+    }
+    public function getPath()
+    {
+        return $this->path;
+    }
+    public function isSecure()
+    {
+        return $this->secure;
+    }
+    public function isHttpOnly()
+    {
+        return $this->httpOnly;
+    }
+    public function isCleared()
+    {
+        return $this->expire < time();
+    }
+}
+namespace Whoops;
 
-        if (false !== ($po$formats) irectorforeach (static::$formatslue);
-        if (false !== (pMethodP
-      ::LA }
-       ,{
-      ::QUITlace('/\\?.*/', '', $tbreation ge {
-        if (self::$trustedwill $qs;
- mimeTypes)) {
-  ompo           }
-           return $ho {
-            publicallback)
-    {ttributes !== null) {'REQUEST_METHO     }
-        } elseypes)
-      }
-        $querySor(Closure $callback)
-            $pos = strr])) {
-            parse_str(html    {
-        $query = $this->getic::$formats[$formaNow(ializeFR_AGENT' => 'Symfony/2.X',s) ? $mimeTypes : array(die(tClientIps();
-    }
-  >has(self::$trustedHeaders[    try {
-            return $this->make($parameter->rray_meass()->urn $this->dispatch($req['CONTE&)
-    {ion $e) {
- lizeClass($class)
-    {
-        his->server->set(0] =entr   {
-        self self::$tM
-   }
-          ');
-       TENT_T[
-             stance)
-    {
-    rver['CONTfunction setContentocale)
- od = st  protecteduminate.app.doic function => 'locale;
-   >register(new EventServiceProvihis->instances[$ab    {
-        $query = $this->getreturn $corn $enal()) {
-                r}
-    pungCallbacks($absisset($this->bindings[$abcanTrectable depeale);
-        }
-    }}
-    pu    returnaders = new HeaderBag($this->server->getHeadthrow new BindingResolutionarray_key_exists($key, self::$trustedHeaders)) {
-    resolving($abstract, Closure $cs->setPhpDefaultLocale($                 scallback)
-    {
-        $this->resolvincallbaci);
-      is
-    (Closur'\\Il['is->his->files = clone $this->       return      return HTTP     rname, $t);
-    }
-  s->re);
-    }
-  ));
- meterBag($cookies)bstract;
-     $      return $this->g   }
-    pub
-        }
-               $this->format       return $host;
-      d) {
-        get(ss->get('Util\Mis($keanS      $inputpe, 0, $pos);
-          returew \LogicException('eturn $this->baseUr$this->query->alurceoveDinsta_trtots()
-    {
-        $se            $this-(ource rete {
-            $shared = false;
-       uestFro'X-Ignore-ted : 1T'))eturn ('php://input', 'rb');
-  === '';
-    }
-    this->f::$trustedHLIENT_HOST] && ($host = $this-(arrayct)
-    {
-      afe()
-    {
-        ract, Closure $callbas->gbackArrhod() === strtous |_splks[$a\\s*,\\s*/', $this->heaobject, $t>get('if_none_match'), null,WARNING>get('if_none_match'), nuesolvingCalfunction isNoCache()
-    {
-    public function i     ret  if (null  $thinction forceR>requestUri = $thi
-    public sta    public function getSchemeAndHttpHost()
-    {
-     bstrareturn $this->rebinding($abstract, function ($appirectorforeach ($this->getRebound   i
-    ruxception\HttpException;
-   }
-        abstract, $parameters =     return isset($pref$trustedHeHttpHost(at][0] : nuapp.down', $calPragma');
-    }
-    public function getPreferredLanguage(array $locales = null)
-e_once $pes = $this->gcode, $messais->rebinding($abstractl)) {
- ['conf   {
-        rurn $format;    });
-    }
-   $form= 4rReposier(array(rstra  if (false !][0] : nuregister(array(' }
-    public     if (empty($locales)) {
-     $dependencies[] = $thisueters)= ($posi);
-        foreach (array_ex   iernelInterface
+use Exception;
+use InvalidArgumentException;
+use Whoops\Exception\ErrorException;
+use Whoops\Exception\Inspector;
+use Whoops\Handler\CallbackHandler;
+use Whoops\Handler\Handler;
+use Whoops\Handler\HandlerInterface;
+class Run
 {
-    const MAST      if (!in_aes[0] : null;
+    const EXCEPTION_HANDLER = 'handleException';
+    const ERROR_HANDLER = 'handleError';
+    const SHUTDOWN_HANDLER = 'handleShutdown';
+    protected $isRegistered;
+    protected $allowQuit = true;
+    protected $sendOutput = true;
+    protected $sendHttpCode = 500;
+    protected $handlerStack = array();
+    protected $silencedPatterns = array();
+    public function pushHandler($handler)
+    {
+        if (is_callable($handler)) {
+            $handler = new CallbackHandler($handler);
         }
-        if (!$preferredLahod = null;
-        $t][0] : null;
-rpos($language,= $this->headers->get(self::$trustedHe if (null === $this->requestUr        $preferredLangreturn isset($preferredLanguages[0]) ? $preferredlosure) {
-            $his->defaul{
-              );
-        foreach (array_exatic::$dir if (null === $this->requestUri)    public funcuages) {
-            return $locais->requestUri;
- CallbacksnsePrepa$this->insta\Support;
+        if (!$handler instanceof HandlerInterface) {
+            throw new InvalidArgumentException('Argument to ' . __METHOD__ . ' must be a callable, or instance of' . 'Whoops\\Handler\\HandlerInterface');
+        }
+        $this->handlerStack[] = $handler;
+        return $this;
+    }
+    public function popHandler()
+    {
+        return array_pop($this->handlerStack);
+    }
+    public function getHandlers()
+    {
+        return $this->handlerStack;
+    }
+    public function clearHandlers()
+    {
+        $this->handlerStack = array();
+        return $this;
+    }
+    protected function getInspector(Exception $exception)
+    {
+        return new Inspector($exception);
+    }
+    public function register()
+    {
+        if (!$this->isRegistered) {
+            class_exists('\\Whoops\\Exception\\ErrorException');
+            class_exists('\\Whoops\\Exception\\FrameCollection');
+            class_exists('\\Whoops\\Exception\\Frame');
+            class_exists('\\Whoops\\Exception\\Inspector');
+            set_error_handler(array($this, self::ERROR_HANDLER));
+            set_exception_handler(array($this, self::EXCEPTION_HANDLER));
+            register_shutdown_function(array($this, self::SHUTDOWN_HANDLER));
+            $this->isRegistered = true;
+        }
+        return $this;
+    }
+    public function unregister()
+    {
+        if ($this->isRegistered) {
+            restore_exception_handler();
+            restore_error_handler();
+            $this->isRegistered = false;
+        }
+        return $this;
+    }
+    public function allowQuit($exit = null)
+    {
+        if (func_num_args() == 0) {
+            return $this->allowQuit;
+        }
+        return $this->allowQuit = (bool) $exit;
+    }
+    public function silenceErrorsInPaths($patterns, $levels = 10240)
+    {
+        $this->silencedPatterns = array_merge($this->silencedPatterns, array_map(function ($pattern) use($levels) {
+            return array('pattern' => $pattern, 'levels' => $levels);
+        }, (array) $patterns));
+        return $this;
+    }
+    public function sendHttpCode($code = null)
+    {
+        if (func_num_args() == 0) {
+            return $this->sendHttpCode;
+        }
+        if (!$code) {
+            return $this->sendHttpCode = false;
+        }
+        if ($code === true) {
+            $code = 500;
+        }
+        if ($code < 400 || 600 <= $code) {
+            throw new InvalidArgumentException("Invalid status code '{$code}', must be 4xx or 5xx");
+        }
+        return $this->sendHttpCode = $code;
+    }
+    public function writeToOutput($send = null)
+    {
+        if (func_num_args() == 0) {
+            return $this->sendOutput;
+        }
+        return $this->sendOutput = (bool) $send;
+    }
+    public function handleException(Exception $exception)
+    {
+        $inspector = $this->getInspector($exception);
+        ob_start();
+        $handlerResponse = null;
+        foreach (array_reverse($this->handlerStack) as $handler) {
+            $handler->setRun($this);
+            $handler->setInspector($inspector);
+            $handler->setException($exception);
+            $handlerResponse = $handler->handle($exception);
+            if (in_array($handlerResponse, array(Handler::LAST_HANDLER, Handler::QUIT))) {
+                break;
+            }
+        }
+        $willQuit = $handlerResponse == Handler::QUIT && $this->allowQuit();
+        $output = ob_get_clean();
+        if ($this->writeToOutput()) {
+            if ($willQuit) {
+                while (ob_get_level() > 0) {
+                    ob_end_clean();
+                }
+            }
+            $this->writeToOutputNow($output);
+        }
+        if ($willQuit) {
+            die(1);
+        }
+        return $output;
+    }
+    public function handleError($level, $message, $file = null, $line = null)
+    {
+        if ($level & error_reporting()) {
+            foreach ($this->silencedPatterns as $entry) {
+                $pathMatches = (bool) preg_match($entry['pattern'], $file);
+                $levelMatches = $level & $entry['levels'];
+                if ($pathMatches && $levelMatches) {
+                    return true;
+                }
+            }
+            $exception = new ErrorException($message, $level, 0, $file, $line);
+            if ($this->canThrowExceptions) {
+                throw $exception;
+            } else {
+                $this->handleException($exception);
+            }
+        }
+    }
+    public function handleShutdown()
+    {
+        $this->canThrowExceptions = false;
+        $error = error_get_last();
+        if ($error && $this->isLevelFatal($error['type'])) {
+            $this->handleError($error['type'], $error['message'], $error['file'], $error['line']);
+        }
+    }
+    private $canThrowExceptions = true;
+    private function writeToOutputNow($output)
+    {
+        if ($this->sendHttpCode() && \Whoops\Util\Misc::canSendHeaders()) {
+            $httpCode = $this->sendHttpCode();
+            if (function_exists('http_response_code')) {
+                http_response_code($httpCode);
+            } else {
+                header('X-Ignore-This: 1', true, $httpCode);
+            }
+        }
+        echo $output;
+        return $this;
+    }
+    private static function isLevelFatal($level)
+    {
+        $errors = E_ERROR;
+        $errors |= E_PARSE;
+        $errors |= E_CORE_ERROR;
+        $errors |= E_CORE_WARNING;
+        $errors |= E_COMPILE_ERROR;
+        $errors |= E_COMPILE_WARNING;
+        return ($level & $errors) > 0;
+    }
+}
+namespace Whoops\Handler;
 
-class($abstract)) {
- false !=s = $     s->getMethod() uage'))->is !ForAjax           $this->langu     }
+use Exception;
+use Whoops\Exception\Inspector;
+use Whoops\Run;
+interface HandlerInterface
+{
+    public function handle();
+    public function setRun(Run $run);
+    public function setException(Exception $exception);
+    public function setInspector(Inspector $inspector);
+}
+namespace Whoops\Handler;
+
+use Exception;
+use Whoops\Exception\Inspector;
+use Whoops\Run;
+abstract class Handler implements HandlerInterface
+{
+    const DONE = 16;
+    const LAST_HANDLER = 32;
+    const QUIT = 48;
+    private $run;
+    private $inspector;
+    private $exception;
+    public function setRun(Run $run)
+    {
+        $this->run = $run;
     }
-    pTracUEST_METHODall();
-                    }
-            }
-            throw new \UnexpectedValueExceptioall();
-     nstanceof SplFileInfo && $fall();
-                    if ($codes[0] == 'tedHosts[] = $host;
-                    rray();
-        for(array();
-        foreac            }
-            }
-            throw new \UnexpectedValueExceptiorray();
-        fornstanceof SplFileInfo && $frray();
-        foreac                            if ($bstract;
+    protected function getRun()
+    {
+        return $this->run;
+    }
+    public function setInspector(Inspector $inspector)
+    {
+        $this->inspector = $inspector;
+    }
+    protected function getInspector()
+    {
+        return $this->inspector;
+    }
+    public function setException(Exception $exception)
+    {
+        $this->exception = $exception;
+    }
+    protected function getException()
+    {
+        return $this->exception;
+    }
+}
+namespace Whoops\Handler;
+
+use Whoops\Exception\Formatter;
+class JsonResponseHandler extends Handler
+{
+    private $returnFrames = false;
+    private $onlyForAjaxRequests = false;
+    public function addTraceToOutput($returnFrames = null)
+    {
+        if (func_num_args() == 0) {
+            return $this->returnFrames;
         }
-    is
-        fo         $this->fireAppCabound)  {
-    [qs;
-  Xst($method,WITHrameterTENT_TYPE',  strtoupper($codes[$i]);
-         adedxmlurceturn arr     }
-        return isset(static), $request->files->all(), $            }
-      get(self::$tr {
-            d);
-                } e             ($class)
-    {
-        tion keyPgCallbacks($abstrCallbacks::crete instanceoAsis->$callb
+        $this->returnFrames = (bool) $returnFrames;
+        return $this;
     }
-    public fublic functs $lang) {
-              }
-   statontent() can only be called once when using the resl === $t$this;
-    }:       if ($cookies !== null)nts('php://inpu        retur           if (is_n    {
-        if  }
-blic function fatal(Cunctioendencies = $constructor->getParambstract =        if ($queryBuildcept-Language'))->tpHoy', 'coooreach ((array) $hosts as $erface::MASTER_REQUEST, ))->aultLoc\Spl$this    }
-    public function boot  {
-            }
-            }
-            thhrow new \Unexpecteirectories = array_diff(static::$direrotectedadiff(st(s) whect, ar   $  {
-   
-    public static funces()     }
- 
-                    return ))->->  {
-        p const HEADER_CLIENT_HOST = 'client_host';
-    cons
-   pes) {
-            return $this->acceptableContentTypes;
+    public function onlyForAjaxRequests($onlyForAjaxRequests = null)
+    {
+        if (func_num_args() == 0) {
+            return $this->onlyForAjaxRequests;
         }
-        return $this->acceptableContentTypes = array_keys(Acc
-   er::fromString($this->headers->get('Accept'))->all());
+        $this->onlyForAjaxRequests = (bool) $onlyForAjaxRequests;
     }
-    publest' ion isXmlHttpRequest()
+    private function isAjaxRequest()
     {
-        return 'XMLHttpRequse;
-use r::fromString($this $appder($service);
-   iddlewar== $param |_URL' }
-    public function __tes()
- 0] =on is          $this->rver =    preg_match($pattset($Areter   retu
-     ENCO        if (true ==ng($this->ser$this->ss()
-    {
-        $segapp      his->se('HTTP_X_ORIGIN     $shared = false;
-        kct = key, E_URL')) {
- ction getDefaultLoue)
-    {
-     ENCOuse(        $requestUt)
-    {
-        unset\ull($constkey, $'X_REWRITE_Uh()))) {
-          WRITE_URn offsetGet(newue instaA    IIS_WasUrlRewritten'x - 1, $defaulue)
-    {
-     this->serveTE_URL');
-       ->format;
+        return !empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest';
     }
-     $thise{
-   act = e('HTpubliis->serve   $this->requestUri $this->encodings = array_keys(AcceptHeader::fromString($this->) {
-                $abstract = 'Tr', ;
+    public function handle()
+    {
+        if ($this->onlyForAjaxRequests() && !$this->isAjaxRequest()) {
+            return Handler::DONE;
         }
-        && isset($this->bindings['\\' . $abuminaract) && isset($this->bindings['\\' . $abstract])ister()
-CODED_URL');
-  ($preferredLa::fromString($this, = $this->server->gept-Language'))->app($position = stthis->server->remove       foreach ((array) $hosts as $->remove('X_ORIGINAL_URL    }
-     $this->serhod = null;
-        $tRITE_URequestUriic function his->server->O')) {
-      }
-            $this->languages[] =eterBag;
-use SymreResol =ttpHost) === 0) {
-  ::MAST     Defer = $vact)er($request->server->g"', $host));
-  pp{
-                      et('QUER   }
-    public function boot( $thistRING')) {
-           !== nullace HttpKernelInterface
-{$prevtUri, $pos = strpos($mimeType, 'IG_PATH_INFO');
-   y, $vat = protected $aliases = auestUri;
-  ncrete($thi= $this->server->gen isM{
-    server->get('SCRIPT_FILENAME')) $this->encodings = n{
-    ->s->server-er->remove(           if (is_nstUri = $this->serquestUri;
-    $filena false)
-    {
+        $response = array('error' => Formatter::formatExceptionAsDataArray($this->getInspector(), $this->addTraceToOutput()));
+        if (\Whoops\Util\Misc::canSendHeaders()) {
+            header('Content-Type: application/json');
+        }
+        echo json_encode($response);
+        return Handler::QUIT;
     }
+}
+namespace Stack;
+
+use Symfony\Component\HttpKernel\HttpKernelInterface;
+class Builder
+{
+    private $specs;
+    public function __construct()
+    {
+        $this->specs = new \SplStack();
+    }
+    public function unshift()
+    {
+        if (func_num_args() === 0) {
+            throw new \InvalidArgumentException('Missing argument(s) when calling unshift');
+        }
+        $spec = func_get_args();
+        $this->specs->unshift($spec);
+        return $this;
+    }
+    public function push()
+    {
+        if (func_num_args() === 0) {
+            throw new \InvalidArgumentException('Missing argument(s) when calling push');
+        }
+        $spec = func_get_args();
+        $this->specs->push($spec);
+        return $this;
+    }
+    public function resolve(HttpKernelInterface $app)
+    {
+        $middlewares = array($app);
+        foreach ($this->specs as $spec) {
+            $args = $spec;
+            $firstArg = array_shift($args);
+            if (is_callable($firstArg)) {
+                $app = $firstArg($app);
+            } else {
+                $kernelClass = $firstArg;
+                array_unshift($args, $app);
+                $reflection = new \ReflectionClass($kernelClass);
+                $app = $reflection->newInstanceArgs($args);
+            }
+            array_unshift($middlewares, $app);
+        }
+        return new StackedHttpKernel($app, $middlewares);
+    }
+}
+namespace Stack;
+
+use Symfony\Component\HttpKernel\HttpKernelInterface;
+use Symfony\Component\HttpKernel\TerminableInterface;
+use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Response;
+class StackedHttpKernel implements HttpKernelInterface, TerminableInterface
+{
+    private $app;
+    private $middlewares = array();
+    public function __construct(HttpKernelInterface $app, array $middlewares)
+    {
+        $this->app = $app;
+        $this->middlewares = $middlewares;
+    }
+    public function handle(Request $request, $type = HttpKernelInterface::MASTER_REQUEST, $catch = true)
+    {
+        return $this->app->handle($request, $type, $catch);
+    }
+    public function terminate(Request $request, Response $response)
+    {
+        $prevKernel = null;
+        foreach ($this->middlewares as $kernel) {
+            if (!$prevKernel instanceof TerminableInterface && $kernel instanceof TerminableInterface) {
+                $kernel->terminate($request, $response);
+            }
+            $prevKernel = $kernel;
+        }
+    }
+}

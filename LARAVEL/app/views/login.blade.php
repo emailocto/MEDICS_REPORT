@@ -1,34 +1,25 @@
 @extends('layout_login')
 
 @section('content')
-	<div class="container" style="background-color: #CCCCCC; width: 700px">
-		<div class="row">
-		Input username and Password<br/>
-		
-		{{ Form::open(array('url' => 'login', 'method' => 'post', 'class' => 'form-horizontal')) }}			
-		<p>
-			{{ $errors->first('username') }}
-			{{ $errors->first('password') }}
-			{{ $errors->first() }}
-		</p>	
-		<div class="form-group">
-			{{ Form::label('username', 'E-mail address:', array('class' => 'col-xs-4 control-label')) }} 
-			<div class="col-xs-4">
-				{{ Form::text('username', Input::old('email'), array('class' => 'form-control', 'placeholder' => 'Email')) }}
-			</div>
+	<div class="container">
+		<div class="row" style="width: 700px">
+		 <div class="col-md-offset-7 col-md-3 text-center">				
+			{{ Form::open(array('url' => 'login', 'method' => 'post', 'class' => 'form-signin')) }}			
+			
+			Input username and Password
+			<p>
+				{{ $errors->first('username') }}
+				{{ $errors->first('password') }}
+				{{ $errors->first() }}
+			</p>	
+			{{ Form::text('username', Input::old('email'), array('class' => 'form-control', 'placeholder' => 'UserName')) }}
+			{{ Form::password('password', array('class' => 'form-control', 'placeholder' => 'Password')) }}
+			{{ Form::checkbox('chk_remember', '1') }} {{ Form::label('chk_remember', 'Remember Me?') }}
+			<br/>
+			{{ Form::submit('Login', array('class' => 'btn btn-primary')) }}
+
+			{{ Form::close() }}
 		</div>
-		<div class="form-group">
-			{{ Form::label('password', 'Password:', array('class' => 'col-xs-4 control-label')) }} 
-			<div class="col-xs-4">
-				{{ Form::password('password', array('class' => 'form-control', 'placeholder' => 'Password')) }}
-			</div>
-		</div>
-		<div class="form-group">
-			<div class="col-xs-4">
-				{{ Form::submit('Login', array('class' => 'btn btn-default')) }}
-			</div>
-		</div>
-		{{ Form::close() }}
 		</div>
 	</div>
 @stop

@@ -31,8 +31,6 @@ Route::get('logout', function()
   return Redirect::to('login');
 });
 
-//Route::get('logout', array('uses' => 'LogoutController@doLogout'));
-
 Route::get('login', array('uses' => 'LoginController@showLogin'));
 Route::post('login', array('uses' => 'LoginController@doLogin'));
 

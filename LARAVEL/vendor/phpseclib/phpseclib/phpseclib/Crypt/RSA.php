@@ -2899,70 +2899,92 @@ class Crypt_RSA
                 $decrypt = '_rsaes_pkcs1_v1_5_decrypt';
                 break;
             //case CRYPT_RSA_ENCRYPTION_OAEP:
- Pure-PHP PKdefault* Pure-PHP PKC imp$decrypt = '_rsaes_oaep_mentati'; Pure-PHP}
- Pure-PHPforeach ($ciphertext as $c) { Pure-PHP PKC$temp = $this->ementati($c)sions 4 ane>
- if (rypt te== false encrypt and decp';
-returninclud:
- * <code>
- *}crypt and decrplain of .ext empsions 4 and 5
- *
- * H*
- *   tract($rsasions d 5
- *
-/** Pure-* Create a signaturersa->lorsa->loa@see verify()$cipherteaccess public$cipherteparam String $messag;
- *     @*
- *   adKey(rsa->lo/ Purefunctionivate(publickeencrypncrypt and <?pempty(t with modulus) || xample of howexponent) encrypt and dec*
- *    $rsa = new Cryd 5
- *
- * Hswit an e with vatekey);Modde 'Crypt/RSA.phpcase C<?ph_RSA_SIGNATURE_PKCS1.1) compliant implintext = with f RSssa_pkcs1_v1_5_* ?>
- * </code:
- * <code>
- *//= new Crypt_RSA();
- *    eSS* Pure-PHP PKCS#1 (v2.1) compliant impl());
- *
- *    $plaintexssafrost';
- *
- *    $rsa->lSA();
- *
- *    $rsa->loaV$rsaiesprivatekey);
- *    $ciphertext =* ?>
-encrypt($plaintext);
- *
- *    $rsa->loadKey($publickey);
- *   sa->loadKey($pvatekey);
- *       echo $Booleanecrypt($ciphertext);
-  $rsa->publicke,on obtainine>
- *
- * Here's an example of how to create signatures and verify signatures with this library:
- * <code>
- * <?php
- *    include 'Crypt/RSA.php';
- *
- *    $rsa = new Crypt_RSA();
- *    extract($rsa->createKey());
- *
- *    $plaintext = 'terraocumentation files (the "Sof   $rsa->loadKey($privatekey);
- *    $signature = $rsa->sign($plaintext);
- *
- *    $rsa->loadKey($publickey);are is
- * furnished to do so, subject ($plaintext, $signature)Extract raw BER from Base64 encod->decrypt(ncrypt($plaintextrivatof charge, to any person try);
- *    echo $rsa->decrypt($ciphertext);
- _ee.
- *
-BER(IMPLe>
- *
- * Here's /* X.509 certs are assumed to be b IS PROVIDEed but sometimes they'll have addit);
-al things in SHAm Pure-PHP * abo * And beyond SHAA PAitificate.ERS BE LIABLie.N NO  mayHE
- * DAMAfollowey($preceED "CTION-HERWBEGIN CERTIFICATEHERWI line* Pure-PHP , WITHO LIABLBag AttributesERS BE LIABL OTHlocalKeyID: 01 00 * THEERS BE LIABLsubject=/O=organizat);
-/OUy  C unit/CN=common nam;
- *   BILITY,ssuergory  Crypt
- * @ppt_RSA
- * @author    Jim $ciphe decrypt texpreg_replace('#.*?^-+[^-]+-+#ms', ''les tr, 1o, subject // remFOR R OTHERWISE, ARISING FROM,
- * OUANY HERWIENDRISING FROM,
- * OUstuff Pure-PHPnton
- * @license   httpww.opensoue.org/lieate/mit-license.html  MInewUT OFR THE USE rypt texstrense   htarray("\r", "\n", ' ')sts() will only be calnton
- * @licematch('#^[a-zA-Z\d/+]*={0,2}$xistwill o ? NONINF* PHodephp
- *) :  $rsa = new Cry());
- *
- pt t! includ ?he incl:licenost';
- *}
+            default:
+                $decrypt = '_rsaes_oaep_decrypt';
+        }
+
+        foreach ($ciphertext as $c) {
+            $temp = $this->$decrypt($c);
+            if ($temp === false) {
+                return false;
+            }
+            $plaintext.= $temp;
+        }
+
+        return $plaintext;
+    }
+
+    /**
+     * Create a signature
+     *
+     * @see verify()
+     * @access public
+     * @param String $message
+     * @return String
+     */
+    function sign($message)
+    {
+        if (empty($this->modulus) || empty($this->exponent)) {
+            return false;
+        }
+
+        switch ($this->signatureMode) {
+            case CRYPT_RSA_SIGNATURE_PKCS1:
+                return $this->_rsassa_pkcs1_v1_5_sign($message);
+            //case CRYPT_RSA_SIGNATURE_PSS:
+            default:
+                return $this->_rsassa_pss_sign($message);
+        }
+    }
+
+    /**
+     * Verifies a signature
+     *
+     * @see sign()
+     * @access public
+     * @param String $message
+     * @param String $signature
+     * @return Boolean
+     */
+    function verify($message, $signature)
+    {
+        if (empty($this->modulus) || empty($this->exponent)) {
+            return false;
+        }
+
+        switch ($this->signatureMode) {
+            case CRYPT_RSA_SIGNATURE_PKCS1:
+                return $this->_rsassa_pkcs1_v1_5_verify($message, $signature);
+            //case CRYPT_RSA_SIGNATURE_PSS:
+            default:
+                return $this->_rsassa_pss_verify($message, $signature);
+        }
+    }
+
+    /**
+     * Extract raw BER from Base64 encoding
+     *
+     * @access private
+     * @param String $str
+     * @return String
+     */
+    function _extractBER($str)
+    {
+        /* X.509 certs are assumed to be base64 encoded but sometimes they'll have additional things in them
+         * above and beyond the ceritificate.
+         * ie. some may have the following preceding the -----BEGIN CERTIFICATE----- line:
+         *
+         * Bag Attributes
+         *     localKeyID: 01 00 00 00
+         * subject=/O=organization/OU=org unit/CN=common name
+         * issuer=/O=organization/CN=common name
+         */
+        $temp = preg_replace('#.*?^-+[^-]+-+#ms', '', $str, 1);
+        // remove the -----BEGIN CERTIFICATE----- and -----END CERTIFICATE----- stuff
+        $temp = preg_replace('#-+[^-]+-+#', '', $temp);
+        // remove new lines
+        $temp = str_replace(array("\r", "\n", ' '), '', $temp);
+        $temp = preg_match('#^[a-zA-Z\d/+]*={0,2}$#', $temp) ? base64_decode($temp) : false;
+        return $temp != false ? $temp : $str;
+    }
+}

@@ -34,5 +34,7 @@ Route::get('logout', function()
 //Route::get('logout', array('uses' => 'LogoutController@doLogout'));
 
 Route::get('login', array('uses' => 'LoginController@showLogin'));
-
 Route::post('login', array('uses' => 'LoginController@doLogin'));
+
+Route::get('register', array('uses' => 'RegistrationController@showRegistration'));
+Route::post('register', array('uses' => 'RegistrationController@doRegister'));

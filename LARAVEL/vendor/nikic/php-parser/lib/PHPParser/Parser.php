@@ -2214,604 +2214,508 @@ class PHPParser_Parser
     }
 
     protected function yyn276($attributes) {
-         $this->yyval = new PHPParser_Node_Expr_StaticCall($this->yyastk[an autostackPos-(4-1)], an automatically GENERATED file, 3hich should not be manually edited.
- 4hich attributes); 
+         $this->yyval = new PHPParser_Node_Expr_StaticCall($this->yyastk[$this->stackPos-(4-1)], $this->yyastk[$this->stackPos-(4-3)], $this->yyastk[$this->stackPos-(4-4)], $attributes); 
     }
-le grprotected function yyn277(the grammar  {le greletoan automaval = new PHPParser_Nod<?php
 
-/* This is an automatically GENERATED file6 which should not be manually edited.6 *  * t The skeleton for this parser wa6  * the grammar file grammar/zend_language_parser.phpy8 *  * the parser skeletor skeleton   if  an automatically GENERATED file2 whi instanceofp.parser
- *  * the preprocePropertyFetchrser skeletonkeleton grammar/kymacc.php.parser
- *  * the preprocessing script grammar/rebuildParser.pconst->class,c.php.parser
- *  * the prVariable const YYGLAST      = 444;
-    const YYname* the grammar ritten by Moriyoshi Koizumi and i2-2  * the grammar f
+    protected function yyn277($attributes) {
+         $this->yyval = new PHPParser_Node_Expr_StaticCall($this->yyastk[$this->stackPos-(6-1)], $this->yyastk[$this->stackPos-(6-4)], $this->yyastk[$this->stackPos-(6-6)], $attributes); 
+    }
 
-    const Y} else
-    const TOKEN_NONE    = -1;
-    const TOKEN_INVALID = 151;
+    protected function yyn278($attributes) {
+        
+            if ($this->yyastk[$this->stackPos-(2-1)] instanceof PHPParser_Node_Expr_StaticPropertyFetch) {
+                $this->yyval = new PHPParser_Node_Expr_StaticCall($this->yyastk[$this->stackPos-(2-1)]->class, new PHPParser_Node_Expr_Variable($this->yyastk[$this->stackPos-(2-1)]->name, $attributes), $this->yyastk[$this->stackPos-(2-2)], $attributes);
+            } elseif ($this->yyastk[$this->stackPos-(2-1)] instanceof PHPParser_Node_Expr_ArrayDimFetch) {
+                $tmp = $this->yyastk[$this->stackPos-(2-1)];
+                while ($tmp->var instanceof PHPParser_Node_Expr_ArrayDimFetch) {
+                    $tmp = $tmp->var;
+                }
 
-    constArrayDimE = 386;
-
-    const YYLAST mp =kens
-    const YYERRTOK = 256;
-   1)]= 257;
-    con;
-  while   cmp->var9;
-    const T_REQUIRE = 260;
-    const T_REQUIRE_ONCE = 261;
-   
-    const T_LOGICALCAL_XOR = 263;
-   ammar/z_EQUAL = 268 grammar/kymacc.php.parser
- *  * the preprocessing sLOGICALYYNLSTATEconst YYGLAST      = 444;
-    const okens
-    const YYERRTOK = 256;
-    const T_INCLUDE = 257;
-    con
-    conGICAL_cc.php.parser
- *  * the prNEXPECTED == 270;
-  766;
-
-    // {{{ T= 257;
-    const T_I6;
-
-    const YYLASthrowc.phpExceparse= 257;
-    consINUS_EQUAL le grammar/zend_language_parser.phpy9 *  * the parser skeleton grammar/kymacc.php.parser
- *  * the prFun;
-    const YYGLAST      = 444;
-    const okens
-    const YYERRTOK = 256;
-    const T_INCLUDE =t T_IS_EQUAL = 280;
-    const T_IS_N80 *  * the parser skeleton grammar/kymacc.php.parser
- *  * the pr  const T_REQ an automatically GENERATED file, which should not be manually edited.
- * InstAL = 285;
-    const T_SL = 286;
-    const T_SR = 1 *  * the parser skeleton grammar/kymacc.php.parser
- *  * tName('s* Thi'TRING_CAST = 293;
-    const T_ARRAY_CAST = 294;
-    2 *  * the parser skeleton grammar/kymacctten by Moriyoshi Koizumi and i1LOGIC  const T_SL = 286;
-    const T_SR = 3onst T_OBJECT_CAST = 295;
-    const T_BOOL_CAST = 296;
-    constt T_IF = 301;
-    const T_ELSEIF = 3TRING_CAST = 293;
-    const T_ARRAY_CAST = 294;
-    4onst T_OBJECT_CAST = 295;
-    const T_BOOL_CAST = 296;
-    cons_FullyQualified const YYGLAST      = 444;
-    conOR_EQUAL = 285;
-    const T_SL = 286;
-    const T_SR = 59;
-    const T_NUM_STRING = 310;
-    const T_INLINE_HTML = 311;
-Relativ 306;
-    const T_STRING = 307;
- 3 T_STRING_CAST = 293;
-    const T_ARRAY_CAST = 294;
-    6 = 299;
-    const T_EXIT = 300;
-    const T_IF = 301;
-    const T_ELSEIF = 302;
-    const T_ELSE = 303;
-    const 
- *  * the parser skeleton grammar/kymacct T_IF = 301;
-    const T_ELSEIF = 302;
-    const T_ELSE = 303;
-    const C DOMAIN.
- */
-class PHPPa 325;
-    const T_AS = 326;
-    const T_SWITCH = 327;
-    const T_ENDSWITCH = 328;
-    conT_EQUAL = 281;
-    const T_IS_IDENTICAL =t T_IF = 301;
-    const T_ELSEIF = 302;
-    const T_ELSE = 303;
-    const9287;
-    const T_INSTANCEOF = 288;
-    cost T_CONST = 335;
-    const T_RETURN = 336;
-    const T_TRY = 337;
-    conconst T_OBJECT_CAST = 295;
-    const T_BOst T_CONST = 335;
-    const T_RETURN = 336;
-    const T_TRY = 337;
-    con2(rser skeleto= 343;
-    const T_STATIC = 344;
-    const TICAL_XO
-    const T_TRY = 337;
-    conT_ENDIF = 304;
-    const T_LNUMBER = 305;
-    const T_DNUMBEphp
-
-_MAP_SIZE = 3 const T_DO = 317;
-    const T_WHIR_EQUAL = 284;
-    const T_IS_GREATEHILE = 318;
-    const T_ENDWHILE = 319;
-    const T_FOR 909;
-    const T_NUM_STRING = 310;
-    const T_INLINE_HTML = const T_EMPTY = 353;
-    const T_HALT_COMPILER = 354;
-    const T_CLASS = 355;
-    const T_TRAIT = 356;
-    const T_INTERFACE = 357;
-    const T_;
-    const T_CONSTANT_ENCAPSED_STRING = 315;
-    const T_EC  const T_DEC = 290;
-    const T_INT_CAST = 291;
-    const T_DOUBLE_CAST = 292;
-    const T_STRING_CAST = 293;
-    const T_ARRAY_CAST = 294;
-   9 320;
-    const T_ENDFOR = 321;
-    const const T_METHOD_C = 367;
-    const T_FUNC_C = 368;
-    const T_LINE = 369;
-    const T_FILE = 370;
-    const T_COMMENT = 371;
-    const T_DOC_COMMENT = 372;
-    con
- *  * the parser skeleton grammar/kymacc.ull    const T_DOC_COMMENT = 372;
-    const T_CASE = 329;
-    const T_DEFAULT = 33EN = 380;
-    const T_PAAMAYIM_NEKUDOTAYIM 333;
-    const T_FUNCTION = 334;
-    const T_CONST = 335;
-    const T_RETURN = 336;
-    const T_TRY = 337;
-    c30287;
-    const T_INSTANCEOF = 288;
-    coa con(    const T_SL = 286;
-    const T_SR 30const T_OBJECT_CAST = 295;
-    const T_BO  "EOF.parser
- *  * tScala
-
-/*ring::pser
-EscapeSequences306;
-    const T_STRING = 307;
-    cons'`')",
-        "error",
-        "T_INCLUDE"E = 299;
-    const T_EXIT foreach   const TOKEN_NONE    = -1;
-    F = 3 as &$arse{
-   is_s     ($s),
-  $s =p.parser
- *  * tRE",
-        "T_REQUIRE_ONCE",
-      s      ; } };ATE = 347;
-    const T_PROTECTED = 348;
-    ctoken ids to their respective names */
-    prT_ENDIF = 304;
-    const T_LNUMBER = 305;  "EOF",
-        "error",
-        "T_INCLUDE"09;
-    const T_NUM_STRING = 310;
-    conOD_EQUAL",
-        "T_AND_EQUAL",
-        "T_OR_EQUAL",
-        "T_XOR_EQU;
-    const T_CONSTANT_ENCAPSED_STRING = 315;
-    const T_ECRE",
-  LNumber        "T_REQUIRE",
-  NTICAL""T_REQU306;
-    const T_STRING = 307;
-    coTokehe grammar file grammar/zend_language_parser.ph30st T_OPEN_TAG = 373;
-    const T_OPEN_TAG_WITH_ECHO = 374;
- RE",
-  DTICAL",
-        "'<'",
-          "'/_SMALLER_OR_EQUAL",
-        "'>'",
-        "T_IS_GREATER_OR_EQUAL",
-        "T_SL",
-        "T_SR
- *  * the parser skeleton grammar/kymacc.php.parser
- *  * tRE",
-                "T_REQUIRE",
-        "T_REQUR_OR_EQUAL",
-        "'>'",
-        "T_IS_GREATER_OR_EQUAL",
-        "T_SL",
-        "T_SR = 381;
-    const T_NAMESPACE = 382;
-    cL",
-        "T_IS_NOT_IDENineConst *  * the par_EQUAL",
-        "T_SL",
-        "T_SRT_EQUAL = 281;
-    const T_IS_IDENTICAL = 282;
-    const T_IRE",
-  Fil       "T_ELSE",
-        "T_ENDIF",
-        "T_LNUMBER",1287;
-    const T_INSTANCEOF = 288;
-    const T_INC = 289;
-  ",
-     ir      "T_VARIABLE",
-        "T_NUM_STRING",
-        "T_Iconst T_OBJECT_CAST = 295;
-    const T_BOOL_CAST = 296;
-    RE",
-  CLSTA      "T_VARIABLE",
-        "T_NUM_STRING",
-        "T_IE = 299;
-    const T_EXIT = 300;
-    cons"T_IF",
-        "T_ELSEIF"Trait      "T_VARIABLE",
-        "T_NUM_STRING",
-        "T_IT_ENDIF = 304;
-    const T_LNUMBER = 305;
-    const T_DNUMBERE",
-  Method      "T_VARIABLE",
-        "T_NUM_STRING",
-        "T_I09;
-    const T_NUM_STRING = 310;
-    const T_INLINE_HTML = ARNAME",IDEN     "T_VARIABLE",
-        "T_NUM_STRING",
-        "T_I  "T_IS_NOT_EQUAL",
-        "T_IS_IDENTICAL",
-        "T_IS_NOT_IDENS,
-        "T_USE",
-        "T_INSTEADOF",
-        "T_GLO",
-        "'+'",
-        "'-'",
-        "'.'",
-        "'*'",
-    Y_CAST",
-        "T_OBJECT_CAST",
-        DocY_CAST";
-    const T_HALT_COMPILER = 354;
-    const T_CLASS = 355;
-    const T2 "T_IS_GREATER_OR_EQUAL",
-        "T_SL",
-        "T_S1,
-        "T_DOUBLE_CAST",
-        "T_STRING_CAST",
-        "T_ARRAY_CAST"'T_CAST = 297;
-    const T_NEW = 298;
-    const T_CL31    "T_CLONE",
-        "T_EXIT",
-        "T_IF",
-        "T_php
-
-,
-    = 353;
-    const T_HALT_COMPILER = 3   const T_STRING_VARNAME = 308;
-    const T_VARIABLE =31
-    const T_NS_SEPARATOR = 385;
-    // }}}
-
-    /* @var array Map of token ids to their respective names */
-    p2287;
-    const T_INSTANCEOF = 288;
-    const T_INC = 289;
-    conDFOR",
-    = 353;
-    const T_HALT_COMPILER = 354;
-    const T_CLASS = 355;
-    const T_TRAIT = 356;
-    const T_INTERFACE = 357;
-    const 32const T_OBJECT_CAST = 295;
-    const T_BOOL_CAST = 296;
-    php
-
-UnaryPlu     "','",
-        "T_LOGICAL_ORHARACTER = 313;
-    const T_ENCAPSED_AND_WHITESPACE = 332T_DECLARE",
-        "T_ENDDECLARE",
-        "T_AS",
-        ected statMin $translate = array(
-            0,  151,  151,  151,  151,  151,  151,  151,  151,  151,
-  350;
-    const T_UNSET = 351;
-    const T_ISSET = 352;
-    const  con an automatically GENERATED file,   "'\"'"
-        , "???"
-    );
-
-    /* @var array Map EXTENDS = 358;
-    const T_IMPLEMENTS = 359;
-    const T_OBJECT_O45,   42,    7,   43,   44,   46,  15
-    1,  151,  151,  151,  151,  151,  151,  151,  151,
- ;
-    const T_CONSTANT_ENCAPSED_STRING = M_NEKUDOTAYIM",
-        "T_NAMESPACE",
-        "T_NS_C",
-        "T_DIR",
-st T_OPEN_TAG = 373;
-    const T_OPEN_TAG_WITH_ECHO = 374;
-    co'}'",
-        "'('",
-        "')'",
-        "'$'",
-        "'`'",
-        "']'",
-        "'\"'"
-        , "???"
-    );
-
-    /* @var array Map 
- *  * the parser skeleton    "T_YIELD",
-        "'='",
-        "T
-    _EQUAL",
-        "T_MINUS_EQUAL",
-        "T_MUL_EQUAL",
-        "T_DIV_EQUAL",
-        "T_CO"CAT_EQUAL",
-        "T_M"T_IF",
-        "T_ELSEIF"EncapsCHARACTER = 312;
-    const T_BAD_C1,  151,  151,  151,  151,  151,  151,  151,  151,  151,
-st T_CASE = 329;
-    const       151,  151,  151,  151,  151,  151,  151,  151,  151,  151,
-          151,  151,  151,  151,  151,  151,  151,  151,  151,  151,
-  EN =AT_EQU",
-   preg_replace('~(\r\n|    r)$~', ABLE"    
-   '' ===  15_EQUAL_pop  151,
-          151,  151,  151,  15);51,  151,  151,  151,  151,  151,  151,  151,  151,  151,
-          151,  151,  151,  151,  151,  151,  151,  151,  151,  151,
-          151
-    const T_NS_SEPARATOR = 385;
-    // }}}
-
-    /* @var array Map of token ids to their respective names */
-    p3287;
-    const T_INSTANCEOF = 288;
-    co'NLSTA'1,  151,  151,  151,  151,  151,  151,,
-        "T_INCLUDE_ONCE",
-        "T_EVAL",
-        "T_ENDIF",
-        "T_LNUMBER",3E = 299;
-    const T_EXIT = 300;
-    const T_IF = 301;
-    const T_ELSEI_LOGIC16,
-           17,   18,   19,   20, 3const T_PRIVATE = 347;
-    const T_PROTECTED = 348;
-    const T_PUBLIC = 349;
-    const T_VAR33452,   53,   54,   55,   56,   57,   58,   59,   62,   63,
-           64,   65,   66,   67,   68;
-    const T_CONSTANT_ENCAPSED_STRst T_HALT_COMPILER = 354;
- []  151,  151,  151,  151,  151,
-   HILE AL",
-        "T_MOD_EQUAL",
-        "T_AND_EQUAL54;
- 39,   40,   41,   49,   51,
-           320;
-    const T_ENDFOR = 321;
-    const  "EOF_OR_EQUAL",
-        "'>'",
-        "T39,   40,   41,   49,   51,
+                $this->yyval = new PHPParser_Node_Expr_StaticCall($tmp->var->class, $this->yyastk[$this->stackPos-(2-1)], $this->yyastk[$this->stackPos-(2-2)], $attributes);
+                $tmp->var = new PHPParser_Node_Expr_Variable($tmp->var->name, $attributes);
+            } else {
+                throw new Exception;
+            }
           
- *  * the parser skeleton grammar/kymacc.php.parser
- *  * the pr  conItem const T_DO = 317;
-    const T_WHILE = 398,   99,  100,  101,
-          102, fals
-    const T_SR_16,
-           17,   18,   19,   20,    "T_METHOD_C",
-        "T_FUNC_C",
-        "T_LINE",
-        "T,  151,  151,  151,  133,  134,  135,
-      consEN =  );
+    }
 
-    protected static $yyaction = array(
-           59
-    const T_NS_SEPARATOR = 385;
-    // }}}
+    protected function yyn279($attributes) {
+         $this->yyval = new PHPParser_Node_Expr_FuncCall($this->yyastk[$this->stackPos-(2-1)], $this->yyastk[$this->stackPos-(2-2)], $attributes); 
+    }
 
-    /* @var array Map of token ids to their respective names */
-    p4st T_CATCH = 338;
-    const T_FINALLY = 339;
-    const T_THROW = 340;
-    const T_USE = 341;
-    const T_INSTEADO34= 342;
-    const T_GLOBAL = 343;
-    const T_STATIC = 344;
-    const T_ABSTRACT = 345;
-    const T_FINAL = 346;
- 34E = 299;
-    const T_EXIT = 300;
-    const T_IF = 301;
-    const T_ELSEIF = 302;
-    const T_ELSE = 303;
-    cons34  48,  150,  151,  147,   47,   31,  151,
-          145,  146,   45,  DEC = 290;
-    const T_INT_CAST = 291;
- 6ARACTER  278,  279,-32766,  286,-32766,5 151,  151,  151,  151,  151,  151,  151,  151,  151,41,  151,   26,  142,
-           36,   13,   38,   25,   60,  151,  151DEC = 290;
-    const T_INT_CAST = 291;
-    const T_DOUBLE_CAST = 292;
-    const T_STRING_CAST = 293;
-    const T_ARRAY_CAST = 294;
-  34S_C = 365;
-    const T_TRAIT_C = 366;
-    const T_METHOD_C = 367; T_EMPTY = 353;
-    const T_HALT_COMPILER = 354;
-    const T_CLASS = 355;
-    const T_TRAIT = 356;
-    const T_INTERFACE = 357;
-    const 34st T_OPEN_TAG = 373;
-    const T_OPEN_TAG_WITH_ECHO = 374;
-    co      " is an automatically GENERATED file, which should not be manually edited.
- * Instead edit one of the following:
- *  * the grammar file grammar/zend_language_parser.ph34
- *  * the parser skeleton grammar/kymacc.php.parser
- *  * the pr_IDENTICAL = 283;
-    const T_IS_SMALLER_OR_EQUAL = 284;
-    const T_IS_GREATER_OR_EQUAL = 285;
-    const T_SL = 286;
-    const T_SR 34,   60,  325,   61,   62,-32766,-32766,-32766,  324,   63,
-           0,  239,   82,   83,   84, -350,  389,  846,  841,  330,
-          584,  504,  126,   47,  227,  259,  244,  802,  248,   40,
-         T_EQUAL = 281;
-    const T_IS_IDENTICAL = 282;
-    const T_IS_NOT   840,  239,   82,   83,   84, -350,  389,  846,  841,  330,
-          584,  504,  126,   47,  227,  259,  244,  802,  248,   40,
-        56,  927,  249,  929,  928,   67,  535,   68,  220,
-          221,   69,   70,   71,   72,   73,   74,   75,   76, 5= 342;
-    const T_GLOBAL = 343;
-    const T_STATIC = 344;
-    const T_A
-    ,  224,  334,-32766,
-          259,  963,   46,   27,  327,  859,
-          364,  246,  365,  454,  366,   39,  223,  328,-32766,-32766,
-        -32766,5 350;
-    const T_UNSET = 351;
-    const T_ISSET = 352;
-    constNEXPECTED = 32767;
-    const YYDEFAULT      151,  151,  151,  151,  151,  151,  151,  151,  151,5 "T_BOOLEAN_OR",
-        "T_BOOLEAN_AND",
-        "'|'",
-        "'^'",
-        "'&'",
-        "T_IS_EQUAL",
-     5          151,  151,  151,  151,  151,  151,  151,  151,  151,  151,
-          151,   61,  151,  149,   30,  151, 5st T_OPEN_TAG = 373;
-    const T_OPEN_TAG_WITH_ECHO = 374;
-    co TOKEN_MAP_SIZE = 3 an automatically GENERATED file, which should not be manually edited.
- ,  322,  329,  319,  899,  544,
-         -117,  257,  5
-    const T_ENDDECLARE = 325;
-    const T_AS = 326;
-    const T_SWITCH = 327;
-    const T_ENDSWITCH = 328;
-    c35   "T_METHOD_C",
-        "T_FUNC_C",
-        "T_LINE",
-        "T6,-32766,  131,  287,   49,
-          540,  602,  354;
-   substr const T_DO = 317;
-    const T_WHILE = 1T_IS_GREATER_OR_EQUAL",
-        "T_SL",
-        "T_S5T_EQUAL = 281;
-    const T_IS_IDENTICAL = 282;
-    const T_IS_NOT6,-32766,  131,  287,   49,
-          540,  602,  3hp
- *
- * The skeleton for this parser wa,  373,  389,  343,  861,  330,  560,  602,
-          6287;
-    const T_INSTANCEOF = 288;
-    const T_INC = 289;
-    const T_DEC = 290;
-    const T_INT_CAST = 291;
-    const T_DOUBLE_CAST = 292;
-    const T_STRING_CAST = 293;
-    const T_ARRAY_CAST = 294;
-  36which translates lexer tokens to internal tokens */
-    protected,
-        -32766, -158,  401,-32766,-32766,-32766,  493,-32766,  479,-32766,
-          475,-32766, -161,  604,-32766,-32766,-32766,  265,-32         151,  151,  151,  151,  151,  151,  151,  151,  151,  15,
-        -32766, -158,  401,-32766,-32766,-32766,  493,-32766,  479,-32766,
-          475,-32766, -161,  604,-32766,-32766,-32766,  265,-32  36,   37,  367,  333,  360,   38,  368,  329,  423,
-           78,  848,  122,  278,  279,-32766,  286,-32762766,  493,-32766,  479,-32766,
-          475,-32766, -161,  604,-32766,-32766,-32766,  265,-32EXTENDS = 358;
-    const T_IMPLEMENTS = 359;
-    const T_OBJECT_ONEXPECTED32766,  541,
-          511,-32766,-327   cons66,-32766,-32766,  224,-32766,   50,-32766,
-         6S_C = 365;
-    const T_TRAIT_C = 366;
-    const T_METHOD_C = 367;NEXPECTED = 32767;
-    const YYDEFAULT      475,-32766, -161,  604,-32766,-32766,-32766,  265,-32st T_OPEN_TAG = 373;
-    const T_OPEN_TAG_N = 380;
-    const T_PAAMAYIM_NEKUDOTAY366,-32766,  655,  656,-32766,
-        -32766,-32766,  263,-32766,  519,-32766,  507,-32766,  542,  129,
-        -326st T_CASE = 329;
-    const T_DEFAULT = 330;
-    const T_BREAK = 331;
-    const T_CONTINUE = 332;
-    const T_GOTO36 333;
-    const T_FUNCTION = 334;
-    const T_CONST = 335;
-    const T_R,-32766,-32766,-32766,  118,-32766,  494,-76,  927,  249,  929,  928,   67,  535,   68,  220,
-          221,   69,   70,   71,   72,   73,   74,   75,   76, 7which translates lexer tokens to internal tokens */
-    protectedLi   "32766,-32766,  618,  563,-32766,
-        -32766,  625,  624,-32766,  633,  580,-32766,7E = 299;
-    const T_EXIT = 300;
-  5,   86,   87,   88,   89,   90,   91,
-           92,   93,   94,   95,   96,   97,   98,   99,  100,  101,
-          102,  103,  104,  105,  106,  107,  108,7AL",
-        "T_SL_EQUAL",
-        "T_SR_EQUAL"15,  116,  117,  118,  119,  120,  121,
-          122,  123,  124,  125,  7 "T_BOOLEAN_OR",
-        "T_BOOLEAN_AND",
-        "'|'",
-        "'^'",
-        "'&'",
-        "T_IS_EQUAL",
-     7          151,  151,  151,  151,  151,  151,  151,  151,  151,  151,
-          151,   61,  151,  149,   30,  151, 7 388,  565,  587,
-          574,  572,-32766,  513,-32766,  512,   45,   44,-32766y
- *  * the parser skeleton grammar/kymacc  "EOF",
-        "error",
-        "T_INCLUDEIC DOMAIN.
- */
-class PHPPa 27,   28,
-           32,   33,   34,   35,   37,   39,   40,   41,   49,   51,
-         OT_EQUAL = 281;
-    const T_IS_IDENT5,   86,   87,   88,   89,   90,   91,
-           92,   93,   94,   95,   96,   97,   98,   99,  100,  101,
-          102,  103,  104,  105,  106,  107,  108, 287;
-    const T_INSTANCEOF = 288;
-    co6,-32766,  446, -114,-32766,-32766,
-          854,  659,-32766,  795,  792,-3276 const T_OBJECT_CAST = 295;
-    const T_BOOL_CAST = 296;
-      151,  151,  151,  151,  133,  134,  135,
-          136,  137,  138,  139,  140,  141
-    );
+    protected function yyn280($attributes) {
+         $this->yyval = new PHPParser_Node_Expr_ArrayDimFetch($this->yyastk[$this->stackPos-(4-1)], $this->yyastk[$this->stackPos-(4-3)], $attributes); 
+    }
 
-    protected static $yyaction = array(
-           5NE = 299;
-    const T_EXIT = 300;
-    cons2766,  324,   63,
-           64,-32767,-32767,-32767,-32767,   98,   99,  100,  101,  102,
-           57,  917,-32766,  298,-32766,-32 T_ENDIF = 304;
-    const T_LNUMBER = 305;
-    const T_DNUMBE          64,-32767,-32767,-32767,-32767,   9866,-3276n automatically GENERATED file, whichtru61,    0,    0,    0,  789,  369,  370,    0,    0,
- 1,  151,   26,  142,
-           36,   13,   38,   25,   60,  151,  1511,  151,  151,  133,  134,  135,
-   66,-327  100,  0,-32766,-32766,-32766,-32766,  369,  370,    0,    0, 81,
-           82,   83,   84,   85,   86,   87,   88,  _LOGI  90,   91,
-           92,   93,   966,-3AL",
-        "T_MOD_EQUAL",
-        "T_AND_EQUAL7,   39,   40,   41,   49,   51,
-         = 320;
-    const T_ENDFOR = 321;
-   ,   39,   40,   41,   42,   43,   44,
-           61,   76,   25,   73,   27,   28,   13,   14,   15,   16,
-           17,   18,   19,   20,   21,   22,   23,         369,  370,  875,  879,  540,  602,  374,,    0,  560,  602,  374,  375,    0,    0,
-            0,  369,  370,  329  375,  329,-32766,  811,-32766,-32766,-371,   73,    7,   75,    7,   77,   7_OR_EQUAL = 284;
-    const T_IS_GREATER_OR_,    0,  789,  369,  370,    0,    0,
- T_EQUAL = 281;
-    const T_IS_IDENTICAL = 282;
-    const T_IS_NOT    499,-32766,  535,  300,-32766,  388,-32766,  288,  251,-32766,
-        -32766,-32766,-32766,-32766,  24nst T_CATCH = 338;
-    const T_FINALLY = 366,-32766,-32766,  788,  255,-32766,-313,  114,  115,  138,   26,  117,  141,  116,  117,
-          118,  119, which66,-32766,-32766  493,-32766,  479,-32766,
-          475,-32766, -161,  604,-32766,-32766,-32766,  265,-3 = 342;
-    const T_GLOBAL = 343;
-    cons   91,   92,   93,
-           94,   9513,  114,  115,  138,   26,  117,  141,  116,  117,
-          118,  11954;
-   9,   30,   31,   32,   33,   34,   35,
-          ,  788,  233,  576,-32766,-32766,-32766,  701,  702,
-   9  492,    0,    0,    0,  514,    0,
-          486,  560,  602,  NEXPECTED = 32767;
-    const YYDEFAULT  1,  151,  151,  151,  151,  151,  151,  151,  151,  151,= 350;
-    const T_UNSET = 351;
-    const T_ISSET = 352;
-    const  107,  108,   73,
-          112,    7,   73,   31,    7,   65,  116,  117,  118,  119,
-         74,  375,  376,  377,  848,  842,  843,  844,  845,  839,
-          840,  239,   124,   78,   79,
-           80,  142,   82,   61,   84,   97, 6,   35,30,   31,   32,   33,   34,   35,
-          was writ31,    7,   65,  116,  117,  118,  119,
-                   151,  151,  151,  151,  151,  151,  151,  151,  151,  151,
-   ,-32766,-32766,-32766,  118,-32766,  494,-nst T_OPEN_TAG = 373;
-    const T_OPEN_TAG_WITH_ECHO = 374;
- "T_ARRAY_CAST"     "T_START_HEREDOC",
-        "T_END_HEREDOC",
-        "T_DOLLAR_OPEN_CURLY_BRACES",
-N_CURLY_BRACES = 379;
-    const T_CURLY_OPE 71,  117,   71,   45,   46,   47,   75,
-           49,  112,   78,   79,   80,  143,   82,   71,   84,  141,
-             "T_METHOD_C",
-        "T_FUNC_C",
-        "T_LINE",
-        "T    499,-32766,  535,  300,-32766,  388,-32766,  288,  251,-32766,
-        -327}
+    protected function yyn281($attributes) {
+         $this->yyval = new PHPParser_Node_Name('static', $attributes); 
+    }
+
+    protected function yyn282($attributes) {
+         $this->yyval = $this->yyastk[$this->stackPos-(1-1)]; 
+    }
+
+    protected function yyn283($attributes) {
+         $this->yyval = new PHPParser_Node_Name($this->yyastk[$this->stackPos-(1-1)], $attributes); 
+    }
+
+    protected function yyn284($attributes) {
+         $this->yyval = new PHPParser_Node_Name_FullyQualified($this->yyastk[$this->stackPos-(2-2)], $attributes); 
+    }
+
+    protected function yyn285($attributes) {
+         $this->yyval = new PHPParser_Node_Name_Relative($this->yyastk[$this->stackPos-(3-3)], $attributes); 
+    }
+
+    protected function yyn286($attributes) {
+         $this->yyval = $this->yyastk[$this->stackPos-(1-1)]; 
+    }
+
+    protected function yyn287($attributes) {
+         $this->yyval = $this->yyastk[$this->stackPos-(1-1)]; 
+    }
+
+    protected function yyn288($attributes) {
+         $this->yyval = $this->yyastk[$this->stackPos-(1-1)]; 
+    }
+
+    protected function yyn289($attributes) {
+         $this->yyval = $this->yyastk[$this->stackPos-(1-1)]; 
+    }
+
+    protected function yyn290($attributes) {
+         $this->yyval = $this->yyastk[$this->stackPos-(1-1)]; 
+    }
+
+    protected function yyn291($attributes) {
+         $this->yyval = $this->yyastk[$this->stackPos-(1-1)]; 
+    }
+
+    protected function yyn292() {
+        $this->yyval = $this->yyastk[$this->stackPos];
+    }
+
+    protected function yyn293($attributes) {
+         $this->yyval = new PHPParser_Node_Expr_PropertyFetch($this->yyastk[$this->stackPos-(3-1)], $this->yyastk[$this->stackPos-(3-3)], $attributes); 
+    }
+
+    protected function yyn294($attributes) {
+         $this->yyval = new PHPParser_Node_Expr_PropertyFetch($this->yyastk[$this->stackPos-(3-1)], $this->yyastk[$this->stackPos-(3-3)], $attributes); 
+    }
+
+    protected function yyn295($attributes) {
+         $this->yyval = new PHPParser_Node_Expr_ArrayDimFetch($this->yyastk[$this->stackPos-(4-1)], $this->yyastk[$this->stackPos-(4-3)], $attributes); 
+    }
+
+    protected function yyn296($attributes) {
+         $this->yyval = new PHPParser_Node_Expr_ArrayDimFetch($this->yyastk[$this->stackPos-(4-1)], $this->yyastk[$this->stackPos-(4-3)], $attributes); 
+    }
+
+    protected function yyn297($attributes) {
+         $this->yyval = null; 
+    }
+
+    protected function yyn298($attributes) {
+         $this->yyval = null; 
+    }
+
+    protected function yyn299($attributes) {
+         $this->yyval = $this->yyastk[$this->stackPos-(1-1)]; 
+    }
+
+    protected function yyn300($attributes) {
+         $this->yyval = array(); 
+    }
+
+    protected function yyn301($attributes) {
+         $this->yyval = array(PHPParser_Node_Scalar_String::parseEscapeSequences($this->yyastk[$this->stackPos-(1-1)], '`')); 
+    }
+
+    protected function yyn302($attributes) {
+         foreach ($this->yyastk[$this->stackPos-(1-1)] as &$s) { if (is_string($s)) { $s = PHPParser_Node_Scalar_String::parseEscapeSequences($s, '`'); } }; $this->yyval = $this->yyastk[$this->stackPos-(1-1)]; 
+    }
+
+    protected function yyn303($attributes) {
+         $this->yyval = array(); 
+    }
+
+    protected function yyn304($attributes) {
+         $this->yyval = $this->yyastk[$this->stackPos-(1-1)]; 
+    }
+
+    protected function yyn305($attributes) {
+         $this->yyval = new PHPParser_Node_Scalar_LNumber(PHPParser_Node_Scalar_LNumber::parse($this->yyastk[$this->stackPos-(1-1)]), $attributes); 
+    }
+
+    protected function yyn306($attributes) {
+         $this->yyval = new PHPParser_Node_Scalar_DNumber(PHPParser_Node_Scalar_DNumber::parse($this->yyastk[$this->stackPos-(1-1)]), $attributes); 
+    }
+
+    protected function yyn307($attributes) {
+         $this->yyval = new PHPParser_Node_Scalar_String(PHPParser_Node_Scalar_String::parse($this->yyastk[$this->stackPos-(1-1)]), $attributes); 
+    }
+
+    protected function yyn308($attributes) {
+         $this->yyval = new PHPParser_Node_Scalar_LineConst($attributes); 
+    }
+
+    protected function yyn309($attributes) {
+         $this->yyval = new PHPParser_Node_Scalar_FileConst($attributes); 
+    }
+
+    protected function yyn310($attributes) {
+         $this->yyval = new PHPParser_Node_Scalar_DirConst($attributes); 
+    }
+
+    protected function yyn311($attributes) {
+         $this->yyval = new PHPParser_Node_Scalar_ClassConst($attributes); 
+    }
+
+    protected function yyn312($attributes) {
+         $this->yyval = new PHPParser_Node_Scalar_TraitConst($attributes); 
+    }
+
+    protected function yyn313($attributes) {
+         $this->yyval = new PHPParser_Node_Scalar_MethodConst($attributes); 
+    }
+
+    protected function yyn314($attributes) {
+         $this->yyval = new PHPParser_Node_Scalar_FuncConst($attributes); 
+    }
+
+    protected function yyn315($attributes) {
+         $this->yyval = new PHPParser_Node_Scalar_NSConst($attributes); 
+    }
+
+    protected function yyn316($attributes) {
+         $this->yyval = new PHPParser_Node_Scalar_String(PHPParser_Node_Scalar_String::parseDocString($this->yyastk[$this->stackPos-(3-1)], $this->yyastk[$this->stackPos-(3-2)]), $attributes); 
+    }
+
+    protected function yyn317($attributes) {
+         $this->yyval = new PHPParser_Node_Scalar_String('', $attributes); 
+    }
+
+    protected function yyn318($attributes) {
+         $this->yyval = new PHPParser_Node_Expr_ConstFetch($this->yyastk[$this->stackPos-(1-1)], $attributes); 
+    }
+
+    protected function yyn319($attributes) {
+         $this->yyval = $this->yyastk[$this->stackPos-(1-1)]; 
+    }
+
+    protected function yyn320($attributes) {
+         $this->yyval = new PHPParser_Node_Expr_ClassConstFetch($this->yyastk[$this->stackPos-(3-1)], $this->yyastk[$this->stackPos-(3-3)], $attributes); 
+    }
+
+    protected function yyn321($attributes) {
+         $this->yyval = new PHPParser_Node_Expr_UnaryPlus($this->yyastk[$this->stackPos-(2-2)], $attributes); 
+    }
+
+    protected function yyn322($attributes) {
+         $this->yyval = new PHPParser_Node_Expr_UnaryMinus($this->yyastk[$this->stackPos-(2-2)], $attributes); 
+    }
+
+    protected function yyn323($attributes) {
+         $this->yyval = new PHPParser_Node_Expr_Array($this->yyastk[$this->stackPos-(4-3)], $attributes); 
+    }
+
+    protected function yyn324($attributes) {
+         $this->yyval = new PHPParser_Node_Expr_Array($this->yyastk[$this->stackPos-(3-2)], $attributes); 
+    }
+
+    protected function yyn325($attributes) {
+         $this->yyval = $this->yyastk[$this->stackPos-(1-1)]; 
+    }
+
+    protected function yyn326($attributes) {
+         $this->yyval = new PHPParser_Node_Expr_ClassConstFetch($this->yyastk[$this->stackPos-(3-1)], $this->yyastk[$this->stackPos-(3-3)], $attributes); 
+    }
+
+    protected function yyn327($attributes) {
+         foreach ($this->yyastk[$this->stackPos-(3-2)] as &$s) { if (is_string($s)) { $s = PHPParser_Node_Scalar_String::parseEscapeSequences($s, '"'); } }; $this->yyval = new PHPParser_Node_Scalar_Encapsed($this->yyastk[$this->stackPos-(3-2)], $attributes); 
+    }
+
+    protected function yyn328($attributes) {
+         foreach ($this->yyastk[$this->stackPos-(3-2)] as &$s) { if (is_string($s)) { $s = PHPParser_Node_Scalar_String::parseEscapeSequences($s, null); } } $s = preg_replace('~(\r\n|\n|\r)$~', '', $s); if ('' === $s) array_pop($this->yyastk[$this->stackPos-(3-2)]);; $this->yyval = new PHPParser_Node_Scalar_Encapsed($this->yyastk[$this->stackPos-(3-2)], $attributes); 
+    }
+
+    protected function yyn329($attributes) {
+         $this->yyval = $this->yyastk[$this->stackPos-(1-1)]; 
+    }
+
+    protected function yyn330($attributes) {
+         $this->yyval = 'class'; 
+    }
+
+    protected function yyn331($attributes) {
+         $this->yyval = array(); 
+    }
+
+    protected function yyn332($attributes) {
+         $this->yyval = $this->yyastk[$this->stackPos-(2-1)]; 
+    }
+
+    protected function yyn333() {
+        $this->yyval = $this->yyastk[$this->stackPos];
+    }
+
+    protected function yyn334() {
+        $this->yyval = $this->yyastk[$this->stackPos];
+    }
+
+    protected function yyn335($attributes) {
+         $this->yyastk[$this->stackPos-(3-1)][] = $this->yyastk[$this->stackPos-(3-3)]; $this->yyval = $this->yyastk[$this->stackPos-(3-1)]; 
+    }
+
+    protected function yyn336($attributes) {
+         $this->yyval = array($this->yyastk[$this->stackPos-(1-1)]); 
+    }
+
+    protected function yyn337($attributes) {
+         $this->yyval = new PHPParser_Node_Expr_ArrayItem($this->yyastk[$this->stackPos-(3-3)], $this->yyastk[$this->stackPos-(3-1)], false, $attributes); 
+    }
+
+    protected function yyn338($attributes) {
+         $this->yyval = new PHPParser_Node_Expr_ArrayItem($this->yyastk[$this->stackPos-(1-1)], null, false, $attributes); 
+    }
+
+    protected function yyn339($attributes) {
+         $this->yyval = $this->yyastk[$this->stackPos-(1-1)]; 
+    }
+
+    protected function yyn340($attributes) {
+         $this->yyval = $this->yyastk[$this->stackPos-(1-1)]; 
+    }
+
+    protected function yyn341($attributes) {
+         $this->yyval = $this->yyastk[$this->stackPos-(1-1)]; 
+    }
+
+    protected function yyn342($attributes) {
+         $this->yyval = $this->yyastk[$this->stackPos-(1-1)]; 
+    }
+
+    protected function yyn343($attributes) {
+         $this->yyval = new PHPParser_Node_Expr_ArrayDimFetch($this->yyastk[$this->stackPos-(6-2)], $this->yyastk[$this->stackPos-(6-5)], $attributes); 
+    }
+
+    protected function yyn344($attributes) {
+         $this->yyval = new PHPParser_Node_Expr_ArrayDimFetch($this->yyastk[$this->stackPos-(4-1)], $this->yyastk[$this->stackPos-(4-3)], $attributes); 
+    }
+
+    protected function yyn345($attributes) {
+         $this->yyval = new PHPParser_Node_Expr_PropertyFetch($this->yyastk[$this->stackPos-(3-1)], $this->yyastk[$this->stackPos-(3-3)], $attributes); 
+    }
+
+    protected function yyn346($attributes) {
+         $this->yyval = new PHPParser_Node_Expr_MethodCall($this->yyastk[$this->stackPos-(4-1)], $this->yyastk[$this->stackPos-(4-3)], $this->yyastk[$this->stackPos-(4-4)], $attributes); 
+    }
+
+    protected function yyn347($attributes) {
+         $this->yyval = new PHPParser_Node_Expr_FuncCall($this->yyastk[$this->stackPos-(2-1)], $this->yyastk[$this->stackPos-(2-2)], $attributes); 
+    }
+
+    protected function yyn348($attributes) {
+         $this->yyval = new PHPParser_Node_Expr_ArrayDimFetch($this->yyastk[$this->stackPos-(4-1)], $this->yyastk[$this->stackPos-(4-3)], $attributes); 
+    }
+
+    protected function yyn349($attributes) {
+         $this->yyval = new PHPParser_Node_Expr_ArrayDimFetch($this->yyastk[$this->stackPos-(4-1)], $this->yyastk[$this->stackPos-(4-3)], $attributes); 
+    }
+
+    protected function yyn350($attributes) {
+         $this->yyval = $this->yyastk[$this->stackPos-(1-1)]; 
+    }
+
+    protected function yyn351($attributes) {
+         $this->yyval = $this->yyastk[$this->stackPos-(3-2)]; 
+    }
+
+    protected function yyn352($attributes) {
+         $this->yyval = $this->yyastk[$this->stackPos-(1-1)]; 
+    }
+
+    protected function yyn353($attributes) {
+         $this->yyval = new PHPParser_Node_Expr_Variable($this->yyastk[$this->stackPos-(2-2)], $attributes); 
+    }
+
+    protected function yyn354($attributes) {
+         $this->yyval = $this->yyastk[$this->stackPos-(1-1)]; 
+    }
+
+    protected function yyn355($attributes) {
+         $this->yyval = $this->yyastk[$this->stackPos-(1-1)]; 
+    }
+
+    protected function yyn356($attributes) {
+         $this->yyval = new PHPParser_Node_Expr_StaticPropertyFetch($this->yyastk[$this->stackPos-(4-1)], $this->yyastk[$this->stackPos-(4-4)], $attributes); 
+    }
+
+    protected function yyn357($attributes) {
+         $this->yyval = $this->yyastk[$this->stackPos-(1-1)]; 
+    }
+
+    protected function yyn358($attributes) {
+         $this->yyval = new PHPParser_Node_Expr_StaticPropertyFetch($this->yyastk[$this->stackPos-(3-1)], substr($this->yyastk[$this->stackPos-(3-3)], 1), $attributes); 
+    }
+
+    protected function yyn359($attributes) {
+         $this->yyval = new PHPParser_Node_Expr_StaticPropertyFetch($this->yyastk[$this->stackPos-(6-1)], $this->yyastk[$this->stackPos-(6-5)], $attributes); 
+    }
+
+    protected function yyn360($attributes) {
+         $this->yyval = new PHPParser_Node_Expr_ArrayDimFetch($this->yyastk[$this->stackPos-(4-1)], $this->yyastk[$this->stackPos-(4-3)], $attributes); 
+    }
+
+    protected function yyn361($attributes) {
+         $this->yyval = new PHPParser_Node_Expr_ArrayDimFetch($this->yyastk[$this->stackPos-(4-1)], $this->yyastk[$this->stackPos-(4-3)], $attributes); 
+    }
+
+    protected function yyn362($attributes) {
+         $this->yyval = new PHPParser_Node_Expr_ArrayDimFetch($this->yyastk[$this->stackPos-(4-1)], $this->yyastk[$this->stackPos-(4-3)], $attributes); 
+    }
+
+    protected function yyn363($attributes) {
+         $this->yyval = new PHPParser_Node_Expr_ArrayDimFetch($this->yyastk[$this->stackPos-(4-1)], $this->yyastk[$this->stackPos-(4-3)], $attributes); 
+    }
+
+    protected function yyn364($attributes) {
+         $this->yyval = new PHPParser_Node_Expr_Variable(substr($this->yyastk[$this->stackPos-(1-1)], 1), $attributes); 
+    }
+
+    protected function yyn365($attributes) {
+         $this->yyval = new PHPParser_Node_Expr_Variable($this->yyastk[$this->stackPos-(4-3)], $attributes); 
+    }
+
+    protected function yyn366($attributes) {
+         $this->yyval = null; 
+    }
+
+    protected function yyn367($attributes) {
+         $this->yyval = $this->yyastk[$this->stackPos-(1-1)]; 
+    }
+
+    protected function yyn368($attributes) {
+         $this->yyval = $this->yyastk[$this->stackPos-(1-1)]; 
+    }
+
+    protected function yyn369($attributes) {
+         $this->yyval = $this->yyastk[$this->stackPos-(3-2)]; 
+    }
+
+    protected function yyn370($attributes) {
+         $this->yyval = $this->yyastk[$this->stackPos-(1-1)]; 
+    }
+
+    protected function yyn371($attributes) {
+         $this->yyval = new PHPParser_Node_Expr_List($this->yyastk[$this->stackPos-(4-3)], $attributes); 
+    }
+
+    protected function yyn372($attributes) {
+         $this->yyastk[$this->stackPos-(3-1)][] = $this->yyastk[$this->stackPos-(3-3)]; $this->yyval = $this->yyastk[$this->stackPos-(3-1)]; 
+    }
+
+    protected function yyn373($attributes) {
+         $this->yyval = array($this->yyastk[$this->stackPos-(1-1)]); 
+    }
+
+    protected function yyn374($attributes) {
+         $this->yyval = $this->yyastk[$this->stackPos-(1-1)]; 
+    }
+
+    protected function yyn375($attributes) {
+         $this->yyval = $this->yyastk[$this->stackPos-(1-1)]; 
+    }
+
+    protected function yyn376($attributes) {
+         $this->yyval = null; 
+    }
+
+    protected function yyn377($attributes) {
+         $this->yyval = array(); 
+    }
+
+    protected function yyn378($attributes) {
+         $this->yyval = $this->yyastk[$this->stackPos-(2-1)]; 
+    }
+
+    protected function yyn379($attributes) {
+         $this->yyastk[$this->stackPos-(3-1)][] = $this->yyastk[$this->stackPos-(3-3)]; $this->yyval = $this->yyastk[$this->stackPos-(3-1)]; 
+    }
+
+    protected function yyn380($attributes) {
+         $this->yyval = array($this->yyastk[$this->stackPos-(1-1)]); 
+    }
+
+    protected function yyn381($attributes) {
+         $this->yyval = new PHPParser_Node_Expr_ArrayItem($this->yyastk[$this->stackPos-(3-3)], $this->yyastk[$this->stackPos-(3-1)], false, $attributes); 
+    }
+
+    protected function yyn382($attributes) {
+         $this->yyval = new PHPParser_Node_Expr_ArrayItem($this->yyastk[$this->stackPos-(1-1)], null, false, $attributes); 
+    }
+
+    protected function yyn383($attributes) {
+         $this->yyval = new PHPParser_Node_Expr_ArrayItem($this->yyastk[$this->stackPos-(4-4)], $this->yyastk[$this->stackPos-(4-1)], true, $attributes); 
+    }
+
+    protected function yyn384($attributes) {
+         $this->yyval = new PHPParser_Node_Expr_ArrayItem($this->yyastk[$this->stackPos-(2-2)], null, true, $attributes); 
+    }
+
+    protected function yyn385($attributes) {
+         $this->yyastk[$this->stackPos-(2-1)][] = $this->yyastk[$this->stackPos-(2-2)]; $this->yyval = $this->yyastk[$this->stackPos-(2-1)]; 
+    }
+
+    protected function yyn386($attributes) {
+         $this->yyastk[$this->stackPos-(2-1)][] = $this->yyastk[$this->stackPos-(2-2)]; $this->yyval = $this->yyastk[$this->stackPos-(2-1)]; 
+    }
+
+    protected function yyn387($attributes) {
+         $this->yyval = array($this->yyastk[$this->stackPos-(1-1)]); 
+    }
+
+    protected function yyn388($attributes) {
+         $this->yyval = array($this->yyastk[$this->stackPos-(2-1)], $this->yyastk[$this->stackPos-(2-2)]); 
+    }
+
+    protected function yyn389($attributes) {
+         $this->yyval = new PHPParser_Node_Expr_Variable(substr($this->yyastk[$this->stackPos-(1-1)], 1), $attributes); 
+    }
+
+    protected function yyn390($attributes) {
+         $this->yyval = new PHPParser_Node_Expr_ArrayDimFetch(new PHPParser_Node_Expr_Variable(substr($this->yyastk[$this->stackPos-(4-1)], 1), $attributes), $this->yyastk[$this->stackPos-(4-3)], $attributes); 
+    }
+
+    protected function yyn391($attributes) {
+         $this->yyval = new PHPParser_Node_Expr_PropertyFetch(new PHPParser_Node_Expr_Variable(substr($this->yyastk[$this->stackPos-(3-1)], 1), $attributes), $this->yyastk[$this->stackPos-(3-3)], $attributes); 
+    }
+
+    protected function yyn392($attributes) {
+         $this->yyval = new PHPParser_Node_Expr_Variable($this->yyastk[$this->stackPos-(3-2)], $attributes); 
+    }
+
+    protected function yyn393($attributes) {
+         $this->yyval = new PHPParser_Node_Expr_Variable($this->yyastk[$this->stackPos-(3-2)], $attributes); 
+    }
+
+    protected function yyn394($attributes) {
+         $this->yyval = new PHPParser_Node_Expr_ArrayDimFetch(new PHPParser_Node_Expr_Variable($this->yyastk[$this->stackPos-(6-2)], $attributes), $this->yyastk[$this->stackPos-(6-4)], $attributes); 
+    }
+
+    protected function yyn395($attributes) {
+         $this->yyval = $this->yyastk[$this->stackPos-(3-2)]; 
+    }
+
+    protected function yyn396($attributes) {
+         $this->yyval = new PHPParser_Node_Scalar_String($this->yyastk[$this->stackPos-(1-1)], $attributes); 
+    }
+
+    protected function yyn397($attributes) {
+         $this->yyval = new PHPParser_Node_Scalar_String($this->yyastk[$this->stackPos-(1-1)], $attributes); 
+    }
+
+    protected function yyn398($attributes) {
+         $this->yyval = new PHPParser_Node_Expr_Variable(substr($this->yyastk[$this->stackPos-(1-1)], 1), $attributes); 
+    }
+}

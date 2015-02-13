@@ -3457,4214 +3457,211 @@ $.widget("ui.selectable", $.ui.mouse, {
 						that._trigger("unselecting", event, {
 							unselecting: selectee.element
 						});
-/*! 	}ery U - v1 - vjQue
+					}
+				}
+			}
+		});
+
 		return false;
 	},
 
 	_mouseStop: function(event) {
-		var that = this-05-0i.wi.dragged =tp://jqu
-		$(".ui-unselecting",ui.wi.element[0]).each(es: jquercore.jjs, jdraggaee = $.data(i.wi, "draggaable-item"Query ble.js, .$ery.ui..removeClass("y.ui.draggable.i.sortable.js, i.draggablei.mouse.jsortable.js, startble.js,ui.mouse.js	t.jsat._trigger("i.draggaed", y.ui.,.ui.re	i.dialog.j:able.js, uery.ui.0.3 -Queryounce.query.udraggable.js, jquery.ui.droppable.js, jquery.ui.resizable.js, jquery.ui.selectable.js, jquery.ui.sortable.js, jquery.ui.effect.js, jque.ui.accordi.addquery.ui.effect-eddion.js, jquery..autocomplete.js, jquery.ui.butt, jquery.utru, jquery.ui.button.js, jquery.ut-shake.jer.js, jquery.udialog.js, jquery.ui.efft-blind.js, jquery.ui.effect-bounce.js, jq, jqu.effect-tratops, jquer3-05-0, jquhelperi.effec(3-05-03
-* http://jquer
+		var that = this;
 
-13-05})(jQuery3-05.js, jquer $, undefined core
-/*jshint loopes: :e.js, */
+		this.dragged = false;
 
-es: jque isOverAxis( x, reference, sizery Fo03
-* htt( x >nction( $, ) &&r uui< ( = 0,
-	runi+undefine);
-}tors; LicenseFloaable(ery.ned ) {
-
-var /left|right/).testts wi.cs, jfompo")) || (/inline|s, jqucell, $.ui.position
-$.display")might $.widget jqu.sors, jq", $.ui.om
-* y.ui.version: "1.10.3",
-	 {
-		BE.ui.Prefix: "ACE:: 40ready:tp://j,
-	opjques:ore.jappendTo: "paren3,
-			axisE: 27,
-		H	connectWith
-		NUMPAD_DECItain.ui.
-		NUMPAD_DEursor: "autoADD: ENTER:A1,
-		NUMPAD_dropOnEmpty contrAD_DforcePlaceholderSize
-		NUMPAD_D,
-		PHy.ui.4,
-		PAGE_UP: 3grid
-		NUMPAD_Dhandl		PAGE_UP: 3ry.ui.: "originalADD: ery.s: "> *ADD: opaciUBTR	NUMPAD_DpGE_DOWN: 3 (function(rever1,
-		NUMPAD_scrollTRACT: 109) {
-		Sensitivus: (20n typeof deped.jsber" ?
-	ope: "defaul_ADD: toleranc() {intersec_ADD: zIndex: 1000yui.	// callbacksD: 1ctivate: nullAD_Dbefor Includ			if ( chang						if ( decus();
-						if ( out delay );
-	v
-		r			if ( receiv						if ( .effec.apply( thACE:})( $.fn.foon.j ),
-
-	scroll						fn.calupd;
-						iueryu	_cre;
-			js, jquery.uie.js, joy.ui.wi.OME: 36.progressDIVIDE:erCach jqu{}.progressquery.uight.js, jqueryCE: 8,
-	3-05-0//Get the s
-$.fjs, jquerefresh.js, jq//Let's determine ifnt = this. are beompl10.3",
-ed horizIVIDllyjs, jqueui = omplet/).tes
-$.f.length ? o.107, === "x"i ||m component/(auto|scr[0]to|sc)  (functfunction() {
-				returnt = UMPAD_'s offseect-/).tes else& (/(autquery.uirollPar(functioInitialdefiom
-*  jquers for 				scus(onprogressbom
-* nctir(functioWe're ESCAP to goparents().thisde.js, jueryui.cdestro: (fs, jquery.ui.r, jquery.ui.pickd.js, jquery.ui.efCE: 8,
- css("positi-dis, jqfect-pust($.css(thDx"));
-.js, jq(aut( s, ji& (/(auto|scroll)/).t- 1; i >= 0; i--ined )ngth ? s,"oveiflow-yi.effecD.ui.sele: {
-		BNam;
-
-/"uery.ui.sor}05-03
-* htti.widgeryui.csetOME: 3			}).eq(0)key, value)Indeif ( keys(thisollParent( zIndex !== OME: 36[n, va] = 0 ] )js, jgth ?  {
-		BA).togglct.js,  .css("positirollParent, !!0 ] ) mig		} elsezIndex// Don't	$( e  {
-		B base  {
-			var /(autollPare as it addson"))tats set to a c.js,nt )$.W{
-		B.prototype. {
-			var .apply.selectargu.ui.s );
-		}eryui.com
-* Capturi.ie && (/(sjquery.origrideH,
-		Tcore.js, jcurPAD_Item =apply( th	valid;
-				i.mouse. || pquery.ui.widget.itioents().ion(ing zIndex3
-* http://jque		}
-
-	ifed" ) OME: 36.tent acro||)/).test(this.it as(thisconsic" IE returns 0 when zIndex isw")+ haves,"o).filte/(relative|y.ui orunifirse {
-			sc_).filte "absry.ui.cfunctioFind outn (/(relclicked node (or one of its.eq(0);s) is a actual this i this. undef jquey.ui..target). = pars(ppable.js, jquery.ui.reif(ery.ui.selecter.jsss( "zIndex", zIndex s(thier.j zIndexPAD_ === "absol$ed" )Query Uurns 0 when zInd - 2013-0					return 		if ( !isNae;
-					}
-				}
-				elem = elem.parent();
-		}
-		}
-
-		return 		if ( !isNaNzIndex is no!}
-		}
-
-		re IE returns 0 when zIndexis not specified
-	2,
-		TueId!ition" );
-				if ( p	n 0;
-	on() {
-			if ( ,tion === "ab).find("*hlightBack) && value !== 0 ) {
-			s not sps(thi		if ( !isNaNunctionposition === "rt-shake.j.10.3 -Query eUniosition ===abIndexNiqueId: function() {
-	.js, jque}
-		}
-
-		retur}
-		}
-
-		relength ? $.effect
-		}
-
-sFromz-inde},
-
-		if ( thhis,"overflowom
-* InParenes: jquery.ui.osition" );
-				, noAus();
-iontatic|relati, body || pive)/).test(this.c( "area" === noCtion")))y.ui.widget.sted only needs,"oe bro).filtePoy ==ons, beca		ret = style="z-indible( has been ffec visi
-				positioparents().filte	}
-	returr(functioC($.ui and FT: 37t|selvisi of ry.ui.js, jquery.ui.& (/(aut (($.uiPERIODex: -10;"><div || (/t =  :
-			indefength ? $c|| (PERIODPropor:
-		"a" === n*
-		 * - 	}
-	retu genermap"  -t );
-}Tusabblock visiblees elerythomplpunction relauery- i;
-		dex: or				vquery, jqs.t );
-/ element and allmargin		} lemen);
-
-// p turn (/fixors must beM{
-			rr(functioarent = next ) {
-		sibleMPAD_bility" ) {
-		PMPAD_& (/(autry.ui.s	data: $.expr(functioThes, "visi's absolutele( elemeno thi).eqge minus) {
-			r {
-			scrollParent = t}
-		}
-
-		reents().filt{
-			scrollParenIndex clud			scrollPa.top -y <1.8 {
-			rctio || pciesry <1.8
-		funcciesn( elem, i, matcciesIndejs, jq.extend {
-				 elsey.ui.ef 0;">: { //Whernd all 0;"> hFT: 3edunctlatiements funturn (/fixe		retur		if (ctioXn( elem,.data( elem || pjQuery
-	},
-
-	tabYable: function(topion() || pxpr[ "ry <1.8_get $.expOts().fi || p$.attr( 
-			isTabInR.attr(  = isNaN eudoisInt( e$.attr( elemataName ) {
-			ret( elem funlem.csse( elemencalcuattr ele !!imgused/(aut$.attr( ee( eleme.tesabIndexN13-05-0// O!imgafter we goent =  elementwe can l( eled all of it's	}
-});
-
-//ocusable( e ) {
-	TODO: Stillg && visifigu).paut a wais,"omakelecattr( e("posible(  || ijs, jquery.ui.son
-$.e( eleme", "ataName t.length ? cssfunction .createPseudo {
-				innerWid;
-		}).lenexpr.frn $.css( thise( eleme		}) :
-		;
-
-// pinnerHeight: $.f_$.expr.f	}
-	retuex: -10;"ght: $.fn.outerHtabba( elemen	tabbize, border, margin )Y{
-			$.each( Yry ) {
-Adjusent = 				rerollPar$.attr( element, :
-			iif "AD_MULTI"Int(supplied
-		(oem, MULTIueId;
-
-		facss(  = isNapNaN) &&
-	eFloat( $.	keyelement and allformer DOM		outerHeight: $.dominnerHeight{ prevry <1.8m, dataName elem()[0],expr[ ", "margin" + this ) xpr.cre[0] focusa//Iurn $.			if ( s nh", "Hei;
-
-// p, hidouterWidth,
-			so!$( elctio3",
-omplany role durompl funquer, wby the 		rean.visiblbaent.is "Boach(functioh( 1 )	$.f!m.parargin" + this droport: jQ elem, dataName 	if map.naof nestdeName  funcGE_DOWN: 3bility" ) ($.uiAGE_DOWN: 3r(functioSep", DIVIDE: 111( bogivenIndex"e OME: 36ach(fuosition").ui.reduce( this {
-	Name + .ui.);
+		$(".ui-unselecting", this.element[0]).each(function() {
+			var selectee = $.data(this, "selectable-item");
+			selectee.$element.removeClass("ui-unselecting");
+			selectee.unselecting = false;
+			selectee.startselected = false;
+			that._trigger("unselected", event, {
+				unselected: selectee.element
 			});
-	if( eFloat( ueIdurn this.		$(08,
-		ry F 			$ this.OME: 3d ) falsght: $.fdoclemen);
-			 "fals" migignoredsizecus )IEnt ) {
-		storedC this.= falsrHeigorder ) "px" duce( t
-if ( !$.fn.ad,ch(functiox" );
-	
-// supportStylesheParen$( "<srn t>*{).css( : "+eFloat( +" !im		};ant; }</ctor =" )ns a 37,
-( falsre z-in
+		});
+		$(".ui-selecting", this.element[0]).each(function() {
+			var selectee = $.data(this, "selectable-item");
+			selectee.$element.removeClass("ui-selecting").addClass("ui-selected");
+			selectee.selecting = false;
+			selectee.selected = true;
+			selectee.startselected = true;
+			that._trigger("selected", event, {
+				selected: selectee.element
+			});
+		});
+		this._trigger("stop", event);
 
-			reo.	focus:( this)	focus:type, reducfixed" ) n.innerHeigh	focus:$.uinction ].callpportOy 1.6.1ht: $.fn.innerHeigh/ticket/9tion() {
-),
-			orig = {
-			/ticket/ fun support		);
-	};
-}
+		this.helper.remove();
 
-//(funct( this)(funct1, 1.6.2 (http://bugs.jquery.com(funct/9413)
-if ( $( "<a>" )Z functht: $.fn.innerHeighlength )" ).data( "a-b" ) ) {
-	$.fnlength  funa ) {
-	ase of nestPre;
-		extend( $.ach(functio	data: $.exp{
-				$(e, true,css( elem);
-}
-
-
-
-
-
-// de.tagIndexn() {HTML		// we e: funverflow = isNall( thi	data: $.exp );
-			};
-		}});
-		}; bro$( elem ).fogressbar.js, jquea13,
- jquery. ].caluiHater(0;
-				}Rest bed all of its ancesteUni ].calpreserve visible
-		visibl + name ].calst be visible
-		visible( etart";
-			}ost "cus();
-	"eturn (/tooLowerCas( typeoferreturn  !) !== "map" ( zIndexParent,
-
-	zIndepreventDefnction( zIndex ) {
-		if ( zIndexs("position")))s[ i ]sbar.js, j function( extend({
-	disableSelecturn ti mige();
-	if ( "		}
-		};
-				event.	NUMp.addBeturn thui.ddmanagers.id ) ) function( mogin" + ty.ui.widg);
-	};
-}
- d: function( moruniqu.	NUMBehaviouodule, option, set ) {
-p
-		};
- = isNs.selectlem, size,f ( "area"query) && (/his,"ov, jquery.ui.scss("position"))) {
-	-h( 1 )t.length ? $(documragex: -10; //Execme )+ name ]e of 0( elemthis )IndexN :
-			ictiono bhref || isfn ) { getme.toaluecorrect		outerHeighme;
-		if ( !element.href | insudes: jquery.ui.core.js, ji, this {
-			Ery.ui.,to|scretTiione;
-		}
-		img = $( "im || p) {
-		.ui.mouse.js, j//Compgs ) {
-	h( 1 )var side = ].push(e( elemen	};
-
-		function reduce( elem, size, borde( elemeAbsisTabIndexonion(	}
-	retuTo(: $.fn.innerW= "fixe ( $.slas by resizAbectstart" : ", a ) {
-
-		//If.apply( 		}
-		}
-	},ase of nestDo	})( $.fn.removeData sers ret) {
-		) {
-						Data );
-}
-
-
-
-
-
-// deprecated
-$.ui.ie = !!/msie [\w.]+/.exec( navigator.userAgentction fonts to ase() );
-
-$.sction+ = !!/msie [\w.]+/.exe elemeHee.g.) -	var tabIndex< ot
-		if elay === "nabIndexNo= !!/msie [\w.]+/.exe) {
-		Top =extend(slide.ODO: determine which cases act+ {
-			retuis.e mapNamdex isif
-			}
-	bIndex = $.att"scrollLeft" : "sc) {
-			return true;
-		}
-
-		// TODO: determine which cases actually cause this to happen
-		// if the eleme-t doesn't have the sc === "left" ) ? "scrollLeft" :elem,rollTop",
-			has = false;
-
-		Widthl[ scroll ] > X scroll
-		el[ scroll ] = 1;
-		has = ( el[ scroll ] > 0 );
-Llem,ually cause this to happen
-		// if the elem; nt doesn't have the scroll set, see if itbable: funvar uuid = 0,
-	slicta;
-$.cleanData = function( elems ) {
-	for ( var i = 0, elem; (elem = elems[i]) != null; i++ ) {
-		try {
-		uery );
-
-(function( $, undendex is iction fo see if it's p$(e, true,)h cases ac()cket/8235
-		} catch( e ) {}
-	}
-lly cause t,
-		// proxiedPrototyp,
-		// proxiedPrototype uery );
-
-(functQuery Ucroll set,$(window).hf ( emixin, basePrototype,
-		// proxiedPrototypee allows the provided prototype to remain unmodified
-		// so that it can be used as a mixnt doesn't have widgetsstructor, baseProtobabl,
-		// proxiedProtlem;pe allows the provided prototype to remain unmodified
-		// so ctor }
-
-	// create selector foin for multiple widgets (#8876)
-		proxiedPwleanpe = {},
-		namest;
+		return false;
 	}
 
-	// create selector ffor plugin
-	$.expr[ ":" ][ fullName.toLowerCase() ] = function( elem ) {
-		return !!$.data(e ) {
-		prototype = base;
-		se;
-		if(lly cause		$(p://jueId module ].prototype;
-			for ( i in set )  {
-				proto.plugins[ i ] = proto.plugins[ i ] widget() extRe$.expr.fndexNataName ) {
-			ret.8
-if ( !}
 });
 
-// heeateElement		}
-		}
+})(jQuery);
+
+(function( $, undefined ) {
+
+/*jshint loopfunc: true */
+
+function isOverAxis( x, reference, size ) {
+	return ( x > reference ) && ( x < ( reference + size ) );
+}
+
+function isFloating(item) {
+	return (/left|right/).test(item.css("float")) || (/inline|table-cell/).test(item.css("display"));
+}
+
+$.widget("ui.sortable", $.ui.mouse, {
+	version: "1.10.3",
+	widgetEventPrefix: "sort",
+	ready: false,
+	options: {
+		appendTo: "parent",
+		axis: false,
+		connectWith: false,
+		containment: false,
+		cursor: "auto",
+		cursorAt: false,
+		dropOnEmpty: true,
+		forcePlaceholderSize: false,
+		forceHelperSize: false,
+		grid: false,
+		handle: false,
+		helper: "original",
+		items: "> *",
+		opacity: false,
+		placeholder: false,
+		revert: false,
+		scroll: true,
+		scrollSensitivity: 20,
+		scrollSpeed: 20,
+		scope: "default",
+		tolerance: "intersect",
+		zIndex: 1000,
+
+		// callbacks
+		activate: null,
+		beforeStop: null,
+		change: null,
+		deactivate: null,
+		out: null,
+		over: null,
+		receive: null,
+		remove: null,
+		sort: null,
+		start: null,
+		stop: null,
+		update: null
+	},
+	_create: function() {
+
+		var o = this.options;
+		this.containerCache = {};
+		this.element.addClass("ui-sortable");
+
+		//Get the items
+		this.refresh();
+
+		//Let's determine if the items are being displayed horizontally
+		this.floating = this.items.length ? o.axis === "x" || isFloating(this.items[0].item) : false;
+
+		//Let's determine the parent's offset
+		this.offset = this.element.offset();
+
+		//Initialize mouse events for interaction
+		this._mouseInit();
+
+		//We're ready to go
+		this.ready = true;
+
 	},
 
-	// only used by resizable
-	hasScroll: fu
-			ifnce.plugins] ) {
-					nd( ( $.ssers ret$.cssher browsers ret$.cssn() {yAgent.toLowerion() {
-	.ctor 
-	slicment might have
-	sli+"px"his.each(fuget( options, element );
-		}
-	};
-	// extend wxth the existing constructor ttionry over any stattoproperties
-	 withouarr eleollParen,
-
-	zIndex: function( zIndex ) {
-		if & a === ment andvari.addB ?
-					for ( i = ( typinurn (/nototype ),
-		/ut "n"absol !== undefine,
-		noturn;
-			} = this unde[0e this 		for ( i =.apply( i a widgets 110Po a wits wit,
-		nod (! a widget int();
-			}rack wie $.widignored$.eacpungth )"outer" + n insif ( siz			var iName + "], skip ant;
-) {
-	ative|marg other.preventDef.) {
-	rworkobjehis );whct/.tefn.rem {
-	ans( "zIfrom>
-			preventDe namenll modthn ca				$ + mapName + "]"			switched !set ||e options hash a s/.testack(	//s = $.w 110Top"urn te thattherwisin "subs("positis"unctioinput|seltions hash ato jitt name {
-	beetwect/" ) {u [ "prototsePrpreventDee, fu});
-/ redenstthis			$( this ).css(Name + "]pe = new base();
-	// we need tcanctio a widget withnce.elfalue;
-	noritalessNaN eturjqueryelemeject/d
-			fn ) {);
-				},
-erAppln (/(relativ/.test(iIndexN;
-		}
-eturn $. thisse "n= par (functioget is
-			$( this ).css( type,  &&ableSelect"outer" + n[ a widget inhe== 1 ? "
-
-$." 		NUrev"]
-		$.f		$( widget is
-						__!$tion() {roto.prApply = this;
-		 widget is
-queIery Unts to hide iturn a strinemi-dynamic" ? s._superApply = _ery.ui.dro			returnValue  contr)func& a === ";
-				ient[ inher._superApply,
-					retdownalue;up"" );
-	http://bugsers retum = thiss(thisponstru"overits from it
-		_childSidests wit	}
-
-		// TODO:_rotype inss( "postors: []
-	index is igno		breake = base;
-		bgressbar.js, jql( ele.extend({
-	disableSelectionfix, e.g., draidget() exten", vent ) {
-	preventDefaul// only utacction() {
-dex: -10;"><divI			sECIMAL:, argu	plugin: {
-		add: function( module, option, set ) {
-queroto.plugins[ i ] || []n document.createElement( "div" );
- 13,
-xtend({
-	disableSelection: fow is hidden, the element might have extra 3
-* http://jquueryui.com
-* Includes: jquery.ui.e() le
-	agmap" ) {
-			extey.ui.core.j	// areme: name,
-	If, fu};
-	uste|fiplugin: {
-
-		e we'on() {.protoab value.
-	plu= $.ui[ module ].prototypet specified
-				for ( i in set ) {
-				proto.pluonstoto.plugins[ i ] || [] not specified
-	{
-				y.ui.resizaquery.ui.wiment )cu	isTabInd"outer" + nents().fiment )$.css( );
-		}
-	};
-	// exne the nimrt: jQabsolufunction !element $.css(this,"o413)
-if rototype to carrycur elem, match[
-		func;
-		}
- elem, match[ 3 ] );
-		}, +.widget. else
-
-
-
-// dep
-			e, true, tor )? 0uper childPrototype.widfunction( e ) );
-			} 	// originally used, but "pxerit from the new copy n oftion( elem,	$.widget( chition( elem, i, match )"." + childPrototype.widgetName, constructor, child._proto );
-		});
-		// remTop ) );
-			} else {
-					//ar map, mapN) {
-			h( 1 )).rototye( rototype 				}thist, function( i, child, 10ui ||500,		}).eq(0);
-		}
-uery.ui.clea
-		// the t-bounce.jdex is ignoabIndexslice.callhem so that theyproto = $// are inheriting frocthisl.ie && (/(static|r ).css( 	proto.p& a === st($.css(thUp({  !isNa.apply 13-05-0h(function() {
-			:
-			is() {);
-
-// pl413)
-if ( $( m, dataName on
-$( $( "<a>" )CSS)d/).test(this.css("positi}
-		},
-		call as the prefix this, size ) + "showmap.na we need fix: 	}
-					}( coexistingConstructor ? bSelect;
-	},
-
-	zIndeion() {
-		return this.unbind( ".ui, poseSelection" );
-	}
-i
-
-$.extend("	}
-					},",apply(
-	disableSelec0;
-	}t DOM-b ).css( lue ) :
-						ition"))) || (//bug	}
-
-		// TODO:lue ) :
-						// Don't eou If , arrays, etc. with objects
-			ything else by refer, value );
-				// C  {
-	- v1.10.3 - roto = $.ui[.prototype;
-
-			s from //) {
-			superApply;
-
-	y( key )(); wouldnction( arg/ le.toolt "Bot- utryitunatelyme + unbinds ALLeturn (/(itinn $.css( thisiv><! ) {
-			valusuperApply;
-
-	get( chNodent.nodeN
-			args = slice.call( argumeni.effecthilnction(ject.prototype.he list of e		value = input[ inpun() {);
-
-// plcss( elemt[ inputh ?
-			$.widg.call( arguments, 1 ),
-			rry.ui.spinner.js,ect( valuble: functiony.ui.eff: 38
-	}
-ute" || p		proto.p (function(unction( {
-				var metho_noF// pScus ),
-
-	argument ) {
-			valuseFloat( $.) ) |onstructoif ( !instance ) {
-				.h( [ 	$.widgAttr( "id" 
-				// Clone obje $.error( "cannot caMPAD_)uginsfunction(+ name + " prior t;
-		}
-
-		if ( this.lesitioneseron() {pName || mao) {
-			returarea|	};
-
-		fun= "absAs.toolt(o.each(fCIMAL:edine thst.wid[e thiive)oent t was
-	$nctiosppable.js, jquery.ui.resizarens.c($(o undeent );
-	).attidthalueibme )|| "id"ui ||"").match(o.expporE: 4i || {(.+)[\-=_]f ( /ects
-		});
-reectstart"no .push((o., va||ance[1]+"[]")+"="+= undefeach(e, args );
-?ed ) {
- :ed ) 2]ects
-		- 2013-05-0extedValll)/).teach(ke		}
-
-		/dValue != undef+ "=x );
-		}
-
-		if ( tdValjoin("&uterWiryui.toArra
-			}).eq(0)ions] ) || options.charAt( 0 ) === "_" ) {
-					return $.error( "r.supph meethod '" + options o|scroable.js, jquery.u ridgee !=
-				}
-				methodValue = instance[ options ].apply;dex ],
-		key,
-ret( !$.isFu/* Bfuncrefurowstan expfollow( cot ).p	}).eq(0s).fi	rom it
-		_childpName || mas with ne.js, jx1py the object usAb;
-		}, methx2 = ) {rollTopt[ inple
-		visibl $[ na methy {};
-$.Widget._childCh ) {
-		ys = y];
-
-$.Widget.prototype = {
-rototy {
-					// redonstructo.widl +// red	widgetNam
-		// redh ) {
-		bs.ch// callb	options: {dyCementd widgeteft" : 0;">l
-	},
-	_cdxions, element ) {
-		elemenonstructosed MIn;
-			}if ( e" ); );
-		}
-	};
-	// ext, but inhe ||  (",
-	deptions, ) > i.ie d++;
-		this.event< b ine th )[ 0 ];
-		thcleanment = $( element );
-		this.tors = uuid+[];
-
-lement |ntNalueId = options,
-			th< retName + this.uuid;
-
-			)[ 0 ];
-		this.elem&&dings = $();
-	cleanl: functir browsers retubasePrototype, {
-		// TODem.length && ele.,
-		PAonstruForwidgetEven{
-			$.widget.extend( baseProton() { {
-		// Tth ?
-			$.widgle
-		visibl[position")) &&? "$[ naalue;rototy"] >optio {
-					if ( event.target === elemenly;
- IE returns 0 ings = $();
-	 z-index is ithe new ve (l <reateO
-	}
-
-	$.widgototype = {
-	widg / 2queId// R.elemHas );
-	ors - the document
-				element.ownerDocum			oent :
-lem;  element icke,
-	dethe document
-				elementrototyrDocument :
-Bottom);
-			thisys window or document
-				eleaultView || idgetname  act elems positionedom it
-		_childConstrun( /* options, element */  )[ 0 ];
-		this.element= $( element );
-		this.uu,
-			sed MIT */
-idget",
-	widgetEvent;
-
-$.Wid ) {
-		element = : null
-	},dget: functitName + this.uuid;
-		this.opions = $.widget.extend( {$.noop,
-	_create: $.noop,
-	_init:	slice = ArrdefaultElement || disabled: f callbacks
-ptions );
-
-		this.bindings = $();
-		this.hoverable = $();
-		thi || polue,calDrnValue;
-				isTabIn insVge
-			.removeDatfine thst($.css(tremoveData( this.widgetNaH.widgetFullName )
-.js, jq});
-
-	)[ 0 ];
-		th IE returns 0 when zIndex is	if ( this.			if ( eve);
-		 ((s.widgetFullName )
-	&&est($.css(tremoveData(() { e.g.0
-		//age
-			.removeData(ue;
-	ruct) ? 2 : 1 ly;
-
-:ent;ge
-			.removeDataspac.removeAttr( "aria-disabled")
-			.rei migl, this._getCreateEven widg );
-		this._init();
-	},
-	_getCreocumen eleindings =reate: $.noop,
-	_init: $.noop,
-
-	destroy: function() {
-		thw = get: functi/2)is._destroy();
-		// we ca				/is.eventNamespace );
-		this.hoverabo through this._on()
+	_destroy: function() {
 		this.element
-			.	this.foc$[ na.removeCla this.eventage
-			.removeData( this.widgetName )
-			.removeData( this.widgetFullName )
-			// support: jquery <1.6.3
-			// http://bugsse( this.widge)
-			.unbind( this.eve IE returns 0 me ) );
-		this.widget(tNamespace hoverable s" );
-	},,
-			t		.unbind( this.eventNameciesey ==.jquerying" ) {
-	e z-index is igno3
-* htt
-				this.widgetFullNaame + "-disabled " +
-				"ui-soverable nd( this.e,
-			t.removeAttr( "aria-disaupo.bar" => {  ( parts.let.length,ryui.cidgetName )
-			.removeDa			}).eq(0);
-		}
-s, jdelta "widget",
-	widgetEventn( elem,, a ) {
+			.removeClass("ui-sortable ui-sortable-disabled");
+		this._mouseDestroy();
 
-		//Ifl
-	}ect( optionlength		$(0ullNalength> 0constructor.protject this.optionsquery <1.6.3
-			// r ( i = 0; i < parts.length - 1; i++ ) {
-					elem, match[parts[ i ] ] = cciesption[ parts[ i ] ] || {};
-					curOptioeof key:., "foon[ parts[).filteudes: jquery.ui.core.j <div style="z-index: -10;"!element.disabled :
-		"a" =$.camelCase( [ parts[ ECIMAL: 110,
-	 i = 0; i < parts.OME: 36ve)/).test(this.css3
-* htt elementECIMAL: 110s._sstructuery== Stner" ? [
-
-		this._setOptionalue
-
-		this._setOption[ parts[ i ]) === "_" ) {ons[ key ];turn $.err {
-			return joveAt
-
-		s| this tions.c[] methquerice" )	}
-
-		rECIMAL: 110
-
-	// only uMAL: 110http://bu ) {
-			ion: &&onst
-			this._ect( tar,
-
-	._setOptionsidget.extend( {}, target[ key  child$his.options[[ised on Selectijsion of tion( zIndej ) {
-		jget[ key 	tionjquery.ui.cur[j]rays, e {
-		BFullIndeQuery UIif(				.over			.		$( thi.bar" nstecified
-					// oabIndexNoreturn t)._ini[$.isF/* optionover" );
-			"' for ?veCla	}
-
-		return t.$( e );
-		ery.ui.supe$ );
-		}
-
-		return toption		return .notery.ui.== undefined ) {	},
-	disable: funct"outer" + n"emovnsttFullNamI - v1.10.3 - 201, nuoveClass( "ui-state-focus" idget.extend(urn this;ent, handlers ) {
-ction(r;
-				this.e {
-				{unction(hild._prgth; i+optio, "margin" + this  } this.ent, handlers ) {
-js, jquery.ui.
-	},
-	disable: function() {
-		return this._setOption( "disableld._sed  case we neeoveClassidget.extend( {}, target[ keyeturn t[i].cal
-// selectors
-function ent,
-._ini0;
-	},
-
-	uounce.j05-03
-* htt+ "' forled" );
-
-	arentNode;
-		mapName = .ie && (/(static|relatli		.at this, size ) + ";
-			}:y.ui.";
-
-$.Widss( "zIndex", zInde)uterWidx" ), 10 )jquergreructorpressDisrs; Licents with noct( target[j=d",  <ent =sabledC; j++function font =[jdgetNa/ redefined abIndexNoiqueId: function(.10.3 - 20Node || instanjquery )lement;
-yle="z-indudes: jquery.ui.core		element = deleh meththing else by r		//isabldChecOption( key, optionsnput[ iurn , _eturn t {
-				return tLui-sts[ key ] );
-	ment = $( e
-		return this;ledCheck, element, handlers ) {
-		var delegateElement,
-			instance = thi_supejquery.uk flag, shuffle arguments
-		if ( typeof suppressDisabledCheck !=sDisabl
-	},
-	_setOption: function( key, value ) {
-		this.options[ keyow-y")+$.c( thisShme |y thbe ru$.fn[ 
-				 timtionrough dumentsmasspe = low-bled
-		if ( key === "disabled" ) {
-			this.widget()
-				.toggleClass( this.widgetFullName + "disabled ui-state-disabled", !!value )
-				.attr( "aria-disabled", value );
-			this.hoverable.removeClass( "ui-state-hover" );
-			this.focusable.removeClass( "ui-state-focus" );
+		for ( var i = this.items.length - 1; i >= 0; i-- ) {
+			this.items[i].item.removeData(this.widgetName + "-item");
 		}
 
 		return this;
 	},
 
-	enable: function() {
-		returnasClass( "ui-state-disabled" ) ) ) {
-					re_setOption( "disabled", false );
-led", true );
-	isabled as an ars.elemd", rue );
+	_setOption: function(key, value){
+		if ( key === "disabled" ) {
+			this.options[ key ] = value;
+
+			this.widget().toggleClass( "ui-sortable-disabled", !!value );
+		} else {
+			// Don't call widget base _setOption for disable as it adds ui-state-disabled class
+			$.Widget.prototype._setOption.apply(this, arguments);
+		}
 	},
 
-	_on: function( k;
-			suppressDisabledCheck = false;
-		}
-ort: jQbled classuppressDiment1e thisas methoe + " " ) + thd afbindings j=0disabling indiv = as methodd( elemen <isabling indivment );
-		}
+	_mouseCapture: function(event, overrideHandle) {
+		var currentItem = null,
+			validHandle = false,
+			that = this;
 
-		return as metho[jledChecelay )ry.ui.sele		}
-				}
-				elem = isabled clasgger( space(autntName	retur( co(				reion( modstructo this.elemalue )
-	flag,
-				lue )
-				this;
-abled classery UI$[ na: 0, rototyndleery UI	retur0, Query0			funse $.widget()  ] = value;
-	}
-	returons[ key ];fassabled h tabIndn|obme ];
-res ) {
-				pro unbinde[ prop ]lute|f.test(out/in, {
-			ldPrototype.sDis) {
-				$( eve	var side = wt", l( electors, functdPrototype.	remove: functi elem.length $.widget( cha( this.widgdexNaN = isNaNproto = $ 11 ) {
-				rt, pdCheck;
-			supd to
-		// redefine the widget later{
-				this widget in case talue;
-We ignt || support:ible( elemereturocume] = valuonstructor ototypw+$.csctio
-
-$.wthem ) {
-		ction() {
-			var _super = function() {
-	remove: tate-focus" );
-			},/ redefined 			$( this ).css( type, reduce(w base();
-	// we neecurrentTa();
-
-		if ( eleme	this.bi?if ( typeof supp;
-	},
-
-	_triggerunbind(ow-y")+$/ redefinwas
-			// !s.hoverarProxy() .owner= t.
-		prcleanoptionsoxy() aultVieata = datif ( eoptions;
-
-		iopy t );
-			};
-		}oxy() o carryp== undefioxy()  copy pcurOptioex is not specified
-	cusment instancpe ).toLowerCa().filtewidgetEven elem.length && eleriginal event may come fr
-			instane z-index is ignose we need to
-?
-						$.widget.extend( {}, target[ key opy the olue ) :
-						his.parents().filt;
-				}
-			}
-		}
-	}
-	return target;
-};ntPrefix ?
-			type			}
-			}
-		}
-	}
-	return target;
-};	this.widgetEve in orig ) {
-				if ( !( prop in eve$[ na	t properties over to the new e data || {};
-		ev$.widget.extend( {}, value );
-				 $.Event( 		this.element.trigger( event, );
-		event.type
-		}
-
-		if ( this.length ) nction( size, marons[ key ];arent();
-	query.ui.atent );
-	origositi.js,Indee;
-		}
-		ima,
-
-	enablurnValue.oshes to be p
-			Effect ) {
-	$s( options );
-
-		return= "ui-id"fadeOutd '"shes to be porig Effect ) {
-	$.port: j	ery.ui..ie && (/(static|r.resizaiv><t, optition( ).css( type, .effect: .toLow)) |sefine thes === "stdd( sele acceffect: o+ ">.js, atze, true,				ly;
-
-ns =ion, set[ lement, opODO: ns };
-		}
-		var halement, o+"on")) || !scrption( "disabtions === key ) && value !== undefined ) {
-	s.hovera ( effect: op() {taddBsable.remltEffect :
-					.cltipren);
-
-// selectors
-functionizati "<td>&#160;</td === true || typeof options ==	Value  "colspaidth$ecated. ns.delay ) {
-			},
-			emoveClns === er( selecions ?
-		});
-	},
-jQuery UI roll set" ) {
-			options img{ duration: st(this.c.delaysrc=== truens };
-		}
-		ons );
-		} . Use $.wbase;
-		bf existlement, opnt[ method ]( optiif ( !ef ||iloveDat"hiddelay uery UI -event, handleery.ui.et.bridlay ||scrollPa options ) {the new p		options // 1. Iff ( ement, op			s	if s 'fect ) {
-	$.bledCh], fudby th,
-		Ps ancs				s eleasndex respon || is handhandex" )[ m2tion) {
-				 ',
-		PAGE_DOWN: 34,
-	unctibe ent acrot" ]t[ 0 i: exiseffe]();
-		 n	if ( capecif-= paroverab);
-				if type;
-,
-		PAGE_DOWN: 34,
-	duration: new versioment[ effecner" + naions ?
-	doesy theleme elem.cssaultViebyuments  (		}
-Top"ctor .elemhis.= typatance: is.aemove is, argIndexN};
-
-$.tton,sel= typeof query.uifocu {
-	mouse!pPrototype || mousedownoptions };
-		}
-		Proto);
-		eve -tructor );
-}tions };
-		}
-		h
-				addingTop")||0d = fuurn that._mouseDown(event);
-			})
-			.biocumen"click."+tw ob			.bind("mo$[ name"+this$[ namName, function(event) a || {}his.widgetName, function(event) {
-				if lem;"click."+this.widgetName, function(event) {
-				if 				/=== $.data(event.ta10.3 -
-			});
-		};
-
-		$.fn[ "outer" + name] at	if ( typeof op
-			t.prototype[fectName 		insta false );else if ( effectNation: funAelemens fu( [ "dexNaN );
-				var ient
-			se if ( effectNamehods on},
-
-	// TODO: 0;
-				}Ucrolluse
-	ndefiturn $.fect ) {
-	$.(? [ "LLogicled =uzzy, see var t316/317ns =sure destroyinscrollnbinde;
-				"."+this.widgetN null : type.widgetEvenarentNode.nodeType === 11 ) {j,avio
-		var  110LeastDi this;,thisle
-	ert		.uizen(event) {		//key, opnea $.widg, ion")) &Name +rotomospName + "]" )ute" || ptart
-		ifata.call			iry ) {
-	r ] tart
-		ifrom
-	baseProow: om it
-		_c, argumet
-			vent.target = this.element[ 0 ];
-
-		// copy origi
-		_proto nters			froperf ( typeofindow)
-'s loc &&
-			}
-ber" ) ( "zInents );
-				resuperApply = _ ).css( type, rays, erties over to the newtion).removeClass( "ui-state-fo		option._getCreateEven	$.widget.extend( {}, value );
-			uts (: "1. oths wi'textl)+$.csfou
-			rom
-	basePrproto = (mt ||"tart
-"dow) this.nt.cun track wis
-						tart
-		if( mouseHanhis._nodeName works with
-			// disabled inpled"rt
-		if( mouseHaisabled inputs (#762w base();
-	// ase;
-		bauseDelayMet = !thnt properties over to;
-		eveurn; }
-
-		// we i== "nuas the prefix prois._mousel: "inpu a widget.  jquery } elsass( "dgetsecessars.ea					$.widget.extend( {}, value );
-				// Copy everything else by reference
-				} else tend({
-	disableSelec] = value;
-				}
-			}
-		}
-	}
-	return target;
-};
-
-$.widget.bridge = function( $(eves that inheriturnVunction( sest(unct* htnValue.t) {
-			this._mous// the new version of th: fun{
-			mouse event ) ;
-			}, thi	vald ) {
-	l moarget).cltLength; inion() {
-		return t
-				) {
-					tion( elreturn true;urn; }
-
-		// {}, value );
-				// Copy evernt");
-		}
-
-		// these delegates ence
-				} ve = f !== false);
-			if (!this._mousent");
-		}
-
-		// these delegates are required to kee = 1e $.widgettyle ?
-				/focusn e			seturn newtClickEven], fuui-st;
-		{
-			mouse		}
-
-		relousee);
-	Proto?
-			elemenou option one i/fixe);
-			re000get.br
-	},
-
-	_mouseDown: fuwe may ha		evomponen
-			}seDelayMet = !thieventDefaverflow")+$.css(thi+ name + " prior tion(event)i.mo	if ( event "foo.: "ery. jquer		// don't t) {
-		// IE mo.target === elemeack ) 	// ment might have ex[tion(event)]rough this._on()
-		tocumentMode |nt.preguid || zIndex: function( zIndesabled", !!vunction fos._superApply = _
-		}
-
-		// these delegates 	}
-
-		this.m !== undefijflow-yns.delay;
-		if (!this.mouseDe(event) && tvent.preventDefalem.parrks around a bug lt();
-		}
-
-		if (this._mouseDis (rnal hash
-		.jqueryreate: $.noop,
-	_init: $.noop,
-
-	destroy: function(anceMet(event)._mouseStarted ? thtroy();lt();
-		}
-
-		if (this._mouseD child.protvent.preventDents().fiode < 9 ) && !even	 one widgey.ui.datepick (tyMath.absria- -et montNanbind("mousemrollTopvent.pre[eup happened]move."+tvalue )
-vent) {
-		$(dmap, mapNaeturn+ widget in caveDelegate)
-			.e = base;
-		basenbind("mousemove."+th<e);
-	duration:is.widgnbind("mousemove."+t;}
-	},
-
-	_mouseDown: fus widget in cajouseStarn returnValue;
-		vent) {
-		$?ption) {
-ructet.bridge = func,
-		e "nt"))	NUMPAD_SUB ( cuseHand ) {
-		!DownEvent.target) {
-		.
-	if ( existingConstPAD_SUBnt.nodeName.toIsCancel = (typeof " + mapName + "]" _mouseDel		}
-
-		// these delegatesurn (Math.max(
-				Math.abownEvent.target) {
-		var dellways use the name + a
-
-	_mouseDown: func, arrayApplchild._plways use the name, arrays, eed) {
-			this._mouseDrag(event);
-	unctionepickerrt
-		// don't prefix for widgets that aren't DOM-t
-		this._mouseMoveDelegate = function(eve prefix for widgets that aren objects
-		map=#" + mapName + "]" )[0];elayMet;
-	},
-
-	// These areusable.a);
-		if ( t"outer" + name element
-		// is.widgetName, this._is._mouseDownEvent.ouseSta"."+this.widgetNaxt
-		this._mouseMoveDelegate = function(event) {
-			return that._mouseMove(event)
-		};
-		this._mouseUpDelegate = function(event) {
-			returneSele			event.isDPERIODustomize the disabled helative)/).test(this( this:
-			isTstate-focus" onction( e fun
-		helpens auto if vent);
-			ret[tend({
-	disa+ name + " puts: riginal",tions clone-sta ( input[ inputIndvert(n(/* even+ name + " priat( $.c"+thisalse,
-	, {
-			) {
- (/(ra_mou			}
-, !isNData(event.tar!ry.ui.s value ) ) + ")sabledCs.id ) ) osOptions elementMPAD_Atest($ance: 200,
-		scope: "defau.call( argumentr ha
-		zInultipl.apply( ntion( removeDion() {
-		ageX - eve).css( type, reduce( thisOwnPropertcss( t( handuseDelayMet(event))uctor t	widgerProxy, d !(/^(?:r|a|f)/).test(this	optionthis._cre"position"))) {
-		rHeight,
-				out,
-
-	_hoion = "relative";
-		}
-ery.), 	return !!$ "relative";
-		}
-tion[ fn[ 
-	removeUning constructor t.ownerWidge3,
-		PERIOD: 19
-		}
-
-	ry.ui.se + ".prss("ui-draggablhat.widgties
-	$.exteng constructor taultVielement.addClass("ui-draggable-disa.widgetNahis, size ) + "psedown."eData( $.camelCaalse,
-led" );
-
-	 "border" + this + "Wi {
-			this.ebj
-		}
-
- the ypeof obja string	$(d ];
-			i		var
-		v.split(" x );
-		} $.ui[ mis else: funptions;
-
-		//{	retur+objug in cludis.he1]	thi0f (thison(eveouseup in
-		v event ) {
-				$( eElement ||	// amo	slice = Arr 3 ] );
-		},$(event.targeeof keysest(".ui-resizable-handle").length > he document
-				element.owner-/ amo e.g.return false;
-		}
-
-		//Quit if weery.t on a valid handle
-		this.handl copy  amo $.noop,
-
-	 i, match )$(event.targebtrue =Fix === true ? "iframe" : o.iframeFix)w );
-		}
-
-		this._create();
-		his.ha-draggunction() {
-			$("<div cla this.optdexNaN = isN.ie && (/(staticrollParent = },
-			mousele?
-		ion() alue outerHeight: $.f,
-			mouseleff;'></div>")(this).offsetss( "us, jpive)/).tesdPrototype.ents().filter(fu) {
-	rnt( eunctiseDe	// wmoveDw
-}
-
-st( nodedify ading" +  supportnctirn faend si{
-				return retur, !isNaN:		}
-
-	1ry );
- {
-			retu" + name ] = fung for si,defined )e( elemenet = the visib.ui.ible h;
-}
-
-$.e).outerWidtxpr[ ":" jQuery );
-lem.cssrollParvent.cunt( ehasOp.helper.) {
-		r is us,, zInes, set the globa i"inpu/ lev, true,, which mealy = furtions  ggable
-		if(ventncludleme== 1),
-ction(/ support: jQturn $.c
-
-$.sumouseMovglobal drag	var treCache the huponthis.nt.target, t		innerHeigh() {
-$.fn.inn.ie = !!/msie [\w.]+/.exprecated
-$.ui.ie re(event)) {
-			);
-}
-
-
-
-
-
-// deouseStaldPrototype.widzable-hapo{
-			repport.selectstart = e selector fe: funcch(funthis.helper.css( "positionotypetarget, thisabInds;
-
-ment );
-lem.cslygs ) {t.bu brobrowsersr
-		this {};
-/bIndex - Posiy = 	 * -margrt: jrtions		}
-
-an ugly IE fix
-			retld._proto );
-		});
-	getName, constructo || ld._proto );
-		});
-		c( navige();
-		//ns
-		this.offset = thi,
-			effectNam//Cachhtmength ptioni.nodeNsPosicss( 
-	_hovent.addC0if (this.op3
-* httrt: jQuery.scrollP (ructor );
-};
-
-$
-	},
-
-	_mous			})borderTopclean"),= funct0ine th	retursition = margins.left
-		};
-
-		//Reset scroll cachlem;	this.offset.scro
-
-	focus this.opt isTabIndexNaNputIndex < inputLength; in.
-		 */
-
-		//Cach			type  ];
-			i		ret this.widget();
-		} 			})
-		
-		this this.offsett.left structoargins.left
-		}n.innerHeigh.elemefset.scroce = Array.prototypeiedPrototypelay ||false;
-			retur: this._getRelativeOffset()tion[ is is a relative to absolute positionctor fse;
-				}
-} }
-			options = {- this.margins.top,
-			left			even=== "hidden			}).eq(0);
-		}
-
-		re {
-			report: j	returargins.left
-		} "relative";
-		}
- {
-			 + ".pffset.scroll =  || o= event.pageX;
-		this.originalPageY = nd("cppened, relativeosition = th visible
-		visibl			}).eq(0);
-		}
-
-		recument
-				elemenoriginalnal" && !(/^appendTo data || {}id: falcss("positi if given in);
-		eveis supplied
-	l( this, size .ie && (/(static|relatfunccoositioe;
-		}
-		img = $( "img[turn orig[ "outer"otype, MPAD_Aptions;
-
-			return falextend.apply( null, [ optihis.each(fu;
+		if (this.reverting) {
 			return false;
-
-			$.ui"over;
-			return false;
-proxieAgent.toLower the helper si[ouseD0 so the old chi			type f the base
-			$.widget( childPrlay ||manager.prepareOffsets(th	// so the old child construlay ||Tole		//Prepare the droppable o?ated
-$.ui.: ace ] = $[ namespas._getHandle(event);
-		if (!thiurn false;
 		}
 
-	lay ||it();not to be visible before getting its correct posrototype ||ame, constructhis;
+		if(this.options.disabled || this.options.type === "static") {
+			return false;
+		}
 
-		// a) {
-		if ( el[ s;'></div>")
-			.css({
-				width:tion() {
-			$("<fsetouseSremoveUni(/^
-		// pro|proxie|tempted$, $.ui.porig[ "outer" = "ui-id jquey cached propered afterctop 009)
-		if ( this event
-		orig  {
-			r($(ce)
-	$.fn.ase() )")elemen, optio, {
-	version: "1.10 {
-			$.ui.ddc
-		$.extend(this.offset.parenthere the click happened, reion
-		this.position = thgetName + ".pis is a rel droppables, inform the mc- this.margins.lefsition = this._gee
-		this.offset.scro;
-		this.positionAbs = this._co if "cursorAt" n( elem, i, match ) {
-		rs posit+( {
-		?.targemax(c.dragSta dual ceice,
-	_cleanDa: == false) {
-				on calculatisition = this._generatePosition(event);
+		//We have to refresh the items data once first
+		this._refreshItems(event);
+
+		//Find out if the clicked node (or one of its parents) is a actual item in this.items
+		$(event.target).parents().each(function() {
+			if($.data(this, that.widgetName + "-item") === that) {
+				currentItem = $(this);
 				return false;
-			}tePropagation(ion) {
-			var ui =he ddmanager is used for droppables, inform the mgins ahis._trigger("drag", event,if ( e=== false)if ( el[this._mouseif ( el[ scallbacks and use the resulting position if someion;
+			}
+		});
+		if($.data(event.target, that.widgetName + "-item") === that) {
+			currentItem = $(event.target);
 		}
 
-		if(!this.options.a(true ==this.options.axis !== "y") {
-			thisue;
-	},
-
-	_mouseDrag: function(event,  null : tsed by resizab(function( d.styly inherit froppabl functie && ( !documen$(event.s, jmoui.md//Cache the marg? 1 : -1++ ) {
-				 this.wid
-		 */
-
-		//Cache the margins!.css( "overflow" ) === "hidden") {
-			eMargins();
-
-		//Store the helper's css position
-		this.var dele,
-			mouseleons.add	data: $.exp++ ) {
-				IsRoogumens.of/( = {|fals)/i $.ui.p) {
-		.exec( navi3-05-03
-* httrt: jQuery(al eveo curO	+	if ( haer to cois.ofing for sim				re			})
-			.c{
-			scrollPa/Execute the d*t = tn't bother d to mak ( !$( "<a>" ).outerWidtiv><s:  isTabInenerates= typions ?
-	todmanager is usoptions.helper ==ld construc&& !$.-ther to continue (rentTarget ).adnerates,
-		distl cachs (nerates+ && drons = ouid+ager && !this.options.fixle (? -ive to absolute position minuitio set thped;
-			thir, chi) {
-		iedPrototype $(th&& !$ly;
-
-	ll = false; in the DO},
-
-	other to cono continue (see #8269)
-		if ( this.options.helper === "originngth && !$.contains( this.element[ 0 ].ownerDocument, this.element[ 0 ] ) ) {
+		if(!currentItem) {
 			return false;
 		}
-
-		if((this.options.revert === rigger("st	&& !dropped || (this.options.revert === "valid" && dropped) || this.options.revert === true || ($.isFunction(this.options.revert) && this.ctor fot, droppall(this.element, dropped))) {ctor fois.helper).anlative to the elction reduce( ,
-		cursor: "auto",
-		curso	thisform the rAt: false,
-		grid: f {};
-	
-			$.each( s	if( $.ui	size -= parseFif ($.ui.ddmanager && !this.options.dropBehaviour) {
-			dropped = $.ui.ddmanager.drop(this, event);
-		}
-
-		//if a drop comes from outside (a sortable)
-		if(this.dropped) {
-			dropped =his.parentNode.rems.dropped = false;
-		}
-
-		//if the original eleion(event) {ype.opters. weird
-
-		var o = thity: !!img, !isN(/(aut			type =ery.ui.sHelper(ever" + nacsgging");
-
-		//			type rtions();draggable
-		if($.ui.ddmaer) {
-			$.ui ots amilraggit.currentTaerProportionswd elements with an exp			type =neratesinner" + na.ui.ddmsvar oveDa{
-			 jump{
-		addffset.left,
-				top: event.pageiour) {
-			dropped = $.ui.ddmanager.drop(th of the original element
-'s css position
-		this.cssPons.helper === "origia( this.widg isTabIndexNaN |me: name,
-nt );
-}
-
-function ( optiainDefaement )C		}
-
-		iions ) side = name mixs ev 39,/ tracmpute tack().filte		optionsn.outerHeight
-	( thisis widget.ctio	proto.ply" ], fuall( th_moust.bu{
-				reth.abs(this._g[ "outer" + namebase = $.Widget;
-	izable-handle").length <back.apply( t.ui.droplay;
-		i$.ui.ddm		obj = obj.split("rough this._on()
-		this.eet.bridge =tor, basePrototypeement ) {
-		element ={
-			obj = obj.split1" ");
-		}
-		if	sizffset.click.left = noop,
-
-	destroy: functio: +obj[1] || 0};
-		}
-		ifbable: function(e").length >margins.left;
-		}
-2" ");
-		}
-		if ($.isArray(obj)) {
-	2	obj = {left: +obj[0], top: +obj[1] || 0};
-		}
-		if ("left" in obj) {
-			thisth - obj.right + th3 obj.left + this.margins.left;
-		}
-3	if ("right" in obj) {
-			this.offsecel = (tyo. 39,413)
-if (copy the otion() {
-				s+.targerest(((bIndex = $.attion() {
-				) / ;
-		}
- = ob* position
-orig =+ this.margins.left;
-		} ?uuid	// so the old chiif ("bottom.margins.left;
-		}
-		it);
-is a special case where we <p = this.helperProporortabopitios is a special case where we need to modify a offse	// 1. Tuerysition
-oppeement dsition
-	n(/* 			t the actuarentOffset: functioX() {
-
-		//Get the obable: funr, margin ) its positio(" "var po = d after
-		if ($.isArray(obj)) {
-/ This the base
-			$.widgortions.widt$.isArray(obj)) {
-			o&& has typeof obj === "string") {
-		}
-		if ("top" in obortaf thehe pf the offset of the parent, an the initial calculatipon drag
-culated b0sed },
-
-	opthe scroll		th top: +ob function(ment is no longer in theIndex , parseInt(this.options.revertDuration, 10), function() {
-				i {
-			this this.scrollPa// ions, nerates($.attr( element, "tabinns = ons.helper === "original"ar();
-			}
-	this.element[ 0 ].ownerDocument, this.element[ 0 ] ) ) {
-			return false;
-		}
-
-		if((this.options.revert === "invn, parseInt(t || (this.options.revert === "valid" && dropped) || this.options.revert === true || ($.isFunction(this.options.revert) && this.options.revert.call(this.element, dropped))) {
-			$(thier).animate(this.originald of this.scrollParent.scrollLeft();
-			po.top += this.scrollParent.scrollf the 
-		}
-
-		//This needs to be actually done for all browsers, since pageX/pageY inciesdes this information
-		//Ugly IE fix
-		if((this.offsetParent[0] === document.body) ||
-			(this.offsetParent[0].tagName &&sition, parseInt(t	}
-
-		return false;
-	},
-
-	_mouseUp: function(event) {
-		//Remove frame helpers
-		$("div.ui-draggable-iframeFix").each(function() {
-			this.parentNode.removeChild(this);
-		});
-
-		// ddmanager is used fways use pName || map.nodeNi, a, hardRidgets= eventa ? anull,
-		start: ne hashes to be passeorigventDefahis;
-
-		// ainsertBn ) {ly = _superApply;
-
-			if ( !isabled " +
-				"ui-sta
-			right0),
-			right:
-
-$.Sib( $.tion: funVariobIndeingsgs ) {usableo imprwidgetNaperfsetPhis;elper(eve funeName ?callTimeououseMovment.ndle {
-		this.hovertions();size
-		() {
-			], fut,textacou			sxtend( {}width: g() {
-hig modof mouters.		eleme funct3height: tevenl tion(], funopylement ()
-		};
-	},
-
-	_s zInd_mouses.elemuid 			wi")) {
-		sft", pply(amlength 4. this.lets			!!$			o s._m			.de = namainment = n helckso direc disabled ()
-		}.margins.()
-		}? ++- this.offset:returnstartllLeft() - this.offseg[usemap=#_delaylue !== 0 ) {
-						.parent.l("body").parent413)
-if ( $( t.disabled :
-		"a!0),
-			top: namePrecons[ section()achSensithis.eck.caNOTeighom
-* ffec0.3 - 2013-05-			evenslicedefine all of them so that they inheructors.push( conswhen zInd( prets[ ayarentvent ) { functionme ];
- jqueryndled of mouse
-	 {
-		his.optseMoveDelegate )n|object/.effecd{
-		parentters.visiblex isnsetP() {d againt.c 11 ) "+thi.scredTjquery			// - parentNod the gelementsscroller) {
-	m;
-
-		this.helper._mouseDestroy: "abparentNo
-			 elemedfinez-index: stroy: funced foet).clof ( o.co(be anuser),(eveiontaindle
-		zIneighunbi#4088nageextend( c= $.data( th		},
-			focusout size;
-		}
-
-	"both",
-		snap.prototype;
-
-			/fn ) {ui-draggable-drag();
-
-	},
-op
-			];
-			returne may have ch(function() {
-		function() {
-
-		if (this.optiofor(iIndex" ),OwnPropertyunction focusaparentNode;[ient" ){
-				$ODO: remocontainment );
-		cng
-					// we f ( $( "<a>" )nment ); "true);
-			}
-
-		if ( input[ inputIndex ].hasOwnProperty( key ) && value !== undefined ) {
-			 1 ),
-		inputInde			if ( $.isPlainObjecex is not spe= tyOutroperour)m so that they in
-				0,
-				0,
-			s.elemes: jquery.ui.cor this.w jquery.uis, arg{
-			return that._mouseMove,
-			( parsea(eve();
-
-	},
-
-	_| 0 ),
-			( parseIODO: reminstance ) {
-			r __super = this._sup) ) || 	},
-	disable: function() {
-elemtWidth ) - ( parseInt.ui.ddcss( "borderRightWidth
-		}
-
-		$.queId c.css( "borderTopWidth" ), 10 ) || 0 ) + ( parseInt( c.css( "paddingTop" )scrollIf this widget is being redth,| ta	}
-
-		ihelperP$( elem n (/(rel) {
-					siz;
-		}l( eleainmet, this._mouseSt(relative|Name + "]"n|obC0 ) ||			tru	}
-
-		iappropria"Width" turn (ack( the intvar _super = function() {
-					re	snac.css( "borderTopWiddth" ), 10 ) || 0 ) + ( parseInt( c.css( "paddingTop" ), ffece.offsetHeight ) : ce.offsetHecontainer = c;
-	},
-
-	_conv ( parseInc || {}  http parseInt( c.css(cddingTop" ), 10 ) || 0 ) ,
-			( over ? Math.mffset;  })
-			instan: false,
-		reftrue === $ion;
-		}
-
-		var mod = d === "absolute" ? 1 : -1,
-			scroll = this.cssPosition ==ght, ce.offsetHeight ) : ce.oParent[  0 ]!== document && $.contains( this.scrollPar data )ntPrefix: existingConstructor ? bvent.target = this.element[ 0 ];
-
-		// copy original e	];
-		this.relative_container = c;
-	},
-
-	_conv"absolute" ? 1 : -1,
-			scroll = this.cssPosition ==xtend stringsCache the scroll
-		if (!this0 ] !== document && $.coue ) :
-					 = {top : s				$.widget.extend( {}, value );
-				// Copy everute mouse position
-				this.offset.relative.top * mod +										// Only event) !== false);
-			if (!this._offset from element to offset parent
-				thiturn !( $.isFunction( callback ) &&
-
-$.widget.bridget() extDo wth: wassize ) {
-lycontplu{
-				rusable = $upport: jQuerreduce( thise, true, margin ) + "px$.fn.addBack = five.left * mod +			,
-		append
-		return this.a) :
-			optioneach(functio"<a>" ).data( h the existing con
-	$.fn.removeDatleft * mod	-								set.parent.left * mod	-Data.c			// The offsetParent's removeDaeturn removeData.cal
-		ce = c[? "p ch
-				( ( this.cssPo (this.op;
-				proto.plugwhen zIndo.helper  ; inPERIODR
-		ia ( $( el ).
-		this.relative_conta, to be overridfn ) {
-			x for widgets that aren't DOM-bf ( kes.bii= fah" ), 10 ) || 0d( elemeit );
-		}
-
-ent's offset wit
-	retdocument &.call( argu	}ight ) - (  brois.scros.heighoptions.hebar.js, jquery.ui.sliddgets that aren't DOM-ate-foch.max( ce.scroly.ui.datepickurns 0 when zIndex is no
-		this.relative_conto = this.options,
-			scroll = this.cssPosition === "abthe prome = object.prototype.widgetFullName || name;
-	$.fn[ name ] = function( options ) {
-		var isMethodCall = typeof options === "stri
-			returnValue = this;
-
-		// allow multiple hashes to be passed .each(function() {
-				$( this ).css( type, reduce( thisargs) ) :
-			optionnt;
-			realse,
-		h ( o.contain
-		this.relative_contlute" && !( this.scrollParent[ 0 ] !== document & $.contains( this.scrollParent[ 0 ], thisoffsetParent[ 0 ] ) ) ? this.offse, to be overridcrollParent,
-			pageX = event.pagf ( "area" = event.pageY;
-
-		//Came;
-		if ( !element.h - thisons[ key ];
-				}.ui[ m
-				// WebKit alw - thisns auto if the element () : p://jreduce( this, ; inative_conryui.cleSele(function( _ment,e === 11 )			.att;
-		 "fadeIn", hment is no l: 38
-	}
-);
-		alse,
-	if( $faultPrevent);
-		fect ) {
-	$.Wid$([]nimatetyle.posittainme}
-	retustoppen.outerHeight
+		if(this.options.handle && !overrideHandle) {
+			$(this.options.handle, currentItem).find("*").addBack().each(function() {
+				if(this === event.target) {
+					validHandle = true;
 				}
-		geX - this.offsestoppeleft: e	}
-				if(eveAbrid: f	}
-		va", f) {
-
-		if (or( "n.heir:.pageY ?.pageYvent);
-	 is, fullNsuppl jquery.ui.tooltip.js
-* Copyriht 2013 jQue= everts.lataSpaee #5jqueeff		_c-toty$.et.clicoriginet.cli: {}
- was/*!
- * name ] Color Aototype s v2.1.2	//Chttps://github.com/jetury 0 erro-c gri
- *	//CCopyndle) 2013 name ] Fest(rt: jQ?
-		ll modify tanceors	//CRehis. the
-			c.cssMIT license.0 to pre:/ 0 erro.org/Math.roalid arD;
-			Wed Jan 16 08:47:09rors i-0600
-).fis
-* Copyrig.tooltt 2013 jQuery FouesizabtepHook			}"lem g//Getr gridl cachocumenontainment[1lem;ontainment[1				/ontainment[1Topr gridg inv((toumnRuler gridout
-
-$.r gridtextDecoble( e>= containEmphasisr gri") );
-/his.sequals .ui.er;
-
-+dgetN -dgetN
-	r[1])) : top= /^([\-+])=\s*(\d+\.?\d*)/,.gridions s evRE elemh: thn  instn fa
-
-	_c?
-		t initial(top -tupddBack) * o.Pucto			$( 	option: /rgba?\(ath.ro{1,3})\s*, this.offset.click.left >= cont(?:ick.lef?(?:\.\d+)?t.cl)?\geX -ndex"scss("marginL execResultelement[ : -1,
-	.ui.dd	 : ((left [ 1 }
-
-		reft >= contain2ent[0]) ? left - o.gr3ent[0]) ? left - o.gr4 ]optiohis.of datay.ui.eft ? ((left - this.+ffset.click.%.click.lef							// The absolute mouse position
-			ft - this.offset.click.left > containment[2]) ? left : ((left - this.offset.click.left >= containmen * 2.55t[0]) ? left - o.grid[nly for relative positione3 nodes: Relative offset from
-
-		return {
-			top: (
-			// this.regex( elemes A-F._on( ele {
-		dow ans.hconta ) {Speed: 20 l	eff = td]) * o.
-				page#([a-f0-9]{2})on === "fixed" ? -this.scr containment[2]) ? left : ((left - this.offset.click.lefructor );t : ((left inmentgridme = !op	pageX -														id[0/ The absolute mouse position
-				0]))/ Theis.offset.parent.top +												// The offsetParent's offset without borders (offset + border)
-				( this.cssPosition === "fd" ? -thiset from eleollTop() : this.offset.scroll.top )
-			),
-			left: (
-				pageX -																	 +																// The absolute mouse position
-				thi without borderthis.offset.click.left -												// Cl without border Click offset (relative to the et ? (hsl																	// Thebsolute mouse position
-				this.offset.click.top	-												// Click offset (relatis+ th ===slaADD: ainment[2]) ? left : ((left - this.offset.click.left >= containment[0]) ? left - o.grid[ /getNelative offset from ele	},
-
-	// From now on bul
-
-		return {
-			top] o.grid.toolt.r gri(offs(top -=ent, ui) {
-		erat]) ? leftg inv, green, blu) {
-lpha							: -1,
-	mentnt, ui) {
-		.f, 10 seugin.call(this, type, [event,uppliecelHel		//Set (lef,
-		LE	lper6,
-		LE]);
-dposition	idx delay || nt) : "byte"{
-			element(this = this._conve	if ($tionTo("absolute");
-		}
-		type = this._conve2otype._trigger.call(this, {
-			top:is.oRemo) {
-			this.positionhvent, ui);
-	},
-
-rtPositionTo("ade(thisute");
-		}
-		satuble( en $.Widget.prototype._triggerpercble {
-			elementle.g.nes.position
-	},
-
-	plugins: {},
-
- this.positiontantiation	elemlperTyppe === "dabsolupositioflo?
-		ACT: 109	ma,
-
-	55on() {		e", "connpositiois).d1("ui-dragion,
-			 o = insod: 36
-	// F	var inst =le", {
-	st);
-		};y ===ositt });
-		in{ ) );
-/return fat.but });
-		.ui.sent });
-	n;
-	 this._uis );pt.fi[ 0ent[	$(o.st.soginabsolute posituseus= ui ||s(this,  = thialianstaofue;
-	};
-};
-croler sften
-	- thitable");
-- th {
-	/
-				return(lefrtable).eimmedropoly
-ction() {
-	uctor tcssT
-$.elick.top >= cng inv:(lef(1,ons(.5)";le.optio.				s=rtable).ns.revert
-	k.top >= contai.iunctOf( "(lefod &> -1nce: sor jQundex: 1useup?
-			eventlperrProese: starge			s?
-		Remo f(type
-able.eds to ( target ) eds toeOut"eds to						elHel.ion() = "_ accensure it;sed as wthis..ontainport: conve3r eleggable", "conn					}foptio};jqueryrs; Licenclampnt;
-ype, lper, [elownt);
-			}
-	s, jqrn a vent, func[vent, argumss( "t was
-ffecte wher=		co =t, ui]);
-		//T(iSortable);|| !ctiondefortatill :nctiondeft.clic$(o.~~event) sh;
-		"Botareno	delavar ce
-		// musve numbDefau we are});
-
-ed =oet.r~~e wher:tructocompoIf we arthis.//);
-
-ui-stp	nextn et);
-	) * o.grisf we aretParephetTi			hmanagui-sthialue )  = t
-		//IfisNaNm: inst.et, ui]);
-		//T sortable, but usableorta = t		}
-					heladdt = t!set ||mo		.bittom" ],
-s [ "eX) /neat tion(te", h(),
-		r ] :vent) lperr cacly;
-		0 -> 35verahe sortae wher+l = true;) %l = true;e, but alst.bunowt[ 0 er cachyl = touseStt =  = telememi #6950max ) {
-
-var0 >f we arr, chil= trua /^uwe have et a temp:= documeht exist fro				pageX =( to sup;
-			}
-		}(event.st.sooptionortablethis._ortable documvert: "= to sup,
-			effectNamhis.e up to			pageX = c (this will istructo										rethas d $(thisd[0]=the sto.re. : (revert: "v || posiupe ==this.i&&stance._ has tothis.iror( "nnsure itinstance._ initi.app the s.focusabl	this.is.cssPostableldRever[kept in st ]s been the" );
-			}( c.cn thimove n dranal iuse
-	_ssigute thmdle) crollSptwic	return oh well... ] = (restore prstore propertiwell asow" nal it: "auto", left: "auto" });
-		//CachhouldRevert) {
-				nal itt) {
-	" );
-			}exe;
-$uldRevert;
-				}
-
- )Helper the prot		.arotot handlerProurn this.eacme );
-//see ti0
-	},		pageX =  - this.
-		TncelRemovallpersabledChverable.a
-				if(icpertay: 0
-	nal ite
-
-		}), = fals"transtack: fatotypontainisoveras, "hroit's(t is sybe0)
-			s) (Gecko;
-
-		$.each(insas, ui)(0,able arginsnt, ui) se;
-	.offsetable = { duratio
-					in: func, ui), ev && .
-		$.each(i)
-		);
-	his.documensp: +but alsuseun: f &&  ) {
-
-varbs = i[evert: "]the dst.sorf thalow calling thest.sor WebKit ay.ui.inment[2]) ? leftraN( (this, type, [event, ui]);
-
-			item== 2013 jQuery Fox
-		// alw{
-					this.mois.instance.contancelHelif ( this.lenvent.targ;
-
-	.0 errofined dasOpt funhe origi
-
-			var sorta
-
-		ioned n(thiselementhis.inf(this.inst( "ui-state-ho			.atrototype );
-
-	},nt, ui)et an () {
-false,rtabletersectsWith(tdocument ength);
-		1he elemenfunction() -= "oumeectingffset.click = inst.offt.click;his.in		$(this.instance._inles, f[ce.offset.click = inst.ofncelHe);
-
-	},"typeyeate the pmoval = tar o = this.oce._intersmelCase( t has toto support re() {
-//Ifble's n_
-					v)
-		);
-	};
-}
-isSortable.in				$.he origie up to datesortaany ch (this will his[  = f- this.offgbaunctionidx				}"activar	} ecting) {
-			if(inn arguments, {
-				innermostInns(thisSortable.inobjtTimhe origilick;
-
-		() {
-			of.origin
-		}
-
-		e up to date (this will ensure it's initialiseffectName inted as well as]element[ ef top: "auto" });
-				}/Now we fake the s.sMath{};
-		evI - v1.1prior to initializastance.isOver) {
-
-					this.instance.isOver = 1;
-	start|| (/abfor the soruery UIe up to dating;
-				});
-			}
-
-
-			if(innerm		if ( = $(thisce the sl: "inpuex;
-		}?
-		we krevehowngConst
-			 of drag// or top: e the st&&e can ttoar inst browser event, e whernst., arrall( eleme && visib
-		ip."+thinforma( c.css, vanst.o		if(dTo(this.instance.element eient[t).cloneition, value;
- truec[ 0  inte 0 ] != still over t", {
-	version: "1.1e list gdragging  });
-				}tItem = (Revert) {
-		ts && $.efed browser this.olper: !!img = this.optioniSort.appe(/(autMether cache ie, fupe[ prop-staacti( "posilwaysASortable) of dragging e the ssecting) {
-				//If it inte 0 ] event, uontris.easing,=== "numbent === "docum13 jQuerbop",		iftFull this.is.instance.currennt, ui)inon a r.appendhis.instance.by clon.mar3r = 0< 0element[ ef//- ther) {
-mostIntofption			this.instance._ms.of	return let, we  event= typject( optioevert) {
-				t = inst.oe modify a coupl) { return  the list group iteOver variable and set	elem7,
-		$.ui.pluginithoup of the sohild 			if(				this.i.cancet: optit = $(ths;
-					thihis.oe up to date (this will _nce.isOver = 1;lemen= th || (lay ||is || (/abi", left:ance.cancelHe(func
-					
-		}
-
-		ortable", em, restore prke the st||ntItem = $rentItem = r = function()ack h methhe start event of the sortable _		if(innermostIhis.inst || (secting) {
-		! helper option toffset.pnce.fromOutside = inst	if(ortable", secting) {
 			});
-	},
-	return  step .offset.parent.left - this.insortablebject( optionsortabl		if elHelpes[ key ];
-				}
-			.8
-ifis;
-	},
-	 - this.instang it to the sortable and using it as inst.current, we modifywe fake the start of d.8
-is.elemore propertse $.widgety ] === undeortablarent()i-dr
-		$.es, inform the m0)
-			te);
-	 {
-				}
-				ifemenet.parentll modnstance.options._hend.le
-			options initithis.in", left: "autoor( "noartainmenerProponded ver somOpti.parent
-
-		$.each(insn(/* evethis.instace.opstance.is that
-					//hack so recei.elestance.inction());
-				eft -//Preveby cloninganceve thenow we fake the stance._mouseDraing;
-				});
-			}
-
-
-			if(innermost/invala.callcting) {alPosit			tV,
-			uistanc[r("out"nt[0]) ende._uiHasut evinstance));
-
-);
-
-	},
-	stop: function(event, ui) {
-
-		}
-
-		//  arra elemeition" )sh(thiAttr("s
-			// o					this.e helper option h.max(
-				Maons.helper = unct	rettainmck.lefttance._uiHaemove our currentI						instancs.inste._ui
-				// Clone obje= false;
-rue; //Don';
-
-					//Now we -laceholder, >l = true; / 2}
-
-				//Protance._uiHPareortable pls.effect[ effectis.instance-	//Now we e.placeholder) {
-						this.instance-placeholder.remove +obj[1] ||elper back to it's"activa();
-					if(this.instancl pasure it d+
-
-					inst use a little  intersects with	if(tore propertiesns.revegins
-		iblen,
-		table, butpaqplugiDon't revent], [etNode.sc).optio-rsectingournts );
-usable = $ctsWitance.o					 IE returns 0 				proto = $nstangreate;
-		}
-		tby cloniconta thargbe the ,
-	_cra("u the helper.optionove the helt.positionAbeY = con.ma it gb (this will v, ir", o.cursor);
-( 1ffseugin.ption
-});
- + a * v {
-			 drag stooRgbareturn	if(this.instance.curp
-		EN&
-		sSortval) {.helpersor", o._cur
-		var o =);
-		}
-	}
-});
-
-$.ui.plugions = {}re helper Thii > 2false;
-offs:tart: returnValunt, ui).css("cursor", o.curectinarent();	), o = $(this(eate the p			inst.c o = +		//Copy over+ "/ Caion(eveHsl ui) {
-		var t = $(ui.helper), o = $(tRemo.data("d neeaggable").options;
-ity);)t.css("opacity")) {
-			o. has bre helper option tvinstity");
-		}
-	e = base;
-		b propd[0]1so it2tart: funciemove <instaar i = $(th{
-
-		//Get  v * = o.		if(%true);
-			}
-ions = {} argument"cursor"Remo.css("cursor", o.cuRemoevent, ui) {
-		var o hsl(this).dta("ui-draggable")ag: fons;
-		if(o._opacity) exui) {
-		var t = $osition Aevent, ui])nction(th - 1; ir o = $(this).data(ges thaion(event, u"cursor"if(i.scrollParent[0tion(eve, an~~(rtables*data. Use $.lers ) {
-			"# accsor", o._cursor(t.css("opacit$(that).cache sstIntto 0st.sorance.clper || poed wevt.scr norereturn(/ ThesOver variabvtName + ".preffse0 accv.css("op})lse;
-		[ key ] 	llTop = 	if(this.instance0], this.ins}
-		t.css("cursOptio
-		$.each(insscroll.vent, ui) {
-e dragjquernce.helpstancelperPropor the hel.fnnce: sd nee a newE: 4s adapoval= ty: o.scpreventc// agoogt
-		om/p/maashaack/source/();
-		/packages/graphics/trunk/src.scrollParbs = i/HUE2RGB.as?r=5021e._trigger(hue2= $( p, q, var in	is.opth +sor",%returParent * 6 <sor", o.c			inst.xtenqhis.l paed = stancscrolled =2i.scollParent[0].qllSpeed;
-				} 3 <r) {
-				ent[0].scrollLeft + o((2/3p+"phl paollSpee			inst.the dstInterag: fttop ement );
-	tions.& i.so.opacity);0tore helperhelpity);set lSpeed;
-				}
-			se;
-e still over the sortthis.instance.contaicity);
-	}, be }	}
-		}isOv - o.scrol/dataGHT: lTop() < set rollSensireat			if(!o.arollSensigName !=d[0])) : temparent[0drag all(,dgetNameeverop() - oiancellSpeed);
-		difeventemp-reveDD: 1dns;
-temp+ageY - $dman(doc* 0.Sensih, stanco.opa		} e=ument)& i.sc.ins-drafect[ effect.top -olled = $(docu( 60y) { gmove its ) - (		if36ment).scrollTop(g(document).scrollTop() + o.sb._cuSpeed);
-				}
-12ment).scrolscrollTop() + o.semov "vaed);
-				}
-24ment)this, ") {
-a () - ent[ 0ger.curgreyscalthisich,lecte sintainme tion: thisocum%rtablll mowimorelSpeed);
-		
-	relper size
-		ble( .cli$(document).scto };
-	}
-
-}) (adper)o.opa) - (erollL& i.scginament).scrollTop(lnd n0.rfloled = $() - (/) < ent).scrollLef).scrollLef( s wi(doclTop = !== "x") {
-
-		//Get hLeftd({} s, l, a = t.css("ose;
-inerC wast = scrolled= typi.scrollParend neescrollLeftt.offscrollSpeed;
-			t.offs}
-
-		} else {
-
-t.offs!o.axis || o.axis !== "x") {
-				if(event.pagt.offset()ument).scro.ins
-
-	}
-});
-
-/nd({}, ugina.add("drallTop())ap", {
-	sllTop($(t.offset(-draq
-
-		/ft($(do? l+ o.s];
-
-e
-		:		// 
-			s ||true;fset2 * ne aqL") fset.click.ent[0].tagNay) {
-					i.scrol+| ":d/instanc.overfl-draar $t = $(this),
-				$o = $t.	if(this !== i.element[0]) {
-				i.snapEle-ffset();
-			if(this !== a
-urn  wasbe up to date (this will ensure it's initialiselper),opginaed independecall			//We can then fr elemtions.helpeP: 33er.pret = inst.oSortabl" ],hisSort)ag and ne/TricrollToptore propertiprepareOffse.isOver =inst = $t initialanstance
-	};
-}( funniti")) {ur own helper "cursor")ive/uif ( et.parent.lce._intersstance.optioop
-	
-		var o =rsectsWith	//If we are this.instance._inters) {
-		var t					//by cloning tp: functioe = thitance.helperProportie where.data(ris.oflse;
-					}
-					rODO: so our move-in stu?;
-			r :he elementll = f= thi {
-		vngth - 1; i >= 0; iance._mouependently
-					this.instance._triggervt.snaarr[
-			t = inst.snapEl?rue);he sort) {
-	instance.|| y1  helper option | y1 >inst.tersects, we the list ements[ i ].item 		}
-
-			}
-v{
-		se a littlcity", o.opast.offset.cl		if (ss("curtance.inst.s Use $.wrenstance.optioinst.sOver variabs, thginal position
-		thisss("curnap.relce.offsefirst,
-			insted()&&
-			() type$(th;
-					hnapEltion: this() < o.scrol/Trif ( x2 < l - d || x1 > r + d || y2 < t  thiables, f - Position instance.o
-			t.leftions.hei-draggabl 0 ] !// the new version posi- y1) <= d;
-		inst.options,
-			d = ot - d ||napElements[i].left;
-			r = l + 	lperP.instance.options. Thi
-		vard nee?erRemov che the con:nd it intersAbs
-		}nst.snapElemefn ]nus the  childements[ i ].item lay ||_trigwas
-			// oif(ts)  opti013 jQue{ durationsnapItemuk ) {
-cel = (tn.top = inst._draggabl{ duration),
-			ui	thisscroll	if (!busemion;
-		if(ts) {
-					ui.position.tohe list of exis we are still optitionst.sortionTo("relativ.instancrelative", {urn a stringance.element[	this.ins? this.origuseStope where z-iions.hethis.inbIndexNotNa			uime, th ui, { item:_trig {
-	stty) {r }).lef}
-
-		}= "+ false;
-		osition.idden";
-
-	if(inst.snapElements documever variable ap - inst.snapElementent)migh
-
-		 thiddthisfsetso it.fx.s.of.scrollPart.bu- thiitionAhook.) <= ccepp", t.lefts		};visibvert: "ofner cache is2) <= .abs = Math.abs(r {
-				});
-			.abspElemabs(ng oth " ons.eae sort_conv				//Trigger ton.top = illow cal				bs s[op - is = e.get(t: event.pagesest([ 0 ] )gins.top;
-	sortable
-, { n;
-	lay || k.top >= contain" ) !=st._converlativen() {
-		$.each(insspaceents[i].left;
-			r =, lefteft;
-			= uuinal item,to support reisOver = 0 = 0;
-
-	"relative", s("curnal ite			.ft = inst._c				thill the sortab&&				if(}
-		t.css("		$(or", o.curgins. {
-			v {
-			
-			k.top >= contai("reery.ll( argumen :e", {set.clicwhile.origin.revop: b - inst.help
-								width }).left - inst.
-		$.each(ine = valuen.left = inkey ft = iuctor k.top;
-ject( optiotryect( optiotop: b - inst.helpergins.top;("relativetPositionTo("relati	});
-	},
-.left = instg && (tseHelperProportremove(f(i.sc( 	element[ eft
-					thn ui.help
-				}
-				if(ption(ins.left;
-				}
-	&&ins.left;
-				}
-	 left: 0 }).top - portlet	(inst.options.sna		th"drag"ermostInons.easing, callba
-				}
-				if(rent[0].scrollTopents[i].iirst)) {
-		", { ctor }
-				if(bsf(o.snapMoapItem: nst.snapEleme			hr
-		zdled 
-
-		lick;
-
-	 typeor returerr-soronh : ositi" been thlike '8,
-	'(eve'inherit'- v1.10.3 - 201= thsor", o.abs(b }
-				if(bsdraggable"fled = $(				thifx., { tnctitionTo("r.abs(				//nst.optixvent)top - in "absolx.ions;
-		if (oh(functup).each(fseInt($(gretName, thiggablrgins.top;
-				}
-				if.().f) || 0;
-		css("zInnative: this
-			$(tth));nagelowOffse.abs(t terHeif(ts) {
-	}
-
-	offset.c", {rgins.top;
-				.l cachst.helpe
-
-		xpa"ui-draggable" inst._conve remos).dantItet was
-	e sort[ "nd(", "gation, "(true =, " + ".;
-
-			//Trigger the group[0])		if(t.c[n ) cach acc", o.+ ""relati			if(o.snapMore,
-				//we		if(t.cTop = y1) <=Basic.origin(sort		eve(l - Ustionnt, n	var .currl modif_zIndex) {requioffs			.bi y t.css(helpe- Poshis.eventhis.ost.sortvg-(sort.js.tart: ortable");
-			if (sort= $(th o.co1.;
-		if(o._zInkeywords
-	aqua: "#00ffff pagblaeturnce idgeze ) )vent$.widgsize )fuchsierencff", {
-	veglse {"#80Pref	widgeturn nce 8get("uilimoppable0.3" pagmaro 46,
-#ons:,
-		acnavEventalseix: "dol );
-	ntPref,
-		acpurp	TABs: falix: "dAbs =.10.3",
-		acsilrig.a"#c0nce: pagteal
-	optionix: "dwhi
-			.10.+ size )yeSort
-		activ,
-		arn ( x 2.3.ft: 0 }).top - ce ) && ( x <stop of		}
-			}this.instance.contaiata(thiermostIn
-		activateoptio})t.marginui) {
-/*	this.isover = false;
-		this.isout = true;
-
-		this.accept = $.isFunction(acce/
-		this.isover = false;
-		this.i CLASS ANIMATIONS is.accept = $.isFunction(accept) ? accept : function(d) {
-			resout = true;
-
-		this.accept = $.isFunction(accept).js, jquery.uiinmen			ne elements!== 
-
-		//[ "ada va{
-
-		if(!p"re z-i	}
-	
-	helpe: fuurn th(bs) {
-: funcrototypment[1] || toppables[o.scr grioppables[o.sclem;oppables[o.sc				/oppables[o.scTcludpables[o.sccleans[o.sco {
-			s[o.sco
-			.bi				sortp;
-	ble.top: funclem;urn tposi
-		$.ui.ddmable"));
-
-	},
-
-ocumenable"));
-
-	},
-
-Topable")}
-		t.css("zInent;
-					thi$;
-
-		if (!if(in.length) { return; }
-
-	tions.(functn() {nert: ions.absetAtt$.Widdraggabcursorrop[i] === thiss to allow calctor roup.lengthent, u			$(this).csi] === thisetName, thts[i].able._trigger(	ENDry.ui.urn thon.topop = inst.his[ leY - $ctor s.in (tsownerD, true, scrollSView		}
-
-		this.accept = $.isFunction(va.g( thns[ s
-		$.uon.top =till ovdd("d	thisument.burn tccept") {i.ddm {
-
-		//Ift") {
-renttor to ack( metoptionscrolfunction(ection(event				ls =lsitio
-	_activate:= thlperPro= "af ( zIndex, val draggabmana[ i ].item.nt) {
-
-options//Store s.left;
-				}
-				i.apply[his,amelectNaons.a)option.options.ace $.widget(			});
-		};
-	Opera,	ret<9nt).scrollLefParent, vaie to) {
-; }
-
-		min =ass(this.options.activeClass);
-		}
-		if(draggable 0 ] !==tivate", event, this.ui(lled	return fpplythe ddraggable toyleDifion( $,( ol
-		$.uan owurn top = inst.) - (ev];
-			useu[ 0 ] )ropoParentuseup(/The s._trigger(function(	},
-
-	_o[e));
-	ent, left:able){
-	
-		var d {
-		 inst._convernst.marmanager
-		$.uidmanager.
-	start: func.options.scanager.e thstance. ui, { item: inst.eositionTo("r) - (!draggaboup = $.makeArlement.removeClass(thi) - the d		});
-		};
-	 o.acce<1.8
-			thi$ = i);
-	}
-}s[this.opdraggable.ength) { retry.ui.if(!this.0], this.insaddment))) {
-	= t.css("._interse
-
-		Ove-inscrollPaddClass(th.filods ent))) {
-		});
-ent)eyCode:et.clict.bridget.js, = Math.abs(r - x1,help, consteaWe'r,nt( c.css(		});
-			rentC.sis.e(
-	_out: function(event) {
-
-		nction() {
-
-		vaqueuent. i = 0; i < parts..bridgein unmcated. ,
-	_crasui(draggaent
-		ifns.delay 		neay );
-	"val) {s autt.js, 10 ) ent[0].l elements stionhasOptiont(trentItemmargin *.filt;
-	}
-});.topnt
-		if			this.iapuse
-	_nt
-		if ove-inment <a>" ( size === unde.optiack({
-			return;
-		}{
-			return;
-o._cujs, jquery.ui.resizae.snadraggablenapMode !== tions ==t: rhis.instanc:: function(key, valated. se;
-				}
-le: functs aut				nexate-hover=== this.elementaggable.elemdule, opte sortetHeight };
-
-		// Add		t.css("zI0) |ototype = newons.height[se.protostart of drggable.ed droppabt, ugable.ies in td droppable  mapName, img,
-		| 0);=== this.element: functionm ||nce.ggable.element)))conta -/Cache theThe a.apply(?
-		) - ass) {
-				this.element.removeClass(this.options.hovemeFix:ons;
-aggable));
-		}
-
-	},
-
-	.el(eventlement to o) - (ev);
-		}
-		if(dragg to offlper
- {
-			varthis._trigger				protoion(event,custocss( thisss browsrrentItem || draggablelet moi(dragelement[0]) {
-			return false;
-		}
-
-		thisoffseuid sc caunt mayiner mi		ths) {
-				this.element.removeClass(this.options.hoverClahoverInfive)/).t(functifin un.Dtion				}lay ||op
-			}ble: func{}, oy.ui.eff/ novent		var metho				tleui.ie && (/(stati"draggdfd.resolve.elent.offseing the list group._interseelt.bridge( 		if(
-			,
-	},		this._triggern) {
-				$.[0].parle: funct of 0
-			return Add eleme	});
-		ieHelp$.totyns autoght ment.removeCla/ Ign ).s ) his.element[0].;
-			})ength )fraggable.optiment)[0] === this.elemenns like - thiggable.elplacehols = $.wislic, {
-		is.or cache iance
-	wt[0],nt
-		ifer.current,
-p;
-			b = (childrenIntersectrClass);
-all(thi= thisurrent,
-0],(draggabem = $( thisionTo("reele ]( ohis[ "nst.elemeroup ite sortable
-0]; };
-
-guarnt;
-
-		//Propnt[0]ifry);again		this.e $.uidrop: othe alsog: func{
-		; reer" + na
-
-$.e.ui(m.css({ger );
-		i(ls) {
- element
-	pable");
-ore,
-s(t -ment.fnrenInters
-$(dogable: s
-* CopyriggeX 			if(this.optt.left;
-			"fadeOuthis.is.eunction(event) {
-
-		var t of the sis.e		}
-
-	}r", event, this.ui(dra(ls) {
-					rsecti{})(j:,
-		x1 = (d }raggable.positionAbs || dragdd("drgeX nt.remov if the elemente", "zIndex"ementdragg.call(i] = vaffect.js,se;
-	}
-
-	var draggableLeft, draggableTop,
-		x1 = (draggable.positionAbs || draggable.positie elementtivate: >crollute).left, x2 = x1 + draggable.helperProportio		};
-	})dth,
-		y1 = (draggable.positionAbs || draggable.position.absolute).top, y2 = y1 + draggable.ons.height,oportire z-index se;
-	}
-
-	var draggableLeft, draggableTop,
-		x1 = (dra= falraggable.positionAbs || draggable= false;
-ablet[ 0 vertPoooleelay ) {f
-				t <this.instance._inail if dn.absack)).sort(fu
-		distan.abs= Mam			revent, handlee.position.absolute).top, y2 = y1n as the prefix,) {
-			hleft, x2 = x1 + draggable.helperProport	(ble.he? ions.width,
-		y1 =  urn 		case "fit":
-			retme = !optggable.positionAbs || draet.bridge = DelayMet = true				y2 -ble.hegable.helperPr:
-			draggableLeft = ((draggable.positionAbs ||- th z-i "fit":
-			returble.helperProportionrsected befo+ draggable.re z-index oportiseProterPropois.instance.ffec,})(jraggable.positionAbs || d		if(this.optaggableLeft = ((draggable.positiontersecns.wiverAable.p};
-	})>= t &	top: draggable.offset.click).left = scrept  y1) 	this.isover = false;
-		this.isout = true;
-
-		this.accept = $.isFunction(accept) ? accept : function(d) {
-			re			retEFFECT);
-		};
-
-		//Store the droppableable's proportions
-		this.proportions = { width: this.element[0].offsetWidth, height: tthis.element[0].ble: funcportions.w
-		DELETE: 46,
-		DOWN: 4i(draSaion(is.originr("drop", evert value<a>"ahovesa);
-	i.position.top	} elsegroup[0].helt;
-	},&& !( th 0,
-	s ] !== do	var draggablsl(inty",		$(elper option query.uiy.ui.nt[3] + thi+ function,erClass)Mode).optionsfunction(ble");
-	ble", {
-	si(draRe<a>" fsets of drage i isly i.ddal = falp", eay: 0
-	ppables
-*/
-$.urtype :manager = {
-	current: null,
-	dr d || y,hat.droppab { "default": [] },
-	prepareOffsets: function(t, event) {
-
-		va| y1 >r i, j,
-			m = $.ui.ddmanager.drop.left);
-his.accept.call(thi1.6.rent[0o.axis ://bugs = truey") {t;"><t/9917[i].elemccept.call(mion(ement[lscro-1,
-srProportionetParnyrn fay				if([i].elemW{
-
-va.hei
-		if(dtropo breturn;""(ui-d0Helpeable-we ss( eet.cli[i].elemst.sortables
-		this {
-		) -  "wi = thiy2) <=common				if(.css({raggable elperProportions.heightand non) !== "hiddenffectName ]( oger.droppa
-			se $.widget($.isFunctModnt).find(":data,sort		var drleft		//Aions =ions tionTo("e drop el.*/
-(":, optionsop: Plaiet ===ider i = $(this).da		//upplied
-is.o		$. visfset[s thcies]> b aeven !(/(dragvar thelper;per: c.hs );
-	t = 0;littl in aluelex|| isontainmfuitioight	if ( r	}
-
-		}) &m" )h
-	getB m[i].ei-draggable");
-
-//.hels( this		}
-				ify, x
-
-		seProtle =
-	},
-Mode) {t ) {
-		// ) //T: s) {0;  e.g., drad = famiddl ui)	// C.5reate a copy of th-draggaables 1reate a copy= this.ops) {nt) {
-
-		var/}
-
-	},
-	d
-
-		retmostInteable, event) {
-
-	set  dropped = fa "foo: lTopCreate a copy of this.per) {
-
-			n case the list chanspace  {
-
-		e drop (#9116)
-		$.eaclToppe] || []).sr.droppable$[ na i = $(this).dagablex: this.iy: ;
-		supplied
-itemraplper: pageY - a//Get", "nctio,
-	dragcop", eent[0] &&er cache is	Proporrop._mouseCapture:& $.effect inst = $(this(this, everentNode.scunctiond (Geckoent).d					/uery.uiainment.cdraggry.uet.clickopped;
-" rties (sck );
-		} else
-				thistarget, thisoppement, "tabindex
-			}
-		});
-ersectt( handgger( event, data )ctionPropor
-		this.ment[0], [ event ].con( draggab.ui = $ent ) {
-		if ( !ui = $_drop: 	(y1 opped;
-	d( selediv></ thees scro== "number".offset.click	this.isoves can insersectifont4,
-		P"100%val) {	(inst.optiochec		$.each(inody" ).ber.drop	if ( Proport	(o.addC
-	// Fros && thisverable:;
-			}
-	S		if(thisndefii{
-		 thiunctiaultViehis.13 jQuerin % - Fixes #524a("useup rn dropped;
-
-	},
-	dragSt$[ nameraggable, event ) {
-		ing ui-dscrolling cus()tione, true, ht try$( elemen) {
-		);
-		};
-	Firefo//Thableme you
-			}
-
-			// exponstaanonyom
-*tClicoportionsxis || obugzilla.moddmanarigiPlai_bug.cgi?id=561664// Irst)) {
-ht try.inst.poray($(o.stack)).sht try this optionfals (this.opvent) {
-
-r_curopped;
-	le: funct);
-	},
-7595 - nction( (evs = ucu( event nctiont - thisables[t.optiooppabht try s.ofe(event)) ables[t.optio
-		// ver = 0;
-
-	ons  this.gr.les[dvate.call(tthe positi		this._deactivat //Hoto = t.buccept.cal4
-		thissoble.stom |iable.onappe= deeighs.helperoppab|select,
-	runi.contaiunction(turn (/f move .dropf		this._crehis._("drop", evnce),
-				c lperscope] || []ragging	innerWid .offsetng
-				slice(),opped;
-ble.elstyle.posithis.elementroup it "isover" : is.options.greedy) {
-				// faggableTop =			return ng;
-			nal eves.offset. "isover" : null);
-			if(Propor(functio "isover" : nuz-("outes scrolleft);t.addClasscroll tion());
-
-	"zIndex"eof key
-		t.css("zIr thrm the ma	this.[	}); it's "isover" : nggablnst._conver| (draggableX -		 (parent.lend =  || draggable. (parent.length08,
-		 mapName, img,
-		nnd droppable 		parent = thisevent.pagement ) {
-		
-	// Fr0 );
-	},itionA.ddman08,
-		NUMPtione] = $08,
-		if ( !handle				}
-			}
-
-		eup 3-05-03
-* htt}
-
-			if (th	}
-		}))sPlainObje ] = vaffechis.visible && this.accept.calle elemet try this option. It renders positelement))) {
-				this.isout = true;
-				this.isov.zIndex);	this._deactiva.re		pags.can& $.effects veClass.each($.ui.ddmanager.droppables[draggable.options.t" ? "isover"
-});
-
-$.on() {
-
-			if(this.options.disabled || this.greedyChilld || !this.visible) {
-	p : scroll.ck );
-		} else {
-ble) {
-	l(m[i the sortable, buplaceholdnt =, fa) {
- = inst._conve
-				}
-				if, ui) {
-	ui: functagStop:	//Trigger trn; }
-
-		.curr, min ) {
-					paUs,"oody" i ].item. "scMode) urOpins.top;
-				[ ementsreOffsets *p: func +does no1vent, this.uy ] === undef(o.snap >= t &//|| draggan et.cli		optionsove-in= ui.ofe== "numgable.hels:._trigger(_ {
-			thiA element(		if( !able.eturn ggable.ent) {
-
-		var - thi.inst.eact)) &ll		optionsemenopy the ggable.helpe elemenisPlainass(ths( dragg"isover" 	options[ et.clitance || 0;umber(va", evenstance.pos a new rototye.optio
-			if(ocss( 		if(o.g {
-	reti].item tem: in draggabr = th...itivity)	options[ event) {
-
-			options[ solutlled = $n: "1.10.3",
-	ft, l, dr{
-	return pe-focus" x: "resizisover" t( c.css(=x: "resiraggan.abs
-		event.p{
-		alsoResize: false,
-		animate: falggable.?imateDurnt) {
-
-	 "resize"			iaggabragga.optiois.es[ false,
-	.slice(): "swing",
-	helptRatio: fals		aspectRat{
-		alsoResize: false,
-		animate: falle, eventse,
-		animateDuration: "slow",&& // BomaxHeight: null,
-		maxWidth: null,	event.lled =  d;
-false,
-	to.mouse,tPrefix: "resiz dropp			return  draggable, eve
-
-		if(sed : fals;
-		thffseified
-		_out: five" !isNa("ui-reshildrfx
-		ive to e happethis
-		thihandles: "e,?o: !!(oaspe: !!(oiopor,
-		helpe: "o",
-		helper:: !!(o]pectR	originalElnermostIns.sho !isNae, droppdex"( c.css(nt.addClasse, droppnction() {
-N(parseIe draggable toandard elements		var ",
-		aniname,
-// Vsiti || "ui-rment: s (ype.on(evles: ", = Math: !!(imateDur!: null
-h;
-			td: false,		handles: "e,s,se",
-		helper: false
-		maxHeidlerProxy() {
-lled = Index")rtables, - t($.ud ) " {
-			"odes
-	Removal = teName.match(/caeft;
-			ionsaggableLefyResizlect|button|img/i)) {
-
-			//Create a wd.isents:],
-			_hmateDuration: "slow",
-		anir = 0;
-
-				inst		//Create a w		var  elemh (appectio	thiturn o.animafalse,
-		grid: false, our move-in suniqureturn) || 0;
-}mg/i)) {
-
-			//Create a wD0,
-		sthis.i thep the eleAPIClass(thip://jquCode:ffset) {
-		re		if(o.gntsUntil( /*this,
-			o = thint );
-		}
-	}
-};
-
-}*/rop: functiarg
-		}nager.prepareOffsetsition.absolute).top, y2  $(thi	this..datrue;t[0]) ; ret
-			);
-
-; retInstayResizMeth= thielement.wrap(
-					);
-
- {
-	retdocume element
-	, {
-e th
-
-			//Move mar fullNa ] )		therance),
-
-
-	},
-	drmMove m(e.g., sPlainO)sitiLowerCase()ty) {
-		//ActivatMode !== "outerargin]		retss("ui-resthe eelper || o	if(!m[is the prefix0], this.inse sortchildrenIntersectileft:"), marginBottotersectio"), marginBot(ls) {
-						}
-
-		if(this.acce		eventName =s; Licenrun(= funcns.hoverClassreturn aggable || (		});
-		i
-			);
-
-e, dropp) {
-			e")
-			);
-
-			tbind( es; LiceneClasare same elemenion: "slow",Element.csselay;
-		if 0, marginTop:rea of opStarted =
-				(t.css("resize", ent Safss({ marg
-
-$.o = this.datawe need tions: {
-		cancetNode.sclemenment )ent[ hoverCconsi,ss("marginLe	helper: ent ).pp: thiselementons.dethistraandlerof "old10.3",
-
-hash oInstance && c  draggables
-			if(te droppabloused :: this.origpe === {
-
-		var i,lElement.ion;
-		}on: 5up item, appending 
-			//Move al element to ht"), this.ersected befo05-03
-* httlementI		if ( !tfalse,
-e sort	// n(/* evennd droplementemenfveDa).lenarentInsth
-		d;
-	}
-
-	var draggableLeft, draggableTop,: null
-		}); the place"ui-resizable-helper" : null
-		Right: this.oris.height / 2) < b ); // Top Half
-	is.originalElnt().data(
-				"ui-resizable", this.element.data("ui-re= this	);
-
-			thildpe ==,
-
-	uniqueId:his.elResizeEs) {
-					u.dataturn isOverAxis( dragga ".uoportiousei-resizable-e", s: ".ui-resizable-s", w: ".ui-resizable-w", se: ".ui-resizable-se", sw: ".ui-resizable-sw", ne: ".ui-resizable-ne", nw: ".ui-resizable-nw" });
-		if(this.handles.constructor === String) {
-
-			if ( this.handles === "ousedown"			this.handles = "n,e,s,w,se,sw,ne,nw";
-			}
-
-			n = this.ha	if (ggable.helpi-resizable-e", s: ".ui-resizable-s", w: ".ui-resizable-w", se: ".ui-resizable-se", sw: ".ui-r[0].nodeName.match(/cay1 + (draesizable-sw", ne: ".ui-resizable-ne", nw: ".ui-resizable-nw" });
-		if(this.handles.constructor === String) {
-
-			if ( this.handles === "e if ussee #7960
-				axis.css({ zIndex: o.zIndex });
-
-				//TODO : What'e if uing onns)  falsee;
-	};
-};
-	ble" );elem = $( this		}
-				ift") {
-		ager && _trigge || posif ( instanurrent,
-[ "r ===oper,L") this		}
-		t.css("zIndex "scrsizable-w", seor tto refres], thisone final time  the  ui, { item:) {
-		v[i], thents when overflow was cau(y2 >= t && y2 <= b) ||	// Bottom edge touching
-				(y1 < t && y2 > b)		// Surrounded vertically
-			) && (
-				(x1 >= l && x1 <= r) ||	/ASING edge touching
-				(x2 >= l && x2 <<= r) ||	// Right edge touching
-				(x1 < l && x2 > r)		// Surrounded horizontally
-			);
-		default:
-;
-		lper siz;
-			re) : .activurn (Rob));
-Perotot(ent[0],www.raddinptype y") {ction()].offsaxisEtion(y(this, atring) {
-		QuaerencCubi} el"Top/ If "Quie",  "Expo	}
-		t.css("zIndexuseupss({ ",
-						/nent)[0] ===ntsUntil( innermosElementnbindpow			i.i				ble-n"},
-
-	_s			return ",
-						/n
-				S0].offsetHeig	ui.p: this.elemenraggnbindcotrue *for? TPIder) {_opacitCirc
-
-				//TODO: What's that good for? Tsqrt"draggs noa littllinEw" )ied left
-			O: What's that gop				scr||derAxisrollpraggab-dPos, padW2, 8y) {alcuisab not anys$(wi(s(this.el* 8mana7(docunot anything15to be exe	}
-}}
-		};
-
-		//TODO: make rendercontst.m3		//M-);
-
-				.eleouhis;
-				//TODO: What's 		retuw	plugibs._ha = 4			//this.optis.ohis.) {
- else if._render-- (!thatelem-ui.po/ 1or",  $(this).daet()Name) {
-		4.ins- is = this".ui-625sizable- padWhis.claOffsis na).scs wip,);
-
-				this._pro up tallyResize();ntsUntil( nt, thhis.Il
-		});] ? ion(
-			 we wod :
-		o = inthe el;to auto hide the O(thients
-		if (		};
-
-		//TODO: make rendraggthe el {
-					igger("o auto hide the elandles.hide();
-			$(this.element)
-				.adis.op.itern inn("ui-r/Mat	that.araggabdClass("ui-r/Mat-2er);
-
-).sc					this._& y2 <=.ui.tooltip.js
-* Copyright 2013 jQuery Fou.currifalstInsousele
-	soResithe maw.disabled);
-
-f (o.disa&
-			callb		}
-					i
-			.bind(at.resizing) {
-					) {
-		$(	if (o.disa.helpere
-		thisat.resizing) ction() {
-		at._handles - se						ret&
-			callbitialize t{
-						$(thiinteraction
-		thiesizable-aitialize t
-						that._handfunction() {
-
-			}
-				});
-		}
-all") {de: {
-		BA.off.accordrWidth	DELETE: 46,
-		DOWN: 40OME: 36,
-		LEFthis.ld
-			i.ui(dra.griAD_DECllap || iurn false; {
-			:raggickgreedhea) {
-		> lis).:
-				-hasOp,> :},
-	li):{
-		ble").r_destroy: c === "isovihat positiozable-HremoveDaui-dle"-triangle-1-s
-		}
-	}};
-
-		//TODO: Unwrap at samlute") {
-					$( elem ).focus();
-						if ( fn ) {!== "malParent;
-		iif (($.ui.ie && (/(stati	}
-				options[ key ] = value;
-	options.hSdlesld.protorevH.pageY$};
-		}) :
-	st(this.css("posi//TOD) {
-				$on")wser
-		ui}
-		},
--portses scro// ARIAfixedons );
-ig[ positabnt ="px" );
-.cssby th;
-
-(furesizing")
-					.rble coable-diemove(/s, fullN(this.elemenle =sizing")
- inst}
-	};
-	//t try t		if ( !tnt.addClasstyle);
-		_crea-resizablis.originalElemei-dragf ( "area"_protancPanelle) {
-	ns) if ( r			this.nstance.carefix: "resiinalEleme.offset.clfor (i in this.Parent =ositiot[ 0 ] !=ve_container widgetstInstance..optdeNameD: 35urn pageY - i.overflowOffsetk.top <emoveDions.hthis.containn, evif ( e/Run thll)/).tes$ 500,
-		sc/Run thpropor	},
-	_sePosithis.options.disabled && capture;
-	},
-
-	_mouseStopped = thisent.isDIle").rpable are same elemdle")ld widget using dle")raggable tion()edyChild |"<{
-		pables can be recalculat) {
-				$- = truDO: U wraet/17les.dle")dles[i]	draggabto callelec.handles[i])le");
-			if(/Run thhasOptionut = tv.jquery.com/ticket/1		draggab.effect.js, /absolute/).test( el.: wrapper.absolu();
-			};
-
-	le");
-			if(les[i])[ for http://dev.jquery.cdle")nst.ele0] + this-x"));
-iniPos = this.element.ition: "absofixed/).test(this: iniPos.top, left: inifixed: "absolute", top: el.css("top"), left: el.css("lef.target || -x"));
-			}).eq(0);
-		}
-fset.pnctio;
-		retu			thn up m		th, "visibility" turn (/fixed/).test(this.outerHeight(),
-				top: wrapper.css("top"),
-		ss("lef thicss("lefptions
-		$op += $(oleft = num		curleft = num(this.helper.css("left"));
-		te/).te, top: el.css("top")tyle);
-wrapper.css("toion consistcrollSeui-cornheigllion consisght: el.ouconsistent acrodth(), heirameFelper.offset();
-		this.poslper.offset();
-		tend(ry.ui.effeth(), height: el.outerHeitop =olop = num(offset();
-		ttabength th(), h
-// selectors
-function f ( /^, top: el.cs/$.ui.puseStarll,
-		starnt.top,
-		fset();
-ance[(tionsntItem || draggable ).scrol}
-
-		this.: functionop += $(o() || 0 urn ! num() || 0; size
-		ths[i])[
-			o = table.e;
-			3",
-
-tItem  ? { width: el.outerWidth(), height: el.outerHei		if(t.c: { width: el.width(), hei, options(), height: el.outerHeilabest.sb		re| 0;
-		}
-
-		//Store neterHeight() } :  {
-		Bight:sitidth(), heis.offse, top: el.csss.axis).cssbody").css("cursoht() };
-		this.originalSisition = { left: curleft, top: curtop };
-		this.sizeDiff = { width: el.outerWidth() - el.width(), height: el.outerHeight(usable = $();
-
-		ifind(".ui-r {
-			() || 0handles o() || 0;ragging= elemetItem || c0] + this{
-			var elem = $( trrentI inst._convehis.instance.opthis.handles o// _cus();
-	()nce.isOif ( rIndex") been th?
-		helperPro		// the o._intersecTop = thi: l }).left -new version of ition, value;
-{
-			 stuff gets fielement
-		// {
-				413)
-if ( $( "of element top: eer's cssmp.left)||0,
-	" ).data( "a-b"ops upD: 35ssize.width,
-	ure: functisu&&
-	is.originalMopositions!instan
-			wrapper.remove(lperPre", thied; ollSpunction neElement.c, value;
-e", this.orerHeig l }).e();
-		// the ortyle);
-		_destroys.options.hel = this.si0tersecting = fal, value;
-eft: inice._intersec.height() };
-		t draggable an
-			dy = (events,
-			iniPo				parentInst		pre#533s wiry 1.6.1l: "inpucascaf ( 
-				uterWidtest( thi o.a});
-}ionsist[js;
-
-		// d;
-/ levent across br || 0;
-			) {
-		?
-		on = { leition, value;
-			while ( elem.length: "absolutetion") ) ) {
-	vent.pa	draggabre z-index if posi + "-resize" :value where z-in] + thiskeyt", manager = {
-	||0,
-			dy ndation amaxthe acxus: 15
-$.Wt" ? "i	if (altKdefineition.ctrlt + // the new version of f(key =Cs === ptionth) {
-	ll = faate( ev.handles[i])[0];
-			},
-	_
-		}
-
-	ta.call( this,s[i])[("outosition.dler ] 	//AdjusFes[dr.mouse.js, jable, eveition.th) {
-		 dropped = fth) {
-	.RIGHTdd("dthis._helper DOWNdd("dr.size.heigresize", eve[bs(b.size.heightrollLeft.size.whis.offate a copy of t_helper LEFhis._proportionallyUPzeElements.length) {
-			this._proportionallyRlass+;
-		}
-
-	e();
-		}
-
-		// Call the user callback if SPACEis._proportionallyENTERzeEleme$( o.ition;
-				rion.left  DOM-based
-		wid callback if HOM	},
-
-	ments.length) {
-			this._0		// Call the user callback if ENDffsetw, s, left, top,
-			o = t ui-state-		// Call the useet it once,size.heedyChild |props.height =pper.cssiginalPos,
-			first ize
-pr.lengt(pr[0].nodeName);
-	zing
-		ments.letrue;
-				par see if {
-			DcrollSnment[0] + this dx, KeyDown)+$.s.position.left !== ps.position.th) {
-			=	props.width =.UPandl";
-		}
-		if (this.siz/textareaoportioTi).test(h" ), 1isible) {
-			y ] = value;
-			} else {css({
-				position: wrapper.css("positionion(event) {
-		varon't re), 1r.apply((eveno, dx, dy]);
-
-			for (i in this.		_destroyeach("resize", this.oriop - ecauseft: .handles[i])[0];
-			return this;
-	},
-
-	_mousi.datepicker{ positiouterWidth( - x1his.gemove(!!imgtotype", this.oriragg: inst.ect[ effectnce the user can start pressing shift while resizing
-		Positio
-		}
-
-	 appentend(s dx, helpeon
-
-			that.helper				this.eltivate: funs._superAppls, jquery.ui.dled ||				this.el
-		var dis,
-			prele( im.con $.expper , evellParen (event.pageX-nalPosition.topop - thisevHeight;
-			}y.ui. + "-resize" :.constru
-			dy = ull;
-
-			if (!o.animate) {
-
-				this.element.css(($.extendrginorkaroun, dx, dy]	// Clone objects
-	 while resi() - o.scr060
-		zInd user calassNa_change[a]ze.width);
-
-			this._helper turn;
-lper 		prndex is ignoredable instathis._h("out").da({ posurn this;
-	},
-
-	_mous== prevHeight) {
-							this.ele)
-			)
-		};
-
-	}l.height() };
-		thisdle === event.target || on(event) {
-	adjustOffsetFromHelper(o) {
-		ent = this.paremarginon(event) {
-
-		/).test( ex for http://dev.jquery.com/ticl.outerHeight() } : { width: el.width(), heightpositionageX, top: event.pageY } for http://dev.jquery.cs.axis).css(".ui-resizable-" + this.axis).css("cursor");
-	ght) || ss);
-		"ind("", top: el.css "auto" ? this)ons = "px" );
-		allow widgetss = this.element.posimaxoptions) {
-			handAt: false,
-		grid: fal//Increasel,
-		minH
-		//Increascontainmt.currentTa "_over" : "_outu might{
-				$Ise this tb.minWidth) {
-//dev.jquery.c" +value.apply ]( options );
-eighty(th++uiype sted oneidth) ? o.maxW_;
-		!== "aggaHeight, pMaxHeAspectRatio) {
-			// We want to creaht() };
-		this.orght: el.ou this._helper ? { width:	//Store neon is the requee;
-
-	},
-
-	_upFirst, compute the "projected" size for eacht < b.ght) || PlainObj top: curtop };
-		thper.css("left")
-		sition = { left: curle")) {
-			o.nst._ forceesize
-			this.orie = truh) {
-a.leftminHeight) {
-ns.refresper p)) {
-			ouseStart:  = datah) {
- dataminHeight) {
-nst._conver!r(data.toss({ margr(data.top)b.minWidth) ", zh;
-			}( (/ar.remov) {
-			this.positent.ta.heighr proportionallyR!r(data.h ");
-		}
-		data.heier(data.width)) r cpohis.size.widtght)) {
-			this.				 data )= this.data() {
-			this.po, height: el.his;
-
-		if (isNumbght)) {
-			thriginalSize.heig	}
-	},
-
-	_updateR}t) || ent.pageY 
-		if (isNumber(data;
-
-		requested one
-			// th)) {off = { wmaxWidth) {
-		);
-		// weterHeight() } :: "p://jgreedy cginalPo;
-		ta.width)) {
-			data.height ersecti === "number") e.width - data.w") {
-	, optiooll.dulute");
-draggabpx" );
-	ment[0]).minWidthtthis._mcheHelcreat Mathontainab  funclement.cshis._proportionallyagate("resize", eveneqsizin$.ui.hasScroll(pr[0], "lef 1 ),
-		inputIndeBoundara.left = cpos.left + (csize.wata.h data.width);
-		verabtop = null;
-		}
-		if (a === "nw") {
-			data.top =xWidth && ((csize.height - didth -| c.elementsNumber(o.mftKey) {
-			datlse;
-		}
-
-(!trigger) {rigger = this._chollParentatio;
-			pMaFunctie reqo = inst.is.elemenet( chiing ui-de) {
-				t "_over" || 		/naggaef || iitio
-// selectors
-functionextarea resize
-			this.orirent = throll.drr" : null);
-			if(roportions.hthis.positCache the marg pro || ($.isFunction(thn( event, handl= this.data(&& o.minHe-			this.nt();
-
-		///Because the,
-			hel( data ) {
-
-		// selectors
-function o.minWidth;
-ement.dela	if (isminh) {
-			data.height = o.minHeight;
-{
-			data.he= !$.isEmptyObject( optement.delaing ui-pMaxWidth, pMi o.minWidthrsectioement.delaent) {
-				ret+= o.maxWidtrototype  && eleme);
-			da;
-
-		/ = this._th: 				$(st._uiHash(h), isminh = isNumber(
-				$( tht) && o.minHeig-draggeight = o.maxHeight;
-		}
-
-		if (isminw && cw) {
-&& o.minHeig() - o.scr
-			pMaxWi= o.maxWidtr data,
-			el = thiidth;
-		}
-	f (isminh && cft = dw && o.minHement[0] + thiscus();
-			false;
-
-		ifunct
-			}
-
-			this[c] =
-			}
-			if(pMaxWiata.top this.octs && treturgable,ries: his.met).clothis._helpereDiff.wityle);
-		_d("cursor", "auto");data(event.target, this;
-	},
-
-	_pn.left))r
-		mment.f]();eds t;
-		}
-oportioeachtend(sdata.wesizable-= thi {
-
-			i("cursor", "autoth) && o.mi
-		this.resizs.eventName:th);
-
-		ui-id-" + (per.he.length; i++)/ ? 0 : that.s: $.nounctif (!dr	this			if(pMaxheight && !dnt))) {
-			if(this.optitRatio:lass) {
-		spectRatio),
-( data ) {
-
-		varers = [pr this.target || nWidth && (= ista ? 0 : that.sizeDirClasurn (/n dropp
-		if (th"}
-		if (rappeg: functin.left !== pString) {ition.ng others,rentsUntil( "ta.tnt[ 0 ]
-			element[ "borde[ingBottom")ow" )portionallyRerAxis 
-			isminw = isNu.pageY-smp.top)||nt);
-
-		if (this.position.t}
-		this._v_ositY-smp.top)||0,"border borders[ j ], 10 ) || 0 ) 
-		if (i {lbac)];
-				
-			soffsetw				// ftive",  = t, jqtion") ) ) {
-			el.c
-			}
-	es[dheight() - this.borderD	if (!
-		this.resirderBottomWidth"), prel.css(= b.maxHeight * this.aspectleft) {
-			dat
-		}
-
-		ret 0;"></d = o.ht: (that.helper.heigenderProxy: Isf(pMax		}
-
-;"></ "isout") {
-				.data(td regsizingance.ement, o = this.op"), 10) + (that.posi//Adjus				widoffset();
-
-&& captutions;
-
-		if (isNumtoer.oute},
-
-	_mouseStart: ? 0 : pace +per.remld	};
-
-		/
-		}
-
-		retcss(t) {
-oneder.oInstannew	};
-
-		/$("<div style='overflow:hi() - 1,
-	nt.outerW				se;
-			moveData*/ ? 0 : that.sizeDeDiff.we");
-		ifddings, nt = this.hel		if (ctioe", this.orns.reveif(this._helper) {
-ss("resize", this.ori
-			[i].elemper );
- ; innt.ou== "map" ns.reve, to be overri ns,
-			 this.elve positioss(this._hent[0]) {
-	");
-
-		thinew version of this;
-	},
-
-	_mous$("<div style = this._setConHeight) {
-			 0;"></diginalPosi;
-		nt, ann;
-	o ._e if u() "not = f mouse
-	m) {
-
-		var h(),
-		i this )fset {
-
-	odw apgata, e 8ht - th672 this				this.elemeement, o = this.le='overflow:hi.progressba: func {
-			this.hpositionsble, e
-		x1 this.or(), hevar cs =turn funcrkaround fnt = this.hel "stach( [ " draggablependToBoundaris.size = this._helper ? { width:}
-			if(pMaxHeight < b.- o.minelper.height(is.resizing =osition: "absolute", top: el.css("top"), left: el.css("left") });ght: this.ori)) {
-			el.css(es can be recalc.extend(this._| forceArsecting = fal!ement, o = this.tion( ele;"></ el.css("left") });Height;
-			}
-		}
-bugfix for http://dev.jquery.com/tick
-			if(pMaxHeight < b.maxHeight) {
-				this._aspeght: this.originalSiz functio(this.helper.css("top"));
-
-		if (o.containmen) {
-			return $.extend(this._| forceAspecis, arguments), this._chang) {
-			el.css({ posn ui.hfunction(even{
-			data.hei
-
-	_updateCache: function(data) {
-		thisp + "px";
-		}fset || ista ? 0 :valuecore.js, jqlper || t[3].1,
-				p</div>");
-
-			ition"),
-				isabled &&ition"),
-				w:	},
-
-	ement.ouurn datafsetWidt			target[aggaper inner" + narototype ts in t, o._z				.appendTo, event) {
-		$t);
-
-		if rapper.ou)offsptioCT: /Because thition"),
-				widttion:;
-				}
-		apper.outerWidths.focusable = $();
-
-		i.ui(draressing shift welement[0tion:er |idth( [eventnts, 1 ),
-		inputs.siz"px" );
-			helper sPlainObject		},
-		n: fuerflow: , [event
-			)
-		};origina.left = c") {
-			data.top = cpos.top +csize.height - data.heigheight:originh" ), 1pectRatio);
-dialog.js, ata.heihat.size.event.;
-	}eProtoveClass(sunct.widgetNao || ata.wi= typeof 
-		return da("ui-resizabis, 	delay: 0n.left)) |"staticoptions,
-		function(= that._proportionallyResizeElements,
-		offset();
-!btnIsLkeevent);offset();
-
-data.wid;
-		}
-
-		return data;
-	originaivate: funtop: fuSize: function(op: function( event odeName);
-			soffseate) {
-				tht,
-			soffsetagate("resize", evenss);
-		childrenIntersect) {
-			haent.delay( optiiginalPosit				scata.width)) 	style = { width: (that.siz;
-
-/*
-ion: "ab= isNumber(data.wight) && o.maxHeight && o.maxHeight < data.height)idth))  ) || 	}
-		if (a === "nw") {
-	dth) && o.maxWidth && ((o.maxWidth < da];
-
-			if (!d ui-resiista ? 0 :size: this.size,
-			or, dx, dy]))tck()ction(ev	_out: fupicker.j				this.ins "bord
-					ioffswnherit,
-			soffsetw ns.reve! ista ? 0 : th= uui,
-				s) {
-		nce.Diff.wiwidth: p) = l + i	positid widget using t	positi ui) idth = b.maxHeieEasi&&toleranc.eEasilly bridge= el.ofnalResizetarget ) {
-	var input =riginalPosition
-		};
-	}
-
-}	focusaew current interna		this.les: "e,lements
-		$.extend		aspectRatIntersect	grid: false,
-		handeft;
-				}
-				;
-			reth) {
-						$(pr[s lirent(ble.riting{
-
-		var nrototype tareOffse draarion -eEasihat wil}
-
-	a.height ;
-			rent.addClassateCache(dght"), 1uto hi		th
-		$.extend
-		$.extent.addClass("ui-res						top: s("ui-resiz data;
-	},ista ? 0 : that.sizeElementsrigination,
-									ret
-
-	_out: function(everginBottom: tIntersect!offsetw), height: (thunction() * Resbridge( f (o.disa, ch, cw, width, height,
-			that = $ elemtt.snapriginalPositevent );
-		event.tthat.options,
-			el = that.(pr && pr.len:tion: o.animatuto hi:				dura.get()eludes: jquer rev"ui-roup[0]).cssrevearent[0].tagNarevesected before,
-	tion.left))px" );eft)) ar element, p, co, inment[(0) : oc;
-
-		if (!ce)  {
-			return;
-		}
-
-			});
-		if( = this.origin	that.containerElement = $(ce);
-
-
-		if (/document/.test(oc) || olength; i+if(intParen elemecss({ margincss( e+=ui-dn			ele.effect[ effecttion( method
-		//Increase performance, avoid rument), left: 0, top: 0, = (oc- that.opvent );
-		eve}
-
-		ss( e	});
-	},
-asing: o.auery UI - v1.10.3 -target || riginalPositioapply(this, [event, dx, dy]))er.oute[event, this.ui()]= num(num(this.helper.css("left"));
-		on(data) {
-		this.offsn.top - thatHeight = pMaxHeight;
-			helper ? {.extend(this._chon is the requesteitemorkent) || target
-			
-
-			originalP(#5421ortable &inment", {
-
-	start: fDiff.wid
-		}
-
-		$.ions.effecement,
-		= that.containerOffsett: isNumber(o.m.extend( $.ui, {
-	// r = thi	};
-	}
-
- >= t && y= o.accept;
-s
-* Copyright 2013 jQuery Fountop =n(a,b) {
-				rniticon			thiouseStaoptiteurrentIerflosction	}
-}e
-
-		// we 0oy = function(exp)utoght,
-			(exp).removeClass("ui-resih: el.wnction(: "<input>resizable ui-resizT: 37,
-					if ( e, lize.hPLY: 106,
-		.scr: 3
-
-	// m= ev)/).dClassess.offset.data.tEvenf thecroll {
-		: hef the").optio el.offsiE: 46,
-if ( ("ui-dra: ch);ction( e {
-			_destroy(thil( elem );
-					coppaction( eve this delay );
-	purn ents );
-					})	})( $.fn.foearch, left:0 }, emenement;
-			thicallositio	this.originalElement.css({
-.ui.sect();
-		thop: too caat}
-			}
-
- ( parse() 	cop  args;
-		}
-
-	vent);
-
-		thp = instsizeargsKeyPeft <fla
-
-	_p				return (/nt.target).clr i, handle,Cache(op = co;
-		}
-. #7269test(cUion( optionsay: "bld = ui.oveC(cp.left <;
-
-				ffsetment.csup> b ow._helper ? co.left : 0)) {
-			that.siR{
-			ce.width avoitablndlper
-cp.left rtions.heigh event )oesn'tt.position.left -sitio		heightCreate ions =s thace = 		re co.79ft) ) {
-
-)) {
-			that.si, / that.aspectRatio;
-		hat._helpeIht
-	 thateffect: optioFix: false,
-	asOptions,
-			effectName = !i	});
-are);
-
- {
-			options = = that= thati- co.t.size.height * thght
-	Proporis._mosMultiLince=tualBouh = thate|absore(eve m? co-
-
-$.e.width = that.?.top -dd("da wrapu		}
-fset.left ();
-let.pare {
-		t, x2properhis.opentEdiositioturn (/fixent });;
-	}
- set data
-		thafreshPosin.top;
-
-atio;
-			}
-	, dx) {
-	,
-				le, unl modeturn fal
-
-			, even		returdlectwhel mod| nulger) ysScrolffset.left - cop.ion.top);
-		ent).ightsNameset.left - requested one l })/Move mar	}
-
-		$("body"dth = that.noop,ft : (th"ver t.maxrnVal - disableisNewMenulugins[ i ].push(turn (/fixedxtend(this._cha, left: co.-top = 
-			data.lef ch) {eft: co.lef"offrequested onej ], 10 ) placeholdftWidth")];
-		ista ? 0 : that.sizeDi prevLeft) {
-			props.left = thi function(evp - cop.top : ()+$.$.ea "isover" ?	nt }){
-			that.sizetName, this.on.top - co.tt.parentData.width - wspectRatio;
-			etName, this. {
-			data.widt.pareize.width = that.pturn false;idth - woset;
-			if (hoset + that.sthat.size.height turn false;vWidth) {
-			props.width =hoset +eProtel.css(props);
-
-		if (!ista, soffsethPAGE_d
-		if (.size.width = that.parentData.wst($.cssaxWi;
-
-		rounin )ve posit(ce);
-			 e.g., dragat.size.width = thResizeElemheight * that.aspectRatio;
-			}
-		}
-	},
-
-	st
-
-$.tion(){
-		var that = $(this).data("ui-resizabat.size.height * that.aspectRatio;
-			}
-		}
-	keyD: 35	stop: func(){
-		var that = $(this).data("ui-resizab
-			o = that.options,
-			co = that.containerOffo = helper.urnVa){
-		var that = $(this).data("ui-resizabunction(eve callback if NUMPAD_unction(evee.width +mpareishis, [g andave fcuoffsetfunction(evs({ "sw") {
-	set.click.to#605.ddm
-		}
-inWidth;
-
-(fent.cscp.left <lse;ccuelper = is.instannalSizemarg)) {
-	ubmnt).data(size.width = that.parentData.weight */ ? 0 : that.sizeDiflse;
-
-	},dth: ainerEzing = false;
-	inst.off$(this).data("ui-resizabTABdd("drao.left, width: w, height: h });
-		}
-
-	}
-});
-
-$.ui.plugin.add("resizable", "alsoResize", {
-
-	staESCAPoffsetwion () {
-		var t "_over"draggais.origina$(this).data("ui_ l })body")
-		re(ce);
-			pi-dragoppai.plugin.add("re"),
-		=0; j <s("positioeleme(j=0; j <t.offset.br ( i his).descapbs || ls.ui.p = tpr[0{
-
-	o.gr += $ndoMath		thirseInt(el.wou.ori	if (pRinalPer.cur		thise),
-	hg[ "margt - co.left, width: w, height: h });sizable", "alsoRes= this.o = that.options,
-			coe.height = that.size
-			that.siment = [			m[i].pportions.hpe.options per ?iginalM).da0 ) || 0 a];
-
-		if (ce == {
-			i.plugin.add("re e.g., draggacrolling cp.left 		woset -= that.parentDataets: fize.width = that
-			that.size.width = that.pturn false;ata;
-	},
-
-	_er ? co.top ;
-
-		forunction() {
-					var el = $(this);
-					",
-				left: this.elemenre it
-					t {
-			data.width =(event, ui) {
-		var tio;
-			 (isminw) {
-			data.wid[i].elem].caient.ersect, vaion.toraggabl.instnt.cents w
-			cin the mous?
-		
-		}
-ze.height = that.parentData.height - hoset;
-			if (pRatio) {
-				that.size.width = that.size.h
-		}
-	},
-
-	stop: function(){
-		var that = $(this).data("ui-resizable"),
-			o = thanerOffset,
-			cop = that.containerPosition,
-			ce = that.containerEleme,
-			ho = helper.offset(),
-			w = helper.outerWidth() - that.sizeDiff.width,
-that.sizeDiff.height;
-
-		if (that._helper && !o.are(o.alsoReper ?	}
-	},
-
-	resize: function (event, ui) {oset;
-
-			that.size.widize.height >= that.on,
-			delta = {
-				height: ( {
-			data.width =on (exp) { _store(exp); }); }
-		}nt(thao || evtarget ) {
-	var inpo of.ui.eff "absolute"orig = evenfunction(
-			dataa("ui- && !o.alsoRblu.width() - this.borderDif(exp).each(fis.helBl.posument && $.Resi
-	},
-
-	stop: fuat.size.width / that.aspec		thistore(expach(o.ace =		return ie", {
-						width: parseIn= isNum this.object" && !o.		(inst.oppeof thiitSerflo};
-		}) :
-	s({ ld( seleulpables ctive = /relative|absolute/.	$("fro			dxize;
-
-er( selecvar pMier( selen.top !ption === "n.cssior of eft:ns everynt.cur	gre				e = n		ins
-			s ever);
-
-})(ig[ is, fullName{
-			that.contai			m =/TODs({ "));
-
-		if(isParent && unction() {
-tRelatiom
-*  {
-			woset -= that.parentData./b) {
-				{
-		if les[drt = zIndex"t(0) fielon(eve",
-				left: this.elementOfMath.absl: "inpu/ ? 0 :		that.ghost.aentDa		}
-
-",
-				left: this.elem	var tha
-
-		thallba	}
-			thaesn't : 0;
-		tore(o. elemen// a{
-		hat.gh		event[ pr	stop: funetName, this ).scrollTop() - this.offset) {
-		$(this).removeData("resirowser ev +"px",
-hard  + dx ) {
-		bm
-			tion"))s[dr {
-	hi.dataht, wiot._heue;
-		ut, t			for (etesiz0;
-	useupMath paddingert: sortabent, dwaer: t.css({ posielementsump (ze
-		this.ypeof o.g{
-			t this.opts({ leement play: " thi.left 
-
-		meis.opto parseI- this.mment.css("pze.heights({ 	this.binde-ghost")
-			.add this.optioment[0]textarea/i).test(esizaiff if (ts({ uery.u 			this.helper.refunction() {
-		var that = $(thijs, jquery.ui.widgh });
-		}
-
-e, true, Clas "ypeof o.g"
-			}
-		});
-(o.alsoResize)stance &&	if ( !isNa| 0 ) -of mouse d(event) tion to l,
-
-	resd((cs.heighthat.originaridY) * gridize();
-			}
-	that.origine {
-			.height =ffset.click.on() {
-					t.element,s[i].itemse the brows		function $(thienuesize.nodeType)  positiou)) {
-			o.ions every time you moth = P {
-				accidess(t	},
-
-	plugi= ths({ le !$.isFuthe mous(#7024 #911margi(exp).each(fement.pare.grid,
-			gridement.parentble"),
-			o = thah.roun
-
-	},
-	dD: 35|| el^ui.plizeDiff + gridX;
-		}
-		if ( argumthis);
-					el.dadth: {
-		){
-		var x = Math.round((cs.width - 		if(!pisEmptyObject( options xtarea/i).test(			.disab+ gridX;
-		}
-		if (its && $.effece", {
-	version: "1.10.ouseDelayMe|| optioE do
-			rip: 0 })
-			e|absolute/.ted, o.gxis,
-			gri = thi		$( thisthat.contair.gets, jquery.uk flag,focus}ridY;
-		}
-		.top =  l }).indine, ee mousidth:this.ion generao.tot, x2 =nst.oion.t that.sizeWidth + gridX;
-		}
-		if (isMinHkey) {
-			newHeight = newHeight + gridY;
-		}
-		if (ista("ui-rze.he l }).left - iidth = s the prefix,( doc
-			on.left $.eaci (!tpe visib		}
-
-		relse 'unction(ment.cdth = news({ leftnaviargi		}
-	 We'rescis.in)+$.op.top)notithists = $.untainmwe're
-	/n(!thatt = this.el.chis.helpele");
-		^(sw)$h });
-posioffsel: "inpery);
-
-(f, !isNf(list[jhelperPropoative", heiglemena.exte op.left - ocandTo("h = oft", "	}
-	}
-y: "b;
-
-})(jQufunction( ihelperflow is iveR, hei.t(0)ft - ox;
-		} else {
-re(o.alsoReo.maainerEleista ? 0 : that			isMinWidthth;
-			that.size.height = newHeight;
-		} else if 		dh = t{ _alsoResize(e		var se(that.ghos== "wi	}
-
-		idth +les[draadroppt (px",
-				o.maight);
-
-		o.gridery.ui.dro)) {
-			th || typeof n. It renders 
-		if (isMinWid;
-
-		if(tue;
-				parthis.originalsoRes
-			that = });
-		}
-
-109 -nalPs.elemes twd = dget("ui.ks neelper)ecrolns.filters("usyn$(donouthat
-		this._updaht() }st(pr[0].nodns.filterble-aectees.eachgridoler= $this.offset:-oportio	gridX = (grid[0]||1),
-			gridY	selectees = $(that.options.fileach(o.alsoResize, fu	callb			isMaxHeighse;
-		bas/.test(a)) {
-			that.size.wid.alsoRnewWidth;
-			that.size.height = newHeft = op.left - ox;
-		} else {
-idth =	top:options.ble-ant, dx) {
-.alsoRt(a)) {
-			per: c.h && !o.owerCasected")tion.lefttohash l = falseoptions.heble-aesize(exp, c); })		event[ prt", {
-
-	start: function(os.left,
-					top: pos.this).data("ui-reallbacks
-	dd( selec
-
-		/: 0, tops.widt
-				= nelement.css(allb - dpoliolute")that.pos wrapper.outepper.cs, opti currgs p - cogeY }this.element.height );
-
-		t, dx, dy)-1,
-hard sforiginalSize,).data("ent.cs();
-		tting rremeggaber" + n) {
-		ttr("idity) 	that.er" + directhi<a>"		.uist[jre-useHanoriginalSize,
-		ui-sortablctioni outloat.cspe.options wser
-		.mouheightedheightveraif(isParent && proxietRelatifn ) {useSta.nodeType) {
-			$.each(oquery.ui.effec el.outement.css("poc) || oc === doceft += $(o.containment).scroll	}
-});
-
-$.ui.plugin.add("resizablecrollTop() || 0;
-		}
-
-		//Store nee|absolute/.test(that.contf (this.options.disabled) {
-			rat.originalSize,
-	 :
-			option	// callbacks
-		) {
-			curleft +=ps = {},
-			smp = this.originalMousePo;
-		}
-
-		// Calculate the a called first
-		: ch);aries(event.shiizable"), o = thIntersectnstance.oper( selaries(event.shunction() {
-	);
-		that.ghost
-			.css({ optees.filter(".ui-selecresize" : 			}
-			andler sixh										// Oxhr.aborsizeDiff.height;ize: functpable are same elemions ?
-			his.helper,
-		er( selle", "cont event);
-			}
-tions ?
-			 "_over"= true;
-		 "_over"each(inst.proported = false;on(event) {e, true, marginctees
-					var o y(this, [event,d = false;
-				selectee.$et.top - cop.== "number" ? lement.cG callback
-				that._t? 0 : that.sizeunselecting", ectee childreions based one._over.call(parentIns
-		this.selctee.$element.removeC	m[i], urate: furid[1]||1),
-		allyResizon a rts to hide it
-erflo.maxWidth	m[i].-selected");
-		!eventement to oferflo;
-			$(this.ehat.parrea/ top:0ate the helptop:0yRes: ce, left: co.ass);
-			s, "selhat.parable-al(that.elemsize.width - sorent it.ctrlKey) || !seletiveClass);
-		}
-		if(urdmanager lKey) || !selectee.$element.hasClass("ui-selected");
-				selectee.$el.parentNodif (!event. (o.maxey && !event.ct (typeof(oe.selec	proajax === "nwurl:lectable-			wid& y1cted")ct) {
-				 fun: "jsWidt = that.
-	_deapply(this, [event, dx,.$element
-					width = 
-			element	$(a)..nodeType) {
-			$.eelement
-				[drag eventlist group itents, 1 ),
-		inputIndeent.hasClt.ctrlKey) || !selecteelper, props { _store(e		woset -= that.parentDa.filter, this.element[0]);
-
-		this._tri.add("resi
-			dataollTop() - this.offset;
-
-		thi	that.sremoveAttr("i ), 10 ) || 0 ion () {
-		ble-a) {
-			thap, c); 
-			dy = (even.alsoResize, function (exp, c)seDrag reflect this._change[a]}0,
-			trigger =e.scrole-n", e:  ce = tble));
-		}
-
-	},
-
-dth"), prel.cs event ) {
-	;
-
-				}ents[i].tos("ui-unselecting");
-
-	set.tolemenis.marginste", evction( sin
-	},s	heist.opte elemenht": 0
-	hasClass("ui-unselecting"ons.height? 0 : th
-			objdth < b.t, isOffsr", o.cursor);
-	},
-});
-			});
-		};
-		tet it once,outerWidth(),
-			ce =
-
-		if (than start pressing new version of wOffset.top <Y;
-
-		if l }).left
-	_mouseDrag{ tmp = y2; y2 = height": 0
-	 (ce[0]++dth(),
-				height: wrapper.outer|absolute/.teStance.elrWidth,
-		 ; inSthat.s.mouse.js, j				}
-				r(ss( ermble on = (ddle === ent
-			i-sele(this.el top:0, pable are same elem childPrototype ("out", ++hat.parentDa-05-03
-* httpresize", "naxis).				//If it doeft() : hat.parentDat413)
-if ( .js,				hit = f (hit) {
-.pageX,
-			paoveD(ce[0]--this._aspe!ui-selected"lected) {
-				query.ui.effect.js, x1 || selectee.top > y2 || selecisOverAxis	thiseft > x1 && selecteef (hit) {
-				/.abs(b hit) {
-				//ecting =
-			data {
-			thi$element.removent;
-			ret			.disablft > x1 width;
-		{lecting  };
-axis).}s.autoRefreif ( existingCoent acrokey ] xis).ctable SELtionallyResitee.bottom < y1) )s.options.helpuggnumbelement.removeC
-			if (!selectetKey- o.minHeight;	that = gainex =dth <t theeappablxWidth <able-di( wrapottom ement[0]e || s thisutIndex =dth < new
-			lefthat._asista ? 0 : that.sizeDitee.bottom < y1) );
-t-shake.event.ctrlKe> x2) { tmp,
-				$(startselected) {
-						selexp).each(function() {
-					var el = $(this);
-		on() {
-			var selealSize,
-			o (isMaxWidth) {
-	isMinWidth) {
-			new.js, jquery	that.size.wid.sele
-
-		if (that._"px";
-		}l( elem ista ? 0 : that.sizeDiff.wip, c) { _alsoR			y1 = this.opos[1],
-			ui-selecting");
-	prefix for widg-state-disabl.alsoResize, ctee.se"px";
-		} {
-			thiheight && !da = dens;
-		if et.clic;
-		G callelemen - $t = thsetPaidth + dx  the gdy.parennalSize,
-		
-		thi|scroll)/).t( eventverflalSiz		}
-				}
-			ctRatio || ev| draggabem				$(pr[le.propor._cur= $( element );lKey &	var draggable = $.ufocusaveClass);
-		}
-		if(dtrigger("out"	alSiz	var instance}
-		tt.sizeectabl the list le.proportt) {
-		reted");
-						s		if (snoop- ox;
-		}t, {
-	.selected =ected) g");
-			alSize(o.alstartse {
-				/olerance{
-				e UNSELECTING callback
-	.currdmanager unction() {
-	st.sos({
-			"lef_ght() .par( ul, items );
-		this.isNewMenu = trueI - v1.10menu.refresh();
-
-		// size and position jque
-		ul.show
-* I- v1.10_res: j2013widgetul..ui.core( $.extend({
-			of: v1.10element
-		},ery.uiopcores jquery.u )* Inclif (s, jquery.ui.rautoFocus ) .js, tp://jquernextwidget}
-	},
-
-	jquery.ui.m: funcry.ui.ui.sovar ul-05-p://jquer.droppase.js, outerWidth( Math.max(js, // Firefox wraps long text (possibly a rounding bug)ui.dateso we add 1px to avoid thejs, jp.eff(#7513-blinul.wton.js"" ).ui.button.j) + 1,.sortable.droppary.ui.effect-
-		) UI -ect.js, nderry.ui.accordion/*! jQuery Ujs, jquerthatui.autodget$.each(jQuery,js, jquery.index jQuery.ui.sortaat jquect-ItemDatay.ui.effec UI - }query.ui.effect-fect-sca.js, jquery.ui.effec-fold.jreturn.autocy.ui.effectslide.js, jq.dscale"ui-js, complete-Quer"s, jquery.uct-shake.js, jquui.effect-slide.js, jquery.ui.effe$( "<li>" -blin.appableinner.a, jq.i.diight.j.label )jquery.ui.tabToy.uiy.ui.progremove.js, jquery.direordio, event-fold.jery.u!autocomplete.js, .is( ":vijs, e"Copyui.sortablesearhlignullLicensed dget.ui.eff.ui.effuery.ui.seljquerisFirstjs, j) && /^previous/.testtributors;  ) ||/ $.rtable.js, isLah no dependencjque., $.ui.position
-$.u 0,
-	runique_value.ui.selteruery.uirtable.js, blurwidget.ui might existautocompl[.position
-$](\d+$/;
-
-// ect.jwidgeti.accordion.js, jui.effect-tromplete.js, jquect.jsCKSPA	LEFT: 37,
-		NUMPAD_ADD: 107,CKSPAMethod.ui.ly.ui.sel.droppa, arguoppay UI -ect.jskeyEense.js, jquery.: 109,
-	Licensed MIT */
-(functionisMultiLine ||.autocomplete.js, ed ) {
-
-var uuid = 0,
-	runiquen and: 34,
-		PAGE_UP: 33 Incldateies,NUMPAmov.effcursoreffebeginning/end ofunce.i.diafield in some browsersfunc orig.n( origDefaulery.ui.effe
-.eff
-draggable $.ui.js, i.positi,ui.sescapeRegex.js, jquery.CKSPAjquery.ui.effeCKSPA.replace(/[\-\[\]{}()*+?.,\\\^$|#\s]/g, "\\$&"D_SUBTR	filteri.accordionarray, 		COfold.js, jmatcher = new RegExpm = this;
-					setT.t(function((apply, "i"
-
-// $.ui.spin.grep( 		orig.accordionCKSPA 0,
-	ruui.effergument, $.ui.				ifjs
-* C||his.css elem tion")))ery.ui.effec{
-				
-// live regon
-$aggabss; Liadi.effa `messages` ery.uiositNOTE: This is a			sperioppaal API. We are still investigatingosita full solucore.for str.effmanipulacore.ueryintern).tesaliz).tes.
-$lip.get, jquis;
-					setT", = this;
-					setTimeouery.ui.:ui.soparents((0);
-		noResults: "No Id = / rlParen.".js, nts().f.js, jquery.amoused MIT *tic|relaturn (/(+ eturn (/(> 1 ? "ents().flute" :ow")+$.cs isid =+o|scr	" available, use upt($.cdownt;
-	ow 34,seffenavt($.e."
-		DOxisteffect.jsjqueponsd other contrcontnsed MIT *s, ararentsdget.js, jsuperA	NUMPA6,
-		NUMPAD_SUuery.ui.selectable.dislow-d9,
-		SPACcancelSs.pare/(static|relaht exist fromarent.le&&ex", zIn.lengt{
-			retuocumentui.autocery.ui.rparents(.nts().fdex", zIn
-		if ( ty.ui. elsehis.length ) {
-			var elem = $( this[ rollParen,
-		END: 35,
-ion"R) {
-	.ui.toongth ) {this.css("p}( jQuery.js, j(s, jquery.$, undefined
-			r
-querlastActive, startXPoshavior Yf thiclickDragged,
-	baseClasses = jquebutton ui-s(thist alstate-deach(ft alcorner-alllterns aurowsers
-				//ns authovereturns autaes be ltertypbrowsers
-				// WebKi-icons-onlyt albsolute" ||position === "rei.die" || | position === "fixe-primar|| position === "fixe-second0 when zIndex is noositlterformResetHandlnts )accordion.js, jquerurn  =inneauto
-			whsetTimeoutignored by 0,
-	ruurn .filem ":on === "rery. WebKi( "yui.com) {
-		v}, 1AD_SUBTR	radioGroup		// we igno </div-fold.js, jnam {
-	</div.m.cs.js, e of ne"zIndeurn ter(fu/divs
-		$( [] function( m.css 0,
-	rum.css( m.csf ( fn )  /'					}
-') {
-		v*/
-(fue of auto|scrolue ) && va();
-					// <d[m.cs='" +{
-				+ "']= elem.pile ( elem.l
-
-		return 0;Id: function() {
-		retu,		if ( ownerDoc		NUMjquery		.ay );
-xplicit value of scroll)/).nctionurn lem.pui.effest(this.cic|relat
-		ret_SUB				vs(this,"overtyle="zimeouverllPa: "1.10.3ltero if thEdroppa: "< WebKi>lter		}).eq(0);
-	if ( zIn:ui-id-ND: ext:5-03
- focjs
-* nction foc" || {
-			scrns 0 wnction foc	cified
-		nctionthis.css(	_creat	NUMPAD_DIVIDE: 11jquery.ui.effclos$.ui."urn  jquery.unb	// <dr strtionD_MULTorigNamespacejquery.element.parentNode;
-		mapName = map,;
-	},a string
-				s, jquery.uiype ) {
-ndex ) {
-		if ( zInd!== "boolea"z-iui.sortablex ) {
-		if ( zInd= !nction,
-		TAB:prop( "if ( zInstyle="zle ( elem.l[0];
-		return !!img && visibljs, jquery.ui.rif ( zIndy.ui.efget.js, jde		COineBWebKiTypewidget.js, hasTitl {
-	 )[0];
- WebKi "id" ).attr( "t?
-		) {
-	d.js, jquery.ui.ef.js, ery.ui.{
-			var elem =.js, jogglbled :
-ui.autoc= "m =	}
-	checkbox"9,
-		SPACisible
-		v
-		relter(f" );
-	rowse	ele ancestors mu?tion = elem" );
-	s,"ovlter(ffquernt ) {
-	ion = elem
-		!$", jquery.uery.ui.rjs
-* Ce
-		i-id( "img[ulter(function() (nt );
-}
-
-functiinput" ?" ) {
-ref || isTabInval() uery.uiref || isTabInhtml(js, e ) ?
-		!elem.css(low-.ui.selref || isTabIwerCase.createPseudo(funcuery.uddrowse( ss browsers
-query.uexNotNrolcss("tyle="z-iame;
-		if ( mousees(thent.href || !mapName || maccordion.js, jck().filter(funest( nodeNoveUniqurn this.csst(thiction( zInd() {
-s makes be!!$.data( sted elemfunction( elters.visible( ele
-// $.[ 3 ] }me );
-			};
-		}) :lea eleupport: jQuery <1.8
-		function( elem, i, match ) {
-			return !!$.data( elem, match[ 3 ] )ent ) {
-		re andtion( e element ) { this.eme );
-			};
-	consi ) );
-	},
-
-	tabbable: function( elicensed MIT *i, match ) {
-			return !!$.data( r" ?
-				this.each(functiopport: jQstopImmediatePropa($.c valsNaN( $.attr(on( dataNa.droppable;
-		if ( s().ad) );
-	},
-
-	tabbable: function( element ) // no needeffeisibl if ( zIn mapuerywon't be triggered anyway= $.ui athref || isTabIndnction( e
-		!$( elem );
-		return ( isTabE: 4e ) {
-		var side = name === "Width" ? [ "L),
-			orig = {
-				ndexNaN = isN: $.fn.innerWidth,
-, jquery.uiancestors mu "img[usemap,
-		TAB:( isTabIhang) ) );
-	},
-
-	tabbable: function( element ) {
-		vconsistent a!!$.data( elem, match[ 3 ] )),
-		yui.com
-* Iturn this.// if 	}) :) {
-es between-= parq(0);
-nd-= parup (drag) set( $.css( elem,flagfunction( orig )issue where  WebKitns au 			$.ese -= ] : [box/ = parisibledrseFlofunctiodoes notpeofpicker.j(see ticket #6970me );ataName ) {
-			return ;
-			};
-		}) :q(0)NaN || tabIndex >= 0 ) && focusable( element, !is, match ) {
-			return !!$.data(  elem, match[[ 3 ] )	 $.css( elem,= falst) :  imgior of t =icense.pageX ).css( typectioduce( this, sYsNaN( $id);
-	
-			};
-		}) :up size === undefined ) {
-				return orig[ "inner" + name ].call( this );
-			}
-
-			return this.each(funcery.u type, red		}
-e( this, siabso"px" );
-		}
-
-			return tY
-			}
-
-			rtion() {
-				$(-03
-* htach( [ "Widte ) ?
-	ery.ui.selisible
-		visible( el "img[usemapref || isTabIn( isTabIndexNaN || tabIndex >= 0 ) && focusablent, !isTabIndexNaN );
-	}
-});
-||( $.css( elem, "padding" + th( this ).cssrue, margin le ( e"px" );
-			});
-		};
-on vis/ support: jQuery <1.8
-if ( !$.fn.addBack ) {
-	$.fn.addBack = function( selector ) {
-		return this.add( selector == null ?
-			this.prevObject : this.prment ) {
-		return focusable( element, !isNaN( ),
-			orig = {
-				iexNotNaria-pressa|but"-03
-			isTab ? $(d = pari.auatder, mar[ 0 ]size, </div></diue = parsd);
-			not;
-			} else {
-		map;
-	},
-
-	removeUniqueId: funent ) {
-		dex: -10;s(this" ) $.camelCas "outer"	rHeight: $.fn.usable( element, !iui.ie =		if ( arguments.length thisurn this.( img );
-	}
-	return ( name ] = function( size ) {
-			if ( size === undefined ) {
-				return"inner" + name ].call( this );
-			}
-
-			return ( this ).css(ch(funcent ) {
-		return focusable( element, !isNaN( 	able: funct.ui.effectrn functd + (++u.oneme] = funct	function( elem, i,lection", functi-id		return this. "outer" + name] = function( size, margin ) {
-			if ( typn: function() {
-		return this.bind( ( $.support.selectstart ? "selectstart" : !!/msie [\w.]+/.exec( navigator		return this.unbind(keyif ( size === undefined ) {
-				return	mapNn: function() {
-		return this.bind( ( $.support.selectstart ? "seleery.ue( thikeyCodble
-		= thi	proto..SPACE( se];
-				proto.plugins[ i ].push(ENTER
-			}
-
-			rctstart" : "mousedown" ) +
-			".ui-disableSele 3 ] )"outer"d.jsee #8559, jquelemunctilur 	sizein caseunce. WebKit.droppa = nodgins[ nattom" ( $.css(			var orderkeyup jQu would	typlef
-			ran "ble( ele || 0;
-		 set ) {
-			nction( size, margin ) {
-
-		r !inse ) {
-		var side = name === "Width" ? [ "L,
-			isTabIndexNaN = isNusable( element, !isNaN( $: (funcery.ui.selref || isTabInis("a"keyCode: er" + name ] = funci ].uall( this )otype;
-			for ( i i];
-				proto.plugins[ i ].push( [ opt	},
-
-	enab// TODO p ) {through originalicensedcorutorly (just as 2nd
-
-	zIndex}
-			
-			workr.userAstance, namconsi !$( "<a>ance.pluthis.each(fncludeo hi: p		reout $.W(this's hng
-	.eff& (/nce.if ( zIndery.uicss(onclude		has = n !!to= "m._setOry.uiDf ( zIndso i faleasyeffeproxyordercanncludebe css(ridden by.effividual pluginancescrollP determit|textarea|butbject/.test( nodeName .js, jqueetled :
-
-	$.eect.jsent.disabled :
-		"ai.accordion.js, jquerdefistor, js
-* Selec;
-		rthis ) , jquery.ui.sel,
-		TAB: 9,"[= "m=isible( ]Scroll: fu);
-			});
-		visible( eObject.filter( selectnction( $, undefin
-		revar uuid = 0,
-	slice = Aon visotype.slice,
-	_cleanData = $.cleaidden"keyCode: {
-		Blice = Aidden" img );
-	}
-	return ( lice = Atyle="zrgin ) + "px" );
-			});
-		};
-	});
-}
-
-//ement );
-}
-
-function vise user w// jqud,
-			is.pareagainstel[ sc + (++uuelement[ 0 ]ght" ], funsizesscroconnect				romel[ sDOMble(  = 0;
-	nction(
-		return arNUMP().s ma
-	$.eaceturn has;
-	} = Ajs
-* [fornctionructor, baseP		if "id"-droretuA: 188,
-		tePseudo(funct= ] = 0;
-				// <dPrototype allelem.parentment.href || isTabIn		if ( this.leuctor, constd as a mi		if ( ?.split( ".js, ingsd( $.expr[,
-		TAB: name.splieturn fu that it can be used as a mixi		});or multiple widgets (*/
-(functionoxiedPrototype = {},
-		namespspace + "-" + name;
-
-	if ( !proton for multiple widgets (his.preize, border, margreturn focusabhelper-h the -acce.js, {
-				retuthis ) )structor, basePd ) {
-this ) = elem.parentthis ) )oll: function( el, a ) {
-
-	return focusable( element, !isNaN(tion( elemref || isTabIn !!img arguments.lengttor = $[ start = "onselectstart" in documen = $[ namespace.ui.effect.j 36,
-		LEFT: 37,
-		NUMPAD_ADD: 107,ref || isTabI = 1;
-		hasstroy.toLowerCase();
-	if ( "area"  funcstance.element, a( elem, fullName );
-	};
-
-	$[  dataName ) {
-			return fndexNaN = isNss browsers
-nce.e ) ioned
-				poss.length ( position me );
-ndexNaA!!$.data( eons, element );
-		}
-arguments.lenons, ela: $.ly used by resizable full". position === ")ta: $.ewerCase() !=nctioname ?
-			 support: jQuery <1.8
-if (ement );
-		}
-aN :
-			ishis.css("po set, see	PAGE_DOWN: 34,,( elem ).focuscrollParene in case we nunction( keyle
-		v&& visible(ui.sorery.u elem ).focuturn ( /input|select|textarea|buttre/).tests.each(functiorn ( /input|select|textarea|but thisame ] = funcWN: 40,
-		END: 35,
-		el[ scroll ] = 1;
-		yui.comi.accordion.js, j//Se ];
-237 & #8828h ? $(disne which = $[ namespace ] || idden,].paren( {}
-		}).l,
-		TAB: 9,
-		$.extend( {}uery.ui.droppatruc.element, absolute&& visible( i + "px" options has		}
-ton|object/.test( nodeN;
-
-// plugin set, see if it's possioptions hasbject us "px" );
-			});
-		};
- ) {}
-	}
-	_clee( key ) );
-ce
-	// other[0] )highliunction( elem, i, matcent ) {
-		] || {};
-	existition( element ) {
-		eData );
-}
-
-
-
-
-
-//}
-
-		vastructor = $[ namespace ][ nam() {
-			v	if ( arguments.length ) {
-				 ] = each(functioPrototype[ prop ] = (function() {
-			 !!/msie [\w.]+/.exec( navigator.userAAgent.toLowerCase() );
-
-$.support.selehis.prevObject.filter( selector )
-		);
-	});
-}
-
-// suppor,
-	_cleanData = $.cle	return;
-		}
-		proxiedr" + name ] = function(		var _super = function() {
-					retun base.prototype[ prop ].apply( this case this widget 
-
-				this._super =  !!/msie [\w.]+/.exec( navigator.userAgent.toLowerCase() );
-
-$.support.selecui.effect.js, j[ scrolli.accordion.js, j"px" );
-			});
-		};
-idden";{}, prototyp ) {
-			returjs
-* Cop/ track widgets thatend		// TODO: remove supthis.eachfrom it
-		_chilquerrd
-		if ( !this._creadth,
-				outerHeight: $.fn.idget( option.js,  WebKiT.dia		if (<span></etEvebutton|o functio ) )  0; i return focusab
-	$.extend( tor ? bato carry ovODO: remove supr ? bas2013 jQueref || isTabInemptyucto 0; i ui.to aren'fixed"rototype.option" || .js, mRIGHpleIdgetNam" || .rns 0 wh&&);
-
-	//cified
-		aren't DOM-rowsers
-		[] inheriting
-
-	// If this||idget is being rrototype, {
-		// TODO: remi.diapport foned then we n.puss, j position === "fixee ) ( me: fullName
-	? "ss,"oll widgets that
-? "urns 0 ws,"ovecified
-			}
-		phe name em.parent widgets that
-em so that thens, elemene.tabs.dgetEv cowse='on === "relativrns 0 when  widength widgets that
-ifieentPrefixrototype chain.
-	if ( exnheriting from itor ) {
-		$.eachui.tabs.gConstructor._childConstructocified
-					/n( i, child ) {cified
-			childPrototype = child.prototypnctionine all of them so that they inherit fromis widget. We're  "absolute" || posits,"ovon === "relative" |
-				returistingConstructor, {
-		vers child widget usiexNotNaN :
-	s(thtrim: constrbasedprototyp= function arguments )at they inherit from
-	// the new ver// removeonstru name ];
-	constructor = at they inherijoie if 	}
-		his.css("pniqueId.test( this.iaren ) ) {
-				$( this ).remo		}).eq(0);
-	Query:( "remov, iddenndefin WebKi]ction( targetsubmitvar input = sl;
-	})var input = sled ) {
-
-vl( arguments, $.cle, a, :u.js,.widgetEv)"= 1;
-		hdeName.toLowerCase();
-	if ( "area" =sePrototype.widgetEvarent] = 1;
-		hini		LEFT: 37,
-		NUMPpace if ( border ed to create the prototype in case we need tter
-		_proto: $.extend( {}, propace + "-" :start
-	( "ery.ui",ine the widget la) ?
-		!elem redefine the widget l
-
-	basePrototype = new base()n remt.ui.autoc"area" ==ementibutors; Protprop, tlddBack= undefined sh a property di fullNe: name,
-		widuery U functotype )div style="z-i 0; i <ex: -10;"><div sty funcableue );
-		retobjects
-						$.widget.exteue );
-				// Cop.call( this );
-			}
-	;
-	})( $.fn.removeData );
-}
-
-
-
-
-
-// deprecate"outer" stance.element, aement is pe element ieturn( name, obrighrefix : nac. with obfith tor.userAgenction( etargName,  = object.prot_proto{
-	var full			$.widg				// Co.widgetFullNs ma| name;
-	$.fn[ name ] = function( opthodCal{
-		var isMetct.prototype.w				// Cop				/// allow instantiation without initializing fidge = function( n ( key in input[ key ], valu
-					target[ key ] = value;
-				}
-			}
-		}
-	}
-	return target;
-};
-
-$.widget.bridge = function( name, obfullName = object.prototypellow multipet.extendinstant input[lue where z-indexwerCaignored by the browser
-				//draggable= th, { datep}
-
-	r: { {
-				$( this ).r } 
-	},
-querPROP_NAME = A " + name lter.widkes be;
-
-/* DFloa name scroager.
-   Unt[ 0 ]singles mu.widctorn ) {
-isructors(th " + name ,effess(thact withel[ sc + "'" );
-		if Set.csssf ( e(g</dis of)	return $.ers(thi maintaser
-	;
-			}nstance[opbject,	if allowto|sce: full diffetotydth" such ofecte s.csss, s. */
-
-unction(ns +  name end( $dConstcurIwidg: funct " : heeture[ opnstance[oin"));!== inst: 109,
-		$( this alueI) {
-		s maicensedwas a		_pr	mapN!== instif ( zInIddenneed toalueListn ) return $.ertion( t
-		at have bcss(if ( zInue.pushSt methodVaShethodVValue && metT widi) {
-		popupthodValues .ui..effa widgetif});
-!== instinDialoeach(function() {
-				a( this,) {
-;
-			$.wance a widgete );
-				if ( nameDivIash roto else {
-		-div"Value !==IDn ) {
-		namen " + name  t dollPa			if ( inlinent ) {
-	is, fullName, nn retuobject( opm.css ) {
-		n retu mar
-			uctor!== inststructrnValue;
-	};
-};
-
-$.Widgstructunction( /* options, estruct */ ) {};
-$.Widget._ce = namrnValue;
-	};
-};
-
-$.Widge = namunction( /* options, ee = nam */ ) {};
-$.Widget._c} )._irnValue;
-	};
-};
-
-$.Widg} )._innction( /* options, e} )._i
-
-		// callbacks
-		crea ( zInull
-	},
-	_createWidget:  visiblion( options, element ) ( zIndccss(to|scr ) {};
-$.Widget._cunndexct this.defaultElement || this.eventNames;
-		this.element = $( s.eventNames cell.uuid = uuid++;
-		thi undefirnValue;
-	};
-};
-
-$.Widg undefi-day;
-		this.element = $(  undefinday
-
-		// callbacks
-		creayOv "",
-	defaultElement: "<ddays-tend-css(;
-		this.element = $( eay .css( uuid = uuid++;
-		th)) {
-	avisi.get() Averflow-))) {
-	alptions ].ctiodexedelemlangu ) {codturnValu.element[""] = {alue.each(fs.element, {
-				r
- typosebase: "Donruct=== isplay		returo{};
-ose link
-var ev;
-					Prev		}
-			});
-			this.docuies, e.g month= $( elejque;
-					Nnd( 	}
-			});
-			this.docujquet
-				element. undefi;
-					Toons 	}
-			});
-			this.documundefin
-				element.
-				ame =: ["Januin t,"Febr || thiM = /","Aprilnt[0] thiJu				 + a"Jurs r"August","Septemball "Octoer( "cNovgger( "cDecgger( ]	}
-		ame =tion
-				h methdrop-de.nodeTyurn aons ]ument[0].defaShortultViewngthFebngthMarngthApop,
-	);
-		 }
-
-	.noop,lp,
-	_uinit._tr,
-
-	Oc:
-		ull,unctDecEventDaFoase ofeOptions:day.defaultVSunt || e"Mied
-$.nooTuesunbind Wednlls in 2.Thurls in 2.Friunbind Saturunbihis._destroy();
-		// we can pro_getCreatS,
-	_inMne ob caln 2.0
-	l eventings shd go th this._on()
-		this.element
-			.uMin( thisnt[0o","Tata(Wehis.arenF( "cSa this._Column heai.ef._init(ayseach(f= thit y remo
-		weekHeade + "Wk| elem this.widgeease o 1.6.tions, eyear we cteFy();
-: "mm/dd/y|| elem	// oy();
-ible to
-applparses + 
-		ame |Day: 0	}
-		 !==ame |ment, ) {
-		1.6.,: jq = thiM must1, ....hassRTL: widgehis.ev {
-				ct.pr-to				vaon( evenit();
-				}eturtFulct.prnts howM				AfterYea
-			eClass(
-				this.			.remo eventNe docedent
-				a widgettick
-				ethen.removeDremoSuffixmenton( tdd.coreal		retuffec: "widtotates
-		thiply( i
-				ery.comsf ( r		!elemenach(fue )t ===Global  );
-	},
-	tickject				return $.erned ) {
-	destableO$( ts().ad	}
-		i, name  the nstan) && cuFullNa: fue new in ( elfalse,
- = functor
-		ithey,
-		eitheoveDableAnim},
-
-adeI
-	_itData() )
-	 z-indeanim).test key, vallement;
-	}).eq(0)}0 ) {ternal i;
-
-		nhctor.toLrn a redest );
-	},s + nction  ) {Used			snurn types blank:NaN(sn'tata(var opti+/-nuger(ferenoffth"  existnt |,
-			re ( elnt |
-		structo
-					| element );
-			this.	methodVs, eleput box, e.g.ption( opy( ioy();
-dConstrucons = {... 0 ) {based,
-			parts,
-			curdConstrucImage= {};
-			URL options[ key ] = $ itend.widget.extendOnltiat up events and states	for r" );aor "lonsabled " +
-	itOption[ pest(y ] = $.wihideIfNo?
-		nt :.length - 1; i++ to {};
-dow o/ document
-				elemeply( size -);
-			NUiclow-x"widgetto == "helement			imnt.o(/fixeionAss +  $.camelength - 1; i++ ) {returoy();
-		//if ( vight" ment/__ } /ow or parts.pgotoCundefi.length - 1; i++ ) {
-nt |= val g			}backht" ]undefineventN) {
-		stead						$.ed" );defined ? null : cur
-				ecann
-		eventNedributorlif ();
-				}ositirOptijque undefine/ clean up events and st
-		th
-				}
-				options[ key ] = value;
+			if(!validHandle) {
+				return false;
 			}
 		}
 
-		this.remoR	$.e: "c-10:c+10 0 ) {
-		fo )
-	remoeturnd});
-			) ););
-	},
-	var opti	if (  re/).tvdefinundef'sturn t(-nn:+nn),
-		return thin this.lyOption( ed.removeDop()(ctionc: funcabtion"e (nnnn:= "d)Optioa combiis,"ovidgetNamebov === "di-nue )ent;
-f ( d" );n() = curOption[ partablerOptiskey,o		}
+		this.currentItem = currentItem;
+		this._removeCurrentsFromItems();
+		return true;
 
-	this.=== undefinex" )ing" )nts wentNidgetFullName + "-disabled ui-s		metoptions[ ke					mebled", !!value )
-				.attticks.eventNames this.wWeekme + "-disabled ui-state-et/9413
-			.remo=== undefin);
-	tate-ihis._alc)/).es" );
-v1.10.3o8601s" )f ( tHowy, vaOption( 			.removnable: functi key ] take				s + "rderui.efft
-		e eys, e.)
-			.removoveCls._sesgetC/ clCutoff: "n options_getCturn tCKSPAs <ions] " + le.remon this.ocentu redefi// >lement,
-			instan documents;
-
-		// no sup(auto|slute/)	// suppo) {
-	"+ey,
-		n this.o
-		th+( typeumenin;
-		}
-
-		if ( t !==earlies.options				rhandlptio { bar: _no lims._semaxdlers = element;
-		on( nt = suppressDisabledCheck;
-			suppressDisadurion[ engththis}
-			.elemen-hove});
-		/mentur ( i efore	thiind( 
-		if ( tF
-				if 	retu( "disabretur true );
-	},a);
-		ayssDis key ]  ) )this, e.optventNames fullName );
-	, [1ceptcustom CSS};
-$.W/* op(s)ptionthis._// a2= delend(aN :
- (ery.uial)arts.shtions.charAt.nos" )enddestt;
-			elem = this.element;
-			delegateElem inskey rn typan= unhis..widget()dth" ofelegateEtions ].a ( el[ sc + "'" );
-
-		on has;
- = this.eleDowser {
-	all			re;
-				if  key ment = data			optig
-			Cefined ? n/ cleasabled as an array instead of boolean
-			removeClasorocusablsat( $.cass as ent abling individual parts
-				if ( !suppressDisab;
-				}
-			s] ) osstanceys, eOfFullName10 ) {
-n: functi	this._i-state-at a timate-focu else {AtPos( this.event.ui.core.inValue =moveClasf hawhich ( typeofstance = thi
-				e(	// support: "innstep
-					return;
-				}
-				return ( tytep				r/forwarass  hanBig
-					ret2ding works
-			if ( typeof handler !== "strthe disabbig= value;
-altFn ty= {};
-			otype allget: n a );
-nptionn typeof hote|f			optionr" );
-		retuuid $.camelCurOptioClass( ullName to"));
- ( el[ sch = event.matc				onstrainthodVle( elealue !==on han							if ( functigs = $();
-		thce.eventN this.wled :
-PanisTa + "-disabled ui-state- WebKitp		} ion() {
-		return this._sejs, Siz] > + "-disabled ui-st: jq);
-			key he disabled hoy();
-				.attr( "aria-a ) {electors
-func= valu				delegiti// he which c|| 0;
-ate-draggablefocus" );
-	},
-js, jquf ( event.taasheexistipDiv = !setHcss(($("<div idided protot			$.data( ifieructor._chi;
-				}
-			 always returs(this-arent.lece
-		// muclearfixe element is pldPrdiv>"js, }not call me( methodVa}
-
-		// TOimeou/* nt ) {m.cssaddight" .droppan ( tent ct = tlreadymentfigume.t) {
-	ment = pply( irgs 	uuid =rowseame : "haey ] to call m
-	//Keep tr		rens, this ximum_on: functi ===		this.optize;
-	#704effemaxRows: 4 ) {
-	to hidrem.cssto;
-}
-
-
-
-
-
-/ key switch);
-		o ways refa;
-	}y
-	_s(thison( elemen	LEFT: 37,
-		NUMPAD_ADD: 107, even			targe/* s.for[ i sClaselementstomize the djectrn this.eta( elementurn $.erro	 * @param urrentTarg );
-			 -,
-
-	_oe( "uons ].amespaceasoop,
-
-	wid(anony	})  );
-			)
-			}
-ui.effectt */	}
-		 );
-			
-			/
-s wi.each(fn() {
-				reelement pport aggablRdexNa;
-		element.unbinelement )|| { ) ? "ui.effect-tction( evenAttaancetion() {
-		retuveCldon't reptions[ k;
-			}
-		});
-	target	Node || functiveClasion handlerPrnit();
-		}
-
-	},etEv
-			}
-		});
 	},
 
-	_focusable: function( element ) {
-		th ( el[{
-	v() {
-		return this.e = this.fo.add(/
-	_aut: f"ui-state-hover" );
-	veClasddClass( "seInt( elemodeame ctioretuctioset )  this.wiept eClas. this.wi.toLowerCasa" === lement = (			type :
-to: $.vet/82se();
-		// theetEv			},asOwn!		this.idget.extend( uuid += 1A: 188ent
-		//temptction( sizto r( prototy && meon( hanewe &&($;
-		eve)dgetEvenype ).tst.element )ginsaggable.}ddClass( "ui-state-foery.se();
-		// thelems[i])
+	_mouseStart: function(event, overrideHandle, noActivation) {
 
-// plugin fullNa( methodVal
-		eventevenvObject.filter( y origi ( orig ) {
-etEven( prop in orig ) {
-				if ( !tion( evenCeName aion( nstance" );
-			);
-	},ment[ 0 t( event );
-		eventevent ) ) {
-the oash aeClas[0].idf ( fn ) {([^A-Za-z0-9_\-])					}
-\\$1")et() t(funcdon't remetaat( "numbui.effe{id: idction( :callbac{
-			assoc 1 )dcallbac, img,		optiind( thiide: "fad ? nul" }, functi/ cleathis.en this.options[ k() {draed" );ect )"_" tEffect ) {
+		var i, body,
+			o = this.options;
 
-				ebe];
-	"_" ype[ etEven:getEventP ) {
-	vs( "ui-statement 		supn", h even: (!"string
-		}).l event:ypeoentsrelas[ kedivgarbae );
-	},
+		this.currentContainer = this;
 
-	_delayuctor._nction( han returnValunce.ction handlerProxy() {
-			return ( typeof handler === "string" ? instance[ handler ] )ate-			focusout: function( event ) {
-		tion handlerP, data 			for ( prop in turn !( $.isFunction(se;
-			fthe on han&& v
-		// cnal event" );
-		&& v[ndele event	parts,
-ptyObject( oin evpush on the pautoco
-	_hoverable: )			return this.css( "get._chut: f = thte = c{
-				if ( e = ca.fn[ name	if ( options.delay )i ].q(0);
-		elemoKeyDown) )
-		keyents.tName ] ) {
-Pnts.ct[ euptName ] ) {
-Upidget.js, j
-	},
+		//We only need to call refreshPositions, because the refreshItems call has been moved to mouseCapture
+		this.refreshPositions();
 
-	_(				if ( tionsaorig ) {
-						"at{
-				if ( //I			hall ] > 0 ) {
-	sor ) {
-{
-					retuoptions === o{
-			turn 0 ]				ut: fight" );
-			key ze;
-		}
-
-		$.5665ue )ifi.efent propert		return !!$.data.pushStack( m( methodValocus" );bject used to/* Makent.queu = thiss bdarts;
-				if | {};
-		even = thi.accordion	}
-		if ( haion: optient;
-	the new ons the new xtendible( 	options this.elemhis,d ](, "nction() {"e,
-		wi	.re
-	mouseHandled = fal("ui.			} = evenns = !$.isE{}, prots = !$.isEidge = ry.ui.effmpletnction() {cel: "input,textar	optigConstructor._nction( hahildConstrucchilde ) nction() {
-+ "ntPrefixelem.paon( t("ui.m? "t;
-				retua
-		/"]ons: {
-		cancrgin ) + " = ca= eleme
-
-	optionainObjelemen( elemen3",
-	options: {	parts,cel: "input,	parts,ea,button,seleclement;
-	
-	mouseHandled = falent;
-	rom any el= $.data	}
-	, name s.eapreventClic,
-			)destropop-ups.options[ ty key le.removuid dmatch[2];urn tha {
-		;
-		ele		})
-			.bind("clelect,opti{
-					$.remo new in)) {
-					$.removeData(event.target, that.widgetNam WebKitconsistanc't DOM-based
-	ouseHandled = fale;
-$( docu.bind("nt ).mouseuance of mouse doesn't messxtend.bind("motions );
-		opti of mouse
-	_mouseDestroy: fuarts") ?n.remov"<img/>"		return foventPrefix: "",
-	dlement		e old{ src:ent ).mouseupelecemove."+documeaN :
-tName, this. }) :( this._m WebKitdefin'lse;
-	ldPr	}
-		});veDelegate ) {
-			$(document)
-				.una: $.!ther instanc? so the old :
-	},
-ouseMoveDexNoevent "mouseove."+this.widgetame, this._mouseMoeDelegate)
-		expr.c"mousedown."+this.widgetName, function(eidgetNamtion() {
-		this.e= ( a &unction( elem, i, matent );
-		}
-
-	} else {
-			this.ea&&ment );
-		}
-
-	_s mathodVntClimoused0] i ][ 1 ].r that = this{};
-( methodValu this, argume;
-
-		this._mouseDownEvent = event;
-
-		var that = this,
-			btnIs		}
- = (event.which === 1),
-			// event.target.nodeName w=== 1),
-			// e		})
-			.bind(d ) {
-vent this, arguments );
-	rget.nodeName ? $(event.target).closest(thiso|scroll)/). this ).csctstartaultEffect;	NUMle = this.hov		if (  {
-		eventName = (ey );
-
-(f	},
-
-	_offndefined ) mouseHapletouseHandled = fals	},
-
-	_"pende!) {
-	event ) ) {
-	 caseindMax, thi
-				I, ietOptData(s );
-		
-			(2009, 12 -etur20)typeoEn ele douessDiigitance.eata( $.camance of mouse doesn'ata( $.cam.3",
-	oouseData( $.cam.rgume(/[DM]/) {
-			e	ion() {		// we ignom.cs ( typelNamrt(ev0event.tat.mhis._mouseSmethoihis._ i <		}
-	s." )[ 0; i++	},
-
-	enabeventlt()[i]." )[ 0 > thi	},
-
-	enab (!this}
-
-		// Click eevent.teStarted)ira)
-		ifch(funcch(funcc|relativxI this,  this,ptiot prd" );(ion() {DelayMet) {
-			th		this._mouseStarteMM/if ( thi	"nt[0].defa	retu $.noop,
-	_getC|| dest(thiventClic
-			}")) {
-			$.removeData(event.target, this.wiDDetName + ". can pro	retunt
-			.unbind|| d + 20 -optio.s( "uy.expr.c.targemer = sns &&main nt, event);
-	oy();
-
-			}d = faptio)." )[ 0);
-				}
-				nexout: fu};
-		ment on( event ) {
-			divy );
-
-(ent[ prop ] = or) {
-			options = { duration: optidivSnstr
-		}
-		hasOption
-			his.wiallback;
-		if ( options.delay ) {
-			element.delay( eUpDeleg& $.effects && $.effects.effectui.tabs) {
-	 even effectName ] ) {
-			element[ effectNameend( {}, return thatouseHandl.each(freturn th)his wiidget.js, jupptio(event.targethappened whenumentMAh = evenument.docu ]( options.duration, options.easing, callback );
-		}t;
-			ption( opixt ) {
-				$( this )[ method ]();
-				if ( callback ) {
-					callback.call( element[ 0 ] );
-				}useeSe) {
-	;
-		:blockme + fn )rabln(event) {y.ui.wiinstanc],
-			e;
-	artsvar fullName,nce = thevent)http://bugs.jq-indui.com/	}
-
-		/755optiA ( methodVa deName);
-
-}a dequeue(felay			ezero heate-dis) {
-			this					$.wis._melem,seDe input[ inp/* P.targection() {
-		return|| {} )._in = p;
-			}
-		});
-	ons };( "ui-statignorstan		}
-		});
-	ptio	(auto|sorbled",functiespace + ion()tOption( e, this._mous			// -   of booleafuncti;
-				if le: fulan
-				// - disabled class		}
-		});
-	},
-
-	_focusable: fuumentMement ) {
-		.options[ type ];
-
-	'sablons ].a = this.focusable.add( e		});
-	po				ebind- coordhis.e the disabl )._i'ser ] : hantions |y( incremenord =  "<a>" ).o -rProxyx/eoutt", true);urn false;
-"aria-	name_init(element(
-
-		rets;
-
-re.add( element );
-		this._on( element, {reate: is._mouseMoveDelegate	}
-		ifisabled		// - ddClass( ",prevouseHandleted(y === "tton.s.distancHp(eve,}
-
-	ollXelayMet:Y,
-		wi = this.elem		thise &&et() ss(thisemoveClass,
-	optioimer  so we need to reset the tn the new event
-		event.tks
-		create: 	btnIsLt let n han."+thiusab'y: functi res			if"' style='.ui.core:if ( key ; top: -100px;rrenethodpx;'eMovng plugin
-	_mouseStartt[ effectName ] ) {
-			el this$("bodys._mi.tabsugin
-	_mouseStarthis._mouse*/) {
-		return thisthis.element[ 0 ]ugin
-	_mouseStart] = valhis._mouseS properties{+ ".prctName ]gin
-	_mouseStart[0]			element[ effectName(eve	$( event.curd ]();
-				ifddClass( "ui-state-foMet = t		thi
-		veventent.deue allo==bled",
-		}).l) {
-			return that._mou :t._moudget.js, jeCapture: futendlse,
-		ened whenreve=alog. ?alog.." )[ 0 ];x: f: [e,
-	s, si	) >=		$( t]: fai-idom any elem,
-		ifra) ) {
-	distance
-		) == functiotingConsta ) {
-
-	clienttton.	// ot},
-
-	_mouseD
-		scope: "default",
-		scroll: trumouseD thisayMet: 
-		scope: "default",
-		scrolayMet:Lturn||	scope: "de; }
-		stack: f	snapMode: Yboth",
-		snapTolerance: 20,
-		stacTopalse,
-		zIndex: false,
-
-Topng plugin
-	frameFnts
-h {
-				thi			// ion(//Up(eve below			if[(ration: 500,
-/ 2)ptio00gth yMet: fu/).test(ivity: lement.c5s("positioYamelClLeft" :eFlousemove
-
-})
-		rettick {
-		vs( el fullN behset 		this	handle: false,
-		hel				"hodCa,eDelayMepos ) )seMoodifipx")ble");tostrof (this.op1ionsled){nal event propert.useUpDele=Y - eventdget.js, jinstance ) -03
-* http://		thisDelegate ) {
-		eate: null
-
-		handle:  ? $(event.targ,
-	options: {
-		addCet later
-$.eStarUI) ) {
-	led" );
-	le-drant) {
-		//(eve "drag",
-	options: {
-		addClasses: true,
-		appendcus" );
-			},
-			focusD(eveny, delated ? t exisitementtroltTarget ).removeClass( "ui-state-focus" );
-			}
-		});
-	},
-
-	_trigger: functioeX),
-nstantis._mouseMoveDelegate)
-			.( type === this.widis._mcus" );
-		}
-		hasO/* event */)ctName ] ) {
-			element[3",
-	optio!not on allback;
-		if ( options.delay ) {
-			element.delay ?
-			type :
-			this.widgetEventPrefix + type )$idge = -scalthis._getHandle(even= event.originalEvent;
-		if ( orinput,textarea,button,selnction(event) {
-				if (tr not on idge = functits && $.effects.effect			ift._mouseDown(event);
-			})
-			.bind("				position: 			var ilement.a ) {
-			elementex: 1000
-			ents.		.css($(this));
-		} t())
-			.appendTult()f ( effectName !==ct.filter( se();
-		// the original event may come frothis._mh+"px", height: this.offsetHeight+"px",
-		namesp;
-				}
-				nexEning, callbackevent ) {
-				$( event.currentTarget ).removeClass( "ui-state-focus" );
-			}
-		});
-	},
-
-	_trigger: functioeX),ehelpeth > 0) {
-			return false;
-		}
-
-		//Quit if wegetEventtWidth+"px"a valid handle
-		this.handle = this._getHandle(event);
-		if (!this.handle) {
-			return false;
-		}
-
-		$(o.iframeFix === true ? "iframe" : o.iframeFix).each(functionevent.originalEvent;
-		if ( orig+"px",pName + "]" this ).csouseStarted &totype alse;
-		rn true
-			proxiedProtot: optiolement
-		this._c })ple han true	//Storeimg){
-			t{opacity( thioptiturn ftch[evObject.filter( r o = this.options;
-
-		//Create and append the v.toLowerCisible hchildren(".				method :
-				optihis._mouretuentCssPosid.
-	plugin: {
-ion = elems )[ 0 ];t.css( "positproperide: "tiesfullName, nnd( this margins
-		this.offsremoelper's  !!imned after a widgeagation().pushStack( methodValue$		tar.pushStack( methodVa ) &&
-($.ui.ie && (/(s			// a e && (rsor:) {
-			?heck;
-:( type)helpet() desiti bs(tyg others, pasing, callbacks("ui-draggable-dragging");
+		//Create and append the visible helper
+		this.helper = this._createHelper(event);
 
 		//Cache the helper size
 		this._cacheHelperProportions();
-
-		//If ddmanager is llback.call( elemles, set the global draggable
-		if($.ui.ddmanager) {
-			$.ui.ddmanager.current = this;
-		}
 
 		/*
 		 * - Position generation -
@@ -7672,6363 +3669,11335 @@ ion = elems )[ 0 ];t.css( "positproperide: "tiesfullName, nnd( this margins
 		 */
 
 		//Cache the margins of the original element
-		tis, size,Margins();
+		this._cacheMargins();
 
-		//Store the helper's css position
-		this.cssPosition = -03
-*elper.css( "position" );
-		this.scrollParent0.5this.helper.h.max(
-scrollParent();
-		this.offsetParent = this.helper.offsetParent();
-		this.offsetParentCssPosition = this.offsetParent.css( "position" );
+		//Get the next scrolling parent
+		this.scrollParent = this.helper.scrollParent();
 
-		.fn[ namet's absolute position on the page minus margins
-		this.offset = this.positionAbs = this.element.offset();
-		this.off( !docume	top: this.offset.top - this.margins.top,
+		//The element's absolute position on the page minus margins
+		this.offset = this.currentItem.offset();
+		this.offset = {
+			top: this.offset.top - this.margins.top,
 			left: this.offset.left - this.margins.left
 		};
 
-		//Reset scroll cache
-		this.offset.scroll =p: this.offset.top - [.pushStack( methodVa." )[ 0cept eClasfaultEffectI},
-
-	_Namesprn typeof			$( evecolions[ kePosition 					ptions ===?Target ).removeClass( "ui-state-focus" );
-			}
-		});
-	},
-
-	_trigger: function(ui.effe	img = 	if l : curOTop", "Bot);
-				}used fed = etNamptions ha				top: event.pageY - this.offsey element
-	/(static|relat this ).c(evemethooptioreventDefaf ($.ui.ddmanager && !o.droeturn true;
-useDelayMeble offsets
-		ii]	};
-
-		//Re] = value;
-				is, size,each(function() this ).},
-
-	_moRetriern tnd("mtance[oNamethis.mous) {
-			-handle
-		if (this.helper | e."+this.wionce - this causes the helper not to be visible before usable: functi( { show: "ched propertid = fa		ifws  errssDifsets(this,problem gata(evs positioeX),get		return !( $.isFunct	value ry(static|relatndle = this._getHandle(even, noPrcgume (erame, fun		thi "Misunctached properties (seef options ===e" );
-	reset anyU== thio
-
-		ecessary carrentTarget ).wnEvent.target.queue(funcction handlerPr	},
-
-	_trighis.offsetParentCssPosition === "fixed" ) {
-			this.offset.parent = this._getPar		});
-	}
-
-		sable: function( element ) {
-	) {
-			vn false;(auto|sfunctio			// dis._uiHash(ht" ] ) {
-		var ui = t,n false; key r ui = ];
-		lso "s poget ).removeClassptions ].ap"y") {
-		vent.pagon( keyted)g: $.noop,
-
-	wid = false;
-
-	eft
-		 toLo function( eft
-		 ( el[ sdata(evn false;(omiton = 	.tog			retsable:  functr ui = thal cache);
-		thiery.uiis._mouseMoveDelegate)
-			.bix" ),l cacheuseHandledalse,
-		cisablehandler
-				var t $, undefined ) {s.posit}
-		hasOptct,optio,
-		NUMP." )[ 0 sor:2
-		v= "map"m.css(y comauto|nd the vargins.l) {
-			dror[0].style?s over to the 	this._mouseDow);
-	},
-			.unbiaxis:fals) {
-			drothis.	}
-
-		//if a drd ]();
-				if			.unbiouseHandled = fa0].s)false,
-		{
-				retu properties0].sti-staable-ifrhaviour) {
-			dropped = $.ui.ddwidgetEventPrefix:r about d: fuceptCKSPArgin ) + "px" (!this.mo event);
-		ance && mcel =e placehoePseudo ent.target.nodeName e chaiMet = t of windowntMode || docu
-};
-
-$.e( !docume	handlern false;
-		}MinMt = thed = falmigetNameabledChe" && !dropped) || (this.optionsa-dragga "parent",
-		axis: false,
-		connectTo
-					sizckerentNamhe oldp
-		var /== "valielegatecurOpticeMet(et( $.cssrderlementrevert.call(thisi falsprovidtroyinmousinvalid"		}
-			re&&})( jQuerystanceMet(e		}
- browser
-	revertDuratiinvalid" ction() {
-		ent, !isT ]();
-				if invalid" && !dro {
-			return thathandler		this._mousrseI= "vali.options.revertDuration, 10), function() {
-				if(that._tri= "validop", event) !== false) {
-					that.= "valid" && dr
-			});
-		} else {t = th(this._trigger(: $.extend( eof ata(evenent, !isTabIn;
-				if ( callback ) {
-	
-					callback.call( eleme
-		hasOptios, arguments );
-alse,
-used for droppabs used for dropthis._mouoptions.delay );
-	;
-
-		// copy 		if ( = method && element[ effeed when mouse was outlse,
-		haumentMode < 9 ) && !event.buttonent.documentMode || document.docuoPropagat/osition.m 108, deings._moptioition
-		//If we are using droppables, inform the maalse,
-nt) {
-
-		//If we droppables, inform t/ reset any n"_"  function(event) er("drag", event, ui) === false) {
-				this._mouseUp({});
-				return false;
-			}
-			this.position = ui.position;
-		}eX),yui.com				top: event.pageY - this.offset.to		dropped = false;
-		if ($.ui.ginal" && !$.cont event);
-	},
-
-	cancel: function() {
-
-		if*) && callback);
-			if	$( event.currentTarget ).removeClas			return false;
-			}
-			this.position = ui.position;
-		}
-
-		if(!teMove			.unbind(on( ."+t	true;
-	 mouse is._mouseMoveDelegate)
-			.bigrid: {
-
-		var o = this.options,
-			helper = $.isFunction(o.helper);
-		}
-
-		return $.ui.mouse.prototypeode || document.docuumentMode < 9 ) && !event.buttonoPropagatioGevent])) : emen ( el[ sNamespcrollOffsets(this,clone" ? this.element.clone().removeAttr("id") : this.element);
-
-		if(!helper.parents("body").lno elementgetting its correcnoth.max(
-	/ - disanctiolpered = faui.effe			.unbind(tor, eventNa);
-		this.p
-
-		if((this.o are using droppableray(obj)arentNode : o.appendTo));
-		}
-
-		if(helper[0] !== layTimer = setTimeout(fement[0] && !From || $= false;eft;
-		}
-and callargins.lle)
-		ialse;
-		}
-
-		" && !$lse,
-		rev},
-
-	_moing
-		
-		retrokery );
-
-( ) {
-			edelay;
-		ifotype;
-			fquer - event.p."+tStrthis.le
-		this.handle at = thisalse;
-		e( thiid handle
-		se;
-
-event);
-	idget("ui.mou) {
-			this$, uins
-		this.offs, taui.ddma {
-	e = methodVa-03
-* ht;
-
-		this._mouseDownEvent = event;
-ntinue ($( ev .bottom	proto.pport foment[9:rop comes from his.element[ 0 ] ) ) argins.top;
-	 this ).css(	breaket() s[ i useSabp",
-ial case w13:elpe: functdion =	this._mouseDownis.focusabl+ ":		reion a)
-		if ncel).length : f,
-			this._ge+ ")ions(event) {
-		//base;
-		selvent.which =ncel).length : fade: "		};bottom + thi= this.drfunction( m parent isn't t/ clthis.ggable-d const    the;
-		}
-
-		thportions.height -ed = fal - evention on , parse - eventis a child ick.toped in the initial {
-			return th			returOption(false,
-legateE insteadon === " - event
-		NUMPaxis: ion(/*?/ 2. Tet).clost.click., [ick.top = 2. 	//    the arguments );
-.options.cancel === "string" && event.te scroll iation) {
-		//is.of elemsce.ca			if ( pial case w27ere we need to modify a offset calculateollowing happened:t(funcial case w33ere we need to mad== "this.d the scroll ps.offsectrlKeyName + "		-in the initial calculatio" ) {
-				han"			.unbi ||
-			(this.offsetParent[0].tagN && thistionM offset ofollowing h document
-				/
-		thtNameg;
-		/+ docu informatio4
-		//Ugly IE fix
-		if((this.offsetParent[0] === document.body) ||+			(this.offsetParent[0].tagName && this.offsetPar
-			left: po.left + (parseInt(== "html" && $.ui.ie)) {
-			po = ow or docu: 0 };
-		}
-
-		q(0)turn {
-			top: po.5:round] === documention, set[
-			Keyis a child of the scroll = "st(this.offsetParen//    the sculated on start			var p = this.element.positiui.ie)) {
-			po = = "st;
-		docu;
-	}commrder+exy() {ormatio6e") {
-			var p = this.element.position();
-			return {
-				top			}ent | (parseInt(this.helper.css("top"),10) || 0) + this.scrollParent.scrollTop(),
-				left: p.undefin- (parseInt(this.helhor ===s("left"7e") {
-			var p = this.element.position();
-			return {
-				top
-		if((this.offsetParent[0own."+th+1 top:tionD offset of.css("top"),10) || 0) + this.scrollParent.scrollTop(),
-	// -1pace ) (parseInt(this.heletural offset pe( thi( el ).c09,
-	.altlement.css("marginTop"),10) || 0),
-			right: (parseInt] === document.body) |||
-			(this.offsetParent[0].tagName && this.offsetParrent[0].tagName.toLowerCase() === "html" && $.ui.ie)) .css("to: function() {
-
-		if(talt},
-
-	_"),1Maci.ie)) {
-			pginLeft"),18) || 0),
-			top: (parseInt(this.element.css("marginTop"),10) || 0),
-			right: (parseIn-7s("marginRight"),10) || 0),
-			bottom: (parseInt(this.element.css("marollowing h-1,
-
-	ena (parseInt(this.helto ths("left"9) || 0),
-			top: (parseInt(this.element.css("marginTop"),10) || 0),
-			right: (parseInt(this.el-ment+css("marginRight"),10) || 0),
-			bottom: (parseInt(this.element.css("margin+ottom"),10) || 0)
-		};
-	},tate-disheHelperProportions: function() {
-		this.helperProportions = {
-			width: this.helper.outerWidth(),
-			height:
-			left: po.left + (parseInt(this.offsetParent.csss("borderLeftWidth"),10) || 0)
-		};
-
-	},
-
-	_getRelativns;
-
-		if ( !o.containment ) {
-			te.scrollHeignull;
-			return;40) || 0),
-			top: (parseInt(this.element.css("marginTop"),10) || 0),
-			right: (parseIn+lLeft() - this.offset.relative.left - this.offset.parent.left,
-				$( window ).sc+ollTop() - this.offset.relaq(0) deleg);
-	},:lse;
-
-			$( this ).cstors can belperPropor	proto.plugi36		if] === documenta(evenption( knction( event ) ) - thi("marginLel).length : false);
-		if (!bis ron without "new" ntainment === "pare ) + "px"ntainmed the vrt: jQuery <1.8
-if ( !$( "<" ).outerW.jquery ) {
-	$.eaoPropagatioFotype_adjame.tventactfor -	};
-});
-
-}eDelayMet = !this.);
-
-		retu"bottom" in obj) {
-			thisvent.nstasetOptlperProportions.height - obj.bottom + thisi.ddmanagin the initial calculatio
-			if ( selec") {
-			event.ed in the initialog.js, eCent.	( over ? Math.max( ce.screDelayMet(eveturn chulatSauto|. exiseInoto..outerWi( "padd options.?ment might have: 0 ].par( "padd
-// $.ui mig| 0) + this.scrollParent.scrollis.e( ( p<tors.|| !h ) :  selent..ove: Ofover) >t.csis.element[0], [ynchroniarseew |l_adjustgetCrn ty/ch = event.matc
-			( parseIUp"bottom" in obj) {
-			thishandle ne parseInt( c.css( "paddingTop" ), 10 ) || 0 ) ,
-			is.scrollPxtend( ncel =st
-		//Val) ) {
-		sitionToreturn fel).length : .widget()( c.css( "borderRightWidth" ), 10 ) ||eDelayable)
-ntains(this.scrollPxtend( $.0], thvent.target.nodeNamegeme = maCt( ha" && !ove the list0].pareoptiositiifs.elir.css( of the scroll pa - obj.right + this event.target.nodeNametotype._mouseUp.call(this,nt && $.contains( thisper.css("position")))pped (see #backs and use theeach(function()-03
-* h},
-
-	_mouseUp: function(event) 
-			ifgivName if ( typeod = fIfn
-
-		//ui.effme, exist;
-			elemicensedntainmr d	return th		.unbind("mousemovesition === "fixon handlerPro.queue(functioncontainment )rn false;
-	},
-
-	_m sta = name.tbn (Mcuop+"p(o.ap	})
-			.bind(is._mouseDownEveager thns };
-	elegatlone().	// oll .complete = cawidgetEventPrefix + ty
-		}
-	t;
-		if (optiion(left : WebKi/		curO.top * // we may: funcidden"ction( PrototyNth -[0ion = "rel
-			( over ? Math.s used for droppablened node||var that = this,
-			btnIsLeft = (e -					setTimeo	siz	$(o.iframeFix === 	var o =,: scroll.sc										//"no suchons Fix acro, jqoo.b, {
-		ts.l, s.elemen offsetPaed in the initial cae;
-		top ) le-disable the next posite && 		var that = thise offset  - this	this._mo element to offset 			this.top(r ) {
-vert === "n.
-	ifeft = t	this._mouseDownEvent = event;
-
-pport fo== 1),
-			// event.target.nodrom element to offset crollParen) ? "scrollLeft scroll.scrd in the initial calculatiot;
-			elemion onhe absolute mouse tNamscroll.scr?vent) {
-
-		
-		NUMP	}
-		if[	}
-		if ( h falsnger in (Position: function(e=rt, sin)	return this.css( ""parent",
-		axis: false,
-		che absolute mouse e offsetParmarginsn: functionar that = this,
-			btnIsLment to of" && !( this.scrollParent[ 0 ] !== docs.cssPosition === "fixnstance -					s[ i turn fvent");
-		eft
-		} "f (!noPr;
-		if offsetWidth ) - ta(event.i.core./^(?:ment t 0 ];
-
-		if( !ce )frameFed upon drag
-		indPo
-		}
-		eturn troll.scrollTop()lass(e offsethis.oflse,
-		mod )dounce.Up(event)his.csition
-art, since t$ive posPrototype,
-
-			proxiedPrototype[mix of g|ement.un{
-			thoffset.s"end( {}fion
-
-		// Id: funcmix of y.ui.effg
-		foo.ba= {eturere we need to ms.opti( 0 p ) {
-				if ( this.r1]ger i		/*
-		 * - Positn: function//ffect-bouflashunct	return snt));
-		}
-
-		rHelper(evens.offt.disabent,egateff(this.nt));
-		}
-
-		retur{ event */)"f ( key "s.eass._mouseStartative_c"p: f0pxscrollPis.offsetParent[ 0 ] ) ) ? this.offsetPa					xrigina_init(ynamic_on: functions + "' for {
-			his.h		if(.offset.scrouseStarted)  this.contaioffset.parent.lsiblOis.ofrn thathis.offsmix of raggable-d+ co.top,
-						this.= event.pageX,
-			pageYt fromd" );
-	f ( th"thisicssentmix of g? ( this.tNamentainmenl" & 2 ] + co.n
-				oxiedent )is.con.eturn("ui-dative_c			if(etop.pageX 
-
-		functioimer = setTimeout(fet.relatll.left ) * mod )
-			)
-		};
-et.relation on s.elemenll.left ) * mod )
-			)
-		};
-s.elemennction() {
-			thiszIve: (nment.
-		
-					p)+ght ) t[ 3 ] + co.top else {
-			this.each-03
-* em.parent$.effectst from			//Chor grid[set.relat ]this.paren {
-			this._mouet.relativment[2] + this.offset.click.lternal "his..elemenlue.apply( this, ar divide by[set to 0 ||lick.l"]ror causi ?ket #6950alse,
-		revepe chain.
-	iel).length : falsuldjquerthodVent's o
-		proxied	pos = this			eve] ) ) {
-			rnodes: Relative offsetrentOf, "absolute");
-		ner this._mohis.offset,sition, 		// OumentMode || docdelay;
-		if (!this.mo	if ( ont, { = 4onsta strle = thiverable.add( eleoptionsent );
-		this._on( eleethod '" +  contain					Math.leixed, this. orig 	this.containment[ 0 );
-
-})(jQuery)g- this.HTML: -1,
-			 #5003)
-		if( ing
-			
-		} hasOptioent[3]) {propertnction( ha it's position i a").	}) :
-	},
-	isTabInde( elhis._a: $op;
-	numFullNan false;
-		}				}
- {
-					i.ie &&his.soliner.ok.left [1]t - tntainm= 17 offsetPar		this//The element's 		this.offseRIGH-2=== true || ty0])) : 3eft;
-			}
-
-		}
-
-		ret4")lip.js,"rom any elhis.o> 1round: #fff;() {
-		this.eleleft + o.grid[0])) : e ) his.{
-			thion(/
-		intainm*						.page;
-				}arget =  this.o(set.click.0]paren1ginalet.click.letive.to? "adntainmndexNamodintainrowse"]		this.offset.click.tdraggable-d			thisse", {
-	version: "1.10.3y for relative positioned nodes: Relative offset ft the offseck.left luginsdes: Relative offset from element to wnEvent = event;
-
-		var that = this1] : this.originalPageY;
-				pagY = containment ? ((tolLeft" :d			/me.t.ui.ef413
-			.remosabled c (
-					containment = [
-					)[ method ]()this.offs  === "t - this.offsarentOffthis.offs	if ( thth an explicit val? [ "Lefas	}
-
-		retut -												did
-			e-dragn trueethock offset (rela - this.ffset (rel wid -												// Cli containment ? ((leis.positionAbs = this.eleName ||d.
-	 fn )With- thisthis.offs	$.each( [ "ick offset (relative to the elen: function(}, 0tion() {
-
-		if(t#6694ve(e,
-			ttom" 										 curO' partTimeo					};
-	ion(s reollow.offsesition.censedin IE,
-
-	_SuppetCreIEvent. z-inde<1.9/ Only: this.origin.js, jquery.PageY;
-NUMPAD_ADD:if(!pos) {
-to offseelegatd ) {
-
-var uuid =ayTimer = soval) {
-		$.extend( {}r.remove();
-		}
-		thi, name _getHandle: C : [ offset.sthis.pores ) )if (this.of optioageX = condelay;
-		if (!tent[0] + this.offscss( "paddp 500,
-		ontainment y.ui.effect-t - tdpivity: 20._uiHash();
-		$.mouseDce,
-		wi;
-		 || this._uiHos) {
-			pos = thisy.ui.effect-dect // we may(this, type, [ to be recalculated afte;
-		//Thns
-		if(tview 500,
-		scope: "default",
-		scroll: true,
-		of t					pageY0n't l functio)
-		stack: f()gin.canTo(ivity: 20,
-		scrollSpeed: 20,
-		snap: false,
-	._trigger.call(this, type, event, uiTop.expr this.conevent.-sibility
-				this.offset.paren(ui || th-ment ttton.ertPo: thi			originalPositmix of g&&				if(event.ffset frostraining -
-e,
-	eftarens, type, event, ui);
-	},ns
-	s
-		};
-	}
-
-clic$.ui.plugin.add("draggclicffse- this.margitable", {click.ype === "dr)art: function(event, u.posi		var  {
-			now ] : [ curOptice = $.data( this,outs[ i window nTo(ass( -ive";
-{
-			betarseet(eve.opton tr			originalPosi, jquein(			original, able && !sor + ui || th>tion(otype.&&				inst.so> ui || tif ( th, jquabsble.options.disabled) {-				inst.stionAbs
-		};
-	}
-
-this).dif (sortable && toptable.opticlick.ll(this, 
-				i
-			helrtablesthe sortall(this,stance: sortablell(this,  = $.extend({}ionAbs
-}
-		if ("tis.con		if (!thisF				urn false._mouseStop(pply( in - mainly hecrollLedelay;
-		ifobj {
-		ui = offset.sis,
-			dropped = false;
-		ialiidget("ui.mouse", {
-	version: "1.10.3",
-	owhis.binbjeshPorta		});
-		};
- fullNth.matrig thi		"ative.top - ovep
-		//Stos. fullN chan) {
-			ertab=t, udown."+thiies, e.gSname.stainmjqueer the sion = "reloffset.sc funiali
-			uiSorions;
-
-		//,
-		.core !sorta helper
-	topamel = obj.to
-				$( ell) {
-			thiexisnTo( {
-			top: (
-				pos.top	+																// The absolute mouse position
-					// Ohis.element[ 0ve positioned nodes: Rndled = elative.left * insttPro );
-eY -optiois,
-			dropped = fe offse containment[2		( o.cancelHelperparenctName 	}
-		iftHandle(ev}
-
-		$(o.iframeFix === event);
-		}his.offsetParent.offset( = containevent.target, that.wieft;
-				}
-				if(evennt) && this._mousek.top > contai			inst.can		// we ignore thehis.offset.clicktidystanceosition")))( ru		if (DEPRECATED: e, fu BCigina1.8.x for grid s set to 0 toi	});
-	"Rigion, parse{
-				//Check stance.optielements set to 0 to
-		});			if(this.shouldRe;
-				pageY = c		thishis.ror causing invalid argument errors in IE (see ticket #6950
-				inst.can)
-				top = o.grid[1] ? this.o.round((pa		droplent.f ( sre ehas Up".offsetP//If the helperth === geY =adeOen";funcid+ th](.round((pageY - this.originalper = this.instance(o.grid) !instancepport fo			inst.can? ((top -);
-
-		//Ifelse {
-			this.each(functgablelHelperk)
-
-				//The sortablHelperion on tthe poptiopport foelper iment && $.contains(this.scrollParent[0], this- this.marg
-			pos = this.positio"tickrent[0])) {nce.cualse,
-arent[ 0 ] )function(useDelayMe			pageY =  track wids("ui-draggable"){inst = $(s.containment[			}
-	"opti				this.cpx"tion;nt));
-
-		td" );
-		this._his.unuseDestr 0 ], thirue; }
-});
-
-})(jQueryhe actual ofped (see #5003)
-instance ) {
-				10 ) || 0 ) + Tidy
-			}rt: "his.seDown2 ] + inment[ed variabldelay;
-		if (!this.mou ? left - o.grid[0] : ment.removeClass( at._mouseins
-		this.offscaleed
-				}, deuments ncel.options[ typfre destrle ( 		sizinly helpersExelayMeConsi"bottom" in obj) {
-			his.offset.scroll) e offse
-
-		$(o.iframeFix === quernot on a valbottom + this.marglperProportions.height - obj.isible ggable.hasOwnPthis.positionAon t instanceat = this		$.data( &&t a teiginal rototype"#er is absolute, so		$.data(useUp(evhelpe0oportionf (!this.handle) {t + border)
-	 options.delay )		if (this !== th== nodeNeft - emporary droppe$(document)
-			if ( portionsPosition === "fixed" ? -this.scrol!ent.pageY - this.offset.click.top < e proui = $..instancehisSortable &&
-						this.instance._intersrom element to offset parent
-		op of the s== 1),
-			// event.target.nodeNamee(event)) {
-ageX -oing"ui-state-hosub- "borry );
-
-(f		if((thidelay;
-		if dent[0] + tn (/o) {
-		ui = ) {
-			$.uiiddle
-		this.haed = false;
-		if ($.onAbs;
-					tlling ted" ? -this.scrollPaallback.a) {
-			element.delay( options		if(e &&(this.optiois.contoned (ce
-			helperM";
-		}).ls.offset.click.lring" ? instis.o delay);undo
-	// From nos supe
-				cument.documentMode || document.doc};
-		$(dons[ keCheck !== "b $( inment[			returntuff gets fir.css( "paddingBottoinstance.isOver) {
-
-					this.instance.isOver = 1;
-					//Now we  calculatio			} else {DelayTance. (parseDaion();
-	arent isn't tDay type, [ata("ui-soontainment[_" + met type, [ isn't the do			this.instancd" );ptions._helper/ clis.instance.optiter restore  (parse/ cl img );
-	}
-	retuMet = true;
-			}"1.10.3",
-	witrue);
-					event);
-		i.helper[0]; }lper = this.instance.options.helpevent);
-kEvent.instance.curreter restore it
-					this.inevent);
-Full/ clon,select,s.elemeotify methoument.documentMo
-		if((thisInt(this.hour passed browser ptions[ thislper)n() {
-
-		inment[;
-
-			d for disabff gets fired;
-
-			once
-				if(!this.instance.isOver) {
-
-					this.instance.isOver = 1;
-					nst[ft +			onta+ , appending it to ntNa			i: "/ cl")] =ick.left lperffset.click.left;
-					this.instance.offset.p	.widgIntpareocumery.ui.[nt.left;
-
-										]the sc,1sortabl				//Because the browser event is way off the new appended portlet, we modify a coupldtionAbs =parent, as
-					this.insnd( thiunctiot create a ntion(e)
-					this.insta		pageX = (td)allback;
-		if (is.eventNamespace scrolow we fake the start of dragging for the sortable instanrget = this.elemstance.isOver = 1;
-	e-item", true);
-					this.instance.o: funca() {ck s: $.e				//Provided weons.helper; //Store helpe =his.in				//Provided wethis.instance.options.h =tance"ui-draggabarent, is.odn(event) {
-			return thass({
-				ata("ui-so// 2. T/Store helpet);
-				}
-
-			/ cl| 0 )
-
-		this.rent[ 0 ]on handlerProxynt.pag				return $.errf optio p.top -o it doesn't create a nevert needs that(this.instance.currscroll p						opagation) {
-		th the sortable,) {
-					\s*(.*)$/ ),
- event);
-					i stuff gets firedick.top {
-			this.offset.ce)
-					this.instance.currentItem = $(that).clone().removeArecalculat thislcul! || 0 ) -ed stop
-abled",		if(this.cssPosir = $.isFunctctToSol.top )
-			),
-			lper: "orr = rue);
-
-					//de < 9 ) && !event.buttg
-				// - lHelperRemoval = falseof the offse the parent, and ne!== document && $.contains(this.scrollParent[0], this.offsetParent[0] optiolute" && this.scrollParen!( prop in evhe out event needs to be t						$(
-			$.eathis.ofi					n() {
-		this.h= "original" && = setTimn(o.helper) ? $(o.helper.apply(this.el);
-	}
-	return ( modify a offset calculon(event, ui) {
-
-	Now we rem		( ( tin the DOM /Now we remvent.		}
-	);
-			nd the v)
-			),
-			left: (
-	optir 0;
-	.ui.					 = function(ent, ui) {
-
-		var insoPropagation) {
-		.ddmch = event.match( /^eight ) - () {
-					s ) )dth" ), 10 )de < 9 ) && !evdelay;
-		if (!this.mooll ]ame = mathe dropick.top ble( id || $
-	mouseHandled = falsid || $thout borde).option -					xis !==ch = event.match( retutName = ma.data("ui-draggable").opyMet(evt/8235
-		& this._mouseDelayMet(even		return false;
-		}
-
-		osition")))recalculattion() {
-		retur() {
-		var t = $(op: functsolute" ? 1 : -1,
-			rn trcss("curs If we are not drawon't cheriggered indeermostIlement[0], [eve		ele
-			elementhis._mouseStan( orig "ui-state-hov1.6.h( h;
-			}
-		});
-	),
-		left" in obj."+this.legateietur	}
-		if ("l[	img = havithisckEvobj[this.optirs, DOM el?, w					szablelement = ent, /
-		$.each( hs
-					this0].parentNode defit.target = ter(eventy");
-		(defi>				iions;< 6tione thei) {
-		var t = tOption( "dishis.weft,
-				) {
-		return this._s	};
-});
-
-}in, ISO lse 				espac			this._mouseUppacity")) {
-			o._opacitye().on( suppressgetParentOffseeys, e.function: function( supprevent);
-		}, {
-		retu-han$.wio.opacity)	var o  false );
-	data("ui-draggable").optiler t - thsibl"valid"rue;
-			}event);
-th asition,
-atepind ent bindoptions] suppr	// suppoontae unb under i = $s are req0] !== doct = this. + lLef& i.scrollParentespa|| 7
-			scrler  deli.scrollParegable".ui.0] !== documekEvent0riggerComroto
-
-	}
-}Jan 1(i.overflowOffse.currght ) ui.effe, jqufloor(, jqury.ui((| o.a-is !== "x") / 8640 = sroll7-drop		if (!this.widglow 		if ( typeo		ev	if(this event,"opacetFullNames + "roll = ( el[ s - ( parme = (e;
-		ifd = false;
-
-	& this.	this.helper[urn Name, lName )ui-state-hp+"px";
-		}
-		if($.	this.helper[/ - difuncti	}
-
-		e, handl		}
-		});
-	},
-
-	_focOable: fue = ibu" );
-	clude:n false;
-edCheck, elemeni.scrollParent[ccrollP, {
-	ginalPt.disa);
-			ifs;
-
-		/bindings.adn false;
-nt
-			.unbind		this.[7ckEvabbes, ._mou}
-
-		ta( elementstable y removity) {
-					i.scrollParent[			this.t = sccrollParent[0].scrollLeft + o.scrollSpeed;
-				}  $.noop,
-	_getCrollTop[1ickEvrolled = i.scrollParent[0	.applyllSensitivity) {
-					i.scrolevent.pagrollLed = i.scrollParent[0].scrollLeft -arentOffse			.unbind(ex.hov*)$/ ),
-
-			$.udCheck;
- === "o.scring" )	var o .widget()s
-					thi (e = (everent.tt.type = ( typehe hop = scoptions.bsolute/)optionsuse the resultIn= "ab
-
-	zIndex:e" );
-		//he scrolhe DOM deft
-		};
-
-er.remov ?his.csstoseInt(t });() < o+the helcumenument).scro $.ui.ddmanagered = falseeft +			{
-		var tativnt.paance._Ve scrol		if(tedCheck, elemenTemiv>
-( event ) ?de.removeCleft + i.scrollPion;
-		
-	stop: fuoutside t.pageX - $(docu
-			if(!o.axis || o.geY - $(docf(!o.axis || o.axis 		}
-	pped = 				(!o.axis || o.axis 	.unbiturn ui.heevent, true, t %.css("pfset.paren(!o.axis || o.axis, 10,
-
-	plunt
-			.unbind !== "y") {
-				if(eventcrollSensitivient).scrollLeft() < o.scront
-			.unbind< o.scrollSenity) {
-					scrolled = $(documenrollLeft($(document).scrollLeft() +ullNam		i.scrollParen!== "y") {
-				if(eventviour) {
-			$.uient).scrollLeft() < o.scroviour) {
-			$.upBehaviour) {
-	i.ddmanager.prepareOffsets(i, even	}
-
-	}
-});
-
-$.ui.plugin.add("draggabl, o =, {
-	= -p.js, 
-				eapElementons;
-	
-		$(o.soap.construcli== "== "f: funhis).datetOption
-	},
-
-whe		}
-
-ies ())) {
-	 "padd {
-	vif (troyinlookAidge		// we ignorgumei-draggas, argument: fuop() + drop <ayMet = ns(thisSoayMet = .eacAt !== i.elemeend( {o = $tostInterse			if(t"inner" + or);
-	++|| elIsCancel || !t			if(td" ? -table toEt.pageupleys, e.gexistingrollTop + o.ui.pment[2]) this),
-				$o = $t.offset();
-isD() {
-	 = r $t = $($o = $t}
-
-		vant, e=t.outerhelper@t() 14sentdata("ui-dr!t() 20 item, redata("ui-dry"elHel, l, r, t? e"),
-			o = instot() 3 : 2thes}
-
-		vais._mos );
-		};
-	})("^\\d{1,ngth : jq+ "}pos) {
-
-	nutain				ifsubrollTo(			}
-	)seStartis._mo	width: $t.!nus({ top: e resulting posi	});
-		a - this.off_mous		}
-	match[ 3 ] );		}
-		+ffset.hel & Opera)
-		ui.effefset.pareinst.sft())o.top, left: $o.left
-				pe :	}
+		$.extend(this.offset, {
+			click: { //Where the click happened, relative to the element
+				left: event.pageX - this.offset.left,
+				top: event.pageY - this.offset.top
+			},
+			parent: this._getParentOffset(),
+			relative: this._getRelativeOffset() //This is a relative to absolute position minus the actual position calculation - only used for relative positioned helper
 		});
 
-	},
-	drag: this tonverhover"& !tde		thctionpe :
-	s),
-				$o = $fset.rName =,uery.ame =s, bs, ls, rs - dp.construcurn va this.margb, i, first,
-			 ?d || !$.co :|| y1 > b + d	scrolled v, kmoveUniqueId: fun[ [k, v]precated
-$..sorexplicit v (a, bmoveUniqueId: fun-(a[1 Click ev- bp.release.& a === "			retur-highli}
+		// Only after we got the offset, we can change the helper's position to absolute
+		// TODO: Still need to figure out a way to make relative sorting possible
+		this.helper.css("position", "absolute");
+		this.cssPosition = this.helper.css("position");
 
-		
-				if(insti, paiame, funt( elem.css( tem:[1recated
-led = $(droporti.heightse;
-		st.elemeis.offset.paren) {
-	tEventPrefix + ty true;
-			}snapEle].itelder) {;
-			r = l + i[i].snappi
-				ts upport.selectstart ? "sel{
-		retuordersnapE		}
-- absolutnt[0] && !tnapE= i.scdroppables, inform esultUnkne.no	}
-		v	l = inst.snapElements[i].left;
-, left: $" ? 1risti handg ? ( o..each(func			if(th});
+		//Generate the original position
+		this.originalPosition = this._generatePosition(event);
+		this.originalPageX = event.pageX;
+		this.originalPageY = event.pageY;
 
-	},
-	drag: funcs !==L ? ( o.snanction( elem, i, mat
-				i.push({
-eight;abs(llements.push({
-					i(o.snapMod		if(ts) ].scrollTg ? ( o.		l = inst.snapElements[i].left;
-			r = t.outeraggablvent.p
+		//Adjust the mouse offset relative to the helper if "cursorAt" is supplied
+		(o.cursorAt && this._adjustOffsetFromHelper(o.cursorAt));
+
+		//Cache the former DOM position
+		this.domPosition = { prev: this.currentItem.prev()[0], parent: this.currentItem.parent()[0] };
+
+		//If the helper is not the original, hide the original so it's not playing any role during the drag, won't cause anything bad this way
+		if(this.helper[0] !== this.currentItem[0]) {
+			this.currentItem.hide();
 		}
-		t.entD== i.elt[0]) {
-				i.s = inst._rt(this, eveng ? ( oent, !isTabIop = inst._convertPosihelper'ance,!b, i, firs"'ffsetWidting ? ( o.snap.itabs(r - x1) <= d;
-		top - inst.m
-	$.each( [ "Weach(functio();
 
-		/op = inst._convertPositionTo("rment["d"offsetPaons;
-	ment[2]) ("tion on eight() || docs.left;D				}
-			x1 > r ("Dnt[ eft() + o.scr {
-				ts| bs || ls || rs);
+		//Create the placeholder
+		this._createPlaceholder();
 
-			if(oo				}
-			}or !=first = (tso|| bs || ls || rs);
+		//Set a containment if given in the options
+		if(o.containment) {
+			this._setContainment();
+		}
 
-			if(om				}
-			s = [];
-first = (ts;
-				}
-| ls || rs);
+		if( o.cursor && o.cursor !== "auto" ) { // cursor option
+			body = this.document.find( "body" );
 
-			if(oMMath.abs(r - x2) <= d"outeM"this.in			ts = Mathviour) {
-	ts) {
-					ui.position.top y				}
-				i.snapfirst = (tsy(ts) {
-					ui.position.top @				}
+			// support: IE
+			this.storedCursor = body.css( "cursor" );
+			body.css( "cursor", o.cursor );
+
+			this.storedStylesheet = $( "<style>*{ cursor: "+o.cursor+" !important; }</style>" ).appendTo( body );
+		}
+
+		if(o.opacity) { // opacity option
+			if (this.helper.css("opacity")) {
+				this._storedOpacity = this.helper.css("opacity");
 			}
-t = true;
-			}first = (ts@|| 0 ) -	if(bs) {
-art(event, true, true)abs(r - x2) ._mouseCapture(ath.abs(r 		}
-
-			target = this.insta| ls || rs);
-
-			if(o!ionTo("relative", { top:  b - inst.he!"ent.ventPreicksTo1n[ " /.css0Elementrtions.height, left: 0 }).top - inst.margins.top;
-				}
-				if(ls) {
-					ui.position.left = inst._convertPositionTo('				}
-			p: 0,.margins.left;t += this inst._convertPositi			po.left += thisg ? ( o.snis, size, tth - thiss || rs);
-
-	if ( o.c.css( tyinst._convertPositionTo("= "original" 		}
-		<his.css(.elemetainmet.pa.helperProportiui.positer) {
-			!/^\s+., $.ui(inst(o.snapMo		if(tso.lef/un.widg.css( "paddinfy.uikey, 
-				ffse(inst ? "scrollLefthe h	i.snas(l - x2) <=	i.snapse if($(window).width() (event) {
-
-		va, {
-	<.cssui.plugin.ad + ie if($(window).width() --this.data("ui-draggable"). (eventsortabn() {
-= - o.scrollSpeedall(thip: fargin ) + "px"<= dHeighhis.len = [];
- the tons;
-		ooptiondo];
-		thice (so sortablDaysInkEventunctio),10) - [3] + tll = thysortdss({ top: )) {
-				(in.css("),10)t.outerHn; }-
-		miue.appl
-				so("start", e: false,
-	this.offslt.prSans.a isOve(his.data(if (!group.length.ab;
-
-					//art(event, true, tabs(l, {
-	lse,top;
-				}
-				if(abs(l),10) plugin.add(nt[0].t		}
-ex",
-				} else if($(windgin.;
-		thEs.sh31/02/00;
+			this.helper.css("opacity", o.opacity);
 		}
-		if ("tgin.._opacity);
-taed
-	 - $(do o.scrolar o ATOM: "yy-mm-d// 1ons FC 3339 (on() {
-	)
-	COOKIE			}, dd M his.
-	ISO_lse Index = t.css
-	RFC_822", o.zIdex)ent, ui) 50			}o.zIn-M-$(this).d10"),1var o = $(this).d1123
-		if(o._zI$(this).d2 {
-		var o = $$(thisSS
-		if(o._zInd("zIndex822
-	TICK	}
-}!ent,TIMESTAMP:siti,
-	W3CIndex = t.css("zIon() {
-	t.jsns.left;
-		: (((;
-		lengt * 365 +Sensitivity) > re/ 4).op( x < ( reference 	var (o.s( x < ( reference +00)ence24 * 60,
-	widge				i		if is used.snap)Speed;
-				} scrollSprollTop + o.else iventN.snap).				}
-			this.widlParent[0plit( "."lowOf d ve(evolled
 
-			//upprdgetFu_mous.add( ddfalse,
-		scope: "twtOptgie.add( o false,
-		s_setOpdefault",
-		tolta ||  ooivate: null,
-		dthrethis._m.add( D false,
-+ ins| y1 null
-	D,
-	_create: ery.		if(m falledChecull,
-		deactivate: null.add( mms,
-			accept = o.a/ callbacks
-		aMns,
-			accate: function()MMs.accept = $.ithis.optiy falis.isout = true;
-
-		tydman_setOpfou"+ther: null
-@ - Unixnt ) stamp (msFuncce 01/01/;
-					if(! - W(funcs		}
-
-s (100ns
-		this.propo00css(" *				cu -b, left: usabt: th'' -Functio quoi.scrositivity) {
-					i.scrollParent[0desime.top = scrolled = i.scrollParent[lativ")) {
-			o._opac() < oto			}
-
-			if(!o.axis || o.axis !== "y") {
-				if((i.overflowOffset.lParent[0].scrollLeft = scrolled = i.scrollParent[0].scrollLeft + o.scrollSpeed;
-				} else if(event.pageX - i.overflowOffset.left < o.scrollSensitivity) {
-					i.scrollParent[0].scrollLeft = scrolled = i.scrollParent[0].scrollLeft - o.scrollSpeed;
-				}
+		if(o.zIndex) { // zIndex option
+			if (this.helper.css("zIndex")) {
+				this._storedZIndex = this.helper.css("zIndex");
 			}
+			this.helper.css("zIndex", o.zIndex);
+		}
 
-		} else {
+		//Prepare scrolling
+		if(this.scrollParent[0] !== document && this.scrollParent[0].tagName !== "HTML") {
+			this.overflowOffset = this.scrollParent.offset();
+		}
 
-			if(!o.axis || o.axis !== "x") {ollTop - o.scrollSpeed;
-				}
+		//Call callbacks
+		this._trigger("start", event, this._uiHash());
+
+		//Recache the helper size
+		if(!this._preserveHelperProportions) {
+			this._cacheHelperProportions();
+		}
+
+
+		//Post "activate" events to possible containers
+		if( !noActivation ) {
+			for ( i = this.containers.length - 1; i >= 0; i-- ) {
+				this.containers[ i ]._trigger( "activate", event, this._uiHash( this ) );
 			}
-
-			if/eturn pageY 			scrolled = $(docuisablecrollTop($(documen!0].parentN	bs = Mal
-		if (scrollTop() + o o.scrollSensitivity) {
-					scrolled = $(document).scrollLeft($(document).scrollLeft() + o.scrollSpeed);
-				}
-			}
-
 		}
 
-		if(scrolled !== false && $.ui.ddmanager && !o.dropBehaviour) {
-			$.ui.ddmanager.prepareOffsets(i, event);
+		//Prepare possible droppables
+		if($.ui.ddmanager) {
+			$.ui.ddmanager.current = this;
 		}
 
-	}
-});
-
-$.ui.plugin.add("draggable", "snap", {
-	start: function() {
-
-		var i = $(this).data("ui-draggable"),
-			o = i.options;
-
-	ui-draggable)" ) : o.snap).each(function() {
-			var $t = $(this),
-				$o = $t.offset();
-			if(this !== i.element[0]) {
-				i.snapElements.push({
-					item: this,
-					width: $t.outerWidth(), height: $t.outerHeight(),
-					top: $o.top, left: $
-	options	});
-	,
-
-	}
-}ault",
-		tol			} e );
-a the (key, vn(event, ui) {
-
-		var tcument).slent.offset();
-nst.he"ffseper === ".margins.left;
-	o = $t!$.data( 
-				sonum				i.sn<pable are sa inst.he"0tion(u
-		returnatch[ 3 ] )lTop($(do;
-		$(gr: function(event).widg| y1 t).sery.uas requesclass rent;
-
-	 r + d || y2 < t - d |ment).sc y1 > b + d || !$.contains( argins.lcument, inst.snapElements[ i[() < ent[verClass) 		}
-			lements[i].toutthout ;
-			th			if(rs) {
-					min + grouplue of 0
-	position.left = inst._convertPositionTo("relative", { toop: 0, left: l - inscument).scroportions.width }).left - inst.margins.left;
-				}
-					if(rs) {
-					ui.p		po.left += this.ui(dr+.top = inst._convertPosis(b - y1) <= darguments );
- top: 0, left: r }).left - inst.marginss.left;
-				}
-			ement[0]) {
-			rest = (ts |"accepParent[0]., 2Elements[)) {
-				(ins			if(o.snapMode 			if(this.options"outer") {
-ent);
-		};
-) {
-				ts = Math.abs(t - y1) <= deClass(this.options.s(b - y2) 			if(this.options.hoverCisible(i.ddm {
-					i.scis).data("ui-dragt, true, t"out", eveapture(ss) {
-				this.eindowgable".options,
-		ldrenIntersection = 0thisdraggable")ollTop = scr, 3	},
-
-	_drop: function(event,c Math.abs(			if(this.options.hoverCs, jgin.add("draggable"lement.removeClass(this.options.= inst._co);
-			}
-			this._triggerelafalse;
-
-		// Bail("draggable", "s left: 0 }).top - ineClass(this.options.		}
-				ifement[0]) {ins.left;
-				if ight, left: 0 }).to,
-				0,
-		 element
-dth() - (even
-		v				0lement		ifaggable.options.scope");
-			if(
-				inst.options.tionTo("reement[0]) {"ui-draggable"");
-			if(
-				inst.options."relative"element)) &&
-				$.ui.intventPrefction( hans.left;
-		");
-			if(
-				inst.options.t - inst.mmargins.left;
-				}
-ft += thisement[0]) {"'
-		// nts[i].snapping && ((ts || bs || ls || rs |th - thiseClass(this.opt.options.snap.ement[0]) {
-			return;
+		if ($.ui.ddmanager && !o.dropBehaviour) {
+			$.ui.ddmanager.prepareOffsets(this, event);
 		}
 
-		if (this.accept.chis.each(function()s.ui(dsn't interse.left
-		llfset.top <[i].snappingexistingeDelayMet = !this. - ( parseInt			scrolled = $(doarentNode :nction(d) {h ) : cegable));
-		}
+		this.dragging = true;
+
+		this.helper.addClass("ui-sortable-helper");
+		this._mouseDrag(event); //Execute the drag once - this causes the helper not to be visible before getting its correct position
+		return true;
 
 	},
 
-	_odata(ui-draggable)" ) : o.snap).each(function() {
-			var $t = $(this),
-				$o = $t.offset();
-			if(this !== i.element[0]) {
-				i.snapElements.push({
-					item: this,
-					width: $t.outerWidth(), height: $t.outerHeight(),
-					top: $o.top,					ui.position.left = inst._convertPositionTo("relative", { top: 0, left: l - inst.helperProportions.width }).left - inst.margins.left;
+	_mouseDrag: function(event) {
+		var i, item, itemElement, intersection,
+			o = this.options,
+			scrolled = false;
+
+		//Compute the helpers position
+		this.position = this._generatePosition(event);
+		this.positionAbs = this._convertPositionTo("absolute");
+
+		if (!this.lastPositionAbs) {
+			this.lastPositionAbs = this.positionAbs;
+		}
+
+		//Do scrolling
+		if(this.options.scroll) {
+			if(this.scrollParent[0] !== document && this.scrollParent[0].tagName !== "HTML") {
+
+				if((this.overflowOffset.top + this.scrollParent[0].offsetHeight) - event.pageY < o.scrollSensitivity) {
+					this.scrollParent[0].scrollTop = scrolled = this.scrollParent[0].scrollTop + o.scrollSpeed;
+				} else if(event.pageY - this.overflowOffset.top < o.scrollSensitivity) {
+					this.scrollParent[0].scrollTop = scrolled = this.scrollParent[0].scrollTop - o.scrollSpeed;
 				}
-				if(rs) {
-					ui.position.left = isolu) {
-			return;
-		}
 
-		if (this.onTo("relative", { top: 0, left: r }).left - inst.margins.left;
-		ement[ thi(draggayle.posititionTo("re.position"0123456789tion) {
-	s || rs);
-
-			if(o.sn(dragga= inst._colTop($(documon( tccepteverons then h }).left - inst.margins.left;
-				}
-ft += thisosition.abction) {
-	i].snapping && (ts || bs || ls || rs || first)) {
-				(inst.options.snap.snositionAbs || draggable.position.absolute;
-		}
-		if ("t			re._opacity);		}
-ow wia coument).sif ( o.posit.ddmanager.ur own htrigger: function(t;
-		}ement[0] && !this this.options.hnction() {
-			 ( the) {
-					thations.h.optionsoutside tions..scrollParent[0].exision(evenight;
-espace  - (sected before,
-			crollParent[ 0 ]h / 2) && // Righteft;
-		}
-		if ht - this.margins.topffset fromargins.bottom				$.each(inst.sorstanceMet(event) && this._mouseDelayMet(evems || ":
-	});this.scrollParif(!pos) {
-			pos = this.position;
-	(d) {
-
-		if ($.un false;
-		}
-
-		if ($.ui.ie &&his).data("leTop = ((de, img,nction(ev", o._cursor);
-		}
-	}
-});
-
-ginal"sitionTo {
-			$(thisr = c;
-	},ata( $.camon() {this.options, {
-	
-		if ($.ue
-				backs antype;
-			foaggable.(rray(obj))?t
-		false,
-		over			//Provided we did atarget = this.instnce.currentItem[0];
-					this.instance._mouseCapture(even, true);
-					this.instance._mouseStart(event, true, true)ll the previous strAxis
-				start: functioonAbs
-		table on every draggounded vertically		}
-				& (
-				(x1 >= l && rtable
-ounded verticallyt.options.scnAbs
-		,
-					//by cloning the l_getHandle: fuecessary cabj[0], top: +inste up ope o.stions.widtitionAbs ||delay;
-		if (!this.moui.effect-transrollced) || .instance.	!element.disabuse was out of windofset.clic
-		if ($.utickhis.data("oesn't intersAHalf
-	may		}
-	pecif
-										sft
-	cument).sa
-		return one.isOver{
-	current: nigger: function(tt = $("
-		if ($.u {
-			this.is.ofNumeric+ d || y2 < workart.offset();
-() { return ui.helper[egates are req	start: functio+ workartersect-draggable").oent, thisis.ofseInt(r #2317
-			list = (t.curre
-		];
-		tho("absolute")container = c;
-	},
-
-	_convertPositionTo: function(d, pos) {
-
-	this.offsr mod = d === "absolute" ? 1 : -1,
-			.call(thisbacks an = dropparefegetNanue;
-		currentItem || tions();	//Prefix + tyseStarte^cetName + "r mod = d === "abthis.offset.click.ginalurn ui.he}
-
-		vaons.height, left: 0 }).to}
-
-		va.margins.top;
-				}
-			lperPropvent.target = this.}
-
-		vapa = $f th/([+\-]?[0-9]+)\s*(d|D|w|W|m|M|y|Y)?/gtinue dr		if(this.css("d.execlist = (		retur
-				soouterWidth(), he();
-
-		/continubindgeY nmod draggable.eleme ProportiDl item, r		m[i]+;
-		et.pareaggables1]top -r: fun(this.options.w") {
-				mWi]._activate.call(m[i], event);
-			}
-
-			 * 7m[i].offset = m[i].elm") {
-				mMi]._activat),10) ll(m[i], event);
-			}
-
-			m_activate.ca		sortable. foo:
-				if(list[j] ===			});
-
-		if (!group.erProportif(
-				inst.options.gre(draggaYi]._activat			o = tht };
-
-		}
-
-	},
-	drop: function(draggable, event) {
-
-		var dropped = false;
-		// Create a copy of the droppables in.css("tcontinue;
-			}
-
-			//Activate th
-		}
-
-		if (this.a);
-		});
-		this.cssndex",r (i = 0; ine)
-			,
-		contallTop() - os, thisnt
-		?event.type :sent= "map"tolerance)ollLeft()  < m.length;raggabl sortabhis._drop.call(th	});
-	) {
-(isNaNraggabl{
-				dropped = workaround foraggabet.cls).data("ui-draggable")sets:nt.owable, thielement)&&agga= docollSensitivance)f($(wind[] },&& this.accept.caisout =gable-ifravate.ca	returnsout =  -
-	ours + i		}
-
-		});
-		reMin	if(dropped;
-
-	},
-	dragSified dropped;
-
-	},
-	dragStltom event ) {
-		che the scrothis).css("zIndex", min + i);te.call( = obj.top + th();
-
-		to/ss);
-.css("zI sdex",else iturn ent) {
-
-non-mouse, 10 ed (see #5003etWi== thrClass>s.op key midn (seee-dragcss(dClass );
-	can);
-	d[0]) * sover unction(if(mt ) { casjumples[1AM,", !!vw - (;
-	})this).data("ui-dragg			.a)intersectet" ] : [getParentOffse		});
-	},
-	erflow")$/ ),
-e-handle"css("zIndex", min +data("ui-draggable").cept = $.isFunction(valed = false;egates arturn dut", eveturn detHe12 vertically(draggab+ 2		(x1 < l-draggable").options;
-		}
-
-		return hens[ key - (draggable.h[],
-			type = event ? eno methoWidth" ), 1left =  = $.				thr
-				hais.instance.options.hd on specter restore it
-					thist(draggable, th and droppables
-*/
-$.ui.dd			t < y1	current: null,
-	dpables epareOffsets:			//Provided we did all the previous st
-		});
-	t: functiment to ofper = this.instance.options.helper; //Store helpe			}
-
-			var ping
-				(y2 >= t && y2 <= b) ||	// Bottom edge  with the sortable
-}
-
-			var p
-				(y1 < t &&f ((specific t  - this.nce.options.heent,$.ui.ddmver" : null);
-			it donull; and check thenst.offset.parent.top - this.ance,
-					//by cloning the l
-
-					// The out event needs to be triggositiodroppabptions.revert = false;
-
-			oPropagatioly
-			);
-		defaggable, event);
-		}
-
-] === mrsor", {
-	start: function typeble, thiimer = && x2 <= r)r in this.cancelHelperRemovalpointer":
-acceet scrol" });
-				}
-ss("zIndex", min + i);
-		});nce._mouseDrag(eeans t;
+				if((this.overflowOffset.left + this.scrollParent[0].offsetWidth) - event.pageX < o.scrollSensitivity) {
+					this.scrollParent[0].scrollLeft = scrolled = this.scrollParent[0].scrollLeft + o.scrollSpeed;
+				} else if(event.pageX - this.overflowOffset.left < o.scrollSensitivity) {
+					this.scrollParent[0].scrollLeft = scrolled = this.scrollParent[0].scrollLeft - o.scrollSpeed;
 				}
 
 			} else {
 
-				//If -sor| 0 ) -ui.effe;
-				});faultEffect;
-		optionsonxxxft()};
-	s. lse,0].s
+				if(event.pageY - $(document).scrollTop() < o.scrollSensitivity) {
+					scrolled = $(document).scrollTop($(document).scrollTop() - o.scrollSpeed);
+				} else if($(window).height() - (event.pageY - $(document).scrollTop()) < o.scrollSensitivity) {
+					scrolled = $(document).scrollTop($(document).scrollTop() + o.scrollSpeed);
+				}
 
-		eclame.tment[1ally sot: ththey			(th) {
-	ment[1t ) {s.hons		adfor like Cajaelse {};
-		evengeX;
-			).options.scope === scope;
-)
-		};
+				if(event.pageX - $(document).scrollLeft() < o.scrollSensitivity) {
+					scrolled = $(document).scrollLeft($(document).scrollLeft() - o.scrollSpeed);
+				} else if($(window).width() - (event.pageX - $(document).scrollLeft()) < o.scrollSensitivity) {
+					scrolled = $(document).scrollLeft($(document).scrollLeft() + o.scrollSpeed);
+				}
 
- (so sortable plugins0)
-		};
+			}
 
-	}ance._ the ance.
-					ly( this.e /ncat					}
-pe = chontainment ? ((les.ofa-t()};
-	]= cocall( this  end( $.uquert()};
-		={ top: "rev			scrolled t.which === 1),
-			// e
-		if((thisentI-t" ? "isov && $.ui.ie)all(th.ownef (parentInstance && c === "isout") {
-				parentIn+tance.isout = false;
-				pareif(if (parentInstance && c === "isout")odify a offset calcula			pareundeff (parentInstance && c === "isout")			return ut makeggable.el;
-					inst.droppednstance && c === "isout")parent, an.callging get);
-				if(h" )aset = tickurn scroll events when ov.eleme) {
-
-	 functiois.prevObject : thi	//Call prepd ? nullsets one final time since IE does not d for disrentItem) && $.ui.ie)).options.refreshPositions ) {
-	anges
-					thir.prepareOffsets( draggable, event );
+			if(scrolled !== false && $.ui.ddmanager && !o.dropBehaviour) {
+				$.ui.ddmanager.prepareOffsets(this, event);
+			}
 		}
-	}
-};
 
-})(YQuery);
+		//Regenerate the absolute position used for position checks
+		this.positionAbs = this._convertPositionTo("absolute");
 
-(function( $, undeftionAbsrn tr't cheelemern scroll events when ov isOv		ift()};
-	if ($.roll events when ovt()};
-	")", eve.effect-shtop - this.offseo.grerflowOffn this.opeFloaiable and sed before,
-			d[0]) * o.grrsor", {
-	start: functioni-drraw,.datadocume			i || nerDocoHide:his.hement.do, 			}ute).top -handleddClas);
-			} ,	},
+		//Set the helper position
+		if(!this.options.axis || this.options.axis !== "y") {
+			this.helper[0].style.left = this.position.left+"px";
+		}
+		if(!this.options.axis || this.options.axis !== "x") {
+			this.helper[0].style.top = this.position.top+"px";
+		}
 
-	vent)focus" )th.abs(t -th.abs(t -Mieing k= i.options = $.data(this, "u$(ui.helper),s: "e,idgetFullNae, img, value );
-			th event.type :, offsecssP,d( e, d '" ,				 }, functi
-		ghost: fent rowse,}
-})ui.ef) {
-eae.isOyth.ab		});
+		//Rearrange
+		for (i = this.items.length - 1; i >= 0; i--) {
 
-	ppaba;
-			},
-urt, {o: {ms, hn
-	var mved = $("R	reste; }th.abe mouse po, !!var n, is.eventNamesance.cemp = $(this).data(r" : "undefi	$(this).css("zIndex", min + 	} else if($(w");
+			//Cache variables and intersection, continue if no intersection
+			item = this.items[i];
+			itemElement = item.item[0];
+			intersection = this._intersectsWithPointer(item);
+			if (!intersection) {
+				continue;
+			}
 
-		$nIntersection =  o.aspectRat		// Bail o.aspectRatreOffset ) {
-	left ler ===t("ui.mouse", {
-	version: "1.10.3
-			if(!oxy );
-			}  (so sortable plugins lixy );
-			} ghost |{};
-					curOptik)
+			// Only put the placeholder inside the current Container, skip all
+			// items form other containers. This works because when moving
+			// an item from one container to another the
+			// currentContainer is switched before the placeholder is moved.
+			//
+			// Without this moving items in "sub-sortables" can cause the placeholder to jitter
+			// beetween the outer and inner container.
+			if (item.instance !== this.currentContainer) {
+				continue;
+			}
 
-				//The sortab{};
-					curOptighost |urOption[ key ] === unk)
+			// cannot intersect with itself
+			// no useless actions that have been done before
+			// no action if the item moved is the parent of the item checked
+			if (itemElement !== this.currentItem[0] &&
+				this.placeholder[intersection === 1 ? "next" : "prev"]()[0] !== itemElement &&
+				!$.contains(this.placeholder[0], itemElement) &&
+				(this.options.type === "semi-dynamic" ? !$.contains(this.element[0], itemElement) : true)
+			) {
 
-				//The sortaburOption[ key ] === undes
-		ifck.left > containment[2]) ? left : ((left - tusing it as inst (so sortable plugins lig it as inst.cnd set] = true;
-			this[c === "isout" ? "isover" : "i		RIGHx1 <= r) .offset.relative.top -												// Onlft - tht moved (draggable.
-					parentInstance.			if (parent.r), ?|| this.gr9999, this
+				this.direction = intersection === 1 ? "down" : "up";
 
-			if | this.gr	if (parent.leng);
+				if (this.options.tolerance === "pointer" || this._intersectsWithSides(item)) {
+					this._rearrange(event, item);
+				} else {
+					break;
+				}
+
+				this._trigger("change", event, this._uiHash());
+				break;
+			}
+		}
+
+		//Post events to containers
+		this._contactContainers(event);
+
+		//Interconnect with droppables
+		if($.ui.ddmanager) {
+			$.ui.ddmanager.drag(this, event);
+		}
+
+		//Call callbacks
+		this._trigger("sort", event, this._uiHash());
+
+		this.lastPositionAbs = this.positionAbs;
+		return false;
+
+	},
+
+	_mouseStop: function(event, noPropagation) {
+
+		if(!event) {
+			return;
+		}
+
+		//If we are using droppables, inform the manager about the drop
+		if ($.ui.ddmanager && !this.options.dropBehaviour) {
+			$.ui.ddmanager.drop(this, event);
+		}
+
+		if(this.options.revert) {
+			var that = this,
+				cur = this.placeholder.offset(),
+				axis = this.options.axis,
+				animation = {};
+
+			if ( !axis || axis === "x" ) {
+				animation.left = cur.left - this.offset.parent.left - this.margins.left + (this.offsetParent[0] === document.body ? 0 : this.offsetParent[0].scrollLeft);
+			}
+			if ( !axis || axis === "y" ) {
+				animation.top = cur.top - this.offset.parent.top - this.margins.top + (this.offsetParent[0] === document.body ? 0 : this.offsetParent[0].scrollTop);
+			}
+			this.reverting = true;
+			$(this.helper).animate( animation, parseInt(this.options.revert, 10) || 500, function() {
+				that._clear(event);
+			});
+		} else {
+			this._clear(event, noPropagation);
+		}
+
+		return false;
+
+	},
+
+	cancel: function() {
+
+		if(this.dragging) {
+
+			this._mouseUp({ target: null });
+
+			if(this.options.helper === "original") {
+				this.currentItem.css(this._storedCSS).removeClass("ui-sortable-helper");
+			} else {
+				this.currentItem.show();
+			}
+
+			//Post deactivating events to containers
+			for (var i = this.containers.length - 1; i >= 0; i--){
+				this.containers[i]._trigger("deactivate", null, this._uiHash(this));
+				if(this.containers[i].containerCache.over) {
+					this.containers[i]._trigger("out", null, this._uiHash(this));
+					this.containers[i].containerCache.over = 0;
 				}
 			}
 
-			// we just moved intoaxHeignvalid" && !dropped) || (this.options.revaxHeig= "valid" && dropped) || this.options.revable.pper = this.instalement.par-: "e,ring" ? insthis.elemeter restore ment.datut: functiper = thi< ar min,
-			this.elset 2this).ent.dat--gation();
-		i-draggahis.lenectRat		$(this).css("zIndex", min + i);
-		}); origin = 0;
-					continue css("margin		}
-				-hidden;'></div>*-												nt.findcss("marginreOffsets: .element.csseInt(this&&spectRat < {
-			if ?his.origi:spectRatopped;oup).eacthis).css("zIndex", min + i);
-		});ove marg ] = far n, i1)etHess("marg];
-		thi marginTins to		);
-
-			this.elementIsWra.element.paren1(ls) {
-	ove margins toions.activeClasnce, scope, parenmarginBotnstance, scopmouseStaizable")
-			ment.styk)
-
-				//The sortabment.styion onesize", "no(!f(this.element[0].nodeN?o: false,(":data() {
-			$("bment.sty.js, jquer	this.originalElement.css({ marginLeft: 0, marginT"ui-ance.isout 1s.eleme", o._cursor);
-		}
-	}
-});
-
-$dyChil			iisibility_can isOvekEventtion(t-IndeinLeft: 0, marginTif ( th"<a {
-		function handlermentvg" ? instance[ pertiEventPre='in")x handl isOv='consi: fuhis.omouseMt: funnal arraychildPonstructor._chin( i,(!$(".u-circlediv>actioop	-	ing n."+thigetNamwmodifie thishis.handles ntPrefi</querroppa(});
-
-		//Wrap thedroppaboriginalElement.css("margin") });
-
-			// fieturns autotions.d');
-
 		}
 
-n: ".ui-resi = o.handles || (!$(".ui-resizable-handle", this.element).length ? "e,s,se" : { n: ".ui-resizable-n", e: "E jump ide: falName.match(/canvas|tede: falion on=== "all")  proportionallyResize inter=== "all"
-			this._proportiide: falsoppable");
-					parentInstance.greedyChis({ position: "statith )zoom: 1, display: "block" }));
-
-			// avoid IE jump ow or set the margin)
-			this.origi+alElement.css({ margin: this.originalElement.css("margow or});
-
-			// fix handlers offses = 	this._proportionallyResize();
-
-		}
-
-		t=== "all"es = o.handles || (!$(".ui-resizable-handle", this.element).lengtement"sitio" : { n:here?
-				ifble-n", e: ".ui-resizable-e", s: ".ui-resizable-s", w: ".ui-resizabl- see #7960
-				axizable-se", sw: ".ui-resizablehere?
-				if ("se" === handle) {
-					axis.addClass("ui-icon ui-icon-gripsmall-diagonal-se");
-				}
-
-				//Insert intE jump ntainment: k)
-
-				//The sortabntainment: ion onlse,
-		gass='ui-reappendTo(this.instance.element).data("ui-so ?,
-		animement.cundeff((i.o = target ||  proportionallyResize inter.handles[i],roppable")) {
-			$("bntainment: false,
-		ghr", o._cursor);
-		}
-	}
-});
-
-$	targetfalse,
-
-
-				if ({ effect:("mouseup."+this.widgeginalElement.css("margment =turns auto if the elpriorityors, functio
-
-			// fix handlers offseif(i	this._proportionall thi
-				// filement;
-
-			oy();
-		modifiName, this
-		});yChilgrid: falsei.ddmble-helper" : arent !options ?
-eft + o.grid[0grid: me, 			return ( typeof: { n:t(this.els)
-				ift.accepi-resow we faIn
-		fos.origilse,
-		gHeightper && this.originalElement[0].nodeName.matundefinextarea|input|select|button/icified
-					/
-
-			// fix handlers offses;
-	},this._proportionallyResize( this.handles[i],			padWrapper = /swto apply...
-oppabs)
-				i					padler Pos =					u	handlee;
-		et.parethe correct pad a execute")op: func executed lhis.vis execute0], (thi			}
-		};yChilfocus" ) (so sortable plugins lis" )ion onpeed);
-				op: function() {
-		(event)enderAxis(thiMiata(event.target, tha.ui-resizab = $(", {
-	start: fthe correct pad apreventClicsableSelection(sitivity
-		//Matching axis name
-		t that._ratePosition: uted le of mouse doesn't(ui.helper),g) {
-	,
-		minWidth: 1 (so sortable plugins liidgetFullNasName.m/ See #7960
-		zI (so sortable plugins/ See #7960
-		zI = $(".eTop = ((draggable.positionAbs || dragg.cssn === "l
-		ifdow
-				
-
-		esuleft =esul<-										0]Hide)rn true;
-d '" de the elk.top >= containment) {
-
-		cotest0;				 {
-			this._h1]tohidrn true;
-		start: null		$(this).css("zIndex", min + i);
-		});lement.css({ margin parent isn't td int
-			retop: null
-	de te element is po
-			retu_creathis.elemenop Hale='overflowt.margins.l		.mousn.abt() : axis.outerWidth();
-
-d '" tion) {
-;
-		t											/he absoluttly from drcond droppaboptions0 lisd) {
-						eft;
+		if (this.placeholder) {
+			//$(this.placeholder[0]).remove(); would have been the jQuery way - unfortunately, it unbinds ALL events from the original node!
+			if(this.placeholder[0].parentNode) {
+				this.placeholder[0].parentNode.removeChild(this.placeholder[0]);
+			}
+			if(this.options.helper !== "original" && this.helper && this.helper[0].parentNode) {
+				this.helper.remove();
 			}
 
-		}
-d '" -ame ||function();
-					that._handles.show( to apply...
-"ions ) {
-	hodCa	m[i].offset = ms.left					$(this)-1that._handles.hide();
-					}
-				});ng",
-		//Initialize the mouse interaction
-		this._mouse,
-			retuct.pro_destroy: functioif ( o.coat._handles.hide();
-					}
-				});middis.uu;
-					that._ha"m[i].offset = m(event.target,at._handles.h'>= funct			}
-
-		d) {
-						return;
-					}
-					if (!try.com/		return (me DOM posdler === "strinp	-								that.nal-se")tem, re/all|
-	st., $.ui
-			_destrooptio(o.au
-				 thisn."+thow or:: ".u
-
-		});element);
-			wct.prer = this.element;
-			this.originalElement.cin") ctivistation: wrapper o.grid[0]) * d for dis3
-			/rn that. marginToplement.css
-		var that = this,
-			esuler). selolwrap
-		maxWidth:
-		maxWidth: nullWhat -		om: veClass( "ui-st + ".ot any<get.extement[0].nodeName.matoffset.'>< funcs.element)"<trable-han funcest(i) ?is a ight ];
-nalElement.css("marg1.6.-col: { n:the correct pad a1.6.3
-			/
-					pather = /sw|n			event.unct-autounct<mentds.hide(ginal.scr)
-			.remov}
-
-			m[i].vle = +TODO: make % 7functios;
-	},				r			i+ (|| $.contains(h + 6andle >= 5flow"unction(event) {
-		var i, end'TODO: Whatonall - instgConstr;
-
-		}
-
-		t_handles[dayss("u: { n:.ui-resizabcurleft, ble-n", es.hale-handle").remove();
-		.target thisrons,
-alEl<is.op			iniPo{
-
-		var n,"),10) || 0);
+			$.extend(this, {
+				helper: null,
+				dragging: false,
+				reverting: false,
+				_noFinalSort: null
 			});
 
-		lement.css({ margin:ostInterseo later re;
-			}
-
-			if (this..css(per = thiser" : null);
-			if(!cd droppabl]; };
-
-					event.if (sortation: "absolute") {
-
-		var n,is.options.di, handle
-
-				if(thiswith Day {
-				 for http://dev.jquer -= true;
-			}7andle, evenaxis, h, top: eceil((e if (el.op, cs("left")olledft: p.function() {
-erable.add( elecrollrefreshPis.elet: iniPon(){
-					ifn obj) {>= conta> axis, hs("top"));
-
-		if:(o.contaileft += $;
-
-		IfValue = inlue )
-		parsthe pig	}
-
-erable.add( eleop;
-
-				left ent)
-				.addClasop = nu {
-			= this,
-	o.disabled) {
-						return;
-					}
-					$(this).removeClass(1emen handletohide")handleR = $(this	thi{
-			eededze = )[0];
-			deNamet.click;
-
-			this.disabled) {
-						rreturn thi	is.op, thi_mouseCapturesizabtdfunction(event) {
-		var i, handle,
- - instthe correct pad anOption( "dis")(= this,
-	 in thisd*/) {},
-		handle = $(this.handles[i])[0];
-			l.outerWidth(), heis._rs) {
-					function(ev
-			scroll 
-				of the dr(ui.helper),ment && $.contains(this.scrollParent[0], this= this,
-	 fals[r ) {
-.undeleent[0]ement.addmeFix this,
-	.originalElen(evedev.jquery.com/)
-		$.widget.exd it		this.ori insaxis && axis[1] ?]) {
-! left: curlelati = $.u	d = "), marginables
-		ththis.orig]) {
-("stop", ") ? o.aspect margiaggable-ih: el.wid() } :() };
-		tulated baseapture = true;
+			if(this.domPosition.prev) {
+				$(this.domPosition.prev).after(this.currentItem);
+			} else {
+				$(this.domPosition.parent).prepend(this.currentItem);
 			}
 		}
 
-		return !tions.disabled && captTODO: Whatvent.ghd (seeoptions;Ratio ===
-		//Aspect"cursor");
-		$("bo
-		//verflow"cursor", cursor === "].scrollLe, !!value )
- = $(".ui-alMousePositiffset()siti	start: nullturn true;
-t( el.css("position") ) ) {
-			el.celHelperRe = metho]) {
-)) {s $.dnts.le		_pRatio ===1] : "se";
-turn true;
-	},
-nt);
-		return true;
-css(= {},
-			smp = this.origi
-	_mouseDrag: functiontName + "t eleMath.max(
-his.ori,
-		animaalMou		if (o}).eqsition.left,
-		start: nullvLeft = reateWi);
-		this.focusablcursor", cursor === "\s*(.*)$/ )per, props event.pageY low"nction( has.eventNamespace =ns === absolute positiDO: What, cursor === " event.pageY osition = {is + "-resize Ratiatch(/ui-resiza el.heiger =  (typeof o.aass(" cursor === "legateE ),
-	at will bnt);
-		return true;
-	},
-ent.css("poturn true;
-igger = this._,
-			this._geX-smp.left)||0,
-			dy = (event.pageY-smp.tnt);
-		return true;
-	},
-undefshift while resltElement: "<dint ||rtualBgonal-			c cursor === "undefi(rect ance[ o			retur	((!
-		//Aspect)) {
-			is.aspectRatcss("oypeof o.a2]e reson(event) {
-
-	ins callbacf ( fn ) {				el&#39;modifieui-resizable-gs = this.geY-smp.top)||0,
-			triggs,"ovehandlers offseparent, apper);
-
-					this._p.top =),10)}
-
-		thiMousePosition = { lay ) e #5003)
-n.left !== prevLeftt.options.s even,
-
-	_mousmod )ns[ khat will be change
-		data = trigger.apply(th&#xa0;data	}
-
-		c = $g., "ropagate("start", evop)||0,
-			triggo.handles || (!$ns auto if th: { n: "MousePositint[0].tagment
-			.sizable-s", w: ".ns auto if thsor = $(".ui._aspectRatio || event.shiftKey) {
-			data = th= elem.sor === ui-resizag handler since the user can start pressing shift while resters.visible( elementp.left)||0,
-			dy = (event.pageY-smp.t + "-resize" : cur : "Left" ].join("ui-resizable-d.heighuish)) : (o.is._propagate("start", e"' href='#+ "px";
-		}
-		el.css(props);
-
-	
-
-			eight() } scroll});
-			= suppressDisabht() };;
-		}
-		elent.page;
-		}
-		el.css(props);gth) { rriables
-		this.offset = this.helper.offse el.outerHthis.each(functs.element.poeight)(),
-					iniPos = th event.pat.outerH);
-
-			this.el> 1dClass("uilement.parene)
-			) lement.ct.outerHeight(remove();
-			}/.eleme</presse to app.helper.css("not anythr = $(".ui-.offset.relater).cssable-optio		this._mousHeight() : axis.outerWidth();
-
-row-ollow handler rtualBodles) {
-					$(th+=esizing") "auto" })n ===+=size: and callriginalPgrid: false				//Proe = methodValue &&		$.ui.ddm elemen] || top - this.offse),10)  and, {
-	ry.comtion: "slow",
-	wrapper.css("to[],
-			type = even	left: wrapper.css("left")
-			}).insertAfs being reapper.remove();
-		}
-
-		this.or{alue : funMin: this.eMax.css("ls.instancebind( eeft: 0,f(this.oeft: 0unctioenles[draggadefined ? n|| this.element;
-
-			efined ? n this.e_setOptions._proportionallyResize();nce.ofnd set thd" );
-
-		// cl (so sortable plugins lid" );
-
-		// clnull
-		} hide tt() : axis.outerWidth();
-
-aN :
-');
-	}leSelecH hide the relativethist.prototype[et parfied
-			.max( cined ? nzIndex"),10)emove				ronstructor._chi		this.offset = : { n:viour) {
-	[ement.css= this.optio
-			$( elem ).tright);
-			Right"), marginBandlert + "px";
-		}
-	.hellement.chis._mou.helperis).daiginalSizcss("marginLeft"), manWidth : 0,
-			maxW(forceAspectRati", eveunction(event) {
-		vaxWidth.top = this.position.this.pper);
-
-					thndarizable-ha		if return -autoeturn <
-
-		._aspe Bail if dragg			i {
-			mi||._aspec>=ber(o.minWidapture(	// po) {
-h: isNue want to<s,
-	 this.originalElt = droppa(forceAspectRat 0 ) {
-() < t: funffsetHet);
-		ht() };(),10) |idth : resize" : ;
-
-					osition.eture;
-	},
-
-eStart: , pMinHeight, p_getC[eturn= this.ery.ui.ui.hasScrollseInt(forceAspectRat/nHeighthis.opcontainmeabled" );
-
-		// clght: 0,riginalP(forceAspec_updateVirtualBo() {
-				this: (t);
-
-		thile reth + "px";							lLeft" :
-		this.bin
+		return this;
 
 	},
 
-	_uTimer =										/table-item"sition === ".elemen
-	_updateVirtualBoundariaspectRatioo;
-			pMaatio) {
-		var pMinWidth, pMaremocurtop,.origina,
-			o = this.o + droppable.pco.left,
-				r) {
-			this._setOption( ht() absoluassName) {
-					axiey;
+	serialize: function(o) {
 
-		fo").split(": : { wid.width);dd("draggable", "stack", {
-	staesiz	if (this._+ d || y2 <  && (/(statiout of	i.snapf(bs) {eStartecy") !.*etNah;
+		var items = this._getItemsAsjQuery(o && o.connected),
+			str = [];
+		o = o || {};
+
+		$(items).each(function() {
+			var res = ($(o.item || this).attr(o.attribute || "id") || "").match(o.expression || (/(.+)[\-=_](.+)/));
+			if (res) {
+				str.push((o.key || res[1]+"[]")+"="+(o.key && o.expression ? res[1] : res[2]));
 			}
-			ieft
-				i
-				inst.sned;
-css(].elns.snap..left = data.lft;
-		}
-		ifdata) {
-	r(data.top)) {
-	on.top = data. {
-			this.size.heierProport	if ("tops.visremostance
-	 (isN:positis.optioght() ons.heig();
-		if (is {
-		.asppr[0].n& !o.an, top: elax;
-		thi	_updateRatio: funct1			if(perProporosition.is.originar cpos = this.per(o.minWidth) ? o.mift")h = data.wi ) {
-
-		vaer(o.maxWif (isNuin(& !o.anith) ? o.maxWidth : Infft")& !o.anry.com/tinHeight) {
-		(o.minHeight) ? o.minHeight : 0,
- pMax.top = this.position./ clht) ? o.maxHeight : Infinityy
-		};;positi<=			data.);
-			rn true;
-		= (data.width / thisrojected" size foroolean"mension based
-	}
-});
-
-;
-			}
-		 and other dimension
-			pMinWidth = b.minHeig(csize.hpMinHeight = b.minWida === "nw") {
-			datao;
-			pMaxWMaxWidth < b.ive to the element)a === "nw") {
-		 "fixed" ? -{
-				b.dth / thBoundaries = b;
-	},
-
-able.retName + ".preht * this.aspectRatio;
-			pMamaxWidth / this.aspectRatio;
-
-			if(pMinWidth > b.minWidth)for eachemovon.left)) || nulnot anyti.scroffset.cli name _ry.com("top"), 10) + (that.posi isOver variable and set it once, so our move-cloning igger: function(type, evece
-				if(!this.	i.snapion to later rset.click.left;Yent) || drurrent.helper.r+ this.origim(n[i]);, appending it to is.position.top draggable, evens("top"), left: el10) || 0);
-			});
-
-		if (!group.,
-			, appending iDest(a), ch = /nw|ne|n/	this.offsee] || [], function() {
-
-			icss("zIndex", min + i);
 		});
-		this.cssndex", dyChild || !this.visible)ouch":
-			return (
-				(y1 >= t && y1 <= b) ||	// Top edge touching
-				(y2 >= t && y2 <= b) ||	// Bottom edge touching
-				(y1 < t &&fw = /sw|nw|w/.tes||riginal
-			dh =) ) {
-					evnd droppable parents with
 
-		this.h	}
-
-		// - disations ||nya.hecall by.uiry );
-
-(roppables
-*/
-$[],
-			type = event ?ing",
-		aspt.css("left")
-				})
-			);
-
-			//Overwrite the original this.element
-			this.element = this.eelement)))  "number") ;
-		}this.originalElement.clse,
-		haargins.lr(o.maxWidtelement)this.original(o.maxWctivate.call( = inst.Necausosition.l	scope:ables to refBecause the rsor", {
-	start: functionas metholHelperRemoval = false;method for dishis.instancegreedy) {
-			
-
-		for ment && $.contains(this.scrollParent[0], thr|a|f)ment, which means tdrag event of the s.findrent[0]))  - o.maxHeiDadd("draggabl0].tagNamereturn ( typeo"ui-droppat[2]) ? left :rsor", {
-	start: functionmg/i)) {
-
-			//Createcanvas|te[2]) ? left :g) {
-	manager.dck.left >  || 0 ) -[1, 1f
-		he DOM doss("borderLdisabled && t")]; = [prel.ent[0]k.left oesn't intersderDif) {
-				ndow = $(his.hov;
-		}- eht;
-		nolemen trupon= thiute|feainment[pped) || (thiigger: function(tmse asquery.ui.effect-traif(this.options.disathe correct pad f[ j ]ze.h[] },
-	prick.top = obj.toptio
-
-	_on: functiif (hffsetset.sceturn"ui-droppabl_renderPrs
-					this;
+		if(!str.length && o.key) {
+			str.push(o.key + "=");
 		}
-		if (ement[0] && 3optih = o.maxWidth;
-		}
-		if (ismaxh) {
-			data.heigh32 and d this.ins;
-				}
-			}
 
-			crolled ={
-		return thiNamespo = tement.height() gable")) {
-			eerDif[0] - this.borderDif[2]) || 0,&& this.visible && $.u1orderDier(eveel.css("paddingBoent, weturn{
-		lass( ales = 
-				"r each ions, the positf optioargin)
-			thiigger: function(type, evecu// clss({
-es: functiocss("borderRightWidth"), t[2]) ? left : ((left - t;
-		}
-		if (imaxWidth;
-		}
-		if (ismaxh) {
-({
-				welementt,
-			cw is.cont<ginalis.positit.css("marginTop"), marginRi disput: functset.left +erAxis( dra{
+		return str.join("&");
 
-			pr = true;
-
-		// bugfix fdrenIntersection = false;
-
-		// Bafilter(fuaggables and d						/ne|nw|n/.lse,
-		h
-			$.ui.ddmanaset.scrollSpeed;
-		.offs				dari?ager is 				/ne!data.width && !data.height && h && achecontainmees[dragga!data.left && data.top) {
-			data.top = null;
-		} else if (!data.width && !data.height && !datm{
-			minW		draggabmh: isNumb		draggab	this._vBoundaries = b;
 	},
 
-	_updatminHeight func
-			}
+	toArray: function(o) {
 
-.originalle
-				seCache: function(.isover ? "isout".offset = this.helper.offse	return { eft
-				i.originalt.snapElement.left + dx,ht: cs.height - dy 1;
-		},
-		s: ery.uight - dy };	}
-		if (isNumber(// First, {
-			miosit.options.helpeh[ 3 ] );
-		} dy) {
-			reSize.height + dy };
-		},
-		sh: isNution(event, dx, dy) {
-			th = argins.l(!!data.lens.toleturn true;
- create an encp,
-			prportio(!ion() {
-		},
-		sw: functio the requestedy) {
-			return $.			// We w
-				inst.options.s creathis.optiturn $.ex.w.apply(this, [event, dx,  the rit doesn't intersPPositi{
+		var items = this._getItemsAsjQuery(o && o.connected),
+			ret = [];
 
-		//( handasOptistomize the doy();
-		///eft
-}
+		o = o || {};
 
-};
+		items.each(function() { ret.push($(o.item || this).attr(o.attribute || "id") || ""); });
+		return ret;
 
-/*
-	Thsolute" ? 1 ).options.scope === scope;	scrolled = $(docthe sortable and usiheck, elemensName.matcrolled = $(document).scrollLeft($(doct).scrollLeft() - o.scrollSpeedp = dase if($(window).width() - (event.pageX - $(document).scroft()) s("top"), 1{edCheck, element,llSensitivity) {
-			{
-				ts = Ma":data(u", this.element)
-		 that._th.abs(t -);
 	},
 
-	plugins: {},
+	/* Be careful with the following core functions */
+	_intersectsWith: function(item) {
 
-	ui:ite the $.noop,
-	_getCreunction() {
-			if (!that.resizing)		}
+		var x1 = this.positionAbs.left,
+			x2 = x1 + this.helperProportions.width,
+			y1 = this.positionAbs.top,
+			y2 = y1 + this.helperProportions.height,
+			l = item.left,
+			r = l + item.width,
+			t = item.top,
+			b = t + item.height,
+			dyClick = this.offset.click.top,
+			dxClick = this.offset.click.left,
+			isOverElementHeight = ( this.options.axis === "x" ) || ( ( y1 + dyClick ) > t && ( y1 + dyClick ) < b ),
+			isOverElementWidth = ( this.options.axis === "y" ) || ( ( x1 + dxClick ) > l && ( x1 + dxClick ) < r ),
+			isOverElement = isOverElementHeight && isOverElementWidth;
 
-			that
-			element: this.element,
-		"defaultEffect
-	optios.element;
+		if ( this.options.tolerance === "pointer" ||
+			this.options.forcePointerForContainers ||
+			(this.options.tolerance !== "pointer" && this.helperProportions[this.floating ? "width" : "height"] > item[this.floating ? "width" : "height"])
+		) {
+			return isOverElement;
+		} else {
+
+			return (l < x1 + (this.helperProportions.width / 2) && // Right Half
+				x2 - (this.helperProportions.width / 2) < r && // Left Half
+				t < y1 + (this.helperProportions.height / 2) && // Bottom Half
+				y2 - (this.helperProportions.height / 2) < b ); // Top Half
+
 		}
-ginalpositionAbs =key, value) {
+	},
 
-		if(rn that._			}
+	_intersectsWithPointer: function(item) {
 
-		helperption. It renortable-item"e previous sttion: "absolute"ion
-		thisntersect(draggadrag event of the plugin.add("resizter restore it
-					this as the prefalse,
-		co				(!this.optproto: llTop()) <t.oproppable");
-					parentInstance.greedyChi			data.height = o.t._proportionallyResizeElements,
-			ista = (c === "isover");
+		var isOverElementHeight = (this.options.axis === "x") || isOverAxis(this.positionAbs.top + this.offset.click.top, item.top, item.height),
+			isOverElementWidth = (this.options.axis === "y") || isOverAxis(this.positionAbs.left + this.offset.click.left, item.left, item.width),
+			isOverElement = isOverElementHeight && isOverElementWidth,
+			verticalDirection = this._getDragVerticalDirection(),
+			horizontalDirection = this._getDragHorizontalDirection();
+
+		if (!isOverElement) {
+			return false;
+		}
+
+		return this.floating ?
+			( ((horizontalDirection && horizontalDirection === "right") || verticalDirection === "down") ? 2 : 1 )
+			: ( verticalDirection && (verticalDirection === "down" ? 2 : 1) );
+
+	},
+
+	_intersectsWithSides: function(item) {
+
+		var isOverBottomHalf = isOverAxis(this.positionAbs.top + this.offset.click.top, item.top + (item.height/2), item.height),
+			isOverRightHalf = isOverAxis(this.positionAbs.left + this.offset.click.left, item.left + (item.width/2), item.width),
+			verticalDirection = this._getDragVerticalDirection(),
+			horizontalDirection = this._getDragHorizontalDirection();
+
+		if (this.floating && horizontalDirection) {
+			return ((horizontalDirection === "right" && isOverRightHalf) || (horizontalDirection === "left" && !isOverRightHalf));
+		} else {
+			return verticalDirection && ((verticalDirection === "down" && isOverBottomHalf) || (verticalDirection === "up" && !isOverBottomHalf));
+		}
+
+	},
+
+	_getDragVerticalDirection: function() {
+		var delta = this.positionAbs.top - this.lastPositionAbs.top;
+		return delta !== 0 && (delta > 0 ? "down" : "up");
+	},
+
+	_getDragHorizontalDirection: function() {
+		var delta = this.positionAbs.left - this.lastPositionAbs.left;
+		return delta !== 0 && (delta > 0 ? "right" : "left");
+	},
+
+	refresh: function(event) {
+		this._refreshItems(event);
+		this.refreshPositions();
+		return this;
+	},
+
+	_connectWith: function() {
+		var options = this.options;
+		return options.connectWith.constructor === String ? [options.connectWith] : options.connectWith;
+	},
+
+	_getItemsAsjQuery: function(connected) {
+
+		var i, j, cur, inst,
+			items = [],
+			queries = [],
+			connectWith = this._connectWith();
+
+		if(connectWith && connected) {
+			for (i = connectWith.length - 1; i >= 0; i--){
+				cur = $(connectWith[i]);
+				for ( j = cur.length - 1; j >= 0; j--){
+					inst = $.data(cur[j], this.widgetFullName);
+					if(inst && inst !== this && !inst.options.disabled) {
+						queries.push([$.isFunction(inst.options.items) ? inst.options.items.call(inst.element) : $(inst.options.items, inst.element).not(".ui-sortable-helper").not(".ui-sortable-placeholder"), inst]);
+					}
 				}
 			}
-
-			// we just moved into a gui.effect-tr) {
-			$("bable.position.absolute).left +"cursor", o._cursor);
 		}
-	}
-});
 
-$.ui;
-				i/*
- * BptioMath.round((lName )		$(o.connce = th. (th}
-		 virag(ageX + snction	eff(i.scrly octurn} else functilif		$.uhandle =rototyis.wi (thy: $.nothod '" + t") {d +	[3]) ? top : ((to| $("<ns.heisover") les[o		}
+		queries.push([$.isFunction(this.options.items) ? this.options.items.call(this.element, null, { options: this.options, item: this.currentItem }) : $(this.options.items, this.element).not(".ui-sortable-helper").not(".ui-sortable-placeholder"), this]);
 
-		ir wt) {		retur,
+		for (i = queries.length - 1; i >= 0; i--){
+			queries[i][0].each(function() {
+				items.push(this);
+			});
+		}
 
-	_cturn n $.error*/);
-				if 	effectNamnt) {
-) ) {	this.binallows = functins
-		this.offs	autoHins
-		this.offs,
-		co		this.instance.offset. td a		in-draggab	thissoffsethent.lef
-		r		}) :os (ofins.top;
+		return $(items);
+
+	},
+
+	_removeCurrentsFromItems: function() {
+
+		var list = this.currentItem.find(":data(" + this.widgetName + "-item)");
+
+		this.items = $.grep(this.items, function (item) {
+			for (var j=0; j < list.length; j++) {
+				if(list[j] === item.item[0]) {
+					return false;
 				}
-	, 10));
-//The element's absolu.css((event, dx,!== unerable: ght, ce.oleft + o.grid[0='ove left: - x2) <= Easing,
-				step: functit.css("margin"){
+			}
+			return true;
+		});
 
-					var d_trigger(= {
-						width: parseInt(that.element wra("width"), 10),
-						height: parseInt(that.element. wra"height"), 10),
-	"outeration: o.animateDuration,
-					easing: o.a.containsoffset.scroll) fake the start of dra- that.origlementIsWr			durrototy(			( 
-		i propagatince.plac, 10),
-						heithis.inst		this.instance.offset.cl ? ((le>= c				step: function() {
+	},
 
-					var d						hei);
+	_refreshItems: function(event) {
 
-		//Set a conta			}
-		);
-	}
-ata = {
-						width: parseInt(that.element.css("width"), 10),
-	
+		this.items = [];
+		this.containers = [this];
 
-});
+		var i, j, cur, inst, targetData, _queries, item, queriesLength,
+			items = this.items,
+			queries = [[$.isFunction(this.options.items) ? this.options.items.call(this.element[0], event, { item: this.currentItem }) : $(this.options.items, this.element), this]],
+			connectWith = this._connectWith();
 
-$.ui.plugin.addat.element.css("height"), 10[ 3 ] );
-		top: parseInt(that.element.css("top"), 10),
-						left: par width, height,
-			that = $(this)
-					};
+		if(connectWith && this.ready) { //Shouldn't be run the first time through due to massive slow-down
+			for (i = connectWith.length - 1; i >= 0; i--){
+				cur = $(connectWith[i]);
+				for (j = cur.length - 1; j >= 0; j--){
+					inst = $.data(cur[j], this.widgetFullName);
+					if(inst && inst !== this && !inst.options.disabled) {
+						queries.push([$.isFunction(inst.options.items) ? inst.options.items.call(inst.element[0], event, { item: this.currentItem }) : $(inst.options.items, inst.element), inst]);
+						this.containers.push(inst);
+					}
+				}
+			}
+		}
 
-					ifons.activeC : han/*gable-draggablsortadgetNas, wids!n.top - that.	$( event.currcroll p !!iontainamespace;
-tainerElement;eturn ( $.u+ insayMeement = $	data.ementions.heSpeed);
-				} Over =ions.helthat.contaiction() {ight */ ?viour) el.parInvok intersect{
-			thiccordioality		if this._mouturn $.pable-disa{
-			is.hsible to= falplit( mod +	nt ="ui-sta		});();
-			thint). !== "y")rrentTarget ).ut: f0; i-r.appenhat.parentData = {
-			eleentOffse z-inde	accept*/
-$.fn + border)
-r #2317
-			liry.ui.).siz/* Verally		m turn  event);
-		waiginalwser "intions$.fn[6t.offs	$.widget(		if ( this.lcus" );
-			},
-			$.ui./ Bottom Hntersected before,
-		th, height: data.h// Bottozi) {
-		us, type, eve{
-			if ( nodes: RelativeWith(this.instancnment[ 3 ] + co.toOffset = els || ls ||um(elemAelay: tw), heights ) )fset =  ) {
-	l.wid;
-				ins.he; });
+		for (i = queries.length - 1; i >= 0; i--) {
+			targetData = queries[i][1];
+			_queries = queries[i][0];
 
-			$stan
-			left: po.le inst.offset.click;
-			ement.ofue; }
-});
+			for (j=0, queriesLength = _queries.length; j < queriesLength; j++) {
+				item = $(_queries[j]);
 
-})(je.instance.elnt) {
-		/um(e, padf ( Aron(evA	} e}
+				item.data(this.widgetName + "-item", targetData); // Data for target checking (mouse manager)
 
-		// TODslice. = fger && !ththis;;
+				items.push({
+					item: item,
+					instance: targetData,
+					width: 0, height: 0,
+					left: 0, top: 0
+				});
+			}
+		}
 
-			= "map" the eleml(this, evenle._t;
-			height fake the sevent,;
-			height derDif[ight : ch);
+	},
 
-			th}
+	refreshPositions: function(fast) {
 
+		//This has to be redone because due to the item being moved out/into the offsetParent, the offsetParent's position will change
+		if(this.offsetParent && this.helper) {
+			this.offset.parent = this._getParentOffset();
+		}
 
+		var i, item, t, p;
 
+		for (i = this.items.length - 1; i >= 0; i--){
+			item = this.items[i];
 
+			//We ignore calculating positions of all connected containers when we're not over them
+			if(item.instance !== this.currentContainer && this.currentContainer && item.item[0] !== this.currentItem[0]) {
+				continue;
+			}
 
-on stepepted
-			if(m[i].op["_ize.: ch);
+			t = this.options.toleranceElement ? $(this.options.toleranceElement, item.item) : item.item;
 
-s[ j ],ed
-		if]n tru		NUMPtions.charAt( if ($[0]] falcati());
-			wyle = {nstanc;
-			height  Clone .haser && !this.options.dropBehaviourer && !tht = d	dropped = $.ui.d: co.left, top: co.top, width: width, height: height
+			if (!fast) {
+				item.width = t.outerWidth();
+				item.height = t.outerHeight();
+			}
+
+			p = t.offset();
+			item.left = p.left;
+			item.top = p.top;
+		}
+
+		if(this.options.custom && this.options.custom.refreshContainers) {
+			this.options.custom.refreshContainers.call(this);
+		} else {
+			for (i = this.containers.length - 1; i >= 0; i--){
+				p = this.containers[i].element.offset();
+				this.containers[i].containerCache.left = p.left;
+				this.containers[i].containerCache.top = p.top;
+				this.containers[i].containerCache.width	= this.containers[i].element.outerWidth();
+				this.containers[i].containerCache.height = this.containers[i].element.outerHeight();
+			}
+		}
+
+		return this;
+	},
+
+	_createPlaceholder: function(that) {
+		that = that || this;
+		var className,
+			o = that.options;
+
+		if(!o.placeholder || o.placeholder.constructor === String) {
+			className = o.placeholder;
+			o.placeholder = {
+				element: function() {
+
+					var nodeName = that.currentItem[0].nodeName.toLowerCase(),
+						element = $( "<" + nodeName + ">", that.document[0] )
+							.addClass(className || that.currentItem[0].className+" ui-sortable-placeholder")
+							.removeClass("ui-sortable-helper");
+
+					if ( nodeName === "tr" ) {
+						that.currentItem.children().each(function() {
+							$( "<td>&#160;</td>", that.document[0] )
+								.attr( "colspan", $( this ).attr( "colspan" ) || 1 )
+								.appendTo( element );
+						});
+					} else if ( nodeName === "img" ) {
+						element.attr( "src", that.currentItem.attr( "src" ) );
+					}
+
+					if ( !className ) {
+						element.css( "visibility", "hidden" );
+					}
+
+					return element;
+				},
+				update: function(container, p) {
+
+					// 1. If a className is set as 'placeholder option, we don't force sizes - the class is responsible for that
+					// 2. The option 'forcePlaceholderSize can be enabled to force it even if a class name is specified
+					if(className && !o.forcePlaceholderSize) {
+						return;
+					}
+
+					//If the element doesn't have a actual height by itself (without styles coming from a stylesheet), it receives the inline height from the dragged item
+					if(!p.height()) { p.height(that.currentItem.innerHeight() - parseInt(that.currentItem.css("paddingTop")||0, 10) - parseInt(that.currentItem.css("paddingBottom")||0, 10)); }
+					if(!p.width()) { p.width(that.currentItem.innerWidth() - parseInt(that.currentItem.css("paddingLeft")||0, 10) - parseInt(that.currentItem.css("paddingRight")||0, 10)); }
+				}
 			};
 		}
+
+		//Create the placeholder
+		that.placeholder = $(o.placeholder.element.call(that.element, that.currentItem));
+
+		//Append it after the actual current item
+		that.currentItem.after(that.placeholder);
+
+		//Update the size of the placeholder (TODO: Logic to fuzzy, see line 316/317)
+		o.placeholder.update(that, that.placeholder);
+
 	},
 
-	resize: function( event ) {
-		var wosetui.effect-tr
-			proxiedPrototypeh : cw );
-			height = ($.ui.;
-		tft, top: co.top, width: width, height: height
-				};
-		}
-	},
+	_contactContainers: function(event) {
+		var i, j, dist, itemWithLeastDistance, posProperty, sizeProperty, base, cur, nearBottom, floating,
+			innermostContainer = null,
+			innermostIndex = null;
 
-	resize: fuion( event ) {
-		vart._proc === "isout") 	event = $.Even = thsible to
-_getH : htructft, right, botion;
-		get.nodeNoptionction( instance[idth + (that.inerSize = { he this )e.instance.elto re this.data("ui-dui.intere.instance.el{
-				$			bhis ).r whe)( z-ind is ignored by the browser
-				// Thit.toR	retedeturn $.y chilefined le( elemenUp(evele( elemenmaxmouseDp : 0)) {
-			tton.p : 0)) {
-	inthat.size.height inthat.size.heighion(/* s co: 0;"><uerylow-0;
-		}
+		// get innermost container that intersects with item
+		for (i = this.containers.length - 1; i >= 0; i--) {
 
-		if (cp.top 			that.size.height = that.size.height + (that._helper ? (that.positiof ( runiqueId.test( } )._initge( name, constructor );
-};
-
-$.widgestructorco.l; }
-: ths._mOpenle( elemen< (that._[eft >nd boOnE(funcle( elemenroy();
-					nd boarenteate: null
-ment ) &+ "Wglow-._helper ? 		});		dragga co.top is._marent			that.siz		dragga = that.siat.offset + (that._15		if( (that.poszeDiff.woda else {
-	op event of{
-			scm co.s;
-
-all meunbioffset.top - cojqueh(funct - thisl
-		}
-},
-
-it
-			this.ght;
-		ee #5?
-		b
-					alw(el.
-var uufect-.lef.js, jquery.taint.offset();
-top = con nested elemreturneleme
-			uiSortablostInterse).get(0);
-	t +" i ][ 1 ].apply( in					$is.eleositthis)).get(0);
-	&& t <= y1 && y2  - ct.positiole( elemen = tnction focuuseMov		draggaion(/* 300= inif(thinsteadhandlers, options.disat.parentset + that+ "Wth = that.pareSior ntData.width - wve_cthat.sizrtabl{
-				that;
-		{
-				thatquery..size.width / th woset;
-			if (atio;
-		) {
-				
-	for ( ; inputIndex < inputLength; ( el ).cCat._hIsWrap2 ] + coction( value ) .tion(sPos;
-		ft >= conthat.parentData.height - ion(/n;
-			rethat.size.parentData.height - size.heig: sp.lefe.height * that.aspectRatio;
-		top: funll
-		}.height * that.aspectRatio;
-	position tmake sure( el ).cPvent of th{
-	varototyhe options hash updatinance._mdn() ntainerPosition,
-			ction" );
-
-		hat.cunction( valuelue )o = that.container ?
-			elrototype to remain aN :
-	 make sureine all oelper.outerW			h = helper.mostly)
-
-			w = helpeginal",
-		ideNameWs, jent[0] ||itializing for si.ui.wis, element );
-		.sizeDifurn function( 	thatstanc( typeof haneturn ( typeof	$(this)2013 jQueent
-		istance iginal",
-		ideName ?
-		be, true)t._helper &&xy );
-			}t[0] ||ion( zIndex ) {
-		i= Math.aing;
-	 lefs).css({ );
-
-// pluginsakestent$.expagation();
-		extend stringst.positio left: ho
-$.ui.plugp.left - co.left,R.positio(
-				pageXction();.lefart, since [ inputIndex ] ) {
-			valueery.ui.selectable.js, r tha "img[usemap=#;
-
-	ject used to t.left = taccordion.js, jquer	ho = herototype.option, heightunction( 	ho = hex wh!isMetho) !== is.elisMethoSortable };
-		},
-;
-	})( $.f	ho = hel			.disableSelection			event. fullN	ho = hegeY at.pa) {
-q(erEl// allow instantiation without in) || yResizeEontainerOffset,
-			hat.containerOffset,
-ginal",
-		i").lengs.folper) { initializing for simple iUniqueI		// Copght: parseInt(thaho.left - cop.left - co.left, width: w					ight) {
-			that.s-blind.jet w",
-	g(even		if ith e: fusplit( "." beco[ i re= fals(?:r|a|.g(evenimate && (/r
-		}
-
-								or ) {
-s widgea,button,s			o = that.op			w = helper, size, border, marge old constructs).data("ui-resizablrgin ) + v classontainerOffset,
-ion,
-		tion" );
-
-		 topinalPosition,
-			s = Mase {
-			D,
-			t.cls).dt(evement ) {
-		ow ors;
-	tself (#86.effec0 ) {
-ex
-				i.snapEat.pelative.ction( value ) ) 
+			// never consider a container that's located within the item itself
+			if($.contains(this.currentItem[0], this.containers[i].element[0])) {
+				continue;
 			}
 
-	xt.sizeDier),
-			ho = hele
-					this.instinalPosition,
-			delta =ui.tabs.left) || 0
-			},
+			if(this._intersectsWith(this.containers[i].containerCache)) {
 
-			HOME: 36,
-		LEFT: 37,
-		NUMPAD_ADD: 107,
-		}
+				// if we've already found a container and it's more "inner" than this, then continue
+				if(innermostContainer && $.contains(this.containers[i].element[0], innermostContainer.element[0])) {
+					continue;
+				}
 
-		his).dat, sw: "ere noop,
-	used fresize"), 
-ze.width focusable( element, !s, jquery.ui.effeT */
-(function	var thamostly)
-	m, the lxis = th; //ReLicensed MsPosition
-			return this.css(n () {
-		var that = $(this && !o.alsoResize.parentNode		$.widget( ct"))		//StorelperRethis.)nment ? e = {},
-		names
-	dii = this	};
+				innermostContainer = this.containers[i];
+				innermostIndex = i;
 
-	}(el.css("urn fals	parts,
-	instin WebKs._send.js, element[w= (pv
-
-		eft, les[o.uery; Licx( vai {
-	
-
-			10) + (that, prototype ) Evenst, eventwebkiortig/ = t_bug.cgi?id=47182alue,  existingConstruc.+ (thado(functiTE: 46,
-		DreatePseudo this h });
-		}
-
-		js, jquery.ui.rize)	easing: o.animatejquery "height"]p+that.\d+$/;
-
-// $.effect-shvar th	LEFT: 37,
-		NUMPAD_ADD: 107,	var thhis).dateFloToTve_c ] ) {
-			value = inn andvar thashes to b
-
-		var that = $(thithis.h, silt.length ? $(doov+ "]" )[0];
-ize: funcon.lAll({
-
-var uuiat.hsertBt - op.left)
-		}
-
-		ifnapElements" ]).at.ori Rati	that.ghost EventPrefix: "( i, name");
-	}
-});
-
-$.options,
-	at.orhis).datthat.saccordion.js, jquerquery.ui.effectery.ui.sel	var thaototype, {
-		// T-resizable")upport for wid_.alsoTabbart: functme + a colon as thn () {
-		var that -03
-* http://lta[pr nested elize(exp, c); });
-		}else{
-		ginal",
-		it.toate && (/stajquery.ui make sure deNameize.parentNata("ui-resizable"bling is widget idraggable ;
-		}
-	},
-
-	stop: function ()  = t$(this).removeData("resihost.appendTo(that.h("resizable-alckEvent);
-
-$.ui. });
-		}
-m, the lilta[click = inble");
-		if (ttype = new base();
-Offsethis.of, 10) Namespcontiropp// 1.retu
-	_aho = hein).eacment ) {
-		el event.[s._m.also]{
-
-	re2. appendTonction() {
-		var thaarent.le.droppable// 3			o = that.options,
-			cs = t					//The = tha4.e !== ffset ] = $.wi// 5		a = nstanceth) ||l.parenhasjquery ) :
-						// Don't "("ui-resiza	scrolled  !r" ? [o.e = {},
-		namesr" ? [o.grid, o.grid] : o.grid:tppendTo the elemen[0]||1),
-			gridY = (grid[1]||1),
-			ox = Ma
-		}
-
-		xy );
-			}d((cs.width - os.width) / gridX) * gridX,
-			oy = Math.round((cs.height - os.he !o.animable ip]||0);
-	dth - os.width) / gridX) * gridX,
-			oy = Math.round((cs.height - os.heon.left))),
-			gr top: pnment ? ((tBTRACT: epjquerc && c.length ? c : el.pddmanager= elejquermoved out of});
-		}else{
-	 || 0, ze(exp, c); });
-		}else{
-) {
-
-	isn", function(t - os.heaccep==.minHeight > nectRatio $ falt = i;
-		}
-	},
-
-	stot.sna
-		if (that.ghosthe list oinWidth) "");
-
-		that.ghost.appendTo(that.helpe&& !(" ?
-				this.each(functiot = o.minHe, "leed elementsnts
-Class("ui-ridY;
-IEturn8
-						}
-data("ui {
-		re.alsoR
-		istance
-		if (isMaxHeight) {
-ridY;
-	, jqu] : [ 
-
-$.w}
-
-		ment&& !o.alpareht = o.minH parseInt(elper && !o.anhat = $(this).data("ui
-		}
-
-		i functdler ]urn function( e.alsoResizProxy() {
-			return ( typeof han[handle] = ".ufronter = || 0;
-		}h ) {
-			rte: null
-	uctor tthisreturn !!$.eight) {
-"no suc:
-							 eft,ns.heielay					if ( || 0;ft - ox	ret) {
-
-	ta(  eve )._in;
-		return , height: h });.each(funuctor, exthis._cn;
-		}
-	},
-
-	stop:dragg[ effecc && c.length ? c : el.p		o = that.options,
-hat.offset.to"rela
-		if isitionAb?
-		et.td
-			a tainment = thiportion	}
-		if  i ] ] );
+			} else {
+				// container doesn't intersect. trigger "out" event if necessary
+				if(this.containers[i].containerCache.over) {
+					this.containers[i]._trigger("out", event, this._uiHash(this));
+					this.containers[i].containerCache.over = 0;
+				}
 			}
-		},
-		callSCAPhe user wanrt: jQuery <1.8
-if ( !$( "<a>= {
-			oseCAPE: 27,
-		ta( elem, match[ 3ight) {
-data("uidth ortable{
-			hanceag han element might have insta[ i ].push(TAB!!$.data( elem, match[ 3 ] )the sopendTocs.height - os.hed((cs.width - os.w}
 
-		vaNamespehavull
-	},op]||0);
-		tParen}
-
-		vae.jquat = this;
-
-		this.eleng",
-ove the list ement mi) {
-			$cusableaspect// cache selectee 			newWidth = newoption" ).outhif) {
-Element.csment.nment ?index: n: "1.10.3uery <1.8
-if ( !$( "<act.filter( s	// cache selectee ment.dren based on filter
-		this.refresh = function) {
-			selectees = $(thas maions.filter, that.element[0]);
-			selectees.add (i = 0; i{
-			if (ft - ox;
 		}
+
+		// if no intersecting containers found, return
+		if(!innermostContainer) {
+			return;
+		}
+
+		// move the item into the container if it's not there already
+		if(this.containers.length === 1) {
+			if (!this.containers[innermostIndex].containerCache.over) {
+				this.containers[innermostIndex]._trigger("over", event, this._uiHash(this));
+				this.containers[innermostIndex].containerCache.over = 1;
+			}
+		} else {
+
+			//When entering a new container, we will find the item with the least distance and append our item near it
+			dist = 10000;
+			itemWithLeastDistance = null;
+			floating = innermostContainer.floating || isFloating(this.currentItem);
+			posProperty = floating ? "left" : "top";
+			sizeProperty = floating ? "width" : "height";
+			base = this.positionAbs[posProperty] + this.offset.click[posProperty];
+			for (j = this.items.length - 1; j >= 0; j--) {
+				if(!$.contains(this.containers[innermostIndex].element[0], this.items[j].item[0])) {
+					continue;
+				}
+				if(this.items[j].item[0] === this.currentItem[0]) {
+					continue;
+				}
+				if (floating && !isOverAxis(this.positionAbs.top + this.offset.click.top, this.items[j].top, this.items[j].height)) {
+					continue;
+				}
+				cur = this.items[j].item.offset()[posProperty];
+				nearBottom = false;
+				if(Math.abs(cur - base) > Math.abs(cur + this.items[j][sizeProperty] - base)){
+					nearBottom = true;
+					cur += this.items[j][sizeProperty];
+				}
+
+				if(Math.abs(cur - base) < dist) {
+					dist = Math.abs(cur - base); itemWithLeastDistance = this.items[j];
+					this.direction = nearBottom ? "up": "down";
+				}
+			}
+
+			//Check if dropOnEmpty is enabled
+			if(!itemWithLeastDistance && !this.options.dropOnEmpty) {
+				return;
+			}
+
+			if(this.currentContainer === this.containers[innermostIndex]) {
+				return;
+			}
+
+			itemWithLeastDistance ? this._rearrange(event, itemWithLeastDistance, null, true) : this._rearrange(event, null, this.containers[innermostIndex].element, true);
+			this._trigger("change", event, this._uiHash());
+			this.containers[innermostIndex]._trigger("change", event, this._uiHash(this));
+			this.currentContainer = this.containers[innermostIndex];
+
+			//Update the placeholder
+			this.options.placeholder.update(this.currentContainer, this.placeholder);
+
+			this.containers[innermostIndex]._trigger("over", event, this._uiHash(this));
+			this.containers[innermostIndex].containerCache.over = 1;
+		}
+
+
+	},
+
+	_createHelper: function(event) {
+
+		var o = this.options,
+			helper = $.isFunction(o.helper) ? $(o.helper.apply(this.element[0], [event, this.currentItem])) : (o.helper === "clone" ? this.currentItem.clone() : this.currentItem);
+
+		//Add the helper to the DOM if that didn't happen already
+		if(!helper.parents("body").length) {
+			$(o.appendTo !== "parent" ? o.appendTo : this.currentItem[0].parentNode)[0].appendChild(helper[0]);
+		}
+
+		if(helper[0] === this.currentItem[0]) {
+			this._storedCSS = { width: this.currentItem[0].style.width, height: this.currentItem[0].style.height, position: this.currentItem.css("position"), top: this.currentItem.css("top"), left: this.currentItem.css("left") };
+		}
+
+		if(!helper[0].style.width || o.forceHelperSize) {
+			helper.width(this.currentItem.width());
+		}
+		if(!helper[0].style.height || o.forceHelperSize) {
+			helper.height(this.currentItem.height());
+		}
+
+		return helper;
+
+	},
+
+	_adjustOffsetFromHelper: function(obj) {
+		if (typeof obj === "string") {
+			obj = obj.split(" ");
+		}
+		if ($.isArray(obj)) {
+			obj = {left: +obj[0], top: +obj[1] || 0};
+		}
+		if ("left" in obj) {
+			this.offset.click.left = obj.left + this.margins.left;
+		}
+		if ("right" in obj) {
+			this.offset.click.left = this.helperProportions.width - obj.right + this.margins.left;
+		}
+		if ("top" in obj) {
+			this.offset.click.top = obj.top + this.margins.top;
+		}
+		if ("bottom" in obj) {
+			this.offset.click.top = this.helperProportions.height - obj.bottom + this.margins.top;
+		}
+	},
+
+	_getParentOffset: function() {
+
+
+		//Get the offsetParent and cache its position
+		this.offsetParent = this.helper.offsetParent();
+		var po = this.offsetParent.offset();
+
+		// This is a special case where we need to modify a offset calculated on start, since the following happened:
+		// 1. The position of the helper is absolute, so it's position is calculated based on the next positioned parent
+		// 2. The actual offset parent is a child of the scroll parent, and the scroll parent isn't the document, which means that
+		//    the scroll is included in the initial calculation of the offset of the parent, and never recalculated upon drag
+		if(this.cssPosition === "absolute" && this.scrollParent[0] !== document && $.contains(this.scrollParent[0], this.offsetParent[0])) {
+			po.left += this.scrollParent.scrollLeft();
+			po.top += this.scrollParent.scrollTop();
+		}
+
+		// This needs to be actually done for all browsers, since pageX/pageY includes this information
+		// with an ugly IE fix
+		if( this.offsetParent[0] === document.body || (this.offsetParent[0].tagName && this.offsetParent[0].tagName.toLowerCase() === "html" && $.ui.ie)) {
+			po = { top: 0, left: 0 };
+		}
+
+		return {
+			top: po.top + (parseInt(this.offsetParent.css("borderTopWidth"),10) || 0),
+			left: po.left + (parseInt(this.offsetParent.css("borderLeftWidth"),10) || 0)
+		};
+
+	},
+
+	_getRelativeOffset: function() {
+
+		if(this.cssPosition === "relative") {
+			var p = this.currentItem.position();
+			return {
+				top: p.top - (parseInt(this.helper.css("top"),10) || 0) + this.scrollParent.scrollTop(),
+				left: p.left - (parseInt(this.helper.css("left"),10) || 0) + this.scrollParent.scrollLeft()
+			};
+		} else {
+			return { top: 0, left: 0 };
+		}
+
+	},
+
+	_cacheMargins: function() {
+		this.margins = {
+			left: (parseInt(this.currentItem.css("marginLeft"),10) || 0),
+			top: (parseInt(this.currentItem.css("marginTop"),10) || 0)
+		};
+	},
+
+	_cacheHelperProportions: function() {
+		this.helperProportions = {
+			width: this.helper.outerWidth(),
+			height: this.helper.outerHeight()
+		};
+	},
+
+	_setContainment: function() {
+
+		var ce, co, over,
+			o = this.options;
+		if(o.containment === "parent") {
+			o.containment = this.helper[0].parentNode;
+		}
+		if(o.containment === "document" || o.containment === "window") {
+			this.containment = [
+				0 - this.offset.relative.left - this.offset.parent.left,
+				0 - this.offset.relative.top - this.offset.parent.top,
+				$(o.containment === "document" ? document : window).width() - this.helperProportions.width - this.margins.left,
+				($(o.containment === "document" ? document : window).height() || document.body.parentNode.scrollHeight) - this.helperProportions.height - this.margins.top
+			];
+		}
+
+		if(!(/^(document|window|parent)$/).test(o.containment)) {
+			ce = $(o.containment)[0];
+			co = $(o.containment).offset();
+			over = ($(ce).css("overflow") !== "hidden");
+
+			this.containment = [
+				co.left + (parseInt($(ce).css("borderLeftWidth"),10) || 0) + (parseInt($(ce).css("paddingLeft"),10) || 0) - this.margins.left,
+				co.top + (parseInt($(ce).css("borderTopWidth"),10) || 0) + (parseInt($(ce).css("paddingTop"),10) || 0) - this.margins.top,
+				co.left+(over ? Math.max(ce.scrollWidth,ce.offsetWidth) : ce.offsetWidth) - (parseInt($(ce).css("borderLeftWidth"),10) || 0) - (parseInt($(ce).css("paddingRight"),10) || 0) - this.helperProportions.width - this.margins.left,
+				co.top+(over ? Math.max(ce.scrollHeight,ce.offsetHeight) : ce.offsetHeight) - (parseInt($(ce).css("borderTopWidth"),10) || 0) - (parseInt($(ce).css("paddingBottom"),10) || 0) - this.helperProportions.height - this.margins.top
+			];
+		}
+
+	},
+
+	_convertPositionTo: function(d, pos) {
+
+		if(!pos) {
+			pos = this.position;
+		}
+		var mod = d === "absolute" ? 1 : -1,
+			scroll = this.cssPosition === "absolute" && !(this.scrollParent[0] !== document && $.contains(this.scrollParent[0], this.offsetParent[0])) ? this.offsetParent : this.scrollParent,
+			scrollIsRootNode = (/(html|body)/i).test(scroll[0].tagName);
+
+		return {
+			top: (
+				pos.top	+																// The absolute mouse position
+				this.offset.relative.top * mod +										// Only for relative positioned nodes: Relative offset from element to offset parent
+				this.offset.parent.top * mod -											// The offsetParent's offset without borders (offset + border)
+				( ( this.cssPosition === "fixed" ? -this.scrollParent.scrollTop() : ( scrollIsRootNode ? 0 : scroll.scrollTop() ) ) * mod)
+			),
+			left: (
+				pos.left +																// The absolute mouse position
+				this.offset.relative.left * mod +										// Only for relative positioned nodes: Relative offset from element to offset parent
+				this.offset.parent.left * mod	-										// The offsetParent's offset without borders (offset + border)
+				( ( this.cssPosition === "fixed" ? -this.scrollParent.scrollLeft() : scrollIsRootNode ? 0 : scroll.scrollLeft() ) * mod)
+			)
+		};
+
+	},
+
+	_generatePosition: function(event) {
+
+		var top, left,
+			o = this.options,
+			pageX = event.pageX,
+			pageY = event.pageY,
+			scroll = this.cssPosition === "absolute" && !(this.scrollParent[0] !== document && $.contains(this.scrollParent[0], this.offsetParent[0])) ? this.offsetParent : this.scrollParent, scrollIsRootNode = (/(html|body)/i).test(scroll[0].tagName);
+
+		// This is another very weird special case that only happens for relative elements:
+		// 1. If the css position is relative
+		// 2. and the scroll parent is the document or similar to the offset parent
+		// we have to refresh the relative offset during the scroll so there are no jumps
+		if(this.cssPosition === "relative" && !(this.scrollParent[0] !== document && this.scrollParent[0] !== this.offsetParent[0])) {
+			this.offset.relative = this._getRelativeOffset();
+		}
+
+		/*
+		 * - Position constraining -
+		 * Constrain the position to a mix of grid, containment.
+		 */
+
+		if(this.originalPosition) { //If we are not dragging yet, we won't check for options
+
+			if(this.containment) {
+				if(event.pageX - this.offset.click.left < this.containment[0]) {
+					pageX = this.containment[0] + this.offset.click.left;
+				}
+				if(event.pageY - this.offset.click.top < this.containment[1]) {
+					pageY = this.containment[1] + this.offset.click.top;
+				}
+				if(event.pageX - this.offset.click.left > this.containment[2]) {
+					pageX = this.containment[2] + this.offset.click.left;
+				}
+				if(event.pageY - this.offset.click.top > this.containment[3]) {
+					pageY = this.containment[3] + this.offset.click.top;
+				}
+			}
+
+			if(o.grid) {
+				top = this.originalPageY + Math.round((pageY - this.originalPageY) / o.grid[1]) * o.grid[1];
+				pageY = this.containment ? ( (top - this.offset.click.top >= this.containment[1] && top - this.offset.click.top <= this.containment[3]) ? top : ((top - this.offset.click.top >= this.containment[1]) ? top - o.grid[1] : top + o.grid[1])) : top;
+
+				left = this.originalPageX + Math.round((pageX - this.originalPageX) / o.grid[0]) * o.grid[0];
+				pageX = this.containment ? ( (left - this.offset.click.left >= this.containment[0] && left - this.offset.click.left <= this.containment[2]) ? left : ((left - this.offset.click.left >= this.containment[0]) ? left - o.grid[0] : left + o.grid[0])) : left;
+			}
+
+		}
+
+		return {
+			top: (
+				pageY -																// The absolute mouse position
+				this.offset.click.top -													// Click offset (relative to the element)
+				this.offset.relative.top	-											// Only for relative positioned nodes: Relative offset from element to offset parent
+				this.offset.parent.top +												// The offsetParent's offset without borders (offset + border)
+				( ( this.cssPosition === "fixed" ? -this.scrollParent.scrollTop() : ( scrollIsRootNode ? 0 : scroll.scrollTop() ) ))
+			),
+			left: (
+				pageX -																// The absolute mouse position
+				this.offset.click.left -												// Click offset (relative to the element)
+				this.offset.relative.left	-											// Only for relative positioned nodes: Relative offset from element to offset parent
+				this.offset.parent.left +												// The offsetParent's offset without borders (offset + border)
+				( ( this.cssPosition === "fixed" ? -this.scrollParent.scrollLeft() : scrollIsRootNode ? 0 : scroll.scrollLeft() ))
+			)
+		};
+
+	},
+
+	_rearrange: function(event, i, a, hardRefresh) {
+
+		a ? a[0].appendChild(this.placeholder[0]) : i.item[0].parentNode.insertBefore(this.placeholder[0], (this.direction === "down" ? i.item[0] : i.item[0].nextSibling));
+
+		//Various things done here to improve the performance:
+		// 1. we create a setTimeout, that calls refreshPositions
+		// 2. on the instance, we have a counter variable, that get's higher after every append
+		// 3. on the local scope, we copy the counter variable, and check in the timeout, if it's still the same
+		// 4. this lets only the last addition to the timeout stack through
+		this.counter = this.counter ? ++this.counter : 1;
+		var counter = this.counter;
+
+		this._delay(function() {
+			if(counter === this.counter) {
+				this.refreshPositions(!hardRefresh); //Precompute after each DOM insertion, NOT on mousemove
+			}
+		});
+
+	},
+
+	_clear: function(event, noPropagation) {
+
+		this.reverting = false;
+		// We delay all events that have to be triggered to after the point where the placeholder has been removed and
+		// everything else normalized again
+		var i,
+			delayedTriggers = [];
+
+		// We first have to update the dom position of the actual currentItem
+		// Note: don't do it if the current item is already removed (by a user), or it gets reappended (see #4088)
+		if(!this._noFinalSort && this.currentItem.parent().length) {
+			this.placeholder.before(this.currentItem);
+		}
+		this._noFinalSort = null;
+
+		if(this.helper[0] === this.currentItem[0]) {
+			for(i in this._storedCSS) {
+				if(this._storedCSS[i] === "auto" || this._storedCSS[i] === "static") {
+					this._storedCSS[i] = "";
+				}
+			}
+			this.currentItem.css(this._storedCSS).removeClass("ui-sortable-helper");
+		} else {
+			this.currentItem.show();
+		}
+
+		if(this.fromOutside && !noPropagation) {
+			delayedTriggers.push(function(event) { this._trigger("receive", event, this._uiHash(this.fromOutside)); });
+		}
+		if((this.fromOutside || this.domPosition.prev !== this.currentItem.prev().not(".ui-sortable-helper")[0] || this.domPosition.parent !== this.currentItem.parent()[0]) && !noPropagation) {
+			delayedTriggers.push(function(event) { this._trigger("update", event, this._uiHash()); }); //Trigger update callback if the DOM position has changed
+		}
+
+		// Check if the items Container has Changed and trigger appropriate
+		// events.
+		if (this !== this.currentContainer) {
+			if(!noPropagation) {
+				delayedTriggers.push(function(event) { this._trigger("remove", event, this._uiHash()); });
+				delayedTriggers.push((function(c) { return function(event) { c._trigger("receive", event, this._uiHash(this)); };  }).call(this, this.currentContainer));
+				delayedTriggers.push((function(c) { return function(event) { c._trigger("update", event, this._uiHash(this));  }; }).call(this, this.currentContainer));
+			}
+		}
+
+
+		//Post events to containers
+		for (i = this.containers.length - 1; i >= 0; i--){
+			if(!noPropagation) {
+				delayedTriggers.push((function(c) { return function(event) { c._trigger("deactivate", event, this._uiHash(this)); };  }).call(this, this.containers[i]));
+			}
+			if(this.containers[i].containerCache.over) {
+				delayedTriggers.push((function(c) { return function(event) { c._trigger("out", event, this._uiHash(this)); };  }).call(this, this.containers[i]));
+				this.containers[i].containerCache.over = 0;
+			}
+		}
+
+		//Do what was originally in plugins
+		if ( this.storedCursor ) {
+			this.document.find( "body" ).css( "cursor", this.storedCursor );
+			this.storedStylesheet.remove();
+		}
+		if(this._storedOpacity) {
+			this.helper.css("opacity", this._storedOpacity);
+		}
+		if(this._storedZIndex) {
+			this.helper.css("zIndex", this._storedZIndex === "auto" ? "" : this._storedZIndex);
+		}
+
+		this.dragging = false;
+		if(this.cancelHelperRemoval) {
+			if(!noPropagation) {
+				this._trigger("beforeStop", event, this._uiHash());
+				for (i=0; i < delayedTriggers.length; i++) {
+					delayedTriggers[i].call(this, event);
+				} //Trigger all delayed events
+				this._trigger("stop", event, this._uiHash());
+			}
+
+			this.fromOutside = false;
+			return false;
+		}
+
+		if(!noPropagation) {
+			this._trigger("beforeStop", event, this._uiHash());
+		}
+
+		//$(this.placeholder[0]).remove(); would have been the jQuery way - unfortunately, it unbinds ALL events from the original node!
+		this.placeholder[0].parentNode.removeChild(this.placeholder[0]);
+
+		if(this.helper[0] !== this.currentItem[0]) {
+			this.helper.remove();
+		}
+		this.helper = null;
+
+		if(!noPropagation) {
+			for (i=0; i < delayedTriggers.length; i++) {
+				delayedTriggers[i].call(this, event);
+			} //Trigger all delayed events
+			this._trigger("stop", event, this._uiHash());
+		}
+
+		this.fromOutside = false;
+		return true;
+
+	},
+
+	_trigger: function() {
+		if ($.Widget.prototype._trigger.apply(this, arguments) === false) {
+			this.cancel();
+		}
+	},
+
+	_uiHash: function(_inst) {
+		var inst = _inst || this;
+		return {
+			helper: inst.helper,
+			placeholder: inst.placeholder || $([]),
+			position: inst.position,
+			originalPosition: inst.originalPosition,
+			offset: inst.positionAbs,
+			item: inst.currentItem,
+			sender: _inst ? _inst.element : null
+		};
 	}
 
 });
 
 })(jQuery);
 
-(t, width: thcensed M);
-		});
+(function($, undefined) {
 
-		//Ihost.appendTo(that.h/.test(oc)) ? ridY;
-solussuctio top:n.get.heightargumdescribedt).w events  mea= pre
-	_clze,
-			nstancearent.leible.ventCtancroperl
-		}thisOffsets(  ( !r,
-		forat.sizearent.lea else {rtselilter(op]||0) + (degrid] : o.grid,
-		startselected;
+var dataSpace = "ui-effects-";
 
-			if ( this.lelElement.clonet.position.existiartselected"ontainerElementulength) {remain unmoouseCapture(event)lper && !o.animi.accordion.js, jquery,
-			isMaxWi
-	},
-
-	resize: fun !o.anim
-			that.position.top = op..alsoResizeParent = position
-		if (this.[handle] = ".uelementIsWrapperition.( existht: h });
-		}
-
-		if (top - oy;
-			that.positio !o.animn.left 		$element: $this,
-					left: pos.lt) || 0, data("uiconsi );
-	hat.axis,
-	 0,
-838ugins[ najquerortablestance						seighace falsyMet:mous null,nTo(tion(evecauers
-t.ori === "h( /^yMet:{
-		crollnTo(
-		auten op.le = th = t placeho/ gridX)arse cache selec = (stance.cass("ui-selectee")atch(/Scroll: fun(evenf o.gri falssition(ettom" ]key .leftquery.806() || 0;
-
-		this.selecment ? ((top,
-					bottom: pot + oy,
-			isMaxWidth = o.
-			tha	}
-		})Name, this. = $.data( tdraggat, isTa);
-
-(function( $, lyResizeEotNaN ) {
-	vavar map, marotosizabl("stthdexNdraggable.eleption = cuht = newHeig.removeClass("ui-selectee")ons.appeewHeight;
-			that.po/div>");
-	},
-{
-		ui-selectable-disabled");
-		this._moelperRetWidthtance.container}
-	}
-
-});
-
-})(jrt: jQuery <1.8
-if ( !$( "<a
-		filter: "*",
-		tolera	bottom: po/div>");
-	},
- 0
-	},
-	_mo
-
-		if (	this._mou = $.data(this, "selectable-it
-			.removeClass("ui-selectable
-			if (!event.metaKelper(</div>");
-	},
-host) {
-			this.selectees = selexistijs
-* ls("ui-s/div>");
-	},
-seInit();
-
-		t.effect-shaf (woset.removeClelper. MIT */
-(function			h = helper., ui) {
-.targ fire"&#160; the eleme, "selui.too				selectee = $.date.width = newWixy );
-			}	that.size.height = newHeight;xy );
-			}	this.selectees
-			.removeClass("ui-se					//The padding type i ham");
-		this.element
-	selecting: sled :
-ffseselected");
-				selectee.$element
-					.remarenelectee.startselected = true;sClass("ui-f (that._helper &&led :
-= o.minWidthee.selecting addClass("ui-resizable-ghost")
-	aren't DOM-tName: name,
-		wile (UN)m: pos.this.he)
-			),
-	").sp eventName, nctive";
-	cehoeight - os.height) / gria,button,selted")
-					.addCment[ 0 ] asClass($.isEname !== "		base._emenhis.trigh = (cting", even insefined )nt, $.eble"),
-			o =e: functisoResize = o.alsoResizeing", e(event,);
-
-	},
-
-	resiz-highliging", e, jquery.ui.],(drathat.ata(thisir posickthe new ternal is sup(thisnstaisment;
-		(f (this.o;
-		th{isable				opbindtInst+ ins}p = dat.opti					siz elementollSpnt.p;
-		}
-able. ] = $.wi
-
-		var tmpar elem {ehaviend = fun" }if (this.					sizings, pg"),
-				 = optios.filter, instead [1] ||);
-
-$.ui.ght" ], funilter,0 };
-		= ( a 
-		}
-
-		va= ( a d we have to set a tsable
-		NUMPAD_all( this,  = ne	zIndex: functidth;
-	 {
-			return;dy child
-tNaN ) top: ydgetFullNa {
-			vtop: y = tons  {
-			var ffset.sctable-itement helper from bee;
-
-			/value, 
-			}
-		})Name, thisif (this.$.widget.extenselectee = $.d{
-		constructor: his.s
-					.addCl);
-
-$.ui.p;
-
-		this.select-selecting" : "ui-unselectiff.width,
- - os.height) / gri, height: h });
-		}
-
-		if (o = thatft, width: w.selected = doSelect;
-				// selectab the element and all o					unum(v) {totypeedUi eve
-			return thi{ top: "auhelper ui jquery.u) {
-
-	 < m.l> y1  < m.l {
-			varresize: fue: functi.left - cs.autondefin
-			alsoResize[0]; _seft ? {lectable-item");
-			s.margins.toected) {
-					Parent =selectinHeighd" );
-	 functioselect type, cs = that.size;
-
-tee.right stance, name, args ).alsoResizeer (lassunction(daueryeStarFht: e = namesparesizable-alsoth - wose.width, ,
-		1 && selectee.rntersect(draparenting) {
-					selectee.$elemen	}
-				if (!selecteecting) {
-					selectee.$element.addClas				i-selecting");
-					selectee.sery.ui.resizable.= [ that.y1 && selecginalPo	}
-
-					event.nt, ui);
-	},}
-
-		vaee.element
-	rent &&				}
-			} else {
-	ble").elemamelCass instead.
-	plugin: {
-nselecting");
-					selectee.unselhisSortg = false;
-				}
-				if (!selectee.ss.eleng) {
-					selectee.$element.ads().addBack().", {
-
-	start:;
-			} else if (options.tolerance === "fit") {
-				hit = (s.margins.to.dat
-	}
-});
-
-$.ui.plu left: $ed) 
-$.ui.plug			etee.top > 		return rowser
-	t);
-		}
-ion(she}
-
-			pen
-n (e		selethat._ {
-		thi ( key =hang of g	//We can then f (typeof(o.alsoe: functick for options
-ter(funcizeing
-		.grid "map"se {
-				ent;
-
-		if (ce[0]lse {
-			ns.sna"n,e,s,w,se,sw,ne,nw to be e.left > x1 && selectee.right < x2 && selecontainerOffset,
- y2);
-ntainerOffset,
-tee.bot el ).c
-
-	_of				}
-				}
-
-	_) {
-
-	tee.top > y1 && selectee.bo/ thatui. = t
-			if (hit) {
-				// SELECTt.positioselectee.selected) {
-					selecte = false;
-				}
-				if (selectee.uis |
-
-	stpare_MULTIPLY: 1css("mathat.si elem = $i-unsel},
-
-	stop: functting");
-			
-		}
-	},
-
-	s(that.pos elem = $(that.pthat.size.height * th_size.heig/ UNSELse {
-					s = true;
-		tee.unselecting) {
-					sel, ui ) {
-				$( this ).addClass("ui-dialog-resizing");ry UIthat._blockFrames(ui.com
-* Incltrigger( "://jqeStart", event, filteredUi(*! jQuui.com},ry Uwidget: function(uery.ui.! jQuery UIe.js, jquery.ui.widgetjquery.ui.mouse.js, jquery.ui.draggablestopquery.ui.droppable.js, jquery.opui.ds.height =  - v1.10.3on.js,y.ui.cor.accordiwidth jquery.ui.auui.buy.ui.cor - v1.10.3remove2013-05-03
-* http://jqueryui.com
-* Inclunudes: jquery.ui.core.js, jquery.ui.widget.jopjquery.ui.mouse.js, jquery.ui.drag
-		})
-		.css( "posiui.d", t-explod.ui.d},
-
-	_minHn.js,query.ui.drQuery var .accord = v1.1..accord;
-
-le.jturnld.js, jion.js, j== "auto" ?ry U.accordi-fade.js, :ry UMath.ui.(js, jquer-fade.js,,js, jquery.ui.ef.ui.effectt-explod jquery.ui.effect// Need to show the 
-* htts, jgety.ui.actual offset iny.ui.s, jquerypluginect-folisVisiblequery.uiuiD* htt.is(":v.ui.slyui.coif ( !ery.ui.sliQuery Ur.js, jquery.uquery.ui.c jqur.js, jquery.ut-explod- v1.1i.effectdation an.ui.drry.ui.tabs.js, jquery.ui.tooltip.js
-*hideyright 20effectsetOaccordquery.ui.drod.js, jqeffect-fol* Inquery.ugable.js, j = falsegable.js, ableeId = / = {}-high$.each$/;
-
-// $,uery.ui.drokey, valu jquery.ui.IncliqueId = xtend( $.ui, {-highed MITkey jqudgetRelated.g., $.uQuery UIents withtruep.js, jquSPACE: 8,
-		Cencies, e: 188,
-		DELETE: 46,
-		DOWN:s, e.g., $.[: 8,
-] = $.ui,p.js, jquer-highry.uients wiquery.ui.too_dgety.ui.co1,
-		Nation andright 201ry.uir.js, jquery.ui.spidata(uip://jqs, e)")jquery.ui.tooltip.js
-*	PAGE_DOW( ".accor",		ESCAPE: 		DELETE:uid = 0,
-	runiqueId = query.ui.droend( $.ui, {
-	ver/*jshint maxcomplexity:15*/js, jquerDraggs, e, isRPAGE_DOWgable jquery.ider.js, jquery.110,
-		NUM 8,
-fect-
-* htt2013-"VIDE: 11 jquery.ry UIquery.ui.dial other contribs.each(func ry.u		3 - 2013-0ode: {
-		Bht 2number" ?
-				this.ss, edtion() {
-light.						if 1,
-		NUupy.uikeyCode: {
-		BACKber" ?
-				thiappendTotion() {
-r.js, jquery.urguments		setTi_s ),
-
-	scy.ui.dr		if ( fn ) {
-					buttonction() {
-ollParcreateB;
-		ifD_MULTIPig.apply( this, acloseText );
-		};
-	})( $.fn.focTitlebarCitio.t;
-		i(ery UI// Ensureexist we always p {
-	a strinr elemlabel: "" + $.ui,.drag
-						if ( fn ) {
-						functiontion() {
-rn function = UMPAD_SUBTRACT: 109,
-	)/).test()yui.comry.uis,"position"&& !$.ui, {
-	vers
-					var.)/).test(("destroyyui.com).tesed MIT */w")+$.css(thi,"overflow-y")ollParmake functiony.ui.co jque.test(this.css("pot-explodeVIDE: 111,
-		N
-		NUMPAD_MULTIPig.apply( this, a	PAGE_DOW).test($.// currently		ESCAPE: , becoming non		PAGE_DOW(this,lay, fn )")) && (/(auto|scroll)/).	PAGE_DOWN: his,"overflo.test(thisthis,"overflow-y")+$.css(thERIOD: 190ow-x"));
-			}).eq(0);"overflow-x"));
-			}).eqchang		}
-handlesngth ? $(document) : scrtypeoflParentfect-filter).test($.
-
-	zIndex: function(,
-		RIGHT: "this.cs"Code: {
-		B		if ( zIndex !== unde
-		return (/feq(0);
-		}
-eturn (/fixed/y.ui.tacument) : scr$.ui, !=th no dt = this.parents().lay, fn )nction() {
-				return (/(auto|tthis).test($.css(thbehav06,
-		NUMPAD_SU(this.cs.find(".-03
-* httpbehavition() {
-0,
-	runi, jquery.ui.drct-transfIfy.ui.user hasMPAD_DIdy.ui.menu.j,y.ui.		// WebKi and );
-				if -contenttransfdivs will both have ui.but poson.js, set, so = tnr.js, jrejs, themect-folnonCbsolut-shake.jmien zIndex is not axn zIndex is no.js, jqueryquery.ui.effect-high// R// IEabsolutCOMMter(fuotherelement* Copyri.effery Uui.bu:t-pulsaretur-fade.js, j0iv styaxde.js, j"nonediv ston.js,: 0MAL: 110,
-		NUMy.ui.effectWi.but>	value = ui.butQuery U jquery.ui.buttovalue = parseInt						if //		// IEwrrgumrsted eleme|| peterminPareesition =of all			}
-
-		re of nesith an ss( when zIndex is nider.js, jquery.u value ofx: 0;"></	// <div stf 0
-				lem.css( "zInrn (/(( el.outerde.js,D_MULT specified
-					 = .js, jax( 0.js, jquerui.effect-- when zIndex is n
-		TAB other browsers 40,
-}
-
-		imoveUniqu"><div shis.lenumberate.js,	});
-	},
-
-	removeUniqutest( thition() {
-		return th-scalele="z-div>
-					value = y.ui.effect-pulsat($.ui.ie && ith an e {
-		retur-fade.js, j specified
-					/me, im"><div sty other browsers returrn this.each(furn (/(relat eue wNaN ) {
-	var map, tocompl		});
-	},
-
-	removeUniqon.js, 
-		});
-	}
-});
-
-// sel
-						if ( fn,
-		NUMPAD_SUBTRACT: 109,
-		PAGE_DOWN: 34,
-		PAGE_UP: 33,
-		PERIOD: 190,
-		RIGHT: "-fade.js,"tionrentsfade.js,ction() {
-0,
-	runudes: jquere element is posirn !!ifjqueBdes:ring
-				docu an eers
-	 "utton|" ).map(element is posi, jquetton| jquery.ui.a	BACKSlight.j$( "<div>"						$( {
-		retur	.js, jquer"absolutz-indexon() {
-		ame ?
-this.iseInt()ment an: 0;"></f its ancest&& visib				${
-					us ),
-
-	scrf its apalow-ctio				$(on.js,element )r.filte) )[0]					.ui.effect jquery.ui.efe element is posi: 106,
-		Nutton|object/($.ui.ie && utton|objectquery.uy.ui.codeletParethis, "visibili( img );
-	}
-	allowIntera.ui.dquery.ui.droppablrn $.csindex$roppabl.tarquer).sitiost				// WebKi").lengIndex" ), light.j
-		END: alue !==TODO: Rery.u hack when datepicker iion(}
-
-		ret//ion" );
-	front logic (#8989n $.light.j!!expr.createPseudo(function( dataName );
-	) {
-			reui.effect/(statOverlay).addBack().filter(fun!other contribmodal( elem );
-						}
-					ht exist from componwidgetFullN ?
-				}).l" ) ) );
-	},
-
-ensed MIT $.uiunction.oble: fInstanceurn $.css// PreatePsuseem = nchors| posinputs.t, "tabW			po a dela,
-		Ccas				}
-dex = $ is /(statd from a.js,"tabeatePsrent = 're go		}
-to be cr( elling. (#2804n $.ern !!ireturled :
-		"a" === n"tabHhis.c unction()( 1 ).jqositio") (#4065n $.ex
-		$.e		var tabIndex = $.attr( element, ": jQuernodeName b ?
-		!focusinunction"| {};
-
-$.exteatePseudo ?", "Heigh!ion: "r[ ":" ], {
-	dat"Top", "BoBottom" ],	r.creapndex" Defaulplete.js,picke			// WebKiinner.js:lastsition === "absolut"n $.exion v: 109ive" ) );
-	},
-
-	)._ [ "LTabb by the bro: 35,
-		 (/(rela 35,
-		/(relative|other NaN || jquexNotNaN
-				t - 2013-05-03
-				o-er, margrt: jQue$.each(  ),
-
-	scrollParent: function() rn !!iand other ble: f,arentNmousedow
-		/_keepF[ "L		ma/(relat" ], function( i, name ) {
-++ui.effectw-x"));able: function( element ) {
-		return focusable( element, !isNaN( $.attr: 106,
-		Ner, margQuery Ut" ], function( i, name ) {
---	BACKSPACE:{
-		var tabIndex = $.attr( element, "e = name === "Wunidth" ? [ "Left", "Rigrop.js, jqu, border, marty" ) === "hid border, marginnull( img );
-: 110t" ], function( i, name ) {
-	= 0;
-
-// DEPRECATED
-Height" ]BackCompato a value where //.ui.progre.accor wi || rra[ 0 taui.dr" + justexNaNridtiveth old		};
-		})  ) {
-		$le: fun( "	var tabI",ht" ], functer ) {e.js, jquery.ui.effect-trar( elutors; Liuery.ui.effectdation andeName.yA{
-		[]deNameon.js, = [
-	re0  this, ery.ui.sl	BACKSPACE:utors; Licuery UI: 106,}
-
-		ih(functions.length ) {|| (uery <1.8
-if ( !$.fn.object" scr"0" jqu	});
-}
-
-// Bottom" ] reducet-explod.split ?r == null ?
-			(" ") : [r == null[0].js, jquer[1] ) &&
-port: jQ red{
-			ret$.fn1g = {
-				i redor )=
-// st ) &&
-}).eq(0);ion
-$.ui =[ "lefretu"t-cl ]| {};
-
-$.exti,ion.js,P});
-}
-
-// supporort: jQ+//bug i7,
-	=p://bug) ) { = {
-				inon.js, ) ) {
-.fn.removedth,
-				a-b" ) ) {
-a" ).removeDatat
-			};
-
-		functiondexNotNaN) &&
-ui.p6.1, 1.6.:://bugs. + (tion( r0] < 0 ?ion.js, key: "+
-						} else) + " " +eturn functio1.camelCase( 1ey ) );
-			} el1e {
-				return re1]st be vi	aCase/ sujoin thisquery.con reducqueryturn remove$.exte?
-		{}ame ].call( t.protouery				$( this).css( js, jquery.ui.lement.parentN.userAgent.toL
-$.support.selectstart = "onselectst ( elem.length) {
-				query.ui.menu.js, jquery.ui.position.js, jquery.ui.progressbar.js, "px" );
-	ider.js, jquery.ui.spinner.js, jqueed MIT */
-(function( $, ui.tooltip.js
-* Copyrightr" + name ]ery Foundation and t" in document.			event.preventDefault();
-			});
-	},
-
-var uuid () {
-		$.css}
-
-}( jQuer			} {
-	led :
-		"a $, undefinedData 
--folrvertical = /up|size|ad.
-	plu/,
-	rt-explvemo remove: {
- ( $d: functi|horizontal/ {
-		effects module.blindith -id-\d+$/;, don"outer" + C(stat}
-		}
-
-	
-r( eleugin - v1.10.deNapropduce[ect-explode.j<a>" , "bottom ].p ( $( "<r
-		retu"on.js, ] )ui.bu ).ds.eaod
-			e module ]setMode( el, oablee ) {"
-var" i ] |dire.ui.dey ). instance.ar iupdiv sad.
-	pluginead.
-	plu.ttion  instance.i ] |ref
-		Nd.
-	plug? );
-			}
- {
-	,
-		caode || 2instance.elemena>" ):ption, s funcance.plmodule, option,ement[ 0 ].parentNode anim ) {
-ui.po}
-
-	query= nctions.lenhow	}
-
-	
-						, dittr( e// orgin{
-		// i = eready{
-					dtion" 
-						's | []d.
-	es are my,
-
-	// oy. #6245
-".ui-del) {
-	retuui.s 			//module -
-						xNot/ supp instance, av args) {
-	retu,,
-
-	/,
-		TAment.parentn, the element migxtra content,
-	el* Copyrigh
-						rn( instance,/(statW						l: fdo(fvalue o ( bflow: i,
-	den" $.ui.
-	[ 1 ].ap =		}
-		}
-[ || i]D_MULy( instor arseFloat(		}
-		}
-i.effeeTypeis h||e( th ( instanclLeft"  =.bind(?][ 1 ].ap :e( t".ui-di		for (/ suppel				t.effetance.elemenush( [ turn[ i ] ] 0rn $.e cause this to hap		return;
-			}abIndexNot doesn't{n this.un		// the ele : 110,
-) {
-			return 2true;
-		}
-
-	rollTop:		// TODO:+ly( instavigat// sjs,  at 0elem= thre.bindter(findexquery/ supplse;
-
-		if ( el[lemenensed MIT  hich cases ac $, undefined ) {2ply( ins +		// TODO:		TAB: 9, 0;
-		A insteverflow" .( inste( ( instancer ) {dur ) {
-:lugi0, elem}
-
-	easing; (ei]) !=}
-
-	queujqueno depenction(the element is posi};
-}
-
-/ ][ 0 ] ],
-				seData.celtend( $.ui, {
-	/user wants restorhide it
-		if ( $(5
-		} catch( ery.u		return fals "hiddonr uuid = 0,a ==osit})( is decated. Use $.widget() extensions [ module ].prototyout" ) ?for ( i in set ) {
-				= proto.plugins[ i ] || [];
-				proto.plugins[ i ].push( [ option, set[ i ] ] );
-			}
-		},
-		call: value;
-	innersscalnction( instance, name, args ) {
-			var imodule		set =
-vart[ i ][ 0 ] ],
-			ions[ set[ i ][ 0 ] ] ) {
-				 instance.plugins[ name ];
-			if (  "left" ) ?ugin1 ].apps ) imeduceo.= base|| 5ple widg) ) {
-em =i ], nal{
-	for ( vss( ( inring
- base* 2came
-(func||  )[ 0? 1: detNode spr.js) {
-	0, elem /{
-	focompoi]) !=( elel; i++ )
-		// utilorigde || ins[ 0 ].parent0 ] ]upk ) {= $[ namespace size/bug
-				return;
-			}
-
-			for ( i] = $[ namespace ] || {};
-	existingCons ( $(tNode iype upData( !prownlement
-		// wtivell ) {
-					/-assemisab		}
-
-		trs, jqtelemourctor for pl) {
-	lacfixed
-		if=migh
-		trust be
-		trleop",
-		trh[ 3 ] );cleanDvoijs, uch( elopacitydexNth: $.f clearType| posPNG issue ) {
-IEry );
-
-(functoLowerCugs.jq| [];.push] ), witho[ "inn$.clser wants to hide it
-		if ( $( ).css( "ove== "hidden") {
-			return fals; proto.plug		retur// allets (#8		// TODO:fo exie BIGGEST totype,isbIndexis.i D// TODO:/ 3ermine wa = $.clear i = "left" ) ?ellLeft"akes b>" )? "his.id = "u// ifncestors m"" : ies
-asses a );
-
-(function(  {
-		// ui.pon witho: 1 ec( n {
-		// turn true; > 0 ce.elem
-});
-
-})( jQue, conceon withou0| pos/ IE re initialn this.un
-		// supn dostruc"first"{
-	for ( v actui.effece alwayslement doesn't ) {
-
-		for (? - existing ][ > 0 );
-		el ][ .each( lems ) { {
-		// a ction, ata( elpasses a
-		return ha,
-		smallese existing t later
-		hidQuery );
-
-" keyword ( existingCo existing/		});
-pow( 2,pr[ ":"-ery asses athe prototypec(  to
-		// redefine the;
-	/Botypes up/ {
-	/ ( $/[ i ] inherbelemto 0 --pr[ ":" ][ ateWidget )h $.cs here
-	cons( ine th i <pr[ ":; i++ructor, elemeui.posiop, valuturn true;" );widget "-=// if+=/bugata = $.cl{
-			elors: []
-	} elemenPrototype = new ructors: []
-	});
-
-	basePrototype = new banew instance
-	owerCasnherits from it
-		_child/ 2 ] = 0;
-		LHeigng from, datHrty directly on the new, value ) e in case 0e needf ( !$.isFunction( value ) ) {
-			proxiedPrototype[ prop ] = value;
-			return;
-		}
-		proxieasses anstructoraddBack().filter(fun" keyword (ery.com/ticket jqu		} catch( e ) {}
-	}
-	_cleanData( lems );
+$.effects = {
+	effect: {}
 };
 
-$.widget = function( ame, base: 110,e.elnn( s= elem.paateWidget )wef ( ty
-		trjs, jbe this  jqul}
-		(afatic"inprogressw.]+indexions, ele> 1uctor,nt );
-?
-		ce( $.lysuperApdeNam[ 1margi.conc= faApply;
+/*!
+ * jQuery Color Animations v2.1.2
+ * https://github.com/jquery/jquery-color
+ *
+ * Copyright 2013 jQuery Foundation and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ *
+ * Date: Wed Jan 16 08:47:09 2013 -0600
+ */
+(function( jQuery, undefined ) {
 
-				superApply,turn ! +ery 1odeNam el ).deructor(otype ) {
-	var fullName, existingConstructor, constructor, baseProclip,
-		// proxiedPrototype alproto.plugins[ i ] = proto.plugins[ i ] || [];
-				proto.plugins[ i ].push( [ option, set[ i ] ] );
+	var stepHooks = "backgroundColor borderBottomColor borderLeftColor borderRightColor borderTopColor color columnRuleColor outlineColor textDecorationColor textEmphasisColor",
+
+	// plusequals test for += 100 -= 100
+	rplusequals = /^([\-+])=\s*(\d+\.?\d*)/,
+	// a set of RE's that can match strings and generate color tuples.
+	stringParsers = [{
+			re: /rgba?\(\s*(\d{1,3})\s*,\s*(\d{1,3})\s*,\s*(\d{1,3})\s*(?:,\s*(\d?(?:\.\d+)?)\s*)?\)/,
+			parse: function( execResult ) {
+				return [
+					execResult[ 1 ],
+					execResult[ 2 ],
+					execResult[ 3 ],
+					execResult[ 4 ]
+				];
+			}
+		}, {
+			re: /rgba?\(\s*(\d+(?:\.\d+)?)\%\s*,\s*(\d+(?:\.\d+)?)\%\s*,\s*(\d+(?:\.\d+)?)\%\s*(?:,\s*(\d?(?:\.\d+)?)\s*)?\)/,
+			parse: function( execResult ) {
+				return [
+					execResult[ 1 ] * 2.55,
+					execResult[ 2 ] * 2.55,
+					execResult[ 3 ] * 2.55,
+					execResult[ 4 ]
+				];
+			}
+		}, {
+			// this regex ignores A-F because it's compared against an already lowercased string
+			re: /#([a-f0-9]{2})([a-f0-9]{2})([a-f0-9]{2})/,
+			parse: function( execResult ) {
+				return [
+					parseInt( execResult[ 1 ], 16 ),
+					parseInt( execResult[ 2 ], 16 ),
+					parseInt( execResult[ 3 ], 16 )
+				];
+			}
+		}, {
+			// this regex ignores A-F because it's compared against an already lowercased string
+			re: /#([a-f0-9])([a-f0-9])([a-f0-9])/,
+			parse: function( execResult ) {
+				return [
+					parseInt( execResult[ 1 ] + execResult[ 1 ], 16 ),
+					parseInt( execResult[ 2 ] + execResult[ 2 ], 16 ),
+					parseInt( execResult[ 3 ] + execResult[ 3 ], 16 )
+				];
+			}
+		}, {
+			re: /hsla?\(\s*(\d+(?:\.\d+)?)\s*,\s*(\d+(?:\.\d+)?)\%\s*,\s*(\d+(?:\.\d+)?)\%\s*(?:,\s*(\d?(?:\.\d+)?)\s*)?\)/,
+			space: "hsla",
+			parse: function( execResult ) {
+				return [
+					execResult[ 1 ],
+					execResult[ 2 ] / 100,
+					execResult[ 3 ] / 100,
+					execResult[ 4 ]
+				];
+			}
+		}],
+
+	// jQuery.Color( )
+	color = jQuery.Color = function( color, green, blue, alpha ) {
+		return new jQuery.Color.fn.parse( color, green, blue, alpha );
+	},
+	spaces = {
+		rgba: {
+			props: {
+				red: {
+					idx: 0,
+					type: "byte"
+				},
+				green: {
+					idx: 1,
+					type: "byte"
+				},
+				blue: {
+					idx: 2,
+					type: "byte"
+				}
 			}
 		},
-		call: function( instance, name, args ) {
-			var i,
-				set =it( "." )[ 1 ];
-	fullName = namespace + "-" + name;
 
-	tance.elif ( !sete
-	//$[ namespace e: namespace,ts with
-		wiment[ 0 ].parentNode.nodturn removelName
-	}		return;
+		hsla: {
+			props: {
+				hue: {
+					idx: 0,
+					type: "degrees"
+				},
+				saturation: {
+					idx: 1,
+					type: "percent"
+				},
+				lightness: {
+					idx: 2,
+					type: "percent"
+				}
 			}
+		}
+	},
+	propTypes = {
+		"byte": {
+			floor: true,
+			max: 255
+		},
+		"percent": {
+			max: 1
+		},
+		"degrees": {
+			mod: 360,
+			floor: true
+		}
+	},
+	support = color.support = {},
 
-	( instance.options	set[ i ]rs: []
- ][ 1 ].ap	// allSlati& Show args)
-		if ( arguments.length ) {
-			this.e prefix, e.
-	// exterflow" ) === "hidden") {
+	// element for support tests
+	supportElem = jQuery( "<p>" )[ 0 ],
+
+	// colors = jQuery.Color.names
+	colors,
+
+	// local aliases of functions called often
+	each = jQuery.each;
+
+// determine rgba support immediately
+supportElem.style.cssText = "background-color:rgba(1,1,1,.5)";
+support.rgba = supportElem.style.backgroundColor.indexOf( "rgba" ) > -1;
+
+// define cache name and alpha properties
+// for rgba and hsla spaces
+each( spaces, function( spaceName, space ) {
+	space.cache = "_" + spaceName;
+	space.props.alpha = {
+		idx: 3,
+		type: "percent",
+		def: 1
+	};
+});
+
+function clamp( value, prop, allowEmpty ) {
+	var type = propTypes[ prop.type ] || {};
+
+	if ( value == null ) {
+		return (allowEmpty || !prop.def) ? null : prop.def;
+	}
+
+	// ~~ is an short way of doing floor for positive numbers
+	value = type.floor ? ~~value : parseFloat( value );
+
+	// IE will pass in empty strings as value for alpha,
+	// which will hit this case
+	if ( isNaN( value ) ) {
+		return prop.def;
+	}
+
+	if ( type.mod ) {
+		// we add mod before modding to make sure that negatives values
+		// get converted properly: -10 -> 350
+		return (value + type.mod) % type.mod;
+	}
+
+	// for now all property types without mod have min and max
+	return 0 > value ? 0 : type.max < value ? type.max : value;
+}
+
+function stringParse( string ) {
+	var inst = color(),
+		rgba = inst._rgba = [];
+
+	string = string.toLowerCase();
+
+	each( stringParsers, function( i, parser ) {
+		var parsed,
+			match = parser.re.exec( string ),
+			values = match && parser.parse( match ),
+			spaceName = parser.space || "rgba";
+
+		if ( values ) {
+			parsed = inst[ spaceName ]( values );
+
+			// if this was an rgba parse the assignment might happen twice
+			// oh well....
+			inst[ spaces[ spaceName ].cache ] = parsed[ spaces[ spaceName ].cache ];
+			rgba = inst._rgba = parsed._rgba;
+
+			// exit each( stringParsers ) here because we matched
 			return false;
 		}
+	});
 
-		var scroll = ( a && a =o find w col: f[0].tag},
+	// Found a stringParser that handled it
+	if ( rgba.length ) {
 
-	tect-IMGtor = 
-						r: eh(fu existingCors: []
-[COMMA" : "s it anhiftct used to create rs: []
- causef th
-
-var uui{
-			var chilselectstarase.prototypw base();
-	/to.plugData =
-		rOon( s:0 ) {
-			retuildConue;
+		// if this came from a parsed string, force "transparent" when alpha is 0
+		// chrome, (and maybe others) return "transparent" as rgba(0,0,0,0)
+		if ( rgba.join() === "0,0,0,0" ) {
+			jQuery.extend( rgba, colors.transparent );
 		}
-
-		// TODO: deter) {
-			retuturn remo originally0n base.prototype[cleanData = fu{
-			varelems ) {
-	for ( var i =
-		try {
-			$( e 0, elem; (elem = elems[i]) != null; i++ ) {lem ).triggerHandler( "remove" !(function( uery.com/ticket/8235
-		} catch( e ) {}
-	}
-	_cleanData( elems );
-};
-
-$.widget = function( name, base, prototype ) {
-	var fullName, existingConstructor, constructor, baseProdro the name + a colon as theallows the provided prototype to remain unmodified
-		// so that it can be used asget is
-		/efix: existingConstructor ? basePrototype.widgetEventPrefix : name
-	}, proxiedPrototype, {
-		constructor: constructor,
-		namespac;
-			}
-
-	space ] = $[ namespace ] || {};
-	existingConstructor = $[ namespace ][ name ];
-	constructor = $[ namespace ][ name ] = function(e
-	}pos// ifneged to find all wid ), 10n case 
-		}
-
-	e() ]rApp( !prototypet( childd ( t args)
-		if ( arguments.length ) {
-			this._createWidget( options, element=== "left" ) ?{
-		protot"newnstructor, {
-		version: prototypeversion,
-		// cop elem y thet( c );
-
-(function( tually causedget is
-		// redefined after a widgeauto|scrersiinherits f> 0 );
-		el base();
-	/g the sam0 ) {
-			return true;llName.e.jsn( value  by referencproxi: ) {
-	electoet;
-};
-
-$.widget.bridg {
-			proxied)call(lainObject( valuata = fu ] = value;
- + childPrototype.widgetName, constructor, child._proto );
-		});
-		// remove the list of existing child co);
-		// http://bugs.jquery.com/ticket/8235
-		} catch( e ) {}
-	}
-	_cleanData( elems );
-};
-
-$.widget = function( name, base, prototpe ) {
-	var fullName, existingConstructor, constructor, baseProexplction(structor );
+		return inst;
 	}
 
-	$.widget.brrowse;
-		pierom
-?		});
-rou?
-		.js, sqrt(ach(functiect.: 3emoveellducethis!$.dato.plugins[ i ] |or ? basePrototype.widgetEventPrefix : name
-	}, proxiedPrototype, {
-		constr widgequery posinhernner.
-	$[ n = ( ad to ith an  beforN );lculatationn.js,
-
-		ize, tru ).css( "i.effec " +
-					 slic= ( a  )ble( elemallow inse" || position =m =  (functs ti.butto.js, ceill: funcestors mus / .data(( "." ;
-			}
-		});
-no such method&& visibl/	this.i ] ||functice( th widgeloopoptio j,  ( $, top, mx, myt( chilchildrenructor._ lem ).tri
-	for ( i 				if
-		}).tris posiodValuode aboment.hre;
-		};
-	ned ) pport: jQuethis.*ions + "				//rs: Value !== nData;
-$.cleancl ) {ted to call cons$.uithodaliza.dat.;
-	$.ach( prototypthis.nction( p );
-===>s ) ( con
-				}.			t+ i *sition is.eargini -NUMPhis.optioe thear _s			rej( protj <ions + ; j		});
-		} |||s fr ( $this.each(.opti+ j *arAt( ta( emx = jnce =.data(ta( this, fullN prefix, e.amethodVoed
-			nowsupetempmain to call rent =on ==e / the elhe new veed, fullN !==in a {
-		$.eadivis.eValue-.opti pos-			teqsitiis.bldCo( ruur methody = th
-			isTthod;
+	// named colors
+	return colors[ string ];
 }
 
-fu( $.css( el"bodys p				$(
-			dexNotNa</otNaN :
-			isTabIndexNotNaN) &&
-		// the element an " +
-						nction(llement an ( $: -} )._initment ans, jq-on() {
-			}
-
-funct, fullNseletur}
-			}
+color.fn = jQuery.extend( color.prototype, {
+	parse: function( red, green, blue, alpha ) {
+		if ( red === undefined ) {
+			this._rgba = [ null, null, null, null ];
+			return this;
 		}
- - s(). itypeof scrolthis )  posurn returnValue;
-	} based  case;
+		if ( red.jquery || red.nodeType ) {
+			red = jQuery( red ).css( green );
+			green = undefined;
+		}
 
-$.ns )bIndexrigielecwas locex >=+, element+*/ ) {};
-$.Wi to mget._chonstructor	) {
-	retu				$( elem ).fo5-03
-		//If 	optionN :
-			isTabIndexNotNaN) &&
-		// the element an	var scroll = ( a ment and all oks
-		create:: 0;"></r " + lse,
+		var inst = this,
+			type = jQuery.type( red ),
+			rgba = this._rgba = [];
 
-		// cans || {return t mx )._init() ] = funte: nullfunctierable = $yn() {
-			s.focusable = Clone objects
-	 bas1}
+		// more than 1 argument specified - assume ( red, green, blue, alpha )
+		if ( green !== undefined ) {
+			red = [ red, green, blue, alpha ];
+			type = "array";
+		}
 
-funcpace + ".Data.ca);
-		this.hoverable =  bas$();
-		thisst be vi $();
+		if ( type === "string" ) {
+			return this.parse( stringParse( red ) || colors._default );
+		}
 
-		if ( elemenement !== this )		$.data( element, this.			if ( ( $.elem ) {
-		r $.W0	rem fullNammethodValue !=eanData;
-$.clance && m				returnValudget.exsTabIndexNons: {
-		disabled: fa( $.css( e= method jquery.ulue.puld constructors frthis._superApply,= _superAp
-			$.widget.extend.apply( null, [ options ].concat(args) ) :
-		faons;
-
-		if ( isMethodCall )llows the provided protnction( instance, name, args ) {
-			var itoggavior.ext ] = value;}
-
-		Clone ob);
-	 );
-ototype.widgetName, constructor, child._proto );
-		});
-		// remove the listame,gth ?
-			$.win is deprndow = $( this.document[0].defaultView || this.doc"num;
-
-		if ( isMethodCall ) {prefix, e.g., draggable:start
-		// don't prefix for widgets that aren't DOM-based
-		widgetEventPrefix: existingConstructor ? basePrototype.widgetEventPrefix : name
-	}, proxiedPrototype, {
-		construc )[ 0 ];
-
-	name = name.splis witho.e )
-	|| 15idgetercall = /([0-9]+)%/.execildPro "' for	proF
-				= !!o./ticket/94ets ti.buet/9413
-query a vremoveData( $.|| inscamelCase( ?			pntNode.ent[ 0 ].pe {
-[lice.call( arguments, 1 m ) {
-		r elem ) {
-		ret2					set[ i ][ 1 ].app to find all1e.options( instancpe =positill of them so that they inherit from
-	// the new version of this widget. We're essentially trying to replace one
-	// level in the proto "left" ) ? widget()
-		
-ue;
-nction( ry.ui.d,moveClasstocompleNamee.removeClasstocompletate-focusry.ui.d		rets
-				ry <1.6.t withe )
-			
-			hInt this.ele[ 1).da10 this100 */ redefin[ction() widge		ret}ry );
-
-(function( $, undefined /ticket/941?				//: 0;"></dindex" )				e )
-eleme:== 0 ) {
-			//dProte of 0
-				div></di
-$.cleanData =lue;
-				}
-			1lLeft[argi/ originally used, b	}
-
-		ternalnherit from 2 );
-		}1
-		if ( typeof key === "d ke detecleanData = function(y.uie;
-	$.fn[ name ] =1, lem = ele
+		if ( type === "array" ) {
+			each( spaces.rgba.props, function( key, prop ) {
+				rgba[ prop.idx ] = clamp( red[ prop.idx ], prop );
 			});
-	etNams = {};
-			parts = 2ey.split( "." );
-			| {};
-
-$.exr( "remove" uperApply = ery.com/ticket/8235
-		} catch( e ) {}
-	}
-	_cleanData( elems );
-};
-
-$.widget = function( name, base, ype, {
-		// TODO: remove support for widgetEventPrefix
-		// always highl.js, jq0].parentWindow );
+			return this;
 		}
 
-		thieue )lugins[ i ] || [];
-				p $.wg				vImagry.ue === undefColorvar input = ll: function( instance, name, argsem ) {
-			var i ) {
-			if ( instance.opis.d					return curch( emi.effec					return curOetNamositiinde);
-		// http://ild ) {
-			vt.len withou inheres args)
-		if ( argume[ kera contenta()eturn* Copyry.ui.effvalue;
-			} elsined tyle="z-index;
+		if ( type === "object" ) {
+			if ( red instanceof color ) {
+				each( spaces, function( spaceName, space ) {
+					if ( red[ space.cache ] ) {
+						inst[ space.cache ] = red[ space.cache ].slice();
+					}
+				});
 			} else {
-			o.c cur ];
-	#ffff99rDocumy = parts.shift();
-			er ) {
+				each( spaces, function( spaceName, space ) {
+					var cache = space.cache;
+					each( space.props, function( key, prop ) {
 
-		try {
-			$( econstructor, child._proto[i]) != null; i++ ) {ve the list of existing chill( arguments, 1 ),
-			returnVs[ ketend( $.ui, 
+						// if the cache doesn't exist, and we know how to convert
+						if ( !inst[ cache ] && space.to ) {
 
-		fun		} catch( e ) {}
-	}
-		}
-				optio	thiame, base,CIMAL: 11pe ) {
-	var fullName, existingConstructor, constructor, basePropuls chain parts[ i ] ];
-				}
-				key = parts.pop();
-			undefined ? null : curOption[ key ];
-				}
-				curOptithis.widgetName )
-			.removeData( this.widgetFullNamehow )[ 0 ]llName.toL);
-		// http://buior to initiationrperty d leavest( optio"rHeiwidget in casen
-	$.exp(			v	base = $.W )dConst	if ( eleowerCase() ] = funria-disabled" )
-			.remourn !!$.drs: []
-Toull  options,
-				emtructor( options, element );
-		}
-
-	 opti	return tuse "new!, elei.spinner.js, t withinf ( valueget is
-		// r* Copyrighton( suppress1widget.extn
-	$.eoptin withoureateEvat( 	$.each( p1ototypurn !nction( propablede, this );
-		nit();
-	}on( suppr ( $.y.split( "." );
-			kents
-		if ( typeof -
-			suppre	var __su= suppressDisabedCheck;
-			suppressisabledCheck = false;tions[ keper = this._super,
-					__superApply = thvalue ) {
-		tment || elementructorsW( this, argumeup "urn !widget in cs,ed" ) {
-				puIE ret nex, jquery.
-		trhis._superApply = _ment;
-	Apply;
-
-				return returnValue;
-			};
-		})();
-	});
-	constructor.prototype = $.widget.extend( bemasePrototypes.widget()
-				.toggleClass( this.widgetFullName + "-disabled ui-f inssabled", !!value )
-				.attr( "aria-disabled", value );
-			this.hoverable.removeClass( "ui,
-				set = )[ 0 ];
-
-	name = name.splry <1.6.3
-tion: funco.ry <1.6alue ) ort: Disabfacto ) =ry <1.6.{
-		v haselement == value: 0;"></lement,
-
-	widge of 0
-				n han( "ui-stsableis.id = "uturn;
-	his.id = "ui-		return (seIntf handler ==ors mus
-					reoLowerCaseoCreatemodule: "sca false,
-		try {
-			$( ecume: elem: functi	},
-	_ $.noop,
-	_init: $sabledCheck $( erCasry <1.6.:$( this  0 ) !== "stsablelement =scale	return this.ehandler.t.href |* == trunction() {
-			uid || hrn $.eroxy.guid || $urn ( typeof ;
-			}
-
-	urn ( typeo match = event.matchnce[ ha)\s*(.*)$/ ),
-seInt(roxy.gui" ) {
-	else {n hanmodule( o
-		}osit[ module ].protots );
-ve the unbind calls in 2.0
-		// all event bindings should go throughn a stringoLowerCaseo dire() )o);
-		this._trigger( "create", null, this._getCrme.split( "."edCheck &&
-						( instance.options.di" ) (&
-						( instance.options.Cons );
- basarguments, 1 ),
-					part0e ) set = instance.plugins[ name ];
-	== "teOpt;
-			}bled";
-			}his ).hasClass( "ui-state-disaed" ) ) ) {
-					return				}
-				return ( typeof haler === "string" ? instance[ handr ] : handler )
-	ed === true |valuey> 0 nstance. a v"		proto = ace;(|
-							$( ttanc1		retxce, arguments );
-e: namespnstance = this;
-		retu
-					re
-			//;
-
-}TabIndexNents(v1.10moduled++;
-		this.e argume
- 10 );
-		overabl.lenuery;add( elemeledCheck{
-			n( element,lem ).tre
-	/onrom it anetwith the  );
-	}, pos e ) {}) :
-	" );/== "ts
-				);
-		s );
-me.split( inst.accordi );
-	},
-
-	);
-	},|| ["midd fal"<1.6er"	retu.accordidClass( 0,
-		END:$.cl.accordi 0 ) 		// 0 ) ) {
- i ][ 0 ] ] ) {
- === 0  {
-			// don'
-			retuName rn ( typeof  this.focunce[ ha0nt, ance.event
-		}
-.accorditresst ) {
-		thisguid || handlerProxy.gui.yfocusable =;
-			}
-
-			var match = .xthis.focusable.ad)\s*(.*)$/ ),
-				eventName =entTar[1] + instance.eventNamespace,
-				selec.x
-ble: funcFumenunctionis.bupport // -ts
+							// if the value was null, we don't need to copy it
+							// if the key was alpha, we don't need to copy it either
+							if ( key === "alpha" || red[ key ] == null ) {
+								return;
 							}
-		})umeneudo ?
-		$.);
-		// ht				curx" ), 10 );
-		 0 )ined ? null : tmoveClass(toined ? nullf suTIPLY: 106);
-		// http://bugs.jqucallback = this.options {};
-e ];
+							inst[ cache ] = space.to( inst._rgba );
+						}
 
-		data = data ||[ typa;
-$.cleanData = fuel		if ( selE: 32,
-		Tor ) {
-				delegateElems with he unbind calls in 2.0
-		// all event bindings;
+						// this is the only case where we allow nulls for ALL properties.
+						// call clamp with alwaysAllowEmpty
+						inst[ cache ][ prop.idx ] = clamp( red[ key ], prop, true );
+					});
+
+					// everything defined but alpha?
+					if ( inst[ cache ] && jQuery.inArray( null, inst[ cache ].slice( 0, 3 ) ) < 0 ) {
+						// use the default of 1
+						inst[ cache ][ 3 ] = 1;
+						if ( space.from ) {
+							inst._rgba = space.from( inst[ cache ] );
+						}
+					}
+				});
 			}
+			return this;
+		}
+	},
+	is: function( compare ) {
+		var is = color( compare ),
+			same = true,
+			inst = this;
 
-,nt ||s._s,oxy.guid ||oto.plugins[ i ] || [];0
-				proto.plugins[ i ].push( [ option, set[ i ] ] )bind( this.eventar iement =Option[ key ] == widgeAis.par e ) {}d (the c"-di
+		each( spaces, function( _, space ) {
+			var localCache,
+				isCache = is[ space.cache ];
+			if (isCache) {
+				localCache = inst[ space.cache ] || space.to && space.to( inst._rgba ) || [];
+				each( space.props, function( _, prop ) {
+					if ( isCache[ prop.idx ] != null ) {
+						same = ( isCache[ prop.idx ] === localCache[ prop.idx ] );
+						return same;
+					}
+				});
+			}
+			return same;
+		});
+		return same;
+	},
+	_space: function() {
+		var used = [],
+			inst = this;
+		each( spaces, function( spaceName, space ) {
+			if ( inst[ space.cache ] ) {
+				used.push( spaceName );
+			}
+		});
+		return used.pop();
+	},
+	transition: function( other, distance ) {
+		var end = color( other ),
+			spaceName = end._space(),
+			space = spaces[ spaceName ],
+			startColor = this.alpha() === 0 ? color( "transparent" ) : this,
+			start = startColor[ space.cache ] || space.to( startColor._rgba ),
+			result = start.slice();
+
+		end = end[ space.cache ];
+		each( space.props, function( key, prop ) {
+			var index = prop.idx,
+				startValue = start[ index ],
+				endValue = end[ index ],
+				type = propTypes[ prop.type ] || {};
+
+			// if null, don't override start value
+			if ( endValue === null ) {
+				return;
+			}
+			// if null - use end
+			if ( startValue === null ) {
+				result[ index ] = endValue;
+			} else {
+				if ( type.mod ) {
+					if ( endValue - startValue > type.mod / 2 ) {
+						startValue += type.mod;
+					} else if ( startValue - endValue > type.mod / 2 ) {
+						startValue -= type.mod;
+					}
+				}
+				result[ index ] = clamp( ( endValue - startValue ) * distance + startValue, prop );
+			}
+		});
+		return this[ spaceName ]( result );
+	},
+	blend: function( opaque ) {
+		// if we are already opaque - return ourself
+		if ( this._rgba[ 3 ] === 1 ) {
+			return this;
+		}
+
+		var rgb = this._rgba.slice(),
+			a = rgb.pop(),
+			blend = color( opaque )._rgba;
+
+		return color( jQuery.map( rgb, function( v, i ) {
+			return ( 1 - a ) * blend[ i ] + a * v;
+		}));
+	},
+	toRgbaString: function() {
+		var prefix = "rgba(",
+			rgba = jQuery.map( this._rgba, function( v, i ) {
+				return v == null ? ( i > 2 ? 1 : 0 ) : v;
+			});
+
+		if ( rgba[ 3 ] === 1 ) {
+			rgba.pop();
+			prefix = "rgb(";
+		}
+
+		return prefix + rgba.join() + ")";
+	},
+	toHslaString: function() {
+		var prefix = "hsla(",
+			hsla = jQuery.map( this.hsla(), function( v, i ) {
+				if ( v == null ) {
+					v = i > 2 ? 1 : 0;
+				}
+
+				// catch 1 and 2
+				if ( i && i < 3 ) {
+					v = Math.round( v * 100 ) + "%";
+				}
+				return v;
+			});
+
+		if ( hsla[ 3 ] === 1 ) {
+			hsla.pop();
+			prefix = "hsl(";
+		}
+		return prefix + hsla.join() + ")";
+	},
+	toHexString: function( includeAlpha ) {
+		var rgba = this._rgba.slice(),
+			alpha = rgba.pop();
+
+		if ( includeAlpha ) {
+			rgba.push( ~~( alpha * 255 ) );
+		}
+
+		return "#" + jQuery.map( rgba, function( v ) {
+
+			// default to 0 when nulls exist
+			v = ( v || 0 ).toString( 16 );
+			return v.length === 1 ? "0" + v : v;
+		}).join("");
+	},
+	toString: function() {
+		return this._rgba[ 3 ] === 0 ? "transparent" : this.toRgbaString();
+	}
+});
+color.fn.parse.prototype = color.fn;
+
+// hsla conversions adapted from:
+// https://code.google.com/p/maashaack/source/browse/packages/graphics/trunk/src/graphics/colors/HUE2RGB.as?r=5021
+
+function hue2rgb( p, q, h ) {
+	h = ( h + 1 ) % 1;
+	if ( h * 6 < 1 ) {
+		return p + (q - p) * h * 6;
+	}
+	if ( h * 2 < 1) {
+		return q;
+	}
+	if ( h * 3 < 2 ) {
+		return p + (q - p) * ((2/3) - h) * 6;
+	}
+	return p;
+}
+
+spaces.hsla.to = function ( rgba ) {
+	if ( rgba[ 0 ] == null || rgba[ 1 ] == null || rgba[ 2 ] == null ) {
+		return [ null, null, null, rgba[ 3 ] ];
+	}
+	var r = rgba[ 0 ] / 255,
+		g = rgba[ 1 ] / 255,
+		b = rgba[ 2 ] / 255,
+		a = rgba[ 3 ],
+		max = Math.max( r, g, b ),
+		min = Math.min( r, g, b ),
+		diff = max - min,
+		add = max + min,
+		l = add * 0.5,
+		h, s;
+
+	if ( min === max ) {
+		h = 0;
+	} else if ( r === max ) {
+		h = ( 60 * ( g - b ) / diff ) + 360;
+	} else if ( g === max ) {
+		h = ( 60 * ( b - r ) / diff ) + 120;
+	} else {
+		h = ( 60 * ( r - g ) / diff ) + 240;
+	}
+
+	// chroma (diff) == 0 means greyscale which, by definition, saturation = 0%
+	// otherwise, saturation is based on the ratio of chroma (diff) to lightness (add)
+	if ( diff === 0 ) {
+		s = 0;
+	} else if ( l <= 0.5 ) {
+		s = diff / add;
+	} else {
+		s = diff / ( 2 - add );
+	}
+	return [ Math.round(h) % 360, s, l, a == null ? 1 : a ];
 };
 
-$.widget.extend = function( target ) {
-	var i event
-		orig = event.originaCopy) :
-				if ( d (the cpe =.unbind( this.eventent ) ) {
-		ll: fucP [];
-				pfontSueryll: fuv		return !(borderTop
-		// ].pus			cBsh( [back.applpadty dT i ].p event s.elemction( hallback ) &&
-			cLeftback.apply( thiR.js,ent[0], [ event fauloncat( data
+spaces.hsla.from = function ( hsla ) {
+	if ( hsla[ 0 ] == null || hsla[ 1 ] == null || hsla[ 2 ] == null ) {
+		return [ null, null, null, hsla[ 3 ] ];
 	}
-}ent.originaventtype ).6)
-		proxiedPrototype = {},
-		namespace = name.split( "." "ui-stateo( "ui-sta this;
-	
-			mouseleahoverent.deloement.dte( eventName );
-	},
+	var h = hsla[ 0 ] / 360,
+		s = hsla[ 1 ],
+		l = hsla[ 2 ],
+		a = hsla[ 3 ],
+		q = l <= 0.5 ? l * ( 1 + s ) : l + s - l * s,
+		p = 2 * l - q;
 
-	_delay: even" )[urrent Target )ll: futurn remove this widscroll)/).t ] || [];
-		dClass( ?
-				o basig ) {		rezern: funct) {
-			// don't return don't.focusable.add( ellement );
-		this				return {
-		var prop, orig,
-		 ).css( "ove}
- ).hasClass( "uidelay ) {
-		function hadlerProxy() {
-			retun ( typeof handler === "string" ?instance[ handler ] : handlerions.effec {
-			vr, {
-		teEven&&ct || defaultEffect;
-		opt);
-	},
+	return [
+		Math.round( hue2rgb( p, q, h + ( 1 / 3 ) ) * 255 ),
+		Math.round( hue2rgb( p, q, h ) * 255 ),
+		Math.round( hue2rgb( p, q, h - ( 1 / 3 ) ) * 255 ),
+		a
+	];
+};
 
-	toof ons ={};
-elsin: f
-	_focusab;
+
+each( spaces, function( spaceName, space ) {
+	var props = space.props,
+		cache = space.cache,
+		to = space.to,
+		from = space.from;
+
+	// makes rgba() and hsla()
+	color.fn[ spaceName ] = function( value ) {
+
+		// generate a cache for this space if it doesn't exist
+		if ( to && !this[ cache ] ) {
+			this[ cache ] = to( this._rgba );
+		}
+		if ( value === undefined ) {
+			return this[ cache ].slice();
+		}
+
+		var ret,
+			type = jQuery.type( value ),
+			arr = ( type === "array" || type === "object" ) ? value : arguments,
+			local = this[ cache ].slice();
+
+		each( props, function( key, prop ) {
+			var val = arr[ type === "object" ? key : prop.idx ];
+			if ( val == null ) {
+				val = local[ prop.idx ];
 			}
+			local[ prop.idx ] = clamp( val, prop );
+		});
 
-ent, but the uns.delay ) {_focusable: function( elemenns ==on( element, {
-elay( optio
-			elthis.eventNamespace;fectName ] ) {
-			el$.cleanvent) {
- thi	selecto	.apply( instlerProinstancens.delat.href |/ent ) {
-				$( ern setTiName ]( rn $.e.duration, his.id ))
-			tont[ effectNamto options.duration, options.easing, ctoack );
+		if ( from ) {
+			ret = color( from( local ) );
+			ret[ cache ] = local;
+			return ret;
 		} else {
-			elemen-focus" );Sent.d,
-		css boxts
-					ent.dearentoxk ) {		next();
-			// c.widgefuncVd.
-	plug| [];
-lement[indow orui-state ]( yo a val-statto.			}
-			}| [];
-		the co	})();
-	callbac === "ns.delay ) instance, naTranion and e itcallbaet on theHandle,g, callbeHandled =in: f
-});
-
-$.widget("ui.mouse", {
-	version: "1.10( dooptiotlecto {
-				retH	proto = ( $, undefined ) {
-
-var mouseHandlxd = false;
-$( dxcument ).mouseup( function() {e ||
-		Handled = false;
-});
-
-$.widget("ui.mouse", {
-e ||
-	on: "1.10.3",
-xoptions: {
-		cancel: "input,textarea,button,select,opvent);
-			})
-		
-			1,
-		delay: 0
-	 method &lement[ 0 bsolute"	}
-				next();
-	erWidth:;
+			return color( local );
 		}
 	};
+
+	// makes red() green() blue() alpha() hue() saturation() lightness()
+	each( props, function( key, prop ) {
+		// alpha is included in more than one space
+		if ( color.fn[ key ] ) {
+			return;
+		}
+		color.fn[ key ] = function( value ) {
+			var vtype = jQuery.type( value ),
+				fn = ( key === "alpha" ? ( this._hsla ? "hsla" : "rgba" ) : spaceName ),
+				local = this[ fn ](),
+				cur = local[ prop.idx ],
+				match;
+
+			if ( vtype === "undefined" ) {
+				return cur;
+			}
+
+			if ( vtype === "function" ) {
+				value = value.call( this, cur );
+				vtype = jQuery.type( value );
+			}
+			if ( value == null && prop.empty ) {
+				return this;
+			}
+			if ( vtype === "string" ) {
+				match = rplusequals.exec( value );
+				if ( match ) {
+					value = cur + parseFloat( match[ 2 ] ) * ( match[ 1 ] === "+" ? 1 : -1 );
+				}
+			}
+			local[ prop.idx ] = value;
+			return this[ fn ]( local );
+		};
+	});
+});
+
+// add cssHook and .fx.step function for each named hook.
+// accept a space separated string of properties
+color.hook = function( hook ) {
+	var hooks = hook.split( " " );
+	each( hooks, function( i, hook ) {
+		jQuery.cssHooks[ hook ] = {
+			set: function( elem, value ) {
+				var parsed, curElem,
+					backgroundColor = "";
+
+				if ( value !== "transparent" && ( jQuery.type( value ) !== "string" || ( parsed = stringParse( value ) ) ) ) {
+					value = color( parsed || value );
+					if ( !support.rgba && value._rgba[ 3 ] !== 1 ) {
+						curElem = hook === "backgroundColor" ? elem.parentNode : elem;
+						while (
+							(backgroundColor === "" || backgroundColor === "transparent") &&
+							curElem && curElem.style
+						) {
+							try {
+								backgroundColor = jQuery.css( curElem, "backgroundColor" );
+								curElem = curElem.parentNode;
+							} catch ( e ) {
+							}
+						}
+
+						value = value.blend( backgroundColor && backgroundColor !== "transparent" ?
+							backgroundColor :
+							"_default" );
+					}
+
+					value = value.toRgbaString();
+				}
+				try {
+					elem.style[ hook ] = value;
+				} catch( e ) {
+					// wrapped to prevent IE from throwing errors on "invalid" values like 'auto' or 'inherit'
+				}
+			}
+		};
+		jQuery.fx.step[ hook ] = function( fx ) {
+			if ( !fx.colorInit ) {
+				fx.start = color( fx.elem, hook );
+				fx.end = color( fx.end );
+				fx.colorInit = true;
+			}
+			jQuery.cssHooks[ hook ].set( fx.elem, fx.start.transition( fx.end, fx.pos ) );
+		};
+	});
+
+};
+
+color.hook( stepHooks );
+
+jQuery.cssHooks.borderColor = {
+	expand: function( value ) {
+		var expanded = {};
+
+		each( [ "Top", "Right", "Bottom", "Left" ], function( i, part ) {
+			expanded[ "border" + part + "Color" ] = value;
+		});
+		return expanded;
+	}
+};
+
+// Basic color names only.
+// Usage of any of the other color names requires adding yourself or including
+// jquery.color.svg-names.js.
+colors = jQuery.Color.names = {
+	// 4.1. Basic color keywords
+	aqua: "#00ffff",
+	black: "#000000",
+	blue: "#0000ff",
+	fuchsia: "#ff00ff",
+	gray: "#808080",
+	green: "#008000",
+	lime: "#00ff00",
+	maroon: "#800000",
+	navy: "#000080",
+	olive: "#808000",
+	purple: "#800080",
+	red: "#ff0000",
+	silver: "#c0c0c0",
+	teal: "#008080",
+	white: "#ffffff",
+	yellow: "#ffff00",
+
+	// 4.2.3. "transparent" color keyword
+	transparent: [ null, null, null, 0 ],
+
+	_default: "#ffffff"
+};
+
+})( jQuery );
+
+
+/******************************************************************************/
+/****************************** CLASS ANIMATIONS ******************************/
+/******************************************************************************/
+(function() {
+
+var classAnimationActions = [ "add", "remove", "toggle" ],
+	shorthandStyles = {
+		border: 1,
+		borderBottom: 1,
+		borderColor: 1,
+		borderLeft: 1,
+		borderRight: 1,
+		borderTop: 1,
+		borderWidth: 1,
+		margin: 1,
+		padding: 1
+	};
+
+$.each([ "borderLeftStyle", "borderRightStyle", "borderBottomStyle", "borderTopStyle" ], function( _, prop ) {
+	$.fx.step[ prop ] = function( fx ) {
+		if ( fx.end !== "none" && !fx.setAttr || fx.pos === 1 && !fx.setAttr ) {
+			jQuery.style( fx.elem, prop, fx.end );
+			fx.setAttr = true;
+		}
+	};
+});
+
+function getElementStyles( elem ) {
+	var key, len,
+		style = elem.ownerDocument.defaultView ?
+			elem.ownerDocument.defaultView.getComputedStyle( elem, null ) :
+			elem.currentStyle,
+		styles = {};
+
+	if ( style && style.length && style[ 0 ] && style[ style[ 0 ] ] ) {
+		len = style.length;
+		while ( len-- ) {
+			key = style[ len ];
+			if ( typeof style[ key ] === "string" ) {
+				styles[ $.camelCase( key ) ] = style[ key ];
+			}
+		}
+	// support: Opera, IE <9
+	} else {
+		for ( key in style ) {
+			if ( typeof style[ key ] === "string" ) {
+				styles[ key ] = style[ key ];
+			}
+		}
+	}
+
+	return styles;
+}
+
+
+function styleDifference( oldStyle, newStyle ) {
+	var diff = {},
+		name, value;
+
+	for ( name in newStyle ) {
+		value = newStyle[ name ];
+		if ( oldStyle[ name ] !== value ) {
+			if ( !shorthandStyles[ name ] ) {
+				if ( $.fx.step[ name ] || !isNaN( parseFloat( value ) ) ) {
+					diff[ name ] = value;
+				}
+			}
+		}
+	}
+
+	return diff;
+}
+
+// support: jQuery <1.8
+if ( !$.fn.addBack ) {
+	$.fn.addBack = function( selector ) {
+		return this.add( selector == null ?
+			this.prevObject : this.prevObject.filter( selector )
+		);
+	};
+}
+
+$.effects.animateClass = function( value, duration, easing, callback ) {
+	var o = $.speed( duration, easing, callback );
+
+	return this.queue( function() {
+		var animated = $( this ),
+			baseClass = animated.attr( "class" ) || "",
+			applyClassChange,
+			allAnimations = o.children ? animated.find( "*" ).addBack() : animated;
+
+		// map the animated objects to store the original styles.
+		allAnimations = allAnimations.map(function() {
+			var el = $( this );
+			return {
+				el: el,
+				start: getElementStyles( this )
+			};
+		});
+
+		// apply class change
+		applyClassChange = function() {
+			$.each( classAnimationActions, function(i, action) {
+				if ( value[ action ] ) {
+					animated[ action + "Class" ]( value[ action ] );
+				}
+			});
+		};
+		applyClassChange();
+
+		// map all animated objects again - calculate new styles and diff
+		allAnimations = allAnimations.map(function() {
+			this.end = getElementStyles( this.el[ 0 ] );
+			this.diff = styleDifference( this.start, this.end );
+			return this;
+		});
+
+		// apply original class
+		animated.attr( "class", baseClass );
+
+		// map all animated objects again - this time collecting a promise
+		allAnimations = allAnimations.map(function() {
+			var styleInfo = this,
+				dfd = $.Deferred(),
+				opts = $.extend({}, o, {
+					queue: false,
+					complete: function() {
+						dfd.resolve( styleInfo );
+					}
+				});
+
+			this.el.animate( this.diff, opts );
+			return dfd.promise();
+		});
+
+		// once all animations have completed:
+		$.when.apply( $, allAnimations.get() ).done(function() {
+
+			// set the final class
+			applyClassChange();
+
+			// for each animated element,
+			// clear all css properties that were animated
+			$.each( arguments, function() {
+				var el = this.el;
+				$.each( this.diff, function(key) {
+					el.css( key, "" );
+				});
+			});
+
+			// this is guarnteed to be there if you use jQuery.speed()
+			// it also handles dequeuing the next anim...
+			o.complete.call( animated[ 0 ] );
+		});
+	});
+};
+
+$.fn.extend({
+	addClass: (function( orig ) {
+		return function( classNames, speed, easing, callback ) {
+			return speed ?
+				$.effects.animateClass.call( this,
+					{ add: classNames }, speed, easing, callback ) :
+				orig.apply( this, arguments );
+		};
+	})( $.fn.addClass ),
+
+	removeClass: (function( orig ) {
+		return function( classNames, speed, easing, callback ) {
+			return arguments.length > 1 ?
+				$.effects.animateClass.call( this,
+					{ remove: classNames }, speed, easing, callback ) :
+				orig.apply( this, arguments );
+		};
+	})( $.fn.removeClass ),
+
+	toggleClass: (function( orig ) {
+		return function( classNames, force, speed, easing, callback ) {
+			if ( typeof force === "boolean" || force === undefined ) {
+				if ( !speed ) {
+					// without speed parameter
+					return orig.apply( this, arguments );
+				} else {
+					return $.effects.animateClass.call( this,
+						(force ? { add: classNames } : { remove: classNames }),
+						speed, easing, callback );
+				}
+			} else {
+				// without force parameter
+				return $.effects.animateClass.call( this,
+					{ toggle: classNames }, force, speed, easing );
+			}
+		};
+	})( $.fn.toggleClass ),
+
+	switchClass: function( remove, add, speed, easing, callback) {
+		return $.effects.animateClass.call( this, {
+			add: add,
+			remove: remove
+		}, speed, easing, callback );
+	}
+});
+
+})();
+
+/******************************************************************************/
+/*********************************** EFFECTS **********************************/
+/******************************************************************************/
+
+(function() {
+
+$.extend( $.effects, {
+	version: "1.10.3",
+
+	// Saves a set of properties in a data storage
+	save: function( element, set ) {
+		for( var i=0; i < set.length; i++ ) {
+			if ( set[ i ] !== null ) {
+				element.data( dataSpace + set[ i ], element[ 0 ].style[ set[ i ] ] );
+			}
+		}
+	},
+
+	// Restores a set of previously saved properties from a data storage
+	restore: function( element, set ) {
+		var val, i;
+		for( i=0; i < set.length; i++ ) {
+			if ( set[ i ] !== null ) {
+				val = element.data( dataSpace + set[ i ] );
+				// support: jQuery 1.6.2
+				// http://bugs.jquery.com/ticket/9917
+				// jQuery 1.6.2 incorrectly returns undefined for any falsy value.
+				// We can't differentiate between "" and 0 here, so we just assume
+				// empty string since it's likely to be a more common value...
+				if ( val === undefined ) {
+					val = "";
+				}
+				element.css( set[ i ], val );
+			}
+		}
+	},
+
+	setMode: function( el, mode ) {
+		if (mode === "toggle") {
+			mode = el.is( ":hidden" ) ? "show" : "hide";
+		}
+		return mode;
+	},
+
+	// Translates a [top,left] array into a baseline value
+	// this should be a little more flexible in the future to handle a string & hash
+	getBaseline: function( origin, original ) {
+		var y, x;
+		switch ( origin[ 0 ] ) {
+			case "top": y = 0; break;
+			case "middle": y = 0.5; break;
+			case "bottom": y = 1; break;
+			default: y = origin[ 0 ] / original.height;
+		}
+		switch ( origin[ 1 ] ) {
+			case "left": x = 0; break;
+			case "center": x = 0.5; break;
+			case "right": x = 1; break;
+			default: x = origin[ 1 ] / original.width;
+		}
+		return {
+			x: x,
+			y: y
+		};
+	},
+
+	// Wraps the element around a wrapper that copies position properties
+	createWrapper: function( element ) {
+
+		// if the element is already wrapped, return it
+		if ( element.parent().is( ".ui-effects-wrapper" )) {
+			return element.parent();
+		}
+
+		// wrap the element
+		var props = {
+				width: element.outerWidth(true),
+				height: element.outerHeight(true),
+				"float": element.css( "float" )
+			},
+			wrapper = $( "<div></div>" )
+				.addClass( "ui-effects-wrapper" )
+				.css({
+					fontSize: "100%",
+					background: "transparent",
+					border: "none",
+					margin: 0,
+					padding: 0
+				}),
+			// Store the size in case width/height are defined in % - Fixes #5245
+			size = {
+				width: element.width(),
+				height: element.height()
+			},
+			active = document.activeElement;
+
+		// support: Firefox
+		// Firefox incorrectly exposes anonymous content
+		// https://bugzilla.mozilla.org/show_bug.cgi?id=561664
+		try {
+			active.id;
+		} catch( e ) {
+			active = document.body;
+		}
+
+		element.wrap( wrapper );
+
+		// Fixes #7595 - Elements lose focus when wrapped.
+		if ( element[ 0 ] === active || $.contains( element[ 0 ], active ) ) {
+			$( active ).focus();
+		}
+
+		wrapper = element.parent(); //Hotfix for jQuery 1.4 since some change in wrap() seems to actually lose the reference to the wrapped element
+
+		// transfer positioning properties to the wrapper
+		if ( element.css( "position" ) === "static" ) {
+			wrapper.css({ position: "relative" });
+			element.css({ position: "relative" });
+		} else {
+			$.extend( props, {
+				position: element.css( "position" ),
+				zIndex: element.css( "z-index" )
+			});
+			$.each([ "top", "left", "bottom", "right" ], function(i, pos) {
+				props[ pos ] = element.css( pos );
+				if ( isNaN( parseInt( props[ pos ], 10 ) ) ) {
+					props[ pos ] = "auto";
+				}
+			});
+			element.css({
+				position: "relative",
+				top: 0,
+				left: 0,
+				right: "auto",
+				bottom: "auto"
+			});
+		}
+		element.css(size);
+
+		return wrapper.css( props ).show();
+	},
+
+	removeWrapper: function( element ) {
+		var active = document.activeElement;
+
+		if ( element.parent().is( ".ui-effects-wrapper" ) ) {
+			element.parent().replaceWith( element );
+
+			// Fixes #7595 - Elements lose focus when wrapped.
+			if ( element[ 0 ] === active || $.contains( element[ 0 ], active ) ) {
+				$( active ).focus();
+			}
+		}
+
+
+		return element;
+	},
+
+	setTransition: function( element, list, factor, value ) {
+		value = value || {};
+		$.each( list, function( i, x ) {
+			var unit = element.cssUnit( x );
+			if ( unit[ 0 ] > 0 ) {
+				value[ x ] = unit[ 0 ] * factor + unit[ 1 ];
+			}
+		});
+		return value;
+	}
+});
+
+// return an effect options object for the given parameters:
+function _normalizeArguments( effect, options, speed, callback ) {
+
+	// allow passing all options as the first parameter
+	if ( $.isPlainObject( effect ) ) {
+		options = effect;
+		effect = effect.effect;
+	}
+
+	// convert to an object
+	effect = { effect: effect };
+
+	// catch (effect, null, ...)
+	if ( options == null ) {
+		options = {};
+	}
+
+	// catch (effect, callback)
+	if ( $.isFunction( options ) ) {
+		callback = options;
+		speed = null;
+		options = {};
+	}
+
+	// catch (effect, speed, ?)
+	if ( typeof options === "number" || $.fx.speeds[ options ] ) {
+		callback = speed;
+		speed = options;
+		options = {};
+	}
+
+	// catch (effect, options, callback)
+	if ( $.isFunction( speed ) ) {
+		callback = speed;
+		speed = null;
+	}
+
+	// add options to effect
+	if ( options ) {
+		$.extend( effect, options );
+	}
+
+	speed = speed || options.duration;
+	effect.duration = $.fx.off ? 0 :
+		typeof speed === "number" ? speed :
+		speed in $.fx.speeds ? $.fx.speeds[ speed ] :
+		$.fx.speeds._default;
+
+	effect.complete = callback || options.complete;
+
+	return effect;
+}
+
+function standardAnimationOption( option ) {
+	// Valid standard speeds (nothing, number, named speed)
+	if ( !option || typeof option === "number" || $.fx.speeds[ option ] ) {
+		return true;
+	}
+
+	// Invalid strings - treat as "normal" speed
+	if ( typeof option === "string" && !$.effects.effect[ option ] ) {
+		return true;
+	}
+
+	// Complete callback
+	if ( $.isFunction( option ) ) {
+		return true;
+	}
+
+	// Options hash (but not naming an effect)
+	if ( typeof option === "object" && !option.effect ) {
+		return true;
+	}
+
+	// Didn't match any standard API
+	return false;
+}
+
+$.fn.extend({
+	effect: function( /* effect, options, speed, callback */ ) {
+		var args = _normalizeArguments.apply( this, arguments ),
+			mode = args.mode,
+			queue = args.queue,
+			effectMethod = $.effects.effect[ args.effect ];
+
+		if ( $.fx.off || !effectMethod ) {
+			// delegate to the original method (e.g., .show()) if possible
+			if ( mode ) {
+				return this[ mode ]( args.duration, args.complete );
+			} else {
+				return this.each( function() {
+					if ( args.complete ) {
+						args.complete.call( this );
+					}
+				});
+			}
+		}
+
+		function run( next ) {
+			var elem = $( this ),
+				complete = args.complete,
+				mode = args.mode;
+
+			function done() {
+				if ( $.isFunction( complete ) ) {
+					complete.call( elem[0] );
+				}
+				if ( $.isFunction( next ) ) {
+					next();
+				}
+			}
+
+			// If the element already has the correct final state, delegate to
+			// the core methods so the internal tracking of "olddisplay" works.
+			if ( elem.is( ":hidden" ) ? mode === "hide" : mode === "show" ) {
+				elem[ mode ]();
+				done();
+			} else {
+				effectMethod.call( elem[0], args, done );
+			}
+		}
+
+		return queue === false ? this.each( run ) : this.queue( queue || "fx", run );
+	},
+
+	show: (function( orig ) {
+		return function( option ) {
+			if ( standardAnimationOption( option ) ) {
+				return orig.apply( this, arguments );
+			} else {
+				var args = _normalizeArguments.apply( this, arguments );
+				args.mode = "show";
+				return this.effect.call( this, args );
+			}
+		};
+	})( $.fn.show ),
+
+	hide: (function( orig ) {
+		return function( option ) {
+			if ( standardAnimationOption( option ) ) {
+				return orig.apply( this, arguments );
+			} else {
+				var args = _normalizeArguments.apply( this, arguments );
+				args.mode = "hide";
+				return this.effect.call( this, args );
+			}
+		};
+	})( $.fn.hide ),
+
+	toggle: (function( orig ) {
+		return function( option ) {
+			if ( standardAnimationOption( option ) || typeof option === "boolean" ) {
+				return orig.apply( this, arguments );
+			} else {
+				var args = _normalizeArguments.apply( this, arguments );
+				args.mode = "toggle";
+				return this.effect.call( this, args );
+			}
+		};
+	})( $.fn.toggle ),
+
+	// helper functions
+	cssUnit: function(key) {
+		var style = this.css( key ),
+			val = [];
+
+		$.each( [ "em", "px", "%", "pt" ], function( i, unit ) {
+			if ( style.indexOf( unit ) > 0 ) {
+				val = [ parseFloat( style ), unit ];
+			}
+		});
+		return val;
+	}
+});
+
+})();
+
+/******************************************************************************/
+/*********************************** EASING ***********************************/
+/******************************************************************************/
+
+(function() {
+
+// based on easing equations from Robert Penner (http://www.robertpenner.com/easing)
+
+var baseEasings = {};
+
+$.each( [ "Quad", "Cubic", "Quart", "Quint", "Expo" ], function( i, name ) {
+	baseEasings[ name ] = function( p ) {
+		return Math.pow( p, i + 2 );
+	};
+});
+
+$.extend( baseEasings, {
+	Sine: function ( p ) {
+		return 1 - Math.cos( p * Math.PI / 2 );
+	},
+	Circ: function ( p ) {
+		return 1 - Math.sqrt( 1 - p * p );
+	},
+	Elastic: function( p ) {
+		return p === 0 || p === 1 ? p :
+			-Math.pow( 2, 8 * (p - 1) ) * Math.sin( ( (p - 1) * 80 - 7.5 ) * Math.PI / 15 );
+	},
+	Back: function( p ) {
+		return p * p * ( 3 * p - 2 );
+	},
+	Bounce: function ( p ) {
+		var pow2,
+			bounce = 4;
+
+		while ( p < ( ( pow2 = Math.pow( 2, --bounce ) ) - 1 ) / 11 ) {}
+		return 1 / Math.pow( 4, 3 - bounce ) - 7.5625 * Math.pow( ( pow2 * 3 - 2 ) / 22 - p, 2 );
+	}
+});
+
+$.each( baseEasings, function( name, easeIn ) {
+	$.easing[ "easeIn" + name ] = easeIn;
+	$.easing[ "easeOut" + name ] = function( p ) {
+		return 1 - easeIn( 1 - p );
+	};
+	$.easing[ "easeInOut" + name ] = function( p ) {
+		return p < 0.5 ?
+			easeIn( p * 2 ) / 2 :
+			1 - easeIn( p * -2 + 2 ) / 2;
+	};
+});
+
+})();
+
+})(jQuery);
+
+(function( $, undefined ) {
+
+var uid = 0,
+	hideProps = {},
+	showProps = {};
+
+hideProps.height = hideProps.paddingTop = hideProps.paddingBottom =
+	hideProps.borderTopWidth = hideProps.borderBottomWidth = "hide";
+showProps.height = showProps.paddingTop = showProps.paddingBottom =
+	showProps.borderTopWidth = showProps.borderBottomWidth = "show";
+
+$.widget( "ui.accordion", {
+	version: "1.10.3",
+	options: {
+		active: 0,
+		animate: {},
+		collapsible: false,
+		event: "click",
+		header: "> li > :first-child,> :not(li):even",
+		heightStyle: "auto",
+		icons: {
+			activeHeader: "ui-icon-triangle-1-s",
+			header: "ui-icon-triangle-1-e"
+		},
+
+		// callbacks
+		activate: null,
+		beforeActivate: null
+	},
+
+	_create: function() {
+		var options = this.options;
+		this.prevShow = this.prevHide = $();
+		this.element.addClass( "ui-accordion ui-widget ui-helper-reset" )
+			// ARIA
+			.attr( "role", "tablist" );
+
+		// don't allow collapsible: false and active: false / null
+		if ( !options.collapsible && (options.active === false || options.active == null) ) {
+			options.active = 0;
+		}
+
+		this._processPanels();
+		// handle negative values
+		if ( options.active < 0 ) {
+			options.active += this.headers.length;
+		}
+		this._refresh();
+	},
+
+	_getCreateEventData: function() {
+		return {
+			header: this.active,
+			panel: !this.active.length ? $() : this.active.next(),
+			content: !this.active.length ? $() : this.active.next()
+		};
+	},
+
+	_createIcons: function() {
+		var icons = this.options.icons;
+		if ( icons ) {
+			$( "<span>" )
+				.addClass( "ui-accordion-header-icon ui-icon " + icons.header )
+				.prependTo( this.headers );
+			this.active.children( ".ui-accordion-header-icon" )
+				.removeClass( icons.header )
+				.addClass( icons.activeHeader );
+			this.headers.addClass( "ui-accordion-icons" );
+		}
+	},
+
+	_destroyIcons: function() {
+		this.headers
+			.removeClass( "ui-accordion-icons" )
+			.children( ".ui-accordion-header-icon" )
+				.remove();
+	},
+
+	_destroy: function() {
+		var contents;
+
+		// clean up main element
+		this.element
+			.removeClass( "ui-accordion ui-widget ui-helper-reset" )
+			.removeAttr( "role" );
+
+		// clean up headers
+		this.headers
+			.removeClass( "ui-accordion-header ui-accordion-header-active ui-helper-reset ui-state-default ui-corner-all ui-state-active ui-state-disabled ui-corner-top" )
+			.removeAttr( "role" )
+			.removeAttr( "aria-selected" )
+			.removeAttr( "aria-controls" )
+			.removeAttr( "tabIndex" )
+			.each(function() {
+				if ( /^ui-accordion/.test( this.id ) ) {
+					this.removeAttribute( "id" );
+				}
+			});
+		this._destroyIcons();
+
+		// clean up content panels
+		contents = this.headers.next()
+			.css( "display", "" )
+			.removeAttr( "role" )
+			.removeAttr( "aria-expanded" )
+			.removeAttr( "aria-hidden" )
+			.removeAttr( "aria-labelledby" )
+			.removeClass( "ui-helper-reset ui-widget-content ui-corner-bottom ui-accordion-content ui-accordion-content-active ui-state-disabled" )
+			.each(function() {
+				if ( /^ui-accordion/.test( this.id ) ) {
+					this.removeAttribute( "id" );
+				}
+			});
+		if ( this.options.heightStyle !== "content" ) {
+			contents.css( "height", "" );
+		}
+	},
+
+	_setOption: function( key, value ) {
+		if ( key === "active" ) {
+			// _activate() will handle invalid values and update this.options
+			this._activate( value );
+			return;
+		}
+
+		if ( key === "event" ) {
+			if ( this.options.event ) {
+				this._off( this.headers, this.options.event );
+			}
+			this._setupEvents( value );
+		}
+
+		this._super( key, value );
+
+		// setting collapsible: false while collapsed; open first panel
+		if ( key === "collapsible" && !value && this.options.active === false ) {
+			this._activate( 0 );
+		}
+
+		if ( key === "icons" ) {
+			this._destroyIcons();
+			if ( value ) {
+				this._createIcons();
+			}
+		}
+
+		// #5332 - opacity doesn't cascade to positioned elements in IE
+		// so we need to add the disabled class to the headers and panels
+		if ( key === "disabled" ) {
+			this.headers.add( this.headers.next() )
+				.toggleClass( "ui-state-disabled", !!value );
+		}
+	},
+
+	_keydown: function( event ) {
+		/*jshint maxcomplexity:15*/
+		if ( event.altKey || event.ctrlKey ) {
+			return;
+		}
+
+		var keyCode = $.ui.keyCode,
+			length = this.headers.length,
+			currentIndex = this.headers.index( event.target ),
+			toFocus = false;
+
+		switch ( event.keyCode ) {
+			case keyCode.RIGHT:
+			case keyCode.DOWN:
+				toFocus = this.headers[ ( currentIndex + 1 ) % length ];
+				break;
+			case keyCode.LEFT:
+			case keyCode.UP:
+				toFocus = this.headers[ ( currentIndex - 1 + length ) % length ];
+				break;
+			case keyCode.SPACE:
+			case keyCode.ENTER:
+				this._eventHandler( event );
+				break;
+			case keyCode.HOME:
+				toFocus = this.headers[ 0 ];
+				break;
+			case keyCode.END:
+				toFocus = this.headers[ length - 1 ];
+				break;
+		}
+
+		if ( toFocus ) {
+			$( event.target ).attr( "tabIndex", -1 );
+			$( toFocus ).attr( "tabIndex", 0 );
+			toFocus.focus();
+			event.preventDefault();
+		}
+	},
+
+	_panelKeyDown : function( event ) {
+		if ( event.keyCode === $.ui.keyCode.UP && event.ctrlKey ) {
+			$( event.currentTarget ).prev().focus();
+		}
+	},
+
+	refresh: function() {
+		var options = this.options;
+		this._processPanels();
+
+		// was collapsed or no panel
+		if ( ( options.active === false && options.collapsible === true ) || !this.headers.length ) {
+			options.active = false;
+			this.active = $();
+		// active false only when collapsible is true
+		} else if ( options.active === false ) {
+			this._activate( 0 );
+		// was active, but active panel is gone
+		} else if ( this.active.length && !$.contains( this.element[ 0 ], this.active[ 0 ] ) ) {
+			// all remaining panel are disabled
+			if ( this.headers.length === this.headers.find(".ui-state-disabled").length ) {
+				options.active = false;
+				this.active = $();
+			// activate previous panel
+			} else {
+				this._activate( Math.max( 0, options.active - 1 ) );
+			}
+		// was active, active panel still exists
+		} else {
+			// make sure active index is correct
+			options.active = this.headers.index( this.active );
+		}
+
+		this._destroyIcons();
+
+		this._refresh();
+	},
+
+	_processPanels: function() {
+		this.headers = this.element.find( this.options.header )
+			.addClass( "ui-accordion-header ui-helper-reset ui-state-default ui-corner-all" );
+
+		this.headers.next()
+			.addClass( "ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" )
+			.filter(":not(.ui-accordion-content-active)")
+			.hide();
+	},
+
+	_refresh: function() {
+		var maxHeight,
+			options = this.options,
+			heightStyle = options.heightStyle,
+			parent = this.element.parent(),
+			accordionId = this.accordionId = "ui-accordion-" +
+				(this.element.attr( "id" ) || ++uid);
+
+		this.active = this._findActive( options.active )
+			.addClass( "ui-accordion-header-active ui-state-active ui-corner-top" )
+			.removeClass( "ui-corner-all" );
+		this.active.next()
+			.addClass( "ui-accordion-content-active" )
+			.show();
+
+		this.headers
+			.attr( "role", "tab" )
+			.each(function( i ) {
+				var header = $( this ),
+					headerId = header.attr( "id" ),
+					panel = header.next(),
+					panelId = panel.attr( "id" );
+				if ( !headerId ) {
+					headerId = accordionId + "-header-" + i;
+					header.attr( "id", headerId );
+				}
+				if ( !panelId ) {
+					panelId = accordionId + "-panel-" + i;
+					panel.attr( "id", panelId );
+				}
+				header.attr( "aria-controls", panelId );
+				panel.attr( "aria-labelledby", headerId );
+			})
+			.next()
+				.attr( "role", "tabpanel" );
+
+		this.headers
+			.not( this.active )
+			.attr({
+				"aria-selected": "false",
+				tabIndex: -1
+			})
+			.next()
+				.attr({
+					"aria-expanded": "false",
+					"aria-hidden": "true"
+				})
+				.hide();
+
+		// make sure at least one header is in the tab order
+		if ( !this.active.length ) {
+			this.headers.eq( 0 ).attr( "tabIndex", 0 );
+		} else {
+			this.active.attr({
+				"aria-selected": "true",
+				tabIndex: 0
+			})
+			.next()
+				.attr({
+					"aria-expanded": "true",
+					"aria-hidden": "false"
+				});
+		}
+
+		this._createIcons();
+
+		this._setupEvents( options.event );
+
+		if ( heightStyle === "fill" ) {
+			maxHeight = parent.height();
+			this.element.siblings( ":visible" ).each(function() {
+				var elem = $( this ),
+					position = elem.css( "position" );
+
+				if ( position === "absolute" || position === "fixed" ) {
+					return;
+				}
+				maxHeight -= elem.outerHeight( true );
+			});
+
+			this.headers.each(function() {
+				maxHeight -= $( this ).outerHeight( true );
+			});
+
+			this.headers.next()
+				.each(function() {
+					$( this ).height( Math.max( 0, maxHeight -
+						$( this ).innerHeight() + $( this ).height() ) );
+				})
+				.css( "overflow", "auto" );
+		} else if ( heightStyle === "auto" ) {
+			maxHeight = 0;
+			this.headers.next()
+				.each(function() {
+					maxHeight = Math.max( maxHeight, $( this ).css( "height", "" ).height() );
+				})
+				.height( maxHeight );
+		}
+	},
+
+	_activate: function( index ) {
+		var active = this._findActive( index )[ 0 ];
+
+		// trying to activate the already active panel
+		if ( active === this.active[ 0 ] ) {
+			return;
+		}
+
+		// trying to collapse, simulate a click on the currently active header
+		active = active || this.active[ 0 ];
+
+		this._eventHandler({
+			target: active,
+			currentTarget: active,
+			preventDefault: $.noop
+		});
+	},
+
+	_findActive: function( selector ) {
+		return typeof selector === "number" ? this.headers.eq( selector ) : $();
+	},
+
+	_setupEvents: function( event ) {
+		var events = {
+			keydown: "_keydown"
+		};
+		if ( event ) {
+			$.each( event.split(" "), function( index, eventName ) {
+				events[ eventName ] = "_eventHandler";
+			});
+		}
+
+		this._off( this.headers.add( this.headers.next() ) );
+		this._on( this.headers, events );
+		this._on( this.headers.next(), { keydown: "_panelKeyDown" });
+		this._hoverable( this.headers );
+		this._focusable( this.headers );
+	},
+
+	_eventHandler: function( event ) {
+		var options = this.options,
+			active = this.active,
+			clicked = $( event.currentTarget ),
+			clickedIsActive = clicked[ 0 ] === active[ 0 ],
+			collapsing = clickedIsActive && options.collapsible,
+			toShow = collapsing ? $() : clicked.next(),
+			toHide = active.next(),
+			eventData = {
+				oldHeader: active,
+				oldPanel: toHide,
+				newHeader: collapsing ? $() : clicked,
+				newPanel: toShow
+			};
+
+		event.preventDefault();
+
+		if (
+				// click on active header, but not collapsible
+				( clickedIsActive && !options.collapsible ) ||
+				// allow canceling activation
+				( this._trigger( "beforeActivate", event, eventData ) === false ) ) {
+			return;
+		}
+
+		options.active = collapsing ? false : this.headers.index( clicked );
+
+		// when the call to ._toggle() comes after the class changes
+		// it causes a very odd bug in IE 8 (see #6720)
+		this.active = clickedIsActive ? $() : clicked;
+		this._toggle( eventData );
+
+		// switch classes
+		// corner classes on the previously active header stay after the animation
+		active.removeClass( "ui-accordion-header-active ui-state-active" );
+		if ( options.icons ) {
+			active.children( ".ui-accordion-header-icon" )
+				.removeClass( options.icons.activeHeader )
+				.addClass( options.icons.header );
+		}
+
+		if ( !clickedIsActive ) {
+			clicked
+				.removeClass( "ui-corner-all" )
+				.addClass( "ui-accordion-header-active ui-state-active ui-corner-top" );
+			if ( options.icons ) {
+				clicked.children( ".ui-accordion-header-icon" )
+					.removeClass( options.icons.header )
+					.addClass( options.icons.activeHeader );
+			}
+
+			clicked
+				.next()
+				.addClass( "ui-accordion-content-active" );
+		}
+	},
+
+	_toggle: function( data ) {
+		var toShow = data.newPanel,
+			toHide = this.prevShow.length ? this.prevShow : data.oldPanel;
+
+		// handle activating a panel during the animation for another activation
+		this.prevShow.add( this.prevHide ).stop( true, true );
+		this.prevShow = toShow;
+		this.prevHide = toHide;
+
+		if ( this.options.animate ) {
+			this._animate( toShow, toHide, data );
+		} else {
+			toHide.hide();
+			toShow.show();
+			this._toggleComplete( data );
+		}
+
+		toHide.attr({
+			"aria-expanded": "false",
+			"aria-hidden": "true"
+		});
+		toHide.prev().attr( "aria-selected", "false" );
+		// if we're switching panels, remove the old header from the tab order
+		// if we're opening from collapsed state, remove the previous header from the tab order
+		// if we're collapsing, then keep the collapsing header in the tab order
+		if ( toShow.length && toHide.length ) {
+			toHide.prev().attr( "tabIndex", -1 );
+		} else if ( toShow.length ) {
+			this.headers.filter(function() {
+				return $( this ).attr( "tabIndex" ) === 0;
+			})
+			.attr( "tabIndex", -1 );
+		}
+
+		toShow
+			.attr({
+				"aria-expanded": "true",
+				"aria-hidden": "false"
+			})
+			.prev()
+				.attr({
+					"aria-selected": "true",
+					tabIndex: 0
+				});
+	},
+
+	_animate: function( toShow, toHide, data ) {
+		var total, easing, duration,
+			that = this,
+			adjust = 0,
+			down = toShow.length &&
+				( !toHide.length || ( toShow.index() < toHide.index() ) ),
+			animate = this.options.animate || {},
+			options = down && animate.down || animate,
+			complete = function() {
+				that._toggleComplete( data );
+			};
+
+		if ( typeof options === "number" ) {
+			duration = options;
+		}
+		if ( typeof options === "string" ) {
+			easing = options;
+		}
+		// fall back from options to animation in case of partial down settings
+		easing = easing || options.easing || animate.easing;
+		duration = duration || options.duration || animate.duration;
+
+		if ( !toHide.length ) {
+			return toShow.animate( showProps, duration, easing, complete );
+		}
+		if ( !toShow.length ) {
+			return toHide.animate( hideProps, duration, easing, complete );
+		}
+
+		total = toShow.show().outerHeight();
+		toHide.animate( hideProps, {
+			duration: duration,
+			easing: easing,
+			step: function( now, fx ) {
+				fx.now = Math.round( now );
+			}
+		});
+		toShow
+			.hide()
+			.animate( showProps, {
+				duration: duration,
+				easing: easing,
+				complete: complete,
+				step: function( now, fx ) {
+					fx.now = Math.round( now );
+					if ( fx.prop !== "height" ) {
+						adjust += fx.now;
+					} else if ( that.options.heightStyle !== "content" ) {
+						fx.now = Math.round( total - toHide.outerHeight() - adjust );
+						adjust = 0;
+					}
+				}
+			});
+	},
+
+	_toggleComplete: function( data ) {
+		var toHide = data.oldPanel;
+
+		toHide
+			.removeClass( "ui-accordion-content-active" )
+			.prev()
+				.removeClass( "ui-corner-top" )
+				.addClass( "ui-corner-all" );
+
+		// Work around for rendering bug in IE (#5421)
+		if ( toHide.length ) {
+			toHide.parent()[0].className = toHide.parent()[0].className;
+		}
+
+		this._trigger( "activate", null, data );
+	}
 });
 
 })( jQuery );
 
 (function( $, undefined ) {
 
-var mouseHandled = false;
-$( document ).mouseup( function() {
-		retu)ction() {	}
-		}
-Handled = false;
-});
+// used to prevent race conditions with remote data sources
+var requestIndex = 0;
 
-$.widget("ui.mouse", {
-
-		reton: "1.10.3",
+$.widget( "ui.autocomplete", {
+	version: "1.10.3",
+	defaultElement: "<input>",
 	options: {
-		cancel: "input,textarea,button,select,oping one instancce: 1,
-		delay: 0
-	ses args)
-		if ( arguments.length ) {
-			this._createWidget( options, elementventPCheck f event
-		or[options] .effetions: {
-		( value ) ) {inde				$();
-		} C" + opte the targ s fun met("mouseupinput,textargetBhe targ(y );
-		,me ] ) {
-			elemene ]( 			thi);
-		}
-	*)$/ ),
-				eve-andler === "strin() {
-the targ.yown: functio.optiont) {
-		// don't seInt(e than one '" + opandle mouseStx	element[on(event) {
-		// don't let more thaata  ),
-				eveandle mouseStart
-		iftouseHandled ) { return; }
+		appendTo: null,
+		autoFocus: false,
+		delay: 300,
+		minLength: 1,
+		position: {
+			my: "left top",
+			at: "left bottom",
+			collision: "none"
+		},
+		source: null,
 
-		// we mouseUp(eseInt(d mouseup (out of el ).."+this.widgetN );
-/ IE op &this. { bar: ___ } }kEvent")) {
-					$.removeData(event.target, that );
-ame + ".pre;
-				}
-riginalddcroll ]s/ $.i- a refecallback callbaction() ons ( ins].concat.targ ) ) === 	});
-
-		t
-		retay: 0e ||
-			ee ||
-	me ? $(event.targw: "fadet.targde: "faday: 0	}
-		}
-
-		methoction() callba	});
-
-		te ||
-	var _s fun ?
-		!*[ retu]ns] $.ui =			curOpti this.eachis.oparts.pop();
-					c_).hasClass( "ui-f ( typeofhis.oed" ) ) ) {
-		"number" ction(			}
-				retns = { durationction(er === "string" ? 	hasOptions = elay);
-		}
-handler )
-exec( nainde e ) {}Query UI , the element his.o}
-				o2e ( elem.lenction();
+		// callbacks
+		change: null,
+		close: null,
+		focus: null,
+		open: null,
+		response: null,
+		search: null,
+		select: null
 	},
-	return this.eeDelayTime			$( event.curre.3",
-	oction() {
-		s._mouseSta"ui-state-focus	.bind(vent.match( /^(\w+s._mouseStaction( event ) {
-				t.preventDefuseDistanceMeer have fired (Class( "ui-stat	.bind" ) { typection(in: funct		if (!this._mouseStarted) {
-				evence: 1ntDefault();
-				return true;
-			}
-		}(evenClick event may never have fi this.widgetName + ".preve= $.data(event.target, }
 
-		// these delegtClickEs )[ 0 function( $, undefined )  {
+	pending: 0,
 
-var mouseHandled = false;
-$( document )ent) !== false
-});
+	_create: function() {
+		// Some browsers only repeat keydown events, not keypress events,
+		// so we use the suppressKeyPress flag to determine if we've already
+		// handled the keydown event. #7269
+		// Unfortunately the code for & in keypress is the same as the up arrow,
+		// so we use the suppressKeyPressRepeat flag to avoid handling keypress
+		// events when we know the keydown event was used to modify the
+		// search term. #7799
+		var suppressKeyPress, suppressKeyPressRepeat, suppressInput,
+			nodeName = this.element[0].nodeName.toLowerCase(),
+			isTextarea = nodeName === "textarea",
+			isInput = nodeName === "input";
 
-$.widget("ui.mouse"d = (th	version: "1.10.3",
-	opnt) !== fal === "dt")) {
-			$
-		};
-		$(document)
-			.bind("mousemove."+this.ce: 1,t")) {
-		e ( elem.lengthouseInit: function() {
-		vaar that = this;
+		this.isMultiLine =
+			// Textareas are always multi-line
+			isTextarea ? true :
+			// Inputs are always single-line, even if inside a contentEditable element
+			// IE also treats inputs as contentEditable
+			isInput ? false :
+			// All other element types are determined by whether or not they're contentEditable
+			this.element.prop( "isContentEditable" );
+
+		this.valueMethod = this.element[ isTextarea || isInput ? "val" : "text" ];
+		this.isNewMenu = true;
 
 		this.element
-			.bind("mouseUp(event);
-		};
-		$(document)
-			.bind("movent);
-			})
-			.bind("me, this._mouseMoveDelegate)
-			.bind("mouseup."+this.widgetNtrue === $.data(eventegate);
+			.addClass( "ui-autocomplete-input" )
+			.attr( "autocomplete", "off" );
 
-		event.preventlName | ];
+		this._on( this.element, {
+			keydown: function( event ) {
+				/*jshint maxcomplexity:15*/
+				if ( this.element.prop( "readOnly" ) ) {
+					suppressKeyPress = true;
+					suppressInput = true;
+					suppressKeyPressRepeat = true;
+					return;
 				}
-		veDeleg.effeme, this._mouseMoction(rs: []
-	}t")) {
-	troy();
-				length ) {
-				curOption >" ).outRClass( eturn this._
-		NUMPADass( tion( key		} catch( e ) {}
-	d = (this._momouseMovuce( elem, s.widget.extend( {|| name;
-	$.fn[		btnCreateOptions: $.noop,
-	_getCreateEventData: $.noop,
-	_create: $.noop,
-	_ini			curOption = option		btnIsed ? nul + " ugs.jquery.Check flag, shuf functioeUp(evenicket/8235
-ifarguments, 1 ),
-			returnValue = this;
 
-		// allow multiple hashes to be passed index his._mouseDi>" ).outd" ) {
-				'" + opty str newhe new ve thit || thi;
-		theHandled =
+				suppressKeyPress = false;
+				suppressInput = false;
+				suppressKeyPressRepeat = false;
+				var keyCode = $.ui.keyCode;
+				switch( event.keyCode ) {
+				case keyCode.PAGE_UP:
+					suppressKeyPress = true;
+					this._move( "previousPage", event );
+					break;
+				case keyCode.PAGE_DOWN:
+					suppressKeyPress = true;
+					this._move( "nextPage", event );
+					break;
+				case keyCode.UP:
+					suppressKeyPress = true;
+					this._keyEvent( "previous", event );
+					break;
+				case keyCode.DOWN:
+					suppressKeyPress = true;
+					this._keyEvent( "next", event );
+					break;
+				case keyCode.ENTER:
+				case keyCode.NUMPAD_ENTER:
+					// when menu is open and has focus
+					if ( this.menu.active ) {
+						// #6055 - Opera still allows the keypress to occur
+						// which causes forms to submit
+						suppressKeyPress = true;
+						event.preventDefault();
+						this.menu.select( event );
+					}
+					break;
+				case keyCode.TAB:
+					if ( this.menu.active ) {
+						this.menu.select( event );
+					}
+					break;
+				case keyCode.ESCAPE:
+					if ( this.menu.element.is( ":visible" ) ) {
+						this._value( this.term );
+						this.close( event );
+						// Different browsers have different default behavior for escape
+						// Single press can mean undo or clear
+						// Double press in IE means clear the whole form
+						event.preventDefault();
+					}
+					break;
+				default:
+					suppressKeyPressRepeat = true;
+					// search timeout should be triggered before the input value is changed
+					this._searchTimeout( event );
+					break;
+				}
+			},
+			keypress: function( event ) {
+				if ( suppressKeyPress ) {
+					suppressKeyPress = false;
+					if ( !this.isMultiLine || this.menu.element.is( ":visible" ) ) {
+						event.preventDefault();
+					}
+					return;
+				}
+				if ( suppressKeyPressRepeat ) {
+					return;
+				}
+
+				// replicate some key handlers to allow them to repeat in Firefox and Opera
+				var keyCode = $.ui.keyCode;
+				switch( event.keyCode ) {
+				case keyCode.PAGE_UP:
+					this._move( "previousPage", event );
+					break;
+				case keyCode.PAGE_DOWN:
+					this._move( "nextPage", event );
+					break;
+				case keyCode.UP:
+					this._keyEvent( "previous", event );
+					break;
+				case keyCode.DOWN:
+					this._keyEvent( "next", event );
+					break;
+				}
+			},
+			input: function( event ) {
+				if ( suppressInput ) {
+					suppressInput = false;
+					event.preventDefault();
+					return;
+				}
+				this._searchTimeout( event );
+			},
+			focus: function() {
+				this.selectedItem = null;
+				this.previous = this._value();
+			},
+			blur: function( event ) {
+				if ( this.cancelBlur ) {
+					delete this.cancelBlur;
+					return;
+				}
+
+				clearTimeout( this.searching );
+				this.close( event );
+				this._change( event );
+			}
+		});
+
+		this._initSource();
+		this.menu = $( "<ul>" )
+			.addClass( "ui-autocomplete ui-front" )
+			.appendTo( this._appendTo() )
+			.menu({
+				// disable ARIA support, the live region takes care of that
+				role: null
+			})
+			.hide()
+			.data( "ui-menu" );
+
+		this._on( this.menu.element, {
+			mousedown: function( event ) {
+				// prevent moving focus out of the text field
+				event.preventDefault();
+
+				// IE doesn't prevent moving focus even with event.preventDefault()
+				// so we set a flag to know when we should ignore the blur event
+				this.cancelBlur = true;
+				this._delay(function() {
+					delete this.cancelBlur;
+				});
+
+				// clicking on the scrollbar causes focus to shift to the body
+				// but we can't detect a mouseup or a click immediately afterward
+				// so we have to track the next mousedown and close the menu if
+				// the user clicks somewhere outside of the autocomplete
+				var menuElement = this.menu.element[ 0 ];
+				if ( !$( event.target ).closest( ".ui-menu-item" ).length ) {
+					this._delay(function() {
+						var that = this;
+						this.document.one( "mousedown", function( event ) {
+							if ( event.target !== that.element[ 0 ] &&
+									event.target !== menuElement &&
+									!$.contains( menuElement, event.target ) ) {
+								that.close();
+							}
+						});
+					});
+				}
+			},
+			menufocus: function( event, ui ) {
+				// support: Firefox
+				// Prevent accidental activation of menu items in Firefox (#7024 #9118)
+				if ( this.isNewMenu ) {
+					this.isNewMenu = false;
+					if ( event.originalEvent && /^mouse/.test( event.originalEvent.type ) ) {
+						this.menu.blur();
+
+						this.document.one( "mousemove", function() {
+							$( event.target ).trigger( event.originalEvent );
+						});
+
+						return;
+					}
+				}
+
+				var item = ui.item.data( "ui-autocomplete-item" );
+				if ( false !== this._trigger( "focus", event, { item: item } ) ) {
+					// use value to match what will end up in the input, if it was a key event
+					if ( event.originalEvent && /^key/.test( event.originalEvent.type ) ) {
+						this._value( item.value );
+					}
+				} else {
+					// Normally the input is populated with the item's value as the
+					// menu is navigated, causing screen readers to notice a change and
+					// announce the item. Since the focus event was canceled, this doesn't
+					// happen, so we update the live region so that screen readers can
+					// still notice the change and announce it.
+					this.liveRegion.text( item.value );
+				}
+			},
+			menuselect: function( event, ui ) {
+				var item = ui.item.data( "ui-autocomplete-item" ),
+					previous = this.previous;
+
+				// only trigger when focus was lost (click on menu)
+				if ( this.element[0] !== this.document[0].activeElement ) {
+					this.element.focus();
+					this.previous = previous;
+					// #6109 - IE triggers two focus events and the second
+					// is asynchronous, so we need to reset the previous
+					// term synchronously and asynchronously :-(
+					this._delay(function() {
+						this.previous = previous;
+						this.selectedItem = item;
+					});
+				}
+
+				if ( false !== this._trigger( "select", event, { item: item } ) ) {
+					this._value( item.value );
+				}
+				// reset the term after the select event
+				// this allows custom select handling to work properly
+				this.term = this._value();
+
+				this.close( event );
+				this.selectedItem = item;
+			}
+		});
+
+		this.liveRegion = $( "<span>", {
+				role: "status",
+				"aria-live": "polite"
+			})
+			.addClass( "ui-helper-hidden-accessible" )
+			.insertBefore( this.element );
+
+		// turning off autocomplete prevents the browser from remembering the
+		// value when navigating through history, so we re-enable autocomplete
+		// if the page is unloaded before the widget is destroyed. #7790
+		this._on( this.window, {
+			beforeunload: function() {
+				this.element.removeAttr( "autocomplete" );
+			}
+		});
+	},
+
+	_destroy: function() {
+		clearTimeout( this.searching );
+		this.element
+			.removeClass( "ui-autocomplete-input" )
+			.removeAttr( "autocomplete" );
+		this.menu.element.remove();
+		this.liveRegion.remove();
+	},
+
+	_setOption: function( key, value ) {
+		this._super( key, value );
+		if ( key === "source" ) {
+			this._initSource();
+		}
+		if ( key === "appendTo" ) {
+			this.menu.element.appendTo( this._appendTo() );
+		}
+		if ( key === "disabled" && value && this.xhr ) {
+			this.xhr.abort();
+		}
+	},
+
+	_appendTo: function() {
+		var element = this.options.appendTo;
+
+		if ( element ) {
+			element = element.jquery || element.nodeType ?
+				$( element ) :
+				this.document.find( element ).eq( 0 );
+		}
+
+		if ( !element ) {
+			element = this.element.closest( ".ui-front" );
+		}
+
+		if ( !element.length ) {
+			element = this.document[0].body;
+		}
+
+		return element;
+	},
+
+	_initSource: function() {
+		var array, url,
+			that = this;
+		if ( $.isArray(this.options.source) ) {
+			array = this.options.source;
+			this.source = function( request, response ) {
+				response( $.ui.autocomplete.filter( array, request.term ) );
+			};
+		} else if ( typeof this.options.source === "string" ) {
+			url = this.options.source;
+			this.source = function( request, response ) {
+				if ( that.xhr ) {
+					that.xhr.abort();
+				}
+				that.xhr = $.ajax({
+					url: url,
+					data: request,
+					dataType: "json",
+					success: function( data ) {
+						response( data );
+					},
+					error: function() {
+						response( [] );
+					}
+				});
+			};
+		} else {
+			this.source = this.options.source;
+		}
+	},
+
+	_searchTimeout: function( event ) {
+		clearTimeout( this.searching );
+		this.searching = this._delay(function() {
+			// only search if the value has changed
+			if ( this.term !== this._value() ) {
+				this.selectedItem = null;
+				this.search( null, event );
+			}
+		}, this.options.delay );
+	},
+
+	search: function( value, event ) {
+		value = value != null ? value : this._value();
+
+		// always save the actual value, not the one passed as an argument
+		this.term = this._value();
+
+		if ( value.length < this.options.minLength ) {
+			return this.close( event );
+		}
+
+		if ( this._trigger( "search", event ) === false ) {
+			return;
+		}
+
+		return this._search( value );
+	},
+
+	_search: function( value ) {
+		this.pending++;
+		this.element.addClass( "ui-autocomplete-loading" );
+		this.cancelSearch = false;
+
+		this.source( { term: value }, this._response() );
+	},
+
+	_response: function() {
+		var that = this,
+			index = ++requestIndex;
+
+		return function( content ) {
+			if ( index === requestIndex ) {
+				that.__response( content );
+			}
+
+			that.pending--;
+			if ( !that.pending ) {
+				that.element.removeClass( "ui-autocomplete-loading" );
+			}
 		};
+	},
+
+	__response: function( content ) {
+		if ( content ) {
+			content = this._normalize( content );
+		}
+		this._trigger( "response", null, { content: content } );
+		if ( !this.options.disabled && content && content.length && !this.cancelSearch ) {
+			this._suggest( content );
+			this._trigger( "open" );
+		} else {
+			// use ._close() instead of .close() so we don't cancel future searches
+			this._close();
+		}
+	},
+
+	close: function( event ) {
+		this.cancelSearch = true;
+		this._close( event );
+	},
+
+	_close: function( event ) {
+		if ( this.menu.element.is( ":visible" ) ) {
+			this.menu.element.hide();
+			this.menu.blur();
+			this.isNewMenu = true;
+			this._trigger( "close", event );
+		}
+	},
+
+	_change: function( event ) {
+		if ( this.previous !== this._value() ) {
+			this._trigger( "change", event, { item: this.selectedItem } );
+		}
+	},
+
+	_normalize: function( items ) {
+		// assume all items have the right format when the first item is complete
+		if ( items.length && items[0].label && items[0].value ) {
+			return items;
+		}
+		return $.map( items, function( item ) {
+			if ( typeof item === "string" ) {
+				return {
+					label: item,
+					value: item
+				};
+			}
+			return $.extend({
+				label: item.label || item.value,
+				value: item.value || item.label
+			}, item );
+		});
+	},
+
+	_suggest: function( items ) {
+		var ul = this.menu.element.empty();
+		this._renderMenu( ul, items );
+		this.isNewMenu = true;
+		this.menu.refresh();
+
+		// size and position menu
+		ul.show();
+		this._resizeMenu();
+		ul.position( $.extend({
+			of: this.element
+		}, this.options.position ));
+
+		if ( this.options.autoFocus ) {
+			this.menu.next();
+		}
+	},
+
+	_resizeMenu: function() {
+		var ul = this.menu.element;
+		ul.outerWidth( Math.max(
+			// Firefox wraps long text (possibly a rounding bug)
+			// so we add 1px to avoid the wrapping (#7513)
+			ul.width( "" ).outerWidth() + 1,
+			this.element.outerWidth()
+		) );
+	},
+
+	_renderMenu: function( ul, items ) {
+		var that = this;
+		$.each( items, function( index, item ) {
+			that._renderItemData( ul, item );
+		});
+	},
+
+	_renderItemData: function( ul, item ) {
+		return this._renderItem( ul, item ).data( "ui-autocomplete-item", item );
+	},
+
+	_renderItem: function( ul, item ) {
+		return $( "<li>" )
+			.append( $( "<a>" ).text( item.label ) )
+			.appendTo( ul );
+	},
+
+	_move: function( direction, event ) {
+		if ( !this.menu.element.is( ":visible" ) ) {
+			this.search( null, event );
+			return;
+		}
+		if ( this.menu.isFirstItem() && /^previous/.test( direction ) ||
+				this.menu.isLastItem() && /^next/.test( direction ) ) {
+			this._value( this.term );
+			this.menu.blur();
+			return;
+		}
+		this.menu[ direction ]( event );
+	},
+
+	widget: function() {
+		return this.menu.element;
+	},
+
+	_value: function() {
+		return this.valueMethod.apply( this.element, arguments );
+	},
+
+	_keyEvent: function( keyEvent, event ) {
+		if ( !this.isMultiLine || this.menu.element.is( ":visible" ) ) {
+			this._move( keyEvent, event );
+
+			// prevents moving cursor to beginning/end of the text field in some browsers
+			event.preventDefault();
+		}
+	}
+});
+
+$.extend( $.ui.autocomplete, {
+	escapeRegex: function( value ) {
+		return value.replace(/[\-\[\]{}()*+?.,\\\^$|#\s]/g, "\\$&");
+	},
+	filter: function(array, term) {
+		var matcher = new RegExp( $.ui.autocomplete.escapeRegex(term), "i" );
+		return $.grep( array, function(value) {
+			return matcher.test( value.label || value.value || value );
+		});
+	}
+});
+
+
+// live region extension, adding a `messages` option
+// NOTE: This is an experimental API. We are still investigating
+// a full solution for string manipulation and internationalization.
+$.widget( "ui.autocomplete", $.ui.autocomplete, {
+	options: {
+		messages: {
+			noResults: "No search results.",
+			results: function( amount ) {
+				return amount + ( amount > 1 ? " results are" : " result is" ) +
+					" available, use up and down arrow keys to navigate.";
+			}
+		}
+	},
+
+	__response: function( content ) {
+		var message;
+		this._superApply( arguments );
+		if ( this.options.disabled || this.cancelSearch ) {
+			return;
+		}
+		if ( content && content.length ) {
+			message = this.options.messages.results( content.length );
+		} else {
+			message = this.options.messages.noResults;
+		}
+		this.liveRegion.text( message );
+	}
+});
+
+}( jQuery ));
+
+(function( $, undefined ) {
+
+var lastActive, startXPos, startYPos, clickDragged,
+	baseClasses = "ui-button ui-widget ui-state-default ui-corner-all",
+	stateClasses = "ui-state-hover ui-state-active ",
+	typeClasses = "ui-button-icons-only ui-button-icon-only ui-button-text-icons ui-button-text-icon-primary ui-button-text-icon-secondary ui-button-text-only",
+	formResetHandler = function() {
+		var form = $( this );
+		setTimeout(function() {
+			form.find( ":ui-button" ).button( "refresh" );
+		}, 1 );
+	},
+	radioGroup = function( radio ) {
+		var name = radio.name,
+			form = radio.form,
+			radios = $( [] );
+		if ( name ) {
+			name = name.replace( /'/g, "\\'" );
+			if ( form ) {
+				radios = $( form ).find( "[name='" + name + "']" );
+			} else {
+				radios = $( "[name='" + name + "']", radio.ownerDocument )
+					.filter(function() {
+						return !this.form;
+					});
+			}
+		}
+		return radios;
+	};
+
+$.widget( "ui.button", {
+	version: "1.10.3",
+	defaultElement: "<button>",
+	options: {
+		disabled: null,
+		text: true,
+		label: null,
+		icons: {
+			primary: null,
+			secondary: null
+		}
+	},
+	_create: function() {
+		this.element.closest( "form" )
+			.unbind( "reset" + this.eventNamespace )
+			.bind( "reset" + this.eventNamespace, formResetHandler );
+
+		if ( typeof this.options.disabled !== "boolean" ) {
+			this.options.disabled = !!this.element.prop( "disabled" );
+		} else {
+			this.element.prop( "disabled", this.options.disabled );
+		}
+
+		this._determineButtonType();
+		this.hasTitle = !!this.buttonElement.attr( "title" );
+
+		var that = this,
+			options = this.options,
+			toggleButton = this.type === "checkbox" || this.type === "radio",
+			activeClass = !toggleButton ? "ui-state-active" : "",
+			focusClass = "ui-state-focus";
+
+		if ( options.label === null ) {
+			options.label = (this.type === "input" ? this.buttonElement.val() : this.buttonElement.html());
+		}
+
+		this._hoverable( this.buttonElement );
+
+		this.buttonElement
+			.addClass( baseClasses )
+			.attr( "role", "button" )
+			.bind( "mouseenter" + this.eventNamespace, function() {
+				if ( options.disabled ) {
+					return;
+				}
+				if ( this === lastActive ) {
+					$( this ).addClass( "ui-state-active" );
+				}
+			})
+			.bind( "mouseleave" + this.eventNamespace, function() {
+				if ( options.disabled ) {
+					return;
+				}
+				$( this ).removeClass( activeClass );
+			})
+			.bind( "click" + this.eventNamespace, function( event ) {
+				if ( options.disabled ) {
+					event.preventDefault();
+					event.stopImmediatePropagation();
+				}
+			});
+
+		this.element
+			.bind( "focus" + this.eventNamespace, function() {
+				// no need to check disabled, focus won't be triggered anyway
+				that.buttonElement.addClass( focusClass );
+			})
+			.bind( "blur" + this.eventNamespace, function() {
+				that.buttonElement.removeClass( focusClass );
+			});
+
+		if ( toggleButton ) {
+			this.element.bind( "change" + this.eventNamespace, function() {
+				if ( clickDragged ) {
+					return;
+				}
+				that.refresh();
+			});
+			// if mouse moves between mousedown and mouseup (drag) set clickDragged flag
+			// prevents issue where button state changes but checkbox/radio checked state
+			// does not in Firefox (see ticket #6970)
+			this.buttonElement
+				.bind( "mousedown" + this.eventNamespace, function( event ) {
+					if ( options.disabled ) {
+						return;
+					}
+					clickDragged = false;
+					startXPos = event.pageX;
+					startYPos = event.pageY;
+				})
+				.bind( "mouseup" + this.eventNamespace, function( event ) {
+					if ( options.disabled ) {
+						return;
+					}
+					if ( startXPos !== event.pageX || startYPos !== event.pageY ) {
+						clickDragged = true;
+					}
+			});
+		}
+
+		if ( this.type === "checkbox" ) {
+			this.buttonElement.bind( "click" + this.eventNamespace, function() {
+				if ( options.disabled || clickDragged ) {
+					return false;
+				}
+			});
+		} else if ( this.type === "radio" ) {
+			this.buttonElement.bind( "click" + this.eventNamespace, function() {
+				if ( options.disabled || clickDragged ) {
+					return false;
+				}
+				$( this ).addClass( "ui-state-active" );
+				that.buttonElement.attr( "aria-pressed", "true" );
+
+				var radio = that.element[ 0 ];
+				radioGroup( radio )
+					.not( radio )
+					.map(function() {
+						return $( this ).button( "widget" )[ 0 ];
+					})
+					.removeClass( "ui-state-active" )
+					.attr( "aria-pressed", "false" );
+			});
+		} else {
+			this.buttonElement
+				.bind( "mousedown" + this.eventNamespace, function() {
+					if ( options.disabled ) {
+						return false;
+					}
+					$( this ).addClass( "ui-state-active" );
+					lastActive = this;
+					that.document.one( "mouseup", function() {
+						lastActive = null;
+					});
+				})
+				.bind( "mouseup" + this.eventNamespace, function() {
+					if ( options.disabled ) {
+						return false;
+					}
+					$( this ).removeClass( "ui-state-active" );
+				})
+				.bind( "keydown" + this.eventNamespace, function(event) {
+					if ( options.disabled ) {
+						return false;
+					}
+					if ( event.keyCode === $.ui.keyCode.SPACE || event.keyCode === $.ui.keyCode.ENTER ) {
+						$( this ).addClass( "ui-state-active" );
+					}
+				})
+				// see #8559, we bind to blur here in case the button element loses
+				// focus between keydown and keyup, it would be left in an "active" state
+				.bind( "keyup" + this.eventNamespace + " blur" + this.eventNamespace, function() {
+					$( this ).removeClass( "ui-state-active" );
+				});
+
+			if ( this.buttonElement.is("a") ) {
+				this.buttonElement.keyup(function(event) {
+					if ( event.keyCode === $.ui.keyCode.SPACE ) {
+						// TODO pass through original event correctly (just as 2nd argument doesn't work)
+						$( this ).click();
+					}
+				});
+			}
+		}
+
+		// TODO: pull out $.Widget's handling for the disabled option into
+		// $.Widget.prototype._setOptionDisabled so it's easy to proxy and can
+		// be overridden by individual plugins
+		this._setOption( "disabled", options.disabled );
+		this._resetButton();
+	},
+
+	_determineButtonType: function() {
+		var ancestor, labelSelector, checked;
+
+		if ( this.element.is("[type=checkbox]") ) {
+			this.type = "checkbox";
+		} else if ( this.element.is("[type=radio]") ) {
+			this.type = "radio";
+		} else if ( this.element.is("input") ) {
+			this.type = "input";
+		} else {
+			this.type = "button";
+		}
+
+		if ( this.type === "checkbox" || this.type === "radio" ) {
+			// we don't search against the document in case the element
+			// is disconnected from the DOM
+			ancestor = this.element.parents().last();
+			labelSelector = "label[for='" + this.element.attr("id") + "']";
+			this.buttonElement = ancestor.find( labelSelector );
+			if ( !this.buttonElement.length ) {
+				ancestor = ancestor.length ? ancestor.siblings() : this.element.siblings();
+				this.buttonElement = ancestor.filter( labelSelector );
+				if ( !this.buttonElement.length ) {
+					this.buttonElement = ancestor.find( labelSelector );
+				}
+			}
+			this.element.addClass( "ui-helper-hidden-accessible" );
+
+			checked = this.element.is( ":checked" );
+			if ( checked ) {
+				this.buttonElement.addClass( "ui-state-active" );
+			}
+			this.buttonElement.prop( "aria-pressed", checked );
+		} else {
+			this.buttonElement = this.element;
+		}
+	},
+
+	widget: function() {
+		return this.buttonElement;
+	},
+
+	_destroy: function() {
+		this.element
+			.removeClass( "ui-helper-hidden-accessible" );
+		this.buttonElement
+			.removeClass( baseClasses + " " + stateClasses + " " + typeClasses )
+			.removeAttr( "role" )
+			.removeAttr( "aria-pressed" )
+			.html( this.buttonElement.find(".ui-button-text").html() );
+
+		if ( !this.hasTitle ) {
+			this.buttonElement.removeAttr( "title" );
+		}
+	},
+
+	_setOption: function( key, value ) {
+		this._super( key, value );
+		if ( key === "disabled" ) {
+			if ( value ) {
+				this.element.prop( "disabled", true );
+			} else {
+				this.element.prop( "disabled", false );
+			}
+			return;
+		}
+		this._resetButton();
+	},
+
+	refresh: function() {
+		//See #8237 & #8828
+		var isDisabled = this.element.is( "input, button" ) ? this.element.is( ":disabled" ) : this.element.hasClass( "ui-button-disabled" );
+
+		if ( isDisabled !== this.options.disabled ) {
+			this._setOption( "disabled", isDisabled );
+		}
+		if ( this.type === "radio" ) {
+			radioGroup( this.element[0] ).each(function() {
+				if ( $( this ).is( ":checked" ) ) {
+					$( this ).button( "widget" )
+						.addClass( "ui-state-active" )
+						.attr( "aria-pressed", "true" );
+				} else {
+					$( this ).button( "widget" )
+						.removeClass( "ui-state-active" )
+						.attr( "aria-pressed", "false" );
+				}
+			});
+		} else if ( this.type === "checkbox" ) {
+			if ( this.element.is( ":checked" ) ) {
+				this.buttonElement
+					.addClass( "ui-state-active" )
+					.attr( "aria-pressed", "true" );
+			} else {
+				this.buttonElement
+					.removeClass( "ui-state-active" )
+					.attr( "aria-pressed", "false" );
+			}
+		}
+	},
+
+	_resetButton: function() {
+		if ( this.type === "input" ) {
+			if ( this.options.label ) {
+				this.element.val( this.options.label );
+			}
+			return;
+		}
+		var buttonElement = this.buttonElement.removeClass( typeClasses ),
+			buttonText = $( "<span></span>", this.document[0] )
+				.addClass( "ui-button-text" )
+				.html( this.options.label )
+				.appendTo( buttonElement.empty() )
+				.text(),
+			icons = this.options.icons,
+			multipleIcons = icons.primary && icons.secondary,
+			buttonClasses = [];
+
+		if ( icons.primary || icons.secondary ) {
+			if ( this.options.text ) {
+				buttonClasses.push( "ui-button-text-icon" + ( multipleIcons ? "s" : ( icons.primary ? "-primary" : "-secondary" ) ) );
+			}
+
+			if ( icons.primary ) {
+				buttonElement.prepend( "<span class='ui-button-icon-primary ui-icon " + icons.primary + "'></span>" );
+			}
+
+			if ( icons.secondary ) {
+				buttonElement.append( "<span class='ui-button-icon-secondary ui-icon " + icons.secondary + "'></span>" );
+			}
+
+			if ( !this.options.text ) {
+				buttonClasses.push( multipleIcons ? "ui-button-icons-only" : "ui-button-icon-only" );
+
+				if ( !this.hasTitle ) {
+					buttonElement.attr( "title", $.trim( buttonText ) );
+				}
+			}
+		} else {
+			buttonClasses.push( "ui-button-text-only" );
+		}
+		buttonElement.addClass( buttonClasses.join( " " ) );
+	}
+});
+
+$.widget( "ui.buttonset", {
+	version: "1.10.3",
+	options: {
+		items: "button, input[type=button], input[type=submit], input[type=reset], input[type=checkbox], input[type=radio], a, :data(ui-button)"
+	},
+
+	_create: function() {
+		this.element.addClass( "ui-buttonset" );
+	},
+
+	_init: function() {
+		this.refresh();
+	},
+
+	_setOption: function( key, value ) {
+		if ( key === "disabled" ) {
+			this.buttons.button( "option", key, value );
+		}
+
+		this._super( key, value );
+	},
+
+	refresh: function() {
+		var rtl = this.element.css( "direction" ) === "rtl";
+
+		this.buttons = this.element.find( this.options.items )
+			.filter( ":ui-button" )
+				.button( "refresh" )
+			.end()
+			.not( ":ui-button" )
+				.button()
+			.end()
+			.map(function() {
+				return $( this ).button( "widget" )[ 0 ];
+			})
+				.removeClass( "ui-corner-all ui-corner-left ui-corner-right" )
+				.filter( ":first" )
+					.addClass( rtl ? "ui-corner-right" : "ui-corner-left" )
+				.end()
+				.filter( ":last" )
+					.addClass( rtl ? "ui-corner-left" : "ui-corner-right" )
+				.end()
+			.end();
+	},
+
+	_destroy: function() {
+		this.element.removeClass( "ui-buttonset" );
+		this.buttons
+			.map(function() {
+				return $( this ).button( "widget" )[ 0 ];
+			})
+				.removeClass( "ui-corner-left ui-corner-right" )
+			.end()
+			.button( "destroy" );
+	}
+});
+
+}( jQuery ) );
+
+(function( $, undefined ) {
+
+$.extend($.ui, { datepicker: { version: "1.10.3" } });
+
+var PROP_NAME = "datepicker",
+	instActive;
+
+/* Date picker manager.
+   Use the singleton instance of this class, $.datepicker, to interact with the date picker.
+   Settings for (groups of) date pickers are maintained in an instance object,
+   allowing multiple different settings on the same page. */
+
+function Datepicker() {
+	this._curInst = null; // The current instance in use
+	this._keyEvent = false; // If the last event was a key event
+	this._disabledInputs = []; // List of date picker inputs that have been disabled
+	this._datepickerShowing = false; // True if the popup picker is showing , false if not
+	this._inDialog = false; // True if showing within a "dialog", false if not
+	this._mainDivId = "ui-datepicker-div"; // The ID of the main datepicker division
+	this._inlineClass = "ui-datepicker-inline"; // The name of the inline marker class
+	this._appendClass = "ui-datepicker-append"; // The name of the append marker class
+	this._triggerClass = "ui-datepicker-trigger"; // The name of the trigger marker class
+	this._dialogClass = "ui-datepicker-dialog"; // The name of the dialog marker class
+	this._disableClass = "ui-datepicker-disabled"; // The name of the disabled covering marker class
+	this._unselectableClass = "ui-datepicker-unselectable"; // The name of the unselectable cell marker class
+	this._currentClass = "ui-datepicker-current-day"; // The name of the current day marker class
+	this._dayOverClass = "ui-datepicker-days-cell-over"; // The name of the day hover marker class
+	this.regional = []; // Available regional settings, indexed by language code
+	this.regional[""] = { // Default regional settings
+		closeText: "Done", // Display text for close link
+		prevText: "Prev", // Display text for previous month link
+		nextText: "Next", // Display text for next month link
+		currentText: "Today", // Display text for current month link
+		monthNames: ["January","February","March","April","May","June",
+			"July","August","September","October","November","December"], // Names of months for drop-down and formatting
+		monthNamesShort: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], // For formatting
+		dayNames: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"], // For formatting
+		dayNamesShort: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"], // For formatting
+		dayNamesMin: ["Su","Mo","Tu","We","Th","Fr","Sa"], // Column headings for days starting at Sunday
+		weekHeader: "Wk", // Column header for week of the year
+		dateFormat: "mm/dd/yy", // See format options on parseDate
+		firstDay: 0, // The first day of the week, Sun = 0, Mon = 1, ...
+		isRTL: false, // True if right-to-left language, false if left-to-right
+		showMonthAfterYear: false, // True if the year select precedes month, false for month then year
+		yearSuffix: "" // Additional text to append to the year in the month headers
+	};
+	this._defaults = { // Global defaults for all the date picker instances
+		showOn: "focus", // "focus" for popup on focus,
+			// "button" for trigger button, or "both" for either
+		showAnim: "fadeIn", // Name of jQuery animation for popup
+		showOptions: {}, // Options for enhanced animations
+		defaultDate: null, // Used when field is blank: actual date,
+			// +/-number for offset from today, null for today
+		appendText: "", // Display text following the input box, e.g. showing the format
+		buttonText: "...", // Text for trigger button
+		buttonImage: "", // URL for trigger button image
+		buttonImageOnly: false, // True if the image appears alone, false if it appears on a button
+		hideIfNoPrevNext: false, // True to hide next/previous month links
+			// if not applicable, false to just disable them
+		navigationAsDateFormat: false, // True if date formatting applied to prev/today/next links
+		gotoCurrent: false, // True if today link goes back to current selection instead
+		changeMonth: false, // True if month can be selected directly, false if only prev/next
+		changeYear: false, // True if year can be selected directly, false if only prev/next
+		yearRange: "c-10:c+10", // Range of years to display in drop-down,
+			// either relative to today's year (-nn:+nn), relative to currently displayed year
+			// (c-nn:c+nn), absolute (nnnn:nnnn), or a combination of the above (nnnn:-n)
+		showOtherMonths: false, // True to show dates in other months, false to leave blank
+		selectOtherMonths: false, // True to allow selection of dates in other months, false for unselectable
+		showWeek: false, // True to show week of the year, false to not show it
+		calculateWeek: this.iso8601Week, // How to calculate the week of the year,
+			// takes a Date and returns the number of the week for it
+		shortYearCutoff: "+10", // Short year values < this are in the current century,
+			// > this are in the previous century,
+			// string value starting with "+" for current year + value
+		minDate: null, // The earliest selectable date, or null for no limit
+		maxDate: null, // The latest selectable date, or null for no limit
+		duration: "fast", // Duration of display/closure
+		beforeShowDay: null, // Function that takes a date and returns an array with
+			// [0] = true if selectable, false if not, [1] = custom CSS class name(s) or "",
+			// [2] = cell title (optional), e.g. $.datepicker.noWeekends
+		beforeShow: null, // Function that takes an input field and
+			// returns a set of custom settings for the date picker
+		onSelect: null, // Define a callback function when a date is selected
+		onChangeMonthYear: null, // Define a callback function when the month or year is changed
+		onClose: null, // Define a callback function when the datepicker is closed
+		numberOfMonths: 1, // Number of months to show at a time
+		showCurrentAtPos: 0, // The position in multipe months at which to show the current month (starting at 0)
+		stepMonths: 1, // Number of months to step back/forward
+		stepBigMonths: 12, // Number of months to step back/forward for the big links
+		altField: "", // Selector for an alternate field to store selected dates into
+		altFormat: "", // The date format to use for the alternate field
+		constrainInput: true, // The input is constrained by the current date format
+		showButtonPanel: false, // True to show button panel, false to not show it
+		autoSize: false, // True to size the input for the date format, false to leave as is
+		disabled: false // The initial disabled state
+	};
+	$.extend(this._defaults, this.regional[""]);
+	this.dpDiv = bindHover($("<div id='" + this._mainDivId + "' class='ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all'></div>"));
+}
+
+$.extend(Datepicker.prototype, {
+	/* Class name added to elements to indicate already configured with a date picker. */
+	markerClassName: "hasDatepicker",
+
+	//Keep track of the maximum number of rows displayed (see #7043)
+	maxRows: 4,
+
+	// TODO rename to "widget" when switching to widget factory
+	_widgetDatepicker: function() {
+		return this.dpDiv;
+	},
+
+	/* Override the default settings for all instances of the date picker.
+	 * @param  settings  object - the new settings to use as defaults (anonymous object)
+	 * @return the manager object
+	 */
+	setDefaults: function(settings) {
+		extendRemove(this._defaults, settings || {});
+		return this;
+	},
+
+	/* Attach the date picker to a jQuery selection.
+	 * @param  target	element - the target input field or division or span
+	 * @param  settings  object - the new settings to use for this date picker instance (anonymous)
+	 */
+	_attachDatepicker: function(target, settings) {
+		var nodeName, inline, inst;
+		nodeName = target.nodeName.toLowerCase();
+		inline = (nodeName === "div" || nodeName === "span");
+		if (!target.id) {
+			this.uuid += 1;
+			target.id = "dp" + this.uuid;
+		}
+		inst = this._newInst($(target), inline);
+		inst.settings = $.extend({}, settings || {});
+		if (nodeName === "input") {
+			this._connectDatepicker(target, inst);
+		} else if (inline) {
+			this._inlineDatepicker(target, inst);
+		}
+	},
+
+	/* Create a new instance object. */
+	_newInst: function(target, inline) {
+		var id = target[0].id.replace(/([^A-Za-z0-9_\-])/g, "\\\\$1"); // escape jQuery meta chars
+		return {id: id, input: target, // associated target
+			selectedDay: 0, selectedMonth: 0, selectedYear: 0, // current selection
+			drawMonth: 0, drawYear: 0, // month being drawn
+			inline: inline, // is datepicker inline or not
+			dpDiv: (!inline ? this.dpDiv : // presentation div
+			bindHover($("<div class='" + this._inlineClass + " ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all'></div>")))};
+	},
+
+	/* Attach the date picker to an input field. */
+	_connectDatepicker: function(target, inst) {
+		var input = $(target);
+		inst.append = $([]);
+		inst.trigger = $([]);
+		if (input.hasClass(this.markerClassName)) {
+			return;
+		}
+		this._attachments(input, inst);
+		input.addClass(this.markerClassName).keydown(this._doKeyDown).
+			keypress(this._doKeyPress).keyup(this._doKeyUp);
+		this._autoSize(inst);
+		$.data(target, PROP_NAME, inst);
+		//If disabled option is true, disable the datepicker once it has been attached to the input (see ticket #5665)
+		if( inst.settings.disabled ) {
+			this._disableDatepicker( target );
+		}
+	},
+
+	/* Make attachments based on settings. */
+	_attachments: function(input, inst) {
+		var showOn, buttonText, buttonImage,
+			appendText = this._get(inst, "appendText"),
+			isRTL = this._get(inst, "isRTL");
+
+		if (inst.append) {
+			inst.append.remove();
+		}
+		if (appendText) {
+			inst.append = $("<span class='" + this._appendClass + "'>" + appendText + "</span>");
+			input[isRTL ? "before" : "after"](inst.append);
+		}
+
+		input.unbind("focus", this._showDatepicker);
+
+		if (inst.trigger) {
+			inst.trigger.remove();
+		}
+
+		showOn = this._get(inst, "showOn");
+		if (showOn === "focus" || showOn === "both") { // pop-up date picker when in the marked field
+			input.focus(this._showDatepicker);
+		}
+		if (showOn === "button" || showOn === "both") { // pop-up date picker when button clicked
+			buttonText = this._get(inst, "buttonText");
+			buttonImage = this._get(inst, "buttonImage");
+			inst.trigger = $(this._get(inst, "buttonImageOnly") ?
+				$("<img/>").addClass(this._triggerClass).
+					attr({ src: buttonImage, alt: buttonText, title: buttonText }) :
+				$("<button type='button'></button>").addClass(this._triggerClass).
+					html(!buttonImage ? buttonText : $("<img/>").attr(
+					{ src:buttonImage, alt:buttonText, title:buttonText })));
+			input[isRTL ? "before" : "after"](inst.trigger);
+			inst.trigger.click(function() {
+				if ($.datepicker._datepickerShowing && $.datepicker._lastInput === input[0]) {
+					$.datepicker._hideDatepicker();
+				} else if ($.datepicker._datepickerShowing && $.datepicker._lastInput !== input[0]) {
+					$.datepicker._hideDatepicker();
+					$.datepicker._showDatepicker(input[0]);
+				} else {
+					$.datepicker._showDatepicker(input[0]);
+				}
+				return false;
+			});
+		}
+	},
+
+	/* Apply the maximum length for the date format. */
+	_autoSize: function(inst) {
+		if (this._get(inst, "autoSize") && !inst.inline) {
+			var findMax, max, maxI, i,
+				date = new Date(2009, 12 - 1, 20), // Ensure double digits
+				dateFormat = this._get(inst, "dateFormat");
+
+			if (dateFormat.match(/[DM]/)) {
+				findMax = function(names) {
+					max = 0;
+					maxI = 0;
+					for (i = 0; i < names.length; i++) {
+						if (names[i].length > max) {
+							max = names[i].length;
+							maxI = i;
+						}
+					}
+					return maxI;
+				};
+				date.setMonth(findMax(this._get(inst, (dateFormat.match(/MM/) ?
+					"monthNames" : "monthNamesShort"))));
+				date.setDate(findMax(this._get(inst, (dateFormat.match(/DD/) ?
+					"dayNames" : "dayNamesShort"))) + 20 - date.getDay());
+			}
+			inst.input.attr("size", this._formatDate(inst, date).length);
+		}
+	},
+
+	/* Attach an inline date picker to a div. */
+	_inlineDatepicker: function(target, inst) {
+		var divSpan = $(target);
+		if (divSpan.hasClass(this.markerClassName)) {
+			return;
+		}
+		divSpan.addClass(this.markerClassName).append(inst.dpDiv);
+		$.data(target, PROP_NAME, inst);
+		this._setDate(inst, this._getDefaultDate(inst), true);
+		this._updateDatepicker(inst);
+		this._updateAlternate(inst);
+		//If disabled option is true, disable the datepicker before showing it (see ticket #5665)
+		if( inst.settings.disabled ) {
+			this._disableDatepicker( target );
+		}
+		// Set display:block in place of inst.dpDiv.show() which won't work on disconnected elements
+		// http://bugs.jqueryui.com/ticket/7552 - A Datepicker created on a detached div has zero height
+		inst.dpDiv.css( "display", "block" );
+	},
+
+	/* Pop-up the date picker in a "dialog" box.
+	 * @param  input element - ignored
+	 * @param  date	string or Date - the initial date to display
+	 * @param  onSelect  function - the function to call when a date is selected
+	 * @param  settings  object - update the dialog date picker instance's settings (anonymous object)
+	 * @param  pos int[2] - coordinates for the dialog's position within the screen or
+	 *					event - with x/y coordinates or
+	 *					leave empty for default (screen centre)
+	 * @return the manager object
+	 */
+	_dialogDatepicker: function(input, date, onSelect, settings, pos) {
+		var id, browserWidth, browserHeight, scrollX, scrollY,
+			inst = this._dialogInst; // internal instance
+
+		if (!inst) {
+			this.uuid += 1;
+			id = "dp" + this.uuid;
+			this._dialogInput = $("<input type='text' id='" + id +
+				"' style='position: absolute; top: -100px; width: 0px;'/>");
+			this._dialogInput.keydown(this._doKeyDown);
+			$("body").append(this._dialogInput);
+			inst = this._dialogInst = this._newInst(this._dialogInput, false);
+			inst.settings = {};
+			$.data(this._dialogInput[0], PROP_NAME, inst);
+		}
+		extendRemove(inst.settings, settings || {});
+		date = (date && date.constructor === Date ? this._formatDate(inst, date) : date);
+		this._dialogInput.val(date);
+
+		this._pos = (pos ? (pos.length ? pos : [pos.pageX, pos.pageY]) : null);
+		if (!this._pos) {
+			browserWidth = document.documentElement.clientWidth;
+			browserHeight = document.documentElement.clientHeight;
+			scrollX = document.documentElement.scrollLeft || document.body.scrollLeft;
+			scrollY = document.documentElement.scrollTop || document.body.scrollTop;
+			this._pos = // should use actual width/height below
+				[(browserWidth / 2) - 100 + scrollX, (browserHeight / 2) - 150 + scrollY];
+		}
+
+		// move input on screen for focus, but hidden behind dialog
+		this._dialogInput.css("left", (this._pos[0] + 20) + "px").css("top", this._pos[1] + "px");
+		inst.settings.onSelect = onSelect;
+		this._inDialog = true;
+		this.dpDiv.addClass(this._dialogClass);
+		this._showDatepicker(this._dialogInput[0]);
+		if ($.blockUI) {
+			$.blockUI(this.dpDiv);
+		}
+		$.data(this._dialogInput[0], PROP_NAME, inst);
+		return this;
+	},
+
+	/* Detach a datepicker from its control.
+	 * @param  target	element - the target input field or division or span
+	 */
+	_destroyDatepicker: function(target) {
+		var nodeName,
+			$target = $(target),
+			inst = $.data(target, PROP_NAME);
+
+		if (!$target.hasClass(this.markerClassName)) {
+			return;
+		}
+
+		nodeName = target.nodeName.toLowerCase();
+		$.removeData(target, PROP_NAME);
+		if (nodeName === "input") {
+			inst.append.remove();
+			inst.trigger.remove();
+			$target.removeClass(this.markerClassName).
+				unbind("focus", this._showDatepicker).
+				unbind("keydown", this._doKeyDown).
+				unbind("keypress", this._doKeyPress).
+				unbind("keyup", this._doKeyUp);
+		} else if (nodeName === "div" || nodeName === "span") {
+			$target.removeClass(this.markerClassName).empty();
+		}
+	},
+
+	/* Enable the date picker to a jQuery selection.
+	 * @param  target	element - the target input field or division or span
+	 */
+	_enableDatepicker: function(target) {
+		var nodeName, inline,
+			$target = $(target),
+			inst = $.data(target, PROP_NAME);
+
+		if (!$target.hasClass(this.markerClassName)) {
+			return;
+		}
+
+		nodeName = target.nodeName.toLowerCase();
+		if (nodeName === "input") {
+			target.disabled = false;
+			inst.trigger.filter("button").
+				each(function() { this.disabled = false; }).end().
+				filter("img").css({opacity: "1.0", cursor: ""});
+		} else if (nodeName === "div" || nodeName === "span") {
+			inline = $target.children("." + this._inlineClass);
+			inline.children().removeClass("ui-state-disabled");
+			inline.find("select.ui-datepicker-month, select.ui-datepicker-year").
+				prop("disabled", false);
+		}
+		this._disabledInputs = $.map(this._disabledInputs,
+			function(value) { return (value === target ? null : value); }); // delete entry
+	},
+
+	/* Disable the date picker to a jQuery selection.
+	 * @param  target	element - the target input field or division or span
+	 */
+	_disableDatepicker: function(target) {
+		var nodeName, inline,
+			$target = $(target),
+			inst = $.data(target, PROP_NAME);
+
+		if (!$target.hasClass(this.markerClassName)) {
+			return;
+		}
+
+		nodeName = target.nodeName.toLowerCase();
+		if (nodeName === "input") {
+			target.disabled = true;
+			inst.trigger.filter("button").
+				each(function() { this.disabled = true; }).end().
+				filter("img").css({opacity: "0.5", cursor: "default"});
+		} else if (nodeName === "div" || nodeName === "span") {
+			inline = $target.children("." + this._inlineClass);
+			inline.children().addClass("ui-state-disabled");
+			inline.find("select.ui-datepicker-month, select.ui-datepicker-year").
+				prop("disabled", true);
+		}
+		this._disabledInputs = $.map(this._disabledInputs,
+			function(value) { return (value === target ? null : value); }); // delete entry
+		this._disabledInputs[this._disabledInputs.length] = target;
+	},
+
+	/* Is the first field in a jQuery collection disabled as a datepicker?
+	 * @param  target	element - the target input field or division or span
+	 * @return boolean - true if disabled, false if enabled
+	 */
+	_isDisabledDatepicker: function(target) {
+		if (!target) {
+			return false;
+		}
+		for (var i = 0; i < this._disabledInputs.length; i++) {
+			if (this._disabledInputs[i] === target) {
+				return true;
+			}
+		}
+		return false;
+	},
+
+	/* Retrieve the instance data for the target control.
+	 * @param  target  element - the target input field or division or span
+	 * @return  object - the associated instance data
+	 * @throws  error if a jQuery problem getting data
+	 */
+	_getInst: function(target) {
+		try {
+			return $.data(target, PROP_NAME);
+		}
+		catch (err) {
+			throw "Missing instance data for this datepicker";
+		}
+	},
+
+	/* Update or retrieve the settings for a date picker attached to an input field or division.
+	 * @param  target  element - the target input field or division or span
+	 * @param  name	object - the new settings to update or
+	 *				string - the name of the setting to change or retrieve,
+	 *				when retrieving also "all" for all instance settings or
+	 *				"defaults" for all global defaults
+	 * @param  value   any - the new value for the setting
+	 *				(omit if above is an object or to retrieve a value)
+	 */
+	_optionDatepicker: function(target, name, value) {
+		var settings, date, minDate, maxDate,
+			inst = this._getInst(target);
+
+		if (arguments.length === 2 && typeof name === "string") {
+			return (name === "defaults" ? $.extend({}, $.datepicker._defaults) :
+				(inst ? (name === "all" ? $.extend({}, inst.settings) :
+				this._get(inst, name)) : null));
+		}
+
+		settings = name || {};
+		if (typeof name === "string") {
+			settings = {};
+			settings[name] = value;
+		}
+
+		if (inst) {
+			if (this._curInst === inst) {
+				this._hideDatepicker();
+			}
+
+			date = this._getDateDatepicker(target, true);
+			minDate = this._getMinMaxDate(inst, "min");
+			maxDate = this._getMinMaxDate(inst, "max");
+			extendRemove(inst.settings, settings);
+			// reformat the old minDate/maxDate values if dateFormat changes and a new minDate/maxDate isn't provided
+			if (minDate !== null && settings.dateFormat !== undefined && settings.minDate === undefined) {
+				inst.settings.minDate = this._formatDate(inst, minDate);
+			}
+			if (maxDate !== null && settings.dateFormat !== undefined && settings.maxDate === undefined) {
+				inst.settings.maxDate = this._formatDate(inst, maxDate);
+			}
+			if ( "disabled" in settings ) {
+				if ( settings.disabled ) {
+					this._disableDatepicker(target);
+				} else {
+					this._enableDatepicker(target);
+				}
+			}
+			this._attachments($(target), inst);
+			this._autoSize(inst);
+			this._setDate(inst, date);
+			this._updateAlternate(inst);
+			this._updateDatepicker(inst);
+		}
+	},
+
+	// change method deprecated
+	_changeDatepicker: function(target, name, value) {
+		this._optionDatepicker(target, name, value);
+	},
+
+	/* Redraw the date picker attached to an input field or division.
+	 * @param  target  element - the target input field or division or span
+	 */
+	_refreshDatepicker: function(target) {
+		var inst = this._getInst(target);
+		if (inst) {
+			this._updateDatepicker(inst);
+		}
+	},
+
+	/* Set the dates for a jQuery selection.
+	 * @param  target element - the target input field or division or span
+	 * @param  date	Date - the new date
+	 */
+	_setDateDatepicker: function(target, date) {
+		var inst = this._getInst(target);
+		if (inst) {
+			this._setDate(inst, date);
+			this._updateDatepicker(inst);
+			this._updateAlternate(inst);
+		}
+	},
+
+	/* Get the date(s) for the first entry in a jQuery selection.
+	 * @param  target element - the target input field or division or span
+	 * @param  noDefault boolean - true if no default date is to be used
+	 * @return Date - the current date
+	 */
+	_getDateDatepicker: function(target, noDefault) {
+		var inst = this._getInst(target);
+		if (inst && !inst.inline) {
+			this._setDateFromField(inst, noDefault);
+		}
+		return (inst ? this._getDate(inst) : null);
+	},
+
+	/* Handle keystrokes. */
+	_doKeyDown: function(event) {
+		var onSelect, dateStr, sel,
+			inst = $.datepicker._getInst(event.target),
+			handled = true,
+			isRTL = inst.dpDiv.is(".ui-datepicker-rtl");
+
+		inst._keyEvent = true;
+		if ($.datepicker._datepickerShowing) {
+			switch (event.keyCode) {
+				case 9: $.datepicker._hideDatepicker();
+						handled = false;
+						break; // hide on tab out
+				case 13: sel = $("td." + $.datepicker._dayOverClass + ":not(." +
+									$.datepicker._currentClass + ")", inst.dpDiv);
+						if (sel[0]) {
+							$.datepicker._selectDay(event.target, inst.selectedMonth, inst.selectedYear, sel[0]);
+						}
+
+						onSelect = $.datepicker._get(inst, "onSelect");
+						if (onSelect) {
+							dateStr = $.datepicker._formatDate(inst);
+
+							// trigger custom callback
+							onSelect.apply((inst.input ? inst.input[0] : null), [dateStr, inst]);
+						} else {
+							$.datepicker._hideDatepicker();
+						}
+
+						return false; // don't submit the form
+				case 27: $.datepicker._hideDatepicker();
+						break; // hide on escape
+				case 33: $.datepicker._adjustDate(event.target, (event.ctrlKey ?
+							-$.datepicker._get(inst, "stepBigMonths") :
+							-$.datepicker._get(inst, "stepMonths")), "M");
+						break; // previous month/year on page up/+ ctrl
+				case 34: $.datepicker._adjustDate(event.target, (event.ctrlKey ?
+							+$.datepicker._get(inst, "stepBigMonths") :
+							+$.datepicker._get(inst, "stepMonths")), "M");
+						break; // next month/year on page down/+ ctrl
+				case 35: if (event.ctrlKey || event.metaKey) {
+							$.datepicker._clearDate(event.target);
+						}
+						handled = event.ctrlKey || event.metaKey;
+						break; // clear on ctrl or command +end
+				case 36: if (event.ctrlKey || event.metaKey) {
+							$.datepicker._gotoToday(event.target);
+						}
+						handled = event.ctrlKey || event.metaKey;
+						break; // current on ctrl or command +home
+				case 37: if (event.ctrlKey || event.metaKey) {
+							$.datepicker._adjustDate(event.target, (isRTL ? +1 : -1), "D");
+						}
+						handled = event.ctrlKey || event.metaKey;
+						// -1 day on ctrl or command +left
+						if (event.originalEvent.altKey) {
+							$.datepicker._adjustDate(event.target, (event.ctrlKey ?
+								-$.datepicker._get(inst, "stepBigMonths") :
+								-$.datepicker._get(inst, "stepMonths")), "M");
+						}
+						// next month/year on alt +left on Mac
+						break;
+				case 38: if (event.ctrlKey || event.metaKey) {
+							$.datepicker._adjustDate(event.target, -7, "D");
+						}
+						handled = event.ctrlKey || event.metaKey;
+						break; // -1 week on ctrl or command +up
+				case 39: if (event.ctrlKey || event.metaKey) {
+							$.datepicker._adjustDate(event.target, (isRTL ? -1 : +1), "D");
+						}
+						handled = event.ctrlKey || event.metaKey;
+						// +1 day on ctrl or command +right
+						if (event.originalEvent.altKey) {
+							$.datepicker._adjustDate(event.target, (event.ctrlKey ?
+								+$.datepicker._get(inst, "stepBigMonths") :
+								+$.datepicker._get(inst, "stepMonths")), "M");
+						}
+						// next month/year on alt +right
+						break;
+				case 40: if (event.ctrlKey || event.metaKey) {
+							$.datepicker._adjustDate(event.target, +7, "D");
+						}
+						handled = event.ctrlKey || event.metaKey;
+						break; // +1 week on ctrl or command +down
+				default: handled = false;
+			}
+		} else if (event.keyCode === 36 && event.ctrlKey) { // display the date picker on ctrl+home
+			$.datepicker._showDatepicker(this);
+		} else {
+			handled = false;
+		}
+
+		if (handled) {
+			event.preventDefault();
+			event.stopPropagation();
+		}
+	},
+
+	/* Filter entered characters - based on date format. */
+	_doKeyPress: function(event) {
+		var chars, chr,
+			inst = $.datepicker._getInst(event.target);
+
+		if ($.datepicker._get(inst, "constrainInput")) {
+			chars = $.datepicker._possibleChars($.datepicker._get(inst, "dateFormat"));
+			chr = String.fromCharCode(event.charCode == null ? event.keyCode : event.charCode);
+			return event.ctrlKey || event.metaKey || (chr < " " || !chars || chars.indexOf(chr) > -1);
+		}
+	},
+
+	/* Synchronise manual entry and field/alternate field. */
+	_doKeyUp: function(event) {
+		var date,
+			inst = $.datepicker._getInst(event.target);
+
+		if (inst.input.val() !== inst.lastVal) {
+			try {
+				date = $.datepicker.parseDate($.datepicker._get(inst, "dateFormat"),
+					(inst.input ? inst.input.val() : null),
+					$.datepicker._getFormatConfig(inst));
+
+				if (date) { // only if valid
+					$.datepicker._setDateFromField(inst);
+					$.datepicker._updateAlternate(inst);
+					$.datepicker._updateDatepicker(inst);
+				}
+			}
+			catch (err) {
+			}
+		}
+		return true;
+	},
+
+	/* Pop-up the date picker for a given input field.
+	 * If false returned from beforeShow event handler do not show.
+	 * @param  input  element - the input field attached to the date picker or
+	 *					event - if triggered by focus
+	 */
+	_showDatepicker: function(input) {
+		input = input.target || input;
+		if (input.nodeName.toLowerCase() !== "input") { // find from button/image trigger
+			input = $("input", input.parentNode)[0];
+		}
+
+		if ($.datepicker._isDisabledDatepicker(input) || $.datepicker._lastInput === input) { // already here
+			return;
+		}
+
+		var inst, beforeShow, beforeShowSettings, isFixed,
+			offset, showAnim, duration;
+
+		inst = $.datepicker._getInst(input);
+		if ($.datepicker._curInst && $.datepicker._curInst !== inst) {
+			$.datepicker._curInst.dpDiv.stop(true, true);
+			if ( inst && $.datepicker._datepickerShowing ) {
+				$.datepicker._hideDatepicker( $.datepicker._curInst.input[0] );
+			}
+		}
+
+		beforeShow = $.datepicker._get(inst, "beforeShow");
+		beforeShowSettings = beforeShow ? beforeShow.apply(input, [input, inst]) : {};
+		if(beforeShowSettings === false){
+			return;
+		}
+		extendRemove(inst.settings, beforeShowSettings);
+
+		inst.lastVal = null;
+		$.datepicker._lastInput = input;
+		$.datepicker._setDateFromField(inst);
+
+		if ($.datepicker._inDialog) { // hide cursor
+			input.value = "";
+		}
+		if (!$.datepicker._pos) { // position below input
+			$.datepicker._pos = $.datepicker._findPos(input);
+			$.datepicker._pos[1] += input.offsetHeight; // add the height
+		}
+
+		isFixed = false;
+		$(input).parents().each(function() {
+			isFixed |= $(this).css("position") === "fixed";
+			return !isFixed;
+		});
+
+		offset = {left: $.datepicker._pos[0], top: $.datepicker._pos[1]};
+		$.datepicker._pos = null;
+		//to avoid flashes on Firefox
+		inst.dpDiv.empty();
+		// determine sizing offscreen
+		inst.dpDiv.css({position: "absolute", display: "block", top: "-1000px"});
+		$.datepicker._updateDatepicker(inst);
+		// fix width for dynamic number of date pickers
+		// and adjust position before showing
+		offset = $.datepicker._checkOffset(inst, offset, isFixed);
+		inst.dpDiv.css({position: ($.datepicker._inDialog && $.blockUI ?
+			"static" : (isFixed ? "fixed" : "absolute")), display: "none",
+			left: offset.left + "px", top: offset.top + "px"});
+
+		if (!inst.inline) {
+			showAnim = $.datepicker._get(inst, "showAnim");
+			duration = $.datepicker._get(inst, "duration");
+			inst.dpDiv.zIndex($(input).zIndex()+1);
+			$.datepicker._datepickerShowing = true;
+
+			if ( $.effects && $.effects.effect[ showAnim ] ) {
+				inst.dpDiv.show(showAnim, $.datepicker._get(inst, "showOptions"), duration);
+			} else {
+				inst.dpDiv[showAnim || "show"](showAnim ? duration : null);
+			}
+
+			if ( $.datepicker._shouldFocusInput( inst ) ) {
+				inst.input.focus();
+			}
+
+			$.datepicker._curInst = inst;
+		}
+	},
+
+	/* Generate the date picker content. */
+	_updateDatepicker: function(inst) {
+		this.maxRows = 4; //Reset the max number of rows being displayed (see #7043)
+		instActive = inst; // for delegate hover events
+		inst.dpDiv.empty().append(this._generateHTML(inst));
+		this._attachHandlers(inst);
+		inst.dpDiv.find("." + this._dayOverClass + " a").mouseover();
+
+		var origyearshtml,
+			numMonths = this._getNumberOfMonths(inst),
+			cols = numMonths[1],
+			width = 17;
+
+		inst.dpDiv.removeClass("ui-datepicker-multi-2 ui-datepicker-multi-3 ui-datepicker-multi-4").width("");
+		if (cols > 1) {
+			inst.dpDiv.addClass("ui-datepicker-multi-" + cols).css("width", (width * cols) + "em");
+		}
+		inst.dpDiv[(numMonths[0] !== 1 || numMonths[1] !== 1 ? "add" : "remove") +
+			"Class"]("ui-datepicker-multi");
+		inst.dpDiv[(this._get(inst, "isRTL") ? "add" : "remove") +
+			"Class"]("ui-datepicker-rtl");
+
+		if (inst === $.datepicker._curInst && $.datepicker._datepickerShowing && $.datepicker._shouldFocusInput( inst ) ) {
+			inst.input.focus();
+		}
+
+		// deffered render of the years select (to avoid flashes on Firefox)
+		if( inst.yearshtml ){
+			origyearshtml = inst.yearshtml;
+			setTimeout(function(){
+				//assure that inst.yearshtml didn't change.
+				if( origyearshtml === inst.yearshtml && inst.yearshtml ){
+					inst.dpDiv.find("select.ui-datepicker-year:first").replaceWith(inst.yearshtml);
+				}
+				origyearshtml = inst.yearshtml = null;
+			}, 0);
+		}
+	},
+
+	// #6694 - don't focus the input if it's already focused
+	// this breaks the change event in IE
+	// Support: IE and jQuery <1.9
+	_shouldFocusInput: function( inst ) {
+		return inst.input && inst.input.is( ":visible" ) && !inst.input.is( ":disabled" ) && !inst.input.is( ":focus" );
+	},
+
+	/* Check positioning to remain on screen. */
+	_checkOffset: function(inst, offset, isFixed) {
+		var dpWidth = inst.dpDiv.outerWidth(),
+			dpHeight = inst.dpDiv.outerHeight(),
+			inputWidth = inst.input ? inst.input.outerWidth() : 0,
+			inputHeight = inst.input ? inst.input.outerHeight() : 0,
+			viewWidth = document.documentElement.clientWidth + (isFixed ? 0 : $(document).scrollLeft()),
+			viewHeight = document.documentElement.clientHeight + (isFixed ? 0 : $(document).scrollTop());
+
+		offset.left -= (this._get(inst, "isRTL") ? (dpWidth - inputWidth) : 0);
+		offset.left -= (isFixed && offset.left === inst.input.offset().left) ? $(document).scrollLeft() : 0;
+		offset.top -= (isFixed && offset.top === (inst.input.offset().top + inputHeight)) ? $(document).scrollTop() : 0;
+
+		// now check if datepicker is showing outside window viewport - move to a better place if so.
+		offset.left -= Math.min(offset.left, (offset.left + dpWidth > viewWidth && viewWidth > dpWidth) ?
+			Math.abs(offset.left + dpWidth - viewWidth) : 0);
+		offset.top -= Math.min(offset.top, (offset.top + dpHeight > viewHeight && viewHeight > dpHeight) ?
+			Math.abs(dpHeight + inputHeight) : 0);
+
+		return offset;
+	},
+
+	/* Find an object's position on the screen. */
+	_findPos: function(obj) {
+		var position,
+			inst = this._getInst(obj),
+			isRTL = this._get(inst, "isRTL");
+
+		while (obj && (obj.type === "hidden" || obj.nodeType !== 1 || $.expr.filters.hidden(obj))) {
+			obj = obj[isRTL ? "previousSibling" : "nextSibling"];
+		}
+
+		position = $(obj).offset();
+		return [position.left, position.top];
+	},
+
+	/* Hide the date picker from view.
+	 * @param  input  element - the input field attached to the date picker
+	 */
+	_hideDatepicker: function(input) {
+		var showAnim, duration, postProcess, onClose,
+			inst = this._curInst;
+
+		if (!inst || (input && inst !== $.data(input, PROP_NAME))) {
+			return;
+		}
+
+		if (this._datepickerShowing) {
+			showAnim = this._get(inst, "showAnim");
+			duration = this._get(inst, "duration");
+			postProcess = function() {
+				$.datepicker._tidyDialog(inst);
+			};
+
+			// DEPRECATED: after BC for 1.8.x $.effects[ showAnim ] is not needed
+			if ( $.effects && ( $.effects.effect[ showAnim ] || $.effects[ showAnim ] ) ) {
+				inst.dpDiv.hide(showAnim, $.datepicker._get(inst, "showOptions"), duration, postProcess);
+			} else {
+				inst.dpDiv[(showAnim === "slideDown" ? "slideUp" :
+					(showAnim === "fadeIn" ? "fadeOut" : "hide"))]((showAnim ? duration : null), postProcess);
+			}
+
+			if (!showAnim) {
+				postProcess();
+			}
+			this._datepickerShowing = false;
+
+			onClose = this._get(inst, "onClose");
+			if (onClose) {
+				onClose.apply((inst.input ? inst.input[0] : null), [(inst.input ? inst.input.val() : ""), inst]);
+			}
+
+			this._lastInput = null;
+			if (this._inDialog) {
+				this._dialogInput.css({ position: "absolute", left: "0", top: "-100px" });
+				if ($.blockUI) {
+					$.unblockUI();
+					$("body").append(this.dpDiv);
+				}
+			}
+			this._inDialog = false;
+		}
+	},
+
+	/* Tidy up after a dialog display. */
+	_tidyDialog: function(inst) {
+		inst.dpDiv.removeClass(this._dialogClass).unbind(".ui-datepicker-calendar");
+	},
+
+	/* Close date picker if clicked elsewhere. */
+	_checkExternalClick: function(event) {
+		if (!$.datepicker._curInst) {
+			return;
+		}
+
+		var $target = $(event.target),
+			inst = $.datepicker._getInst($target[0]);
+
+		if ( ( ( $target[0].id !== $.datepicker._mainDivId &&
+				$target.parents("#" + $.datepicker._mainDivId).length === 0 &&
+				!$target.hasClass($.datepicker.markerClassName) &&
+				!$target.closest("." + $.datepicker._triggerClass).length &&
+				$.datepicker._datepickerShowing && !($.datepicker._inDialog && $.blockUI) ) ) ||
+			( $target.hasClass($.datepicker.markerClassName) && $.datepicker._curInst !== inst ) ) {
+				$.datepicker._hideDatepicker();
+		}
+	},
+
+	/* Adjust one of the date sub-fields. */
+	_adjustDate: function(id, offset, period) {
+		var target = $(id),
+			inst = this._getInst(target[0]);
+
+		if (this._isDisabledDatepicker(target[0])) {
+			return;
+		}
+		this._adjustInstDate(inst, offset +
+			(period === "M" ? this._get(inst, "showCurrentAtPos") : 0), // undo positioning
+			period);
+		this._updateDatepicker(inst);
+	},
+
+	/* Action for current link. */
+	_gotoToday: function(id) {
+		var date,
+			target = $(id),
+			inst = this._getInst(target[0]);
+
+		if (this._get(inst, "gotoCurrent") && inst.currentDay) {
+			inst.selectedDay = inst.currentDay;
+			inst.drawMonth = inst.selectedMonth = inst.currentMonth;
+			inst.drawYear = inst.selectedYear = inst.currentYear;
+		} else {
+			date = new Date();
+			inst.selectedDay = date.getDate();
+			inst.drawMonth = inst.selectedMonth = date.getMonth();
+			inst.drawYear = inst.selectedYear = date.getFullYear();
+		}
+		this._notifyChange(inst);
+		this._adjustDate(target);
+	},
+
+	/* Action for selecting a new month/year. */
+	_selectMonthYear: function(id, select, period) {
+		var target = $(id),
+			inst = this._getInst(target[0]);
+
+		inst["selected" + (period === "M" ? "Month" : "Year")] =
+		inst["draw" + (period === "M" ? "Month" : "Year")] =
+			parseInt(select.options[select.selectedIndex].value,10);
+
+		this._notifyChange(inst);
+		this._adjustDate(target);
+	},
+
+	/* Action for selecting a day. */
+	_selectDay: function(id, month, year, td) {
+		var inst,
+			target = $(id);
+
+		if ($(td).hasClass(this._unselectableClass) || this._isDisabledDatepicker(target[0])) {
+			return;
+		}
+
+		inst = this._getInst(target[0]);
+		inst.selectedDay = inst.currentDay = $("a", td).html();
+		inst.selectedMonth = inst.currentMonth = month;
+		inst.selectedYear = inst.currentYear = year;
+		this._selectDate(id, this._formatDate(inst,
+			inst.currentDay, inst.currentMonth, inst.currentYear));
+	},
+
+	/* Erase the input field and hide the date picker. */
+	_clearDate: function(id) {
+		var target = $(id);
+		this._selectDate(target, "");
+	},
+
+	/* Update the input field with the selected date. */
+	_selectDate: function(id, dateStr) {
+		var onSelect,
+			target = $(id),
+			inst = this._getInst(target[0]);
+
+		dateStr = (dateStr != null ? dateStr : this._formatDate(inst));
+		if (inst.input) {
+			inst.input.val(dateStr);
+		}
+		this._updateAlternate(inst);
+
+		onSelect = this._get(inst, "onSelect");
+		if (onSelect) {
+			onSelect.apply((inst.input ? inst.input[0] : null), [dateStr, inst]);  // trigger custom callback
+		} else if (inst.input) {
+			inst.input.trigger("change"); // fire the change event
+		}
+
+		if (inst.inline){
+			this._updateDatepicker(inst);
+		} else {
+			this._hideDatepicker();
+			this._lastInput = inst.input[0];
+			if (typeof(inst.input[0]) !== "object") {
+				inst.input.focus(); // restore focus
+			}
+			this._lastInput = null;
+		}
+	},
+
+	/* Update any alternate field to synchronise with the main field. */
+	_updateAlternate: function(inst) {
+		var altFormat, date, dateStr,
+			altField = this._get(inst, "altField");
+
+		if (altField) { // update alternate field too
+			altFormat = this._get(inst, "altFormat") || this._get(inst, "dateFormat");
+			date = this._getDate(inst);
+			dateStr = this.formatDate(altFormat, date, this._getFormatConfig(inst));
+			$(altField).each(function() { $(this).val(dateStr); });
+		}
+	},
+
+	/* Set as beforeShowDay function to prevent selection of weekends.
+	 * @param  date  Date - the date to customise
+	 * @return [boolean, string] - is this date selectable?, what is its CSS class?
+	 */
+	noWeekends: function(date) {
+		var day = date.getDay();
+		return [(day > 0 && day < 6), ""];
+	},
+
+	/* Set as calculateWeek to determine the week of the year based on the ISO 8601 definition.
+	 * @param  date  Date - the date to get the week for
+	 * @return  number - the number of the week within the year that contains this date
+	 */
+	iso8601Week: function(date) {
+		var time,
+			checkDate = new Date(date.getTime());
+
+		// Find Thursday of this week starting on Monday
+		checkDate.setDate(checkDate.getDate() + 4 - (checkDate.getDay() || 7));
+
+		time = checkDate.getTime();
+		checkDate.setMonth(0); // Compare with Jan 1
+		checkDate.setDate(1);
+		return Math.floor(Math.round((time - checkDate) / 86400000) / 7) + 1;
+	},
+
+	/* Parse a string value into a date object.
+	 * See formatDate below for the possible formats.
+	 *
+	 * @param  format string - the expected format of the date
+	 * @param  value string - the date in the above format
+	 * @param  settings Object - attributes include:
+	 *					shortYearCutoff  number - the cutoff year for determining the century (optional)
+	 *					dayNamesShort	string[7] - abbreviated names of the days from Sunday (optional)
+	 *					dayNames		string[7] - names of the days from Sunday (optional)
+	 *					monthNamesShort string[12] - abbreviated names of the months (optional)
+	 *					monthNames		string[12] - names of the months (optional)
+	 * @return  Date - the extracted date value or null if value is blank
+	 */
+	parseDate: function (format, value, settings) {
+		if (format == null || value == null) {
+			throw "Invalid arguments";
+		}
+
+		value = (typeof value === "object" ? value.toString() : value + "");
+		if (value === "") {
+			return null;
+		}
+
+		var iFormat, dim, extra,
+			iValue = 0,
+			shortYearCutoffTemp = (settings ? settings.shortYearCutoff : null) || this._defaults.shortYearCutoff,
+			shortYearCutoff = (typeof shortYearCutoffTemp !== "string" ? shortYearCutoffTemp :
+				new Date().getFullYear() % 100 + parseInt(shortYearCutoffTemp, 10)),
+			dayNamesShort = (settings ? settings.dayNamesShort : null) || this._defaults.dayNamesShort,
+			dayNames = (settings ? settings.dayNames : null) || this._defaults.dayNames,
+			monthNamesShort = (settings ? settings.monthNamesShort : null) || this._defaults.monthNamesShort,
+			monthNames = (settings ? settings.monthNames : null) || this._defaults.monthNames,
+			year = -1,
+			month = -1,
+			day = -1,
+			doy = -1,
+			literal = false,
+			date,
+			// Check whether a format character is doubled
+			lookAhead = function(match) {
+				var matches = (iFormat + 1 < format.length && format.charAt(iFormat + 1) === match);
+				if (matches) {
+					iFormat++;
+				}
+				return matches;
+			},
+			// Extract a number from the string value
+			getNumber = function(match) {
+				var isDoubled = lookAhead(match),
+					size = (match === "@" ? 14 : (match === "!" ? 20 :
+					(match === "y" && isDoubled ? 4 : (match === "o" ? 3 : 2)))),
+					digits = new RegExp("^\\d{1," + size + "}"),
+					num = value.substring(iValue).match(digits);
+				if (!num) {
+					throw "Missing number at position " + iValue;
+				}
+				iValue += num[0].length;
+				return parseInt(num[0], 10);
+			},
+			// Extract a name from the string value and convert to an index
+			getName = function(match, shortNames, longNames) {
+				var index = -1,
+					names = $.map(lookAhead(match) ? longNames : shortNames, function (v, k) {
+						return [ [k, v] ];
+					}).sort(function (a, b) {
+						return -(a[1].length - b[1].length);
+					});
+
+				$.each(names, function (i, pair) {
+					var name = pair[1];
+					if (value.substr(iValue, name.length).toLowerCase() === name.toLowerCase()) {
+						index = pair[0];
+						iValue += name.length;
+						return false;
+					}
+				});
+				if (index !== -1) {
+					return index + 1;
+				} else {
+					throw "Unknown name at position " + iValue;
+				}
+			},
+			// Confirm that a literal character matches the string value
+			checkLiteral = function() {
+				if (value.charAt(iValue) !== format.charAt(iFormat)) {
+					throw "Unexpected literal at position " + iValue;
+				}
+				iValue++;
+			};
+
+		for (iFormat = 0; iFormat < format.length; iFormat++) {
+			if (literal) {
+				if (format.charAt(iFormat) === "'" && !lookAhead("'")) {
+					literal = false;
+				} else {
+					checkLiteral();
+				}
+			} else {
+				switch (format.charAt(iFormat)) {
+					case "d":
+						day = getNumber("d");
+						break;
+					case "D":
+						getName("D", dayNamesShort, dayNames);
+						break;
+					case "o":
+						doy = getNumber("o");
+						break;
+					case "m":
+						month = getNumber("m");
+						break;
+					case "M":
+						month = getName("M", monthNamesShort, monthNames);
+						break;
+					case "y":
+						year = getNumber("y");
+						break;
+					case "@":
+						date = new Date(getNumber("@"));
+						year = date.getFullYear();
+						month = date.getMonth() + 1;
+						day = date.getDate();
+						break;
+					case "!":
+						date = new Date((getNumber("!") - this._ticksTo1970) / 10000);
+						year = date.getFullYear();
+						month = date.getMonth() + 1;
+						day = date.getDate();
+						break;
+					case "'":
+						if (lookAhead("'")){
+							checkLiteral();
+						} else {
+							literal = true;
+						}
+						break;
+					default:
+						checkLiteral();
+				}
+			}
+		}
+
+		if (iValue < value.length){
+			extra = value.substr(iValue);
+			if (!/^\s+/.test(extra)) {
+				throw "Extra/unparsed characters found in date: " + extra;
+			}
+		}
+
+		if (year === -1) {
+			year = new Date().getFullYear();
+		} else if (year < 100) {
+			year += new Date().getFullYear() - new Date().getFullYear() % 100 +
+				(year <= shortYearCutoff ? 0 : -100);
+		}
+
+		if (doy > -1) {
+			month = 1;
+			day = doy;
+			do {
+				dim = this._getDaysInMonth(year, month - 1);
+				if (day <= dim) {
+					break;
+				}
+				month++;
+				day -= dim;
+			} while (true);
+		}
+
+		date = this._daylightSavingAdjust(new Date(year, month - 1, day));
+		if (date.getFullYear() !== year || date.getMonth() + 1 !== month || date.getDate() !== day) {
+			throw "Invalid date"; // E.g. 31/02/00
+		}
+		return date;
+	},
+
+	/* Standard date formats. */
+	ATOM: "yy-mm-dd", // RFC 3339 (ISO 8601)
+	COOKIE: "D, dd M yy",
+	ISO_8601: "yy-mm-dd",
+	RFC_822: "D, d M y",
+	RFC_850: "DD, dd-M-y",
+	RFC_1036: "D, d M y",
+	RFC_1123: "D, d M yy",
+	RFC_2822: "D, d M yy",
+	RSS: "D, d M y", // RFC 822
+	TICKS: "!",
+	TIMESTAMP: "@",
+	W3C: "yy-mm-dd", // ISO 8601
+
+	_ticksTo1970: (((1970 - 1) * 365 + Math.floor(1970 / 4) - Math.floor(1970 / 100) +
+		Math.floor(1970 / 400)) * 24 * 60 * 60 * 10000000),
+
+	/* Format a date object into a string value.
+	 * The format can be combinations of the following:
+	 * d  - day of month (no leading zero)
+	 * dd - day of month (two digit)
+	 * o  - day of year (no leading zeros)
+	 * oo - day of year (three digit)
+	 * D  - day name short
+	 * DD - day name long
+	 * m  - month of year (no leading zero)
+	 * mm - month of year (two digit)
+	 * M  - month name short
+	 * MM - month name long
+	 * y  - year (two digit)
+	 * yy - year (four digit)
+	 * @ - Unix timestamp (ms since 01/01/1970)
+	 * ! - Windows ticks (100ns since 01/01/0001)
+	 * "..." - literal text
+	 * '' - single quote
+	 *
+	 * @param  format string - the desired format of the date
+	 * @param  date Date - the date value to format
+	 * @param  settings Object - attributes include:
+	 *					dayNamesShort	string[7] - abbreviated names of the days from Sunday (optional)
+	 *					dayNames		string[7] - names of the days from Sunday (optional)
+	 *					monthNamesShort string[12] - abbreviated names of the months (optional)
+	 *					monthNames		string[12] - names of the months (optional)
+	 * @return  string - the date in the above format
+	 */
+	formatDate: function (format, date, settings) {
+		if (!date) {
+			return "";
+		}
+
+		var iFormat,
+			dayNamesShort = (settings ? settings.dayNamesShort : null) || this._defaults.dayNamesShort,
+			dayNames = (settings ? settings.dayNames : null) || this._defaults.dayNames,
+			monthNamesShort = (settings ? settings.monthNamesShort : null) || this._defaults.monthNamesShort,
+			monthNames = (settings ? settings.monthNames : null) || this._defaults.monthNames,
+			// Check whether a format character is doubled
+			lookAhead = function(match) {
+				var matches = (iFormat + 1 < format.length && format.charAt(iFormat + 1) === match);
+				if (matches) {
+					iFormat++;
+				}
+				return matches;
+			},
+			// Format a number, with leading zero if necessary
+			formatNumber = function(match, value, len) {
+				var num = "" + value;
+				if (lookAhead(match)) {
+					while (num.length < len) {
+						num = "0" + num;
+					}
+				}
+				return num;
+			},
+			// Format a name, short or long as requested
+			formatName = function(match, value, shortNames, longNames) {
+				return (lookAhead(match) ? longNames[value] : shortNames[value]);
+			},
+			output = "",
+			literal = false;
+
+		if (date) {
+			for (iFormat = 0; iFormat < format.length; iFormat++) {
+				if (literal) {
+					if (format.charAt(iFormat) === "'" && !lookAhead("'")) {
+						literal = false;
+					} else {
+						output += format.charAt(iFormat);
+					}
+				} else {
+					switch (format.charAt(iFormat)) {
+						case "d":
+							output += formatNumber("d", date.getDate(), 2);
+							break;
+						case "D":
+							output += formatName("D", date.getDay(), dayNamesShort, dayNames);
+							break;
+						case "o":
+							output += formatNumber("o",
+								Math.round((new Date(date.getFullYear(), date.getMonth(), date.getDate()).getTime() - new Date(date.getFullYear(), 0, 0).getTime()) / 86400000), 3);
+							break;
+						case "m":
+							output += formatNumber("m", date.getMonth() + 1, 2);
+							break;
+						case "M":
+							output += formatName("M", date.getMonth(), monthNamesShort, monthNames);
+							break;
+						case "y":
+							output += (lookAhead("y") ? date.getFullYear() :
+								(date.getYear() % 100 < 10 ? "0" : "") + date.getYear() % 100);
+							break;
+						case "@":
+							output += date.getTime();
+							break;
+						case "!":
+							output += date.getTime() * 10000 + this._ticksTo1970;
+							break;
+						case "'":
+							if (lookAhead("'")) {
+								output += "'";
+							} else {
+								literal = true;
+							}
+							break;
+						default:
+							output += format.charAt(iFormat);
+					}
+				}
+			}
+		}
+		return output;
+	},
+
+	/* Extract all possible characters from the date format. */
+	_possibleChars: function (format) {
+		var iFormat,
+			chars = "",
+			literal = false,
+			// Check whether a format character is doubled
+			lookAhead = function(match) {
+				var matches = (iFormat + 1 < format.length && format.charAt(iFormat + 1) === match);
+				if (matches) {
+					iFormat++;
+				}
+				return matches;
+			};
+
+		for (iFormat = 0; iFormat < format.length; iFormat++) {
+			if (literal) {
+				if (format.charAt(iFormat) === "'" && !lookAhead("'")) {
+					literal = false;
+				} else {
+					chars += format.charAt(iFormat);
+				}
+			} else {
+				switch (format.charAt(iFormat)) {
+					case "d": case "m": case "y": case "@":
+						chars += "0123456789";
+						break;
+					case "D": case "M":
+						return null; // Accept anything
+					case "'":
+						if (lookAhead("'")) {
+							chars += "'";
+						} else {
+							literal = true;
+						}
+						break;
+					default:
+						chars += format.charAt(iFormat);
+				}
+			}
+		}
+		return chars;
+	},
+
+	/* Get a setting value, defaulting if necessary. */
+	_get: function(inst, name) {
+		return inst.settings[name] !== undefined ?
+			inst.settings[name] : this._defaults[name];
+	},
+
+	/* Parse existing date and initialise date picker. */
+	_setDateFromField: function(inst, noDefault) {
+		if (inst.input.val() === inst.lastVal) {
+			return;
+		}
+
+		var dateFormat = this._get(inst, "dateFormat"),
+			dates = inst.lastVal = inst.input ? inst.input.val() : null,
+			defaultDate = this._getDefaultDate(inst),
+			date = defaultDate,
+			settings = this._getFormatConfig(inst);
+
+		try {
+			date = this.parseDate(dateFormat, dates, settings) || defaultDate;
+		} catch (event) {
+			dates = (noDefault ? "" : dates);
+		}
+		inst.selectedDay = date.getDate();
+		inst.drawMonth = inst.selectedMonth = date.getMonth();
+		inst.drawYear = inst.selectedYear = date.getFullYear();
+		inst.currentDay = (dates ? date.getDate() : 0);
+		inst.currentMonth = (dates ? date.getMonth() : 0);
+		inst.currentYear = (dates ? date.getFullYear() : 0);
+		this._adjustInstDate(inst);
+	},
+
+	/* Retrieve the default date shown on opening. */
+	_getDefaultDate: function(inst) {
+		return this._restrictMinMax(inst,
+			this._determineDate(inst, this._get(inst, "defaultDate"), new Date()));
+	},
+
+	/* A date may be specified as an exact value or a relative one. */
+	_determineDate: function(inst, date, defaultDate) {
+		var offsetNumeric = function(offset) {
+				var date = new Date();
+				date.setDate(date.getDate() + offset);
+				return date;
+			},
+			offsetString = function(offset) {
+				try {
+					return $.datepicker.parseDate($.datepicker._get(inst, "dateFormat"),
+						offset, $.datepicker._getFormatConfig(inst));
+				}
+				catch (e) {
+					// Ignore
+				}
+
+				var date = (offset.toLowerCase().match(/^c/) ?
+					$.datepicker._getDate(inst) : null) || new Date(),
+					year = date.getFullYear(),
+					month = date.getMonth(),
+					day = date.getDate(),
+					pattern = /([+\-]?[0-9]+)\s*(d|D|w|W|m|M|y|Y)?/g,
+					matches = pattern.exec(offset);
+
+				while (matches) {
+					switch (matches[2] || "d") {
+						case "d" : case "D" :
+							day += parseInt(matches[1],10); break;
+						case "w" : case "W" :
+							day += parseInt(matches[1],10) * 7; break;
+						case "m" : case "M" :
+							month += parseInt(matches[1],10);
+							day = Math.min(day, $.datepicker._getDaysInMonth(year, month));
+							break;
+						case "y": case "Y" :
+							year += parseInt(matches[1],10);
+							day = Math.min(day, $.datepicker._getDaysInMonth(year, month));
+							break;
+					}
+					matches = pattern.exec(offset);
+				}
+				return new Date(year, month, day);
+			},
+			newDate = (date == null || date === "" ? defaultDate : (typeof date === "string" ? offsetString(date) :
+				(typeof date === "number" ? (isNaN(date) ? defaultDate : offsetNumeric(date)) : new Date(date.getTime()))));
+
+		newDate = (newDate && newDate.toString() === "Invalid Date" ? defaultDate : newDate);
+		if (newDate) {
+			newDate.setHours(0);
+			newDate.setMinutes(0);
+			newDate.setSeconds(0);
+			newDate.setMilliseconds(0);
+		}
+		return this._daylightSavingAdjust(newDate);
+	},
+
+	/* Handle switch to/from daylight saving.
+	 * Hours may be non-zero on daylight saving cut-over:
+	 * > 12 when midnight changeover, but then cannot generate
+	 * midnight datetime, so jump to 1AM, otherwise reset.
+	 * @param  date  (Date) the date to check
+	 * @return  (Date) the corrected date
+	 */
+	_daylightSavingAdjust: function(date) {
+		if (!date) {
+			return null;
+		}
+		date.setHours(date.getHours() > 12 ? date.getHours() + 2 : 0);
+		return date;
+	},
+
+	/* Set the date(s) directly. */
+	_setDate: function(inst, date, noChange) {
+		var clear = !date,
+			origMonth = inst.selectedMonth,
+			origYear = inst.selectedYear,
+			newDate = this._restrictMinMax(inst, this._determineDate(inst, date, new Date()));
+
+		inst.selectedDay = inst.currentDay = newDate.getDate();
+		inst.drawMonth = inst.selectedMonth = inst.currentMonth = newDate.getMonth();
+		inst.drawYear = inst.selectedYear = inst.currentYear = newDate.getFullYear();
+		if ((origMonth !== inst.selectedMonth || origYear !== inst.selectedYear) && !noChange) {
+			this._notifyChange(inst);
+		}
+		this._adjustInstDate(inst);
+		if (inst.input) {
+			inst.input.val(clear ? "" : this._formatDate(inst));
+		}
+	},
+
+	/* Retrieve the date(s) directly. */
+	_getDate: function(inst) {
+		var startDate = (!inst.currentYear || (inst.input && inst.input.val() === "") ? null :
+			this._daylightSavingAdjust(new Date(
+			inst.currentYear, inst.currentMonth, inst.currentDay)));
+			return startDate;
+	},
+
+	/* Attach the onxxx handlers.  These are declared statically so
+	 * they work with static code transformers like Caja.
+	 */
+	_attachHandlers: function(inst) {
+		var stepMonths = this._get(inst, "stepMonths"),
+			id = "#" + inst.id.replace( /\\\\/g, "\\" );
+		inst.dpDiv.find("[data-handler]").map(function () {
+			var handler = {
+				prev: function () {
+					$.datepicker._adjustDate(id, -stepMonths, "M");
+				},
+				next: function () {
+					$.datepicker._adjustDate(id, +stepMonths, "M");
+				},
+				hide: function () {
+					$.datepicker._hideDatepicker();
+				},
+				today: function () {
+					$.datepicker._gotoToday(id);
+				},
+				selectDay: function () {
+					$.datepicker._selectDay(id, +this.getAttribute("data-month"), +this.getAttribute("data-year"), this);
+					return false;
+				},
+				selectMonth: function () {
+					$.datepicker._selectMonthYear(id, this, "M");
+					return false;
+				},
+				selectYear: function () {
+					$.datepicker._selectMonthYear(id, this, "Y");
+					return false;
+				}
+			};
+			$(this).bind(this.getAttribute("data-event"), handler[this.getAttribute("data-handler")]);
+		});
+	},
+
+	/* Generate the HTML for the current state of the date picker. */
+	_generateHTML: function(inst) {
+		var maxDraw, prevText, prev, nextText, next, currentText, gotoDate,
+			controls, buttonPanel, firstDay, showWeek, dayNames, dayNamesMin,
+			monthNames, monthNamesShort, beforeShowDay, showOtherMonths,
+			selectOtherMonths, defaultDate, html, dow, row, group, col, selectedDate,
+			cornerClass, calender, thead, day, daysInMonth, leadDays, curRows, numRows,
+			printDate, dRow, tbody, daySettings, otherMonth, unselectable,
+			tempDate = new Date(),
+			today = this._daylightSavingAdjust(
+				new Date(tempDate.getFullYear(), tempDate.getMonth(), tempDate.getDate())), // clear time
+			isRTL = this._get(inst, "isRTL"),
+			showButtonPanel = this._get(inst, "showButtonPanel"),
+			hideIfNoPrevNext = this._get(inst, "hideIfNoPrevNext"),
+			navigationAsDateFormat = this._get(inst, "navigationAsDateFormat"),
+			numMonths = this._getNumberOfMonths(inst),
+			showCurrentAtPos = this._get(inst, "showCurrentAtPos"),
+			stepMonths = this._get(inst, "stepMonths"),
+			isMultiMonth = (numMonths[0] !== 1 || numMonths[1] !== 1),
+			currentDate = this._daylightSavingAdjust((!inst.currentDay ? new Date(9999, 9, 9) :
+				new Date(inst.currentYear, inst.currentMonth, inst.currentDay))),
+			minDate = this._getMinMaxDate(inst, "min"),
+			maxDate = this._getMinMaxDate(inst, "max"),
+			drawMonth = inst.drawMonth - showCurrentAtPos,
+			drawYear = inst.drawYear;
+
+		if (drawMonth < 0) {
+			drawMonth += 12;
+			drawYear--;
+		}
+		if (maxDate) {
+			maxDraw = this._daylightSavingAdjust(new Date(maxDate.getFullYear(),
+				maxDate.getMonth() - (numMonths[0] * numMonths[1]) + 1, maxDate.getDate()));
+			maxDraw = (minDate && maxDraw < minDate ? minDate : maxDraw);
+			while (this._daylightSavingAdjust(new Date(drawYear, drawMonth, 1)) > maxDraw) {
+				drawMonth--;
+				if (drawMonth < 0) {
+					drawMonth = 11;
+					drawYear--;
+				}
+			}
+		}
+		inst.drawMonth = drawMonth;
+		inst.drawYear = drawYear;
+
+		prevText = this._get(inst, "prevText");
+		prevText = (!navigationAsDateFormat ? prevText : this.formatDate(prevText,
+			this._daylightSavingAdjust(new Date(drawYear, drawMonth - stepMonths, 1)),
+			this._getFormatConfig(inst)));
+
+		prev = (this._canAdjustMonth(inst, -1, drawYear, drawMonth) ?
+			"<a class='ui-datepicker-prev ui-corner-all' data-handler='prev' data-event='click'" +
+			" title='" + prevText + "'><span class='ui-icon ui-icon-circle-triangle-" + ( isRTL ? "e" : "w") + "'>" + prevText + "</span></a>" :
+			(hideIfNoPrevNext ? "" : "<a class='ui-datepicker-prev ui-corner-all ui-state-disabled' title='"+ prevText +"'><span class='ui-icon ui-icon-circle-triangle-" + ( isRTL ? "e" : "w") + "'>" + prevText + "</span></a>"));
+
+		nextText = this._get(inst, "nextText");
+		nextText = (!navigationAsDateFormat ? nextText : this.formatDate(nextText,
+			this._daylightSavingAdjust(new Date(drawYear, drawMonth + stepMonths, 1)),
+			this._getFormatConfig(inst)));
+
+		next = (this._canAdjustMonth(inst, +1, drawYear, drawMonth) ?
+			"<a class='ui-datepicker-next ui-corner-all' data-handler='next' data-event='click'" +
+			" title='" + nextText + "'><span class='ui-icon ui-icon-circle-triangle-" + ( isRTL ? "w" : "e") + "'>" + nextText + "</span></a>" :
+			(hideIfNoPrevNext ? "" : "<a class='ui-datepicker-next ui-corner-all ui-state-disabled' title='"+ nextText + "'><span class='ui-icon ui-icon-circle-triangle-" + ( isRTL ? "w" : "e") + "'>" + nextText + "</span></a>"));
+
+		currentText = this._get(inst, "currentText");
+		gotoDate = (this._get(inst, "gotoCurrent") && inst.currentDay ? currentDate : today);
+		currentText = (!navigationAsDateFormat ? currentText :
+			this.formatDate(currentText, gotoDate, this._getFormatConfig(inst)));
+
+		controls = (!inst.inline ? "<button type='button' class='ui-datepicker-close ui-state-default ui-priority-primary ui-corner-all' data-handler='hide' data-event='click'>" +
+			this._get(inst, "closeText") + "</button>" : "");
+
+		buttonPanel = (showButtonPanel) ? "<div class='ui-datepicker-buttonpane ui-widget-content'>" + (isRTL ? controls : "") +
+			(this._isInRange(inst, gotoDate) ? "<button type='button' class='ui-datepicker-current ui-state-default ui-priority-secondary ui-corner-all' data-handler='today' data-event='click'" +
+			">" + currentText + "</button>" : "") + (isRTL ? "" : controls) + "</div>" : "";
+
+		firstDay = parseInt(this._get(inst, "firstDay"),10);
+		firstDay = (isNaN(firstDay) ? 0 : firstDay);
+
+		showWeek = this._get(inst, "showWeek");
+		dayNames = this._get(inst, "dayNames");
+		dayNamesMin = this._get(inst, "dayNamesMin");
+		monthNames = this._get(inst, "monthNames");
+		monthNamesShort = this._get(inst, "monthNamesShort");
+		beforeShowDay = this._get(inst, "beforeShowDay");
+		showOtherMonths = this._get(inst, "showOtherMonths");
+		selectOtherMonths = this._get(inst, "selectOtherMonths");
+		defaultDate = this._getDefaultDate(inst);
+		html = "";
+		dow;
+		for (row = 0; row < numMonths[0]; row++) {
+			group = "";
+			this.maxRows = 4;
+			for (col = 0; col < numMonths[1]; col++) {
+				selectedDate = this._daylightSavingAdjust(new Date(drawYear, drawMonth, inst.selectedDay));
+				cornerClass = " ui-corner-all";
+				calender = "";
+				if (isMultiMonth) {
+					calender += "<div class='ui-datepicker-group";
+					if (numMonths[1] > 1) {
+						switch (col) {
+							case 0: calender += " ui-datepicker-group-first";
+								cornerClass = " ui-corner-" + (isRTL ? "right" : "left"); break;
+							case numMonths[1]-1: calender += " ui-datepicker-group-last";
+								cornerClass = " ui-corner-" + (isRTL ? "left" : "right"); break;
+							default: calender += " ui-datepicker-group-middle"; cornerClass = ""; break;
+						}
+					}
+					calender += "'>";
+				}
+				calender += "<div class='ui-datepicker-header ui-widget-header ui-helper-clearfix" + cornerClass + "'>" +
+					(/all|left/.test(cornerClass) && row === 0 ? (isRTL ? next : prev) : "") +
+					(/all|right/.test(cornerClass) && row === 0 ? (isRTL ? prev : next) : "") +
+					this._generateMonthYearHeader(inst, drawMonth, drawYear, minDate, maxDate,
+					row > 0 || col > 0, monthNames, monthNamesShort) + // draw month headers
+					"</div><table class='ui-datepicker-calendar'><thead>" +
+					"<tr>";
+				thead = (showWeek ? "<th class='ui-datepicker-week-col'>" + this._get(inst, "weekHeader") + "</th>" : "");
+				for (dow = 0; dow < 7; dow++) { // days of the week
+					day = (dow + firstDay) % 7;
+					thead += "<th" + ((dow + firstDay + 6) % 7 >= 5 ? " class='ui-datepicker-week-end'" : "") + ">" +
+						"<span title='" + dayNames[day] + "'>" + dayNamesMin[day] + "</span></th>";
+				}
+				calender += thead + "</tr></thead><tbody>";
+				daysInMonth = this._getDaysInMonth(drawYear, drawMonth);
+				if (drawYear === inst.selectedYear && drawMonth === inst.selectedMonth) {
+					inst.selectedDay = Math.min(inst.selectedDay, daysInMonth);
+				}
+				leadDays = (this._getFirstDayOfMonth(drawYear, drawMonth) - firstDay + 7) % 7;
+				curRows = Math.ceil((leadDays + daysInMonth) / 7); // calculate the number of rows to generate
+				numRows = (isMultiMonth ? this.maxRows > curRows ? this.maxRows : curRows : curRows); //If multiple months, use the higher number of rows (see #7043)
+				this.maxRows = numRows;
+				printDate = this._daylightSavingAdjust(new Date(drawYear, drawMonth, 1 - leadDays));
+				for (dRow = 0; dRow < numRows; dRow++) { // create date picker rows
+					calender += "<tr>";
+					tbody = (!showWeek ? "" : "<td class='ui-datepicker-week-col'>" +
+						this._get(inst, "calculateWeek")(printDate) + "</td>");
+					for (dow = 0; dow < 7; dow++) { // create date picker days
+						daySettings = (beforeShowDay ?
+							beforeShowDay.apply((inst.input ? inst.input[0] : null), [printDate]) : [true, ""]);
+						otherMonth = (printDate.getMonth() !== drawMonth);
+						unselectable = (otherMonth && !selectOtherMonths) || !daySettings[0] ||
+							(minDate && printDate < minDate) || (maxDate && printDate > maxDate);
+						tbody += "<td class='" +
+							((dow + firstDay + 6) % 7 >= 5 ? " ui-datepicker-week-end" : "") + // highlight weekends
+							(otherMonth ? " ui-datepicker-other-month" : "") + // highlight days from other months
+							((printDate.getTime() === selectedDate.getTime() && drawMonth === inst.selectedMonth && inst._keyEvent) || // user pressed key
+							(defaultDate.getTime() === printDate.getTime() && defaultDate.getTime() === selectedDate.getTime()) ?
+							// or defaultDate is current printedDate and defaultDate is selectedDate
+							" " + this._dayOverClass : "") + // highlight selected day
+							(unselectable ? " " + this._unselectableClass + " ui-state-disabled": "") +  // highlight unselectable days
+							(otherMonth && !showOtherMonths ? "" : " " + daySettings[1] + // highlight custom dates
+							(printDate.getTime() === currentDate.getTime() ? " " + this._currentClass : "") + // highlight selected day
+							(printDate.getTime() === today.getTime() ? " ui-datepicker-today" : "")) + "'" + // highlight today (if different)
+							((!otherMonth || showOtherMonths) && daySettings[2] ? " title='" + daySettings[2].replace(/'/g, "&#39;") + "'" : "") + // cell title
+							(unselectable ? "" : " data-handler='selectDay' data-event='click' data-month='" + printDate.getMonth() + "' data-year='" + printDate.getFullYear() + "'") + ">" + // actions
+							(otherMonth && !showOtherMonths ? "&#xa0;" : // display for other months
+							(unselectable ? "<span class='ui-state-default'>" + printDate.getDate() + "</span>" : "<a class='ui-state-default" +
+							(printDate.getTime() === today.getTime() ? " ui-state-highlight" : "") +
+							(printDate.getTime() === currentDate.getTime() ? " ui-state-active" : "") + // highlight selected day
+							(otherMonth ? " ui-priority-secondary" : "") + // distinguish dates from other months
+							"' href='#'>" + printDate.getDate() + "</a>")) + "</td>"; // display selectable date
+						printDate.setDate(printDate.getDate() + 1);
+						printDate = this._daylightSavingAdjust(printDate);
+					}
+					calender += tbody + "</tr>";
+				}
+				drawMonth++;
+				if (drawMonth > 11) {
+					drawMonth = 0;
+					drawYear++;
+				}
+				calender += "</tbody></table>" + (isMultiMonth ? "</div>" +
+							((numMonths[0] > 0 && col === numMonths[1]-1) ? "<div class='ui-datepicker-row-break'></div>" : "") : "");
+				group += calender;
+			}
+			html += group;
+		}
+		html += buttonPanel;
+		inst._keyEvent = false;
+		return html;
+	},
+
+	/* Generate the month and year header. */
+	_generateMonthYearHeader: function(inst, drawMonth, drawYear, minDate, maxDate,
+			secondary, monthNames, monthNamesShort) {
+
+		var inMinYear, inMaxYear, month, years, thisYear, determineYear, year, endYear,
+			changeMonth = this._get(inst, "changeMonth"),
+			changeYear = this._get(inst, "changeYear"),
+			showMonthAfterYear = this._get(inst, "showMonthAfterYear"),
+			html = "<div class='ui-datepicker-title'>",
+			monthHtml = "";
+
+		// month selection
+		if (secondary || !changeMonth) {
+			monthHtml += "<span class='ui-datepicker-month'>" + monthNames[drawMonth] + "</span>";
+		} else {
+			inMinYear = (minDate && minDate.getFullYear() === drawYear);
+			inMaxYear = (maxDate && maxDate.getFullYear() === drawYear);
+			monthHtml += "<select class='ui-datepicker-month' data-handler='selectMonth' data-event='change'>";
+			for ( month = 0; month < 12; month++) {
+				if ((!inMinYear || month >= minDate.getMonth()) && (!inMaxYear || month <= maxDate.getMonth())) {
+					monthHtml += "<option value='" + month + "'" +
+						(month === drawMonth ? " selected='selected'" : "") +
+						">" + monthNamesShort[month] + "</option>";
+				}
+			}
+			monthHtml += "</select>";
+		}
+
+		if (!showMonthAfterYear) {
+			html += monthHtml + (secondary || !(changeMonth && changeYear) ? "&#xa0;" : "");
+		}
+
+		// year selection
+		if ( !inst.yearshtml ) {
+			inst.yearshtml = "";
+			if (secondary || !changeYear) {
+				html += "<span class='ui-datepicker-year'>" + drawYear + "</span>";
+			} else {
+				// determine range of years to display
+				years = this._get(inst, "yearRange").split(":");
+				thisYear = new Date().getFullYear();
+				determineYear = function(value) {
+					var year = (value.match(/c[+\-].*/) ? drawYear + parseInt(value.substring(1), 10) :
+						(value.match(/[+\-].*/) ? thisYear + parseInt(value, 10) :
+						parseInt(value, 10)));
+					return (isNaN(year) ? thisYear : year);
+				};
+				year = determineYear(years[0]);
+				endYear = Math.max(year, determineYear(years[1] || ""));
+				year = (minDate ? Math.max(year, minDate.getFullYear()) : year);
+				endYear = (maxDate ? Math.min(endYear, maxDate.getFullYear()) : endYear);
+				inst.yearshtml += "<select class='ui-datepicker-year' data-handler='selectYear' data-event='change'>";
+				for (; year <= endYear; year++) {
+					inst.yearshtml += "<option value='" + year + "'" +
+						(year === drawYear ? " selected='selected'" : "") +
+						">" + year + "</option>";
+				}
+				inst.yearshtml += "</select>";
+
+				html += inst.yearshtml;
+				inst.yearshtml = null;
+			}
+		}
+
+		html += this._get(inst, "yearSuffix");
+		if (showMonthAfterYear) {
+			html += (secondary || !(changeMonth && changeYear) ? "&#xa0;" : "") + monthHtml;
+		}
+		html += "</div>"; // Close datepicker_header
+		return html;
+	},
+
+	/* Adjust one of the date sub-fields. */
+	_adjustInstDate: function(inst, offset, period) {
+		var year = inst.drawYear + (period === "Y" ? offset : 0),
+			month = inst.drawMonth + (period === "M" ? offset : 0),
+			day = Math.min(inst.selectedDay, this._getDaysInMonth(year, month)) + (period === "D" ? offset : 0),
+			date = this._restrictMinMax(inst, this._daylightSavingAdjust(new Date(year, month, day)));
+
+		inst.selectedDay = date.getDate();
+		inst.drawMonth = inst.selectedMonth = date.getMonth();
+		inst.drawYear = inst.selectedYear = date.getFullYear();
+		if (period === "M" || period === "Y") {
+			this._notifyChange(inst);
+		}
+	},
+
+	/* Ensure a date is within any min/max bounds. */
+	_restrictMinMax: function(inst, date) {
+		var minDate = this._getMinMaxDate(inst, "min"),
+			maxDate = this._getMinMaxDate(inst, "max"),
+			newDate = (minDate && date < minDate ? minDate : date);
+		return (maxDate && newDate > maxDate ? maxDate : newDate);
+	},
+
+	/* Notify change of month/year. */
+	_notifyChange: function(inst) {
+		var onChange = this._get(inst, "onChangeMonthYear");
+		if (onChange) {
+			onChange.apply((inst.input ? inst.input[0] : null),
+				[inst.selectedYear, inst.selectedMonth + 1, inst]);
+		}
+	},
+
+	/* Determine the number of months to show. */
+	_getNumberOfMonths: function(inst) {
+		var numMonths = this._get(inst, "numberOfMonths");
+		return (numMonths == null ? [1, 1] : (typeof numMonths === "number" ? [1, numMonths] : numMonths));
+	},
+
+	/* Determine the current maximum date - ensure no time components are set. */
+	_getMinMaxDate: function(inst, minMax) {
+		return this._determineDate(inst, this._get(inst, minMax + "Date"), null);
+	},
+
+	/* Find the number of days in a given month. */
+	_getDaysInMonth: function(year, month) {
+		return 32 - this._daylightSavingAdjust(new Date(year, month, 32)).getDate();
+	},
+
+	/* Find the day of the week of the first of a month. */
+	_getFirstDayOfMonth: function(year, month) {
+		return new Date(year, month, 1).getDay();
+	},
+
+	/* Determines if we should allow a "next/prev" month display change. */
+	_canAdjustMonth: function(inst, offset, curYear, curMonth) {
+		var numMonths = this._getNumberOfMonths(inst),
+			date = this._daylightSavingAdjust(new Date(curYear,
+			curMonth + (offset < 0 ? offset : numMonths[0] * numMonths[1]), 1));
+
+		if (offset < 0) {
+			date.setDate(this._getDaysInMonth(date.getFullYear(), date.getMonth()));
+		}
+		return this._isInRange(inst, date);
+	},
+
+	/* Is the given date in the accepted range? */
+	_isInRange: function(inst, date) {
+		var yearSplit, currentYear,
+			minDate = this._getMinMaxDate(inst, "min"),
+			maxDate = this._getMinMaxDate(inst, "max"),
+			minYear = null,
+			maxYear = null,
+			years = this._get(inst, "yearRange");
+			if (years){
+				yearSplit = years.split(":");
+				currentYear = new Date().getFullYear();
+				minYear = parseInt(yearSplit[0], 10);
+				maxYear = parseInt(yearSplit[1], 10);
+				if ( yearSplit[0].match(/[+\-].*/) ) {
+					minYear += currentYear;
+				}
+				if ( yearSplit[1].match(/[+\-].*/) ) {
+					maxYear += currentYear;
+				}
+			}
+
+		return ((!minDate || date.getTime() >= minDate.getTime()) &&
+			(!maxDate || date.getTime() <= maxDate.getTime()) &&
+			(!minYear || date.getFullYear() >= minYear) &&
+			(!maxYear || date.getFullYear() <= maxYear));
+	},
+
+	/* Provide the configuration settings for formatting/parsing. */
+	_getFormatConfig: function(inst) {
+		var shortYearCutoff = this._get(inst, "shortYearCutoff");
+		shortYearCutoff = (typeof shortYearCutoff !== "string" ? shortYearCutoff :
+			new Date().getFullYear() % 100 + parseInt(shortYearCutoff, 10));
+		return {shortYearCutoff: shortYearCutoff,
+			dayNamesShort: this._get(inst, "dayNamesShort"), dayNames: this._get(inst, "dayNames"),
+			monthNamesShort: this._get(inst, "monthNamesShort"), monthNames: this._get(inst, "monthNames")};
+	},
+
+	/* Format the given date for display. */
+	_formatDate: function(inst, day, month, year) {
+		if (!day) {
+			inst.currentDay = inst.selectedDay;
+			inst.currentMonth = inst.selectedMonth;
+			inst.currentYear = inst.selectedYear;
+		}
+		var date = (day ? (typeof day === "object" ? day :
+			this._daylightSavingAdjust(new Date(year, month, day))) :
+			this._daylightSavingAdjust(new Date(inst.currentYear, inst.currentMonth, inst.currentDay)));
+		return this.formatDate(this._get(inst, "dateFormat"), date, this._getFormatConfig(inst));
+	}
+});
+
+/*
+ * Bind hover events for datepicker elements.
+ * Done via delegate so the binding only occurs once in the lifetime of the parent div.
+ * Global instActive, set by _updateDatepicker allows the handlers to find their way back to the active picker.
+ */
+function bindHover(dpDiv) {
+	var selector = "button, .ui-datepicker-prev, .ui-datepicker-next, .ui-datepicker-calendar td a";
+	return dpDiv.delegate(selector, "mouseout", function() {
+			$(this).removeClass("ui-state-hover");
+			if (this.className.indexOf("ui-datepicker-prev") !== -1) {
+				$(this).removeClass("ui-datepicker-prev-hover");
+			}
+			if (this.className.indexOf("ui-datepicker-next") !== -1) {
+				$(this).removeClass("ui-datepicker-next-hover");
+			}
+		})
+		.delegate(selector, "mouseover", function(){
+			if (!$.datepicker._isDisabledDatepicker( instActive.inline ? dpDiv.parent()[0] : instActive.input[0])) {
+				$(this).parents(".ui-datepicker-calendar").find("a").removeClass("ui-state-hover");
+				$(this).addClass("ui-state-hover");
+				if (this.className.indexOf("ui-datepicker-prev") !== -1) {
+					$(this).addClass("ui-datepicker-prev-hover");
+				}
+				if (this.className.indexOf("ui-datepicker-next") !== -1) {
+					$(this).addClass("ui-datepicker-next-hover");
+				}
+			}
+		});
+}
+
+/* jQuery extend now ignores nulls! */
+function extendRemove(target, props) {
+	$.extend(target, props);
+	for (var name in props) {
+		if (props[name] == null) {
+			target[name] = props[name];
+		}
+	}
+	return target;
+}
+
+/* Invoke the datepicker functionality.
+   @param  options  string - a command, optionally followed by additional parameters or
+					Object - settings for attaching new datepicker functionality
+   @return  jQuery object */
+$.fn.datepicker = function(options){
+
+	/* Verify an empty collection wasn't passed - Fixes #6976 */
+	if ( !this.length ) {
+		return this;
+	}
+
+	/* Initialise the date picker. */
+	if (!$.datepicker.initialized) {
+		$(document).mousedown($.datepicker._checkExternalClick);
+		$.datepicker.initialized = true;
+	}
+
+	/* Append datepicker main container to body if not exist. */
+	if ($("#"+$.datepicker._mainDivId).length === 0) {
+		$("body").append($.datepicker.dpDiv);
+	}
+
+	var otherArgs = Array.prototype.slice.call(arguments, 1);
+	if (typeof options === "string" && (options === "isDisabled" || options === "getDate" || options === "widget")) {
+		return $.datepicker["_" + options + "Datepicker"].
+			apply($.datepicker, [this[0]].concat(otherArgs));
+	}
+	if (options === "option" && arguments.length === 2 && typeof arguments[1] === "string") {
+		return $.datepicker["_" + options + "Datepicker"].
+			apply($.datepicker, [this[0]].concat(otherArgs));
+	}
+	return this.each(function() {
+		typeof options === "string" ?
+			$.datepicker["_" + options + "Datepicker"].
+				apply($.datepicker, [this].concat(otherArgs)) :
+			$.datepicker._attachDatepicker(this, options);
+	});
+};
+
+$.datepicker = new Datepicker(); // singleton instance
+$.datepicker.initialized = false;
+$.datepicker.uuid = new Date().getTime();
+$.datepicker.version = "1.10.3";
+
+})(jQuery);
+
+(function( $, undefined ) {
+
+var sizeRelatedOptions = {
+		buttons: true,
+		height: true,
+		maxHeight: true,
+		maxWidth: true,
+		minHeight: true,
+		minWidth: true,
+		width: true
+	},
+	resizableRelatedOptions = {
+		maxHeight: true,
+		maxWidth: true,
+		minHeight: true,
+		minWidth: true
+	};
+
+$.widget( "ui.dialog", {
+	version: "1.10.3",
+	options: {
+		appendTo: "body",
+		autoOpen: true,
+		buttons: [],
+		closeOnEscape: true,
+		closeText: "close",
+		dialogClass: "",
+		draggable: true,
+		hide: null,
+		height: "auto",
+		maxHeight: null,
+		maxWidth: null,
+		minHeight: 150,
+		minWidth: 150,
+		modal: false,
+		position: {
+			my: "center",
+			at: "center",
+			of: window,
+			collision: "fit",
+			// Ensure the titlebar is always visible
+			using: function( pos ) {
+				var topOffset = $( this ).css( pos ).offset().top;
+				if ( topOffset < 0 ) {
+					$( this ).css( "top", pos.top - topOffset );
+				}
+			}
+		},
+		resizable: true,
+		show: null,
+		title: null,
+		width: 300,
+
+		// callbacks
+		beforeClose: null,
+		close: null,
+		drag: null,
+		dragStart: null,
+		dragStop: null,
+		focus: null,
+		open: null,
+		resize: null,
+		resizeStart: null,
+		resizeStop: null
+	},
+
+	_create: function() {
+		this.originalCss = {
+			display: this.element[0].style.display,
+			width: this.element[0].style.width,
+			minHeight: this.element[0].style.minHeight,
+			maxHeight: this.element[0].style.maxHeight,
+			height: this.element[0].style.height
+		};
+		this.originalPosition = {
+			parent: this.element.parent(),
+			index: this.element.parent().children().index( this.element )
+		};
+		this.originalTitle = this.element.attr("title");
+		this.options.title = this.options.title || this.originalTitle;
+
+		this._createWrapper();
+
+		this.element
+			.show()
+			.removeAttr("title")
+			.addClass("ui-dialog-content ui-widget-content")
+			.appendTo( this.uiDialog );
+
+		this._createTitlebar();
+		this._createButtonPane();
+
+		if ( this.options.draggable && $.fn.draggable ) {
+			this._makeDraggable();
+		}
+		if ( this.options.resizable && $.fn.resizable ) {
+			this._makeResizable();
+		}
+
+		this._isOpen = false;
+	},
+
+	_init: function() {
+		if ( this.options.autoOpen ) {
+			this.open();
+		}
+	},
+
+	_appendTo: function() {
+		var element = this.options.appendTo;
+		if ( element && (element.jquery || element.nodeType) ) {
+			return $( element );
+		}
+		return this.document.find( element || "body" ).eq( 0 );
+	},
+
+	_destroy: function() {
+		var next,
+			originalPosition = this.originalPosition;
+
+		this._destroyOverlay();
+
+		this.element
+			.removeUniqueId()
+			.removeClass("ui-dialog-content ui-widget-content")
+			.css( this.originalCss )
+			// Without detaching first, the following becomes really slow
+			.detach();
+
+		this.uiDialog.stop( true, true ).remove();
+
+		if ( this.originalTitle ) {
+			this.element.attr( "title", this.originalTitle );
+		}
+
+		next = originalPosition.parent.children().eq( originalPosition.index );
+		// Don't try to place the dialog next to itself (#8613)
+		if ( next.length && next[0] !== this.element[0] ) {
+			next.before( this.element );
+		} else {
+			originalPosition.parent.append( this.element );
+		}
+	},
+
+	widget: function() {
+		return this.uiDialog;
+	},
+
+	disable: $.noop,
+	enable: $.noop,
+
+	close: function( event ) {
+		var that = this;
+
+		if ( !this._isOpen || this._trigger( "beforeClose", event ) === false ) {
+			return;
+		}
+
+		this._isOpen = false;
+		this._destroyOverlay();
+
+		if ( !this.opener.filter(":focusable").focus().length ) {
+			// Hiding a focused element doesn't trigger blur in WebKit
+			// so in case we have nothing to focus on, explicitly blur the active element
+			// https://bugs.webkit.org/show_bug.cgi?id=47182
+			$( this.document[0].activeElement ).blur();
+		}
+
+		this._hide( this.uiDialog, this.options.hide, function() {
+			that._trigger( "close", event );
+		});
+	},
+
+	isOpen: function() {
+		return this._isOpen;
+	},
+
+	moveToTop: function() {
+		this._moveToTop();
+	},
+
+	_moveToTop: function( event, silent ) {
+		var moved = !!this.uiDialog.nextAll(":visible").insertBefore( this.uiDialog ).length;
+		if ( moved && !silent ) {
+			this._trigger( "focus", event );
+		}
+		return moved;
+	},
+
+	open: function() {
+		var that = this;
+		if ( this._isOpen ) {
+			if ( this._moveToTop() ) {
+				this._focusTabbable();
+			}
+			return;
+		}
+
+		this._isOpen = true;
+		this.opener = $( this.document[0].activeElement );
+
+		this._size();
+		this._position();
+		this._createOverlay();
+		this._moveToTop( null, true );
+		this._show( this.uiDialog, this.options.show, function() {
+			that._focusTabbable();
+			that._trigger("focus");
+		});
+
+		this._trigger("open");
+	},
+
+	_focusTabbable: function() {
+		// Set focus to the first match:
+		// 1. First element inside the dialog matching [autofocus]
+		// 2. Tabbable element inside the content element
+		// 3. Tabbable element inside the buttonpane
+		// 4. The close button
+		// 5. The dialog itself
+		var hasFocus = this.element.find("[autofocus]");
+		if ( !hasFocus.length ) {
+			hasFocus = this.element.find(":tabbable");
+		}
+		if ( !hasFocus.length ) {
+			hasFocus = this.uiDialogButtonPane.find(":tabbable");
+		}
+		if ( !hasFocus.length ) {
+			hasFocus = this.uiDialogTitlebarClose.filter(":tabbable");
+		}
+		if ( !hasFocus.length ) {
+			hasFocus = this.uiDialog;
+		}
+		hasFocus.eq( 0 ).focus();
+	},
+
+	_keepFocus: function( event ) {
+		function checkFocus() {
+			var activeElement = this.document[0].activeElement,
+				isActive = this.uiDialog[0] === activeElement ||
+					$.contains( this.uiDialog[0], activeElement );
+			if ( !isActive ) {
+				this._focusTabbable();
+			}
+		}
+		event.preventDefault();
+		checkFocus.call( this );
+		// support: IE
+		// IE <= 8 doesn't prevent moving focus even with event.preventDefault()
+		// so we check again later
+		this._delay( checkFocus );
+	},
+
+	_createWrapper: function() {
+		this.uiDialog = $("<div>")
+			.addClass( "ui-dialog ui-widget ui-widget-content ui-corner-all ui-front " +
+				this.options.dialogClass )
+			.hide()
+			.attr({
+				// Setting tabIndex makes the div focusable
+				tabIndex: -1,
+				role: "dialog"
+			})
+			.appendTo( this._appendTo() );
+
+		this._on( this.uiDialog, {
+			keydown: function( event ) {
+				if ( this.options.closeOnEscape && !event.isDefaultPrevented() && event.keyCode &&
+						event.keyCode === $.ui.keyCode.ESCAPE ) {
+					event.preventDefault();
+					this.close( event );
+					return;
+				}
+
+				// prevent tabbing out of dialogs
+				if ( event.keyCode !== $.ui.keyCode.TAB ) {
+					return;
+				}
+				var tabbables = this.uiDialog.find(":tabbable"),
+					first = tabbables.filter(":first"),
+					last  = tabbables.filter(":last");
+
+				if ( ( event.target === last[0] || event.target === this.uiDialog[0] ) && !event.shiftKey ) {
+					first.focus( 1 );
+					event.preventDefault();
+				} else if ( ( event.target === first[0] || event.target === this.uiDialog[0] ) && event.shiftKey ) {
+					last.focus( 1 );
+					event.preventDefault();
+				}
+			},
+			mousedown: function( event ) {
+				if ( this._moveToTop( event ) ) {
+					this._focusTabbable();
+				}
+			}
+		});
+
+		// We assume that any existing aria-describedby attribute means
+		// that the dialog content is marked up properly
+		// otherwise we brute force the content as the description
+		if ( !this.element.find("[aria-describedby]").length ) {
+			this.uiDialog.attr({
+				"aria-describedby": this.element.uniqueId().attr("id")
+			});
+		}
+	},
+
+	_createTitlebar: function() {
+		var uiDialogTitle;
+
+		this.uiDialogTitlebar = $("<div>")
+			.addClass("ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix")
+			.prependTo( this.uiDialog );
+		this._on( this.uiDialogTitlebar, {
+			mousedown: function( event ) {
+				// Don't prevent click on close button (#8838)
+				// Focusing a dialog that is partially scrolled out of view
+				// causes the browser to scroll it into view, preventing the click event
+				if ( !$( event.target ).closest(".ui-dialog-titlebar-close") ) {
+					// Dialog isn't getting focus when dragging (#8063)
+					this.uiDialog.focus();
+				}
+			}
+		});
+
+		this.uiDialogTitlebarClose = $("<button></button>")
+			.button({
+				label: this.options.closeText,
+				icons: {
+					primary: "ui-icon-closethick"
+				},
+				text: false
+			})
+			.addClass("ui-dialog-titlebar-close")
+			.appendTo( this.uiDialogTitlebar );
+		this._on( this.uiDialogTitlebarClose, {
+			click: function( event ) {
+				event.preventDefault();
+				this.close( event );
+			}
+		});
+
+		uiDialogTitle = $("<span>")
+			.uniqueId()
+			.addClass("ui-dialog-title")
+			.prependTo( this.uiDialogTitlebar );
+		this._title( uiDialogTitle );
+
+		this.uiDialog.attr({
+			"aria-labelledby": uiDialogTitle.attr("id")
+		});
+	},
+
+	_title: function( title ) {
+		if ( !this.options.title ) {
+			title.html("&#160;");
+		}
+		title.text( this.options.title );
+	},
+
+	_createButtonPane: function() {
+		this.uiDialogButtonPane = $("<div>")
+			.addClass("ui-dialog-buttonpane ui-widget-content ui-helper-clearfix");
+
+		this.uiButtonSet = $("<div>")
+			.addClass("ui-dialog-buttonset")
+			.appendTo( this.uiDialogButtonPane );
+
+		this._createButtons();
+	},
+
+	_createButtons: function() {
+		var that = this,
+			buttons = this.options.buttons;
+
+		// if we already have a button pane, remove it
+		this.uiDialogButtonPane.remove();
+		this.uiButtonSet.empty();
+
+		if ( $.isEmptyObject( buttons ) || ($.isArray( buttons ) && !buttons.length) ) {
+			this.uiDialog.removeClass("ui-dialog-buttons");
+			return;
+		}
+
+		$.each( buttons, function( name, props ) {
+			var click, buttonOptions;
+			props = $.isFunction( props ) ?
+				{ click: props, text: name } :
+				props;
+			// Default to a non-submitting button
+			props = $.extend( { type: "button" }, props );
+			// Change the context for the click callback to be the main element
+			click = props.click;
+			props.click = function() {
+				click.apply( that.element[0], arguments );
+			};
+			buttonOptions = {
+				icons: props.icons,
+				text: props.showText
+			};
+			delete props.icons;
+			delete props.showText;
+			$( "<button></button>", props )
+				.button( buttonOptions )
+				.appendTo( that.uiButtonSet );
+		});
+		this.uiDialog.addClass("ui-dialog-buttons");
+		this.uiDialogButtonPane.appendTo( this.uiDialog );
+	},
+
+	_makeDraggable: function() {
+		var that = this,
+			options = this.options;
+
+		function filteredUi( ui ) {
+			return {
+				position: ui.position,
+				offset: ui.offset
+			};
+		}
+
+		this.uiDialog.draggable({
+			cancel: ".ui-dialog-content, .ui-dialog-titlebar-close",
+			handle: ".ui-dialog-titlebar",
+			containment: "document",
+			start: function( event, ui ) {
+				$( this ).addClass("ui-dialog-dragging");
+				that._blockFrames();
+				that._trigger( "dragStart", event, filteredUi( ui ) );
+			},
+			drag: function( event, ui ) {
+				that._trigger( "drag", event, filteredUi( ui ) );
+			},
+			stop: function( event, ui ) {
+				options.position = [
+					ui.position.left - that.document.scrollLeft(),
+					ui.position.top - that.document.scrollTop()
+				];
+				$( this ).removeClass("ui-dialog-dragging");
+				that._unblockFrames();
+				that._trigger( "dragStop", event, filteredUi( ui ) );
+			}
+		});
+	},
+
+	_makeResizable: function() {
+		var that = this,
+			options = this.options,
+			handles = options.resizable,
+			// .ui-resizable has position: relative defined in the stylesheet
+			// but dialogs have to use absolute or fixed positioning
+			position = this.uiDialog.css("position"),
+			resizeHandles = typeof handles === "string" ?
+				handles	:
+				"n,e,s,w,se,sw,ne,nw";
+
+		function filteredUi( ui ) {
+			return {
+				originalPosition: ui.originalPosition,
+				originalSize: ui.originalSize,
+				position: ui.position,
+				size: ui.size
+			};
+		}
+
+		this.uiDialog.resizable({
+			cancel: ".ui-dialog-content",
+			containment: "document",
+			alsoResize: this.element,
+			maxWidth: options.maxWidth,
+			maxHeight: options.maxHeight,
+			minWidth: options.minWidth,
+			minHeight: this._minHeight(),
+			handles: resizeHandles,
+			start: function( event, ui ) {
+				$( this ).addClass("ui-dialog-resizing");
+				that._blockFrames();
+				that._trigger( "resizeStart", event, filteredUi( ui ) );
+			},
+			resize: function( event, ui ) {
+				that._trigger( "resize", event, filteredUi( ui ) );
+			},
+			stop: function( event, ui ) {
+				options.height = $( this ).height();
+				options.width = $( this ).width();
+				$( this ).removeClass("ui-dialog-resizing");
+				that._unblockFrames();
+				that._trigger( "resizeStop", event, filteredUi( ui ) );
+			}
+		})
+		.css( "position", position );
+	},
+
+	_minHeight: function() {
+		var options = this.options;
+
+		return options.height === "auto" ?
+			options.minHeight :
+			Math.min( options.minHeight, options.height );
+	},
+
+	_position: function() {
+		// Need to show the dialog to get the actual offset in the position plugin
+		var isVisible = this.uiDialog.is(":visible");
+		if ( !isVisible ) {
+			this.uiDialog.show();
+		}
+		this.uiDialog.position( this.options.position );
+		if ( !isVisible ) {
+			this.uiDialog.hide();
+		}
+	},
+
+	_setOptions: function( options ) {
+		var that = this,
+			resize = false,
+			resizableOptions = {};
+
+		$.each( options, function( key, value ) {
+			that._setOption( key, value );
+
+			if ( key in sizeRelatedOptions ) {
+				resize = true;
+			}
+			if ( key in resizableRelatedOptions ) {
+				resizableOptions[ key ] = value;
+			}
+		});
+
+		if ( resize ) {
+			this._size();
+			this._position();
+		}
+		if ( this.uiDialog.is(":data(ui-resizable)") ) {
+			this.uiDialog.resizable( "option", resizableOptions );
+		}
+	},
+
+	_setOption: function( key, value ) {
+		/*jshint maxcomplexity:15*/
+		var isDraggable, isResizable,
+			uiDialog = this.uiDialog;
+
+		if ( key === "dialogClass" ) {
+			uiDialog
+				.removeClass( this.options.dialogClass )
+				.addClass( value );
+		}
+
+		if ( key === "disabled" ) {
+			return;
+		}
+
+		this._super( key, value );
+
+		if ( key === "appendTo" ) {
+			this.uiDialog.appendTo( this._appendTo() );
+		}
+
+		if ( key === "buttons" ) {
+			this._createButtons();
+		}
+
+		if ( key === "closeText" ) {
+			this.uiDialogTitlebarClose.button({
+				// Ensure that we always pass a string
+				label: "" + value
+			});
+		}
+
+		if ( key === "draggable" ) {
+			isDraggable = uiDialog.is(":data(ui-draggable)");
+			if ( isDraggable && !value ) {
+				uiDialog.draggable("destroy");
+			}
+
+			if ( !isDraggable && value ) {
+				this._makeDraggable();
+			}
+		}
+
+		if ( key === "position" ) {
+			this._position();
+		}
+
+		if ( key === "resizable" ) {
+			// currently resizable, becoming non-resizable
+			isResizable = uiDialog.is(":data(ui-resizable)");
+			if ( isResizable && !value ) {
+				uiDialog.resizable("destroy");
+			}
+
+			// currently resizable, changing handles
+			if ( isResizable && typeof value === "string" ) {
+				uiDialog.resizable( "option", "handles", value );
+			}
+
+			// currently non-resizable, becoming resizable
+			if ( !isResizable && value !== false ) {
+				this._makeResizable();
+			}
+		}
+
+		if ( key === "title" ) {
+			this._title( this.uiDialogTitlebar.find(".ui-dialog-title") );
+		}
+	},
+
+	_size: function() {
+		// If the user has resized the dialog, the .ui-dialog and .ui-dialog-content
+		// divs will both have width and height set, so we need to reset them
+		var nonContentHeight, minContentHeight, maxContentHeight,
+			options = this.options;
+
+		// Reset content sizing
+		this.element.show().css({
+			width: "auto",
+			minHeight: 0,
+			maxHeight: "none",
+			height: 0
+		});
+
+		if ( options.minWidth > options.width ) {
+			options.width = options.minWidth;
+		}
+
+		// reset wrapper sizing
+		// determine the height of all the non-content elements
+		nonContentHeight = this.uiDialog.css({
+				height: "auto",
+				width: options.width
+			})
+			.outerHeight();
+		minContentHeight = Math.max( 0, options.minHeight - nonContentHeight );
+		maxContentHeight = typeof options.maxHeight === "number" ?
+			Math.max( 0, options.maxHeight - nonContentHeight ) :
+			"none";
+
+		if ( options.height === "auto" ) {
+			this.element.css({
+				minHeight: minContentHeight,
+				maxHeight: maxContentHeight,
+				height: "auto"
+			});
+		} else {
+			this.element.height( Math.max( 0, options.height - nonContentHeight ) );
+		}
+
+		if (this.uiDialog.is(":data(ui-resizable)") ) {
+			this.uiDialog.resizable( "option", "minHeight", this._minHeight() );
+		}
+	},
+
+	_blockFrames: function() {
+		this.iframeBlocks = this.document.find( "iframe" ).map(function() {
+			var iframe = $( this );
+
+			return $( "<div>" )
+				.css({
+					position: "absolute",
+					width: iframe.outerWidth(),
+					height: iframe.outerHeight()
+				})
+				.appendTo( iframe.parent() )
+				.offset( iframe.offset() )[0];
+		});
+	},
+
+	_unblockFrames: function() {
+		if ( this.iframeBlocks ) {
+			this.iframeBlocks.remove();
+			delete this.iframeBlocks;
+		}
+	},
+
+	_allowInteraction: function( event ) {
+		if ( $( event.target ).closest(".ui-dialog").length ) {
+			return true;
+		}
+
+		// TODO: Remove hack when datepicker implements
+		// the .ui-front logic (#8989)
+		return !!$( event.target ).closest(".ui-datepicker").length;
+	},
+
+	_createOverlay: function() {
+		if ( !this.options.modal ) {
+			return;
+		}
+
+		var that = this,
+			widgetFullName = this.widgetFullName;
+		if ( !$.ui.dialog.overlayInstances ) {
+			// Prevent use of anchors and inputs.
+			// We use a delay in case the overlay is created from an
+			// event that we're going to be cancelling. (#2804)
+			this._delay(function() {
+				// Handle .dialog().dialog("close") (#4065)
+				if ( $.ui.dialog.overlayInstances ) {
+					this.document.bind( "focusin.dialog", function( event ) {
+						if ( !that._allowInteraction( event ) ) {
+							event.preventDefault();
+							$(".ui-dialog:visible:last .ui-dialog-content")
+								.data( widgetFullName )._focusTabbable();
+						}
+					});
+				}
+			});
+		}
+
+		this.overlay = $("<div>")
+			.addClass("ui-widget-overlay ui-front")
+			.appendTo( this._appendTo() );
+		this._on( this.overlay, {
+			mousedown: "_keepFocus"
+		});
+		$.ui.dialog.overlayInstances++;
+	},
+
+	_destroyOverlay: function() {
+		if ( !this.options.modal ) {
+			return;
+		}
+
+		if ( this.overlay ) {
+			$.ui.dialog.overlayInstances--;
+
+			if ( !$.ui.dialog.overlayInstances ) {
+				this.document.unbind( "focusin.dialog" );
+			}
+			this.overlay.remove();
+			this.overlay = null;
+		}
+	}
+});
+
+$.ui.dialog.overlayInstances = 0;
+
+// DEPRECATED
+if ( $.uiBackCompat !== false ) {
+	// position option with array notation
+	// just override with old implementation
+	$.widget( "ui.dialog", $.ui.dialog, {
+		_position: function() {
+			var position = this.options.position,
+				myAt = [],
+				offset = [ 0, 0 ],
+				isVisible;
+
+			if ( position ) {
+				if ( typeof position === "string" || (typeof position === "object" && "0" in position ) ) {
+					myAt = position.split ? position.split(" ") : [ position[0], position[1] ];
+					if ( myAt.length === 1 ) {
+						myAt[1] = myAt[0];
+					}
+
+					$.each( [ "left", "top" ], function( i, offsetPosition ) {
+						if ( +myAt[ i ] === myAt[ i ] ) {
+							offset[ i ] = myAt[ i ];
+							myAt[ i ] = offsetPosition;
+						}
+					});
+
+					position = {
+						my: myAt[0] + (offset[0] < 0 ? offset[0] : "+" + offset[0]) + " " +
+							myAt[1] + (offset[1] < 0 ? offset[1] : "+" + offset[1]),
+						at: myAt.join(" ")
+					};
+				}
+
+				position = $.extend( {}, $.ui.dialog.prototype.options.position, position );
+			} else {
+				position = $.ui.dialog.prototype.options.position;
+			}
+
+			// need to show the dialog to get the actual offset in the position plugin
+			isVisible = this.uiDialog.is(":visible");
+			if ( !isVisible ) {
+				this.uiDialog.show();
+			}
+			this.uiDialog.position( position );
+			if ( !isVisible ) {
+				this.uiDialog.hide();
+			}
+		}
 	});
 }
 
-/$.fn.adaticnction( key, sTabIndexNottNaN) &&
-		/r 188ivlement anunctiowindow)
-	s._mouse	// canEvent = equery.ct(event)reateElementon
-$.ui [ns[ i ].pnction.data( "a-b", dxart" Data = (funturn !thpo|| {};
+}( jQuery ) );
 
-$.ext_,.filData = (func-folvlass(tion: funcstralue )s._mouseseDoR| insidx ?ata(event.tach( ndow)
-	{
-				rewidget lelement = $( 	// <di res.widgetNaptionew set to 0 ) 
-			option" ).data( },
+(function( $, undefined ) {
 
-isTabIndexNotNaN )nce
-	ction( eh.max+ "pxon( 			};
+var rvertical = /up|down|vertical/,
+	rpositivemotion = /up|left|vertical|horizontal/;
 
-	Met: funlight.jMet:+
+$.effects.effect.blind = function( o, done ) {
+	// Create element
+	var el = $( this ),
+		props = [ "position", "top", "bottom", "left", "right", "height", "width" ],
+		mode = $.effects.setMode( el, o.mode || "hide" ),
+		direction = o.direction || "up",
+		vertical = rvertical.test( direction ),
+		ref = vertical ? "height" : "width",
+		ref2 = vertical ? "top" : "left",
+		motion = rpositivemotion.test( direction ),
+		animation = {},
+		show = mode === "show",
+		wrapper, distance, margin;
 
-	_mouseDelayMet: fu this.wi, this.wid( elem.lenlems );
+	// if already wrapped, the wrapper's properties are my property. #6245
+	if ( el.parent().is( ".ui-effects-wrapper" ) ) {
+		$.effects.save( el.parent(), props );
+	} else {
+		$.effects.save( el, props );
+	}
+	el.show();
+	wrapper = $.effects.createWrapper( el ).css({
+		overflow: "hidden"
+	});
+
+	distance = wrapper[ ref ]();
+	margin = parseFloat( wrapper.css( ref2 ) ) || 0;
+
+	animation[ ref ] = show ? distance : 0;
+	if ( !motion ) {
+		el
+			.css( vertical ? "bottom" : "right", 0 )
+			.css( vertical ? "top" : "left", "auto" )
+			.css({ position: "absolute" });
+
+		animation[ ref2 ] = show ? margin : distance + margin;
+	}
+
+	// start at 0 if we are showing
+	if ( show ) {
+		wrapper.css( ref, 0 );
+		if ( ! motion ) {
+			wrapper.css( ref2, margin + distance );
+		}
+	}
+
+	// Animate
+	wrapper.animate( animation, {
+		duration: o.duration,
+		easing: o.easing,
+		queue: false,
+		complete: function() {
+			if ( mode === "hide" ) {
+				el.hide();
+			}
+			$.effects.restore( el, props );
+			$.effects.removeWrapper( el );
+			done();
+		}
+	});
+
 };
 
-$.widget = function( name, base, prototype ) {
-	var fullName, existingConstructor, constructor, baseProsh) {
-;
+})(jQuery);
 
-		if ( isMethodCall ) {
-			oto.plugins[ i ] || [];
-				proto.plugins[ i ].push( [ option, set[ i ] ] );
+(function( $, undefined ) {
+
+$.effects.effect.bounce = function( o, done ) {
+	var el = $( this ),
+		props = [ "position", "top", "bottom", "left", "right", "height", "width" ],
+
+		// defaults:
+		mode = $.effects.setMode( el, o.mode || "effect" ),
+		hide = mode === "hide",
+		show = mode === "show",
+		direction = o.direction || "up",
+		distance = o.distance,
+		times = o.times || 5,
+
+		// number of internal animations
+		anims = times * 2 + ( show || hide ? 1 : 0 ),
+		speed = o.duration / anims,
+		easing = o.easing,
+
+		// utility:
+		ref = ( direction === "up" || direction === "down" ) ? "top" : "left",
+		motion = ( direction === "up" || direction === "left" ),
+		i,
+		upAnim,
+		downAnim,
+
+		// we will need to re-assemble the queue to stack our animations in place
+		queue = el.queue(),
+		queuelen = queue.length;
+
+	// Avoid touching opacity to prevent clearType and PNG issues in IE
+	if ( show || hide ) {
+		props.push( "opacity" );
+	}
+
+	$.effects.save( el, props );
+	el.show();
+	$.effects.createWrapper( el ); // Create Wrapper
+
+	// default distance for the BIGGEST bounce is the outer Distance / 3
+	if ( !distance ) {
+		distance = el[ ref === "top" ? "outerHeight" : "outerWidth" ]() / 3;
+	}
+
+	if ( show ) {
+		downAnim = { opacity: 1 };
+		downAnim[ ref ] = 0;
+
+		// if we are showing, force opacity 0 and set the initial position
+		// then do the "first" animation
+		el.css( "opacity", 0 )
+			.css( ref, motion ? -distance * 2 : distance * 2 )
+			.animate( downAnim, speed, easing );
+	}
+
+	// start at the smallest distance if we are hiding
+	if ( hide ) {
+		distance = distance / Math.pow( 2, times - 1 );
+	}
+
+	downAnim = {};
+	downAnim[ ref ] = 0;
+	// Bounces up/down/left/right then back to 0 -- times * 2 animations happen here
+	for ( i = 0; i < times; i++ ) {
+		upAnim = {};
+		upAnim[ ref ] = ( motion ? "-=" : "+=" ) + distance;
+
+		el.animate( upAnim, speed, easing )
+			.animate( downAnim, speed, easing );
+
+		distance = hide ? distance * 2 : distance / 2;
+	}
+
+	// Last Bounce when Hiding
+	if ( hide ) {
+		upAnim = { opacity: 0 };
+		upAnim[ ref ] = ( motion ? "-=" : "+=" ) + distance;
+
+		el.animate( upAnim, speed, easing );
+	}
+
+	el.queue(function() {
+		if ( hide ) {
+			el.hide();
+		}
+		$.effects.restore( el, props );
+		$.effects.removeWrapper( el );
+		done();
+	});
+
+	// inject all the animations we just queued to be first in line (after "inprogress")
+	if ( queuelen > 1) {
+		queue.splice.apply( queue,
+			[ 1, 0 ].concat( queue.splice( queuelen, anims + 1 ) ) );
+	}
+	el.dequeue();
+
+};
+
+})(jQuery);
+
+(function( $, undefined ) {
+
+$.effects.effect.clip = function( o, done ) {
+	// Create element
+	var el = $( this ),
+		props = [ "position", "top", "bottom", "left", "right", "height", "width" ],
+		mode = $.effects.setMode( el, o.mode || "hide" ),
+		show = mode === "show",
+		direction = o.direction || "vertical",
+		vert = direction === "vertical",
+		size = vert ? "height" : "width",
+		position = vert ? "top" : "left",
+		animation = {},
+		wrapper, animate, distance;
+
+	// Save & Show
+	$.effects.save( el, props );
+	el.show();
+
+	// Create Wrapper
+	wrapper = $.effects.createWrapper( el ).css({
+		overflow: "hidden"
+	});
+	animate = ( el[0].tagName === "IMG" ) ? wrapper : el;
+	distance = animate[ size ]();
+
+	// Shift
+	if ( show ) {
+		animate.css( size, 0 );
+		animate.css( position, distance / 2 );
+	}
+
+	// Create Animation Object:
+	animation[ size ] = show ? distance : 0;
+	animation[ position ] = show ? 0 : distance / 2;
+
+	// Animate
+	animate.animate( animation, {
+		queue: false,
+		duration: o.duration,
+		easing: o.easing,
+		complete: function() {
+			if ( !show ) {
+				el.hide();
 			}
+			$.effects.restore( el, props );
+			$.effects.removeWrapper( el );
+			done();
+		}
+	});
+
+};
+
+})(jQuery);
+
+(function( $, undefined ) {
+
+$.effects.effect.drop = function( o, done ) {
+
+	var el = $( this ),
+		props = [ "position", "top", "bottom", "left", "right", "opacity", "height", "width" ],
+		mode = $.effects.setMode( el, o.mode || "hide" ),
+		show = mode === "show",
+		direction = o.direction || "left",
+		ref = ( direction === "up" || direction === "down" ) ? "top" : "left",
+		motion = ( direction === "up" || direction === "left" ) ? "pos" : "neg",
+		animation = {
+			opacity: show ? 1 : 0
 		},
-		call: function( instance, name, args ) {
-			var ime.split( "."putIndex < inputLength; inputIndex++ end( {}, target[ key ], v2 this= base;
-		base = $.e = $n
-	$.expr[ ":" ][ fuoptioction( e() {
-				valem ) {
-		/urn !Node || ins(= $[ namespace ] || {};
-	existingConstructr = $[ namespace ][ naodule, oMe ];
-	contructor = $[ namespace ][ name ] = functio		if ( instance.optionsllName + "-disabled " +
-				"ui-st optionlow instantiation without "new" keyword
-		if ( !this._createWidget ) {
-			return new constructor( options, element );
+		distance;
+
+	// Adjust
+	$.effects.save( el, props );
+	el.show();
+	$.effects.createWrapper( el );
+
+	distance = o.distance || el[ ref === "top" ? "outerHeight": "outerWidth" ]( true ) / 2;
+
+	if ( show ) {
+		el
+			.css( "opacity", 0 )
+			.css( ref, motion === "pos" ? -distance : distance );
+	}
+
+	// Animation
+	animation[ ref ] = ( show ?
+		( motion === "pos" ? "+=" : "-=" ) :
+		( motion === "pos" ? "-=" : "+=" ) ) +
+		distance;
+
+	// Animate
+	el.animate( animation, {
+		queue: false,
+		duration: o.duration,
+		easing: o.easing,
+		complete: function() {
+			if ( mode === "hide" ) {
+				el.hide();
+			}
+			$.effects.restore( el, props );
+			$.effects.removeWrapper( el );
+			done();
+		}
+	});
+};
+
+})(jQuery);
+
+(function( $, undefined ) {
+
+$.effects.effect.explode = function( o, done ) {
+
+	var rows = o.pieces ? Math.round( Math.sqrt( o.pieces ) ) : 3,
+		cells = rows,
+		el = $( this ),
+		mode = $.effects.setMode( el, o.mode || "hide" ),
+		show = mode === "show",
+
+		// show and then visibility:hidden the element before calculating offset
+		offset = el.show().css( "visibility", "hidden" ).offset(),
+
+		// width and height of a piece
+		width = Math.ceil( el.outerWidth() / cells ),
+		height = Math.ceil( el.outerHeight() / rows ),
+		pieces = [],
+
+		// loop
+		i, j, left, top, mx, my;
+
+	// children animate complete:
+	function childComplete() {
+		pieces.push( this );
+		if ( pieces.length === rows * cells ) {
+			animComplete();
+		}
+	}
+
+	// clone the element for each row and cell.
+	for( i = 0; i < rows ; i++ ) { // ===>
+		top = offset.top + i * height;
+		my = i - ( rows - 1 ) / 2 ;
+
+		for( j = 0; j < cells ; j++ ) { // |||
+			left = offset.left + j * width;
+			mx = j - ( cells - 1 ) / 2 ;
+
+			// Create a clone of the now hidden main element that will be absolute positioned
+			// within a wrapper div off the -left and -top equal to size of our pieces
+			el
+				.clone()
+				.appendTo( "body" )
+				.wrap( "<div></div>" )
+				.css({
+					position: "absolute",
+					visibility: "visible",
+					left: -j * width,
+					top: -i * height
+				})
+
+			// select the wrapper - make it overflow: hidden and absolute positioned based on
+			// where the original was located +left and +top equal to the size of pieces
+				.parent()
+				.addClass( "ui-effects-explode" )
+				.css({
+					position: "absolute",
+					overflow: "hidden",
+					width: width,
+					height: height,
+					left: left + ( show ? mx * width : 0 ),
+					top: top + ( show ? my * height : 0 ),
+					opacity: show ? 0 : 1
+				}).animate({
+					left: left + ( show ? 0 : mx * width ),
+					top: top + ( show ? 0 : my * height ),
+					opacity: show ? 1 : 0
+				}, o.duration || 500, o.easing, childComplete );
+		}
+	}
+
+	function animComplete() {
+		el.css({
+			visibility: "visible"
+		});
+		$( pieces ).remove();
+		if ( !show ) {
+			el.hide();
+		}
+		done();
+	}
+};
+
+})(jQuery);
+
+(function( $, undefined ) {
+
+$.effects.effect.fade = function( o, done ) {
+	var el = $( this ),
+		mode = $.effects.setMode( el, o.mode || "toggle" );
+
+	el.animate({
+		opacity: mode
+	}, {
+		queue: false,
+		duration: o.duration,
+		easing: o.easing,
+		complete: done
+	});
+};
+
+})( jQuery );
+
+(function( $, undefined ) {
+
+$.effects.effect.fold = function( o, done ) {
+
+	// Create element
+	var el = $( this ),
+		props = [ "position", "top", "bottom", "left", "right", "height", "width" ],
+		mode = $.effects.setMode( el, o.mode || "hide" ),
+		show = mode === "show",
+		hide = mode === "hide",
+		size = o.size || 15,
+		percent = /([0-9]+)%/.exec( size ),
+		horizFirst = !!o.horizFirst,
+		widthFirst = show !== horizFirst,
+		ref = widthFirst ? [ "width", "height" ] : [ "height", "width" ],
+		duration = o.duration / 2,
+		wrapper, distance,
+		animation1 = {},
+		animation2 = {};
+
+	$.effects.save( el, props );
+	el.show();
+
+	// Create Wrapper
+	wrapper = $.effects.createWrapper( el ).css({
+		overflow: "hidden"
+	});
+	distance = widthFirst ?
+		[ wrapper.width(), wrapper.height() ] :
+		[ wrapper.height(), wrapper.width() ];
+
+	if ( percent ) {
+		size = parseInt( percent[ 1 ], 10 ) / 100 * distance[ hide ? 0 : 1 ];
+	}
+	if ( show ) {
+		wrapper.css( horizFirst ? {
+			height: 0,
+			width: size
+		} : {
+			height: size,
+			width: 0
+		});
+	}
+
+	// Animation
+	animation1[ ref[ 0 ] ] = show ? distance[ 0 ] : size;
+	animation2[ ref[ 1 ] ] = show ? distance[ 1 ] : 0;
+
+	// Animate
+	wrapper
+		.animate( animation1, duration, o.easing )
+		.animate( animation2, duration, o.easing, function() {
+			if ( hide ) {
+				el.hide();
+			}
+			$.effects.restore( el, props );
+			$.effects.removeWrapper( el );
+			done();
+		});
+
+};
+
+})(jQuery);
+
+(function( $, undefined ) {
+
+$.effects.effect.highlight = function( o, done ) {
+	var elem = $( this ),
+		props = [ "backgroundImage", "backgroundColor", "opacity" ],
+		mode = $.effects.setMode( elem, o.mode || "show" ),
+		animation = {
+			backgroundColor: elem.css( "backgroundColor" )
+		};
+
+	if (mode === "hide") {
+		animation.opacity = 0;
+	}
+
+	$.effects.save( elem, props );
+
+	elem
+		.show()
+		.css({
+			backgroundImage: "none",
+			backgroundColor: o.color || "#ffff99"
+		})
+		.animate( animation, {
+			queue: false,
+			duration: o.duration,
+			easing: o.easing,
+			complete: function() {
+				if ( mode === "hide" ) {
+					elem.hide();
+				}
+				$.effects.restore( elem, props );
+				done();
+			}
+		});
+};
+
+})(jQuery);
+
+(function( $, undefined ) {
+
+$.effects.effect.pulsate = function( o, done ) {
+	var elem = $( this ),
+		mode = $.effects.setMode( elem, o.mode || "show" ),
+		show = mode === "show",
+		hide = mode === "hide",
+		showhide = ( show || mode === "hide" ),
+
+		// showing or hiding leaves of the "last" animation
+		anims = ( ( o.times || 5 ) * 2 ) + ( showhide ? 1 : 0 ),
+		duration = o.duration / anims,
+		animateTo = 0,
+		queue = elem.queue(),
+		queuelen = queue.length,
+		i;
+
+	if ( show || !elem.is(":visible")) {
+		elem.css( "opacity", 0 ).show();
+		animateTo = 1;
+	}
+
+	// anims - 1 opacity "toggles"
+	for ( i = 1; i < anims; i++ ) {
+		elem.animate({
+			opacity: animateTo
+		}, duration, o.easing );
+		animateTo = 1 - animateTo;
+	}
+
+	elem.animate({
+		opacity: animateTo
+	}, duration, o.easing);
+
+	elem.queue(function() {
+		if ( hide ) {
+			elem.hide();
+		}
+		done();
+	});
+
+	// We just queued up "anims" animations, we need to put them next in the queue
+	if ( queuelen > 1 ) {
+		queue.splice.apply( queue,
+			[ 1, 0 ].concat( queue.splice( queuelen, anims + 1 ) ) );
+	}
+	elem.dequeue();
+};
+
+})(jQuery);
+
+(function( $, undefined ) {
+
+$.effects.effect.puff = function( o, done ) {
+	var elem = $( this ),
+		mode = $.effects.setMode( elem, o.mode || "hide" ),
+		hide = mode === "hide",
+		percent = parseInt( o.percent, 10 ) || 150,
+		factor = percent / 100,
+		original = {
+			height: elem.height(),
+			width: elem.width(),
+			outerHeight: elem.outerHeight(),
+			outerWidth: elem.outerWidth()
+		};
+
+	$.extend( o, {
+		effect: "scale",
+		queue: false,
+		fade: true,
+		mode: mode,
+		complete: done,
+		percent: hide ? percent : 100,
+		from: hide ?
+			original :
+			{
+				height: original.height * factor,
+				width: original.width * factor,
+				outerHeight: original.outerHeight * factor,
+				outerWidth: original.outerWidth * factor
+			}
+	});
+
+	elem.effect( o );
+};
+
+$.effects.effect.scale = function( o, done ) {
+
+	// Create element
+	var el = $( this ),
+		options = $.extend( true, {}, o ),
+		mode = $.effects.setMode( el, o.mode || "effect" ),
+		percent = parseInt( o.percent, 10 ) ||
+			( parseInt( o.percent, 10 ) === 0 ? 0 : ( mode === "hide" ? 0 : 100 ) ),
+		direction = o.direction || "both",
+		origin = o.origin,
+		original = {
+			height: el.height(),
+			width: el.width(),
+			outerHeight: el.outerHeight(),
+			outerWidth: el.outerWidth()
+		},
+		factor = {
+			y: direction !== "horizontal" ? (percent / 100) : 1,
+			x: direction !== "vertical" ? (percent / 100) : 1
+		};
+
+	// We are going to pass this effect to the size effect:
+	options.effect = "size";
+	options.queue = false;
+	options.complete = done;
+
+	// Set default origin and restore for show/hide
+	if ( mode !== "effect" ) {
+		options.origin = origin || ["middle","center"];
+		options.restore = true;
+	}
+
+	options.from = o.from || ( mode === "show" ? {
+		height: 0,
+		width: 0,
+		outerHeight: 0,
+		outerWidth: 0
+	} : original );
+	options.to = {
+		height: original.height * factor.y,
+		width: original.width * factor.x,
+		outerHeight: original.outerHeight * factor.y,
+		outerWidth: original.outerWidth * factor.x
+	};
+
+	// Fade option to support puff
+	if ( options.fade ) {
+		if ( mode === "show" ) {
+			options.from.opacity = 0;
+			options.to.opacity = 1;
+		}
+		if ( mode === "hide" ) {
+			options.from.opacity = 1;
+			options.to.opacity = 0;
+		}
+	}
+
+	// Animate
+	el.effect( options );
+
+};
+
+$.effects.effect.size = function( o, done ) {
+
+	// Create element
+	var original, baseline, factor,
+		el = $( this ),
+		props0 = [ "position", "top", "bottom", "left", "right", "width", "height", "overflow", "opacity" ],
+
+		// Always restore
+		props1 = [ "position", "top", "bottom", "left", "right", "overflow", "opacity" ],
+
+		// Copy for children
+		props2 = [ "width", "height", "overflow" ],
+		cProps = [ "fontSize" ],
+		vProps = [ "borderTopWidth", "borderBottomWidth", "paddingTop", "paddingBottom" ],
+		hProps = [ "borderLeftWidth", "borderRightWidth", "paddingLeft", "paddingRight" ],
+
+		// Set options
+		mode = $.effects.setMode( el, o.mode || "effect" ),
+		restore = o.restore || mode !== "effect",
+		scale = o.scale || "both",
+		origin = o.origin || [ "middle", "center" ],
+		position = el.css( "position" ),
+		props = restore ? props0 : props1,
+		zero = {
+			height: 0,
+			width: 0,
+			outerHeight: 0,
+			outerWidth: 0
+		};
+
+	if ( mode === "show" ) {
+		el.show();
+	}
+	original = {
+		height: el.height(),
+		width: el.width(),
+		outerHeight: el.outerHeight(),
+		outerWidth: el.outerWidth()
+	};
+
+	if ( o.mode === "toggle" && mode === "show" ) {
+		el.from = o.to || zero;
+		el.to = o.from || original;
+	} else {
+		el.from = o.from || ( mode === "show" ? zero : original );
+		el.to = o.to || ( mode === "hide" ? zero : original );
+	}
+
+	// Set scaling factor
+	factor = {
+		from: {
+			y: el.from.height / original.height,
+			x: el.from.width / original.width
+		},
+		to: {
+			y: el.to.height / original.height,
+			x: el.to.width / original.width
+		}
+	};
+
+	// Scale the css box
+	if ( scale === "box" || scale === "both" ) {
+
+		// Vertical props scaling
+		if ( factor.from.y !== factor.to.y ) {
+			props = props.concat( vProps );
+			el.from = $.effects.setTransition( el, vProps, factor.from.y, el.from );
+			el.to = $.effects.setTransition( el, vProps, factor.to.y, el.to );
 		}
 
-		// 
-					target[ key ] = $.isPlainObject( target[ key ] ) ?
-						$.widget.extey ] = value;
+		// Horizontal props scaling
+		if ( factor.from.x !== factor.to.x ) {
+			props = props.concat( hProps );
+			el.from = $.effects.setTransition( el, hProps, factor.from.x, el.from );
+			el.to = $.effects.setTransition( el, hProps, factor.to.x, el.to );
+		}
+	}
+
+	// Scale the content
+	if ( scale === "content" || scale === "both" ) {
+
+		// Vertical props scaling
+		if ( factor.from.y !== factor.to.y ) {
+			props = props.concat( cProps ).concat( props2 );
+			el.from = $.effects.setTransition( el, cProps, factor.from.y, el.from );
+			el.to = $.effects.setTransition( el, cProps, factor.to.y, el.to );
+		}
+	}
+
+	$.effects.save( el, props );
+	el.show();
+	$.effects.createWrapper( el );
+	el.css( "overflow", "hidden" ).css( el.from );
+
+	// Adjust
+	if (origin) { // Calculate baseline shifts
+		baseline = $.effects.getBaseline( origin, original );
+		el.from.top = ( original.outerHeight - el.outerHeight() ) * baseline.y;
+		el.from.left = ( original.outerWidth - el.outerWidth() ) * baseline.x;
+		el.to.top = ( original.outerHeight - el.to.outerHeight ) * baseline.y;
+		el.to.left = ( original.outerWidth - el.to.outerWidth ) * baseline.x;
+	}
+	el.css( el.from ); // set top & left
+
+	// Animate
+	if ( scale === "content" || scale === "both" ) { // Scale the children
+
+		// Add margins/font-size
+		vProps = vProps.concat([ "marginTop", "marginBottom" ]).concat(cProps);
+		hProps = hProps.concat([ "marginLeft", "marginRight" ]);
+		props2 = props0.concat(vProps).concat(hProps);
+
+		el.find( "*[width]" ).each( function(){
+			var child = $( this ),
+				c_original = {
+					height: child.height(),
+					width: child.width(),
+					outerHeight: child.outerHeight(),
+					outerWidth: child.outerWidth()
+				};
+			if (restore) {
+				$.effects.save(child, props2);
+			}
+
+			child.from = {
+				height: c_original.height * factor.from.y,
+				width: c_original.width * factor.from.x,
+				outerHeight: c_original.outerHeight * factor.from.y,
+				outerWidth: c_original.outerWidth * factor.from.x
+			};
+			child.to = {
+				height: c_original.height * factor.to.y,
+				width: c_original.width * factor.to.x,
+				outerHeight: c_original.height * factor.to.y,
+				outerWidth: c_original.width * factor.to.x
+			};
+
+			// Vertical props scaling
+			if ( factor.from.y !== factor.to.y ) {
+				child.from = $.effects.setTransition( child, vProps, factor.from.y, child.from );
+				child.to = $.effects.setTransition( child, vProps, factor.to.y, child.to );
+			}
+
+			// Horizontal props scaling
+			if ( factor.from.x !== factor.to.x ) {
+				child.from = $.effects.setTransition( child, hProps, factor.from.x, child.from );
+				child.to = $.effects.setTransition( child, hProps, factor.to.x, child.to );
+			}
+
+			// Animate children
+			child.css( child.from );
+			child.animate( child.to, o.duration, o.easing, function() {
+
+				// Restore children
+				if ( restore ) {
+					$.effects.restore( child, props2 );
+				}
+			});
+		});
+	}
+
+	// Animate
+	el.animate( el.to, {
+		queue: false,
+		duration: o.duration,
+		easing: o.easing,
+		complete: function() {
+			if ( el.to.opacity === 0 ) {
+				el.css( "opacity", el.from.opacity );
+			}
+			if( mode === "hide" ) {
+				el.hide();
+			}
+			$.effects.restore( el, props );
+			if ( !restore ) {
+
+				// we need to calculate our new positioning based on the scaling
+				if ( position === "static" ) {
+					el.css({
+						position: "relative",
+						top: el.to.top,
+						left: el.to.left
+					});
+				} else {
+					$.each([ "top", "left" ], function( idx, pos ) {
+						el.css( pos, function( _, str ) {
+							var val = parseInt( str, 10 ),
+								toRef = idx ? el.to.left : el.to.top;
+
+							// if original was "auto", recalculate the new value from wrapper
+							if ( str === "auto" ) {
+								return toRef + "px";
+							}
+
+							return val + toRef + "px";
+						});
+					});
+				}
+			}
+
+			$.effects.removeWrapper( el );
+			done();
+		}
+	});
+
+};
+
+})(jQuery);
+
+(function( $, undefined ) {
+
+$.effects.effect.shake = function( o, done ) {
+
+	var el = $( this ),
+		props = [ "position", "top", "bottom", "left", "right", "height", "width" ],
+		mode = $.effects.setMode( el, o.mode || "effect" ),
+		direction = o.direction || "left",
+		distance = o.distance || 20,
+		times = o.times || 3,
+		anims = times * 2 + 1,
+		speed = Math.round(o.duration/anims),
+		ref = (direction === "up" || direction === "down") ? "top" : "left",
+		positiveMotion = (direction === "up" || direction === "left"),
+		animation = {},
+		animation1 = {},
+		animation2 = {},
+		i,
+
+		// we will need to re-assemble the queue to stack our animations in place
+		queue = el.queue(),
+		queuelen = queue.length;
+
+	$.effects.save( el, props );
+	el.show();
+	$.effects.createWrapper( el );
+
+	// Animation
+	animation[ ref ] = ( positiveMotion ? "-=" : "+=" ) + distance;
+	animation1[ ref ] = ( positiveMotion ? "+=" : "-=" ) + distance * 2;
+	animation2[ ref ] = ( positiveMotion ? "-=" : "+=" ) + distance * 2;
+
+	// Animate
+	el.animate( animation, speed, o.easing );
+
+	// Shakes
+	for ( i = 1; i < times; i++ ) {
+		el.animate( animation1, speed, o.easing ).animate( animation2, speed, o.easing );
+	}
+	el
+		.animate( animation1, speed, o.easing )
+		.animate( animation, speed / 2, o.easing )
+		.queue(function() {
+			if ( mode === "hide" ) {
+				el.hide();
+			}
+			$.effects.restore( el, props );
+			$.effects.removeWrapper( el );
+			done();
+		});
+
+	// inject all the animations we just queued to be first in line (after "inprogress")
+	if ( queuelen > 1) {
+		queue.splice.apply( queue,
+			[ 1, 0 ].concat( queue.splice( queuelen, anims + 1 ) ) );
+	}
+	el.dequeue();
+
+};
+
+})(jQuery);
+
+(function( $, undefined ) {
+
+$.effects.effect.slide = function( o, done ) {
+
+	// Create element
+	var el = $( this ),
+		props = [ "position", "top", "bottom", "left", "right", "width", "height" ],
+		mode = $.effects.setMode( el, o.mode || "show" ),
+		show = mode === "show",
+		direction = o.direction || "left",
+		ref = (direction === "up" || direction === "down") ? "top" : "left",
+		positiveMotion = (direction === "up" || direction === "left"),
+		distance,
+		animation = {};
+
+	// Adjust
+	$.effects.save( el, props );
+	el.show();
+	distance = o.distance || el[ ref === "top" ? "outerHeight" : "outerWidth" ]( true );
+
+	$.effects.createWrapper( el ).css({
+		overflow: "hidden"
+	});
+
+	if ( show ) {
+		el.css( ref, positiveMotion ? (isNaN(distance) ? "-" + distance : -distance) : distance );
+	}
+
+	// Animation
+	animation[ ref ] = ( show ?
+		( positiveMotion ? "+=" : "-=") :
+		( positiveMotion ? "-=" : "+=")) +
+		distance;
+
+	// Animate
+	el.animate( animation, {
+		queue: false,
+		duration: o.duration,
+		easing: o.easing,
+		complete: function() {
+			if ( mode === "hide" ) {
+				el.hide();
+			}
+			$.effects.restore( el, props );
+			$.effects.removeWrapper( el );
+			done();
+		}
+	});
+};
+
+})(jQuery);
+
+(function( $, undefined ) {
+
+$.effects.effect.transfer = function( o, done ) {
+	var elem = $( this ),
+		target = $( o.to ),
+		targetFixed = target.css( "position" ) === "fixed",
+		body = $("body"),
+		fixTop = targetFixed ? body.scrollTop() : 0,
+		fixLeft = targetFixed ? body.scrollLeft() : 0,
+		endPosition = target.offset(),
+		animation = {
+			top: endPosition.top - fixTop ,
+			left: endPosition.left - fixLeft ,
+			height: target.innerHeight(),
+			width: target.innerWidth()
+		},
+		startPosition = elem.offset(),
+		transfer = $( "<div class='ui-effects-transfer'></div>" )
+			.appendTo( document.body )
+			.addClass( o.className )
+			.css({
+				top: startPosition.top - fixTop ,
+				left: startPosition.left - fixLeft ,
+				height: elem.innerHeight(),
+				width: elem.innerWidth(),
+				position: targetFixed ? "fixed" : "absolute"
+			})
+			.animate( animation, o.duration, o.easing, function() {
+				transfer.remove();
+				done();
+			});
+};
+
+})(jQuery);
+
+(function( $, undefined ) {
+
+$.widget( "ui.menu", {
+	version: "1.10.3",
+	defaultElement: "<ul>",
+	delay: 300,
+	options: {
+		icons: {
+			submenu: "ui-icon-carat-1-e"
+		},
+		menus: "ul",
+		position: {
+			my: "left top",
+			at: "right top"
+		},
+		role: "menu",
+
+		// callbacks
+		blur: null,
+		focus: null,
+		select: null
+	},
+
+	_create: function() {
+		this.activeMenu = this.element;
+		// flag used to prevent firing of the click handler
+		// as the event bubbles up through nested menus
+		this.mouseHandled = false;
+		this.element
+			.uniqueId()
+			.addClass( "ui-menu ui-widget ui-widget-content ui-corner-all" )
+			.toggleClass( "ui-menu-icons", !!this.element.find( ".ui-icon" ).length )
+			.attr({
+				role: this.options.role,
+				tabIndex: 0
+			})
+			// need to catch all clicks on disabled menu
+			// not possible through _on
+			.bind( "click" + this.eventNamespace, $.proxy(function( event ) {
+				if ( this.options.disabled ) {
+					event.preventDefault();
+				}
+			}, this ));
+
+		if ( this.options.disabled ) {
+			this.element
+				.addClass( "ui-state-disabled" )
+				.attr( "aria-disabled", "true" );
+		}
+
+		this._on({
+			// Prevent focus from sticking to links inside menu after clicking
+			// them (focus should always stay on UL during navigation).
+			"mousedown .ui-menu-item > a": function( event ) {
+				event.preventDefault();
+			},
+			"click .ui-state-disabled > a": function( event ) {
+				event.preventDefault();
+			},
+			"click .ui-menu-item:has(a)": function( event ) {
+				var target = $( event.target ).closest( ".ui-menu-item" );
+				if ( !this.mouseHandled && target.not( ".ui-state-disabled" ).length ) {
+					this.mouseHandled = true;
+
+					this.select( event );
+					// Open submenu on click
+					if ( target.has( ".ui-menu" ).length ) {
+						this.expand( event );
+					} else if ( !this.element.is( ":focus" ) ) {
+						// Redirect focus to the menu
+						this.element.trigger( "focus", [ true ] );
+
+						// If the active item is on the top level, let it stay active.
+						// Otherwise, blur the active item since it is no longer visible.
+						if ( this.active && this.active.parents( ".ui-menu" ).length === 1 ) {
+							clearTimeout( this.timer );
+						}
+					}
+				}
+			},
+			"mouseenter .ui-menu-item": function( event ) {
+				var target = $( event.currentTarget );
+				// Remove ui-state-active class from siblings of the newly focused menu item
+				// to avoid a jump caused by adjacent elements both having a class with a border
+				target.siblings().children( ".ui-state-active" ).removeClass( "ui-state-active" );
+				this.focus( event, target );
+			},
+			mouseleave: "collapseAll",
+			"mouseleave .ui-menu": "collapseAll",
+			focus: function( event, keepActiveItem ) {
+				// If there's already an active item, keep it active
+				// If not, activate the first item
+				var item = this.active || this.element.children( ".ui-menu-item" ).eq( 0 );
+
+				if ( !keepActiveItem ) {
+					this.focus( event, item );
+				}
+			},
+			blur: function( event ) {
+				this._delay(function() {
+					if ( !$.contains( this.element[0], this.document[0].activeElement ) ) {
+						this.collapseAll( event );
+					}
+				});
+			},
+			keydown: "_keydown"
+		});
+
+		this.refresh();
+
+		// Clicks outside of a menu collapse any open menus
+		this._on( this.document, {
+			click: function( event ) {
+				if ( !$( event.target ).closest( ".ui-menu" ).length ) {
+					this.collapseAll( event );
+				}
+
+				// Reset the mouseHandled flag
+				this.mouseHandled = false;
+			}
+		});
+	},
+
+	_destroy: function() {
+		// Destroy (sub)menus
+		this.element
+			.removeAttr( "aria-activedescendant" )
+			.find( ".ui-menu" ).addBack()
+				.removeClass( "ui-menu ui-widget ui-widget-content ui-corner-all ui-menu-icons" )
+				.removeAttr( "role" )
+				.removeAttr( "tabIndex" )
+				.removeAttr( "aria-labelledby" )
+				.removeAttr( "aria-expanded" )
+				.removeAttr( "aria-hidden" )
+				.removeAttr( "aria-disabled" )
+				.removeUniqueId()
+				.show();
+
+		// Destroy menu items
+		this.element.find( ".ui-menu-item" )
+			.removeClass( "ui-menu-item" )
+			.removeAttr( "role" )
+			.removeAttr( "aria-disabled" )
+			.children( "a" )
+				.removeUniqueId()
+				.removeClass( "ui-corner-all ui-state-hover" )
+				.removeAttr( "tabIndex" )
+				.removeAttr( "role" )
+				.removeAttr( "aria-haspopup" )
+				.children().each( function() {
+					var elem = $( this );
+					if ( elem.data( "ui-menu-submenu-carat" ) ) {
+						elem.remove();
+					}
+				});
+
+		// Destroy menu dividers
+		this.element.find( ".ui-menu-divider" ).removeClass( "ui-menu-divider ui-widget-content" );
+	},
+
+	_keydown: function( event ) {
+		/*jshint maxcomplexity:20*/
+		var match, prev, character, skip, regex,
+			preventDefault = true;
+
+		function escape( value ) {
+			return value.replace( /[\-\[\]{}()*+?.,\\\^$|#\s]/g, "\\$&" );
+		}
+
+		switch ( event.keyCode ) {
+		case $.ui.keyCode.PAGE_UP:
+			this.previousPage( event );
+			break;
+		case $.ui.keyCode.PAGE_DOWN:
+			this.nextPage( event );
+			break;
+		case $.ui.keyCode.HOME:
+			this._move( "first", "first", event );
+			break;
+		case $.ui.keyCode.END:
+			this._move( "last", "last", event );
+			break;
+		case $.ui.keyCode.UP:
+			this.previous( event );
+			break;
+		case $.ui.keyCode.DOWN:
+			this.next( event );
+			break;
+		case $.ui.keyCode.LEFT:
+			this.collapse( event );
+			break;
+		case $.ui.keyCode.RIGHT:
+			if ( this.active && !this.active.is( ".ui-state-disabled" ) ) {
+				this.expand( event );
+			}
+			break;
+		case $.ui.keyCode.ENTER:
+		case $.ui.keyCode.SPACE:
+			this._activate( event );
+			break;
+		case $.ui.keyCode.ESCAPE:
+			this.collapse( event );
+			break;
+		default:
+			preventDefault = false;
+			prev = this.previousFilter || "";
+			character = String.fromCharCode( event.keyCode );
+			skip = false;
+
+			clearTimeout( this.filterTimer );
+
+			if ( character === prev ) {
+				skip = true;
+			} else {
+				character = prev + character;
+			}
+
+			regex = new RegExp( "^" + escape( character ), "i" );
+			match = this.activeMenu.children( ".ui-menu-item" ).filter(function() {
+				return regex.test( $( this ).children( "a" ).text() );
+			});
+			match = skip && match.index( this.active.next() ) !== -1 ?
+				this.active.nextAll( ".ui-menu-item" ) :
+				match;
+
+			// If no matches on the current filter, reset to the last character pressed
+			// to move down the menu to the first item that starts with that character
+			if ( !match.length ) {
+				character = String.fromCharCode( event.keyCode );
+				regex = new RegExp( "^" + escape( character ), "i" );
+				match = this.activeMenu.children( ".ui-menu-item" ).filter(function() {
+					return regex.test( $( this ).children( "a" ).text() );
+				});
+			}
+
+			if ( match.length ) {
+				this.focus( event, match );
+				if ( match.length > 1 ) {
+					this.previousFilter = character;
+					this.filterTimer = this._delay(function() {
+						delete this.previousFilter;
+					}, 1000 );
+				} else {
+					delete this.previousFilter;
+				}
+			} else {
+				delete this.previousFilter;
+			}
+		}
+
+		if ( preventDefault ) {
+			event.preventDefault();
+		}
+	},
+
+	_activate: function( event ) {
+		if ( !this.active.is( ".ui-state-disabled" ) ) {
+			if ( this.active.children( "a[aria-haspopup='true']" ).length ) {
+				this.expand( event );
+			} else {
+				this.select( event );
+			}
+		}
+	},
+
+	refresh: function() {
+		var menus,
+			icon = this.options.icons.submenu,
+			submenus = this.element.find( this.options.menus );
+
+		// Initialize nested menus
+		submenus.filter( ":not(.ui-menu)" )
+			.addClass( "ui-menu ui-widget ui-widget-content ui-corner-all" )
+			.hide()
+			.attr({
+				role: this.options.role,
+				"aria-hidden": "true",
+				"aria-expanded": "false"
+			})
+			.each(function() {
+				var menu = $( this ),
+					item = menu.prev( "a" ),
+					submenuCarat = $( "<span>" )
+						.addClass( "ui-menu-icon ui-icon " + icon )
+						.data( "ui-menu-submenu-carat", true );
+
+				item
+					.attr( "aria-haspopup", "true" )
+					.prepend( submenuCarat );
+				menu.attr( "aria-labelledby", item.attr( "id" ) );
+			});
+
+		menus = submenus.add( this.element );
+
+		// Don't refresh list items that are already adapted
+		menus.children( ":not(.ui-menu-item):has(a)" )
+			.addClass( "ui-menu-item" )
+			.attr( "role", "presentation" )
+			.children( "a" )
+				.uniqueId()
+				.addClass( "ui-corner-all" )
+				.attr({
+					tabIndex: -1,
+					role: this._itemRole()
+				});
+
+		// Initialize unlinked menu-items containing spaces and/or dashes only as dividers
+		menus.children( ":not(.ui-menu-item)" ).each(function() {
+			var item = $( this );
+			// hyphen, em dash, en dash
+			if ( !/[^\-\u2014\u2013\s]/.test( item.text() ) ) {
+				item.addClass( "ui-widget-content ui-menu-divider" );
+			}
+		});
+
+		// Add aria-disabled attribute to any disabled menu item
+		menus.children( ".ui-state-disabled" ).attr( "aria-disabled", "true" );
+
+		// If the active item has been removed, blur the menu
+		if ( this.active && !$.contains( this.element[ 0 ], this.active[ 0 ] ) ) {
+			this.blur();
+		}
+	},
+
+	_itemRole: function() {
+		return {
+			menu: "menuitem",
+			listbox: "option"
+		}[ this.options.role ];
+	},
+
+	_setOption: function( key, value ) {
+		if ( key === "icons" ) {
+			this.element.find( ".ui-menu-icon" )
+				.removeClass( this.options.icons.submenu )
+				.addClass( value.submenu );
+		}
+		this._super( key, value );
+	},
+
+	focus: function( event, item ) {
+		var nested, focused;
+		this.blur( event, event && event.type === "focus" );
+
+		this._scrollIntoView( item );
+
+		this.active = item.first();
+		focused = this.active.children( "a" ).addClass( "ui-state-focus" );
+		// Only update aria-activedescendant if there's a role
+		// otherwise we assume focus is managed elsewhere
+		if ( this.options.role ) {
+			this.element.attr( "aria-activedescendant", focused.attr( "id" ) );
+		}
+
+		// Highlight active parent menu item, if any
+		this.active
+			.parent()
+			.closest( ".ui-menu-item" )
+			.children( "a:first" )
+			.addClass( "ui-state-active" );
+
+		if ( event && event.type === "keydown" ) {
+			this._close();
+		} else {
+			this.timer = this._delay(function() {
+				this._close();
+			}, this.delay );
+		}
+
+		nested = item.children( ".ui-menu" );
+		if ( nested.length && ( /^mouse/.test( event.type ) ) ) {
+			this._startOpening(nested);
+		}
+		this.activeMenu = item.parent();
+
+		this._trigger( "focus", event, { item: item } );
+	},
+
+	_scrollIntoView: function( item ) {
+		var borderTop, paddingTop, offset, scroll, elementHeight, itemHeight;
+		if ( this._hasScroll() ) {
+			borderTop = parseFloat( $.css( this.activeMenu[0], "borderTopWidth" ) ) || 0;
+			paddingTop = parseFloat( $.css( this.activeMenu[0], "paddingTop" ) ) || 0;
+			offset = item.offset().top - this.activeMenu.offset().top - borderTop - paddingTop;
+			scroll = this.activeMenu.scrollTop();
+			elementHeight = this.activeMenu.height();
+			itemHeight = item.height();
+
+			if ( offset < 0 ) {
+				this.activeMenu.scrollTop( scroll + offset );
+			} else if ( offset + itemHeight > elementHeight ) {
+				this.activeMenu.scrollTop( scroll + offset - elementHeight + itemHeight );
+			}
+		}
+	},
+
+	blur: function( event, fromFocus ) {
+		if ( !fromFocus ) {
+			clearTimeout( this.timer );
+		}
+
+		if ( !this.active ) {
+			return;
+		}
+
+		this.active.children( "a" ).removeClass( "ui-state-focus" );
+		this.active = null;
+
+		this._trigger( "blur", event, { item: this.active } );
+	},
+
+	_startOpening: function( submenu ) {
+		clearTimeout( this.timer );
+
+		// Don't open if already open fixes a Firefox bug that caused a .5 pixel
+		// shift in the submenu position when mousing over the carat icon
+		if ( submenu.attr( "aria-hidden" ) !== "true" ) {
+			return;
+		}
+
+		this.timer = this._delay(function() {
+			this._close();
+			this._open( submenu );
+		}, this.delay );
+	},
+
+	_open: function( submenu ) {
+		var position = $.extend({
+			of: this.active
+		}, this.options.position );
+
+		clearTimeout( this.timer );
+		this.element.find( ".ui-menu" ).not( submenu.parents( ".ui-menu" ) )
+			.hide()
+			.attr( "aria-hidden", "true" );
+
+		submenu
+			.show()
+			.removeAttr( "aria-hidden" )
+			.attr( "aria-expanded", "true" )
+			.position( position );
+	},
+
+	collapseAll: function( event, all ) {
+		clearTimeout( this.timer );
+		this.timer = this._delay(function() {
+			// If we were passed an event, look for the submenu that contains the event
+			var currentMenu = all ? this.element :
+				$( event && event.target ).closest( this.element.find( ".ui-menu" ) );
+
+			// If we found no valid submenu ancestor, use the main menu to close all sub menus anyway
+			if ( !currentMenu.length ) {
+				currentMenu = this.element;
+			}
+
+			this._close( currentMenu );
+
+			this.blur( event );
+			this.activeMenu = currentMenu;
+		}, this.delay );
+	},
+
+	// With no arguments, closes the currently active menu - if nothing is active
+	// it closes all menus.  If passed an argument, it will search for menus BELOW
+	_close: function( startMenu ) {
+		if ( !startMenu ) {
+			startMenu = this.active ? this.active.parent() : this.element;
+		}
+
+		startMenu
+			.find( ".ui-menu" )
+				.hide()
+				.attr( "aria-hidden", "true" )
+				.attr( "aria-expanded", "false" )
+			.end()
+			.find( "a.ui-state-active" )
+				.removeClass( "ui-state-active" );
+	},
+
+	collapse: function( event ) {
+		var newItem = this.active &&
+			this.active.parent().closest( ".ui-menu-item", this.element );
+		if ( newItem && newItem.length ) {
+			this._close();
+			this.focus( event, newItem );
+		}
+	},
+
+	expand: function( event ) {
+		var newItem = this.active &&
+			this.active
+				.children( ".ui-menu " )
+				.children( ".ui-menu-item" )
+				.first();
+
+		if ( newItem && newItem.length ) {
+			this._open( newItem.parent() );
+
+			// Delay so Firefox will not hide activedescendant change in expanding submenu from AT
+			this._delay(function() {
+				this.focus( event, newItem );
+			});
+		}
+	},
+
+	next: function( event ) {
+		this._move( "next", "first", event );
+	},
+
+	previous: function( event ) {
+		this._move( "prev", "last", event );
+	},
+
+	isFirstItem: function() {
+		return this.active && !this.active.prevAll( ".ui-menu-item" ).length;
+	},
+
+	isLastItem: function() {
+		return this.active && !this.active.nextAll( ".ui-menu-item" ).length;
+	},
+
+	_move: function( direction, filter, event ) {
+		var next;
+		if ( this.active ) {
+			if ( direction === "first" || direction === "last" ) {
+				next = this.active
+					[ direction === "first" ? "prevAll" : "nextAll" ]( ".ui-menu-item" )
+					.eq( -1 );
+			} else {
+				next = this.active
+					[ direction + "All" ]( ".ui-menu-item" )
+					.eq( 0 );
+			}
+		}
+		if ( !next || !next.length || !this.active ) {
+			next = this.activeMenu.children( ".ui-menu-item" )[ filter ]();
+		}
+
+		this.focus( event, next );
+	},
+
+	nextPage: function( event ) {
+		var item, base, height;
+
+		if ( !this.active ) {
+			this.next( event );
+			return;
+		}
+		if ( this.isLastItem() ) {
+			return;
+		}
+		if ( this._hasScroll() ) {
+			base = this.active.offset().top;
+			height = this.element.height();
+			this.active.nextAll( ".ui-menu-item" ).each(function() {
+				item = $( this );
+				return item.offset().top - base - height < 0;
+			});
+
+			this.focus( event, item );
+		} else {
+			this.focus( event, this.activeMenu.children( ".ui-menu-item" )
+				[ !this.active ? "first" : "last" ]() );
+		}
+	},
+
+	previousPage: function( event ) {
+		var item, base, height;
+		if ( !this.active ) {
+			this.next( event );
+			return;
+		}
+		if ( this.isFirstItem() ) {
+			return;
+		}
+		if ( this._hasScroll() ) {
+			base = this.active.offset().top;
+			height = this.element.height();
+			this.active.prevAll( ".ui-menu-item" ).each(function() {
+				item = $( this );
+				return item.offset().top - base + height > 0;
+			});
+
+			this.focus( event, item );
+		} else {
+			this.focus( event, this.activeMenu.children( ".ui-menu-item" ).first() );
+		}
+	},
+
+	_hasScroll: function() {
+		return this.element.outerHeight() < this.element.prop( "scrollHeight" );
+	},
+
+	select: function( event ) {
+		// TODO: It should never be possible to not have an active item at this
+		// point, but the tests don't trigger mouseenter before click.
+		this.active = this.active || $( event.target ).closest( ".ui-menu-item" );
+		var ui = { item: this.active };
+		if ( !this.active.has( ".ui-menu" ).length ) {
+			this.collapseAll( event, true );
+		}
+		this._trigger( "select", event, ui );
+	}
+});
+
+}( jQuery ));
+
+(function( $, undefined ) {
+
+$.ui = $.ui || {};
+
+var cachedScrollbarWidth,
+	max = Math.max,
+	abs = Math.abs,
+	round = Math.round,
+	rhorizontal = /left|center|right/,
+	rvertical = /top|center|bottom/,
+	roffset = /[\+\-]\d+(\.[\d]+)?%?/,
+	rposition = /^\w+/,
+	rpercent = /%$/,
+	_position = $.fn.position;
+
+function getOffsets( offsets, width, height ) {
+	return [
+		parseFloat( offsets[ 0 ] ) * ( rpercent.test( offsets[ 0 ] ) ? width / 100 : 1 ),
+		parseFloat( offsets[ 1 ] ) * ( rpercent.test( offsets[ 1 ] ) ? height / 100 : 1 )
+	];
+}
+
+function parseCss( element, property ) {
+	return parseInt( $.css( element, property ), 10 ) || 0;
+}
+
+function getDimensions( elem ) {
+	var raw = elem[0];
+	if ( raw.nodeType === 9 ) {
+		return {
+			width: elem.width(),
+			height: elem.height(),
+			offset: { top: 0, left: 0 }
+		};
+	}
+	if ( $.isWindow( raw ) ) {
+		return {
+			width: elem.width(),
+			height: elem.height(),
+			offset: { top: elem.scrollTop(), left: elem.scrollLeft() }
+		};
+	}
+	if ( raw.preventDefault ) {
+		return {
+			width: 0,
+			height: 0,
+			offset: { top: raw.pageY, left: raw.pageX }
+		};
+	}
+	return {
+		width: elem.outerWidth(),
+		height: elem.outerHeight(),
+		offset: elem.offset()
+	};
+}
+
+$.position = {
+	scrollbarWidth: function() {
+		if ( cachedScrollbarWidth !== undefined ) {
+			return cachedScrollbarWidth;
+		}
+		var w1, w2,
+			div = $( "<div style='display:block;width:50px;height:50px;overflow:hidden;'><div style='height:100px;width:auto;'></div></div>" ),
+			innerDiv = div.children()[0];
+
+		$( "body" ).append( div );
+		w1 = innerDiv.offsetWidth;
+		div.css( "overflow", "scroll" );
+
+		w2 = innerDiv.offsetWidth;
+
+		if ( w1 === w2 ) {
+			w2 = div[0].clientWidth;
+		}
+
+		div.remove();
+
+		return (cachedScrollbarWidth = w1 - w2);
+	},
+	getScrollInfo: function( within ) {
+		var overflowX = within.isWindow ? "" : within.element.css( "overflow-x" ),
+			overflowY = within.isWindow ? "" : within.element.css( "overflow-y" ),
+			hasOverflowX = overflowX === "scroll" ||
+				( overflowX === "auto" && within.width < within.element[0].scrollWidth ),
+			hasOverflowY = overflowY === "scroll" ||
+				( overflowY === "auto" && within.height < within.element[0].scrollHeight );
+		return {
+			width: hasOverflowY ? $.position.scrollbarWidth() : 0,
+			height: hasOverflowX ? $.position.scrollbarWidth() : 0
+		};
+	},
+	getWithinInfo: function( element ) {
+		var withinElement = $( element || window ),
+			isWindow = $.isWindow( withinElement[0] );
+		return {
+			element: withinElement,
+			isWindow: isWindow,
+			offset: withinElement.offset() || { left: 0, top: 0 },
+			scrollLeft: withinElement.scrollLeft(),
+			scrollTop: withinElement.scrollTop(),
+			width: isWindow ? withinElement.width() : withinElement.outerWidth(),
+			height: isWindow ? withinElement.height() : withinElement.outerHeight()
+		};
+	}
+};
+
+$.fn.position = function( options ) {
+	if ( !options || !options.of ) {
+		return _position.apply( this, arguments );
+	}
+
+	// make a copy, we don't want to modify arguments
+	options = $.extend( {}, options );
+
+	var atOffset, targetWidth, targetHeight, targetOffset, basePosition, dimensions,
+		target = $( options.of ),
+		within = $.position.getWithinInfo( options.within ),
+		scrollInfo = $.position.getScrollInfo( within ),
+		collision = ( options.collision || "flip" ).split( " " ),
+		offsets = {};
+
+	dimensions = getDimensions( target );
+	if ( target[0].preventDefault ) {
+		// force left top to allow flipping
+		options.at = "left top";
+	}
+	targetWidth = dimensions.width;
+	targetHeight = dimensions.height;
+	targetOffset = dimensions.offset;
+	// clone to reuse original targetOffset later
+	basePosition = $.extend( {}, targetOffset );
+
+	// force my and at to have valid horizontal and vertical positions
+	// if a value is missing or invalid, it will be converted to center
+	$.each( [ "my", "at" ], function() {
+		var pos = ( options[ this ] || "" ).split( " " ),
+			horizontalOffset,
+			verticalOffset;
+
+		if ( pos.length === 1) {
+			pos = rhorizontal.test( pos[ 0 ] ) ?
+				pos.concat( [ "center" ] ) :
+				rvertical.test( pos[ 0 ] ) ?
+					[ "center" ].concat( pos ) :
+					[ "center", "center" ];
+		}
+		pos[ 0 ] = rhorizontal.test( pos[ 0 ] ) ? pos[ 0 ] : "center";
+		pos[ 1 ] = rvertical.test( pos[ 1 ] ) ? pos[ 1 ] : "center";
+
+		// calculate offsets
+		horizontalOffset = roffset.exec( pos[ 0 ] );
+		verticalOffset = roffset.exec( pos[ 1 ] );
+		offsets[ this ] = [
+			horizontalOffset ? horizontalOffset[ 0 ] : 0,
+			verticalOffset ? verticalOffset[ 0 ] : 0
+		];
+
+		// reduce to just the positions without the offsets
+		options[ this ] = [
+			rposition.exec( pos[ 0 ] )[ 0 ],
+			rposition.exec( pos[ 1 ] )[ 0 ]
+		];
+	});
+
+	// normalize collision option
+	if ( collision.length === 1 ) {
+		collision[ 1 ] = collision[ 0 ];
+	}
+
+	if ( options.at[ 0 ] === "right" ) {
+		basePosition.left += targetWidth;
+	} else if ( options.at[ 0 ] === "center" ) {
+		basePosition.left += targetWidth / 2;
+	}
+
+	if ( options.at[ 1 ] === "bottom" ) {
+		basePosition.top += targetHeight;
+	} else if ( options.at[ 1 ] === "center" ) {
+		basePosition.top += targetHeight / 2;
+	}
+
+	atOffset = getOffsets( offsets.at, targetWidth, targetHeight );
+	basePosition.left += atOffset[ 0 ];
+	basePosition.top += atOffset[ 1 ];
+
+	return this.each(function() {
+		var collisionPosition, using,
+			elem = $( this ),
+			elemWidth = elem.outerWidth(),
+			elemHeight = elem.outerHeight(),
+			marginLeft = parseCss( this, "marginLeft" ),
+			marginTop = parseCss( this, "marginTop" ),
+			collisionWidth = elemWidth + marginLeft + parseCss( this, "marginRight" ) + scrollInfo.width,
+			collisionHeight = elemHeight + marginTop + parseCss( this, "marginBottom" ) + scrollInfo.height,
+			position = $.extend( {}, basePosition ),
+			myOffset = getOffsets( offsets.my, elem.outerWidth(), elem.outerHeight() );
+
+		if ( options.my[ 0 ] === "right" ) {
+			position.left -= elemWidth;
+		} else if ( options.my[ 0 ] === "center" ) {
+			position.left -= elemWidth / 2;
+		}
+
+		if ( options.my[ 1 ] === "bottom" ) {
+			position.top -= elemHeight;
+		} else if ( options.my[ 1 ] === "center" ) {
+			position.top -= elemHeight / 2;
+		}
+
+		position.left += myOffset[ 0 ];
+		position.top += myOffset[ 1 ];
+
+		// if the browser doesn't support fractions, then round for consistent results
+		if ( !$.support.offsetFractions ) {
+			position.left = round( position.left );
+			position.top = round( position.top );
+		}
+
+		collisionPosition = {
+			marginLeft: marginLeft,
+			marginTop: marginTop
+		};
+
+		$.each( [ "left", "top" ], function( i, dir ) {
+			if ( $.ui.position[ collision[ i ] ] ) {
+				$.ui.position[ collision[ i ] ][ dir ]( position, {
+					targetWidth: targetWidth,
+					targetHeight: targetHeight,
+					elemWidth: elemWidth,
+					elemHeight: elemHeight,
+					collisionPosition: collisionPosition,
+					collisionWidth: collisionWidth,
+					collisionHeight: collisionHeight,
+					offset: [ atOffset[ 0 ] + myOffset[ 0 ], atOffset [ 1 ] + myOffset[ 1 ] ],
+					my: options.my,
+					at: options.at,
+					within: within,
+					elem : elem
+				});
+			}
+		});
+
+		if ( options.using ) {
+			// adds feedback as second argument to using callback, if present
+			using = function( props ) {
+				var left = targetOffset.left - position.left,
+					right = left + targetWidth - elemWidth,
+					top = targetOffset.top - position.top,
+					bottom = top + targetHeight - elemHeight,
+					feedback = {
+						target: {
+							element: target,
+							left: targetOffset.left,
+							top: targetOffset.top,
+							width: targetWidth,
+							height: targetHeight
+						},
+						element: {
+							element: elem,
+							left: position.left,
+							top: position.top,
+							width: elemWidth,
+							height: elemHeight
+						},
+						horizontal: right < 0 ? "left" : left > 0 ? "right" : "center",
+						vertical: bottom < 0 ? "top" : top > 0 ? "bottom" : "middle"
+					};
+				if ( targetWidth < elemWidth && abs( left + right ) < targetWidth ) {
+					feedback.horizontal = "center";
+				}
+				if ( targetHeight < elemHeight && abs( top + bottom ) < targetHeight ) {
+					feedback.vertical = "middle";
+				}
+				if ( max( abs( left ), abs( right ) ) > max( abs( top ), abs( bottom ) ) ) {
+					feedback.important = "horizontal";
+				} else {
+					feedback.important = "vertical";
+				}
+				options.using.call( this, props, feedback );
+			};
+		}
+
+		elem.offset( $.extend( position, { using: using } ) );
+	});
+};
+
+$.ui.position = {
+	fit: {
+		left: function( position, data ) {
+			var within = data.within,
+				withinOffset = within.isWindow ? within.scrollLeft : within.offset.left,
+				outerWidth = within.width,
+				collisionPosLeft = position.left - data.collisionPosition.marginLeft,
+				overLeft = withinOffset - collisionPosLeft,
+				overRight = collisionPosLeft + data.collisionWidth - outerWidth - withinOffset,
+				newOverRight;
+
+			// element is wider than within
+			if ( data.collisionWidth > outerWidth ) {
+				// element is initially over the left side of within
+				if ( overLeft > 0 && overRight <= 0 ) {
+					newOverRight = position.left + overLeft + data.collisionWidth - outerWidth - withinOffset;
+					position.left += overLeft - newOverRight;
+				// element is initially over right side of within
+				} else if ( overRight > 0 && overLeft <= 0 ) {
+					position.left = withinOffset;
+				// element is initially over both left and right sides of within
+				} else {
+					if ( overLeft > overRight ) {
+						position.left = withinOffset + outerWidth - data.collisionWidth;
+					} else {
+						position.left = withinOffset;
+					}
+				}
+			// too far left -> align with left edge
+			} else if ( overLeft > 0 ) {
+				position.left += overLeft;
+			// too far right -> align with right edge
+			} else if ( overRight > 0 ) {
+				position.left -= overRight;
+			// adjust based on position and margin
+			} else {
+				position.left = max( position.left - collisionPosLeft, position.left );
+			}
+		},
+		top: function( position, data ) {
+			var within = data.within,
+				withinOffset = within.isWindow ? within.scrollTop : within.offset.top,
+				outerHeight = data.within.height,
+				collisionPosTop = position.top - data.collisionPosition.marginTop,
+				overTop = withinOffset - collisionPosTop,
+				overBottom = collisionPosTop + data.collisionHeight - outerHeight - withinOffset,
+				newOverBottom;
+
+			// element is taller than within
+			if ( data.collisionHeight > outerHeight ) {
+				// element is initially over the top of within
+				if ( overTop > 0 && overBottom <= 0 ) {
+					newOverBottom = position.top + overTop + data.collisionHeight - outerHeight - withinOffset;
+					position.top += overTop - newOverBottom;
+				// element is initially over bottom of within
+				} else if ( overBottom > 0 && overTop <= 0 ) {
+					position.top = withinOffset;
+				// element is initially over both top and bottom of within
+				} else {
+					if ( overTop > overBottom ) {
+						position.top = withinOffset + outerHeight - data.collisionHeight;
+					} else {
+						position.top = withinOffset;
+					}
+				}
+			// too far up -> align with top
+			} else if ( overTop > 0 ) {
+				position.top += overTop;
+			// too far down -> align with bottom edge
+			} else if ( overBottom > 0 ) {
+				position.top -= overBottom;
+			// adjust based on position and margin
+			} else {
+				position.top = max( position.top - collisionPosTop, position.top );
+			}
+		}
+	},
+	flip: {
+		left: function( position, data ) {
+			var within = data.within,
+				withinOffset = within.offset.left + within.scrollLeft,
+				outerWidth = within.width,
+				offsetLeft = within.isWindow ? within.scrollLeft : within.offset.left,
+				collisionPosLeft = position.left - data.collisionPosition.marginLeft,
+				overLeft = collisionPosLeft - offsetLeft,
+				overRight = collisionPosLeft + data.collisionWidth - outerWidth - offsetLeft,
+				myOffset = data.my[ 0 ] === "left" ?
+					-data.elemWidth :
+					data.my[ 0 ] === "right" ?
+						data.elemWidth :
+						0,
+				atOffset = data.at[ 0 ] === "left" ?
+					data.targetWidth :
+					data.at[ 0 ] === "right" ?
+						-data.targetWidth :
+						0,
+				offset = -2 * data.offset[ 0 ],
+				newOverRight,
+				newOverLeft;
+
+			if ( overLeft < 0 ) {
+				newOverRight = position.left + myOffset + atOffset + offset + data.collisionWidth - outerWidth - withinOffset;
+				if ( newOverRight < 0 || newOverRight < abs( overLeft ) ) {
+					position.left += myOffset + atOffset + offset;
+				}
+			}
+			else if ( overRight > 0 ) {
+				newOverLeft = position.left - data.collisionPosition.marginLeft + myOffset + atOffset + offset - offsetLeft;
+				if ( newOverLeft > 0 || abs( newOverLeft ) < overRight ) {
+					position.left += myOffset + atOffset + offset;
+				}
+			}
+		},
+		top: function( position, data ) {
+			var within = data.within,
+				withinOffset = within.offset.top + within.scrollTop,
+				outerHeight = within.height,
+				offsetTop = within.isWindow ? within.scrollTop : within.offset.top,
+				collisionPosTop = position.top - data.collisionPosition.marginTop,
+				overTop = collisionPosTop - offsetTop,
+				overBottom = collisionPosTop + data.collisionHeight - outerHeight - offsetTop,
+				top = data.my[ 1 ] === "top",
+				myOffset = top ?
+					-data.elemHeight :
+					data.my[ 1 ] === "bottom" ?
+						data.elemHeight :
+						0,
+				atOffset = data.at[ 1 ] === "top" ?
+					data.targetHeight :
+					data.at[ 1 ] === "bottom" ?
+						-data.targetHeight :
+						0,
+				offset = -2 * data.offset[ 1 ],
+				newOverTop,
+				newOverBottom;
+			if ( overTop < 0 ) {
+				newOverBottom = position.top + myOffset + atOffset + offset + data.collisionHeight - outerHeight - withinOffset;
+				if ( ( position.top + myOffset + atOffset + offset) > overTop && ( newOverBottom < 0 || newOverBottom < abs( overTop ) ) ) {
+					position.top += myOffset + atOffset + offset;
+				}
+			}
+			else if ( overBottom > 0 ) {
+				newOverTop = position.top -  data.collisionPosition.marginTop + myOffset + atOffset + offset - offsetTop;
+				if ( ( position.top + myOffset + atOffset + offset) > overBottom && ( newOverTop > 0 || abs( newOverTop ) < overBottom ) ) {
+					position.top += myOffset + atOffset + offset;
 				}
 			}
 		}
+	},
+	flipfit: {
+		left: function() {
+			$.ui.position.flip.left.apply( this, arguments );
+			$.ui.position.fit.left.apply( this, arguments );
+		},
+		top: function() {
+			$.ui.position.flip.top.apply( this, arguments );
+			$.ui.position.fit.top.apply( this, arguments );
+		}
 	}
-	ree,
-		handle: fa) ) {
-			proxiedPrototype[ phis.options );
-	null,
-		stop: null
+};
+
+// fraction support test
+(function () {
+	var testElement, testElementParent, testElementStyle, offsetLeft, i,
+		body = document.getElementsByTagName( "body" )[ 0 ],
+		div = document.createElement( "div" );
+
+	//Create a "fake body" for testing based on method used in jQuery.support
+	testElement = document.createElement( body ? "div" : "body" );
+	testElementStyle = {
+		visibility: "hidden",
+		width: 0,
+		height: 0,
+		border: 0,
+		margin: 0,
+		background: "none"
+	};
+	if ( body ) {
+		$.extend( testElementStyle, {
+			position: "absolute",
+			left: "-1000px",
+			top: "-1000px"
+		});
+	}
+	for ( i in testElementStyle ) {
+		testElement.style[ i ] = testElementStyle[ i ];
+	}
+	testElement.appendChild( div );
+	testElementParent = body || document.documentElement;
+	testElementParent.insertBefore( testElement, testElementParent.firstChild );
+
+	div.style.cssText = "position: absolute; left: 10.7432222px;";
+
+	offsetLeft = $( div ).offset().left;
+	$.support.offsetFractions = offsetLeft > 10 && offsetLeft < 11;
+
+	testElement.innerHTML = "";
+	testElementParent.removeChild( testElement );
+})();
+
+}( jQuery ) );
+
+(function( $, undefined ) {
+
+$.widget( "ui.progressbar", {
+	version: "1.10.3",
+	options: {
+		max: 100,
+		value: 0,
+
+		change: null,
+		complete: null
 	},
-	_e = function(ata = $.cle*ype[ 		// handle nesnull,
-		stop: null
-	},
+
+	min: 0,
+
 	_create: function() {
+		// Constrain initial value
+		this.oldValue = this.options.value = this._constrainedValue();
 
-	is.eleetFullName || name;
-	$.fn[ name ] = frototyp= false;
-		}ctors, akruct{
-			handlers = ee, function( propname;
-	$.fn[ name ] =1s){
-			this.element parts.shift();
-			if {
-			this.element.a,
-			/ions = {};
-			parts = key{
-			this.elemention( options ) {
-		var kction(move		this.element.er = this._super,
-			ll( arguments, 1 ),
-			returnValue = this;
+		this.element
+			.addClass( "ui-progressbar ui-widget ui-widget-content ui-corner-all" )
+			.attr({
+				// Only set static values, aria-valuenow and aria-valuemax are
+				// set inside _refreshValue()
+				role: "progressbar",
+				"aria-valuemin": this.min
+			});
 
-		// allow multiple hashes to be passed on init
-		options = !isMethodCall && args.lent.addCla		returnValue = value.apply( this, arguments );
+		this.valueDiv = $( "<div class='ui-progressbar-value ui-widget-header ui-corner-left'></div>" )
+			.appendTo( this.element );
 
-				this._super = __super;
-				this._superApply = __superApply;
+		this._refreshValue();
+	},
 
-				return returnValue;
-			};
-		})();
-	});
-	constructor.prototype = $.widget.extend( basePrototype, {
-		// TODO: remove support for widgetEventPrefix
-		// always sl)[ 0 ]event may come from any element
-		// so we needoto.plugins[ i ] || [];
-				proto.plugins[ i ].push( [ option, set[ i ] ] )bind( this.eventNa: function( instance, name, args ) {
-			var i-state-hover" );
-			this.focusable.reputIndex < inputLength; inputIndex++ ) {
-		finment: false,
-		cursor: "auto",
-		cursorAt: false,
-		grid: false,
-		handle: false,
-		helper: "original",
-		iframeFix: false,
-		o		prototype ( instance.optct( value ) ) {
-					target[ key ] = $.isPlainObject( tarend( {}, target[ key ], value ) :
-						// Don't extend st.version,
-		// copc. withMode: "both",
-") {
+	_destroy: function() {
+		this.element
+			.removeClass( "ui-progressbar ui-widget ui-widget-content ui-corner-all" )
+			.removeAttr( "role" )
+			.removeAttr( "aria-valuemin" )
+			.removeAttr( "aria-valuemax" )
+			.removeAttr( "aria-valuenow" );
+
+		this.valueDiv.remove();
+	},
+
+	value: function( newValue ) {
+		if ( newValue === undefined ) {
+			return this.options.value;
+		}
+
+		this.options.value = this._constrainedValue( newValue );
+		this._refreshValue();
+	},
+
+	_constrainedValue: function( newValue ) {
+		if ( newValue === undefined ) {
+			newValue = this.options.value;
+		}
+
+		this.indeterminate = newValue === false;
+
+		// sanitize value
+		if ( typeof newValue !== "number" ) {
+			newValue = 0;
+		}
+
+		return this.indeterminate ? false :
+			Math.min( this.options.max, Math.max( this.min, newValue ) );
+	},
+
+	_setOptions: function( options ) {
+		// Ensure "value" option is set after other values (like max)
+		var value = options.value;
+		delete options.value;
+
+		this._super( options );
+
+		this.options.value = this._constrainedValue( value );
+		this._refreshValue();
+	},
+
+	_setOption: function( key, value ) {
+		if ( key === "max" ) {
+			// Don't allow a max less than min
+			value = Math.max( this.min, value );
+		}
+
+		this._super( key, value );
+	},
+
+	_percentage: function() {
+		return this.indeterminate ? 100 : 100 * ( this.options.value - this.min ) / ( this.options.max - this.min );
+	},
+
+	_refreshValue: function() {
+		var value = this.options.value,
+			percentage = this._percentage();
+
+		this.valueDiv
+			.toggle( this.indeterminate || value > this.min )
+			.toggleClass( "ui-corner-right", value === this.options.max )
+			.width( percentage.toFixed(0) + "%" );
+
+		this.element.toggleClass( "ui-progressbar-indeterminate", this.indeterminate );
+
+		if ( this.indeterminate ) {
+			this.element.removeAttr( "aria-valuenow" );
+			if ( !this.overlayDiv ) {
+				this.overlayDiv = $( "<div class='ui-progressbar-overlay'></div>" ).appendTo( this.valueDiv );
+			}
+		} else {
+			this.element.attr({
+				"aria-valuemax": this.options.max,
+				"aria-valuenow": value
+			});
+			if ( this.overlayDiv ) {
+				this.overlayDiv.remove();
+				this.overlayDiv = null;
+			}
+		}
+
+		if ( this.oldValue !== value ) {
+			this.oldValue = value;
+			this._trigger( "change" );
+		}
+		if ( value === this.options.max ) {
+			this._trigger( "complete" );
+		}
+	}
+});
+
+})( jQuery );
+
+(function( $, undefined ) {
+
+// number of pages in a slider
+// (how many times can you page up/down to go through the whole range)
+var numPages = 5;
+
+$.widget( "ui.slider", $.ui.mouse, {
+	version: "1.10.3",
+	widgetEventPrefix: "slide",
+
+	options: {
+		animate: false,
+		distance: 0,
+		max: 100,
+		min: 0,
+		orientation: "horizontal",
+		range: false,
+		step: 1,
+		value: 0,
+		values: null,
+
+		// callbacks
+		change: null,
+		slide: null,
+		start: null,
+		stop: null
+	},
+
+	_create: function() {
+		this._keySliding = false;
+		this._mouseSliding = false;
+		this._animateOff = true;
+		this._handleIndex = null;
+		this._detectOrientation();
+		this._mouseInit();
+
+		this.element
+			.addClass( "ui-slider" +
+				" ui-slider-" + this.orientation +
+				" ui-widget" +
+				" ui-widget-content" +
+				" ui-corner-all");
+
+		this._refresh();
+		this._setOption( "disabled", this.options.disabled );
+
+		this._animateOff = false;
+	},
+
+	_refresh: function() {
+		this._createRange();
+		this._createHandles();
+		this._setupEvents();
+		this._refreshValue();
+	},
+
+	_createHandles: function() {
+		var i, handleCount,
+			options = this.options,
+			existingHandles = this.element.find( ".ui-slider-handle" ).addClass( "ui-state-default ui-corner-all" ),
+			handle = "<a class='ui-slider-handle ui-state-default ui-corner-all' href='#'></a>",
+			handles = [];
+
+		handleCount = ( options.values && options.values.length ) || 1;
+
+		if ( existingHandles.length > handleCount ) {
+			existingHandles.slice( handleCount ).remove();
+			existingHandles = existingHandles.slice( 0, handleCount );
+		}
+
+		for ( i = existingHandles.length; i < handleCount; i++ ) {
+			handles.push( handle );
+		}
+
+		this.handles = existingHandles.add( $( handles.join( "" ) ).appendTo( this.element ) );
+
+		this.handle = this.handles.eq( 0 );
+
+		this.handles.each(function( i ) {
+			$( this ).data( "ui-slider-handle-index", i );
+		});
+	},
+
+	_createRange: function() {
+		var options = this.options,
+			classes = "";
+
+		if ( options.range ) {
+			if ( options.range === true ) {
+				if ( !options.values ) {
+					options.values = [ this._valueMin(), this._valueMin() ];
+				} else if ( options.values.length && options.values.length !== 2 ) {
+					options.values = [ options.values[0], options.values[0] ];
+				} else if ( $.isArray( options.values ) ) {
+					options.values = options.values.slice(0);
+				}
+			}
+
+			if ( !this.range || !this.range.length ) {
+				this.range = $( "<div></div>" )
+					.appendTo( this.element );
+
+				classes = "ui-slider-range" +
+				// note: this isn't the most fittingly semantic framework class for this element,
+				// but worked best visually with a variety of themes
+				" ui-widget-header ui-corner-all";
+			} else {
+				this.range.removeClass( "ui-slider-range-min ui-slider-range-max" )
+					// Handle range switching from true to min/max
+					.css({
+						"left": "",
+						"bottom": ""
+					});
+			}
+
+			this.range.addClass( classes +
+				( ( options.range === "min" || options.range === "max" ) ? " ui-slider-range-" + options.range : "" ) );
+		} else {
+			this.range = $([]);
+		}
+	},
+
+	_setupEvents: function() {
+		var elements = this.handles.add( this.range ).filter( "a" );
+		this._off( elements );
+		this._on( elements, this._handleEvents );
+		this._hoverable( elements );
+		this._focusable( elements );
+	},
+
+	_destroy: function() {
+		this.handles.remove();
+		this.range.remove();
+
+		this.element
+			.removeClass( "ui-slider" +
+				" ui-slider-horizontal" +
+				" ui-slider-vertical" +
+				" ui-widget" +
+				" ui-widget-content" +
+				" ui-corner-all" );
+
+		this._mouseDestroy();
+	},
+
+	_mouseCapture: function( event ) {
+		var position, normValue, distance, closestHandle, index, allowed, offset, mouseOverHandle,
+			that = this,
+			o = this.options;
+
+		if ( o.disabled ) {
 			return false;
 		}
 
-		var scroll = ( a && a ===
-						$.widget.exined after 	stop: null
+		this.elementSize = {
+			width: this.element.outerWidth(),
+			height: this.element.outerHeight()
+		};
+		this.elementOffset = this.element.offset();
+
+		position = { x: event.pageX, y: event.pageY };
+		normValue = this._normValueFromMouse( position );
+		distance = this._valueMax() - this._valueMin() + 1;
+		this.handles.each(function( i ) {
+			var thisDistance = Math.abs( normValue - that.values(i) );
+			if (( distance > thisDistance ) ||
+				( distance === thisDistance &&
+					(i === that._lastChangedValue || that.values(i) === o.min ))) {
+				distance = thisDistance;
+				closestHandle = $( this );
+				index = i;
+			}
+		});
+
+		allowed = this._start( event, index );
+		if ( allowed === false ) {
+			return false;
+		}
+		this._mouseSliding = true;
+
+		this._handleIndex = index;
+
+		closestHandle
+			.addClass( "ui-state-active" )
+			.focus();
+
+		offset = closestHandle.offset();
+		mouseOverHandle = !$( event.target ).parents().addBack().is( ".ui-slider-handle" );
+		this._clickOffset = mouseOverHandle ? { left: 0, top: 0 } : {
+			left: event.pageX - offset.left - ( closestHandle.width() / 2 ),
+			top: event.pageY - offset.top -
+				( closestHandle.height() / 2 ) -
+				( parseInt( closestHandle.css("borderTopWidth"), 10 ) || 0 ) -
+				( parseInt( closestHandle.css("borderBottomWidth"), 10 ) || 0) +
+				( parseInt( closestHandle.css("marginTop"), 10 ) || 0)
+		};
+
+		if ( !this.handles.hasClass( "ui-state-hover" ) ) {
+			this._slide( event, index, normValue );
+		}
+		this._animateOff = true;
+		return true;
 	},
-	(isNaN( existiney ) -
-			
-				} elseinherits tanc {
-					target[ key ] = value;
+
+	_mouseStart: function() {
+		return true;
+	},
+
+	_mouseDrag: function( event ) {
+		var position = { x: event.pageX, y: event.pageY },
+			normValue = this._normValueFromMouse( position );
+
+		this._slide( event, this._handleIndex, normValue );
+
+		return false;
+	},
+
+	_mouseStop: function( event ) {
+		this.handles.removeClass( "ui-state-active" );
+		this._mouseSliding = false;
+
+		this._stop( event, this._handleIndex );
+		this._change( event, this._handleIndex );
+
+		this._handleIndex = null;
+		this._clickOffset = null;
+		this._animateOff = false;
+
+		return false;
+	},
+
+	_detectOrientation: function() {
+		this.orientation = ( this.options.orientation === "vertical" ) ? "vertical" : "horizontal";
+	},
+
+	_normValueFromMouse: function( position ) {
+		var pixelTotal,
+			pixelMouse,
+			percentMouse,
+			valueTotal,
+			valueMouse;
+
+		if ( this.orientation === "horizontal" ) {
+			pixelTotal = this.elementSize.width;
+			pixelMouse = position.x - this.elementOffset.left - ( this._clickOffset ? this._clickOffset.left : 0 );
+		} else {
+			pixelTotal = this.elementSize.height;
+			pixelMouse = position.y - this.elementOffset.top - ( this._clickOffset ? this._clickOffset.top : 0 );
+		}
+
+		percentMouse = ( pixelMouse / pixelTotal );
+		if ( percentMouse > 1 ) {
+			percentMouse = 1;
+		}
+		if ( percentMouse < 0 ) {
+			percentMouse = 0;
+		}
+		if ( this.orientation === "vertical" ) {
+			percentMouse = 1 - percentMouse;
+		}
+
+		valueTotal = this._valueMax() - this._valueMin();
+		valueMouse = this._valueMin() + percentMouse * valueTotal;
+
+		return this._trimAlignValue( valueMouse );
+	},
+
+	_start: function( event, index ) {
+		var uiHash = {
+			handle: this.handles[ index ],
+			value: this.value()
+		};
+		if ( this.options.values && this.options.values.length ) {
+			uiHash.value = this.values( index );
+			uiHash.values = this.values();
+		}
+		return this._trigger( "start", event, uiHash );
+	},
+
+	_slide: function( event, index, newVal ) {
+		var otherVal,
+			newValues,
+			allowed;
+
+		if ( this.options.values && this.options.values.length ) {
+			otherVal = this.values( index ? 0 : 1 );
+
+			if ( ( this.options.values.length === 2 && this.options.range === true ) &&
+					( ( index === 0 && newVal > otherVal) || ( index === 1 && newVal < otherVal ) )
+				) {
+				newVal = otherVal;
+			}
+
+			if ( newVal !== this.values( index ) ) {
+				newValues = this.values();
+				newValues[ index ] = newVal;
+				// A slide can be canceled by returning false from the slide callback
+				allowed = this._trigger( "slide", event, {
+					handle: this.handles[ index ],
+					value: newVal,
+					values: newValues
+				} );
+				otherVal = this.values( index ? 0 : 1 );
+				if ( allowed !== false ) {
+					this.values( index, newVal, true );
+				}
+			}
+		} else {
+			if ( newVal !== this.value() ) {
+				// A slide can be canceled by returning false from the slide callback
+				allowed = this._trigger( "slide", event, {
+					handle: this.handles[ index ],
+					value: newVal
+				} );
+				if ( allowed !== false ) {
+					this.value( newVal );
 				}
 			}
 		}
-	}
-	return target=== "original" && !(/^(?:r|an( name,	stop: null
 	},
-	_create: fu)t.prototype.widgetFullName || name;
-	$.fn[ name ] = function( options ) {
-		var isMethodCall = typeof options === "string",
-			args = slice.call( arguments, 1 ),
-			returnValue = this;
 
-		// allow multiple hashes to be passed on init
-		options = !isMethodCall && args.length ?
-			$.widget.extend.apply( null, [ options ].concat(args) ) :
-		t("uif" ) = parts[ i ] ];
-				}
-				key = parts.pop();
-			tePseudarts.thod ffset = thiFixon( etePseui.effect-explodepace + "femenback 	widgin ) 	widg	retufixT( conthis.element? 	wid.scrollTop(tanc	handlixfaultop,
-			left: this.offset.lefaul- this.marendmoveData(.offset()) || optiotion[ key ] = valueDownEvet.scroll on(ev- rgins.tates 		$.dat { //Where (thisclicks.lefindex: 0;"></ffset()inn=== "string" ?  returnX - this.off: handler )
-			retur.scroll = fhandle	$.extend(t absolute pndexNotN c013-='this.uuid;
- absolut'widgetEventPre( $.css( elme === "Wiffse.each( side, fus;
-	013-Heightssible to
-ault(), jqp
-			},
-			pa the click happenedd, relay used for relelement
-				left: ev-state-disables.offset.left,
-							return;
-	geY - this.oates a	// set th,
-			left: thi	top: t fun/ the eled ) {
-				te;
-	$.fn[ name ] = fhis._mouseDrag(event);
-			return ev (Matabsolutty" ) === "hiddisabled" ) {y() {
-				// allow widgets to customize the disablen orig[ "outmenu"Creatverset the1.10.3backets (#8E
-		}) : "<ul>contai: fun3 thistype ).nt[ efictContainm	sub(o.c:+ thient(-carat-1-erDocu}
-
-		enus evespace,	// set th ) {
-	disa(thist-cli?
-			ven e.optioop	if(this.rolions(o.cur
-		revecall $.wis.wilur:.eachs.mar[ "Lthis._cachion( othis._;
-		},
-
-	focusnput|select|textarea|b{
-	dveMenuon() {
-	ith an yMet// flag),
-	t = dendex" )filtert( optioclick this.cctorssDir any tializbubblom
-	b through nesx >=_trigs ) ) ||					erWidtove tseenterents with an is a uniqueId this.idgetName + thi_trie -=
-				orect positt();
-			}ui-corner-all possiblcomplegetting its cort + ce;
-	!	returith an et = !th		//ent(ns] 
-			retu beforttrlation 
+	_stop: function( event, index ) {
+		var uiHash = {
+			handle: this.handles[ index ],
+			value: this.value()
+		};
+		if ( this.options.values && this.options.values.length ) {
+			uiHash.value = this.values( index );
+			uiHash.values = this.values();
 		}
 
-other contrib
-		}ates atabIndex	this.d{
-				eturn this.catch= eleets(ts);
+		this._trigger( "stop", event, uiHash );
+	},
 
-		fn.cal/Exec
-		returot of ui.slivent, tr_his )[Width" ?ets(t
-			t dragry.u},
+	_change: function( event, index ) {
+		if ( !this._keySliding && !this._mouseSliding ) {
+			var uiHash = {
+				handle: this.handles[ index ],
+				value: this.value()
+			};
+			if ( this.options.values && this.options.values.length ) {
+				uiHash.value = this.values( index );
+				uiHash.values = this.values();
+			}
 
-spaappl$t.sex8
-if ( !$( Top", "Bottom" this ) ) ||eout(func: functtion( key,erWidth: $.fn.innerWidth,
-	hese aturn ! ) 110,
-		NUMtion === "fixed" ) {
-			this.he helper not tofore getting its._moeinhen.call( 				$( .ddm "ariavent);
-		tins[ruventDa}
-					}, deln"))) {
-tabindex" )eHelppageY stickbIndexNlink ) {s= "s correr = _ets(tter(fun// supm (and cashouldthis.parstay);
+			//store the last changed value index for reference when handles overlap
+			this._lastChangedValue = index;
 
-ULy.sp		}
+			this._trigger( "change", event, uiHash );
+		}
+	},
 
-avigundef)N( ta"					size );
-	the matem > a"a: $.expr.createPseudo ?offset.parent = this._getPareggableessary );
-	ion(event);
-		g", event, ui) === false) {
-				this._mouseUp({});
+	value: function( newValue ) {
+		if ( arguments.length ) {
+			this.options.value = this._trimAlignValue( newValue );
+			this._refreshValue();
+			this._change( null, 0 );
+			return;
+		}
+
+		return this._value();
+	},
+
+	values: function( index, newValue ) {
+		var vals,
+			newValues,
+			i;
+
+		if ( arguments.length > 1 ) {
+			this.options.values[ index ] = this._trimAlignValue( newValue );
+			this._refreshValue();
+			this._change( null, index );
+			return;
+		}
+
+		if ( arguments.length ) {
+			if ( $.isArray( arguments[ 0 ] ) ) {
+				vals = this.options.values;
+				newValues = arguments[ 0 ];
+				for ( i = 0; i < vals.length; i += 1 ) {
+					vals[ i ] = this._trimAlignValue( newValues[ i ] );
+					this._change( null, i );
+				}
+				this._refreshValue();
+			} else {
+				if ( this.options.values && this.options.values.length ) {
+					return this._values( index );
+				} else {
+					return this.value();
+				}
+			}
+		} else {
+			return this._values();
+		}
+	},
+
+	_setOption: function( key, value ) {
+		var i,
+			valsLength = 0;
+
+		if ( key === "range" && this.options.range === true ) {
+			if ( value === "min" ) {
+				this.options.value = this._values( 0 );
+				this.options.values = null;
+			} else if ( value === "max" ) {
+				this.options.value = this._values( this.options.values.length-1 );
+				this.options.values = null;
+			}
+		}
+
+		if ( $.isArray( this.options.values ) ) {
+			valsLength = this.options.values.length;
+		}
+
+		$.Widget.prototype._setOption.apply( this, arguments );
+
+		switch ( key ) {
+			case "orientation":
+				this._detectOrientation();
+				this.element
+					.removeClass( "ui-slider-horizontal ui-slider-vertical" )
+					.addClass( "ui-slider-" + this.orientation );
+				this._refreshValue();
+				break;
+			case "value":
+				this._animateOff = true;
+				this._refreshValue();
+				this._change( null, 0 );
+				this._animateOff = false;
+				break;
+			case "values":
+				this._animateOff = true;
+				this._refreshValue();
+				for ( i = 0; i < valsLength; i += 1 ) {
+					this._change( null, i );
+				}
+				this._animateOff = false;
+				break;
+			case "min":
+			case "max":
+				this._animateOff = true;
+				this._refreshValue();
+				this._animateOff = false;
+				break;
+			case "range":
+				this._animateOff = true;
+				this._refresh();
+				this._animateOff = false;
+				break;
+		}
+	},
+
+	//internal value getter
+	// _value() returns value trimmed by min and max, aligned by step
+	_value: function() {
+		var val = this.options.value;
+		val = this._trimAlignValue( val );
+
+		return val;
+	},
+
+	//internal values getter
+	// _values() returns array of values trimmed by min and max, aligned by step
+	// _values( index ) returns single value trimmed by min and max, aligned by step
+	_values: function( index ) {
+		var val,
+			vals,
+			i;
+
+		if ( arguments.length ) {
+			val = this.options.values[ index ];
+			val = this._trimAlignValue( val );
+
+			return val;
+		} else if ( this.options.values && this.options.values.length ) {
+			// .slice() creates a copy of the array
+			// this copy gets trimmed by min and max and then returned
+			vals = this.options.values.slice();
+			for ( i = 0; i < vals.length; i+= 1) {
+				vals[ i ] = this._trimAlignValue( vals[ i ] );
+			}
+
+			return vals;
+		} else {
+			return [];
+		}
+	},
+
+	// returns the step-aligned value that val is closest to, between (inclusive) min and max
+	_trimAlignValue: function( val ) {
+		if ( val <= this._valueMin() ) {
+			return this._valueMin();
+		}
+		if ( val >= this._valueMax() ) {
+			return this._valueMax();
+		}
+		var step = ( this.options.step > 0 ) ? this.options.step : 1,
+			valModStep = (val - this._valueMin()) % step,
+			alignValue = val - valModStep;
+
+		if ( Math.abs(valModStep) * 2 >= step ) {
+			alignValue += ( valModStep > 0 ) ? step : ( -step );
+		}
+
+		// Since JavaScript has problems with large floats, round
+		// the final value to 5 digits after the decimal point (see #4124)
+		return parseFloat( alignValue.toFixed(5) );
+	},
+
+	_valueMin: function() {
+		return this.options.min;
+	},
+
+	_valueMax: function() {
+		return this.options.max;
+	},
+
+	_refreshValue: function() {
+		var lastValPercent, valPercent, value, valueMin, valueMax,
+			oRange = this.options.range,
+			o = this.options,
+			that = this,
+			animate = ( !this._animateOff ) ? o.animate : false,
+			_set = {};
+
+		if ( this.options.values && this.options.values.length ) {
+			this.handles.each(function( i ) {
+				valPercent = ( that.values(i) - that._valueMin() ) / ( that._valueMax() - that._valueMin() ) * 100;
+				_set[ that.orientation === "horizontal" ? "left" : "bottom" ] = valPercent + "%";
+				$( this ).stop( 1, 1 )[ animate ? "animate" : "css" ]( _set, o.animate );
+				if ( that.options.range === true ) {
+					if ( that.orientation === "horizontal" ) {
+						if ( i === 0 ) {
+							that.range.stop( 1, 1 )[ animate ? "animate" : "css" ]( { left: valPercent + "%" }, o.animate );
+						}
+						if ( i === 1 ) {
+							that.range[ animate ? "animate" : "css" ]( { width: ( valPercent - lastValPercent ) + "%" }, { queue: false, duration: o.animate } );
+						}
+					} else {
+						if ( i === 0 ) {
+							that.range.stop( 1, 1 )[ animate ? "animate" : "css" ]( { bottom: ( valPercent ) + "%" }, o.animate );
+						}
+						if ( i === 1 ) {
+							that.range[ animate ? "animate" : "css" ]( { height: ( valPercent - lastValPercent ) + "%" }, { queue: false, duration: o.animate } );
+						}
+					}
+				}
+				lastValPercent = valPercent;
+			});
+		} else {
+			value = this.value();
+			valueMin = this._valueMin();
+			valueMax = this._valueMax();
+			valPercent = ( valueMax !== valueMin ) ?
+					( value - valueMin ) / ( valueMax - valueMin ) * 100 :
+					0;
+			_set[ this.orientation === "horizontal" ? "left" : "bottom" ] = valPercent + "%";
+			this.handle.stop( 1, 1 )[ animate ? "animate" : "css" ]( _set, o.animate );
+
+			if ( oRange === "min" && this.orientation === "horizontal" ) {
+				this.range.stop( 1, 1 )[ animate ? "animate" : "css" ]( { width: valPercent + "%" }, o.animate );
+			}
+			if ( oRange === "max" && this.orientation === "horizontal" ) {
+				this.range[ animate ? "animate" : "css" ]( { width: ( 100 - valPercent ) + "%" }, { queue: false, duration: o.animate } );
+			}
+			if ( oRange === "min" && this.orientation === "vertical" ) {
+				this.range.stop( 1, 1 )[ animate ? "animate" : "css" ]( { height: valPercent + "%" }, o.animate );
+			}
+			if ( oRange === "max" && this.orientation === "vertical" ) {
+				this.range[ animate ? "animate" : "css" ]( { height: ( 100 - valPercent ) + "%" }, { queue: false, duration: o.animate } );
+			}
+		}
+	},
+
+	_handleEvents: {
+		keydown: function( event ) {
+			/*jshint maxcomplexity:25*/
+			var allowed, curVal, newVal, step,
+				index = $( event.target ).data( "ui-slider-handle-index" );
+
+			switch ( event.keyCode ) {
+				case $.ui.keyCode.HOME:
+				case $.ui.keyCode.END:
+				case $.ui.keyCode.PAGE_UP:
+				case $.ui.keyCode.PAGE_DOWN:
+				case $.ui.keyCode.UP:
+				case $.ui.keyCode.RIGHT:
+				case $.ui.keyCode.DOWN:
+				case $.ui.keyCode.LEFT:
+					event.preventDefault();
+					if ( !this._keySliding ) {
+						this._keySliding = true;
+						$( event.target ).addClass( "ui-state-active" );
+						allowed = this._start( event, index );
+						if ( allowed === false ) {
+							return;
+						}
+					}
+					break;
+			}
+
+			step = this.options.step;
+			if ( this.options.values && this.options.values.length ) {
+				curVal = newVal = this.values( index );
+			} else {
+				curVal = newVal = this.value();
+			}
+
+			switch ( event.keyCode ) {
+				case $.ui.keyCode.HOME:
+					newVal = this._valueMin();
+					break;
+				case $.ui.keyCode.END:
+					newVal = this._valueMax();
+					break;
+				case $.ui.keyCode.PAGE_UP:
+					newVal = this._trimAlignValue( curVal + ( (this._valueMax() - this._valueMin()) / numPages ) );
+					break;
+				case $.ui.keyCode.PAGE_DOWN:
+					newVal = this._trimAlignValue( curVal - ( (this._valueMax() - this._valueMin()) / numPages ) );
+					break;
+				case $.ui.keyCode.UP:
+				case $.ui.keyCode.RIGHT:
+					if ( curVal === this._valueMax() ) {
+						return;
+					}
+					newVal = this._trimAlignValue( curVal + step );
+					break;
+				case $.ui.keyCode.DOWN:
+				case $.ui.keyCode.LEFT:
+					if ( curVal === this._valueMin() ) {
+						return;
+					}
+					newVal = this._trimAlignValue( curVal - step );
+					break;
+			}
+
+			this._slide( event, index, newVal );
+		},
+		click: function( event ) {
+			event.preventDefault();
+		},
+		keyup: function( event ) {
+			var index = $( event.target ).data( "ui-slider-handle-index" );
+
+			if ( this._keySliding ) {
+				this._keySliding = false;
+				this._stop( event, index );
+				this._change( event, index );
+				$( event.target ).removeClass( "ui-state-active" );
+			}
+		}
+	}
+
+});
+
+}(jQuery));
+
+(function( $ ) {
+
+function modifier( fn ) {
+	return function() {
+		var previous = this.element.val();
+		fn.apply( this, arguments );
+		this._refresh();
+		if ( previous !== this.element.val() ) {
+			this._trigger( "change" );
+		}
+	};
+}
+
+$.widget( "ui.spinner", {
+	version: "1.10.3",
+	defaultElement: "<input>",
+	widgetEventPrefix: "spin",
+	options: {
+		culture: null,
+		icons: {
+			down: "ui-icon-triangle-1-s",
+			up: "ui-icon-triangle-1-n"
+		},
+		incremental: true,
+		max: null,
+		min: null,
+		numberFormat: null,
+		page: 10,
+		step: 1,
+
+		change: null,
+		spin: null,
+		start: null,
+		stop: null
+	},
+
+	_create: function() {
+		// handle string values that need to be parsed
+		this._setOption( "max", this.options.max );
+		this._setOption( "min", this.options.min );
+		this._setOption( "step", this.options.step );
+
+		// format the value, but don't constrain
+		this._value( this.element.val(), true );
+
+		this._draw();
+		this._on( this._events );
+		this._refresh();
+
+		// turning off autocomplete prevents the browser from remembering the
+		// value when navigating through history, so we re-enable autocomplete
+		// if the page is unloaded before the widget is destroyed. #7790
+		this._on( this.window, {
+			beforeunload: function() {
+				this.element.removeAttr( "autocomplete" );
+			}
+		});
+	},
+
+	_getCreateOptions: function() {
+		var options = {},
+			element = this.element;
+
+		$.each( [ "min", "max", "step" ], function( i, option ) {
+			var value = element.attr( option );
+			if ( value !== undefined && value.length ) {
+				options[ option ] = value;
+			}
+		});
+
+		return options;
+	},
+
+	_events: {
+		keydown: function( event ) {
+			if ( this._start( event ) && this._keydown( event ) ) {
+				event.preventDefault();
+			}
+		},
+		keyup: "_stop",
+		focus: function() {
+			this.previous = this.element.val();
+		},
+		blur: function( event ) {
+			if ( this.cancelBlur ) {
+				delete this.cancelBlur;
+				return;
+			}
+
+			this._stop();
+			this._refresh();
+			if ( this.previous !== this.element.val() ) {
+				this._trigger( "change", event );
+			}
+		},
+		mousewheel: function( event, delta ) {
+			if ( !delta ) {
+				return;
+			}
+			if ( !this.spinning && !this._start( event ) ) {
 				return false;
 			}
-	gger("dra:has(a)event, ui) === false) {
-			ht ex= this.posir.createPseudo(functionrted (gger("dra[ "inner ) {
-		returrag once - th;
-		fset()nos.axis |ion(event);
-		thi{
-			return fune the drag once - this
-		ENDable = }).lion( os.offsetPyMet: f// OptioTrigger);
 
-ets(t	);
-	};
-}
-
-[0].sty.helaxis || thop+"px";
-		}
-		if($.is.posixpa?
-		event);
-		}
-
-	dgetNam) {
-		returith an el, a :eHelpw is hiddent.preven, argu and ca++;
-		tion(eventhis.position =.jquery.ui.
-			dr, [c. wit].href ||
-
-		rened
-			$.ui.d "dragiuseDr,
-		workleve itls, jtion) {$.ui.dN( ta
-
-		rettherwismentlunstrucevent);
-		}
-sins hat
-
-		no longer; " +
-lortable)
-Compute thevent);;
-				//if the) {
-	reent) {
-
-		//If we are ujQuery 1.6.1, 1.	ing foimeoutpute thr[ "r);
-		}
-
-	
-
-		functParentOffset();
-			if(rget  "y") {
-			thir[0].style.left = this.position.left+"px";
-		}
-		erflow-TePseudoyMet: revendata(= this.poevent);tual allbackiype;gtOption( newl proc
-			$se;
-	"dra
-		}
-
-		to aw insa jump ca
-			$by adja<1.6.
-		}
-
-		=== "relaprepw ob== "( size y( thiragStarset()id" && !!$.i		if ( top = this.po$.ui.dop+"= this;
-					osition(evelement, i.com
-* is.his.oroppable.tePseudo		return fa					s._se:			$llapseAlspace,
-			if(s._se "y") {
-	trinDuration, 10), fueHelperery.ui.droppable.parsA.ui.dIdrag"<a>" ).outned
-		re'sment, argan		dropped = 		thatropp$.ui.d	}
-			});
-	not,vent) ._mouseD
-
-				tvert === jquedragtabbablevent);||er && !o.dropions.revert.call| this.optio.eq(
-var us.axis !== that._clear();
+			this._spin( (delta > 0 ? 1 : -1) * this.options.step, event );
+			clearTimeout( this.mousewheelTimer );
+			this.mousewheelTimer = this._delay(function() {
+				if ( this.spinning ) {
+					this._stop( event );
 				}
-		(this.originalPositin faletParentOffsetons )
-		thnt, ui) === false) {
-			jQuery <1.8
-if ( !$( "<a>" ).ner" + naevenain			setTiith an ilter = name === "f ( $.ui.d if givrig = {
-				ithis.Duration, 1rm the manager ab}
-
-func		return fakeysize -= pareturrDocumens the herefresi.dat] = ori	_mouseutting ) {
-	se;
-	Duration any optioExecute the d 0;
-				ifnodeNameer ) {
-ets(tis);
-		});
-
-		//If the ddmer" + n;
-		}
-		if(!this.options.axis || thop+"px";
-		}
-		if($.ui.dd			$.ui.ddmanager.dragStopction(/e the casr && ag once - thur) e ddmanagerag once - this causes tCIMAL: 11) ) || 0;
-				ery.ui.effect-transfD-x")); (sub)Execute the dlper not to 
-
-$.wiAionAbs = th$.ui.ddescendamove ( $.us started (his;
-
-	}add	}); this.wiropped))) {
-			$( correct position
-
-		//If the ddmanager is useis.othe managerhis.posi	var o = this
-		}moveAttr("id") : this.art(thismoveAttr("id") : this. = thtion(ledbdgetName: 	var o = this.opti, info		this.posi	var o = this.opti[options]0].parentNode : o.appendent);
-		this.posi
-
-$.wiUe visible bef] = valu(this, e
-
-	_creaons.rever function(event)nction(o.helper)is.optio {
-
-		var oes, inform the mae");
-		}
-
-		retur: this.element);
-
-f(helper[0] !== this.element[0] &&ions.revert.at[0] && !(/(fixed|absolute)/).tropped))) {
-			$( this.element.ion(evh				ent);
-
-		if(!helper.parents("body").length) {
-			helelement);
-
-		if(!helper.pappendTaspop] ||:
-			isTns.rever.delay;
-		if (!thieData.ca		key = parts.pop();yMet: f this._handidth,orm the mTriggerallbacropped = falseerProive to the hel(this, evener.css("position"))divider			helper.css("position", "absoluick.topt, dropped))) {
-			$(p;
-		}
-		if ion
-
-		//If the dds passeffect		return  $.expr.createPseudo ?	focus: (function( orig20 {
-		retumrue;}
-		ev
-			r {
-	 i ]skiph.abgegates th: $.fn.inner		$.ui.ddmanance && mescapefocus();
-rn function( $.ui,.re			re( /[\-\[\]{}()*+?.,\\\^$|#\s]/g, "\\$&ionTo("absolswiue;
-;
-		}
-		keyC			vffsetPisTab$.fn.ed on s.PAGE_UPscalethis.t: fiousPagousevent);
-		}
-breakTo("ince the following happDOWNed:
-		// 1emensition of the helper is absolute, so it's posHOMEed:
-		// 1_nt ism this w, is a chil of the helper is absolute, so it's posENDal offset parent idisabnt",h mean of the helper is absolute, so it's posened:
-		// 1. The poon of the helper is absolute, so it's pos is calculated bason of the helper is absolute, so it's posLEFTed:
-		// 1Durationon of the helper is absolute, so it's posRIGHs.scro
-		}
-
-		//if the ori	retur elemenl, a ) {
-ion(event);
-		thif the ddmanage, inform the managerthis,t, and the scroll parent isn'TERdestince the followingSPACual offset pthis._clon of the helper is absolute, so it's posESCAPual offset ent[0] !== document && $.contaiets (#8scaleetParent and cach.find( thit: flse;
-	},. The poFouse.of opayMet:ction() { = Silter.prevCharon scalculated on stayMet:		//fsetParentg")) {ue (see #8269)
-		mouse.(see thisisabled" ame.toLower=t)) ev
-				}
-		 top: 0
-		END: 35reateElementame.toLowerCarent+nt(this.of ( elem.lent theis.eew RegExdget^
-			ar po = ame.toLowe), "i.animatentOfflse;
-	},
-
-	_modmanevent) {
-		//Remove frame helmouse.
-if ( !$( "<a>" ).light.jt theement[  - v1.10.3) {
-			obj = ob.trag
-y.ui.draggetRelativeOff top: = crue;.ithis}
-
-		//if the drag
-llLe a v-1uid = 		if ($.ui.dd basddman//Remove frame heguid =lativeve(event)) {
-	s("topetOp/if a erflow-.mouse.: 39,me wo ?
-		rHeigame.toLowep
-				};
-};
-
-$to data(this.r && !th		};
-		};
-			}
-		}});
-		returtion(thxist ction() { {
-				eve("top"px";
-		}
-		if($ame.toLowerCase() === "html" && $.ui.ie)) {
-			po = {arent.css("borderLeftWidth"),10) || 0)
-		};
-
-	},
-
-	_getRellativeOffset: function() {
-
-		if(this.cssPosition === "relative") {
-			var p  = this.element.position();
-			return {
-				top: p.top - (p event);
-+ (parseInseInt(this.element.csthis.originalPositiativeOons.axis !==seInt(this.eldings = th:
-		// 1. The posetPare=arseInt(this.ofs = {
-			top: po.totabbablr is used for droppables,dden";
-		}).lHeight()
-		};
-f ("top"alueemenhis.widgetName + ".pptions;
-
-		if ( !o.containment )hese areateElementptions;
-
-		if ( !o.containment ) {
-				returnetParent and caent
-				erWidth: $.fn.innerWidth,nd( $.exprhis._cla: $.expr.createPseudo ?
-		$.{
-			po.left += this.scrollParent.scrollLeft();
-		}
-
-		//if the		return {
-		[ft + this.mar='osit'ons.dperProportions = {
-	.top += this.scrollPareateElementr.drag(this, event);
-		}
-{
-	// $.cachseUp.ca jquery.ui.effect-fol_trigeChilent(on() {
-				$( thent().Triggerable.jriggerring
-				.css("positionreturn focusabrtionj) {
-			tI/ tracquerue); //Execute roportio= "relat ":le.t.helper))is is a re getting its correct position
-
-		//If the ddmanager is used for dr
-var u( $.ui.ddmanager ) {
-			$.ui.ddmanager.dragStappendTo));
-	:tPositight() || docis.elemen: " causnt.pageX;
-		$.ui 
-
-		return this;
-cument.bt) {
-			this._mous	n false			rif ( bj = obeturn;
-roportiClbac),
-			respanaN :
-			iefore getting its cor(see is.ont;
-	
-			nt;
-	is.contaiportions.width - obj.right + ,e
-		this._cn;
-		}
-elper.itionAbs = ththis.margrtPositionis.helppreumen( false;
- === A(this.elf ( tionAbs = thppendTo((o.his.pa( !ce ) icrollL - (parseis._trig.heldocumentadrgins.toto call j) {
-			thon'taftep.ca li		}
-		}	thiaton( e{
-			if(tdapt	};
-}cumentons.revert.his.containme
-	_ad)s.helpersition minus the r;
-
-	},
-
-	_adjustOffstionAbselemencatt()
-{
-				r"string") {
-			obj = obj.splibe visible bef				0,
-				0,
-		ger is used for d.ui.ddmanagertart(this, -urn seer ) {
-			$.u_	_adRoy th in obj) {
-			t
-		if ( o.cunhe rptions.
-	_adsrevenaiUpDel (seeexNaN/or dasthis.sly		}
-ick.top = oarseInt( c.css( "paddingLeft" ), 10 ns.delay;ed :
-		"a" === nodeNa falselick.left = th// hyphtotyemight", dataNsid ) index /[^\-\u2014.offs3ere ement[ 		ovep: p.top// support	overarseInt( c.cs
-		//If the ddmanap;
-		}
-		if ("bD_DECIMAL: 110,
-cancel  = this._conv tionibeturalidnyrag: function(}
-		}
-
-	arseInt( c.css( " = this.position.top+"tionAbs = this._convertPositionToositioned
-			event);
-		}
-tionbees.elry.udopped) {
-		ion(eves.offsetParent[0])) {m the manager that draggiarginiginal eleme	}
-
-		 34,
-		PAGE_UPd(th uuid = 0,
-	runarseInt(mouseDrag(event) light.j ) {
-	ger evment	_adjpened,istboxvers	RIGHTis.o[			$.ui.ddmanager.s,
-			
-		UP: 38
-	}
-});
-
-// plugins
-$.fn.extend({
-ber" ?
-				thi().removarentNode;
-		mapNamsition", "absolutee #50 elem = this;
-					setTimeout(fut ) - this.he						$( elem ).focus()), left : ight 2013 jQulay );
-				}) :
-				or] ) ) vent) !== false) {
-					s.pareffect-folue); / $.es.optes the heion =uery.ui. of th&&
-		}
-		ir si{
-			t			dropotype._mou_set.leIntoViewarseIntioned nodesevent);=rseIntthis lue.puhis.optise;
-	},
-
-	_mo		return {
-				to_generatePosition(eve position
-		ret10 )up( el 0 ) -ons,
-			helper =he d	} else { 
-		}out boo(this.drlaterssum( "ud cais managedent.p];
-		 + this ) ) ||ffsetParent[ll
-		if (!this.offsetionAbs = thons,
-			helper = offset.reer = c.css( "overfl
-	},
-	_mo curOptioevent); {
-	reion"))) {
-,elemenyement to offsering" "." + this..options.axis || this.optioring") {
-			obj =:this wi= [
-				0,
-				0,
-		this.helper).animent;
-
-								// Only for relativui.mouse(($.ui.ie && (/itiolue.pusent.parentNode;
-if ( t
-		var over, c, ce,
-			o = thisders (offset + boset();
-	.returnnTo("absolue); // parentvent) {
-		//Remove paddingindexue); /th() - t&& ( /^	!!$( - ( parOnly for ress( "bordernodes: js, turning(ue); /eturn {
-			top$.ui.ddmanageottom {
-	retuoned nodes:iour) {
-			droppedery.ui.{ion =:use po}ffect-slide Relative offsheight - objse position
-			&
-			call,  event ].c"a" ).re, set.leStar		}) -shake.jottode.js,nValue = rn !!ihasSet.lellParvalue;
-			callp",
-			has = fa$rn !thset: function()ilter&&
-			callback.ascroll ] > [0].event ].cche the scroll
-		if (!this.offset.scroll) { event ].co.scroll = {top
-				}
-		ottomis._getP the clset: function() 
-		 * Constrain;
-
-		//Cac- ? this.offo = { et.leOffset: function() set.left - andled ollParent,
-Offset: function() tocomplete.js	pageX = eaining -tocompleteisabled" 
-				}
- ) )this.scrollParagging yet, we won't : this	return rh - this.margi		if ( this.+		pageX = e >scrollParent,
-ative_container ){
-					co = this.relative_containere th.containmentnt = [
-						scrollTop() + ( $(d(this);
-		});
-
-		//I,pageYeFloa).scrollTop() + co.top
-					]tinue (see #8269)
-		if ( this.o+$.css(thi{
-			po.left( elem );
-						}
-					}, dep * mod -										// Tropped))) {
-			$(this.hfset withoutnt to offset peach(fe" && !( this.scrold(thnt[ 0 ] !== docume			if(event. $.contains( 	o = this.oheight - obj, left : rt, sinue (see #8269)
-		if ( this	( parseInt(f(thilement, argf(thitop:itioFirefox bugmargins || tha .5 pix);
-
-	o iniif, jquery., left :turn remo, dat	!!$prepavenstrucllbac	}
-
-	neratePon";
-
-		per[ 0 ].parenoptions]ptionsositionelem );
-						}
-					}, des.cssPosition === "fixed" ? -this.scollParent.scrollLe.is(".upvert		}
-
-		return t() : this.offset ) ) ?r greY = containment[1] + this.each(function(oLowerCas			// fclick.top < cset to 0 to contributors; Licenhis.offset.click.top;
-				}
-			if (!this.offset.scroll) {
-					tole.toet.clickt is no longer in thes.width - this.margins.> containment[;
-	},
-
-	_convern";
-
-		ned n= value;
-arentNode : o.appendTo));
-		}
-
-				pos.left +	is.elemen	}
-
-		c = $( o {
-		return this.unbind( ) ) Duration, 1 !== false) {
-					leme+ this.offset.click.top;
-				}
-			+ this.offset.click.top;
-				}
-			}
-
-			if(,10) |stan
-		tents				n[ 0 ] !=look construc, left :arginshe mana
-
-
-		this..mouseDelrflow-dmanageleme?ontainment = [elper.		this._	// Only fof(!this.options.at dragging has started (
-				pageleft"),10) |w( "uund|| 0valid[0] : thir( elguid),
-		
-			p;
-		,
-
-	_cacoffse(leftsubent.bo			/wa// Oeight )ntainment ?(this.element.csstainment ? ((r && !o.dropBehaion() {ders (offsetontainment ? t[2]) ?ve.top * mod +		2 ] + c	if ($.ui.ddmanage {
-			top:  set to 0 to prevent divide
-			!== no argeNames,eft - geX;
-	erflow-x")(event.eft :-- thnoidgegscro				top  a rizinativelemecument 0) |lPageX) / is.offse			p	}
-
-		search) :
-				retBELOW,
-
-	RelaeY = containmjs, mouse scrollTop()e offsetParent'sop
-			dmanager && (event. - this element is n- thir && !o.dropBehafy a o(offset isFunction(o.helper) ? 				$( - this.malper[ 0 ].parens.offset.click.ts.positionAbs = thtop : ((top this.ht
-				tnmen.isFunction(oacall(this.element,  ($.isArray(obj)) {
-			this.helper).animaent[1]) ? topheight - obj.bottom + th
-				twr();
- border)
-				(&& + name ]ssPosition === .options.axis || this.opt1 : -1,ment = [
-		eratePosi		// O&&.offset.th() - this.helo.grid) {
-				//Check foriginalPositioffset.p		TAB: 9,
-		U, infofset.relative.left -												// Only for relative positioned nods.left;
-		}
-		i - (parseI gins.left;
-		}
-		ilative offset from eleunct			this			this.offset.parent.left +												// The r gridnt.left  {
-	returnve(event)Deturnso > containtiatiotns[ keorder)
-				( ( th		ret		// , info c.cs left : 0 ) ATrt: jQuery <1.8
-if ( !$( "<a>" ).'s offset without borders (offse elem, sit)
-			emenheight - obj.bottom + thfset parent iemenhild of the scroll par ) ) . The pos
-
-	_trigger: function(type, event, uareneans that
-		//    the ) ) iset/94r();is.scrollParent[ 0 ] !==setParent[0])) {
-			po.left arenleft - (parseInt(this.h[ 3 ] );
+			}, 100 );
+			event.preventDefault();
 		},
-isapple recalculated after plugins
-		if(type === "drag") {
-			: p.left - (parseInt(this.h[ 3 ] );
-		},
-
-ry.uheight - obj, argumeni.mouse.
-		//    -										xevent.pageX,
-		(event.pageX -indexetName: name,
-	this wiace ][ name ] = funisabl) {
-			tement border)
-				elper.[			originalPosition: th ) &his.povalue !p.lef size_clear: function() {
-		lpers-tions his.margins.lefthis.positionAbs
-		};
-	}
-
-});
-
-$.ui.+ "tToSortable", {
-	start: function(evehis.cont{
-	// $eight )ement = tnnecth() - t = t			if(event.pageX -this.positionAbs
-	on() {
-
-		if(this.cssPosition ==[.mouse." : "sc size, bordfset without borxeffect-slid based ofset.relative.left -								+					t ||,) {
-				v
-				}
-
-				if(event.pageX -upon drag
-		if(this.css;
-						}
-		ter(function(("absolutvent.pageYions.revert
-				});
-					pageY = event.pageY;sTabrent.top * mod
-		 * Construi) {r " + namode;
-		mapName = mapt.click.top	-				this, type, event, ui);
-	},
-tions.height - this.ma,
-			( over ? Math.ma 0 ] !==ing -
-		 * Constrainions -sition =< = {top: 110,
-(function() {
-			this.parentNorder)
-				( ( thioriginalPositioet: function() {
-
-		if(this.cssPosition ==ment [bles = [];
-		$s.oriis wise) isablopy 		TAB: 9,
-		U. The positiions.disabled) {
-				inst.sortables.push({
-					xis !== "x") able,
-					shouldRevert: sortable.options.revert
-				});
-				so to be reefreshPositions();	// Call the sortable's refreshPositions at drag start to refresh the containerCache since the sortable container cacheggable"d in drag and needs to be up to date (this will ensure it's initialised as well as being kept in+sition => any changes that might have happened on the page).
-				sortable._trigger("activate", event, uiSortable);
-			}
-		});
-
-	this.he
-		TAB: 9,
-		UPpageY = ecalculated after plugins
-		ifith an en one widget h<ache since the| [](nts t.leototype.									ons();
-
-ight - obj.bottom + thieturn !!Itf (!noPrneif(eburnVagation)orRemov {
-	this._trigger(need ti:
-		// poit pablegate ments) {
-'t jquery.		!!$(.contamethod 'ts(tN( tnt to offset p;
-	},
-
-	_mouseU";
-		}
-		if(!this.options.axis || this.options.a-foluh( pffset.click.top < conut also remove helper(event) {
-
-		//If we are using drfunction(event) {
-		ret	o.containrn {
-			top:jquery.ui.ion( ont[ 0 ] !=! jQement oLowetroy: funcction() {
-		this._destroy();
-		// wper hstanc||he visseDelachedeY = eba- this,scro.css	});
-	},,
-	abidde.js, abody.				vfalse,
-		connce
-			proto = .3
-	{
-			arget |[ i ]on( mad.
-	plugin:top event, ush( [on( m
-				}
-		/[\+\-]\d+(\.[\d]+)?%?on( module,n, set^\w+on( moy <1.6.3
-	%$on( his,"overce.cafnon: functio
-ance && mgetOn.js,he avar in,		optioevent.tar.paglight.j[art"			has = farmostInroll = t*NUMP, that ement[ 
-
-			//Copy ove?arAt( 0{
-		vaartsctNameble = this;
-
-			//Cod kever some variables to allow cas.inst?sition =able's nati
-	]i.pluance && minterC"+this		}) }
-				izablse,
-				thistion: func		if (!lperProportions;
-		ptions.dis0perProportionsgetDimen;
-
-	ck = in;
-		}
-
-		traet[ lpert ) &&		NUMPaw.nodeor sisetP9	offset0 ] !== docu			return;
-				}
-				retstate-disabled" ) ) ) {
-		rmostI: { drohis.this.( argoption		curOpti$.isWindl moonta( "bordetrue;
-				$.each(inst.sortables, function () {
-					this.instance.positionAbserProset.left - = inst.pt.click;
-		che
-		titionAbs;
-					t	innscrollLeft() - this.otrue;
-				$.each(in don't {
-			// don'tnce.positionAbsance.ageY= inst.pable.insX&
-						this0 ] !== doc			return;
-	ncestors must bestate-disableptions };
-		}
-		hace.posit: this._getPt( op}) {
-turn removeDatevert://Remove).addBack().filter(funal = false; //Removerent.t() extensionsnitialisedal = false; //Remove
-					th-folw1, wveCla	lati,
-			relatistyle='disp: fuudes:; retur50px;: 0;"><.isOv	var scro			pag;'> only once
-	: 0;"><10isOv returpulssOvedgetEidgetEvendy.par.offDets fdivt;
-		}
-		ift ) &nt :
-	
-	widget( $.css
-			ve are w"-diortable  to ref once, sotanceent)
-				.unbind(evert:itioned wpe =it to the sortable andt also rding== w		re			$.epe =divf ( clienable and uon() tancment is wihis.instan(		//If it intersects,= the- wouseSveChgeteY = eInfo(this.should.Widgeteffect-foldement =Xhis.widgeis.instan(evei) {ndTo(thar map, mapN)
-				.unb-body		retuement =YppendTo(this.instance.element).data("ui-sortable-item", ys pache) asabled").apper("id").appr proItem
-		it( " 	(o later restore pulsat&&ment).darn $.e<ment).data("ui-f ( it
-			 = (eveore helper optioinst			this.insore it
-					this.instance.optentItemlper = function(tep with rn ui.helper[0]; };
-
-			eturn this.etrue;
-				$.each(inet = this.ins?#500== null ?
-
-			if(inner- this.mar
-
-		this.blper option owser event is way off the new aptionAbs;tance.)
-		intItem = $(that).ment = [
--								ndTo(t		if( $.px";
-		if( $.|| winstan the sos.instane.cas.instance.offset.click key, true, true);
-
-						thement).d if givoffset.click.: t.click.	$.contains(tarent.left -=ble( elemelHel inst.po inst( argable.jsSortablestance.offset.paoll cache
-		ffset.parenTtanc-= inst.offset.paren			if 		$.each(inis.instanceance.offset.paion() {
-stance.offset.parcestors must be sible
-		v("toSortable", event);
-	" );
-	},
-.dropped = this.instament );
-}
-
-nAbs;
-r ) {
-ortables, fe position on 	DELETE: 46,index nst.elem = tction( evfth(this.instanhis,"overreturn rom cohis.offsettarget[ key  ) {
-a copy		ele
-				tw( theft: difyhis.offsetis._setCot.toLowerCase() )type ).toLowr mova		var ition, paemove ion, pa-shake.jt[0] |ts with ionsmoveData// rectsWithfset = this.positfromOutside= "numidgete.car event i
-					this.inevent);
-		clone().ack ) rrentIte {
-
-				//If it dcurrentIte).clone().emove lli;
-
-	ndled  function stop ofar ifli		 *ject : ata.c	}
-					ret.ui.positihis.instan =intersectsWith(ton, parseInp: functionf ( scrollLeft() - this.oviouexten {
-			thtions[ ": re ipned )  sortabl= Arr) {
-			thiAbs;
-	the sortablur paectsWith					i;revent rif ( this on this fo {
-				vastance.curreinstance.optio			retheritiethodVa			/,
-			lement = = false;
-
-		getNr
-tions.scroll = foLowerCase() ) = false;
-
-		t.addCla = 0;
-mf(thelpee trdRevehis.ofgger("deacttanctance.eler event snce.eleme set tocrolis}
-				r inhis.oparent
-			aN )ontanceturn trget de: "9413)
-ifmtance + t.data( "a-b"top = instmous the sortab, this ]ent[0] doesn't remove them/tickto = ts withthis.d.
-	plu	var i event of podValue && met__supert", opti		proto = ement[ po calling teratePosction() {[ect: options.helper.stance.element[ his.instance.plac						this.in});
-
-		thiouseSelper.inst._triggfect: option
-					thhis.insta.remove();
-					if(this.instancee();
-					t._trget )apturis.id keinstance.element[ ugin.add(		}
-
-		})> { fo});
-
-$.ui.che the hidgetNamhelpercom/tickhe helper b( thi.each(/bugs.his.instan the  it's originable").options;
-		if (t{
-	stremov
-			//Con, and =sSort).data("ui-draggab?instance._m	var i});
-
-	}
- don'tsor")) {
-			o._?Stop(even
-		var o = $(th
-	elpeue !== 0ducbe tr ( tyery.ui.progrtion(to the so = $(this)lone again, and , o.cur).data("uons;
-		if (t.css(e" ? 1ble", "opacity", {
-	start{
-	ste" ? rsor) drag on a norm ( o.ce, but mak sortaance.ise, but maupport: jQuery 1.6.1e, but man.add("dcity = t.cs0s,
-			c function( typear o = $verflovalid/ie wittance._triggons || op,
-			l once, st();
-					cony", o.opacity);
-	},
-t: optiofunction(event, ui) {
-		var o = $(thisotype[ propopacity", o.opaciadd(");
-
-})() ===function(event, ui)functop,
-			leX = evenata("ui-draggable").optii.plugin.(o._opacity) {
-			$(ui.help{
-	start: function(otype[ propects witperRem	var innermostIn.ath the sortable
-				if(this.;
-		}on(event, ui) {
-		varects wit	}
-		t.c.scrollParent[0] !==drag: functs,
-	nce.elemery droeft - this.margins.seDel, but ma) {
-					t	}
-		etOpti = parts.pop();
-			ent[0everting	) {
-						innermostIent[0if ( thishandler === "string" ? | elIsCanc: functist.heed we || elIsCancee.offset.target)	if((i.overflowOffset.top *
-		 *s[ key  stop ocrollParent[seInt([ scroll
-				+f((i.overflowOffset.top de: "faf)/)le, and it					icrollSensitivi {
-
-			if(!o.	this.conrent[0].ofrollTop = scrolled = i.sc ) ) ===ent[0].scrollTooptions.easuserAgent.toLowerCase() )tance._triggerollParynt[0].tagName !== "HTML") {
-	m 1,
-	 {
-						innermof(!o.axis || o.axis		orig.applyn focusabycity);
-	},
-	stop: functient[0].scerate t					i.scro the page).		if((i.overflowOffset.lef(o._opacity) {arent[0].offsetWidth) - eveotype[ nt;
-				}
-
-(i.overflowOi.plugin.add("draggablearent[0].othe clse if(eventnt.pageX < o.scrollSensitivi"ui-draggable");
-		if(i} else if(event.pageX - i.o = i.scrollParent[0].offset+Dataag: function( } else if(even[0].scrollLefata("uice.eleme sob $.dtionoes			t
-
-	_trigf {
-	datstion"n 				throp ]onsisf nesres(#88ement ) {
-	
-
-	_trit eventF{
-				ifollParent[0].scrollLefetho		varrent[0].offset check else if(even.scrollTop($(documthisnTo("absold = false;
-
-		if(lse);
-		arent[0].sase(ent[0].sollParent[0].oment).scTptionosition
-$.ui =
-if ( $( "<a>" ).data( "a-b", "adi
-
-	_mouseHeight" ],( selectoacity");
-		} ) {eData = (fp() + o.scrollSpeed);
-				}
-			
-
-});sizeselectstaroffsetWid = $(this(event);emove thocument).sde.js, j				if(this.in( key, vance[ handle o.scrollSene if(eventurn inolled = $(docd = false;
-
-		if(:ed = false;
-
-		if(iollSpeed);
-				stanceMeensitivity) { - (event.pageX t may nev o.scrollSensihis._mouce.posi[	drag: functio.pagscrollLeft -,= $(this) ollSen($(document)d key - (evealse(i.overflo - (eveear(gable").opthat.mous	thie.offset= $(documenach( this.he functionv></div>
-					value = 	}
-			(pageX - tadds feed $.wias secoances.offsee tr	}
-			e helper					 ) + ( ) {
-	a( elemevent may ra contthis.margin.optionstance.curreerate thrent[0].offseoffsetWi.js, jqns || {"opacity", oop,
-		rollLeft()) 			thii.options;
-
-	the cl;
-				} else - (eveadd("d| ":.overp
-					this.iop,
-						scrolled .plugin.aveData.calent).s) === f key, vaset.pent).sreturn (Minst.pi.options;
-
-		i.sreturn (M $();
-data(ui-draggabreturn (M	top: event.prollLeft()) event.pageX - thde.js,s.option			top: .offset.p {
-				inn {
-				i
-
-		iements.push({
-Elements = [];
-
-		$(dth: $t" ) : o.snap).each([0])
-					) {),
-					top: $o.top, ls),
-				$o
-				});
-			}
-				proto = : o.snap ) );
-", true	this.h>1 = ui	stop: n() {
-		va ui) {
-
-sor")) {:=== ctiox1 = ui		retur) {
- x2 = xpen
-		// if = { ef]+/.exec( navp: functionseInt(<				i.scrol&&|| t(construco.snape draopacity", o) {
-			th.plugin..remov"deactiv});
-
-$.ui.plop" in op: functionlLeft =snapEllLeft =.length ) {
-				y1 = i--){
-
-			ainment[ 0 ] + lements[i]ad.
-	pluginrProportt.snapElements[i]	},
-
-ngth - 1; ), t - d>= 0; i-) > y2 < t - dlse i > b + 
-			b = tthis.add( sements[i]im_tri( th);
-		}
-		var ihis.widgetName + ".pument, inst.snapElemene: namespt.snapElemen(i, event);
-	.e heflowOffs| [];,i.plugin.addingBo.scrollPat: this._get("out", evet.pageX - $", {
-	:", {
-	s}et.extenctor ) {
-) + o.scrol
-			iffi},
-	drainst.pthis).data( {
-					thatanst.snapinst.offseinstatath the .prevent	thint[0].tagndTo(this.instancendTo(th.parent.tolement).da( options | match[1] + inst "inner") ks
-		created = false;
-
-
-				if( to the elemente;
-		d = false;
-
-		if(.nt).scrollTop()				t
-				ifsnapMode !== -ed = false;
-
-.position.top 
-	}
-}opacity");
-	d;
-				r+x1) <= d;
-				i= Stringrn; }
-
-		// wsnapMode !== ui) {newable
-	}
-}ve(event)					thiitionfsetthaon( si +
-			"n,
-		ht, left: 0 }).top > inst.margin"<a>" ).outn.top = ins// tracly		if(event(this
-
-	canceositionTo();
-		}
-op = ins x2 &&onver inst.<);
-		}
-
-		re(bs) {
-					utor == null ns || {nvertPosieight, left: 0 }).top - inst.margins.top;
-				}
-	yMet: fi.scrollParent[0]nvertPosi-elpe {
-					ui.t.margins.top;
-				}
-				if(ls) {o.snapposition.left = insageX < o.scrorelative"tionTo("rely2) <, { top: 0, le = $(document).sf(rs) {
-					ui.porgins.top;
-				}
-				if(ls) {== "r, element- inst.martOpti.left;
-				}
-			}
-pables, infonvertPositiirst = (tso = this.osnapMode !== "outer") {
-				ns.wn; }
-
-		// wtive", { top: b, lenager about th <= d;
-				if(ts) {
-					ui.positionf ("top" in obp: 0, lefo f),
-			o -> aligon( siz(thisedgurn (/
-			}
-
-			firsttPositionraggableition.left = inst._converth.max( 
-					uio.snaption.top = inso.snapnvertPositionTo("relativ = (ts || : b - inst.helperPropo-st._coo("relativ);
-
-$ ( tyegate);
-
-i].item }tancnt).scent.createElement( "div" useHandl	},
-
-= Math.abs(r - xnTo("relative", {op($(document).scrollr.pret.queu jquery.ui.efts[i].snapping = false;
-				continue;
-			}
-
-			if(o.snapMode !== "inner") {
-				ts = Math.abs(t - ].of= d;
-				bs = Ma, height:eUp(event));nue;
-			}
-
-		i.scrollPare - x2) <= d;
-].offse for relative tive", { top: f(ts) {
-					uioffstion.top ].offs_convertPositionTo("relativd(inst._uiHass.elem.helperProportii.overtive", { top: t = $(thion't let more top;
-				}
-				if(bs) {
-	s.elemi.position.top = instke tonvertPositionTo("relative", { top: 
-						theUp(event));
-
-nst.margins.top;
-				}
-				if(ls) {
-			) {
-ion.left = inst._conver].oftionTo("rel);
-			}, { top: 0, left: l -);
-			}
-	crollSpeed;
-		ort(functnts[i].snapping = (ts || bs || ls || rs || first);
-	ui.position.lefd;
-				rt(functPositionT
-$.ui.pl = Math.abs(t - y1) <= d;
-				bs = M			}			ls = Math.abs(l - d;
-				rs);
-			}tionTo("rel].ofrs);
-
-			if(o.snapMode 			thiter") {
-				ts = Math.abs(t - y1) <= d;
-				bs = Mat) {
-tancgroup).each(function(i) {
-		x1) <= d;
-				rsunctiois).css("zI2) <= d;
-				if(ts)dex", (min + group.top = it = $(thition() {
-		var min,
-ative", { top: t, left: 0 }).todex", (min + group.lengtper === "orieft: 0 }).tupinst.margins.totptionsitionTo("relativunction(: b - inst.helperrn; }
-
-		min =ht, left: 0 }).tthis.tion.top = insgroup).nvertPositionTo("relativcss("zIndexgable").options;
-		ifitionTo$(group[0])", { top: 0, left: l }).left - inst.margins.left;
-				}
-				if(r			thi			ui.positionthe cl.snapElements[i]);
-				} else if($(lTop() + ( 	re i	}
-				inst.snapElements[i].snapping = false;
-				continue;
-			}
-
-			if(o.snapMode !== "inner") ( options || {Math.abs(t - y2) bs(b - y1) <= d;
-				ls = Math.abs(l = $(do= inst._conve {
-				ts = Math.abs(t - y2) <= d;
-				bs = Math.abs(b -- x2) <= d;
-				rs = Math.abs(r - x1) <= d;
-				if(ts) {
-					ui.position.top = inst.- x2) <= d;
-				r-}
-});
-
-e", { top: t - inst.helperProportions.height, left: 0 }).top - inst.margins.;
-
-		this.isover0].scrollTotive"lowOffset.lefnction
-					ia( eaata("seInt(, event
-			return d.is(ac	stop: 
-					ie's prore the droppable	 don'tarent[0].tag	//Stpacity);
-	},
-cept);
-		};
-
-	//St{
-
-			l = inoppable's prpacity);
-	},
-	stop: portions		//St };
-
-		// Add the rnt[0].of
-				}
-		-2ar o//Sttion( rergin ) + sitionTo("repables[o.scopheight{
-				if (| ls || rnction( $, ft: l - inst.helperProportions.0].scroll+ollLeft() containerleft - inst.margins.left;
-				}
-				if(rs) {
-					ui.pothis.off l - inst.ope]||.ui.ddmanager.drngth bles[o.scthis.add( si.scrollParent[0].scrollLddClass("ui-droppablcontainment  "HTML) {
-					ui.position.left = in	$.ui.ddman.helperProportion x1) <= d;
-				if(ts) {
-					ui.poss.element.addClass("ui-droppableept) ? accep		drop = $.ui.ddmatPosition||ns.sco") {
-			thise dr.abs(r - x2) <= d;
-drop.length; i++ ) {
-			if ( drop[i] === this ) {
-				drop.s: 0, left: r - inst.helperProportions.width }).left - inst.margins.left;
+		"mousedown .ui-spinner-button": function( event ) {
+			var previous;
+
+			// We never want the buttons to have focus; whenever the user is
+			// interacting with the spinner, the focus should be on the input.
+			// If the input is focused then this.previous is properly set from
+			// when the input first received focus. If the input is not focused
+			// then we need to set this.previous based on the value before spinning.
+			previous = this.element[0] === this.document[0].activeElement ?
+				this.previous : this.element.val();
+			function checkFocus() {
+				var isActive = this.element[0] === this.document[0].activeElement;
+				if ( !isActive ) {
+					this.element.focus();
+					this.previous = previous;
+					// support: IE
+					// IE sets focus asynchronously, so we need to check if focus
+					// moved off of the input because the user clicked on the button.
+					this._delay(function() {
+						this.previous = previous;
+					});
 				}
 			}
 
-			if(!ins.each(functients[i].snappingates are required "inner") bindings = $= $(doh(), { snapInst.snapElements[i].snapping && (ts || bs || ls || rs ap && inst.options.snap.snap.call(inst.element, event, $.extend(inst._uiHash(), {		inst.snapElemeept) ? ahis.option})));
-			}
-			inst.snapElements[i].snapping = (ts || bs || ls || rs = $.ui.ddmanag			thi
-			returi.plugin.	this._clunction(d) {) {
+			// ensure focus is on (or stays on) the text field
+			event.preventDefault();
+			checkFocus.call( this );
 
-		};
-
-		//Store effect-scalele's propori.plugin.add("draportions = { widt", event, thisnt[0].offsetWidth, height: t;
-		}
-		if(dr.offsetHeight };
-
-	", event, this.ui(d
-$.ui.plugin.add("dra the manager
-		$.ui.event) {
-
-		var draggao.scope] = $.ui.ddmanager.d, vas.element.rehis.optiorseInt($(group[0])is).data("ui-ope].push(this);
-
-	s("zIndex"),10) || 0) - lement.addClass("ui-droppable"));
-
-	},
-
-	_desex"),10) || 0);
+			// support: IE
+			// IE doesn't prevent moving focus even with event.preventDefault()
+			// so we set a flag to know when we should ignore the blur event
+			// and check (again) if focus moved off of the input.
+			this.cancelBlur = true;
+			this._delay(function() {
+				delete this.cancelBlur;
+				checkFocus.call( this );
 			});
 
-		if (!group.leng"relae + size ) );
-}raggable.element))) {
-			if(thcontata("ui-on(ev],(draggable.cdroppables[thi);
-		}
-
-	s.scope];].ofitem.ownerDoccrollSpeed;
-				}
-			}
-
-f ( drop[i] === this ) {
-				drop.splice(i, 1);
-		y);
-
-(function( $, 0]) {
-			rdex"),10) || 0) - l(inst.element, event, $.extend(isetOption: function(key, value) {
-
-		if(dex) {
-	ptions.hoverClass);
-			}
-			this._trigger("over", event, th);
-			}i(draggable)unction(ept = $.isFunct		var ue) ? ui.helperaggable = $.ui.ddmanager.current;
-
-		// Bail if draggable and droppa10.3",
-	wid				}
-				inst.snapEleme	}
-			});
-		.snap.snare iortio//Provided we did all the prf(!o.axis || o..fi
-		i.som) {
-
-		var draggable = cust: 0, left: r - inst,
-
-	_drop: function(event,topom) {
-
-		var draggable = custom || $.ui.ddmanageble are same element
-		if (!dragction( this, {
-				i !== "x")mented. Use $. ail ifht exest if giv,this.elementP{
-	re.find(":data(Sonce"a" ).rertPosiions,offset.nodeName get if givsByTxisting the list.droppablgets fnodeName /(stat if giv(his.vitioned//ame, new "f) {
-	widgeconstestionsegate);
-
-method{
-			$inn is derollSens
-	his.elementble");
-			if(
-				inst.optie pos?ions.gr: the listert ble)").not(".ui
-			if(ons: {
-		disaetCreateOptntainerCache {
-			// don';
-
-		/(this).nt).sc$.extend=== undeftyle="z-t( opptionse posithe usertName, hble)").not(".ui-d		i.scrollPar		// the element inst.p"-		thpxroportleft:(childrenrn $.widgedraggablejqueentItem || draggtion(tyis.element. onceon( key f(this.accept.ca {
-		retPrevelement[0], $.cssC		ifitem, appeind(":data(ui-dro =ns.tol {};odeName emoveCla if givtiveClass) {
-				thi.insertBethod childrenInte.find(":data(ui-dro	this.s.optet.extenv,(dragg itn"))emenrue; retur/ the el; inst.p10.7432222px;ar t "intersect",
-$item, a to refres ( $s._crollSensitivity) {
-					shis.eachtPositi1onTo("
-
-	ui: fun< 11agerent))) {
-			s.offsTMLemen			() {
-				this.elemeuery.ui.options.scope &&
-ctor)type, in is deprecated. Use $.widget() extensions fsetFromHelperper;
-			bainstorAt));
-
-		//Set a cont._setContainmmax
-				hand$.ui,(thisndowemovethis._cachlem ).trig		//Preparem inst.ere the droppable offsets
-	 orignstr;
-		// track	return grid[1ldV ( thiins.top
-			];
-f ( thieX,
-			docuonAbsebsolutolute" && !(lper not to Width" ), 10 )function(drrect position
-
-		//If the ddmanager is used for dri.ddmanager bordersnt;
-._mousgable.we diia-$.ui,ns, tanceffset.lefe heaoffsefunctio		thting _ c.css(tions.wnager ) {
-	"function(draght() || docoppabli.bodlosestmarginslute" && !($.ui,le ins			relative: this._function(drons.heion
-
-		//Ifheafset.clger is  ( $t() //This is a relative tntainment = [
-			( rn !!i droppable.offons.handle ) ).length :
-			true;
-ction(event) {
-
-		var oositionAbs || draggable.position.absolute).top, y2 = y1 + draggable.helpetFromHelper: function(obj) {
-		if (typeof ns.heightustOffsetFromHelper: + droppable.gable.helperProportions.height n		curranceMode) {
-		cas;
-		}
-		if ( ) ) le.offsevent may newsoluterent's offsgable.posuginuse a little isOver varileft, x2 = x1 + dr, "ui-sortable x2 = x1 + draggable.helperProportions.ggable.posi[0] ? thiroportions.width / 2) &&elperProportionsnAbs || draggable.position.absolute).left + (draggable.clickOfute).left | draggable.offset.click).left);
-),10				}
- chainute).left + (, left: 0 deNaa/ trz		thiturn t: jQuery <1gable.poss );
-) ) {
-		is( draggableTop, type :
-er plugins
-		if) && isOverAxi?value wscale.js, jquerreturn focusabax,		});
-	},
-
-
-	switch bordle.posit.contains( queId = /^ui-id-\d+$/;
-
-// $.ui mig		scrollPa"tions"}
-		});
-id("dttion ifed" ?roppabl (likinmexfsetanceMetCheckgable.offset.clicden";
-	gable.offset.cl			}, delay );
-	g, when it ineft);
-			draggableTop = ((draggable.positionAb		while ( e.position.absolute).top + (dr this.offsetParent : this.scrollParent;
-
-		//Cache t/ 2) <pageX - tseInt(stancea2 <= le		thianNamethis.eRight uching
-				(y1 < t &cus();
-						if 		top: (
-				pos.top	+											_, that rtable, we fakafter plugins
-		if touching
-				(yle's na	var ||	// Bottom edfunctiin the me().r/r #2317
-			list  },
-urrentItem |t divide  droppable.o jquery.ui.effect-fol + draggable.			list = (t.lParenope] || [aggable.h	//No disaolute" && !( {
-		casor droppablunction( && isOverAxi||(i = 0;>rrentItem |or droppables, inform ger is [ i ] ] f ( this.llement).find(":da],(t.cry.ui.ring" ) age.tolemen(0veDat%er":
-			draggropBehavippables, inform <= x1 && x2 & !m[i].accepto offse& !m[i].accept
-
-		//Compute thent[0]) {
-					arentNode;
-		mapNam // Top Half
-		case "pointer":
-axis !== "x")  ( bordle ial = false;
-	element.css "fit":
-			return (l <= x1 && x2  ( bordt() //This ( $.css( elem, " {
-		caseddingBottoment.parentNode;
-		mapNami.ddmanagerons.height / 2)
-			$.ui.ddmana the s"mousedown") {inte:gable.posddmanagethis ) ) || 0;
-		.css("display") !== "none";;
-		}
-		if ("toy") !== "none";
-		each(fun			$( window ).ition.absolute a v$.ui, {
-	versioion.absolute).NUMPAD_DECis.instance.curr		retuionTo("ab = m[i]		continue;
-			}
-
-			// Filt of this funcnt) {
-
-		value !=opped = fao", leftstroy: function() {
-		this._destroy();
-		//;
-	}
-
-	// cre.ins ) {
-a === tres[d(ueryms.her[ ":"can youoptio
-	basePrs, jq};
-	nt, tr}
-			hent[rmove)Removnumsiti
-
-	}5 ) {
-n orig[ "oute] || name ].c	!!$(ggable, droppable, tolera
-				oEry.uPrefiroll=== tecach._setContainmrs: []
-dgetName, co	protot, { offse (!droppabt, draggme ); ( parse&
-			}
-		var ilse;
-return{
-			$( estepeturn sle.offset)(this.eperProporche the helper siz		return false;
-=== t.element)))js, 			this.isoueft:		//Prepare the droppable offsets
-		if (ortiSlrn thiis causes the he_	!!$(is, event);
-			}
-
-		});
-	rs: []
-O - di
-		END: e sortabis.c(thissetWidth, h	var ovetectO.options.dble co	});
-		retu
-		i.width,
-		y1 = (draggable.positionAbs visiblecall( t"is.op] || er.cu},
-	dr.options.d recalculate
-				oe recalculateick.top = this.hrecalculateger is usedble.helperProportiohe dragging 1.10.3",
-
-				fn.callo.grid[1] ? thied" ) {
-			// Surrounrt: function( causes )").addBack()		this._deactivate.call/(statRmovehe dragging /(staterWidtative)/.refreshPuptionsynamic page, ion.absolute).top + (dra a highly dy jquery.ui.effect-foli, this.cCou-= instn a string
-					// we = "HTMxi &&
-	ghly dyrCache since thes started (d (see ent ) // The offsetParent's ofith the th.max( ce.scrolore helWidth= "<isFuncthis._ent);
-		}
-
-		is.optionsbles and check their ' href='# of athe oons baseue = i	// S(draggable.oup clone agable isnTo("if(this.optioth() - thiort:-										ui.ddmanager.p	height: tfunction() {ent
-				sible) {
-				resstruct}
-
-			var par;
-		}
-		if ("t.ui.ddmanager.preptance, scope, parent,
-	0if(draggable. if($(windo	$.each( pisible) {
+			if ( this._start( event ) === false ) {
 				return;
-ototyp(draggable.nction( propons.scopode abos basednTo("absolute")ns.scope] tance, scope, pais.co$
-			if(!s/msie e plactivate the droppat.click.tosets( draggs based oturn;
 			}
 
-lpers
-		$("dioptions.scope;eft - this.ma  jQuery U - v1.10.3portions.went);
-		}
-
-		(listx}
-
-	c) {
-		s positions ever{
-
-		 jquery.ui.effect-fold.js, jquery.ui.effects[ keyunctope] || clParent[0].scrolsibleent).scrollTotInstance = $.inue; with 		} else {
-		if(this.option) {
-			th	if(this.option
-		trn !!ifunctMin.axi		}
-
-			// we ju		returnata("ui-draggable").|| this.greedys.disabled || this.greedy a vable with== "isover");
-				}
-	isabled || thiilterstance.isout = treedy child
-			if (pat = A, ma			if(this.optionnt.removeCl "isover");
-				}isabled || thisrent,
-0
-
-	// These are pl		}
-
-				ife = $.tables = sibleth() - this.helperProdroppabIndexNotNaidgetEventPreft( $.css( elem, "ment = [
-			( ent.length) {function (sibleroppablet, noP{
-			$. iaxis ?
-			!s.scrttionight,man= drtton|workt === "ionstrs.hoeft -= inst				f thsove thithe visu		if(on(thisvarietyt( optimespace " ).bind( "s&& y2 <= b);
-		caused- this.margins.left,
-		 "_overopped))) {
-			$(t c === "iso-tem  ).unbind( "scrol 2) < b )).outerWidthe = $.offsetnt[ es: {);
-		eft:in/maouseM	isTabIndexNot	ent[0]) {
- ui) {
-
- inst.he) {
-et;
-	},
-
-	// 										/ "_oveWidth" ), t.lengthall( tisabl], "ui-droppable" )[0this.s ) {
-			$.ui.ddmana	dropp? ulated (see  "scro		retInstance = $.) {
-	revert ient.parentNode;
-is, event)[eCaptu= 0,
-	runiqu might t jquery.ui.effect-folevert ===s.options.scopeis.containe = $.dt") {
-			t= obis ) ) || 0ff;
-					theft = t.is(".ui-dzable", st moveds baseight t$.widget("ui, top: 190,zable", $.ui.mouse, rent.",
-	options: {
-		al 2) && // Right Half
-				x2 - (dragns.scopement is windment.parentsUntil.width,
-		y1 = (draggablsUntil( "body" ).unbinde recalculated (see 		}
-		var inrecalculated (see roxy, delaement.parentsUntil( "body" ).bind( "scroll.droppable", function() {
-fsets( dragga	!!$(
-
-	_credth / 2) &&	!!$(Capturable, we fake the stop event ts[i].snapta("solut ][ 1 ].applfunctioerWidt, ),10) o.grow		this with 	!!$(able functiversion: from compont inry.ui.effect-highons );
-ed" ) {
-			this.light.j causes t= $.ui.ddmrentInssFun
-			if(t	top: evy dropped variablnce.element; //dragg!(o.aspectRatio),
-llbacks work (m (draggable.h{
-			this.y dropped vare( elem					i].item }))) ing,erWidt0], , ectNelper || Yl item,
-		stop:aggable.h,
-		stop:FromM				rn this.unbind(  existingCo		}
-
-			// wax()ata(ui-dd into a gre+this.w = this.element.parents(":data(ui-droht exiis propertible instan(l,
-		stop:ata(uattance &(i"overflo"rel
-			 = "rel].elem propertiplit( " 	ent and setinue;
-		 propertive pos		(iternal Incl
-		/CemovebsoluteseUp://Create a wruginoItem |ressDis//Wrap the elemen propertuseMovereate: functl ensure it's init),10)can anager.prepareOf		var n element out =olute mous				w
-				this.outerWidta value where z--resizable");
-
-		$
-		});
-		return dropped.ui.ddmanle, event ) {
-		//Lis.elePageY +eate: funct				this.offset.parent.left * mod	isFuncrigints: []
-				}
-		ite the origizeElements:.optionis, hname,13
-			this._clear();
-	t is no  $(o.helper += this.scnt);
-		}
-
-		//RIf you havets(tnt[0].tags.element.data("?					this.instance.oence to this !=elper || oveClass(terate thions
-				"ui-resion() {
- the Intersectit || o.animainLeft"),entIt new cup: this.origin" );
-	},
- the riginalEltion: funcp: this.origin it &&
-			callback.ak;
-
-			if(thmarginBottom: this.originalElement.css("margins.element[0]k;
-
-			if(tht.protottom: this.originalElement.css("t.target).ight: 0, margity) {
-				}
-
-				ifns.scopehas))) {
-			$(this.h, top: +VIDE: 111,
-		NU== tight: this.elell,
-		stop:return {
-			top:rt: function( draggabction( elem ) Index: 90,
-.js, calculated after plugins
-ortionallyResize  funallbacks
-		resize: null,
-		start: nulper: o.helper || o.ghost || o.animat
-			to.helper || "ui-resizable-helper" : null
-		});
-
-		ic page, yalElement.cssle, event ) {
-		/ize", "none");
-to our pro
-			}
-		});
-	}size in, jquery.ui.effect.ction(type, imateEasing: "))) {
-			$(this.helper).animat	});
-		return dropped;
-
-	},
-ic page, ytort Element.css({ margin: the margins to emovehis.element).length ? "e,s,se"gable, event ) {
-		//Listen for scrol the wrapper
-	sten for scrolble, event );
-			}
-	ent.css("margin") });
-
-	ling so that if tht Half
-				x2 - (dragdraggable.eldled < m.length; 		if(this.hanlerProxy, delaeventroxy, delaisabled && thiionallyResizable-helper" : t.snapElements[i].sn: null,
-		st = cTota_cach	les.sr" : {
-
-			//No dhis.handlefunctplit(",");		// w				
-		//Compute the=== String) {
-
-			}
-		var in				i.sces.split(rCache since thsFunorced sto);
-			this.hdex"),10) ||data(ui-dment,
-			_pro, marginTo.ui-resizable-w",  - thisesizable-w",s(this._his.conined ) {
-
-fuable-"+handle;
-				axis = $("< {
-				var='ui-resizable-handle "y+ hname + "'></div>");entIte/ Apply zIndex to all handles - see #796) {
-	axis.css(: [], = {};
-
-			ll,
-		ui-resizab/dles.split(ment.outerHnsert into in this.helpensert into inte {};
-		event =nsert into inope].push(tnsert into intetype :
-				handle = $.trim(n[i]);
-				if ( this.les[handle] = ".ui-rele)" = {};
-
-			N( $.attr(  0; i <  element if it cannot hold child nodes the hh; i++)  element if it odes
-		nsert into in*		// Cplit(esizable-sw"is.instanmA.top
-/*
-	This ma
-
-				ainment[1]) {
-	// The absolute mous"e,s,s, scrolleuiHas;
-		"isover" : aspectRthis.cs[ply padlementle.offsroppable ier )
-			CssPosition === "fix.options.d < m.length; i++) is.greedyCh() {
-		elem1 + draggable.reate ais.element.och(/textarea|ue) {
-	rereate a{
-					thhis.handles[i] =ce.currejs, jquery.ui.r elemeraggables a {
-			
-				}
-
-				//Apply pa && y2 >).removeAttr	} eVt(",");& y2 > b(paren		var n
-		//Compute the helperper && this.originalElement[0].nodeName.matcouterHeiinput|select|button/i)			parts ) {
-				if /The padding type i hValue && met2 originals ) {
-			$.ui.ddma);
-				this.elemeach				wi + " arent.				>.outerHeiChild					target.1ss(padPos, <.outerHeipageY = 	(!draggable						outerHei		}).eq(0);
-		} O: What a vut|select|button/i)) (!draggableaxis.othis.handles[i], thi() : axis.otion (texis( draggp[0]).cssApe] ||on() aN );
-	}
- this.light.nt[ efice(nce IEid[0: make helper0].offuterWidth(),
-			//Checking)) {
-	[ 0 ] !==setTimeed to fix axis position (textareaea, input!$(thilection();
-
-perP$(this.hy childete.js, g",
-						/ne|nw|n/.test(i) ? "Top" :
-		ccept.calnt);
-
-		 a value where z-iif(m[i].optbutton/i && y2 >inal") {
-			ger("out", eent.parentNre's not anything to be exvent.pageY	//TODO: make renderAxis a prototype function
-		this._renderAxis(this.element);
-
-		this._handles = $(".ui-resizable-handle", this.element)
-			.disableSelection();
-
-		//Matcandles.mouseovif (this.className) {
-					axis = this.clas not any
-
-	// These arurn parseInts, jquery.ui.effect.jsly pad to wrapper element, needed to fix axis position (textarea, inputs, scrolls)
-				if (this.elementIsWrapper && this.originalElement[0].nodeName.match(/textarea|input|select|button/i)) {
-
-					axis = $(this.handles[i], this.	this.instance.curret-clip.js, jqad and border
-					return
-					}
-					$(this).removeCl		}
-
-				ifl(this, even)) {
-			p		return droppcanvas|textr element, nee", this.element)
-			.disableSelectio, inputs, scrolls)
-			seDelayMet(is.originalElement[0e$/.test(i) ? "Riment[0].nodeName.matcch(/textarea|input|select|button/i)) {
-
-						axis = $(this.handles[i], thiif ( zInds._mou
-		} else {
-iv c.instanc"e,s,e;
-	referehis, arguns.scope ( borvar orn !!i		$("<div class='
-			//Overwrble, event) {
-
-		var dro					}
-				});
-		}
-
-rn parseIsitionAbs || draggable.position.absolis.offsete
-				if(inst.optionisabled || th	this._handl $(this.handls || draggable tracks offsets of dragg : { n: ".ui-resis._c({}, ui, ;
-						}
-					his.handles[iefault gable.positioui.plugin.calame.match(/uiposition.or (i =(paren : axis.outerWnt,
-	{
-				position: wrapper this.helpes.originalElement[0nue;
-				}
-	 wrapper.outerWidth(),
-				height: wrapper.outerHeight(),
-				top: wrapper.css("toton/i)) {
-
-	em, "margin" + this position: wrapper.css("parentInstance, eis.offsetroll = this.cssnt;
-ring
-					// we i-resizh) {
-					conti ((l;
-			if (hand{
-					$.each( prototypt.ta: (intersec+uery 1.6.1, 1t.tagable.curwrapper.outerWidth(),
-				heicapturet = thisi, handle,
-			capture	if (o.disablrapper.outerHeight(),
-				s.margins.lefss("ui-resizable ui-resizable-disabled ui-resizable-resizing")
-.css("left")
-			}).le").removeData(dgetName + ".phis.handles[		}).inser(se|sw|ne|nw|n|e|s|w)/i)gfix for http://dev.		TAB: 9,
-		UP: 38
-	}
-});
-
-// plugins
-$.fn.extend({
-e.
-		iarea, isLOM don' the wis(this,"overflo"isoutthis.originalEledroppable");
-					parese;
-		// Createnager.("display") !=x2 = x1 + draggable.h://dev.jhis.contai-resizable ui-resizetWidth, hei) {
-			$(thop, left: in	droppables);
-		}
-
-		this._renderProxy();
-
-		cus.originalElement[0].nodeNnt, ui) {num(this.helper.css("left"));
-		cscrollParent[Instance, ei-resizable ui-resizft
-				if else if (el.s.originalElement[0].nodeN.scrollPa$.W				ot.selectstaeshPositio//Provided we did all the p a offset ca 8,
- {
-					sTab" $.trim(n[i"t, thi scrolling so that if the drahis.position = thisse,
-		containment: false,grid: falsees: "e,s,se",
-		helpet moved ohe droppables can b #5003)
-		draggable.elnimate(this..outerHeight(),
-				t.scrollToel.outer) ||	ight: el.outrt: function( draggabidth: el.width(), height: eltop: wrapper.css("top"),
-			 draggable, event );
-			}
-		 el.height() };
-		this.osriginalPosition = { left: curleft, top: curtop };
-		this.sizeDue;
-			}
-		}
-
-		reture if (.options.disabled urleft, curtop, cursor,
-			o = this.optio.width(), height: el.outerHeight() - el.ight;originalSiz				ginalPosition = { left: curleft, top: curtop };
-		this.sizeDiff = .width(), height: el.outerHeight() - el. {
-			ginalSize.height) || 1);
-
-		cursor = $(".ui-resi-" + this.axis).css("cursor");
-		$("body").css(ainly he//ate selecfunctiget
-
-			// 			}).intotype srt", ever.om this.tem  - ins{
-
-		igementy cept
-	();
-
-	droppablesLoop: for (i =p, t, droppable.proportiodata,
-			eli] = $(this.handles[:
-					rent.offsethe elemenate("start", esvent);
-		return trsue;
-	},
-
-	_e, mar		if ( tsDrag: function(event) {
-
-		//Increase perfs.position.his).remo
-	},
-
-	_}
-		lortionsDrag: function(event) {
-
-		//Increase performancapper );
-			wrapped to wrappev< n.lengtht.css("resize", this.originalResiziables
-		tset = this.helper.offstion (texel.ourops = {},
-			smp = this.originalMouseePosition,
-				curtop = numi-resizable ui-resizable-disabled ui-resizable-resizing")// isover")bIndex itiowe ct( optioe, mat, left:		paile rgper rag: function(event) {alization;light.	};
-};t.target || $.contains(hant pressiel.ouue;
-			}
-		}
-
-		return !this.opionsraggable") capture;
-	},
-
-	_mouseStart: funis._respece ( elem.lenrent.offse.extenon") ) ) {
-			el.c|| [this._propag this.siz._rentep-		//Incrt,
-			dat =se;
-eVir: this art(betws) {(inclusive)ion(event) {
-	per.outerWidth(ze the mouseginal	this._mouse;
-<if(this.handles[i].clickOffset || dragi in this.handl false;
-		// >element if it cannoeft) {
-			props.left = thicann, so our movgateandles.constructor thisunctio - thisth + "px";
-		eturn sevalModSthis.si "pxt hold child nodes) %= thiuterWidthis.hanction( -s.poht) {
-						parenct|buttonps);
-
-		if) {
-		>== thisry ?
-			;
-		}
-		el+dledeight) {
-		}
-		if (ght !==( -yResizy: 0
-	},
-	_mSis.drJavaScripuldR},
-
-	bl( pa= instnt). fs = s,scroll
-		// suppfent =t,
-			do 5 digitstion if.ui.meciment, s: ((see #412port:s.instance.oas = fants.length current 5		// Surrounhandles[calculated after plugins
-		ifmoveUniqueIction(event) {
-ed;
-his.resizing = false;
-		var pr, istaa 1),
-").addBack();
-
-		droppablesLoop: for (
-		/ValPance.optv_proportionallp: nhandles[s;
-			iscall(m[o{
-
-		set = this.helpe {
-		
-			o = this.options;
-			that = this,
-			otype chain.
-troy: frt: functioif (o	this.or  ( key in opeshPui.positio;
-
-		// Put this in the mouseDrag handler since the user can s = this.element.parents(":data(ui-droHeigroportiandles.//Create a wr
-			//Cft !== prevLef t.eleoffseth) }cannot hooffseth) };
-			le*und el.outeshP
-			at= $.trim(n[i]);
-				hname = "u ui.offset. inst.hel,
-		NUMight: (tgged atepicker.js, jq", thi1," :
-[methodVal?ors, D= m[st.hencti]( eshP = eeight */ {
-				if (ton.lefosition: "absolute", top: ini
-			if (!o.an$.trim(n[i]);
-				hname = "ui-resizs,"overflnt));
-		}
-
-		rery.ui.re "_ove, 10) + (that.position.top - that.originalPos				thisparseInt(that.el stroyp)) || null;
-
-	ions.helpthat.helper.other to contize.heightlper.width(that.size.width);
-
-			if return			thight: (t- this._proportitivito.anima{elemen && thisy.split( is;
-eight */s.mouseovions.helpegetName + ".pthat.helper.height(that.size.height);
-			that.helper.width(that.size.width);
-
-			ifgroup)removeClass("uing");
-
-		thte) {
-				this._proportionallyResize();
-			}
-		}
-
-		$("body").css("cursor", "auto");
-
-		this.ele: 0;"></moveClass("ui-resizable-resizing");
-
-		this._propagate("stop", event);
-
-		if (this._helper) {
-		.snapElemenesizable-resizi (parseInt(tk stuff - maent.parentNarea|input|select|= this.handles[	if(this.handles[i]Infinity
-		 helprevWidth) {
-			props, height: (that. || forceHeight };	};
-}
-
-					ium(this.rops)x whose  t.e || forces the request0) + dd the r (thatposition);
-		if(this.hanginalPosition.left)) || null;
-			top = (parseInt(that.elementix axis pos), 10) + (that.position.top - that.originalPosition.top)) || nulla(parent[0(/textat: iniPosthis.orig{ top: top, left: left }));
-			}
-
-			if( !dragg;
-			that.helper.width(that.size.width);
-
-			if return._helper && !o.animate) {
-				this._5,
-		ENTERWidth = b.max 2) ht * this.aspectRatio;
-			pMaxHeight = b.maxWidth / thi.css("cursor", "auto");
-
-		this.element.remothe rops)e-resizing");
-
-		this._propagate("stop", event);
-
-		if (this._hHeight > b.minHeight) {Height * this.aspectRatio;
-		n(target) {
-
-			vWidth / this.aspectRatio;
-
-			if(pMinWidth > b.minWidth) {
-: 0;"></inWidth = pMinWidth;
-			}
-			if(pMinHeight > b.minHeight) {
-				b.minHeight = pMinHeight(data) {
-		this.offset = thi{
-			minWidth: isNumber(o.minWidth) ? o.minWi	if(pMaxHeight < b.maxHeight) {
-				b.maxHeight = pMaxHeight;
-			}
-		}
-		thiis supporte	widgetEve,
-	drartions.height - obj.bottom + thhis.margins.top;
-		}
-	},
-) {
-		nterse	var n, curHeigtch(/ui-rght + "px
-					wid		this._clear();
-	filter(function () {
-					retu:
-						offset calculated on start, s parent
-		// 2. The actual ofhe scroll parent isn't the since the following happened:
-	solute, so it's position is calcu included in the initial cins(this.scrollParent[0], thient, and never recalculated  === "absolute" && this.scroinnerWidth: $.fn.innerWidth,
-		._mouseInit();
-
-	},
-
-	_sing droppablesl(this, event)curleft, tk.left >= nt[0] || lhis.offset.parent.left * mod	-	d
-$.ui.uterWidth(),
-					height: this.element.o				if (this.clas
-					top: this.e/ bugfix fis.options.helper ===l.height() on() { this.sthis.size.height veClass("ui-resizable ui-resizable-disabled ui-resizable-resizing")
-
-
-		ifis( dragginput|select|button/i)) {
-
-	0) || 0),
-			l(o.minWidth > data.width), sizable").fine if (isNumber(data.width)) {
-			data.height = (data.width nalElem
-
-		if(this._aspectRatio(data.height / this.aspectRatio);
-		}
-
-	Size.width,
-			dh = th
-			// Weon.top + this.size.height,
-			c
-			data.leftSize.width,
-			der.outerWidth(),t) && oif (Case() if it cannot hold child nodesstedhis.optioportions:t(a);
-		if (isminw) {
-			data.widthtop + (csiWidth;
-		}
-		if (isminh) {
-			data.heigass( o.minHeight;
-		}
-		if (ismaxw) {
-			data.width = o.maxWidth;
-		}
-		if (ismaxh) {
-			dattop = null;
-		}
-		if (a === "nw") {
-	
-		if(t(o.minWhing to 	if (this.size.widt;
-
-		for (i ielper) {
-	O: What's
-		if (isminh) {
-			data.height;
-		}
-
-		/idth;
-		}
-		if (ismaxh) {
-			dattop + (csize.height - data.height);
-			- o.minHeight;
-		}
-		if (ismprevLeft) {
-
-			data.top = dh - o.maxHeight;
-		}
-
-		// fixing jump error -n top/left - bug #2330
-											//nalElement.css("resize
-					if (o"bloc {
-			this._mouseUp({});
-		} efset.relative.left - this.o;
-		keyu handlers offset
-			this.t") })t)) {
-			data.width = (data.height * this.aspectRatio);
-		} els.pageX,
-			ta.width);
-		}
-
-		re.call(this, event);
-			}
-
-	e-handle", this.elemer(data.width) { n: ".ui-resizable-r(data.width)		this._clear();
-	ropped))) {
-			$(this.helper).animateed) {
-		rop tion,	var fuction() {
-		thisQuery urn falseent oi
-			f = this.css("marentItem, the list  The porCache since thevalthis.of	//Provided we did all the prize" : cursor);
-
-		eow ).scroWidththing to 		paddings = roppables in case the lisar dropped = farsectingled && this.vportabursorAt));
-
-		//Set a containment if given i= isNthe ohis.options.tolerancepiateOp._setContainmcul// calis._cachent();
-
-		//size -=ent + catriaheig-1-sverflo
-		}height: (element.heit[ 0 ]	}
-
-	ncr ) {
-	l so direct ed;
-is._cacht, dris._cach) ) {
-Fa("u= true;
-			 || ounds.accept.calldraggable.element)))pth() - this.out = true;
-				this.isover = false;
-				this._deactivatx( c basedfilter this.posat =) {
-				reve			h$.is.refreshPositions {
-		o.grid[1] ? thi Filtions.refreshPositions ;
-	}= this.helper ||oppableper) {
-
-			this.helgateen;'></div>");
-
-;
-		}
-
-	isOver = meed to ements;f th
-				telperProps.helper.tion() ];
-				paddings = 	o.containmen	var ovrapyright.is(".ui-dragga_nt.csentPrefix: "rseUp.call(this, eype func* oppulson( event.ddmana_propa.axis ||nce I]) |) {
-bIndeh== "fixfuncti, datthis._ui modint, trhieft y"fixed" re-en(this.top +"px",
-e {
-
-			if(!o		if(is), 1oadparenthod }
-			positiis w-x"));ed. #779urso.is(".ui-dragganstance-handler = tthis.h	}
-
-		return this;
-ntinue droppablesLoop;
-				top +"px",
-paddingBottom" ) = thisgetto.plueId = /^ui-id-\d+$effect-fold.js, jque: falsunction((
-				pageY -				
-					scrolledidden;lper = is._he).data( "a-b", "a"nctionrders, paddfunctiont: (
-				pos.lnt, dx, .visible =set to a vt() extensis set tth() - this.helplone againt, dx,,
-		NUMPAD_DECIMAL: 110,
-light.js, jque			var cs	zIndeion( data ) {
-
-		var cpos = this.posit.pageX,
-						height: t].joii < this._ {
-	),
-			orig = {
-				this._mouseUp({});
-				retu
-			return;
-		}"returverflvent) !== false)oppables in LeftWidth")];
-				paddings = [prederDid(this);
-		});
-
-		//If the dd;
-
-		// Pu);
-	}
-Bed) idden;'><en";
-		}).l.apply(this initialise	return data;
-	},
-, thht: wrapper.outerHeion ) {
-s("ui-res("paddingBottom"), prel.css("paddingLef{
-			_destroy(this.element);
-		ive", { top: 0, 	!!$(when() ery.ui.droppable.delng = false.extendtion(event, 		data.top =5,
-		ENTERles = 					
-
-	_destroy: f,
-		se: functio		var p = this..find( this. data;
-	},
-pfind() {
-		 x2 = e() -1ute this.size.height 
-		//    the s.offset.click.top;
-nt, dx, dy po.top +($.ui.ddmanag]);
-		(n !=
-		var over, c, ce,
-			o = this dy) {
-			ly(this, this.aspectRati", this.elerentNode.removeelemenntersesizeElements.length) {
-			retu			if(this._tri					th-t;
-		ievent, ui) === false) {
-		rderLeftWidtve(event)W.conif(e drag  ++o;
-		if);
-
-					.elem;	});
-			or
-				posigger 
-
-				], {
-	dngthis.mare 					thtion" d
-		if (!noPrbes.scroll= isNN( tabInned
-			= isN;
-		his.optivent.{
-			return $.i},
-
-	// ight,
-	nce s )[ 0 ];
-ions
- */
-
-$argins:rece,
-		le", ".gin.add("resizablRemofset.reis._updatenouseup."+thidle ?
-			return $.egate);
-
-		iffunctier = thly(this,N( taLeftWidth")];
-				paddistant;
-		}
-		opped (see #5003)
-		if( $.ollTop(),
-	LeftWidthaspectRatio,
-		gs = [pretance && meteckeFloa- this.marginis._cleaame),
-			soffseth = ista && $.ui.hasScroll(pr[0], "le{
-				if (t! 0 : thatthis.aspectRatfsets(draelement.lper.outerHeight()left + size: repareOf
-
-	_tri:		// er.drop(EizeEble", " asynchronousldTo("body	return t,
-				$(soffs10) + (th		if(ffset( optios).datbe {
-		alPosition the te);
-
-		ife: thirtable)	var over, c, ce,
-			o = this.o		left = (parseInt(that.element,
-
-	// These are plrginrollParent.scrolse;ui-st.paron)he sortxata(elthat.fset.parent = this._getParet,
-			soffase && inst.element[0]s("left"), 10) (that. o.axis .ddmanagmo| ($.rent.sinalnt wasinalElement,
-			elemen	step: fxed" e touour) {to kns, t = $heig(!noPrign= this.eped) 			pageX ssDisdft)) ||(agalega null,
-	(parseInt(that.element.N( tange.s.apply(thisrespectSize	var over, c, ce,
-			o = thisnts), this._change.w.apply(ting: o.animateEasing,
-			 changes th+ dy };
+			this._repeat( null, $( event.currentTarget ).hasClass( "ui-spinner-up" ) ? 1 : -1, event );
 		},
-		se: functio&& (o.maxWidth < dhis, [event, dx, dy]));tain= fass("to ] ) ) {
-			return falseriginalElement.cr: thisargin: functio
-		//    the his.elementup	helper: this.helper,
-this._chang && !$.contains(er: this.helper,
-			position: this.posit_over.tion( ll
-
-$.is.options.revertif			thi= $( is.opwhil			!!$(() {
-	eIntkep- 1,wonTo("rela-resizableep
-					that._updateCache(data)his.helper).an.w.apply(this, 		}).eq(0);
-		} ght });
-					}
-
-					// propagating resize, a[event, dx, ding values for each animation step
-					that._updateCache(data);
-					that._propagate("resize", event)			this.id"body")ce, evdrag evdocum_conveposi 
-		}e.plo inituld the ( this,
-		}	};
-	s for ereatd wait until			thiup/textarlow instahis.instropaga/ ) ry.ue.plnction() {
-				i
-		);
-	}
-
-});
-
-$.ui.plugalse,
-		araarent[ 0 ],  to wrapper S				thider.js, j() || document.position of the droppables r: this= isN> containment[3]w: function(ar ifft = this"widge	},
-
-	body.pareHtm"paddative positioned });
-
-$.ze: thiset.prototype			elemer elem);
-			p em
-			for (j=0; j h" ), 10 ) || 0/ i'.helper[
-			( parr elemeidth&& !ative.top: this.)) &() || draggable, ever: this.helperf ( $.ui.ddmparents("bo,ent, set antion")		}
-
-		return helper;
-
-t: 10,
-		minWidth:(that.6ar data =t() rttr(osition : 50% construct", "Left"
-	};n	preparons, elemeif t / ox
-			it
-	_createW dy) {
-			et = elrginRight">ror( "no sucnt.offset(" );
-	},
-* 0.n() this.eldth;
-			width = ($.unction( $,dth;
-			width = (idth;
-			width = ($.
-
-		// Call tent);
-		}
-
-});
-, he					thi $( ent, argent);
-		ight;
-			soffsetw = is position
-		this.posent);
-	n: "absolute", rtions.height - obj.bottom + th= scope;
-				});
-
-				if (parened on st;
-$.fn.ed on sthis._helper ?lculated on start, since n the initial calcules for each anite("resize", enction( elem ) {resizable"),
- is calculatedes for each aniate("resize", eerOffset, cp = that.position, happened:
-		// 1es for each ani			$( thiage|| event.shiftKey,
-			cop = { top:0, left:0 }, 
-			pRatio = that._aspectRatio
-
-		if (ce[0] !== document && (/static/).b) ||	// Top
-			}
-		});
-	}nt = $(ce);
-	w, s, left, top,
-			o = ) {
-		pecific tole);
-
-			ect position
-
-		//If the ddmanager is use of {
-			t			var csh(functionth + (that._helper ? (thaper: fan specific toler: this.helpedropp;
-					thd check thetr'>per: falst.position.left eturn;
-		 scroll.scrollTop()uhis."'>&#9650;f (pRati that.asble. that.aspectRatio;
-			}
-			that.position.left is.oplement.innbo.left : 0;
-		}
-
-		if (cp.top < (that._helper ? co.top :is.op) {
-			th6t.size.height = that.selement).show();
-				}
-
-				//A).scrollTop() - thly(this, arg
-
-					//Checking the correct			// propagating re-resizable");
-
-		$.exhange.n.appcble.;
-
-	arentNode;
- that.pa-resizable-co.top : 0;
-		lement to our proportionallyRes for pper );
-			wrer(dats{
-			helper: th( pcelHe5+ (t])) : top;
-
-				left = o.grid[0] ? this.originalPageX + Math.round((pageX at.containerEl40ft : (that.offse set toor,
-	s.helper.a},
-
-	 : (t(n, event) {
-		$.ui.plugin.call( ) ) ? erPro					// The i.plugin.ca		}
-
-		this. ? o.maxHeight : ll ] > 0 offset.top = that.parentData.top+that.position.tont[0],(dr(n, even{ top:
-/*
-	This manon top/n, even_f[2]) || hange.s.that.pareelper.remov co.top : 0;
-		seUp: fuandles = $("dings[ 0 ] !== rmance,et(0);m: i a value oppables in ction() 		while ( ela.top+that.pth" )absolute" &[2]) || pper );
-			wr				inst.sor[2]) || 0,Node.scrollHeight[2]) || 0,					parenh / that.aspffsetParent.oft = Fr );
-			wra.size.heighte.plac) {
-			thatthat.sginalS.js, flo		ret*i*i/50	thi-et;
-	if 
-		i7*i/2
-				t ? ce.scrollight.jf supons.screctop o jquery.ui.effect-folt.aspectRbled and n.aspectROfize.width + "px";
-		
-				this.'></div>");
-
-			t a veachcument ).mop: functi	});
-	},
-
-at.containt.css({		var that = $(this).data(tem ||, this.element);at.contaight * that.aspectROfnAbs || dragguposition
-			>= thoffs.toase() 		inst.resize",llyRr"),10)t = ".ve marglight.jhat.sizeDnt.scro ) + ff.w
-			ret-rHeight()-eight * tha	if(isParen.top + "px";
-		css("left") }s.pushabovista eturn a string
-					// we ignore t ) {
-ollPat, !isdth"this.off perf= thclicnd	o = ];
-		t
-});
-
-}t === th		};
-		}ions (			tors.origions ato = that.options,
-			?t(ce.css("pos deter	ition"))ction(dr kept ihout bo-.pageY 	};
-		}neahis.h: w, heeft: ho.lef() {
-				vaeft: ho.l/t(ce.css(: w,$.ui& (o.maxHeight <o.left, wiive posegate);
-
- (tho { top: 0,.widgeme, ions("position"instancition")): this.elix	stop: funcnce Ibad JSzed
-		siti eventma.id )et(0);
-	intersectsWin { tocurrent t.containerPositcss( "r t = $("lamition tions.width )helper || $(ions,
-			is set to elem.css( <= e isOver varioptions, that ion.left +o = that.options,
-			is set to<"left"), 10),(), 10),
-						left: pa, sof0)) {
-			thatfset.cli					return;
-					}
-					$(at._helper ? co.top : 0;
-		eY = containment[3] +  : top;
-
-				left = o.grid[0] is, n, [event, this.ui()]);
-		(n !== "rea.top+that.posi (tha
-
-		woset = Math;
+		"mouseup .ui-spinner-button": "_stop",
+		"mouseenter .ui-spinner-button": function( event ) {
+			// button will add ui-state-active if mouse was down while mouseleave and kept down
+			if ( !$( event.currentTarget ).hasClass( "ui-state-active" ) ) {
+				return;
 			}
 
-		});
-	andles.hide();
-					}
-	// Surrounded vertisetParent : this.scrollParent;
-
-		//Cache t0 );
-		this.?
-				thiborderDif[1]os.left }rderLeftsolute).left,_his._uterHeight() - 1,
-		dth - woset;lone agai 107,
-		NUMPAD_DECght */ ? 0 : that
-		thatlement).scro2 > b)		// S
-
-		for (i in this.hannt: null,
-	drothis).data("ager.pre?
-				thi		},
-	nd(this._chan}
-
-		if ( this.length ) {
-			var et(0);
-		isOf = that.		while ( elemnt(el.css("//Cache the scroll
-		if (!th
-			cw =this.heas started (see #50set.scroll = {top : scroll.scrollTop()up: scroll.scrollLeft()};
-sore "resize" 
-			cw =
-		/				var el = $(this), start = $(this).data("ui-resizable-alis.op scroll.scrollLeft()};
-eight"To("absolute");ay );
-				}) :
-				orig.apply( this, a		fn.call( elem )s.originalP.originalSize.width +pport r) {
-				$.uisizable-(se c && c.lengtontaine			if (supaddingBo.margins.left,
-		rop]||0);
-						if (sum &&alue wh= 0) {
-							style[prop] = 				.dpaddingBottom 0,
-	runiqueId = /^ul.css("boi-id-\d+$/;
-
-// $.ui migurrounded horizontally
-	his.element.outerHeight() - 1,
-		inst.snons.sc			h.top + "px";
-		}
-		if (this| 0, left:!$.fn.addBack is set":
-			"),
-			o = zeDinstanc.Glob ( o.cthis.originalEleborderDif[1]ize.hei
-
-$.ui.pl
-
-		 = $(this);
-t: to.grid[1] ? thi0 );
-		stanc+vent, dxusePosition,
-= b.math) |) {
-		;
-		}
-	?s,
-			dth) esize) ==lemente && (/relative/).test(c= num(this.helpeageY = containm[0].tag = that.opt
-	}
-});
-
-$.ui.plugin.add("resizable", "ghost", {
-
-	tart: funcheight -ements;.add("resizable", "ghost"t = $(this).data("ui-resizts: funct
-		});
-	},
-	drag: function(draggable, 
-			if(type === "mportions.height;
-
-	swie = that.coinal" sedown") {
-				m[i]._activate.call(m[			this.iwion()(!noPr firent was = el.offsetca			tf(this._he.pla], event);
+			if ( this._start( event ) === false ) {
+				return false;
 			}
-
-			os = that.originalSize,
-			op x) {
-			var c
-	};(offsength && (/sor);
-		}//Chec{
-	standlerformance, avoid reft: 0, tthis.An width: ,
-
-	sis._hif (this.set to a vacity: 0.2st && t) || 0
-			},
-
-			_alsoResiz"+handget(0)ions,
-			co = thoffset.e");
-		if (thatper.get(0).removeC	if(isParent 
-		}
-	}{
-		this.optip.left) || 0
-	height - 	var that = e = func
-				height: (thatis manager tracks offsetdth / 2) && // Right Half
-				x2 - (draggable.helperProportions.width/ i'm a node, so comps(style);
-				});
-			};
-
- top - this.offset.w: function(ev top - this.offset / 2) && // Bottom Half
-				y2 - (draggable.helperProportions.height / 2) < b ); // Top Half
-		case "pointer":
-t();
-			}.offset(;
-
-		//)
-		 < x1 + (draggablealid"
-	tepUroll
-			$.each(o.alsoR.heighunction (exp,t = osMaxWidthze(o.al	ret = os.oy,
-			isMaxWidth = o.+ dy };
+			this._repeat( null, $( event.currentTarget ).hasClass( "ui-spinner-up" ) ? 1 : -1, event );
 		},
-		se;
-			this.origin},
-
-	_.heighort:n(n, event) {
-		$.ui.		css = c &&;
-		},
-		nealsoResiidthDize -height + oy,
-			isMaxWidth = o.maxWidth & = o(o.maxWidth < newWidth = o.m		isMaxHeight = o.maxHeight && (o.maxHeight < newHeight),
-			isMinWidth = o-.minWidth && (o.minWidth > newWidth),
-			isMinHece[0 os.height + oy,
-			isMptionsh = o.maxWidth && (o(ptionsidth = o.minWidth && 		if(ize(o.alsoce[0 = o.minHeight && (o.minH
-		}
-		if (isMaxHeight	o.gri			newHeight = newHeight - gridY;
-		}
-
-		ifsitionAbs || draggable.arent's offseposition: wrapper.css("phis.handles[i= that.originalSize,
-			op = th = theight + spectRatio) 
-			e && inst.oize: functi * thlementw, s, left, top,
-			o = this.ridY,
-			auto", left: "auto" }ecated. Use $.widget() extensions instart(0).r[3])rhlement/#.*$$.uistance._inteNextTse {ument)light.j++lse {perProportionsisLocthatTabIndlse,
-				thisTabIndrigi		height: thive podecodeURI
-		}onoset t.positiref);
-
-		// Tt.siz,n( $, u) -  - that
-		}
-	}
-
-});
-
-})(elemeop: ;
-
-(function( $, undefined rs.length; j++ ) {
-tabppedorAt));
-
-		//Set a contaiions
-		this._setContainm$.ui.drn false;
-	}ratio.inne&& this.accumenn() sary raggable, (".uit._tr this.parts
-		roxy: functht.pagable.currentItem || drarent.left,is._cacher = t._cle,
-		unselecting: nuL { wiis._cachn { wi		//Prepare the droppable offsets
-	ht exist from componn a string
-					// we ignorarseInu(exp) { _store(th,
-		y1 = (draggable.positionAbs ndTorect position
-
-		//If the ddmanager is used for droppables, inform ndTo-ance: "touc"t;
-
-		if (ance: "touc		gridtabindex" ),
-	r "inval [ "Lefgrag: functs.refviw ob_mouseSthisegce pans.boment[nav > lith - 				size cached properties (see #his._mouseUp({});
-		} else {
- - v1.10.3+= this.scrollParent.scrollLeft();
-ffset.parent = this._getParentOffse10),
-				("left"),  <9t, "tabindex" t modifwith the .elemennt[0	if(this.r data = {
-					) {
-
-				each(function(ted to call $(th		if(!oop.top Boundfset.reopped)N( tabIndex
-				tdRevetocallrytiondatathis.hasClasLeftWidt (this.optposition.top = his.dr somethi lefaarente: false,			});
-			(!noPrll,
-			to// suppe post + o.N( ta,
-					pos = $this.ofTabIndhild 			dro, "selectable-item", {
-					elemis,
-					$element: $thioptions.axl
-	_gis,
-					left: pos.left,
-					top: poPosition === "ant)) {
-			te(exp, c)proces.outon: "abgable").o: that.sizeDi_// trac._cleahelper.cssT) {
-ent);
-.helpr $this = nts()erProportnce IntIte {
-
-		nalidcat.pa: 0, ;
-		}
-	nt, dx,ion( eveN( tarentInstance, event);
-	ed" ) {
-			ig,
-			callbacked" ) {
-	e.cane visoptions = this.optction() 		if(!osabl69)
-		iabnt") {
-			tis.scrollParent.scrol{
-					elemel jQuery UIat.size.hea( dabons.hex.filtetions: fecteoppasoxHeiy: 0
+		// TODO: do we really want to consider this a stop?
+		// shouldn't we just stop the repeater and wait until mouseup before
+		// we trigger the stop event?
+		"mouseleave .ui-spinner-button": "_stop"
 	},
-	_mt)) ||e;
-	
-			retd" &&s error.eleme// traced el empty "boright;
-			soffsetw = is.eleme a value w}
 
-		thaTabInde;
+	_draw: function() {
+		var uiSpinner = this.uiSpinner = this.element
+			.addClass( "ui-spinner-input" )
+			.attr( "autocomplete", "off" )
+			.wrap( this._uiSpinnerHtml() )
+			.parent()
+				// add buttons
+				.append( this._buttonHtml() );
 
-			s = { width: (s.element
-			.r h }ass("uialse && $.event.p element.parentNode;
-s.element$		$(options +"px",
-				top: thint.top,
-				$( wi
+		this.element.attr( "role", "spinbutton" );
 
-			s = { width: (is.h	});
+		// button bindings
+		this.buttons = uiSpinner.find( ".ui-spinner-button" )
+			.attr( "tabIndex", -1 )
+			.button()
+			.removeClass( "ui-corner-all" );
 
-		if (options.aut) {
-				thoveClass("u
+		// IE 6 doesn't understand height: 50% for the buttons
+		// unless the wrapper has an explicit height
+		if ( this.buttons.height() > Math.ceil( uiSpinner.height() * 0.5 ) &&
+				uiSpinner.height() > 0 ) {
+			uiSpinner.height( uiSpinner.height() );
+		}
 
-		this.element.addCs.element
-			.);
+		// disable spinner if element was already disabled
+		if ( this.options.disabled ) {
+			this.disable();
+		}
+	},
 
-		if (opticrollSens("ui-seleight && (o.maxance: "touc
-		});, $.ui.elementement.retion.lsubfilter(" :
-					s.hand: that.ons,
-			co = th.appendTo*
- * ragop = idtop s("b jquery.URy();selectement.removeCpply(this, ar
+	_keydown: function( event ) {
+		var options = this.options,
+			keyCode = $.ui.keyCode;
 
-		tnt.parents(":dat, thbment.css($.exte - vcall		pos.left +	ectiroldropplse;unselecting = true;
-	lter: "*width: th.position.left;
-		top(this, event);
-e(event)pendTo).apatriggmal(pared = fahis led");
-selectee.ed = false;
-				selectee.element
-			// sele),10) || 0) 
+		switch ( event.keyCode ) {
+		case keyCode.UP:
+			this._repeat( null, 1, event );
+			return true;
+		case keyCode.DOWN:
+			this._repeat( null, -1, event );
+			return true;
+		case keyCode.PAGE_UP:
+			this._repeat( null, options.page, event );
+			return true;
+		case keyCode.PAGE_DOWN:
+			this._repeat( null, -options.page, event );
+			return true;
+		}
+
+		return false;
+	},
+
+	_uiSpinnerHtml: function() {
+		return "<span class='ui-spinner ui-widget ui-widget-content ui-corner-all'></span>";
+	},
+
+	_buttonHtml: function() {
+		return "" +
+			"<a class='ui-spinner-button ui-spinner-up ui-corner-tr'>" +
+				"<span class='ui-icon " + this.options.icons.up + "'>&#9650;</span>" +
+			"</a>" +
+			"<a class='ui-spinner-button ui-spinner-down ui-corner-br'>" +
+				"<span class='ui-icon " + this.options.icons.down + "'>&#9660;</span>" +
+			"</a>";
+	},
+
+	_start: function( event ) {
+		if ( !this.spinning && this._trigger( "start", event ) === false ) {
+			return false;
+		}
+
+		if ( !this.counter ) {
+			this.counter = 1;
+		}
+		this.spinning = true;
+		return true;
+	},
+
+	_repeat: function( i, steps, event ) {
+		i = i || 500;
+
+		clearTimeout( this.timer );
+		this.timer = this._delay(function() {
+			this._repeat( 40, steps, event );
+		}, i );
+
+		this._spin( steps * this.options.step, event );
+	},
+
+	_spin: function( step, event ) {
+		var value = this.value() || 0;
+
+		if ( !this.counter ) {
+			this.counter = 1;
+		}
+
+		value = this._adjustValue( value + step * this._increment( this.counter ) );
+
+		if ( !this.spinning || this._trigger( "spin", event, { value: value } ) !== false) {
+			this._value( value );
+			this.counter++;
+		}
+	},
+
+	_increment: function( i ) {
+		var incremental = this.options.incremental;
+
+		if ( incremental ) {
+			return $.isFunction( incremental ) ?
+				incremental( i ) :
+				Math.floor( i*i*i/50000 - i*i/500 + 17*i/200 + 1 );
+		}
+
+		return 1;
+	},
+
+	_precision: function() {
+		var precision = this._precisionOf( this.options.step );
+		if ( this.options.min !== null ) {
+			precision = Math.max( precision, this._precisionOf( this.options.min ) );
+		}
+		return precision;
+	},
+
+	_precisionOf: function( num ) {
+		var str = num.toString(),
+			decimal = str.indexOf( "." );
+		return decimal === -1 ? 0 : str.length - decimal - 1;
+	},
+
+	_adjustValue: function( value ) {
+		var base, aboveMin,
+			options = this.options;
+
+		// make sure we're at a valid step
+		// - find out where we are relative to the base (min or 0)
+		base = options.min !== null ? options.min : 0;
+		aboveMin = value - base;
+		// - round to the nearest step
+		aboveMin = Math.round(aboveMin / options.step) * options.step;
+		// - rounding is based on 0, so adjust back to our base
+		value = base + aboveMin;
+
+		// fix precision from bad JS floating point math
+		value = parseFloat( value.toFixed( this._precision() ) );
+
+		// clamp the value
+		if ( options.max !== null && value > options.max) {
+			return options.max;
+		}
+		if ( options.min !== null && value < options.min ) {
+			return options.min;
+		}
+
+		return value;
+	},
+
+	_stop: function( event ) {
+		if ( !this.spinning ) {
 			return;
 		}
 
-	Init()ntainment,ion() {
-		retur	_molper &ab,Name wo
-			};,
-				selectee = $.data(tept d = false;nt, is, "selectable-item");
-		
-			ret.sizeD.find( this.opt this.e.elemen) ) {
-me
-		._uivi-dru" ) { {
-		e.selected = fa a value where z-s.element
-			.
-
-		this._tr			// selecqelectee =wrapper elem				selectee.$element
-					.remolass("ui-sel(y2 >= t  any chace.scrollHei"default": ance: "touch",
-
-		r = l -item");ement.h[0])) :aKey && !ev.lend = false;vent.pageX,
-			"top": event.pageY,
-	s.element1 <= b) ||	// Topnt, {
-			var cs = this.otionsDatais.scrollParent[ 0 ] !== docutabclick.top < c",");
-ann() tore propertiSelect ? $= "fixed" s = P			rForTab(!this.offset {
-					ize) ==tabKtions.height - obj.bottom + this.margins.top;
-		}
-	}, ) {
-		retufset.reTab	( over ? topped (see #5003)
-		if( $.u
-	_destroy: funcable.jon( oed{
-		//Litee.unselecting =	that = thi			y1 TabInForwar			$.ui.ddmanll the sortabis.csitiNavs._change.w.apply;
-						}
-					e if (isNumber(data.width)) {
-ns(this.scrollParent[0], thiif (!data.width && !data.hei= this.opos[1(pRatiel.height() };
-		xWidth;
-		}
-		if (isze.height - data.height);
-		.pageY;
-
-		if ();
-
-		$(eve= this.opos[1fn[ electees.each(function() {
-			va);
-		}
-
-	= this.opos[1],
-			x2	"top": event.pat._helectees.each(function() {
-			vaata.width = this.opos[1],
- (that.tees.each(function() {
-			vafor all br10 ) his._cle 10 ll,
-lback
-			er(funcfset.parent = this._getParen.offset.click.top;
-rent.lese;
-		}
-
-browsers, since pa= this.opos[1]'s initialisem being selected if appeneeds toa("ui-ompleesn'
-	}
-	return() {
-		mouseDrG callback
-			ng, star1 || selectee.top > y2 || selectee.bottom < y1) );
-			} else if ([0] &				}
-		t lateees = stion() {
-.eacl
-	},
-	 if (options.tolerance === "fit") {t;
-		}
-		);
-
-		if (optioct;
-				//e === "fit") {
-				hit = (selectument.body) 1 > y2) { tmp =  );
-ddmana,
-		p| []ri	}
-	}seleegate);
-
-which (exp $( rn { top: inalElement,
-			element: tlectee.bottom < y1) );
-			} else if= this.opos[1],
-			x2ze: fahat.siznce === "fit") ,elemenY;
-
-		ifesize", {N		this.hel !== g", evelecteet, p.ddmanagrid[ undcy1 && selectrigger("optionstrlK{ width: e// U(offset + b= this.o g: fufalsight};
-	at AT
-			nent.adriggposint, arg= this.oN( tabInf(this.dr				may", eftop"), 10) + ease is.helpeeed toyition.lefd");
-			(event.mdata("uif the sorabent, p,nt, argretul
-	},
-	crease sorimcting"annotypet() ) init" )N( ta	that = th		pos.left +	= this.omouse positi "resize" elect;
-		e === "fit") {
-selected = true;
-					} e},
-
-	_conver			this.ins		} elosition === "fixed" ? -this.scrollPant, dx;
-}
-lementlect=== "fit") {
-				h to 0 to prevent d(this, "se				rue;
-
-		if (this.options.disable{ tmp = x2; x2 = x1; x1 = tmp; }
-		if (y1 > y2) { tmp = )
-		trl+up(parsition.le	};
-		}Parent.stab									// T
-			} els// Only f isParent=t, isOffsetRel.UP this.offset.relative.left - this.ntainer cachesoffseth) }led first
-	Alt+		if(!this.op event, {
-							unLeftWidt/tableelec(ct) {
-			hift)ateRatio:x1; x1 = true;
-						}
-						// seleinalElalt					});
-					}
-				}
-				if (selectee happenroppables in c, since parue;
-					// selectaif (selectee.unselec- = talue whe_helper ? co.left : 0))electee.$element.addClass("ui-unselecting")ui.keyCode.PAGE_DOWN ) {
-			this._activate( 13-05-focusNextTabp://jquoptions.03
-* e + 1, true ) );- 20return, jquui.w}
+		clearTimeout( this.timer );
+		clearTimeout( this.mousewheelTimer );
+		this.counter = 0;
+		this.spinning = false;
+		this._trigger( "stop", event );
 	},
 
-	_findcom
-* I: funcjque( index, goingForward0.3 - 2var las
-* II.js, =://jqutabs.length - 1;
+	_setOption: function( key, value ) {
+		if ( key === "culture" || key === "numberFormat" ) {
+			var prevValue = this._parse( this.element.val() );
+			this.options[ key ] = value;
+			this.element.val( this._format( prevValue ) );
+			return;
+		}
 
-		i.dragga constrain(.3 - 20if ble.js, > jquery.ui.res.3 - 20	 jquer= 0ui.wi}table.js, jquer< 0, jquery.ui.accorjquery.ui.reion.js, jqdget.jse.js,uery.u
-		while ( $.inArray( jquery.ui.s,cludes: jquerydisableoppa!== -1, jqueryui.accorquery.ui.drop?, jquer+ 1 :, jqueri.seljs, jquui.datepicker.j.mouse.yui.com
-* I.ui.draggable.js, jquery.ui.droppable.ui.accor//jquerjs, jqueryble.js, jquery.ui.droppt-drable.js, jeqs, jquer).plode(ry.ui, jquery.ui.effect-exsetO jque.ui.draggablkey, valqueryeffec.js,key === ".ui.co", jquery// -03
-* http) will handle invalidy.ui.es and updatecludes: jquer- 2013-05-03
-* http:.ui.effui.widget.jt-drop.jslide.js, jquerjquery.uffect-transfdon't us jque widget factory's jquery.uimenu.ing- 2013-05-setupDquery.uy.ui.slider.js, jquery.ui.spid otheruper jquery.ui.e)electlide.js, jquercollapsibleffect-tra13-05element.toggleClass( "ui-js, - = /^ui-id-\ry.ui.effui.wi// Setting  = /^ui-id-: false ery.ui = /^uied; open first paneltable.js,!.ui.ef&&cludes: jquery.ui.corjque.ui || jquery.13-05-03
-* http:0s, e.g.s, ji.spinner.js, jquerevent\d+$/;
-
-// $.uer conE	ESCsy.ui.slider.ji.spinner.js, jquerheightStyd-\d+$/;
-
-// $.uer conHD_DECIMAL:T: 37,
-		NUMPADfect-extabId.ui.draggabltab 188,
-	dget.js,ab.attr( "aria-controlsffec||omponents " + getcom
-* IIdui.efquery.uanitizeSeleght .ui.draggablhash		NUMPAD_SUBTRUP: 3? plug.replace( /[!"$%&'()*+,.\/:;<=>?@\[\]\^`{|}~]/g, "\\$&ffec: ""	RIGHT: refresh.ui.draggabpable.js, : jquerld.js, j: jquer,- 20lier" ?
-			tablist.children( ":has(a[href])"s, e
-g., $Copyjquery.uijs,  from crom   109ibute elem HTMLt(func13-0ry.ui.Copyconvert				o a boolean if needed in _{
-			re()
-		ind.js, jquery.ui= $.map( lis.filtined".ui-state-y.ui.tabs.j,ULTIPLY: 106,
-		NUMPAAD_SUBTR;
-		e.js,106,
-		t-droeout(f13-05-processTab.ui.et(funcwas
-$.extend( or no			$(d = 0,
-			BACKSPACE: 8,
-		COMMA: || !13-05anchor jquery.u.3 - 20		BACKSPACE: 8,
-COMMA:ui.wiion"))ents().f$ui.efftest(th) {
-		, buttive|ab06,
-	is goneUMPA ei ||lide.tion() {
-		jquery.u&& !$._DOWainstion"))
-					v[ 0 ]fect-bl) {
-		rflowery.ct-transfall remainposi		$( aren() {
-			table.js,able.js, jquery.ujqueind.js, jquery.u	scrollParent == this.parents().filter(funcction() {
-				return (+$.cs3
-* htt previousflow0,
-		his,"p8,
-		DELETE: 46,
-		DOWjs, jquery.ui.effecMath.max( 0,bsolute/).test(t- 1llParMMA: 18 40,
-		END/(relative|abso|fixed)/).tst.ui.exist) ||verflow-y")+// make surerent.len jquerithisrrectnt = this.parents().fable.js, jarent;
-	$.css(this		NUMPAD_AD13-05-}) :
-					RIGHT: 3{
-			return typeof delayd other contributors;ct-blind.js, jquery.ui.y.ui.effeE: 36,
-		LEFT:ludes: jquery		ESC		while ( elem.leE: 111,
-		NUMludes: jqueryAD_DECIMAL:meout(fable.js, jnot	return this.cs: 109, - 20		PAGEsE: 32ed": "is.cs"ach(fMPAD.js,: -1($.ui.ie wheresion:index is ign_getPion:For* Includes this.cs 	ori	.hide		ori	the browserr
-				/expand makes behavior or
-				/hiddenakes jqu"0,
-		ve)/).tesM},
-
-	zIndond)/).testinip.js6,
-	orderd = 0,
-	tion"))&& (/(auto|sc.3 - 2013-05ct-pulsat0y the br "f this f",WN: 40,
-verflow-y")+eturn this.ss( ".addfrom components ) {
-			fn.focus y.ui.effe returnis positior
-				// This makes	if (css( "of this fun0ss( " consir elem 			// WebKit always returns a returshowelemenelements with an exp		position =of 0
-					//position" );
-			 behav="z-index: 108,
-		NUtatic|relatturn typeof delay ===that= undefalue where z-			vld.js, jqgetListelement  a string
-					// navore helper-reseton() {
-		reclearfixore 
-* Cop-headerore corner-allnested : 109,
-	roependex i			vimeout(f/ IE retution() {
-					vauery( "> liis;
-					setTimen 0;
-	},
-
-	uniqueIdfocus )efaul this) {
-			topis.id = "ui-iositio" + dex"ab
-					/f this function.ui.ie && (/()) {
-		= undefined )nts rn typeof delay		var scr$,
-		"fect-b )rflow40,
-		each(function() {
-				// w) {
-	id ) ) {
-				$( this ).rempturnntajqueAttr( "id" );
+		if ( key === "max" || key === "min" || key === "step" ) {
+			if ( typeof value === "string" ) {
+				value = this._parse( value );
 			}
-		});
-	}
-});
-
-// acros		return
-});
-
-// select.eachusable( el i, elemen{
-					/js, / Thisor,rsion:odeNameIdcss( "elemenIargum(t.href ||.unique0,
-	: 109,
-	irollPtr( "id"" ) {
-			returnclosest( "li$( "img[uoriginalAriaCDOWN: 3= unCT: 109,
-		PAGE_DOWN: 34,
-	mapNnt;
-inli|| postable.js, sLocal{
-			retur 188,
-		D|| map.n =t.href .UP: auto|ssion:= undatui might unctio		ele39,
-		SPACE: 32,
-( || map.ns("positi//thiso, jqhis,"overflow-y")+$oLowerC?
-			eleUMPAD_;
-		if (($.ment.disabled"#,
-		oLowerC= nodeName ?
-			element.href || iabIndexNot
-		vis positsion:s().filter(functeName ?
-			ele_create// We(
-}
-
-funcfilters.its an.insertAf	})( 		ele acros[ i.test]posi		elerent();
-ilters.s, jqion() { 109,
-		PAGEli.ef, "politeffe40,
-		Etable.js,e( element )188,
-		DELs( this, ?
-			ele acrossaddeatePse"position")| (/abs!!img && visible( im188,
-		DEab.datang
-					// wPAGE_DOWN: 34,on( elem ) {
-				returnion.js, jq);
-	}
-	reositioned
-		_DOWN: 34:n $.expr..substring(est(tss( "positilabelledby":t.href Ieq(0)ndex: -h;
-}
-
-$.extend( $.e,
-
-	focusant.href lter(fun = element.parentNn 0;
-	},
-
-	uniqueId: fun ) {
-	 {
-			if (_DOWocumd.test( thbottomis.id = "ui-id-" + (++uuidsion:
-	data.mous$.css(ow overridposihow				ueryip.jst();
-for r"));usage scenarios (#7715)
-	}
-
-		retturn typeof delaydget.js, $.ui might unctionol,uex" rns 0 wh	RIGHT: 3nts().addBa.ui.draggableoppable.sTabIndexNo<div>is.id = "ui-id-id",dth( bindex" ) ) );
-	},
-
-	tabbable: function( element ) {
-		var tabIndex = $.elem, dataName destroleme jquer, jquery.ui.ontributor.ui.draggabljquery.ui.ect-slide.$.isg.js, jjquery.ui.esortable.js,!s.parents().filter(funct this, arguilter(functhis,"positis.parents().filtjqueion"))) {
-			scrollParent =terWidth: $., jquery		END: 35,ery.query.n"))) || ( iy.uir icord, li;  );
-= undefined "vis] ); i++innerHeight:  this, argterHjque||dialog.js, ji,Width,
-				iffect-bounce.j	$		sizv></di(function() {
-			if ( r.ui.tabs.jcss( ele109,
-		PAGE+ "Width"++uuif ( <1.8
-		erflow-y")+$oat( $.css( el// tv from compon this + "Width" ) ) || 0m, "maA
-				}
-				if ( marg: 40,
-		END: 35,ct-blind.js, jquery.ui=ing" + thype = name.toL
-		LEF.ui.draggabl documeable.js, 		ESCdo(f - 20click) {
-				return orig[ "in				ESC.")+$entDunique.css(th	END:onsilide.		return this$me;
-		e, red.split(" "lParent: funce.js, jctionNam: 188,
-		D + nam[outer" + na]emen_ctionHenu.jray, && value !var elem off	return ) {
-			aName;
-	},
-
-	re)g[ "outer" ePseudo("positber" )  106
-
-// select"outer"y <1.8
-	}
-
-			return tjs, , {.js,down: "UMPAK reduc" }		while ( el	return t acrostype, reduce( tsion:, size, true, ) {
-				$plodeery.outer" + namewhile ( elhaN =fn.addBack ) {
-	$.fn = name.toLE: 111,
-		N		TAB: 9,
-		Us set to a vable.js, maxE: 111h[ 3 parocumerHeighi might Object
-		mapNlide.ull ?
-			thijquerfithis.].callct : this = Object is set.css(th(http://bu-filter( selectoouterE: 111() -IndexNaN );
-	}.com/ticke;
-
-// $.ui might i-iding com:vii-id-\d+me;
-		if ( !elern this.ner" lem" ) {
- ) {
-						//posi.js, =n fun.cm comf ( arguelect|texr.creat ( argumequerybsolu {
-	||ta.call( this, fixabs.js, jqujs, jquery.u}).lengt413)
-if ( $( ts.le "a-b", "a" ],
-			type$.attr( e// $.ui might r elem = )ndex is ignis, sizeon( removeData ) {
-		re413)
-if ( $( on( key );
-	})( $.fn.removeData );
-}
-
-
-
-
-
-// de acrossn( removeData ) {
-		re) );
-
-$.su.com/ti(0);
+		}
+		if ( key === "icons" ) {
+			this.buttons.first().find( ".ui-icon" )
+				.removeClass( this.options.icons.up )
+				.addClass( value.up );
+			this.buttons.last().find( ".ui-icon" )
+				.removeClass( this.options.icons.down )
+				.addClass( value.down );
 		}
 
-		re413)
-if ( $	retur) );
+		this._super( key, value );
 
-$.suinn-b", "a" ).+() );
-
-$.su.com/tics("positio], funngth )aN =flowgin autofn[ "inthis,"positi support: jQuery ) +
-			1.6.2 (http://bugsdion.jrt" in document.createElement( "di(http://bugs0);
-		}
-
-	ct : this. $.support.selects "ctioselectstarta );
-}n.extend((http://buvalue !== 0 ) 
-			if ( typ) {
-				return orig[ "inner" "number" ?
-				this.each(fdex !== undefiive|abs	add:href |e() )) + "pcurjectTarCopy) {
-		semap= :
-		"a + "]" )[0];
-		retur( thiedIsAex !== unab,"overhis,s(this,"ove( i in= /^ui-ng = n set ) {
-				pr&&ent = thi = /^ui-id-$.ui[ oS tab=ition
-$.ung ?retu :wsers
-				// WebKit alwa,
-		, set[ Hid().f!== "fixed" ) {
-		call: function( instance, n this.csoptioction(atae ].call	old jquedule, optio 0 ] "<a>" ) {
-		h[ 3 ]new jque;
+		if ( key === "disabled" ) {
+			if ( value ) {
+				this.element.prop( "disabled", true );
+				this.buttons.button( "disable" );
+			} else {
+				this.element.prop( "disabled", false );
+				this.buttons.button( "enable" );
 			}
-		},
-		call: ab0 ].parennce.elemei ] a );
-a( "aeach(function() {
-				$(};
-}
-
-//ta( hasrgin" + this ) ) || 0;
-				} ||eData
-			).testalready loasNaN!$.data( stance.optionsents ply( in] ] ) {
-					scai.toswitch duroverfan animarea"uto|scrollrunoverf	},
-
-	// on thi onif ( !se !thissoluteno( el /^ui-id-eData(;
-				proto.plugins[! i ].push( [ option ] ) {
-					sIndexNcanceemov,"overflll: funcrflow-x"trigg})( $before
-				atr[ "ctionscroll nce.e),
-		COMMA: 18() {
-		var sct-drop.js this.parents().f;
-			}
-		},
-	is.cssl: funcned ) {
-			re	if ((
-});
-
-// has = fal set ) {
-				pr== 11 ) {
-	css( typeurn txh || !mapNause thi.aborticket/i.spinner.!) {
-		(auto|scroll
-			foxed" ) {
-					/$.err	isT"jQuery UI 	returMismatchflowfragight identifier.			".ui-{
-				if (t, see if it's possiurn tply(	} else {
-		arent;
-		if scroll 	// $.ui.{
-				$exist 
-			var= ( a && a ==),
-			isTabmenu.js >
-		/the n ( i/ Thisverflow-	NUMxist ) {
-				return or= ( a && a ===			}
-				}
-				elem, set[ i ] ] )( a && a .urn;
-			args ) {
-			vam = elems[stance.e true;
-		} el, a ), size, ectable.js, jqmplejquer - 2013atHandler( "rilter(functi musteturn fal"overflo scroll = ( a && a ==t-drop.jsable.js, >
-				query.m = elems[i])Tabototype;
-			for rn a string
-					// we ignore the case of nesa( "a-> 0 );
-		el[ scrollCode:ats: jquery>
-		 188,
-		DELabInd
-			);
-		elfectprovided protot,tp://bugs				size -= parseFlo;
-		el[>
-				veDatap://bugs.j, border, margin start out by hisNaNfecteme, baplit( "." p://bug insta> 0 );
-ave the scroll  if position ilice.3 - 2013-05-the eement[ 0me = namespace + "Parent: funrn this.each({
-			$( r fullName, existingm, "margin" + thionstructor, basePrototype,
-		// 	visi (#8876)
-	 value erflow-y")+Widget;
-	}
-
-	// create selector for plugin
-	$.expr[ ":" ][ fullName.toLowerCase() ] = )[ 1 ]the el) ] =function(  "numb)[ 1 ]he browser
-				/		position = elem.css( position" );
-				if ( po consiWidget;
-	}
-
-	// c;
-				}
-				/ This ma,N( valueget = // If we'resed by verflow-,	// ted)/he ol				$ elem == "relative".!this._createWi.ui,croll em )s.css("pofocusturn new cons")+$.css(thi( options, element );
 		}
+	},
 
-		// alls[ i ] || t( "." keepions,s[ i ] || [et[ i === "relative");
-	iedPrototype allows the)[ 1 ];
-	fulle, prototype ) {
-tantiation witx is not spt-bo".ui-disableSele;
-		el[ scroll ] = 0;
-		rejs, j};
-	})(sable( element, isTabIndexN;
+	_setOptions: modifier(function( options ) {
+		this._super( options );
+		this._value( this.element.val() );
+	}),
 
-$.suxtend with the e=== "ledion.js.id = "ui-id-ith the existing cone ];
-	, seeructor = $[ namespace ][ namof 0
-									if ( !isNaN( value ) {
-		// allow ins	var fuhe browser
-				// This makesof 0
-					 <div style="z cons.mouse"overflo.ui.draggable.js,ems ) {
-	fon, set		add: function( moquery
-				pget is
-		e)/).testrygs)
-	o,"overflowcons[ 1 ].ap
+	_parse: function( val ) {
+		if ( typeof val === "string" && val !== "" ) {
+			val = window.Globalize && this.options.numberFormat ?
+				Globalize.parseFloat( val, 10, this.options.culture ) : +val;
+		}
+		return val === "" || isNaN( val ) ? null : val;
+	},
 
-		// sion: "1lide.s(this,"overuterHeight(this,"overflcrollLeft" : "scrolluctors: []
-	}ion with, simulflowaf overflows pas,
-				w is hidden, tt doesn't== "fixed" ) {
-					/: function( module, t-drop.jsn, set ) == "fixunction.fn.me = element.nvar map, 13-05-
-			if ( typem, i,troto ble: fun( i in,
-				proto prop, value )unction() {
-		: $.nooprom this widges from it
-e this widget is
-		// reui.datepicke,
-		COMMA: 
-		call: funcct-pulsate.js, jhis widgegethis funthis widget is
-		// ret;
-	eta-able.js, to gignorsersns instis, provlicea 		se  elem, instead of a numerical$.fn[ gth ) {
-		ypeofotype[ prop" elem,nt ) {
-		ct-fold.js, jurn orig {
-			return ) {
-			};
-	})( $			se$=',
-		p.js, jq"']ion:et = funct, jquery.ui.effect-ex"Bottomturn typeof delaylly cause this to happen
-		// if the element dndexNaN );
-	}or plugin
-	$.expr[ ":: function: function( element ) {
-		varss(tponents with no depe	}
+	_format: function( value ) {
+		if ( value === "" ) {
+			return "";
+		}
+		return window.Globalize && this.options.numberFormat ?
+			Globalize.format( value, this.options.numberFormat, this.options.culture ) :
+			value;
+	},
+
+	_refresh: function() {
+		this.element.attr({
+			"aria-valuemin": this.options.min,
+			"aria-valuemax": this.options.max,
+			// TODO: what should we do with values that can't be parsed?
+			"aria-valuenow": this._parse( this.element.val() )
 		});
 	},
 
-				vementor plugin
-	$.expr[ ":"ction() {
-		return this.each(function() {
-			if ( !this.id ) {
-				this.id = 
-			return si" + (	}
-		});
-	},	var __;
-
-				return returnValue;
-element.nodeNa
-		// TODO: remove s + a colon as the {
-		version + a colon Ufalse;
-		 true;
-		}js, j].call( this, sizement.createElement( "ddth: $.elem,  i =  [ "Top", "Bottom" ?
-		!elemetingConstrrn newrototype -= parseFloat( ) {
-	ss( elem, "margin" + this ) ) |uniqueId.tthe case of ore the cajquery.ui" +	retur	mponest( this.t ) {
-		var tabIn: function( element ) 		// we ignore 
-	tabbable		}
-			});
-			return sitart
-		// don't});
-			return size;
-	expr[	}
-			});
-			return size;
-	busventd redefine all of them so/ This maand redefine all of them so ,
-
-	focusaersion of this widget. We'ron" );
-ersion of this widget. We'r		positioersion of this widget.emove sup this ).ets that aren't n( removeData ) {
-		rjs, jize on( key ) {
-			")+$ery.i elem, dataName );
-			};
-		}) 
-	}
-});.creat// r				retuli ) || 0;
+	// update the value without triggering change
+	_value: function( value, allowAny ) {
+		var parsed;
+		if ( value !== "" ) {
+			parsed = this._parse( value );
+			if ( parsed !== null ) {
+				if ( !allowAny ) {
+					parsed = this._adjustValue( parsed );
 				}
-					};
-		}) :
-ype thd redefine alnce.he child widget using the same ppe, {
-		constli;
-			return size;
-	$.widget( childPr $.attr( element, "tats (#8876uper = _superosition is set to a ffec" elemen\d+$/;
-
-// $.u acrossngth )ull ?
-yworl[ scrolls widgenery.	return base.prototype[ funcuce( elem, st-blind.js, jquery.ucss( typeng" + this ) OMMA: 188,
-		, jquery.ui.spinner.type[ propundefin		innerWiterWidth: $.fn.outerWpe, {
-		consct-fold.js, jq) {
-				_super = funWidth: $.fn.innerWidth,
-				innerHeiterWidth: $.ments )+ "WidthParent: funcnum
-				return remoIndexffectype[ ?Index: nullveData.childPrototype.name this, arguments )is).css( tyi.draggablli,Index = 0,
-		inputLength = input.length,
-		key,
-		value;
-	fortion( $, under contributors;value;
-			whi.mous+ "Widtild constructors can be garbage collected
-		delete existingConstructor._childConst jquery
-	} else {
-		base._childConstructors.push( constructor );
-	}
-
-	, jquery.ridge( name, constructor );
-};
-
-$.widget.extend = funct	if ( bor.js, jr ) {
-					size -= parseFln removeDats, jquery.nction( target ) {
-	var input = slice.call( erge( [nput.le]gs, arrays, .s the elemor ( ; inputIndex < inputference
-	40,
-		END: ey ];
-			if ( input[ inputIndex ].hasOwnPply(.ui.draggable.js, jrn orig[ "in, constructor );
-};
-
-$.widget.exten
-	for ( var i = 0, elemap=() {
-			var _super = option, set ) ta( end( {}, basePrototype.op.prevObme ?
-			unction( instance, name, args instance.element[ tjque{
-				rets = s:rsion: "1.i = 0;//ement// the._childCost( nodeName ),"overflow-y")+T */
-(function( $, uthisall(aj}
-
-	13-05-0jax.ui.poss{
-			retscroll = ( a && a ===Constructsupport: / set t<1.8ssed o
-			this.ea dget.jstructorifhe oprequest( zIn"over);
-			se;
-		SenCase(//olute|sgs )1.8,y( null,) always			var mea jqXHR objectgth ) {
-		tend.appName = n	// focuusTextexistin= $.dat\d+$/;
-
-//( {} a string
-					// }
+				value = this._format( parsed );
 			}
-		}lement ) {
-		return focnew vin ) {
-					
+		}
+		this.element.val( value );
+		this._refresh();
+	},
 
+	_destroy: function() {
+		this.element
+			.removeClass( "ui-spinner-input" )
+			.prop( "disabled", false )
+			.removeAttr( "autocomplete" )
+			.removeAttr( "role" )
+			.removeAttr( "aria-valuemin" )
+			.removeAttr( "aria-valuemax" )
+			.removeAttr( "aria-valuenow" );
+		this.uiSpinner.replaceWith( this.element );
+	},
 
+	stepUp: modifier(function( steps ) {
+		this._stepUp( steps );
+	}),
+	_stepUp: function( steps ) {
+		if ( this._start() ) {
+			this._spin( (steps || 1) * this.options.step );
+			this._stop();
+		}
+	},
 
-// dexhototdiv>ucic|r	if ( !elemresponA: 188,
-		DethodCall ) {
-			this.each( "_" )http://bugs.jqset .com/tset t/1177ror( "nsetTimeoutextend( constructoent ) {
-htmls.charAt( 0 (functih( e ) {}
-	}
-	_clply( elems );
-};
+	stepDown: modifier(function( steps ) {
+		this._stepDown( steps );
+	}),
+	_stepDown: function( steps ) {
+		if ( this._start() ) {
+			this._spin( (steps || 1) * -this.options.step );
+			this._stop();
+		}
+	},
 
-$.widget =  be ,est(
-		valuee[optip://bugs.i.draggablr( "c,ut inuurn !!$.da_" ) {
-					return $.error( "no such method '" + options + "' for " + name + " widget instance" );
-				}lide.ed ) {
-his, $.orld construe[ option child._top(tructo ],
-			typemethodn remo		"attor plugin
-	$.expr[ ":"od '" + options		}
-				merit from
-	// the new verrn remo		methor( "cauterHeat this to happut =e as a{} )._inch(functiomethodValue !== insalue !== 0 ) ons ].concat	return basergs) ) :
-			options;
+	pageUp: modifier(function( pages ) {
+		this._stepUp( (pages || 1) * this.options.page );
+	}),
 
-		if 			}
-				}
-				elem =._superAp - 20urlble: funructor, 		se,
-			arghis, fullN	return baseundefine.concatth objects
-				ors musteturn false;
-		Lnstance, argction().extectio{options:[];
+	pageDown: modifier(function( pages ) {
+		this._stepDown( (pages || 1) * this.options.page );
+	}),
 
-$.Wthis ) );
-				idget.pro}ptions;
+	value: function( newVal ) {
+		if ( !arguments.length ) {
+			return this._parse( this.element.val() );
+		}
+		modifier( this._value ).call( this, newVal );
+	},
 
-		if ( i this ).cssction() {// WebKit aMULTIPLY: 106,
-		NUMPAfunctp" ) {
-eturn	}
-	return ( /input|select, !isTabIndexNaN );
+	widget: function() {
+		return this.uiSpinner;
 	}
 });
 
- ];
-			exNotNaN :
-			isTnt );
-th( 1 func
-ion( })(nction()tancdValue !== $;
-	};
-functncrmightdo(f0;
+}( jQuery ) );
 
-able.js, addDescribedBy(}
-		}ght" ]* opgarbahis.uuidby = (ts.le;
-				}
-				idget.exten4,
-		PAG")px" );
- /\s+/ment s,
-			this..pushidth( ;
-	 fun
-ght" ] : [ "Toooltip-Height" ], f		this.options,
-			this._tanctrim(widget.exten.joi= th entPre);
-}.widgetNameew vershis.uuid;
-		thisions = $.wns, ets.lethis.hoverable = $();
-			aridget.extend( {},
-			this.options,
-			this._getCreateOptions(),
-			ofix:ui.accorn't extend sd,widget.extendgs =e.js, jquerffect-bounce. this ) {
-		x" )nd({stringslue !=ion(ts.leew version of the			remove: fptions );
-
-		t				}nt !== this ) {
-			$.data( elemment = $
-			this.docu* opt},
-			this.options,
-			this._);
-			this.documendget.extend	element.owturn size;
-		,
-			this._gent );
-
-
-$.
-* Copcompo.t :
-			",ns = ersect-s"1.10.3
-			: jquer:* opt elementurn typeof delayethodCall ) {IE<9, Operaf ( 
-			this.e7reateOp.textstanly usacceptrs.push( c, sce
-	erce					} elem,otype = tit jQustingConstructor, {	thi_getCreatN) &&
-		Escape
-		thierwincereateWiqueryantiat
-	ha();
-					to raw( fn ) {jquery ) {
-	$ach( p,
-	_c
-		this)methodect( ofix: + ":					ame );
-tributorthis.." + hafunctjqueisementbehavior across brownts )(#8661stanitems: "[e can]:dex [+ "Width])
-				a.call( 
-		thi	my: "left top+15
-					at		// sup tabIndlugins[ ii_getCreflipfit om/tlaterfix:funcmespace )
-t :
-			from 		key,$.camrahis ){
-			)/).tescallbacktEve + "]s.widgetFu.ui,		key, <1.8
-if ( !$(length ) {
-			var elem onem, i,mouseaN =: ".ui,tp://bplodeitCre			th $.attr( eis._Df ( !genera;
-				le = s,elay );
- ( i"Bottom	});
-	},
-sabled"e ]..css( " +
-				"Object.d states
-whern 2.tFullNa);
-		r		thisindings snsistent ajects
-		this;
-		});
-		// remove t= {
-				innerWi
-	$.eac+ "Widt ][ namejquery.ui.effect-shake.js, jquery.ui.effect-s
-				}
-				elem = elnner.js, jquery.ui.tabs.js, jquds o[.ui.sli? "te-focus" del_old ch" ][ namesed
-		delete [.js, in ).ui.eN) &&
-		) {
-			$i might sto a changetEvenT */
 (function( $, undefined ) {
 
-var stance. 0,
-	runiqueId = child construs, size ts and states);
-		};
+var tabId = 0,
+	rhash = /#.*$/;
 
-		$.d,= 0 ) {
-	pe to remain un.js, sibl
-		)ring" ) {
-of size !== "			returoperty( key ) && 					}
-				}
-				elem = el/If oosllow ithis.even
-ions );
-		}
+function getNextTabId() {
+	return ++tabId;
+}
 
-		if ( typeof key === "string" ) {
-			// ner" + na				}
-		LEfalslunt.nallba) + "ption( {
-		try  i,
-				proto = this.ent[0}
-	ret{} ).( "."ata = funhis.each(fition === rn new cverable.removes},
-			ons[ knaixed)/key = partefaultElement || this )[: jquery.widgingConBack(tEventPrefix: existingCturn funs[ key uctor: cxtend = fui might i comame )
-	entPrefix : i mightd redefthis.hoverable = $e can tring" ) ;
-		// we can pro) ) || 0;
-				}		}
-				tor
-		//ame, cons.plugin ld child construtype[ prorestor i ] ] = curOptioncurOption = curOption[ parts[ i ] ];
-				}
-				key = parts.pop();
-				if ( value === undefined ) {
-					return curOrOption[ key ];
-				}
-		=== undefined ? nuelse {
-				if ( urn this;
-	},
-	_setOptions: functione === undefined ) {entNam{
-				return orig[ "inner"fn[ name ] = funct	for ( {
-			var ?			var functiol: funcing" ) {
-{
-					sweelay t( "."st amespdushoulmoveClass bubremovfix: ");
-				i			retpoinData athe ops+ nay, valfunctitance &+ "]" )[ parts[ i ] ];
-				}e)/).tesNo= 0 ) {
-	toe, ba a{};
-				/ cleo
-	}, {};
-				 i ][ 1 ].ap.ui,t doesn't unctijquery.uy" )
-			thlement, {
-				remove: fe ) ) {
-					target[ key ] =le.remon[ key ] = value;						"a.removeClass( "ui-state		}
-				,
+function isLocal( anchor ) {
+	return anchor.hash.length > 1 &&
+		decodeURIComponent( anchor.href.replace( rhash, "" ) ) ===
+			decodeURIComponent( location.href.replace( rhash, "" ) );
+}
 
-	enable: function() {uperApply;rn this._setOption( "dis			thi) {
-					.splitk.ui.bind( this.even, cus beisiti] || ,/ clek = fss( type, redu&&e ) {
-		ypjQuery moveClass +
-						"a			thui-stat = parts.pop();
-				if (( valObject.fion( key ) {
-			iget.
-		LElters.visib.jqueryturn this._setOption( " ?
-		!eleme		if ( typkey ] = $.widget.extend( lers = elemhis.optionisabledChe ] );
-				for (  = functarts.length - 1	if ( typ	this.each(funs, fulppressDisablble: function() {
-		retevObjectn false;
-		ch(funccreateP-stat[ed", !id	if ();
-				}i mightl: funfix: ""	 ] ] asheent
-		if ( !handlers, fullN(functionent
-		if ( !handle( value === use tze !== "number" )nested keys, e.nce =  );
+$.widget( "ui.tabs", {
+	version: "1.10.3",
+	delay: 300,
+	options: {
+		active: null,
+		collapsible: false,
+		event: "click",
+		heightStyle: "content",
+		hide: null,
+		show: null,
 
-(functi.mousenested keys, MULTIPLY: 106,this.bindings	};
-};
-
-$( {}, tlugins[eys, effectr" ?
-				this.e/).tedler ) {r ( var i = 0, ectionTr deley, value ) {
-		r de		key,
-	e.prototype[ pr
-			function haply( this, args );
-!isTabIndexN_.ui, 1; i++ ) dlers, 
-			function hfunction()
-			fun fals		function .idges = this[0]ex++ ) {
-		fcharAt( 0 ) === taregn] ==asyncptions.dislue,removeCt(thi "."dtotype =rHeight: $ {
-		return this._setOption( " ?
-		!elemes
-						$.widgetis._E maytion(antly serv'll machedptions.dis ( ions 				insttEven.lenelayctor: idged", s as noopconstther}
-
-			// copy tru met
-	veatch( e ) nts )extend( constructofunction()nts().errospecial "-disa ( idgetFultNamn it doesn'ui-sta//ocumensDisablly. To im			_e perform"ovet( ".] ] || {ction|| handlnnot c( zIreutate- );
-		rng
-				}
-n't rd. Tames;
-		,
-		inly u|| handlrelyy the opng
-		bepositiex )  aurn  guidhandlerinish.eq(0).toggldget()
-noopwe		dindlet()
-d",  for simple i.ui.e.eDat740lector type, reduce( thi( {}, thi the disable the and use th class as method for disablalue = instanceject( o;
-			lide.	if ( !s.3 - 2013-05- as method for disabling ind	// $.ui.plugin[ key ] );
-		}
-
-		retoin( this.eventName	};
-};
-
-$.sabledh(functi);
-	layedd
-		/n( va ( arguction han,
-	defaultE}pe ) {
-		protota.call( to );
-		});
-!(eventName || "directly on the ne keys, ntNa beon.js, d mue = 		$.imes.._crable.removeC-disabled"ndlerProst( "." juston.js, jqupasslement			ebail);
-	hasClassd.js, jquerys = thisl partor to cle = xed" ) {
-					//},
-
-	_hend( {}, basble = $( {}, thismethodVeventNamespac typeof handler ===icrea10
-			abind calunctindle parts[ i ]atch = even	this.hn")) ||elementnce
-heck {
-	ver
-	})void push(flow"i ] ] = del || cument) :// (wey.ui.towaled", caoltian-disabled", vespacel[ scrolame )
-	lect//e: funWumentparts[ turn onlyer.gujs, legate( 
-	})ndexNIEnctiexll )stance ex ) {
-	is,"oic|r it
-	 curOption. For {
-			able: functornt )mpty = funct( "ui-stssed on] || {};
-				 )[ 0 ]; up (happens
+		// callbacks
+		activate: null,
+		beforeActivate: null,
+		beforeLoad: null,
+		load: null
 	},
 
-		hanrn neunctionlicemoveClass)gth ) {
-		ce = tption[ key ] === undefint, handlers ) {
-		var delegateElement,
-			instaance = tlse {
-				if ( value === erflow-y")+$.ce = tre inheriting  can pr "inner" + nametTimeout( handl,
-			caoxy, delay ||  + this.uuid;
-		r disabltion( el
-		img = $( 	$.fn.aion( element ) {
-		this.hoverable = this.hoverable.addnction( name
+	_create: function() {
+		var that = this,
+			options = this.options;
 
-	_delape, reduce( thi
+		this.running = false;
 
-	_delay: fun.ofe disablxtend = fu
-		eventption:( existin( typeof handler === "str
-		eventis.widgetE
-
-	_delay: funcnction( $	});
-		// remove tllNamrs ) {
-		rs )/^moveC/.t]" )[tName, hand) {
-		retugin ) + "px" )docu=== l, th.removeC new: target of size !==e new turn  o in toNaN = is== 0 ) {
--rel] || {
-
-	_delanction(is.widgetEventPrefied
-					// otheeed to reset the ,
-	defaulment[ 0falloed ui-st, delay ) {
-		function han function() },
-
-	_h = $[ naarget;
-};
-modifie ).undeed
-		delete eototypis.bindf ( ty llNamocusinstates
-	}
-		"));llban with aents );Data44). As sovent;el )lse le.removeClas = (fun,ta.call( t{ show: "fadtFulg" }, mosinitcmatch(ndleedChent
-		event.target = tvalueName = namespacellba.nts );nstructoventName )ut( hand callback ) {
-s {
-	tervalextend( constructo original event may = (functi ) {
-			haneset the target on the Case;
-			eleuncti=== "stri eventName )gateElement = tancfx.i== "strcss( "zIndex", zIe: "widgeton( "diespace;{) === faleme
-				$Query <1 + name ].callkeyups );
-			}
-
-			return this. type, red! jQueryof bo$./*! jQuery ESCAPEbind( evenfuncfake element;
-			ele
-	$.W;
-			ele};
-		}
-		abledCheck = false
-						(
-			elemeisngth - 1};
-		}
-		, shuffle and use t		.re	rn new();
-	},
-	_getCreatex", zInd newThis.optio| defaucallbacks
-		cr.visiblnt[ 0 ||) {
-		var delegateElement,
-			instafuncti.moveCle
-			stin "."y rement
-		evet[ effectName ] ) {
-			eledgetFulhod ]( options )plodee = if ( effectName !s over to tpaceandlers, functtor ) {
-		runbind(] );
-		}
-
-		return this;
-	},
-	_setOption: function( key, value ) {
-	i,
-				proto =ptions[ key ] = , set[ Timeout( handlerProxy, delay |argin ) {
-		posit+ "]"" }, functiote( selef ( kame,is.el		haneyword lo metthe new "ui-sta	}, n-hovte loopf ( caltip.jsment[ 0 become13 jQuery Fs, j "."nt
-		event.tamouseHaeturn ( typeof handler === seent{ shons === " cleanentNa( data ) ) === fal		.un	method :
-					if ( typeof opt;
+		this.element
+			.addClass( "ui-tabs ui-widget ui-widget-content ui-corner-all" )
+			.toggleClass( "ui-tabs-collapsible", options.collapsible )
+			// Prevent users from focusing disabled tabs via click
+			.delegate( ".ui-tabs-nav > li", "mousedown" + this.eventNamespace, function( event ) {
+				if ( $( this ).is( ".ui-state-disabled" ) ) {
+					event.preventDefault();
+				}
+			})
+			// support: IE <9
+			// Preventing the default action in mousedown doesn't prevent IE
+			// from focusing the element, so if the anchor gets focused, blur.
+			// We don't have to worry about focusing the previously focused
+			// element since clicking on a non-focusable element should focus
+			// the body anyway.
+			.delegate( ".ui-tabs-anchor", "focus" + this.eventNamespace, function() {
+				if ( $( this ).closest( "li" ).is( ".ui-state-disabled" ) ) {
+					this.blur();
+				}
 			});
+
+		this._processTabs();
+		options.active = this._initialActive();
+
+		// Take disabling tabs via class attribute from HTML
+		// into account and update option properly.
+		if ( $.isArray( options.disabled ) ) {
+			options.disabled = $.unique( options.disabled.concat(
+				$.map( this.tabs.filter( ".ui-state-disabled" ), function( li ) {
+					return that.tabs.index( li );
+				})
+			) ).sort();
+		}
+
+		// check for length avoids error when initializing empty list
+		if ( this.options.active !== false && this.anchors.length ) {
+			this.active = this._findActive( options.active );
+		} else {
+			this.active = $();
+		}
+
+		this._refresh();
+
+		if ( this.active.length ) {
+			this.load( options.active );
+		}
 	},
 
- elem
+	_initialActive: function() {
+		var active = this.options.active,
+			collapsible = this.options.collapsible,
+			locationHash = location.hash.substring( 1 );
+
+		if ( active === null ) {
+			// check the fragment identifier in the URL
+			if ( locationHash ) {
+				this.tabs.each(function( i, tab ) {
+					if ( $( tab ).attr( "aria-controls" ) === locationHash ) {
+						active = i;
+						return false;
+					}
+				});
+			}
+
+			// check for a tab marked active via a class
+			if ( active === null ) {
+				active = this.tabs.index( this.tabs.filter( ".ui-tabs-active" ) );
+			}
+
+			// no active tab, set to false
+			if ( active === null || active === -1 ) {
+				active = this.tabs.length ? 0 : false;
+			}
+		}
+
+		// handle numbers: negative, out of range
+		if ( active !== false ) {
+			active = this.tabs.index( this.tabs.eq( active ) );
+			if ( active === -1 ) {
+				active = collapsible ? false : 0;
+			}
+		}
+
+		// don't allow collapsible: false and active: false
+		if ( !collapsible && active === false && this.anchors.length ) {
+			active = 0;
+		}
+
+		return active;
+	},
+
+	_getCreateEventData: function() {
+		return {
+			tab: this.active,
+			panel: !this.active.length ? $() : this._getPanelForTab( this.active )
+		};
+	},
+
+	_tabKeydown: function( event ) {
+		/*jshint maxcomplexity:15*/
+		var focusedTab = $( this.document[0].activeElement ).closest( "li" ),
+			selectedIndex = this.tabs.index( focusedTab ),
+			goingForward = true;
+
+		if ( this._handlePageNav( event ) ) {
+			return;
+		}
+
+		switch ( event.keyCode ) {
+			case $.ui.keyCode.RIGHT:
+			case $.ui.keyCode.DOWN:
+				selectedIndex++;
+				break;
+			case $.ui.keyCode.UP:
+			case $.ui.keyCode.LEFT:
+				goingForward = false;
+				selectedIndex--;
+				break;
+			case $.ui.keyCode.END:
+				selectedIndex = this.anchors.length - 1;
+				break;
+			case $.ui.keyCode.HOME:
+				selectedIndex = 0;
+				break;
+			case $.ui.keyCode.SPACE:
+				// Activate only, no collapsing
+				event.preventDefault();
+				clearTimeout( this.activating );
+				this._activate( selectedIndex );
+				return;
+			case $.ui.keyCode.ENTER:
+				// Toggle (cancel delayed activation, allow collapsing)
+				event.preventDefault();
+				clearTimeout( this.activating );
+				// Determine if we should collapse or activate
+				this._activate( selectedIndex === this.options.active ? false : selectedIndex );
+				return;
+			default:
+				return;
+		}
+
+		// Focus the appropriate tab, based on which key was pressed
+		event.preventDefault();
+		clearTimeout( this.activating );
+		selectedIndex = this._focusNextTab( selectedIndex, goingForward );
+
+		// Navigating with control key will prevent automatic activation
+		if ( !event.ctrlKey ) {
+			// Update aria-selected immediately so that AT think the tab is already selected.
+			// Otherwise AT may confuse the user by stating that they need to activate the tab,
+			// but the tab will already be activated by the time the announcement finishes.
+			focusedTab.attr( "aria-selected", "false" );
+			this.tabs.eq( selectedIndex ).attr( "aria-selected", "true" );
+
+			this.activating = this._delay(function() {
+				this.option( "active", selectedIndex );
+			}, this.delay );
+		}
+	},
+
+	_panelKeydown: function( event ) {
+		if ( this._handlePageNav( event ) ) {
+			return;
+		}
+
+		// Ctrl+up moves focus to the current tab
+		if ( event.ctrlKey && event.keyCode === $.ui.keyCode.UP ) {
+			event.preventDefault();
+			this.active.focus();
+		}
+	},
+
+	// Alt+page up/down moves focus to the previous/next tab (and activates)
+	_handlePageNav: function( event ) {
+		if ( event.altKey && event.keyCode === $.ui.keyCode.PAGE_UP ) {
+			this._activate( this._focusNextTab( this.options.active - 1, false ) );
+			return true;
+		}
+		if ( event.altKey && event.keyCode === $.ui.keyCode.PAGE_DOWN ) {
+			this._activate( this._focusNextTab( this.options.active + 1, true ) );
+			return true;
+		}
+	},
+
+	_findNextTab: function( index, goingForward ) {
+		var lastTabIndex = this.tabs.length - 1;
+
+		function constrain() {
+			if ( index > lastTabIndex ) {
+				index = 0;
+			}
+			if ( index < 0 ) {
+				index = lastTabIndex;
+			}
+			return index;
+		}
+
+		while ( $.inArray( constrain(), this.options.disabled ) !== -1 ) {
+			index = goingForward ? index + 1 : index - 1;
+		}
+
+		return index;
+	},
+
+	_focusNextTab: function( index, goingForward ) {
+		index = this._findNextTab( index, goingForward );
+		this.tabs.eq( index ).focus();
+		return index;
+	},
+
+	_setOption: function( key, value ) {
+		if ( key === "active" ) {
+			// _activate() will handle invalid values and update this.options
+			this._activate( value );
+			return;
+		}
+
+		if ( key === "disabled" ) {
+			// don't use the widget factory's disabled handling
+			this._setupDisabled( value );
+			return;
+		}
+
+		this._super( key, value);
+
+		if ( key === "collapsible" ) {
+			this.element.toggleClass( "ui-tabs-collapsible", value );
+			// Setting collapsible: false while collapsed; open first panel
+			if ( !value && this.options.active === false ) {
+				this._activate( 0 );
+			}
+		}
+
+		if ( key === "event" ) {
+			this._setupEvents( value );
+		}
+
+		if ( key === "heightStyle" ) {
+			this._setupHeightStyle( value );
+		}
+	},
+
+	_tabId: function( tab ) {
+		return tab.attr( "aria-controls" ) || "ui-tabs-" + getNextTabId();
+	},
+
+	_sanitizeSelector: function( hash ) {
+		return hash ? hash.replace( /[!"$%&'()*+,.\/:;<=>?@\[\]\^`{|}~]/g, "\\$&" ) : "";
+	},
+
+	refresh: function() {
+		var options = this.options,
+			lis = this.tablist.children( ":has(a[href])" );
+
+		// get disabled tabs from class attribute from HTML
+		// this will get converted to a boolean if needed in _refresh()
+		options.disabled = $.map( lis.filter( ".ui-state-disabled" ), function( tab ) {
+			return lis.index( tab );
+		});
+
+		this._processTabs();
+
+		// was collapsed or no tabs
+		if ( options.active === false || !this.anchors.length ) {
+			options.active = false;
+			this.active = $();
+		// was active, but active tab is gone
+		} else if ( this.active.length && !$.contains( this.tablist[ 0 ], this.active[ 0 ] ) ) {
+			// all remaining tabs are disabled
+			if ( this.tabs.length === options.disabled.length ) {
+				options.active = false;
+				this.active = $();
+			// activate previous tab
+			} else {
+				this._activate( this._findNextTab( Math.max( 0, options.active - 1 ), false ) );
+			}
+		// was active, active tab still exists
+		} else {
+			// make sure active index is correct
+			options.active = this.tabs.index( this.active );
+		}
+
+		this._refresh();
+	},
+
+	_refresh: function() {
+		this._setupDisabled( this.options.disabled );
+		this._setupEvents( this.options.event );
+		this._setupHeightStyle( this.options.heightStyle );
+
+		this.tabs.not( this.active ).attr({
+			"aria-selected": "false",
+			tabIndex: -1
+		});
+		this.panels.not( this._getPanelForTab( this.active ) )
+			.hide()
+			.attr({
+				"aria-expanded": "false",
+				"aria-hidden": "true"
+			});
+
+		// Make sure one tab is in the tab order
+		if ( !this.active.length ) {
+			this.tabs.eq( 0 ).attr( "tabIndex", 0 );
+		} else {
+			this.active
+				.addClass( "ui-tabs-active ui-state-active" )
+				.attr({
+					"aria-selected": "true",
+					tabIndex: 0
+				});
+			this._getPanelForTab( this.active )
+				.show()
+				.attr({
+					"aria-expanded": "true",
+					"aria-hidden": "false"
+				});
+		}
+	},
+
+	_processTabs: function() {
+		var that = this;
+
+		this.tablist = this._getList()
+			.addClass( "ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all" )
+			.attr( "role", "tablist" );
+
+		this.tabs = this.tablist.find( "> li:has(a[href])" )
+			.addClass( "ui-state-default ui-corner-top" )
+			.attr({
+				role: "tab",
+				tabIndex: -1
+			});
+
+		this.anchors = this.tabs.map(function() {
+				return $( "a", this )[ 0 ];
+			})
+			.addClass( "ui-tabs-anchor" )
+			.attr({
+				role: "presentation",
+				tabIndex: -1
+			});
+
+		this.panels = $();
+
+		this.anchors.each(function( i, anchor ) {
+			var selector, panel, panelId,
+				anchorId = $( anchor ).uniqueId().attr( "id" ),
+				tab = $( anchor ).closest( "li" ),
+				originalAriaControls = tab.attr( "aria-controls" );
+
+			// inline tab
+			if ( isLocal( anchor ) ) {
+				selector = anchor.hash;
+				panel = that.element.find( that._sanitizeSelector( selector ) );
+			// remote tab
+			} else {
+				panelId = that._tabId( tab );
+				selector = "#" + panelId;
+				panel = that.element.find( selector );
+				if ( !panel.length ) {
+					panel = that._createPanel( panelId );
+					panel.insertAfter( that.panels[ i - 1 ] || that.tablist );
+				}
+				panel.attr( "aria-live", "polite" );
+			}
+
+			if ( panel.length) {
+				that.panels = that.panels.add( panel );
+			}
+			if ( originalAriaControls ) {
+				tab.data( "ui-tabs-aria-controls", originalAriaControls );
+			}
+			tab.attr({
+				"aria-controls": selector.substring( 1 ),
+				"aria-labelledby": anchorId
+			});
+			panel.attr( "aria-labelledby", anchorId );
+		});
+
+		this.panels
+			.addClass( "ui-tabs-panel ui-widget-content ui-corner-bottom" )
+			.attr( "role", "tabpanel" );
+	},
+
+	// allow overriding how to find the list for rare usage scenarios (#7715)
+	_getList: function() {
+		return this.element.find( "ol,ul" ).eq( 0 );
+	},
+
+	_createPanel: function( id ) {
+		return $( "<div>" )
+			.attr( "id", id )
+			.addClass( "ui-tabs-panel ui-widget-content ui-corner-bottom" )
+			.data( "ui-tabs-destroy", true );
+	},
+
+	_setupDisabled: function( disabled ) {
+		if ( $.isArray( disabled ) ) {
+			if ( !disabled.length ) {
+				disabled = false;
+			} else if ( disabled.length === this.anchors.length ) {
+				disabled = true;
+			}
+		}
+
+		// disable tabs
+		for ( var i = 0, li; ( li = this.tabs[ i ] ); i++ ) {
+			if ( disabled === true || $.inArray( i, disabled ) !== -1 ) {
+				$( li )
+					.addClass( "ui-state-disabled" )
+					.attr( "aria-disabled", "true" );
+			} else {
+				$( li )
+					.removeClass( "ui-state-disabled" )
+					.removeAttr( "aria-disabled" );
+			}
+		}
+
+		this.options.disabled = disabled;
+	},
+
+	_setupEvents: function( event ) {
+		var events = {
+			click: function( event ) {
+				event.preventDefault();
+			}
+		};
+		if ( event ) {
+			$.each( event.split(" "), function( index, eventName ) {
+				events[ eventName ] = "_eventHandler";
+			});
+		}
+
+		this._off( this.anchors.add( this.tabs ).add( this.panels ) );
+		this._on( this.anchors, events );
+		this._on( this.tabs, { keydown: "_tabKeydown" } );
+		this._on( this.panels, { keydown: "_panelKeydown" } );
+
+		this._focusable( this.tabs );
+		this._hoverable( this.tabs );
+	},
+
+	_setupHeightStyle: function( heightStyle ) {
+		var maxHeight,
+			parent = this.element.parent();
+
+		if ( heightStyle === "fill" ) {
+			maxHeight = parent.height();
+			maxHeight -= this.element.outerHeight() - this.element.height();
+
+			this.element.siblings( ":visible" ).each(function() {
+				var elem = $( this ),
+					position = elem.css( "position" );
+
+				if ( position === "absolute" || position === "fixed" ) {
+					return;
+				}
+				maxHeight -= elem.outerHeight( true );
+			});
+
+			this.element.children().not( this.panels ).each(function() {
+				maxHeight -= $( this ).outerHeight( true );
+			});
+
+			this.panels.each(function() {
+				$( this ).height( Math.max( 0, maxHeight -
+					$( this ).innerHeight() + $( this ).height() ) );
+			})
+			.css( "overflow", "auto" );
+		} else if ( heightStyle === "auto" ) {
+			maxHeight = 0;
+			this.panels.each(function() {
+				maxHeight = Math.max( maxHeight, $( this ).height( "" ).height() );
+			}).height( maxHeight );
+		}
+	},
+
+	_eventHandler: function( event ) {
+		var options = this.options,
+			active = this.active,
+			anchor = $( event.currentTarget ),
+			tab = anchor.closest( "li" ),
+			clickedIsActive = tab[ 0 ] === active[ 0 ],
+			collapsing = clickedIsActive && options.collapsible,
+			toShow = collapsing ? $() : this._getPanelForTab( tab ),
+			toHide = !active.length ? $() : this._getPanelForTab( active ),
+			eventData = {
+				oldTab: active,
+				oldPanel: toHide,
+				newTab: collapsing ? $() : tab,
+				newPanel: toShow
+			};
+
+		event.preventDefault();
+
+		if ( tab.hasClass( "ui-state-disabled" ) ||
+				// tab is already loading
+				tab.hasClass( "ui-tabs-loading" ) ||
+				// can't switch durning an animation
+				this.running ||
+				// click on active header, but not collapsible
+				( clickedIsActive && !options.collapsible ) ||
+				// allow canceling activation
+				( this._trigger( "beforeActivate", event, eventData ) === false ) ) {
+			return;
+		}
+
+		options.active = collapsing ? false : this.tabs.index( tab );
+
+		this.active = clickedIsActive ? $() : tab;
+		if ( this.xhr ) {
+			this.xhr.abort();
+		}
+
+		if ( !toHide.length && !toShow.length ) {
+			$.error( "jQuery UI Tabs: Mismatching fragment identifier." );
+		}
+
+		if ( toShow.length ) {
+			this.load( this.tabs.index( tab ), event );
+		}
+		this._toggle( event, eventData );
+	},
+
+	// handles show/hide for selecting tabs
+	_toggle: function( event, eventData ) {
+		var that = this,
+			toShow = eventData.newPanel,
+			toHide = eventData.oldPanel;
+
+		this.running = true;
+
+		function complete() {
+			that.running = false;
+			that._trigger( "activate", event, eventData );
+		}
+
+		function show() {
+			eventData.newTab.closest( "li" ).addClass( "ui-tabs-active ui-state-active" );
+
+			if ( toShow.length && that.options.show ) {
+				that._show( toShow, that.options.show, complete );
+			} else {
+				toShow.show();
+				complete();
+			}
+		}
+
+		// start out by hiding, then showing, then completing
+		if ( toHide.length && this.options.hide ) {
+			this._hide( toHide, this.options.hide, function() {
+				eventData.oldTab.closest( "li" ).removeClass( "ui-tabs-active ui-state-active" );
+				show();
+			});
+		} else {
+			eventData.oldTab.closest( "li" ).removeClass( "ui-tabs-active ui-state-active" );
+			toHide.hide();
+			show();
+		}
+
+		toHide.attr({
+			"aria-expanded": "false",
+			"aria-hidden": "true"
+		});
+		eventData.oldTab.attr( "aria-selected", "false" );
+		// If we're switching tabs, remove the old tab from the tab order.
+		// If we're opening from collapsed state, remove the previous tab from the tab order.
+		// If we're collapsing, then keep the collapsing tab in the tab order.
+		if ( toShow.length && toHide.length ) {
+			eventData.oldTab.attr( "tabIndex", -1 );
+		} else if ( toShow.length ) {
+			this.tabs.filter(function() {
+				return $( this ).attr( "tabIndex" ) === 0;
+			})
+			.attr( "tabIndex", -1 );
+		}
+
+		toShow.attr({
+			"aria-expanded": "true",
+			"aria-hidden": "false"
+		});
+		eventData.newTab.attr({
+			"aria-selected": "true",
+			tabIndex: 0
+		});
+	},
+
+	_activate: function( index ) {
+		var anchor,
+			active = this._findActive( index );
+
+		// trying to activate the already active panel
+		if ( active[ 0 ] === this.active[ 0 ] ) {
+			return;
+		}
+
+		// trying to collapse, simulate a click on the current active header
+		if ( !active.length ) {
+			active = this.active;
+		}
+
+		anchor = active.find( ".ui-tabs-anchor" )[ 0 ];
+		this._eventHandler({
+			target: anchor,
+			currentTarget: anchor,
+			preventDefault: $.noop
+		});
+	},
+
+	_findActive: function( index ) {
+		return index === false ? $() : this.tabs.eq( index );
+	},
+
+	_getIndex: function( index ) {
+		// meta-function to give users option to provide a href string instead of a numerical index.
+		if ( typeof index === "string" ) {
+			index = this.anchors.index( this.anchors.filter( "[href$='" + index + "']" ) );
+		}
+
+		return index;
+	},
+
+	_destroy: function() {
+		if ( this.xhr ) {
+			this.xhr.abort();
+		}
+
+		this.element.removeClass( "ui-tabs ui-widget ui-widget-content ui-corner-all ui-tabs-collapsible" );
+
+		this.tablist
+			.removeClass( "ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all" )
+			.removeAttr( "role" );
+
+		this.anchors
+			.removeClass( "ui-tabs-anchor" )
+			.removeAttr( "role" )
+			.removeAttr( "tabIndex" )
+			.removeUniqueId();
+
+		this.tabs.add( this.panels ).each(function() {
+			if ( $.data( this, "ui-tabs-destroy" ) ) {
+				$( this ).remove();
+			} else {
+				$( this )
+					.removeClass( "ui-state-default ui-state-active ui-state-disabled " +
+						"ui-corner-top ui-corner-bottom ui-widget-content ui-tabs-active ui-tabs-panel" )
+					.removeAttr( "tabIndex" )
+					.removeAttr( "aria-live" )
+					.removeAttr( "aria-busy" )
+					.removeAttr( "aria-selected" )
+					.removeAttr( "aria-labelledby" )
+					.removeAttr( "aria-hidden" )
+					.removeAttr( "aria-expanded" )
+					.removeAttr( "role" );
+			}
+		});
+
+		this.tabs.each(function() {
+			var li = $( this ),
+				prev = li.data( "ui-tabs-aria-controls" );
+			if ( prev ) {
+				li
+					.attr( "aria-controls", prev )
+					.removeData( "ui-tabs-aria-controls" );
+			} else {
+				li.removeAttr( "aria-controls" );
+			}
+		});
+
+		this.panels.show();
+
+		if ( this.options.heightStyle !== "content" ) {
+			this.panels.css( "height", "" );
+		}
+	},
+
+	enable: function( index ) {
+		var disabled = this.options.disabled;
+		if ( disabled === false ) {
+			return;
+		}
+
+		if ( index === undefined ) {
+			disabled = false;
+		} else {
+			index = this._getIndex( index );
+			if ( $.isArray( disabled ) ) {
+				disabled = $.map( disabled, function( num ) {
+					return num !== index ? num : null;
+				});
+			} else {
+				disabled = $.map( this.tabs, function( li, num ) {
+					return num !== index ? num : null;
+				});
+			}
+		}
+		this._setupDisabled( disabled );
+	},
+
+	disable: function( index ) {
+		var disabled = this.options.disabled;
+		if ( disabled === true ) {
+			return;
+		}
+
+		if ( index === undefined ) {
+			disabled = true;
+		} else {
+			index = this._getIndex( index );
+			if ( $.inArray( index, disabled ) !== -1 ) {
+				return;
+			}
+			if ( $.isArray( disabled ) ) {
+				disabled = $.merge( [ index ], disabled ).sort();
+			} else {
+				disabled = [ index ];
+			}
+		}
+		this._setupDisabled( disabled );
+	},
+
+	load: function( index, event ) {
+		index = this._getIndex( index );
+		var that = this,
+			tab = this.tabs.eq( index ),
+			anchor = tab.find( ".ui-tabs-anchor" ),
+			panel = this._getPanelForTab( tab ),
+			eventData = {
+				tab: tab,
+				panel: panel
+			};
+
+		// not remote
+		if ( isLocal( anchor[ 0 ] ) ) {
+			return;
+		}
+
+		this.xhr = $.ajax( this._ajaxSettings( anchor, event, eventData ) );
+
+		// support: jQuery <1.8
+		// jQuery <1.8 returns false if the request is canceled in beforeSend,
+		// but as of 1.8, $.ajax() always returns a jqXHR object.
+		if ( this.xhr && this.xhr.statusText !== "canceled" ) {
+			tab.addClass( "ui-tabs-loading" );
+			panel.attr( "aria-busy", "true" );
+
+			this.xhr
+				.success(function( response ) {
+					// support: jQuery <1.8
+					// http://bugs.jquery.com/ticket/11778
+					setTimeout(function() {
+						panel.html( response );
+						that._trigger( "load", event, eventData );
+					}, 1 );
+				})
+				.complete(function( jqXHR, status ) {
+					// support: jQuery <1.8
+					// http://bugs.jquery.com/ticket/11778
+					setTimeout(function() {
+						if ( status === "abort" ) {
+							that.panels.stop( false, true );
+						}
+
+						tab.removeClass( "ui-tabs-loading" );
+						panel.removeAttr( "aria-busy" );
+
+						if ( jqXHR === that.xhr ) {
+							delete that.xhr;
+						}
+					}, 1 );
+				});
+		}
+	},
+
+	_ajaxSettings: function( anchor, event, eventData ) {
+		var that = this;
+		return {
+			url: anchor.attr( "href" ),
+			beforeSend: function( jqXHR, settings ) {
+				return that._trigger( "beforeLoad", event,
+					$.extend( { jqXHR : jqXHR, ajaxSettings: settings }, eventData ) );
+			}
+		};
+	},
+
+	_getPanelForTab: function( tab ) {
+		var id = $( tab ).attr( "aria-controls" );
+		return this.element.find( this._sanitizeSelector( "#" + id ) );
+	}
+});
+
+})( jQuery );
+
+(function( $ ) {
+
+var increments = 0;
+
+function addDescribedBy( elem, id ) {
+	var describedby = (elem.attr( "aria-describedby" ) || "").split( /\s+/ );
+	describedby.push( id );
+	elem
+		.data( "ui-tooltip-id", id )
+		.attr( "aria-describedby", $.trim( describedby.join( " " ) ) );
+}
+
+function removeDescribedBy( elem ) {
+	var id = elem.data( "ui-tooltip-id" ),
+		describedby = (elem.attr( "aria-describedby" ) || "").split( /\s+/ ),
+		index = $.inArray( id, describedby );
+	if ( index !== -1 ) {
+		describedby.splice( index, 1 );
+	}
+
+	elem.removeData( "ui-tooltip-id" );
+	describedby = $.trim( describedby.join( " " ) );
+	if ( describedby ) {
+		elem.attr( "aria-describedby", describedby );
+	} else {
+		elem.removeAttr( "aria-describedby" );
+	}
+}
+
+$.widget( "ui.tooltip", {
+	version: "1.10.3",
+	options: {
+		content: function() {
+			// support: IE<9, Opera in jQuery <1.7
+			// .text() can't accept undefined, so coerce to a string
+			var title = $( this ).attr( "title" ) || "";
+			// Escape title, since we're going from an attribute to raw HTML
+			return $( "<a>" ).text( title ).html();
+		},
+		hide: true,
+		// Disabled elements have inconsistent behavior across browsers (#8661)
+		items: "[title]:not([disabled])",
+		position: {
+			my: "left top+15",
+			at: "left bottom",
+			collision: "flipfit flip"
+		},
+		show: true,
+		tooltipClass: null,
+		track: false,
+
+		// callbacks
+		close: null,
+		open: null
+	},
+
+	_create: function() {
+		this._on({
+			mouseover: "open",
+			focusin: "open"
+		});
+
+		// IDs of generated tooltips, needed for destroy
+		this.tooltips = {};
+		// IDs of parent tooltips where we removed the title attribute
+		this.parents = {};
+
+		if ( this.options.disabled ) {
+			this._disable();
+		}
+	},
+
+	_setOption: function( key, value ) {
+		var that = this;
+
+		if ( key === "disabled" ) {
+			this[ value ? "_disable" : "_enable" ]();
+			this.options[ key ] = value;
+			// disable element style changes
+			return;
+		}
+
+		this._super( key, value );
+
+		if ( key === "content" ) {
+			$.each( this.tooltips, function( id, element ) {
+				that._updateContent( element );
+			});
+		}
+	},
+
+	_disable: function() {
+		var that = this;
+
+		// close open tooltips
+		$.each( this.tooltips, function( id, element ) {
+			var event = $.Event( "blur" );
+			event.target = event.currentTarget = element[0];
+			that.close( event, true );
+		});
+
+		// remove title attributes to prevent native tooltips
+		this.element.find( this.options.items ).addBack().each(function() {
+			var element = $( this );
+			if ( element.is( "[title]" ) ) {
+				element
+					.data( "ui-tooltip-title", element.attr( "title" ) )
+					.attr( "title", "" );
+			}
+		});
+	},
+
+	_enable: function() {
+		// restore title attributes
+		this.element.find( this.options.items ).addBack().each(function() {
+			var element = $( this );
+			if ( element.data( "ui-tooltip-title" ) ) {
+				element.attr( "title", element.data( "ui-tooltip-title" ) );
+			}
+		});
+	},
+
+	open: function( event ) {
+		var that = this,
+			target = $( event ? event.target : this.element )
+				// we need closest here due to mouseover bubbling,
+				// but always pointing at the same event target
+				.closest( this.options.items );
+
+		// No element to show a tooltip for or the tooltip is already open
+		if ( !target.length || target.data( "ui-tooltip-id" ) ) {
+			return;
+		}
+
+		if ( target.attr( "title" ) ) {
+			target.data( "ui-tooltip-title", target.attr( "title" ) );
+		}
+
+		target.data( "ui-tooltip-open", true );
+
+		// kill parent tooltips, custom or native, for hover
+		if ( event && event.type === "mouseover" ) {
+			target.parents().each(function() {
+				var parent = $( this ),
+					blurEvent;
+				if ( parent.data( "ui-tooltip-open" ) ) {
+					blurEvent = $.Event( "blur" );
+					blurEvent.target = blurEvent.currentTarget = this;
+					that.close( blurEvent, true );
+				}
+				if ( parent.attr( "title" ) ) {
+					parent.uniqueId();
+					that.parents[ this.id ] = {
+						element: this,
+						title: parent.attr( "title" )
+					};
+					parent.attr( "title", "" );
+				}
+			});
+		}
+
+		this._updateContent( target, event );
+	},
+
+	_updateContent: function( target, event ) {
+		var content,
+			contentOption = this.options.content,
+			that = this,
+			eventType = event ? event.type : null;
+
+		if ( typeof contentOption === "string" ) {
+			return this._open( event, target, contentOption );
+		}
+
+		content = contentOption.call( target[0], function( response ) {
+			// ignore async response if tooltip was closed already
+			if ( !target.data( "ui-tooltip-open" ) ) {
+				return;
+			}
+			// IE may instantly serve a cached response for ajax requests
+			// delay this call to _open so the other call to _open runs first
+			that._delay(function() {
+				// jQuery creates a special event for focusin when it doesn't
+				// exist natively. To improve performance, the native event
+				// object is reused and the type is changed. Therefore, we can't
+				// rely on the type being correct after the event finished
+				// bubbling, so we set it back to the previous value. (#8740)
+				if ( event ) {
+					event.type = eventType;
+				}
+				this._open( event, target, response );
+			});
+		});
+		if ( content ) {
+			this._open( event, target, content );
+		}
+	},
+
+	_open: function( event, target, content ) {
+		var tooltip, events, delayedShow,
+			positionOption = $.extend( {}, this.options.position );
+
+		if ( !content ) {
+			return;
+		}
+
+		// Content can be updated multiple times. If the tooltip already
+		// exists, then just update the content and bail.
+		tooltip = this._find( target );
+		if ( tooltip.length ) {
+			tooltip.find( ".ui-tooltip-content" ).html( content );
+			return;
+		}
+
+		// if we have a title, clear it to prevent the native tooltip
+		// we have to check first to avoid defining a title if none exists
+		// (we don't want to cause an element to start matching [title])
+		//
+		// We use removeAttr only for key events, to allow IE to export the correct
+		// accessible attributes. For mouse events, set to empty string to avoid
+		// native tooltip showing up (happens only when removing inside mouseover).
+		if ( target.is( "[title]" ) ) {
+			if ( event && event.type === "mouseover" ) {
+				target.attr( "title", "" );
+			} else {
+				target.removeAttr( "title" );
+			}
+		}
+
+		tooltip = this._tooltip( target );
+		addDescribedBy( target, tooltip.attr( "id" ) );
+		tooltip.find( ".ui-tooltip-content" ).html( content );
+
+		function position( event ) {
+			positionOption.of = event;
+			if ( tooltip.is( ":hidden" ) ) {
+				return;
+			}
+			tooltip.position( positionOption );
+		}
+		if ( this.options.track && event && /^mouse/.test( event.type ) ) {
+			this._on( this.document, {
+				mousemove: position
+			});
+			// trigger once to override element-relative positioning
+			position( event );
+		} else {
+			tooltip.position( $.extend({
+				of: target
+			}, this.options.position ) );
+		}
+
+		tooltip.hide();
+
+		this._show( tooltip, this.options.show );
+		// Handle tracking tooltips that are shown with a delay (#8644). As soon
+		// as the tooltip is visible, position the tooltip using the most recent
+		// event.
+		if ( this.options.show && this.options.show.delay ) {
+			delayedShow = this.delayedShow = setInterval(function() {
+				if ( tooltip.is( ":visible" ) ) {
+					position( positionOption.of );
+					clearInterval( delayedShow );
+				}
+			}, $.fx.interval );
+		}
+
+		this._trigger( "open", event, { tooltip: tooltip } );
+
+		events = {
+			keyup: function( event ) {
+				if ( event.keyCode === $.ui.keyCode.ESCAPE ) {
+					var fakeEvent = $.Event(event);
+					fakeEvent.currentTarget = target[0];
+					this.close( fakeEvent, true );
+				}
 			},
-	urrenfalsatch;
-		 (sepassm= 1;
-	n copy ()this.;
-	},
-
-	ena;
-	},
-	_setOptions: function( opti-focus" );
+			remove: function() {
+				this._removeTooltip( tooltip );
 			}
-		});
-urn this._setOption( "disabled"pply = this._sullName, this );
-		next();
-			}tion( ca} elsehis.each(fe;
+		};
+		if ( !event || event.type === "mouseover" ) {
+			events.mouseleave = "close";
+		}
+		if ( !event || event.type === "focusin" ) {
+			events.focusout = "close";
+		}
+		this._on( true, target, events );
+	},
 
-	if ( !propply( this.element[0ype = base;
-		base = $main u hasOptions && efined ) f (($.ui.ie &&n( type, evenerDocument :
-				return , margin ) {
-			dlers, teElem else ectName ]optiof ( !this.Rn new 'this.w' binsNaN(	},
+	close: function( event ) {
+		var that = this,
+			target = $( event ? event.currentTarget : this.element ),
+			tooltip = this._find( target );
 
-oninpuegate-dit.tri) || (/abs.completment.ndexNaN );
-	oyinme || "").spliImmediatePropthis.wor
-		// somber" ) {
-				retew event
-	teElemer instanement, handlers ) {
-		var delegateElem elsehis.options );
+		// disabling closes the tooltip, so we need to track when we're closing
+		// to avoid an infinite loop in case the tooltip becomes disabled on close
+		if ( this.closing ) {
+			return;
 		}
 
-		= this.eof key === "strObject. parseFloatements
-ing" ) {
-" );
+		// Clear the interval for delayed tracking tooltips
+		clearInterval( this.delayedShow );
+
+		// only set title if we had one before (see comment in _open())
+		if ( target.data( "ui-tooltip-title" ) ) {
+			target.attr( "title", target.data( "ui-tooltip-title" ) );
+		}
+
+		removeDescribedBy( target );
+
+		tooltip.stop( true );
+		this._hide( tooltip, this.options.hide, function() {
+			that._removeTooltip( $( this ) );
+		});
+
+		target.removeData( "ui-tooltip-open" );
+		this._off( target, "mouseleave focusout keyup" );
+		// Remove 'remove' binding only on delegated targets
+		if ( target[0] !== this.element[0] ) {
+			this._off( target, "remove" );
+		}
+		this._off( this.document, "mousemove" );
+
+		if ( event && event.type === "mouseleave" ) {
+			$.each( this.parents, function( id, parent ) {
+				$( parent.element ).attr( "title", parent.title );
+				delete that.parents[ id ];
+			});
+		}
+
+		this.closing = true;
+		this._trigger( "close", event, { tooltip: tooltip } );
+		this.closing = false;
+	},
+
+	_tooltip: function( element ) {
+		var id = "ui-tooltip-" + increments++,
+			tooltip = $( "<div>" )
+				.attr({
+					id: id,
+					role: "tooltip"
+				})
+				.addClass( "ui-tooltip ui-widget ui-corner-all ui-widget-content " +
+					( this.options.tooltipClass || "" ) );
+		$( "<div>" )
+			.addClass( "ui-tooltip-content" )
+			.appendTo( tooltip );
+		tooltip.appendTo( this.document[0].body );
+		this.tooltips[ id ] = element;
+		return tooltip;
+	},
+
+	_find: function( target ) {
+		var id = target.data( "ui-tooltip-id" );
+		return id ? $( "#" + id ) : $();
+	},
+
+	_removeTooltip: function( tooltip ) {
+		tooltip.remove();
+		delete this.tooltips[ tooltip.attr( "id" ) ];
+	},
+
+	_destroy: function() {
+		var that = this;
+
+		// close open tooltips
+		$.each( this.tooltips, function( id, element ) {
+			// Delegate to close method to handle common cleanup
+			var event = $.Event( "blur" );
+			event.target = event.currentTarget = element[0];
+			that.close( event, true );
+
+			// Remove immediately; destroying an open tooltip doesn't use the
+			// hide animation
+			$( "#" + id ).remove();
+
+			// Restore the title
+			if ( element.data( "ui-tooltip-title" ) ) {
+				element.attr( "title", element.data( "ui-tooltip-title" ) );
+				element.removeData( "ui-tooltip-title" );
 			}
 		});
-ements
-nt
-			.ch(funelse {
-					= this.el;
-		of size !== "number" i.mouse"						$.wi					defaultEffe( effe					options.effect || defaultEffhis._mouseUpDelegilter(fu,
-		NUM.effect {
-				returng" ) {
-			//( true, tument :
-				r,
-			 = "." +++( element[ 0 ]  {
-	$.each( [ "Welements with id: "st	return ).remoe", nul!== instance empted to call unction(is, argument) {
-				th: function( element: fullNamvent.target = thelCase( thitCreattarget,  {
-	$.each( [ "Widnt = event;
+	}
+});
 
-		var toverable = ement tTardTo& $.effects && 	event = cel = (typseDestroy: f[0].bodocumennts and states"+this ( i = 0; t || this.deet, thype[ prop ] =		$.each( handlersnd( eventNans, ele.removeClass( "ui-state-focut || this.di-cliexNo = $( elem:return 
-		if ( asOptions &MULTIPLY: 106.effects		var },
-
-	_hroxiedPrototelse {
-		me ? $(event.	event = $.Event( eves.wi		returnValue;
-
-				this._supe};
-			parts = key.split( "." );
-			key = parts.shift();
-			if ( parts.length ) {
-				curOption = 			/	},
-
-	/arget "." metho$, unmenu.js;
-
-	lse;
-eanueven options[ key ] = $.widget.extend( {}, this.options[ key ] );
-				for ( i = 0; i < parts.length - 1; i++ ) {
-					f ( ori
-			});immediately;ean up eable
-	h);
-			key = er.guid ooltip.jf ( ori + "-asScroll: funrn true;
-		}
-eDelayMet) nt may ney ] ===s.hovera);
-
-		return this;
-	},
-	_setOptions: function( options ) {
-		var key;
-
-		for ( key in options ) {
-			this._setOptionons ) {
-	e + ".preventClickEvent"a ) {
-		var prop, ent );
-		thi.uuid = uu(eve
+}( jQuery ) );

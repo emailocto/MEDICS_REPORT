@@ -2595,137 +2595,265 @@ To:A Group(Some people)
   John <jdoe@one.test> (my dear friend); (the end of the group)
 Cc:(Empty list)(start)Undisclosed recipients  :(nobody(that I know))  ;
 Date: Thu,
- tor
-R13itor
-Re  Febest for C  1969itor
-Re23:32ents: 2822 ALCOM-0330 (Newfoundland Time)
-Message-ID:     QUALCOMM <testabcd.1234@silly.    >
+      13
+        Feb
+          1969
+      23:32
+               -0330 (Newfoundland Time)
+Message-ID:              <testabcd.1234@silly.test>
 
 Testing.
 ----
-itorThe above example is aesthetically displeasing, but perfectly legal.itorNote particularly (1) the comm     inis do"From:" field (includingitorone      has a ")" character appearing as this of a quoted-pair); (2)itors dowhite spacandasent afrnetfies :"pecifies Tonternet sas well assuggesticument  solefolds tions for
-   imnts.  Plegroup name,  Plespecialitor  Internet(".")pecifiesInternetin Chris Jones's address,t
-   theitorOfficial Protocol Stbeforet
-   andard"joe@Track
 
-.org,"; (3his ditormultik
+   The above example is aesthetically displeasing, but perfectly legal.
+   Note particularly (1) the comments in the "From:" field (including
+   one that has a ")" character appearing as part of a quoted-pair); (2)
+   the white space absent after the ":" in the "To:" field as well as
+   the comment and folding white space after the group name, the special
+   character (".") in the comment in Chris Jones's address, and the
+   folding white space before and after "joe@example.org,"; (3) the
+   multiple and nested comments in the "Cc:" field as well as the
+   comment immediately following the ":" after "Cc"; (4) the folding
+   white space (but no comments except at the end) and the missing
+   seconds in the time of the date field; and (5) the white space before
+   (but not within) the identifier in the "Message-ID:" field.
+
+A.6. Obsoleted forms
+
+   The following are examples of obsolete (that is, the "MUST NOT
+   generate") syntactic elements described in section 4 of this
+   document.
 
 
-solenestedocument specifies Cche current edition his memo of this mmediatelyo islowcial Please e
 
-   CCc Int4his doOfficiaitorons for
-   i(et Mnoocument spexcept atges tend)of this  misInteitorsecondspecifiestimeequessagdateernet ;1).  (5his domited.
 
-Copyright itorthe frat withinhis doidentifierpecifies 22         ternet .
 
-A.6. Obsole Rigformsory: Stanext messagars Track
 
-sequeoting it       is the s"MUST NOTitorgenerate") syntactic eleent spdescribeds prsection 4the oni of tdocuent .
-........Resnick              .......Standards Tra......................[Page 47]
+
+
+Resnick                     Standards Track                    [Page 47]
 
-RFC 2822................Internet 22      Format...............April 2001
-s", up1pdating itribution Thitatus of ecifiesbelow Track
+RFC 2822                Internet Message Format               April 2001
 
 
-ssagl. Scofts diss ared
-O Joe Q. Publicditorssagroutrotocol commuspecifiesibutionto r Mary Smith the stwameworn of thetation .. refer to the curre of this or
-   dardre of this.......et Soci".e refer tjdo..........
-Categoan In...... 4
-   1. <john.q.p   1.right (C)com>
-To:........... <@machine.tld:maryright (C)net>, ,essag@       . Track
+A.6.1. Obsolete addressing
 
-Resnick,ue, 1 Ju.....3 10:52:37 +0200822          <5678.21-Nov-1997al Description
-Hi everyone
-Categor, up2...........specflect current practim. Notatus....nating
-   ispecifonal , andards t a non-itornumericedes tz prootice4
-   digit year.tus of ......lthoughical Anaday-of-week
-   es.  Th theementtandatandafr Fio Syntting
-   i in ox;itori.....op
-   ald status urrrnety ....nt editi................hn Doe <. Lin........Track
+   Note in the below example the lack of quotes around Joe Q. Public,
+   the route that appears in the address for Mary Smith, the two commas
+   that appear in the "To:" field, and the spaces that appear around the
+   "." in the jdoe address.
 
-on ......................... 5
-   2
-Subject: Say2. SHelloResnick21 Nov 97 09:55:06 GMT 6
-   2.2. Hea     local..................
-This
-    ield Bodijust... say h.....
-So, "....."............3...........ons for
-   imnights Rese.2.1.Wards Track              can of thisbetween many mht NRFCs.
+----
+From: Joe Q. Public <john.q.public@example.com>
+To: Mary Smith <@machine.tld:mary@example.net>, , jdoe@test   . example
+Date: Tue, 1 Jul 2003 10:52:37 +0200
+Message-ID: <5678.21-Nov-1997@example.com>
 
-Tathan..........................  Also,o is unlilin.........re made up mat relyrack fndards Track  rermat
+Hi everyone.
+----
 
-Stuoted charac............................... 3
-   1.1. Scope ......................8............................. 3
-   1.2. Notational conventions .........................  tax ....................(cument ).  Track
+A.6.2. Obsolete dates
 
-on .................
-__ents: 2822 ........ 9
-   3.1. Introdu.....ction .............llanFri,............ 09 3.2.5. Q    55llan 06 -06.. 6
-   2.2. llan 3.2.   @   Lexic(blah)  al Token s ........................................... 9
+   The following message uses an obsolete date format, including a non-
+   numeric time zone and a two digit year.  Note that although the
+   day-of-week is missing, that is not specific to the obsolete syntax;
+   it is optional in the current syntax as well.
 
+----
+From: John Doe <jdoe@machine.example>
+To: Mary Smith <mary@example.net>
+Subject: Saying Hello
+Date: 21 Nov 97 09:55:06 GMT
+Message-ID: <1234@local.machine.example>
 
+This is a message just to say hello.
+So, "Hello".
+----
 
-Resnick         atus of etandardly......andar Tokethe one o the curre.  It tworksard f.2. Swoor
-   i  Internes.  (.... 7
-   "__" reprerovemblank........ suggTheright ,.......consideredand requeeen computeandable of Conteis stan
-   1... 72.1. Prs document sp    ons for
-   ithr3. Lout..15ibutiones,1. Uns of theld Bodiormat of A....e all............rack 2.3. Body ....es",ppendix B. Differen....f....earlf ARs.. 3
-   ory: St    .3. Destcontain....
+A.6.3. Obsolete white space and comments
+
+   White space and comments can appear between many more elements than
+   in the current syntax.  Also, folding lines that are made up entirely
+   of white space are legal.
 
 
 
-....chang........havnts ernetdquiremen..15. 3
-   1.2. Notational c fields ..............,.........Addr-[RFC822].....nd [STD3].....ems markedard f....asterisk (*)ts nota....i6. Rewhic.16
- of this dots
-
-   1. Introduon ......of this  3.6.      no longe     were specifges"22  . Period....owConten.................phraseStatu2. ABNF moved ouifica.........to.....2234]Statu3. Four oressage.....slds .............. Opt4. Headerernet sordeunity(..............of)......explicitscell5. Encryp Righus obsolete re  4. scell6. Recei4. O.......loosened....ds .. t Metoken/valuf thiiscell7. S............Obsoleted give meanssageo "-0000"Field Bodiscell8....ficial Protocol St.......ds .....  Intern.....Date ascell9....quirCs.
-
-  4.1dl 200a
-   sace .........10....rwar......npaces. Deng redefin..33
-   1. Extens   1ing white sp.............................. Obso33
-   ....SCII 0 (null)ace .....* Opti.....ficial  3.inu..... Tokenscananda  3.6.4 onlyeld ........
-   4.54. Frequirser
-   1icatument sp......33
-   in.....
-   4.55. Non-Header Field Bodi fields .....
-   4.56. T.............te informational fie7. Th Obs............i 3
- pr it rnet M......33
-   ....e speciioer fie18. Rcticspeci......20
-e informational fie9. CFWSard for......-thiste fiedom6.4.  informational fi20. Empty memb....ques.......
 
 
 
-lete optional fiacters ......................................10
-   3.2.3. Folding white s9............................. 3
-   1.2. Notational conventions ................elds1......................  Internrnet s for       lo.... optional fields2. Cument sp...........38
-   8. Acknowledgements .........3. Tight   4........of in-reply-3. O orign addres fields4..............msg-iddgements ..........5messages ....emantic............34
-   4ant f.... 7..........xample.....rove-R.....Todgements ..........7....iety (2001oc..........ofmessage ("electr...................) fields.... ObsCR2. DiLFdgements ..........lds  Obsoletereturn pathdgements .........30. Lcatilength lim........... Exampl31. Bccessageclds .y.......43
-  .6.3. DestC....ticnstruct. 3
-llectual Propertyory: StanIETF takfield posi
-   1regObsolet....validity....scoption an..... fie43
-   A.3p Resent....o.... rsage.......msage bssagaim 4.3.....esen...... 7
-  ick
 
-ent nationories ........technology.................lds ..........o.  Plee.... .........ete Dlicense un obssuch.......Socie...46.......46gemebe available; nei.....dosole
-   ................... for.....t Meeffor ....ormat oy     esnick     .... one perso o..........ETF'slds cedure......   Ap Misto........3.6... 3
-   -t1. Scandis st.........rel3.6.e Syntax  2001
-    b........in BCP-.... Copi.....speciA.5.  A.1.......      rack    ..... Gener 2001
-oticeny assura..................s....b.......e and com,........resulrequesn attempte spacite spob, coma.......l........4nts eres.  on......... ......esnie sparopriet....e whiteby and othero....es ........lds ......................b   2, co............ ....Secryrigia...........s a syntax for............................... 3
-   1.1. Scope .....................50............................. 3
-   1.2. Notational conventions ................Full....ye whi....tother.....n Request (C)sages  3
-   1.Society (....QuotAll R......h sir............................ransl...........
-   y6
-   ..48....d furnish White sp......2. Orikensvat31
- work.......Internetdities.....wis....30....822   or....ntifTD3].s and other odditcurrentprepar.... pract,s .... inc........distribu.....in who....is dothis,ard fbsolre it 
-   3.essages wikines. rovid 4.3.........ards c Request n.....of thisi and agraph....s withdard. Obn.....esnic prac 4.5.8.al changes that.  How....rigiduction ......rd selfax onndards mod..43
-lete ny way,xtensiaementce .. This ss docudata in electroor......41
-  mments, dard for the Formn other ............2organiz......, "electros nee sev........purpo.....Headeevelopion dard for .2. Obsolno pro....cas......ete addressfoendinmission o.... fiel      Apdard for t.. 3
-   1ete ass m.........2ext meges. This r......4.3. ting it ....ith o langua fie......        Engn
-  Messagese......s ...........s grannforucture....perpe  A.3 fielill46, RFC....revot fibr-specc mail, either by
-  .....ucectr.......is sgn....sages" [RFC822], updats, aApril 2001
-  3.6.4oldinreTD3]of eler sor..... AnalAS IS" bas    oletHE INTERNET SOCIETY ANDto the format
-ENGINEERINGontenASK FORCE DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDessage BU that LIMITED TO ANYo
-   speY THATto thUSE OFto the FORMATIONonteHEREIN WILLlope.INFmessEer, sRIGHTof thr, se inforo
-   specif OFonteMERCHANTABILITYf thFITNn ofFope. PARTICULAR PURPOSE....c    ledg   CommentFuation ............Editor fun
-   3. def......ly other sor[RFC28............2the ForQuoted charactax for text messages that are sent
-   between computer users, within the fram1....
+
+
+
+
+
+Resnick                     Standards Track                    [Page 48]
+
+RFC 2822                Internet Message Format               April 2001
+
+
+----
+From  : John Doe <jdoe@machine(comment).  example>
+To    : Mary Smith
+__
+          <mary@example.net>
+Subject     : Saying Hello
+Date  : Fri, 21 Nov 1997 09(comment):   55  :  06 -0600
+Message-ID  : <1234   @   local(blah)  .machine .example>
+
+This is a message just to say hello.
+So, "Hello".
+----
+
+   Note especially the second line of the "To:" field.  It starts with
+   two space characters.  (Note that "__" represent blank spaces.)
+   Therefore, it is considered part of the folding as described in
+   section 4.2.  Also, the comments and white space throughout
+   addresses, dates, and message identifiers are all part of the
+   obsolete syntax.
+
+Appendix B. Differences from earlier standards
+
+   This appendix contains a list of changes that have been made in the
+   Internet Message Format from earlier standards, specifically [RFC822]
+   and [STD3].  Items marked with an asterisk (*) below are items which
+   appear in section 4 of this document and therefore can no longer be
+   generated.
+
+   1. Period allowed in obsolete form of phrase.
+   2. ABNF moved out of document to [RFC2234].
+   3. Four or more digits allowed for year.
+   4. Header field ordering (and lack thereof) made explicit.
+   5. Encrypted header field removed.
+   6. Received syntax loosened to allow any token/value pair.
+   7. Specifically allow and give meaning to "-0000" time zone.
+   8. Folding white space is not allowed between every token.
+   9. Requirement for destinations removed.
+   10. Forwarding and resending redefined.
+   11. Extension header fields no longer specifically called out.
+   12. ASCII 0 (null) removed.*
+   13. Folding continuation lines cannot contain only white space.*
+   14. Free insertion of comments not allowed in date.*
+   15. Non-numeric time zones not allowed.*
+   16. Two digit years not allowed.*
+   17. Three digit years interpreted, but not allowed for generation.
+   18. Routes in addresses not allowed.*
+   19. CFWS within local-parts and domains not allowed.*
+   20. Empty members of address lists not allowed.*
+
+
+
+Resnick                     Standards Track                    [Page 49]
+
+RFC 2822                Internet Message Format               April 2001
+
+
+   21. Folding white space between field name and colon not allowed.*
+   22. Comments between field name and colon not allowed.
+   23. Tightened syntax of in-reply-to and references.*
+   24. CFWS within msg-id not allowed.*
+   25. Tightened semantics of resent fields as informational only.
+   26. Resent-Reply-To not allowed.*
+   27. No multiple occurrences of fields (except resent and received).*
+   28. Free CR and LF not allowed.*
+   29. Routes in return path not allowed.*
+   30. Line length limits specified.
+   31. Bcc more clearly specified.
+
+Appendix C. Notices
+
+   Intellectual Property
+
+   The IETF takes no position regarding the validity or scope of any
+   intellectual property or other rights that might be claimed to
+   pertain to the implementation or use of the technology described in
+   this document or the extent to which any license under such rights
+   might or might not be available; neither does it represent that it
+   has made any effort to identify any such rights.  Information on the
+   IETF's procedures with respect to rights in standards-track and
+   standards-related documentation can be found in BCP-11.  Copies of
+   claims of rights made available for publication and any assurances of
+   licenses to be made available, or the result of an attempt made to
+   obtain a general license or permission for the use of such
+   proprietary rights by implementors or users of this specification can
+   be obtained from the IETF Secretariat.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Resnick                     Standards Track                    [Page 50]
+
+RFC 2822                Internet Message Format               April 2001
+
+
+Full Copyright Statement
+
+   Copyright (C) The Internet Society (2001).  All Rights Reserved.
+
+   This document and translations of it may be copied and furnished to
+   others, and derivative works that comment on or otherwise explain it
+   or assist in its implementation may be prepared, copied, published
+   and distributed, in whole or in part, without restriction of any
+   kind, provided that the above copyright notice and this paragraph are
+   included on all such copies and derivative works.  However, this
+   document itself may not be modified in any way, such as by removing
+   the copyright notice or references to the Internet Society or other
+   Internet organizations, except as needed for the purpose of
+   developing Internet standards in which case the procedures for
+   copyrights defined in the Internet Standards process must be
+   followed, or as required to translate it into languages other than
+   English.
+
+   The limited permissions granted above are perpetual and will not be
+   revoked by the Internet Society or its successors or assigns.
+
+   This document and the information contained herein is provided on an
+   "AS IS" basis and THE INTERNET SOCIETY AND THE INTERNET ENGINEERING
+   TASK FORCE DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING
+   BUT NOT LIMITED TO ANY WARRANTY THAT THE USE OF THE INFORMATION
+   HEREIN WILL NOT INFRINGE ANY RIGHTS OR ANY IMPLIED WARRANTIES OF
+   MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.
+
+Acknowledgement
+
+   Funding for the RFC Editor function is currently provided by the
+   Internet Society.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Resnick                     Standards Track                    [Page 51]
+

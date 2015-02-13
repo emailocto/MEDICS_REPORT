@@ -2773,169 +2773,87 @@
                  /  "Encrypted"         ":" 1#2word
                  /  extension-field              ; To be defined
                  /  user-defined-field           ; May be pre-empted
-     orig-date   =  "Date" 
-
-     ":
-
-
- date-time
-
-
-   originator  =   authentic
-
-     R
+     orig-date   =  "Date"        ":"   date-time
+     originator  =   authentic                   ; authenticated addr
+                   [ "Reply-To"   ":" 1#address] )
+     phrase      =  1*word                       ; Sequence of words
 
 
 
 
-
-
-
-
-
- ;  (NIC #41ated addr ObsolNDARD FOR THE [ "Reply-To
-
-
- FC #1#    ess] ) ObsolphraseNDARD =  1*wordTANDARD FOR THE F
-
-
-
-    Sequence of ESSAs
-gust     August 13, 1982NDARD FOR THE - 45 -ES
-
-
-
-
-
-
-             RFC #822
-
-
-  13, 1Standard for ARPA Internet Text Messageugus     qt    RNET TEXT<any CHAR excepting <">,
-
-
-    => may be folded  STANDARD FOR THE F  "\" & CR, and including Delaware, Newark, DE linear-white-space>      Duoted-pairTEXT 197Enginor ARPA Internet Tex; Univ
-
-
-
- cal cha   STAN
-
-
-
-
- str
-   =     *(Dept./
-
-
+     August 13, 1982              - 45 -                      RFC #822
 
 
  
-   )    ; Regular Dept. o   STANDARD FOR THE F...................   ii
-
-    ;              s.      receiveAGES
- StaR.......
+     Standard for ARPA Internet Text Messages
 
 
-  FC #             one per relay........................["from" domain]....    1
+     qtext       =  <any CHAR excepting <">,     ; => may be folded
+                     "\" & CR, and including
+                     linear-white-space>
+     quoted-pair =  "\" CHAR                     ; may quote any char
+     quoted-string = <"> *(qtext/quoted-pair) <">; Regular qtext or
+                                                 ;   quoted chars.
+     received    =  "Received"    ":"            ; one per relay
+                       ["from" domain]           ; sending host
+                       ["by"   domain]           ; receiving host
+                       ["via"  atom]             ; physical path
+                      *("with" atom)             ; link/mail protocol
+                       ["id"   msg-id]           ; receiver msg id
+                       ["for"  addr-spec]        ; initial form
+                        ";"    date-time         ; time received
 
-  sen     hostScope ....................by #  8.................  ......         1.2.  Communication Framevia"  atom............  1.physical path.......................*("with".....)
-
-
-
-
-
-
-
-
-
-
-    link/mail protocolScope ....................i.....msg-id................... erescr if Delaware, Newark, DE .....or ...ddr-spec.........; initialavidm.........................";
-
-
-  822
-
-               cal T........       resen. of El733 ......- (NIC #41  STANDARD FOR THE FORMAT     AT OF
-
-                       ARP
-         3.4.   =  STANDARD FOR THE733 ........F.....    RFC #  ....box  STANDARD FOR THE/ (.........Sendeader..   17
-
-         4.1.  Syntax .........................   11#
-       
-
-     4.  MESS822
-.......     
- 
-
-
-
-FC #  822
-
-     Obsolreturn........."R.....-..   4.3. route- Fie..........       ds ....   2 of Electr1#("@........).........    1
-;...  -.1. tivlds ....   20
-    .....<" [ver F]r Field De ">"      sourcERNET TEX[  trace ..............         
-
-
- traversalinator .....   23
-      etes:  RFC #...   ii
-
-     1.etes:  l
-
-     STANDARD FOR THE FOR........erence Fields ......;avidwar of DelawSPACE of ElectriASCII SP, ay
-
-
-
-.....    1
-
-  (er Fi40       32.    ARPd Deials........(" / ").....<.....>.....@"ECIFM
+     resent      =   resent-authentic
+                   [ "Resent-Reply-To"  ":" 1#address] )
+     resent-authentic =
+                 =   "Resent-From"      ":"   mailbox
+                 / ( "Resent-Sender"    ":"   mailbox
+                     "Resent-From"      ":" 1#mailbox  )
+     resent-date =  "Resent-Date" ":"   date-time
+     return      =  "Return-path" ":" route-addr ; return address
+     route       =  1#("@" domain) ":"           ; path-relative
+     route-addr  =  "<" [route] addr-spec ">"
+     source      = [  trace ]                    ; net traversals
+                      originator                 ; original mail
+                   [  resent ]                   ; forwarded
+     SPACE       =  <ASCII SP, space>            ; (     40,      32.)
+     specials    =  "(" / ")" / "<" / ">" / "@"  ; Must be in quoted-
+                 /  "," / ";" / ":" / "\" / <">  ;  string, to use
+                 /  "." / "[" / "]"              ;  within a word.
+     sub-domain  =  domain-ref / domain-literal
+     text        =  <any CHAR, including bare    ; => atoms, specials,
+                     CR & bare LF, but NOT       ;  comments and
+                     including CRLF>             ;  quoted-strings are
+                                                 ;  NOT recognized.
+     time        =  hour zone                    ; ANSI and Military
+     trace       =    return                     ; path to sender
+                    1*received                   ; receipt tags
+     user-defined-field =
+                   <Any field which has not been defined
+                    in this specification or published as an
+                    extension to this specification; names for
+                    such fields must be unique and may be
+                    pre-empted by published extensions>
+     word        =  atom / quoted-string
 
 
 
-be in           4.1.  Syntax .... ",.....;.....:.....\....ABLE 1.       , to us  Obsol......................[.....]
 
-
-     R
-     1. YSISin a    A ......sub-...... ..........-ref /........litera.......ept. of Eleectrical Engi,           bards ..     ....s26
-
-......,..........   23
-      CR &......LF, but NOT       6.1comments    ..........   23
-      ..........CRLF      5.1.  S 1.              s ar ......................................   ii
-
-     1. ....recognize........cal Tokens .=  hour z     DATE AND TIME SPECIFANSI     Militar Scope .  Ref.......................E AND TIME SPECIF..  CATI  1
-e......................1*............E AND TIME SPECIF.....pt taginator user-defined-fieldFICATION ...............ny G OF Swhich has noics en L LISTI..........   23
-     in this.   27f    ion or publish    ..  ..........   23
-     extens    to                   ; namesavid..........   23
-     such......s mntics .uniqu
-
-  d Univer..........   23
-     pre-empRODUbyC #822
+     August 13, 1982              - 46 -                      RFC #822
 
 
-
-nternet Ts
-
-
+ 
+     Standard for ARPA Internet Text Messages
 
 
-
-
-ESSAGES
-
-
-
-
-=...... /..............gust 13, 1982
-
-
-
-
-
-
-                      6         Revised by
-
-                             David H. Crocker
-
-
-                      ................UT"...."GMwas
+     zone        =  "UT"  / "GMT"                ; Universal Time
+                                                 ; North American : UT
+                 /  "EST" / "EDT"                ;  Eastern:  - 5/ - 4
+                 /  "CST" / "CDT"                ;  Central:  - 6/ - 5
+                 /  "MST" / "MDT"                ;  Mountain: - 7/ - 6
+                 /  "PST" / "PDT"                ;  Pacific:  - 8/ - 7
+                 /  1ALPHA                       ; Military: Z = UT;
+     <">         =  <ASCII quote mark>           ; (     42,      34.)
 
 
 
@@ -2948,25 +2866,36 @@ ESSAGES
 
 
 
-    Un....sal T    Obsol................................   ii
-
-     1.North American : UT......................EST.....EDRequest for Comments Easker
-:    5/    ......................CndersonC
-     The specificatioCentralpted 6o av5......................MndersonM
-     The specificatioMountain: - 7o av6......................PndersonP
-     The specificatioPa     pted 8o av7.....................1ALPHA...........   ii
-
-     1.LE FIELD: Z = UT;      ADDRE................ ges
-
-
-mark      5.1.  yntax ...2........4.)gust  the software
-     that follows it, the13, 1982
 
 
 
 
 
 
-                      7         Revised by
 
-            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     August 13, 1982              - 47 -                      RFC #822
+

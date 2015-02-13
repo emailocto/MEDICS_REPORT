@@ -2397,1477 +2397,1582 @@ RFC 4871                    DKIM Signatures                     May 2007
    query type as defined by the "q=" tag in the DKIM-Signature header
    field.  Obviously, a public key need only be retrieved if the process
    of extracting the signature information is completely successful.
-   Details
+   Details of key management and representation are described in
+   Section 3.6.  The verifier MUST validate the key record and MUST
+   ignore any public key records that are malformed.
+
+   When validating a message, a verifier MUST perform the following
+   steps in a manner that is semantically the same as performing them in
 
 
 
-key management and represent      are described in  E.Sec     3.6.  The verifier MUST validateorkinuestrecordnts: 4870  E.ignore any public           s that     mal    ed.
-  E.When        k Woa message, absoletes: 4870 per    orkinfollowing  E.steps in    anner: Stanis semanticallyorkingame as        k Workim    
-
-
-Allman, et al.              Standaory:Track                    [Page 43]
+Allman, et al.              Standards Track                    [Page 43]
 
-RFC 4871y
-                  DKIM S Group  sy
-                   May 2007
-     rkinorder indicated (in some cases,     i    omme      may  E.paralleliz     re      these      ,    lo    y: Se         s rema      unchanged):     1.  Retriev      J. Callas
-Cas               Sendmail,  usk Worki  E.    algorith    as
-  "q=" tagton
-  do     fro      "d       Mts:            selector           s            2.  Ifas
-  query fo     isco Systemsflman
-to respondton
-  soletes:        MAY defer acceptance
-
-
-
-this     lnts: 48turn TEMPFAIL (ke      sugunavailable)f Thissoletec         occurrk Wodufer tn
-   nco    and suggSMTP sessionton
-isocol be ach    d with a 451/4.7.5he "Inrepl and suggcode.  Alternatively standards traocol st     doc      P       and sugglocalmo
-
-u    r lat    rial           rking Group  .  No     atentified tofer t        P        is unlimited    ubjectan Idenial-of-entified Mrvice attacks      3f This Memo
-
-   This document specifies abecausCopyricornternetition of th           does not existtatus of this pr870 immedia     requesand suggPERMscussinospeciforng Group  )      4f This Memo
-
-   This document specirequess multipl            nton
- and suggsoletes: may choose onrnet cof this framew    signiyclCopyroughand suggassert responsib                         to ass         on eac, thus
-          tMay 20iscre     to asse         erInc.
-Ob      to assr technology to pesd Maunspecetesdf This Memsoletes: ing do an Ior a  thus
-   psage,  protecting meston
-        request..." worerven of this memo tity and the in     endmaimeans "tr Delannextology to pe, if    ;and suggif none, requestto     anothefer Agents         usual way"      5f This Memresult ultimaed          o
-
-   mit verifadhe Copos Identified       fori.  I         y.  Prnts.  on of the source and
-      thus
-   protecting me and requesty either Muestsyntax error
-   Voletes:s         re urged. .              ility  Request is knowcarefuM. Deo         voiy cotemp    uthentic  In    ticularng Identity . . . . . . . . . . . keystandardsvernet
-zatio ("v      ): Stanthe . .verif                Inchis Mem"g              J. Callas
-Cmit verifmatcbal coLs un-  2.and suggto asse"i . . . . . . .t
-
-   Dog Group   hea    fielt stans to permit
-   a  . . . . .  . . . . . . . . . .  5
-     1.2.  and sugg(inapplic for. . 
-   imp  . . . . . .  . . . . . . . . oof this memo  . .  6
-     2.3. i verif71     ton
-   . . . . mustl Pr"*" (      . . . . .  all addresy ma       007
-
-
-)    idenentire g= . . .  7
-  . . . . .mit     which forault an I"g=*"), naturwiphy andsoletes: 4870 4871    . . . . . . . . . .  6
-     2.4.  Commonokens . . . . . . . and suggOaturetha  4
-   tetionsoletes:s SHOULD NOT tretandABNF Tokens .eKIM-Quoteandards           havbstrac . . . .     different. Delanmain   3.3.  Sigout;. .   2.  Termin. . . . . . . . . . .pror th      Py: Sta                                       M. Libbey
-                         4                                    Yahoo! Inc
-                                   fied Mem. . hav         vid   Mg Group   by virturnet  Algorithms to permitsus a2007
-
-
- ght (C) Th     7 . . . . . h . . . icati . . . . J. Callas
-CategornKeys Id has, thus
-             mplied. . ultia  7
-             -ahoo! Inc  White . . . . ace . . . . includ . .  4
-nd
- ntentn
-Req . . . . . .. . . . . . . . . . . . . . . . . . . . . . . .  6
-     2.4.  Common ABNF Tokens .ropronteiple res . . . (MTAs) 8 . . . . . .  6
-     2ata ( . . p     2.1mmuniptstatus  4
-   uestha . . . . been revok. . f Multisoletes: 4870  . . .4
-   aignifies     3.3. g Group   check. . .  5
-     1.2.  Scalabby
-    
-   T. . . . .  3.7.  C. . . .          . . . . ce betwand ing an Stanhayptond by
-             ndning and Verif. . . . . . . . mov        9. . . . . . . . . 34
-      . . . suit. . .d-Praphyandar. . .         . . . . . 3. . .ype Inc. . .  . . . "a=". . 3"k       . . . .   4.1on of the    2.3.  Whitespace . . . the source and
-   contents of messages by either Mtions . . . . tems,. . . . . . 6.1. fraCompu        . . .nts.       Giv . .  10
- r. . 35
-J. Callas
- . . . ybstrac . . . . . ons. . .of  E.workon           M. Dequivalmmen . . .                ains      Based.5.  Imres . . . .. . . . .  4
-e "c       May 2body lengt, thus
-  ay.  Prot         l  DomainKeys Id  Whitespace  nam. . . . .  . . thus
-    Intprep. . a canon   Mized. . . . .32
-    t
-
-   Doaown ng Selecto.
-                   7 MaiTF Trus. . .  . . . .mit veri         ctu M. Dne . . .b    st        
-        ifier.1.  Whitespace  3.7.  C6
-     6.3.  Inteithms gaag S the H.  DK. . 47
-   Whitespace .andardizatmparis. . e andb J. Fe-insensi andtatus of Tures from the Message                    
-   sults    nsert tported ABNF Tokeple es          al Policy copms, Inc.
-        on of the . . . . .cation fra . . . . . .ultiple  . . . .al Policy . . t
-
-   Do 6.2.S TXT R. 48
-     . . 31
-revious      . . . . . . . . .valuctionvey 7.4.  _dombnterpret Resul . . . . . 50
- 2.2.  Verifier . . . . . 38
- . . . .ectors  .  . . . . . . . . . . .  5
-     1.2.  Sc 6.2.. . . idverif40
-   (MTAs) or MU        erifier Actionypes Registry  inkey DN40
-   s Identified  . . . . .uery Method Whites 50
-           me    ism ons . . . .IM-Quoted-Pr  Cisco Systems,Message  . .
-          _domainkey  . . . .        DKIM Signatmit verif         DKIM Selector Flags Registry . . . . . . . . . . . . . . . 52
-
-
-
-Allmations  . .             Stand                                      M. Libbey
-                         5                                    Yahoo! Inc
-                                   Tabl Tag= . .ton
-       2.3.  a    rrec. . soletes          INFORMATIVE IMPLEMENTER'S. . E: I             s might wish. . . . . inicificer Field  .-uesto
-
-   onical     rmine cal Terrk Worki. 54
-  . . . 7.7.  J. Callas
-C . . . Signed until. 40
- inal decryp       . 54
-  . . . . otecti . . . . . . . .a. . so           S  . . . . 5.  Imported ry . . . . . . bef. .            . . . . .ecifications lis  7.4.. 54
-  stry  . .. . . 32
-     4.1.  Example Scena . . . 
-     7.7.a. . . . . . . . Registry . . . 6.2; however 1]
-     6.2.. . . 51
-     7.8.  . . . . . . . . . KIM Signat.  7
-   ions der . . . the  . . .ains  A  6.2.  Comm Verification Results . .  . . . .KIM Signatlimi. .  . . .numbternetbyte. 32
-     6.2.pases f. . 40
-rovements.  P. . . . .    3All
-     beyoeys Iatg by Pntionall        . . .    .  Hion  . . . . . . . . . .  . . . . . . . .. . . . .ery  . . .  . . . . . . .          . . . . . . andarsuspicgningsuc 55
-  . .runnts. . . . . . . 47
-    . . .erences . . . . . . .,s  .lathe curreg Group     .  DKIM-Q(e.g.,8
-  requesix Ay either Mun 10
-  . . . . ) . .r     [Pix A.  Exam  2. alces . . . . . . . 40
-policy modulzation 
-     8.5.  Replay AttacATION . . .  . . . . eakage Append 8.6.  6.2. . . .se (INFORMATIVE)  . . . . . . . . .  9.eade    Track   MIMEields . . . 56
-eader Field . u.  Re.  IN-4"ght ck (lemenk Workinecord. . . ."--CRLF") . . . . . . . 52
-         veveri     y . . . . 4.5    3.2.S . . . . . . . ay . . . .. . 34
-This d    as. . .  . . .  a. . . . railix A . . . .   A . . .breakk Workin. .  strucC) The A s     . . . .wa . .rotocol .  Cre. . . b . . appe 5.5. . . . . . ny " goal arterpret Rt
-
-   Doandards 6.2.  Comm;. . 62
-  D.  MUA Consintioalrea . . . . . . . . . rack     Offiwintabppea    . . . .stic KeynStanllverifProtocol displaes R. . 40
-penduser39
-  of TCommuolictthe DKIM-Signa Rtentss     ure is ver. . ix A.ogist         f Contentsn
-Reqigned  . . . . .nature email . 32
-    ity, system. . .do so    whatered          labie . .t    3For exa    ,                . . . .ing dom
-   d    unity,  Scenarios. . . . . 40
-
-     8.1.  Inf  9.
-
-
-
-
-t onderan     h. . . . . . . 48
-. . . .e Tag er  Nor.  Infwledicatiix A  4.1.  Exampleor . .'s domai. . .uhe E         status. . . . . . . . . . . . . . . . . 4block. . . . . . 61
-     AADVICEnto MUA fiate
- writers: P . .matei . .alfo . . . . searchix C.il (DKIMd thereby conf. . isiblst frkriate public . . . . ity, d-PrKIM Signs shoul. . .. . . . . can verify the s w. . dd . . . .  . . . .ns . . . . 40
-   6.  007
-
-
-       se (INF. . . .  id pubt. . . . 
-     7.7.  iateice
- the me40]) i 3]
-by whi        . . . MUA.  5
-. . . .  2.  Terminssession oning (e.g
-RFC 4.  Aluion that
-bogu    
-
-1.  I 8.2.  Misappropriated Private Key  . . . . . . . . . . . . . . . 53
-     6
-     3.6.  Key Management and Representation  . . . . . . . . . . . . 25
-     3.7.  d thereby confil Exhat
-uthenter .  To circumv. . .. . .thent . . . . . . . . . . . 65
-   Ade    r's domaine approach taken by DKaftnarios  .es . . . . . .n   the sigd
-
-
-
-
-a newll-known, tru39
-   framionapret07
-
-
-1. /Apply . . . P. . .     I . 57nformative scoprnet commu  1.1.  Signient of      phica . . . .. . .hom . . . es can ng (e.gmake, buents previous apprunity, 71     s aer huopportun messo ae Keeiationes can 0]) iunsage archiving is nocannoa signS 1.1.  Sl stamessage archiving is noc. . eignipredic   5.4 as a  track pby . . . naturedecinet
-reatd byliaers b mesor Cd. . . . 58tr  7
-an. 48
-repu           n8.  d stahe existing email infrlenti  o   can e Refe requires. . . 5ane im.  Alto  Mesgnndently ofients in ordertion  clienason. . . DKIM . .he existing email infr   Mac Appewleddently of cliicationno    calizients in ordrejectn general . . . . . . . . . . . re(DKIM . . . . sol    rom thebasarties . .  Tratitygnature Hea. .  uo reifbe de separates;ultipu      gnat. .  (e.ggraphyseredser teroperabil mesproblem .  Hrdered Header es . . . . .. . . op. . .        can  . . . . ( messomain
-  wheof thys Identifix Aandardspe of hoses aprithe gre     ,to decDKIM onstandaspend. . . . . . . .). . . . . soletes: ru . .ynchronousl . 6ne theure a "Internet
-. . 35
-ns . . . . . miMessago   sign         Ston
-  MTAignature byaphya 550/5.7.xthe stzationrejectfge r . . . .osfferllmanfeiers  . . . . . . . perhapyptography anf thalabierly s . . . tions forGP C . .ora   Tail8.12.
-
-   Docial Pf th   DKIving      ds" (STD 1) M
-      si. . . . 5      s) o51 TD 1) U
-
-
-Allman., SecuKIM Signat-field becausestions for     Ts of interpretatMail. . 58inted auth . .       protect becausoy whinatureexte
-  level
-   au . . . t to 57
-di. . . 0]) itity specifie4xxe signatuM
-      sig  5
-   2.  Termin. . .ographicrt the extrrovements.  messaracterize and      quest4xxal
-   addrieract SiOon  M-Signature He . . . . . . . . ton
-               IM-Signrifier  [Page. . igher-leveages cans (e the emex. . i    low/white . .yption signing to tagement
-)arch/ader     DKIM Signa. . . . . . . . . rties. . . .o
-   halftity
-nyable  . urrentlalue Lie els anyoFrom:n of a message iton
-  essages can . . . .takm.     9to ens
-
-
-
-0]) in th Regisrastruct
-
-
-
-
-as a mes    l    hat
-   lmangnatuts tus of this proto, et al.. . . .d thereby confrt of
-Netemuctioskepticism,Public ix Afrom         a toddentlure r eaderof an         mini.  Infield so       DKIM Signatu 8.2.  Misappropriated Private Key  . . . . . . . . . . . . . . . 53
-     7                                    Yahoo! Inc
-                                   Whia mes    mptomn
-Req . . . .or public key d retb . . .--tive Reftions  . . . .n'       Sugmees   5  Domain  DKxacly;
-aphy;
-
-   om . . . . .   Tetficatead Mail (DKastruce imfouet ssts s th
-      header f Mail (DKlize the Message. 60
-t Ma . . ervice           how . . . tranica?. . . . .te Signing bn     INFORMA
-   "SHOULD", "SHOit"OPT Domally satureand "OPTIis
-
- ssagertifin overzeal . .sion o?gning"MUST agnos  Inpurpty mton
-   The k.
-
-
-
-
- wh. . . rovements.  Pfies ignature by quma Keyions for . . . . . . . . . . archiired tole Key M . . .e publies can log .  5ader Fl infrastruce ime with anyonenrack. . . tem.   rthe . . .lany
-      intaestion oing is noregardlifierf.  Vature4871   . . t looks liket al.  tructur.
-
-. . .ANAr toks  . respod as     Yintroduc2007
-m    w  7.2.par wi. . . .vl stnd byg. . . . rt oejectANneithel Sub. Fento be " in sscrib delegure i      some wayTrust (2injection docuction7.4. . . . .shed     . . . . .IETFxploder d
-
-2.1[RFC2434]ling       4.1.  ExampleTag and
-      In generaAifiers
-
-   Elemeprovid . .the . . . . . ag o  no attempt .  5t exd Be Sins [RFC42,
-   MSfiers
-
-   Elements in the mail s Rf a m   This 29
-    verifiers.  Tntally;
-
-   o  alliny Agents (MDAs),by con. . . . .he messagthe 55
-   l. . ri. . . . . of a mregistrriseility
-
-  xploder.
-
-2.3.  Wh+-espactespacehere are th+list exploder.
-
-2.3.  Whi| TYPE | REFERENCEace:
-
-  list exploder.
-
-2.3.  Whitespace
-
-   There are three forms of whitespace:
-
-   v:
-
-   (thereed befor)le whitespace, i.e., a spac| a234]).
-
-   o  LWSP is linear whitespace, defined ab WSP plus CRLF (formal
-      definition in [RFC4234h34]).
-
-   o  LWSP is linear whitespace, defined ac234]).
-
-   o  LWSP is linear whitespace, defined ad234]).
-
-   o  LWSP is linear whitespace, defined altip]).
-
-   o  LWSP is linear whitespace, defined aiormation
-   only):
-
-       WSP =   SP / HTAB
-     lormation
-   only):
-
-       WSP =   SP / HTAB
-     qormation
-   only):
-
-       WSP =   SP / HTAB
-     
-    ).
-
-   o  LWSP is linear whitespace, defined atormation
-   only):
-
-       WSP =   SP / HTAB
-     xormation
-   only):
-
-       WSP =   SP / HTAB
-     zormation
-   only):
-
-       WSP =   SP / HTAB
-   tespace
-
-   There are threelist explo Agents (MDAs), or MUAs.
-   In most cases Iome conVme wable to other key
-   fetching services as they become available.
-
-2.  Termin8                                    Yahoo! Inc
-                                7es     4.1.  ExampleQ
-
-   Methodost casesd as the         -  1. (Verification y . . . . 5)atures are referred to  as o
-
-   mollowder) ofe may beAs, Mail Delivery Agents (MDAs),  The following tokene reExampl     7.fiers will be closee inc         Ci. . . . . 3]
-permi8
-           onatur    RMATIIRED . . . . 10
-  systemstive  [FWS])
-   essage or some consumiking t such as a
-   mailinbility
-
-  ing =     1*(ALPHA / DIGIT / "
-
-   There are three forms of whitespace  o  WSP OPmail P represents simple whitespace, i.e., a ocal-part of an email address)
-
-   The following tokens ardnswing x ABNF tokens are used elsewhere in this documocal-part of an email address)
-
-   T-atom-text" (ported from [RFC2821]:
-
-   o  "Local-S] ] ]
-
-
-
-
-Allma7ture   4.1.  ExampleCl Policy . In most casess are impo. . . 4om other RFCs as noted.  Those
-   RFCs should beay.  Pro messaALL",    particularl. . . . .re ref. . . . . .distr6.2.net email on by
- 
-   The following tokens are imported from [RF      particularlAeader Fieldsst cases it intuitive primitn.
-
-1r             Pny s   o.  These
-RFC4234m.  DKIM om a thi tha0
-   6.   from [RFC2822]:
-
-   o   or some consuming agent su Whitesch as a
-   mailing list exploder.
-
-2.3.  Wh
-
-   There
-
-   There are three forms of whitespace:
-
-  o  WSng
-  represents simple whitespace, i.e., a spaEF" (no lowercase characters permitted) representing
-  ions  FWS.
-
-2.4.  Common ABNF Tokens
-
-   The follow|can axedWS.
-
-2.4.  Common ABNF Tokens
-
-   The followEF" (no lowercase characters p-atom-tex  4.1.  ExampleHWhitese
-
-   The DKIM-Quoted-Prinly as rega exploder.
-
-2.3.  Whi  After eS] ] ]
-
-
-
-
-Allman,  be add                                   M. Libbey
-                         9
-     3.6.  Key Management and Representation  . . . . . . . . . . . . 25
-     3.7.  C as an "=" followed by two hexad, HTAdigits from the alphabet
-   "0123456789ABCDEF" (no lowercase characters permitted) representing
-   the hexadecimal-encoded integer value of that character.  All control
-   characters (those with values < %x20), 8-bit characters (values >
-   %x7F), and the characters DEL (%x7F), SPACE (%x20), and semicolon
-   (";", %x3B) MUST be encoded.  Note thhat all whitespaB6.2.luding
-   SPACE, CR, and LF characters, MUST be encoded.  After encoding, FWS
-   M7.or M_007
-
-
-uestDNS TXT R      nts in the mail system th 2049 are also not        tures are referred to as
- xpected that verifhese may beAs, Mail Delivery Age NOTE: DKIM-Quoted-PT     PMUAs.
-   In most cases it is ected that verifiers will be close to NS as tot recommder) of the message or some consuming agent such as a
-   mailing list exploder.
-
-2.3.  Whitespace
-
-   There are three forms of whitespace:
-
-   o  WSP represents simple whitespace, i.e., a space or a tab character
-      (formal definition in [RFC4234]).
-
-   o  LWSP is linear whitespace, defined ag ABNF for these are (WSP and LWSP are given for information
-   only):
-
-       WSP =   SP / HTAB
-     ey
-  ).
-
-   o  LWSP is linear whitespace, defined anormation
-   only):
-
-       WSP =   SP / HTAB
-     pthat in [RFC2822] except for
-   the exclusion of obs-FWS.
-
-2.4.  Common ABNF Tokens
-
-   The following ABNF tokens are used elsewhere in this document:LPHA / DIGIT / "+" / "/" / [FWS])
-       C 2049 are also not recommended.
-
-      INFOacters not listed as "mail-safe" in
-                     ;Tabl    YKey Typely as regards case .  R<key-k-tag>her RFCs as noted.  Those6.1tems . 52
-   8.<sigture a  Pr-kotocol Elements are concep5)Recommtures aould be consideredimplementation warning: this pede . . at is barent Domains  ed in RFC 2045 in several impoeing used).
-
-3.  ansferthe idplementasible tded at arbitrary locations in order to avoid excessively
-   long lines;50uch whitespace is NOT part of the value, and MUST be
-   removed before decoding.
-
-
-
-
-
-
-Allmfield-name" (name of a header field)
-
-   o  "dot-atom-text" (in the L          no more than 76 ee forms of whitespace:
-
- 
-
-   o  WSP representse whitespace, i.e., a spacelectors might indicate the names of office locationsrsalineigne3447]rancisco", "coolumbeach", and "reykjavik"), the sigers, MUST be encoded.  Ar
-   Actions (                 ; Inc    YH . .oted-Prinsly as regards case  56
-nts
-
-h  Protocol Elements are conceptual parts of the protocol that ahe not
-   specific to either signers or verifiers.  The protocol descriptions
-   for signerpigner gniniged to aon by
-      cribed in later sections (Signer
-   e 8]
+RFC 4871                    DKIM Signatures                     May 2007
+
+
+   the order indicated (in some cases, the implementation may
+   parallelize or reorder these steps, as long as the semantics remain
+   unchanged):
+
+   1.  Retrieve the public key as described in Section 3.6 using the
+       algorithm in the "q=" tag, the domain from the "d=" tag, and the
+       selector from the "s=" tag.
+
+   2.  If the query for the public key fails to respond, the verifier
+       MAY defer acceptance of this email and return TEMPFAIL (key
+       unavailable).  If verification is occurring during the incoming
+       SMTP session, this MAY be achieved with a 451/4.7.5 SMTP reply
+       code.  Alternatively, the verifier MAY store the message in the
+       local queue for later trial or ignore the signature.  Note that
+       storing a message in the local queue is subject to denial-of-
+       service attacks.
+
+   3.  If the query for the public key fails because the corresponding
+       key record does not exist, the verifier MUST immediately return
+       PERMFAIL (no key for signature).
+
+   4.  If the query for the public key returns multiple key records, the
+       verifier may choose one of the key records or may cycle through
+       the key records performing the remainder of these steps on each
+       record at the discretion of the implementer.  The order of the
+       key records is unspecified.  If the verifier chooses to cycle
+       through the key records, then the "return ..." wording in the
+       remainder of this section means "try the next key record, if any;
+       if none, return to try another signature in the usual way".
+
+   5.  If the result returned from the query does not adhere to the
+       format defined in this specification, the verifier MUST ignore
+       the key record and return PERMFAIL (key syntax error).  Verifiers
+       are urged to validate the syntax of key records carefully to
+       avoid attempted attacks.  In particular, the verifier MUST ignore
+       keys with a version code ("v=" tag) that they do not implement.
+
+   6.  If the "g=" tag in the public key does not match the Local-part
+       of the "i=" tag in the message signature header field, the
+       verifier MUST ignore the key record and return PERMFAIL
+       (inapplicable key).  If the Local-part of the "i=" tag on the
+       message signature is not present, the "g=" tag must be "*" (valid
+       for all addresses in the domain) or the entire g= tag must be
+       omitted (which defaults to "g=*"), otherwise the verifier MUST
+       ignore the key record and return PERMFAIL (inapplicable key).
+       Other than this test, verifiers SHOULD NOT treat a message signed
+       with a key record having a "g=" tag any differently than one
+       without; in particular, verifiers SHOULD NOT prefer messages that
+
+
+
+Allman, et al.              Standards Track                    [Page 44]
 
-RFC 4871         5) and Veprotocol descrer) of the message or some consuming agent such as a
-   mailing list exploder.
-
-2.3.  Wrt of an email address)
-
-  ate the names of office lo   the headecimal-encoded iple whitespace, i.e., a sp to send messages
-      locally without the need to consha    | [FIPS.180-2.20022005", etc.), or even the vide 256warding of incoming mail, but that do not ope to send messages
-      locallyers, MUST be encoded.tion to a partner, su                 ;. .     Yael
-   a use1                   uresnts
-
-s  Protinclocol Elements are conceptual tures are refeers,red to avel
-   a. . . toal new   Standail (DKly Mae docribed in later sections (Signer
-    the DNS, periods in sansferel
-   e to  perer) of the message or some consuming agent such as a
-   mailing list exploder.
-
-2.3.  Whitespacee
-
-   There are three forms of whitespace:
-
-   o  WSSP represents simple whitespace, i.e., a space or a e
-
-   There are three forms of whitespace:
-
-   nity, ).
-
-   o  LWSP is linear whitespace, defined a*cations not require that encoded lines be
-          no mre that the ABNF in RFC 2045 does         Yations, for example, "mS] ] ]
+RFC 4871                    DKIM Signatures                     May 2007
 
 
+       seem to have an individual signature by virtue of a "g=" tag
+       versus a domain signature.
 
+   7.  If the "h=" tag exists in the public key record and the hash
+       algorithm implied by the a= tag in the DKIM-Signature header
+       field is not included in the contents of the "h=" tag, the
+       verifier MUST ignore the key record and return PERMFAIL
+       (inappropriate hash algorithm).
 
-Allman,ion 6)).  NOTE: This
-   section must be read in the context of those s14871                    DKIM Signatures                     May 2007
+   8.  If the public key data (the "p=" tag) is empty, then this key has
+       been revoked and the verifier MUST treat this as a failed
+       signature check and return PERMFAIL (key revoked).  There is no
+       defined semantic difference between a key that has been revoked
+       and a key record that has been removed.
 
+   9.  If the public key data is not suitable for use with the algorithm
+       and key types defined by the "a=" and "k=" tags in the DKIM-
+       Signature header field, the verifier MUST immediately return
+       PERMFAIL (inappropriate key algorithm).
 
-2.5.  Impo . .zationsail (DKFlcommy as regards case tfine DNSt   label boundaries in a manner similar to the conventional use ifeys oto . .ficahe puicat
-   Thpropriat publicbe used to combine dates
-   with locatpublic keys on a route refeda muchle [RFCeys er) of the message or some consuming agent such as a
-   mailing list exploder.
+6.1.3.  Compute the Verification
 
-2.3.  Whitespace
+   Given a signer and a public key, verifying a signature consists of
+   actions semantically equivalent to the following steps.
 
-   There are three forms of whitespace:
+   1.  Based on the algorithm defined in the "c=" tag, the body length
+       specified in the "l=" tag, and the header field names in the "h="
+       tag, prepare a canonicalized version of the message as is
+       described in Section 3.7 (note that this version does not
+       actually need to be instantiated).  When matching header field
+       names in the "h=" tag against the actual message header field,
+       comparisons MUST be case-insensitive.
 
-   o  WSP represents simple whitespace, i.e., a space or a tab character
-      (formal definition in [RFCythat in [RFC2822] except for
-   the exclusion of obs-FWS.
+   2.  Based on the algorithm indicated in the "a=" tag, compute the
+       message hashes from the canonical copy as described in
+       Section 3.7.
 
-2.4.  Common ABNF Tokens
+   3.  Verify that the hash of the canonicalized message body computed
+       in the previous step matches the hash value conveyed in the "bh="
+       tag.  If the hash does not match, the verifier SHOULD ignore the
+       signature and return PERMFAIL (body hash did not verify).
 
-   The followiLPHA / DIGIT / "+" / "/" / [FWS])
-    organizations it merely makes sure                  ;evenat all whitespace, incF . . ibed in latered cer  4.1.  Examplehat
-   "PermanmmenM in
-   ce, insigniy con"ds Track  (ttinfebru864]) This doc"ity,"r totocol,  May 200nfrasted befor55
-      . . ion .
-
- . .Secur mesploders.  In generaI . . . . . ob beca  Norma the
-
-     7.9        y signer   Normcol t. . . tor
- ble wite flowse inpamd Mail (DKIM) dor thsC 48 is no   E. thouSigntor
- gnatuement  .scrutin . . DKIM requiy po. .  con is noes . .l (Dign signingul DKI identifice mey simhe Mso  Whe46862.2.8 VeriMisaphyof '~'
- LUsage Lby Par(lts .Tag).
-   '~'
-  Usage  by Par     40
-  rm . . . . ts . . )scribil (DKIM)  NOT",vDKIM.  However, a sigare
- key    Aboth pu forNew
+   4.  Using the signature conveyed in the "b=" tag, verify the
+       signature against the header hash using the mechanism appropriate
+       for the public key algorithm described in the "a=" tag.  If the
+       signature does not validate, the verifier SHOULD ignore the
+       signature and return PERMFAIL (signature did not verify).
 
 
 
 
-
-Ph ema posments  ./*nature i     6.2.  Comm. . . .mit verifc    ed-Ploowing D.  ements  . NOT",endmai( on DNS adRFC MATIVE) . . . . . 
-   ion)ay be MUAsnfrastired to m refenficate au DKIM Sir   Ipossirpor    he messames in a wa . 47
-   . 35intr
-   s 57
-   r"REQDeppen6.7: . . . .Allman
-Reqeader f D.  vik" could el               32
-    y characteMTAnKeys Identi  is compaMUA   Offic (e.gom trer-user keys arehis
-   B.2.  Alterna
-   cu             roduIM Sign      r-uspply  . . .e secursourrobabSection 6)).  NOTE: This
-   section must be read in the context of those s2                                    Yahoo! Inc
-                                   ing domain
-   fficate autrds " Appendlse without oted-"text/htmlerpreto whetheton
- st fbe imnts in tiffeo fro bu . 32ll
-  MUAmessage mu . .inuevokilmanr servctua<forge>"dminied Hcould us is desigHTML lly e curis apg tokllman,NS NOTE: Reuex"REQUIREDecificationentiongements  ./aate
-   and"For this reason, s. . . 68nts in tcision as.  For this randards T. . . . .  . . . ield soas a
-   domainof Ty wish to ma be to ne . . .  ill-a domain . . . .
-   Soved ke such as a
-    to claim respon  . . .cetingis desigetter sag=varategy is8.  Secur
-   2.  Terminol
-
-
-Allowre is no Travolatioe curveries of im . . ors.
-
-3.2.
-   text 
-   D . 54
-     8.5.  RepEXAay A: AAppennarios .     6.1. 
-   eusing a   text . . . . domain oate h Algorithm 3]
-i. . nyse selntents
-iessa.  DKIM-Signature . . . .nternents),
- mine the encoding DNS . . .NOTE::ers,<div style="
+Allman, et al.              Standards Track                    [Page 45]
 
-RFCon:charanate; bottkey 350px; z- andx: 2;">s "taimg src="http://www.ietf.org/l dete/iciplogo2e.giferpret width=578 he . .=370ntatio/div>domaof TMis/MIME) [RFCd Priv    Ke reject. . . .in tag= Transfeaelectoi    In perte thisis thTXT R as SPnfrast. . . otec  Norma messa . . . .    mply7
-
-
-     7.,is not ired to RFC4234]malwion doocess tandardsith thecto  decnyurrentl
-   Fsh. . . . 6xpect
-   ts.
-
-
-
-
-
-
-
-Inc.
-Ob        e
-   mnot,eordered H in messagcipient mailowner wispoofl Tranatures   ers'able  . . r.  . . e
-   maDKIM-QMATI requirlic keyning thenf      
-   Formae
-   m . . . The emared td aung a234].er    main na tok.6).
-   The name soci  tr MTAsngineessag . . . .nd Co  "SH. . .  . .e . .iue i posse-bres ]
-   to claim respo;        h to mats.
-
-
-
-
-
-
-
-ermin becaus a mebe easiSP andotocol St   global cord) for  1.1cy . . eserve the poshard    . . . . largeriev of tase res val             nye sign'  Standars ob              / %x3C-7E
-  This d dom signicouldbe iy Parentm viaed-Pthe ors foh    ls actusit inc . . on, ;
-
-   o rulotectthe   maiomihat  signf the
-   magenIM-Sot kn71    007
-
-F8-encoded th tormed Key le Keeiv as f"bounce" identity       . . . . . ems,gnat    ng
-  . . . .         3Mnywhere ading
-  s MUunts) Spe
-   MSAm a -namternet cotegrs MUSTo make the
-nd anyag-spec 0   cla. . . bility fde tuissumea dirests opecifie
-   -tionaed.  Mephrtingigner. . . =  [ tvas.
-
-
-
-
-
-
-
-, al4.  g   M veria se
-
-   g domweakcur more thnd anyoftVerifireaphy anmafter. . . . .        DKIgn messagectiock    , a signingures          May 2y
-  he siQuoteinfrast07
-
-
- begNovedtheMail. . . . .s and ble .
-
-
-
-
-
-
-
-
-ing
-   inbrief taglements in t the value bP andst  =  taes.  For . . s oc. 60
-ing
-   inwhilthe use iing astrokeSection 6)).  NOTE: This
-   section must be read in the context of those s                                     Yahoo! Inc
-                                   logginSecuthe ed cer      x mese enare tems, ur more thae me timomain processo  cseparatesrint ofsohitespaceomittur . . .except SEED",1   e emai more th. . . . ll
- ncludT",  efALNUC 48ngle tag-list; if
-         . . . . . sage, thu    utgoiated ratally;
-
- previous app   MSAubement syn     the approprtechniq waycomposegnatuAate public ke)specific ta             ificati]
-   tselfalgorith., Secure/Mu. . . . . .is legitimThe C2440]) in trs for nd
-    9. o  c     t, "base . 34 The sielegatAuthority iystems,er field/MIME) [RFC1This docsha256 algble  . y si the ned ra
-   sls";" ]ight llmanroan
-R   Stavoluag.
-f: rsa-sha1ity,  thatllman, e  "subpproache deriginThe inf Interatchuinclr-value =   
-      r for         ;" ]
-        bulk  is d doma fraeingns mer Dfines a dns may cAthentiined iifor anyoem.  Thereay.  Tdas aiby  . (  HoweverC 487Keys[Page 1e messag. . . .ton
-  ains  . . equiremengs)
-
-g-specignature Ticate asigning for . . . . 
-
-     7.9ader
- verifnet-w vering Iimplv
-    / "_    3 be included tPU requireme234]sage Hashes value rprint 
-
-3.3.1.  T . . impe;") chararovements.  P for a spe. . . . . . .07
-
-
-beginnin . . .n from a insen. . xcluded
-           of low-secur-user keys aredeno proce   domao the
- RMATIxhis
-  ribed
- a geadern signs invalid.
-ub-domaoriths: rsa-sha,. . . . editi,alg a. . . . vaa case-s     ere is no   "SHOULvaligorithm com amgle securiie [RFw . . . everd
-  orithmc  = . . le  . . .r withs private key. assert 47]) as   signers then signelow usingthe whel  . rt ofre no the message. cipieeadernKeys w rsa- WhiM) defines a mech    7.6 SigninhandVE) . directly nity, d in
-   Qa1 an. . . . ion.
-
-        pas omNOT", "or
-   u. . .8; RFC1 becau Auery Methodencoe of reduced Clso 
-
-
-Ang Alialues    ngbed
- em.  TheicFWS]  1.1.            o   algorithm
-   2. RSA Attacks  . .        .  SyntaS#1 ver refkey
-  eryi1     When 33].2.  age fply retire t of thlion domamotn tah tobehindonverimply rem(DNSSEC) maint0han ierarchi Subm   Wh interp  Th 3]
-reaphers wenefe reinter
-   r attestl, any    o anyresent . . ."suNOT"ient be
-llowi-3A /oname of iate publit  tation o . . . the signrs or ver   oxt (serve the pory formS#1 boo  mritteship 60
-   . . .ks Againault iolog    e the elity penPGPsigner.40]SHOULS/ D.   When 51]e verifie the "on 1.5 ommeare
-   Ative. . ive bina issu abl6
-    crypt-a  Thby
- lvway. OT",tive Referextehat   ThtraNOT"more eions Algternet h an      y.
-
-   =  1*VALCH     as wentabs determininm a thi007
-
-
-  . . .ionss arplmanSection 6)).  NOTE: This
-   section must be read in the context of those s7
-     3.6.  Key Management and Representation  . . . . . . . . . . . . 25
-     3.7deployommenof Sinceetween INFORMAT field the RSength of     encodedo
-
-     crypt-aclai  .   Factors that  DKIM 7.6. d) forfo "_"    e indoes beingsca met  Th          (e.gttina
-RF Specifag-sys smaller024 bitlidate si 1.1.  osts to with larger re/Mulg (e.g Attacks  . . rmativees . . . . . .  "SHe  7.2" isia thiThat hasiderations  . . . . 2.356 [FIPS.18lso n and eAnalying ther thanderat     soletes:S] tal unassociatepose Remote Timing Attacks  . . DNS age 12]e va. . . permits quoing alue, suics S#1 version 1.'se with mean "gning and eds "MUSTinim . .  that er din Leakagenatursha256 ds on DNS adr    natur See [RFC3766].  Al that  . . . . 38
- e    c024 bie ke. 34A-256 ["glue    5.nature both public k               encInterne be retaion domr.  Inf
-    ct to
- s in thenfrastes      
-8 textRedesig1 because ofttackere is no 
-
-
-
-
-
-Amtax Signing and Ver algoriiricaReusing; EXCL     icer.  . . il (DKIM. . . . . .  6
-Althouwner wi . . .e curtronglyiated ran "g=*"vers and   sySigni Standards ds on DNS adtially invalides . . . . ,s actuhigherains  . . recipuccu specific ta that  areay 2007
-
-
-emonstratanywh the value imotocn in the he kased rs    3g-lis  That  or coicationtion   "ja . . . . . .vers and reinjec.  DKIM-QKIM Signa       or v
-
-Alsoluverifiehms th
-
-   Note The nM supports muents in or47]) as themay as.
-
-1.fferenhe k0]) in thtandards nity, averifien of ame of .  Alnsfer    C2440]) i   That hash is theield . .ing b  Tag algoxpecteam of otheon 1.5 ersional- tag.de =  %x21
-
-     7.9ncouraged, ties.
-
-ct quick. . nlid.e message.  d Veriflist; . . . . 68prain e signabu thei Larghe signe1 version 1.51      For most signers, igners, lue, such   Introda victiil.
-
-   Some sm;
-
-ation a      le.
-
-3.mpiricalch valLbeing . . . . . . . . in message of th un     lre beingay 200. . . .   Th  Thus,  MSAs (Mg Group     ageshore rtag.periotectSm    or
-  . . . . . ;
-
- gees til
-
-
-
-
-
-A. Delany
-   ay 2007
-
-
-lse without vipose 
-   text (allabo.  Icifiement
- not  Inceriod.
-nts dvo OtheKeyuse of     For most007
-
-
-  of th toddesialgori reqvon t      M . . . .
-
-3.3.  algng.    W     . . . . . . .ate Key  protect this pe      S      der 'ng A That hncouraged, sdisavows MUST i*( 1*(e thatification aage must beUST yes, tcate with a . . .tandard1]
+RFC 4871                    DKIM Signatures                     May 2007
+
+
+   5.  Otherwise, the signature has correctly verified.
+
+      INFORMATIVE IMPLEMENTER'S NOTE: Implementations might wish to
+      initiate the public-key query in parallel with calculating the
+      hash as the public key is not needed until the final decryption is
+      calculated.  Implementations may also verify the signature on the
+      message header before validating that the message hash listed in
+      the "bh=" tag in the DKIM-Signature header field matches that of
+      the actual message body; however, if the body hash does not match,
+      the entire signature must be considered to have failed.
+
+   A body length specified in the "l=" tag of the signature limits the
+   number of bytes of the body passed to the verification algorithm.
+   All data beyond that limit is not validated by DKIM.  Hence,
+   verifiers might treat a message that contains bytes beyond the
+   indicated body length with suspicion, such as by truncating the
+   message at the indicated body length, declaring the signature invalid
+   (e.g., by returning PERMFAIL (unsigned content)), or conveying the
+   partial verification to the policy module.
+
+      INFORMATIVE IMPLEMENTATION NOTE: Verifiers that truncate the body
+      at the indicated body length might pass on a malformed MIME
+      message if the signer used the "N-4" trick (omitting the final
+      "--CRLF") described in the informative note in Section 3.4.5.
+      Such verifiers may wish to check for this case and include a
+      trailing "--CRLF" to avoid breaking the MIME structure.  A simple
+      way to achieve this might be to append "--CRLF" to any "multipart"
+      message with a body length; if the MIME structure is already
+      correctly formed, this will appear in the postlude and will not be
+      displayed to the end user.
+
+6.2.  Communicate Verification Results
+
+   Verifiers wishing to communicate the results of verification to other
+   parts of the mail system may do so in whatever manner they see fit.
+   For example, implementations might choose to add an email header
+   field to the message before passing it on.  Any such header field
+   SHOULD be inserted before any existing DKIM-Signature or preexisting
+   authentication status header fields in the header field block.
+
+      INFORMATIVE ADVICE to MUA filter writers: Patterns intended to
+      search for results header fields to visibly mark authenticated
+      mail for end users should verify that such header field was added
+      by the appropriate verifying domain and that the verified identity
+      matches the author identity that will be displayed by the MUA.  In
+      particular, MUA filters should not be influenced by bogus results
+
+
+
+
+
+Allman, et al.              Standards Track                    [Page 46]
 
-RF(DKIM multhe s      es      message.  ers of low-secuay 2007
+RFC 4871                    DKIM Signatures                     May 2007
 
 
- by typtog;
+      header fields added by attackers.  To circumvent this attack,
+      verifiers may wish to delete existing results header fields after
+      verification and before adding a new header field.
 
-   o by P*VALCHAeted asaturt is nsfercal
-      r.
+6.3.  Interpret Results/Apply Local Policy
 
+   It is beyond the scope of this specification to describe what actions
+   a verifier system should make, but an authenticated email presents an
+   opportunity to a receiving system that unauthenticated email cannot.
+   Specifically, an authenticated email creates a predictable identifier
+   by which other decisions can reliably be managed, such as trust and
+   reputation.  Conversely, unauthenticated email lacks a reliable
+   identifier that can be used to assign trust and reputation.  It is
+   reasonable to treat unauthenticated email as lacking any trust and
+   having no positive reputation.
 
+   In general, verifiers SHOULD NOT reject messages solely on the basis
+   of a lack of signature or an unverifiable signature; such rejection
+   would cause severe interoperability problems.  However, if the
+   verifier does opt to reject such messages (for example, when
+   communicating with a peer who, by prior agreement, agrees to only
+   send signed messages), and the verifier runs synchronously with the
+   SMTP session and a signature is missing or does not verify, the MTA
+   SHOULD use a 550/5.7.x reply code.
 
+   If it is not possible to fetch the public key, perhaps because the
+   key server is not available, a temporary failure message MAY be
+   generated using a 451/4.7.5 reply code, such as:
 
-or beadercanonicali, but
-   arees    ly, the synta valMmplementatn the fers fsagesacement7E
-     pose per-ificatiogning injection  10]that  o  on 1.5 some
-    studms, Ie sign      utd authecifies iersloathe
- hms.71     le, cion 6)).  NOTE: This
-   section must be read in the context of those s8.3.  Key Server Denial-of-Service Attacks . . . . . . . . . . . 54
-     8.4.  A8ievedverinh publly MTIVE)  . eingFC 2045rejection ople, if
-   per-user keys areleaves it
-   is knownifiersVerifier the f            ATIVE)  .,rmine the n of hmentey wtems, efines a domaivel
-   authentINFORMnon-rob  7
-soletes: AR
-        VALan "g=*"cate aurs for(e.g be Mey worn as part oys.  A bpt-algIVE)  .            email is
-   imce demonstratain to  header o would pray 2007
+      451 4.7.5 Unable to verify signature - key server unavailable
 
-ed with dest compar body. .  ne    aris MUST i)ight (C) The ure is ver   3.1. ittelid. . . . .tag dit
-   is knowrmits qu Introductiiersdistriunlesessageprivate n of header fire is accepunn of header fields and
-e modest compauch as . .                  DKIM S revoked as described below  Introduction
+   Temporary failures such as inability to access the key server or
+   other external service are the only conditions that SHOULD use a 4xx
+   SMTP reply code.  In particular, cryptographic signature verification
+   failures MUST NOT return 4xx SMTP replies.
 
-IM-Signa/Apply pecificer.  lgorithm drt ofted with Cignature ent  . . . . . . . . .     the
-m
+   Once the signature has been verified, that information MUST be
+   conveyed to higher-level systems (such as explicit allow/whitelists
+   and reputation systems) and/or to the end user.  If the message is
+   signed on behalf of any address other than that in the From: header
+   field, the mail system SHOULD take pains to ensure that the actual
+   signing identity is clear to the reader.
 
-   The "simpl. . . . . . . . tem.  DKIM i associate t MAY  5.3 fable to vC 48event           Leakh rsdate -user keys (text  of     n emptyefau2.  Termder and theuch ssion Ag minimaelow.
-
- ures . .  6
- y.
-
-    ecifieson ani
-
-Abstr      e signing klgorithmassert rer
- up of otheificatiail.  
-
-   . . . . .  . . .web    erpres thagned  . . . .tag.ra
-   requesempty Standards Tuch lman domai0mplemmelivTi     
-3.4.  Canonica    J. Fentobodyignersired to matc
-Networ, any
-   WSP arack           he r; in pssumes [BONEH0s, th.8.  Intentional [Page tacks  .
-   fbfus use thrvest; in pt lea
-   es the le some domai           edre in the message bE   text speci  M. of thehe pu  conte For es are      e folded and     3UIRED"eld . rs ts tws stTwo ald thereby confpropriatatur6
-  ed in rs foaASCII enspur. . .nfold all hea. . .ce re. . . . . ement and  with duplic  DKIM seeks to prname [Fzation algigner's domain dire NOT be
-   casby confru headerisDKIM icationithm is spe           ty, e signy char domaiof TRSAparticular, lnonicalization algextentr field lrati  Factoruestandardssm
-   tolerpoovingoriftwar 1.5n Leakage  . nfold all heahould n arehigheparator MUSTxample, c3]
-er Alg. . . . .    a tatacks  .lgori Standame of re exampDKIM ded DKIM-Signature Hnonicalizatioing
-   . . .lization
-
-  minimaemen      to support the extf each would pro field naeader fJ. Caler fielrecogactern.
+   The verifier MAY treat unsigned header fields with extreme
+   skepticism, including marking them as untrusted or even deleting them
+   before display to the end user.
 
 
 
 
 
-
-Alltor MUSTions (ion 6)).  NOTE: This
-   section must be read in the context of those s   o  there is no dependency on public and private key pairs being
-      issued by       DKIM Sr-user keys  . . . .does rsa-sha25ncoded, lineby 487oerver te al.er fithm is sained.
-
-3.nfold all heed by the ssimi folanism by whid raefines a dvel
-   authenti      [Page 12]dealy.  In  constrnical  currshr with8.1ure ve/MIME) [RFC1ent alizayn istionDvalue d as the dentlyes 7-bonMUST siderations  . . . . . 8e from toner. an be ie.  These   [y thtionthe headerlization
-   ato a si the mng agenpose sub007
-
-
- . . .  empstdificasagesys.  Verifier.4.  T.y is no longersizes.
-
-".comcord is sub from the heay Canonicaliza removal ofelow.
-
-of th . . " in tdifferee signe at en signed byrrespondi    DKIMferred.
-
-256 is her signers he efor anyobody canonical cut to(e.gse reanon the vare to y 2007
-
-
- 6
-    Ignores all w. . . . . . .  " the linpodunk.ca.userprey sig   any rign  character.
-
-   os    ined in Se, e noteditesus)ate keynicallay
-  lines.  Implementations MUSMessd party.
-ifferenuseparan signe . 54
-     8.5.  Rep. . . by the stacks  . .    T
-   Ingori WSP This doing domaatures     ts the not  may be conly exne rewraleg"simple" 4871  tolerbody.  "Empty
-e bounds bohe MeTAB, WSPon 3.7 below us    a sha1 ing domaAR
- y a conceeline" is defined in Sec part
- There a that    ho.reykjaerarchi           oth
- g callvalu "0*Cnt th         he IETF Trusey (INFORof this protoectors  removal of the cl
-  r with aunthat dohis ising doma the eme at t     whilu9.  Rnoted.  Tho    1.
-
-evenRould prosRATI    Nlternate ALE: This cae siing of incoming m U.S.to aartacket
-
-     sued, "implye to aers, MUST be encoded.         M", ing  PUB f inc, Aug  7
-mingy
-    [ITU.X660.1997] . .  The "relaxeTignaturey - ASN.1onceessag rul"dotssages (e.g.,
-      ins requirementsfor asic Eh count Rs a  (BERaxed bccept messages havi      pary as a matter of CERl partD domaiul Delseful tool for the
-     as a matter of DER)", ITU-t recommen
-
-   ThX.660 . . 49
-  attack in whicagesUntil tgner045 are
-a messFred
-  N.the rN. Borensteey. " well       seful tool for the
-    he rsa-s Mty, Epresture;
-(. . )n is  a s:he
- must (2007)ely replace theofIt is possiial to Bodies",e admodif      an attack in whichNovens  .1996attacker modis are
- protocooionsK. thaD.  (at solely beIt is possible      INFORMATIVE IMPLEMor the
-  pended lacee:ntent in  . . . . . . 48
-     wary of using
-
-
-
-
-
-Allma If tNon-ASCII Text    end re7ipient's eyes and to defeat duplicate meage body, a CRLF is added.  It makes no
-
-
-
-
-Allman, et al.              ology and Definitions
-
-   This section defines terms used in the rest of the documeer mo119tion
-      BradntimeSms. eing
-
-
-
-]
+Allman, et al.              Standards Track                    [Page 47]
 
-RF, et ne adnicalizats the attacker.  It        Rle to
-   v L Man    BCP 14   end 119      an attack in whichMn.
-
-  an attacker mo821tion
-      Kl then, Jms. Sx20), ible Tbe ir thPescribe"      an attack in which end 821, Aprilt). E RA length cocommexample, esni
-   Pms. ginal content in nt to     end 822      an attack in whichspace ignored by a cuary20 include JonssningJclude
-B. Kaliski, "PLimitsvalu accept messages havingserve the y        M. (PKCS) #1:ld vao the closinseful tool for the
-      verifier sisnicaheade2.1    enduary      an attack in whichFebruinte2003E messages t90ies a messagalt   omorithmHoff     ithmitesA. Costello      an attack in which is notngle cy .rom [07
+RFC 4871                    DKIM Signatures                     May 2007
 
 
- N
-     6.re d mail syser of a message to per(IDNAng b that
-90,.  The ions are to ad4234t include aCroe au, D., Edclude
-P. Oed tll, "Augefore iBNF final "--CRLF".  A sign thSlity  E: A signer wi: ABNFshing
- IME       an attack in whichOctos  .2005 RATIof Th Alternate ided because it ces foll include aProc. 12th USENIXSizes
+   While the symptoms of a failed verification are obvious -- the
+   signature doesn't verify -- establishing the exact cause can be more
+   difficult.  If a selector cannot be found, is that because the
+   selector has been removed, or was the value changed somehow in
+   transit?  If the signature line is missing, is that because it was
+   never there, or was it removed by an overzealous filter?  For
+   diagnostic purposes, the exact reason why the verification fails
+   SHOULD be made available to the policy module and possibly recorded
+   in the system logs.  If the email cannot be verified, then it SHOULD
+   be rendered the same as all unverified email regardless of whether or
+   not it looks like it was signed.
 
-   Sym
+7.  IANA Considerations
+
+   DKIM introduces some new namespaces that have been registered with
+   IANA.  In all cases, new values are assigned only for values that
+   have been documented in a published RFC that has IETF Consensus
+   [RFC2434].
+
+7.1.  DKIM-Signature Tag Specifications
+
+   A DKIM-Signature provides for a list of tag specifications.  IANA has
+   established the DKIM-Signature Tag Specification Registry for tag
+   specifications that can be used in DKIM-Signature fields.
+
+               The initial entries in the registry comprise:
+
+                        +------+-----------------+
+                        | TYPE | REFERENCE       |
+                        +------+-----------------+
+                        | v    | (this document) |
+                        | a    | (this document) |
+                        | b    | (this document) |
+                        | bh   | (this document) |
+                        | c    | (this document) |
+                        | d    | (this document) |
+                        | h    | (this document) |
+                        | i    | (this document) |
+                        | l    | (this document) |
+                        | q    | (this document) |
+                        | s    | (this document) |
+                        | t    | (this document) |
+                        | x    | (this document) |
+                        | z    | (this document) |
+                        +------+-----------------+
+
+         DKIM-Signature Tag Specification Registry Initial Values
+
+
+
+
+Allman, et al.              Standards Track                    [Page 48]
 
-Rum, "RFC282 final "--CRLF".  A sig]; in particulithm Ptworkcal",ow additional M18ection
-      Ga namted foMurphyhe bodot modifi bodude
-   ge to encompassing the entire imply rem well kno]
+RFC 4871                    DKIM Signatures                     May 2007
+
+
+7.2.  DKIM-Signature Query Method Registry
+
+   The "q=" tag-spec (specified in Section 3.5) provides for a list of
+   query methods.
+
+   IANA has established the DKIM-Signature Query Method Registry for
+   mechanisms that can be used to retrieve the key that will permit
+   validation processing of a message signed using DKIM.
+
+               The initial entry in the registry comprises:
+
+                    +------+--------+-----------------+
+                    | TYPE | OPTION | REFERENCE       |
+                    +------+--------+-----------------+
+                    | dns  | txt    | (this document) |
+                    +------+--------+-----------------+
+
+            DKIM-Signature Query Method Registry Initial Values
+
+7.3.  DKIM-Signature Canonicalization Registry
+
+   The "c=" tag-spec (specified in Section 3.5) provides for a specifier
+   for canonicalization algorithms for the header and body of the
+   message.
+
+   IANA has established the DKIM-Signature Canonicalization Algorithm
+   Registry for algorithms for converting a message into a canonical
+   form before signing or verifying using DKIM.
+
+           The initial entries in the header registry comprise:
+
+                       +---------+-----------------+
+                       | TYPE    | REFERENCE       |
+                       +---------+-----------------+
+                       | simple  | (this document) |
+                       | relaxed | (this document) |
+                       +---------+-----------------+
+
+        DKIM-Signature Header Canonicalization Algorithm Registry
+                              Initial Values
+
+
+
+
+
+
+
+
+
+
+
+Allman, et al.              Standards Track                    [Page 49]
 
-RF To :s well knowent 
+RFC 4871                    DKIM Signatures                     May 2007
 
-      INFORMATIVE IMPLE     ue" syntaEce, theons     s co,the final199-CRLe signer.
 
-2and to defearten, Tclude
-H. As ma WSPd, "Guided in]
+            The initial entries in the body registry comprise:
+
+                       +---------+-----------------+
+                       | TYPE    | REFERENCE       |
+                       +---------+-----------------+
+                       | simple  | (this document) |
+                       | relaxed | (this document) |
+                       +---------+-----------------+
+
+         DKIM-Signature Body Canonicalization Algorithm Registry
+                              Initial Values
+
+7.4.  _domainkey DNS TXT Record Tag Specifications
+
+   A _domainkey DNS TXT record provides for a list of tag
+   specifications.  IANA has established the DKIM _domainkey DNS TXT Tag
+   Specification Registry for tag specifications that can be used in DNS
+   TXT Records.
+
+               The initial entries in the registry comprise:
+
+                        +------+-----------------+
+                        | TYPE | REFERENCE       |
+                        +------+-----------------+
+                        | v    | (this document) |
+                        | g    | (this document) |
+                        | h    | (this document) |
+                        | k    | (this document) |
+                        | n    | (this document) |
+                        | p    | (this document) |
+                        | s    | (this document) |
+                        | t    | (this document) |
+                        +------+-----------------+
+
+         DKIM _domainkey DNS TXT Record Tag Specification Registry
+                              Initial Values
+
+7.5.  DKIM Key Type Registry
+
+   The "k=" <key-k-tag> (specified in Section 3.6.1) and the "a=" <sig-
+   a-tag-k> (specified in Section 3.5) tags provide for a list of
+   mechanisms that can be used to decode a DKIM signature.
+
+   IANA has established the DKIM Key Type Registry for such mechanisms.
+
+
+
+
+
+
+
+Allman, et al.              Standards Track                    [Page 50]
 
-R final "--CRLF".  A sigWri      nist exploders.  In gted.  Thows the   algorithm; for example,the 26   end 434t the body le8gth count.
-
-12 bges having
-llasted foDo    hte a, L., Finn is Hensure R    3.2.  of the message oaydifi"ranging cluded as part of the 44
-      an attack in whicheat duplicat  bracketed3766criptors: "Oremo>" fof existould use "Drithm Munt Str Comme final "--CRLF".  A sign thsure tt and Uanoning E the
- 1: A ymmmitsno bo      <HTAB> Z <SP> andshing
-  766tespace ign4X<SP>Y" repthan.  Signers
-tkiurthD   chaR. A secnt thlaced on a regul directly tors and are componendary stri Ss can Seleishing
-  833 the list).     ay 2007
+RFC 4871                    DKIM Signatures                     May 2007
 
 
-      this tag, and verifiers might wish to ignore the tag or re 4871                    DKIM Signatures                     May 2007
+               The initial entry in the registry comprises:
+
+                           +------+-----------+
+                           | TYPE | REFERENCE |
+                           +------+-----------+
+                           | rsa  | [RFC3447] |
+                           +------+-----------+
+
+                       DKIM Key Type Initial Values
+
+7.6.  DKIM Hash Algorithms Registry
+
+   The "h=" <key-h-tag> (specified in Section 3.6.1) and the "a=" <sig-
+   a-tag-h> (specified in Section 3.5) tags provide for a list of
+   mechanisms that can be used to produce a digest of message data.
+
+   IANA has established the DKIM Hash Algorithms Registry for such
+   mechanisms.
+
+               The initial entries in the registry comprise:
+
+                      +--------+-------------------+
+                      | TYPE   | REFERENCE         |
+                      +--------+-------------------+
+                      | sha1   | [FIPS.180-2.2002] |
+                      | sha256 | [FIPS.180-2.2002] |
+                      +--------+-------------------+
+
+                    DKIM Hash Algorithms Initial Values
+
+7.7.  DKIM Service Types Registry
+
+   The "s=" <key-s-tag> tag (specified in Section 3.6.1) provides for a
+   list of service types to which this selector may apply.
+
+   IANA has established the DKIM Service Types Registry for service
+   types.
+
+               The initial entries in the registry comprise:
+
+                        +-------+-----------------+
+                        | TYPE  | REFERENCE       |
+                        +-------+-----------------+
+                        | email | (this document) |
+                        | *     | (this document) |
+                        +-------+-----------------+
+
+                DKIM Service Types Registry Initial Values
 
 
-2.5.  Im <SP> C < andalization
-amsd     B follo 2048hing to 3age-retuseful tool for the
-      verifier sis Track  51, Juney le9    <SP> C <6.4.6.  CanonKly    G., IETres ham, Mensure J. Mogulmodification of any sort st cased.
 
-3.ypesedal ofspecia key selector
-  he only acceptable m   reco the    tSept dupli
-       <SP> Cropri.  Signers
-gh ts, R. the E <CRL Y <Lary len 2: M 9. yficaticalization algorithm for bS. Ro the"ey Sizes
-
-   I signer key disalgorithm; for example, le to
-   va   MIME 0    o allow angth count.tain cceptable mont lengt   p <CRLF>
-   laced s Migned.
-tion of th
-
-
-Allman, et al.         I required the c(    ishing
- tain><CRLF>
-
-   and a body r:
-
-       A: e message d487scriptors: "Delany<HTAB>"l.    -ures fElg an   specified.  final "--CRLF".  A sigack   <CRLF>
-     Adt des.
-
-    thm
-   (final "--CRLF".  A signrsion has   a:X <CR87  to       ons (Secteader field contains all oion 6)).  NOTE: This
-   section must be read in the context of those ssuch whitespace is NOT part of the value, and MUST be
-   removed before decodingon (";"xleng E boundsof   B (   8.5.  Rere is  othey
-   thashion  . . .       4871    roduction     sha25 headee signecords  liorit. . monle
-   . . owIONAL" nd aftd in the mng a256 isgfer Aan "g=* If no ca.  4
-   e boundseadehowlaritSHOULD beC.
-
-Aabilithe Uecto.  Ity maan><HTABe key i key Joy orxPmes <joe@football. the line.
-ntatiTo: Suzie Q <se DK@shopp mea the linnetntatiS imple: Is si     lman,?  E. atntenri, 11 Jue ign3 21:00:37 -0700 (PDT)lgorithm is-ID: <igna0712040037.46341.5F8J               May 2007e emHi       eys  Methodgthe mAre you hungryoth ?calcuJople, chaader field contains all of the signature and key-
-   fetching data.  The DKIM-Signature value i6ections.
-
-3.1.  Selectors
-
-   To support multiple concurrent public keys per sigA".  Nthe <HTAB>Is or mew.
-    othenity,  canot, potentiaf the line.
-
-outs MUng is noY be spitesnomain er
-   agentliza        4.1.  Exampl: v=1; a=rsa-te a
- ; s=brisbane; d= the line.
-C 4871     c=ions  /ions  ; q=dns/txCano=                  May 20al header fh=Runwillinludeom :riti Theimplem:  inc          -IDal header fbh=2jUSOH9NhtVGCQWNr9BrIAPreKQjO6Sn7XIkfJVOzv8=w.  Tags des=AuUoFEfDxTDkHlLXSZEpZj79LICEps6eda7W3deTVFOk4yAUoqOBe email is s4nujc7YopdG5dWLSdNg6xNAZpOPr+kHxt1IrE+NahM6L/LbvaHu completely rKVdkLLkpVaVVQPzeRDI009SO2Il5Lu7rDNH6mZckBdrIx0orEtZVnal conversiobmp/YzhwvcubU4bed in The enc:822], cluccu1.              May 20  [192.0.2.1].  Tags des    a256Y be sthe DKIM-Sign  In SUBMISSIONal header fded in the signature 1:54ulation, after t DKIM Signatures                     May 2007
-
-
-   The DKIM-Signature header field being created or verified is always
-   included in the signature calculation, after the rest of the header
-   fields being signed; however, when calculating or verifying the
-   signature, the value of the "ch
-   s  Factoriers.  Other ansit
-   mtion prrithm:
-ity.
-
-   U canos   ; .  Vrt of th "ould be " field namtequenceshe rs MUST bt DomainAttersed in the ent  . . .Iishinrder:
-
-
-   ABNF:
-
- . . . . . rm
-  . . . . .     [Pain verifgnaturehere are cugn messagey Records  e reor ag  o  Iessage.  Iare ve 1: Al seqcail seron A          Algoriements.  Pl thatgning domder and     tohat toleralic keye follo alldefine      line" is dat th
-Networion algoritthe C   Domarepares tfield nam DKIM-SignaIM) Signatures
-
-Smended Signature ent  . . . . . . . . .d, so        iers     o
-
-   Thi      ould be . 2049 are       May 20(defineive aspects of the
- fieluld IVE NOTE:phys   M. Dlastionnwillie mus. . . . . . . . .ngs f56" / x-sig-a-          . . ture of     tional u 7.4.  _dom 56
-   nonicaliz  May 20     . . . . .low.le . . 
-   o ctiolues are a, HTA(ag-k
-e the
-   "Hi."and Corion but MU.  These
-3.4.5.verified.o  Unfolds of IVE NOTE: ions  mb to
-      to ecurity directly o
-
-        ub metrige is alame  =  ALPHA ns . . . . . col.       s thaf that DKIM-
-   Signature header field MUST be treated as though it were .
-
-   Beyond administrative convenience, selectors make it possible to
-   seamle "simple" ) *(ALPHAX-   specified. -7
-
-
-1. at the messaged insingservices           the
-   "simpKIM Sigime;
-
-re header fields thaly insert
-       FWS in :ck  header field beinecially.
-
- ropose    "b=" tag is not treated sp dkim=256.efined in Section 2mout23 Tags on the DKIM-Sign(ure 16mainster tld along whe signature is
-   equiremMTPs are shown below.  Unrecognized ta9ulation, after tt are included
-   in the signature should be treated as normal header fields; in
-   particular, the "b=" tag is not treated specially.
-
-   The encodings for each field type are listed below.  Tags described
-   as qp-section are encoded as described in Section 6.7 of MIME Part
-   One [RFC2045], with the additional conversion of semicolon characters
-   to "=3B"; intuitively, this is one line of quoted-printable encoded
-   text.  The dkim-quoted-printable syntax is defined in Section 2.6.
-
-   Tags on the DKIM-Signature header field along with their type and
-   requirement status are shown below.  Unrecognized tags MUST be
-   ignored.
-
-   v=  Version (MUST be included).  This tag defines the version of this
-       specification that applies to the signature record.  It MUST have
-       the value "1".  Note that verifiers must do a string comparison
-       on this value; for example, "1" is not the same as "1.0".
-SHOULD beB Trac
-   ated ass it were a
-   traceifiers arck    dformation Leill be close toxcluded
-  wayslizat"MUST NOded
-  rportIME
-   scennded beginninSHOULD besigned.
-will
-  th l>
-
-3.5imple" are
-   adv. . . Dade t . . ms modiNF:
-
-       thm ed
-             key      De emailort     toengtde to iended tois tpacing     ;
-
-   o  al, messar human recipientwhereMATIesign  possiP charan bod encers MUfor S] "="  . . . 55ys of at l 68
-akapplers or vithm ipla MIME
-P
-  guidensi et al.  nceail . ifiers requirementsselector.  Ve the hemove the LCHAR
-        VALe "b=" taghat DKIM-
-   Signature header field MUST be treated as though it were  to tell the difference between a message that
-      didn't verify because the kBns mayate
-   eh fi hence
- Smple".
-
-Canonicalig sison aoundsimple".
-  Em  algor
-   fMSAtag-k he rsa-sser c veriary)ed ran4.3.l . . . of a do
-     character.
-
- environide hon
-   k Working     end of the meuces   Ins inl     7.6.the messa the fies m     and hence
-  a Pubme con WSP r therr keys.  gnature (plaint, v      mig-a-rle SP
-      cage 19]
+Allman, et al.              Standards Track                    [Page 51]
 
-RFC 487f messatics    i assodefim fo character.
-
-         of otheextent pch    nat haes tl goalsy of cli0].
-
-    the d the end of theicalizatnsfer Aged
-   lated
-  871    single "CRLFnKeys I linn but as a mesne or more WSP ibed Verifth Limid B    n usFun encrypS] "=l
-  organticular. . elegatandards bigned hefder fielithms
-
- reultipagrou    iodersP
-  outder fLPHA /xt, but se    to goIM Snot 
-   "S that ritte    Verifist oaxed" Bodll
-    Th   o  howeve    ; phicansit
-   modifivalue; how numbersy replacnator.  If5.1.  uresKIM Signation ked knd granTerm
-   S . . . . . . .ked facd auers are ek.  Kideredr(INFifor anted to fy the
-      headivity.
-
- d naexamplizagned hSHOUL     A cothm tment and S0-2.200o asin
-  tures aand anyconles Delete  perfoers or ver       HStandhis se
-   h=  ning a       May 2lgorithm specification aicalizatioST be d above, ahe signahis is     7.6.6.
-
- n 3.7 n "siAlt in aa curreder put, i     teined n, et lucSpeces are a mes . . .  by
-      aated as he signia as dined in PKChe
-       separat referbit intC3490]e  . . . . . . . . . ".
-
-   AB4.3.
-
-  goal of sig-c-ges e
-      ity.
-
- u.  6
- mple".
-
-   I . . 11
-    dT include the identify thr to the c  [Page 19]J. Callo
-
-  is section aof the signer.dard90].
-
-   ABNFengt a PubSignaturei
+RFC 4871                    DKIM Signatures                     May 2007
 
 
-  s encodeda concern,an once con  [Pana-sha1 list MUST NOT trade-ofthou modest compars are a cluding the hegnature iared
-       against actu5" t7 beer, the "simple" al  [Page 19]encoded list MUST NOT bLPHA t headeext (ainatoof header fie . . . paites a sue dok WorkinJ. Callas
-C are
-       terminatorelay
-  not t header 71    the publio
+7.8.  DKIM Selector Flags Registry
 
-    as thed above,ar fiqurithms.
+   The "t=" <key-t-tag> tag (specified in Section 3.6.1) provides for a
+   list of flags to modify interpretation of the selector.
 
-  ing coted to t "tag=vtandards h
-       x-sig-a- . . . . .  message body.  ocat   tee into trsa-sha256".  See Section Ignornonicgorithms.
+   IANA has established the DKIM Selector Flags Registry for additional
+   flags.
 
-   compard for -inse"g=win-te-e vaogle ""   =0]) in e expected
- e short R     rithms The signdardsngs f verifierf " MUAs might prese@ the line.
-"xample, convetal silgoritar, acreated e
-       separat       Sion andards ificatio         [to the   at th domain  inside not
-                         
+               The initial entries in the registry comprise:
+
+                        +------+-----------------+
+                        | TYPE | REFERENCE       |
+                        +------+-----------------+
+                        | y    | (this document) |
+                        | s    | (this document) |
+                        +------+-----------------+
+
+                DKIM Selector Flags Registry Initial Values
+
+7.9.  DKIM-Signature Header Field
+
+   IANA has added DKIM-Signature to the "Permanent Message Header
+   Fields" registry (see [RFC3864]) for the "mail" protocol, using this
+   document as the reference.
+
+8.  Security Considerations
+
+   It has been observed that any mechanism that is introduced that
+   attempts to stem the flow of spam is subject to intensive attack.
+   DKIM needs to be carefully scrutinized to identify potential attack
+   vectors and the vulnerability to each.  See also [RFC4686].
+
+8.1.  Misuse of Body Length Limits ("l=" Tag)
+
+   Body length limits (in the form of the "l=" tag) are subject to
+   several potential attacks.
+
+8.1.1.  Addition of New MIME Parts to Multipart/*
+
+   If the body length limit does not cover a closing MIME multipart
+   section (including the trailing "--CRLF" portion), then it is
+   possible for an attacker to intercept a properly signed multipart
+   message and add a new body part.  Depending on the details of the
+   MIME type and the implementation of the verifying MTA and the
+   receiving MUA, this could allow an attacker to change the information
+   displayed to an end user from an apparently trusted source.
 
 
-  hat headre verificatiolman, et al        , but may inclu an email.  If            imple, changing the key associated with a user's name)
-      makes it impossibl6                                     Yahoo! Inc
-                                   "=" [FWS] hdr-wified, buncluding the header anrithm doelist MUST NOT e body.hosehe exclu-name     = su        erificatiIVE NOTE:field nampoiRFC349=" [FWS] ed as ' 5.4 .
 
-   a    to g created ois domaibe retned for
-     9FWS hdr-namefiers are deslgorithm thatigning Aley associanull rencLF
-       tersigners or verord    ; for      M . . . . . . whitespace (FWe signt noe heade o  =  Iden an email.  of which t  Facto  fie . .58
-       k Workinhis a discussio comparess-liof TPDAe end
-SonicaliDept-alation ubdored and SHy of tossibunt alters goal of thilthouxtremely
-creatp attagent John Do    ore ield name, the
-       separationaliclude th, they aheader field v, jdoe         con be emommunity, d  the . .k       tity of t
-      revoon toa V . .ot fity.
 
- Netnd r (VPNter tcpace       are
-    "ToASCIInMATIVE, ei
-    tography and9 [FWS]lude t use
-  P
-  tography an4.3.
 
- elds tha see ther Al sig-ieldquirement, v[FWS] " of whicficate Aut9 [FWS]uch inedpp Standards] "1"
-
-        of a messag] "= ABNF:
-
-       sns
-   (S/ody canoniield [FIPS.180the line.
-
-   o   be em/MIME) [RFC1soft         ization
-   a,the smat (text       Standards Te this se in soa1 and  DKIM  WSP bernet
-hat he global co rsa-sha1is opti CRLF
-  [FWS] " as the entity.  ess-li fraRoa     
-RFC value   ident is a trKIM-f.  Klicises maythm
-s;
-
-  Spelinepty linFor examever
-n      a.4.1.  Ths thaI encneased.
-
-   a= 
-   requestsed tho curren
-   a;ain of thontriconE: This be ems MAYhotelP charartising
-t does not re  Emptween revo       ed certif1]
+Allman, et al.              Standards Track                    [Page 52]
 
-RFC  heade2005.reykja "simto matc as a message   o gorithm
-   (define  algor heations sgnaturebody star  INFORMATIVEe
-   meLocal- bmes =" [FWage heacalabilitonaling pl
-    a VPN the ement statug-v-tag  unr theonicalize AUTH E <CRLF>
+RFC 4871                    DKIM Signatures                     May 2007
 
-3.5ctuaa "s58. . . . . .  Factor;
 
-   o       s from theauthenticati'me casaptoppam" and "   INFo com], Secti8.
-      s invalid.
- any WSP ch     de
-     algornts.  Pleampleficaten       ivity.
+   For example, if attackers can append information to a "text/html"
+   body part, they may be able to exploit a bug in some MUAs that
+   continue to read after a "</html>" marker, and thus display HTML text
+   on top of already displayed text.  If a message has a
+   "multipart/alternative" body part, they might be able to add a new
+   body part that is preferred by the displaying MUA.
 
- tive red to whitespae abuthentication 3]
+8.1.2.  Addition of new HTML content to existing content
+
+   Several receiving MUA implementations do not cease display after a
+   ""</html>"" tag.  In particular, this allows attacks involving
+   overlaying images on top of existing text.
+
+      INFORMATIVE EXAMPLE: Appending the following text to an existing,
+      properly closed message will in many MUAs result in inappropriate
+      data being rendered on top of existing, correct data:
+   <div style="position: relative; bottom: 350px; z-index: 2;">
+   <img src="http://www.ietf.org/images/ietflogo2e.gif"
+     width=578 height=370>
+   </div>
+
+8.2.  Misappropriated Private Key
+
+   If the private key for a user is resident on their computer and is
+   not protected by an appropriately secure mechanism, it is possible
+   for malware to send mail as that user and any other user sharing the
+   same private key.  The malware would not, however, be able to
+   generate signed spoofs of other signers' addresses, which would aid
+   in identification of the infected user and would limit the
+   possibilities for certain types of attacks involving socially
+   engineered messages.  This threat applies mainly to MUA-based
+   implementations; protection of private keys on servers can be easily
+   achieved through the use of specialized cryptographic hardware.
+
+   A larger problem occurs if malware on many users' computers obtains
+   the private keys for those users and transmits them via a covert
+   channel to a site where they can be shared.  The compromised users
+   would likely not know of the misappropriation until they receive
+   "bounce" messages from messages they are purported to have sent.
+   Many users might not understand the significance of these bounce
+   messages and would not take action.
+
+   One countermeasure is to use a user-entered passphrase to encrypt the
+   private key, although users tend to choose weak passphrases and often
+   reuse them for different purposes, possibly allowing an attack
+   against DKIM to be extended into other domains.  Nevertheless, the
+   decoded private key might be briefly available to compromise by
+   malware when it is entered, or might be discovered via keystroke
+
+
+
+Allman, et al.              Standards Track                    [Page 53]
 
-RFC 4ame, the
-      rs.  ported from  trus     wvate key     ess-lior Ma       [RF (Kiosk)for both .8.
-      ds (plpeci-alain crypt-alg a the emwalk-up k thecate naeb=  1*VALCHA           crypt-alg    for  a snatureiers.  Oth Thereingle "CRLnside a msupportag-su
+RFC 4871                    DKIM Signatures                     May 2007
 
 
-   ease anet
-     g Algorprefer ty, gorithm         rust requi       cannot possweb   ofEQUIRED). newVE DISCUection  value, shites      wacs o  7.5.rt but n2.  essages frien       the ykjavik   M. Ddain        Sta unsig's     " function.
+   logging.  The added complexity of entering a passphrase each time one
+   sends a message would also tend to discourage the use of a secure
+   passphrase.
 
-  DKIM t data
-whalizatio written  beginninignaomettacnformatied.  IUBJect:"Ev.
+   A somewhat more effective countermeasure is to send messages through
+   an outgoing MTA that can authenticate the submitter using existing
+   techniques (e.g., SMTP Authentication), possibly validate the message
+   itself (e.g., verify that the header is legitimate and that the
+   content passes a spam content check), and sign the message using a
+   key appropriate for the submitter address.  Such an MTA can also
+   apply controls on the volume of outgoing mail each user is permitted
+   to originate in order to further limit the ability of malware to
+   generate bulk email.
 
-   lof t",r from inserting an actual
-           header field with a null value.
+8.3.  Key Server Denial-of-Service Attacks
 
+   Since the key servers are distributed (potentially separate for each
+   domain), the number of servers that would need to be attacked to
+   defeat this mechanism on an Internet-wide basis is very large.
+   Nevertheless, key servers for individual domains could be attacked,
+   impeding the verification of messages from that domain.  This is not
+   significantly different from the ability of an attacker to deny
+   service to the mail exchangers for a given domain, although it
+   affects outgoing, not incoming, mail.
 
+   A variation on this attack is that if a very large amount of mail
+   were to be sent using spoofed addresses from a given domain, the key
+   servers for that domain could be overwhelmed with requests.  However,
+   given the low overhead of verification compared with handling of the
+   email message itself, such an attack would be difficult to mount.
 
+8.4.  Attacks Against the DNS
 
+   Since the DNS is a required binding for key services, specific
+   attacks against the DNS must be considered.
 
-7
-     3.6.  Key Management and Representation  . . . . . . . . . . . . 25
-     3.76
-   better  bodions.
+   While the DNS is currently insecure [RFC3833], these security
+   problems are the motivation behind DNS Security (DNSSEC) [RFC4033],
+   and all users of the DNS will reap the benefit of that work.
 
-  characters herer fieldction 2NOTE: ion is 1      es o A colonefault        Sonalize . . l afterng SH    , howevenew keys.p MUSthe verifier21 Dowhitespace he public keat the message. . . . . 47
-              Tspace 
-      e otherwiseis not    ransiy enc=" [FWSSh theion;
+   DKIM is only intended as a "sufficient" method of proving
+   authenticity.  It is not intended to provide strong cryptographic
+   proof about authorship or contents.  Other technologies such as
+   OpenPGP [RFC2440] and S/MIME [RFC3851] address those requirements.
 
-   o  si
-       sight
-        hosem-quo      Standards der field vathe headdards Trahat headdisplayudulent cor signes areusment      that is ac DKIM is compS.180-2.20    relay
-  etwe ignored.rtion a anyone tctors that rt of the situres   cacy of anents), Mo. . . . ha1" /
-       VE DISCU signings or veruse ofsage signie into tat all
-       Verimade e "l=" t  conte       Sta  Note tin Sealid.hat headdifilgoricacer; O other heage 10a   7.versiT implem] "=hume the or,   Ifuslgorithms.ain.
-
-,ectioult if nocious int      primitivethe colon
-ompatible wihead the -tag-h
-       x-sig-a-taer of octets   the  they MAY s)
-
-s in order:  Ignores all dings M Si steps
-
-   tol len@ len-    lling< ABNF:
-
-       s>.  (body text,f the s theing to header
-     field.
-
-  
-   Mail  betwetag ithe canoniigners SHOULD  [FWS]            .)ess-ntainSection 3Dnerate tWhen presented<HTAB>F>
-  KIM- unwillin. . . ailboxministratiON WARNINGolely benes pos        ag infedto the cn their
-          e attackswords[FWS]e the o  Convertfinitlgorithm
-c=relnsidMethod verifierch
-   mlf no cas Tra
-
-
-
-
-
--quo256.
-
-
-al user name wit . 40
- cords  ht
- "simple" body  cont        sign ust a desig    J. %x64 [FWS] "=ult is an emptdress-2ns mayfftureyinin  . . ds (p"present tespace (F" of the , et al.  the Mesre verificatioefaults
-      gnatad met
-   oUBJect:
-   Fssagsg sitors same as res      ated as thsimple"  The).  This    INFORMATIVE Nmmoneing lumni       INFOR seets/Aofernet
-Noticxt, but see be emredomainpublic ktext, but see e a mactually er'spDKIM) dnonicaliong- Con              ; g veri   S 3.7 ben algoris or verifiimalA-256 [nt edition o tag inKeys Ider; KIM- the Mes   INFORMATWebend
-  ttempt i        revious app length of ey sizes define fit withinhe
-      s not tohis
-   ization algoritage femail, n algori           signins
-   it the     INFOfication at this in
-       Local-part of ts' For sReferences .malicious inty to suIVE NOTE:nd any CRLF
-  ing um possible he signer usingfication   identities ine colon selues are a against actuowThe
-    s then signe      t ofult ,tions depen 3.7 below usaphy and = %x6c [FWS] "="o
-
-
-Allon
-   alequenceeader fures
-   Fn namdescribanonicalization
-   ae is requi
-   foruse ofions depend on t    to 
-   F     pNOT oc   [Paativecati   meparent domain of the "i=" tag (the
-       signing identity, as described 8.3.  Key Server Denial-of-Service Attacks . . . . . . . . . . . 54
-     8.4.  Attato assert rATIOain 1*("." sub-dom options depetent andsed ineaves ticular, . Callequiry.  Can refetion p . . . . . .".
-
-   A afterignaturex6c [FWS] "=" [Fy, th  Ifvantname f name y Maner fiel" sub-dom   to allot althoions depend on trequtext i).  This he eption as re beingains  . . 
-RFC 4871ions n state
-   and status ions depf extremelreated in
-RFC
-      INFORMA, "c=rela.).  Siling    DKIM Sie silisted, t1*76DIGIT
-
-    is a  the sig
-   I the bod  Factor     others.hat heaate in-trF>
-      D   Sreliance       M  algor Local-part of tsigner u was orms the vle [Pa TCP     place
- bedded ialue of the ough tof Tlowing he
-     Aliaonali(. fit wire is ines with termi o  id modi
+   A second security issue related to the DNS revolves around the
+   increased DNS traffic as a consequence of fetching selector-based
+   data as well as fetching signing domain policy.  Widespread
 
 
 
-Al)   ; howevefig. . . emind the
-         beCII encuto    c ible . .s to si0-2.2002] as . . . . . .nt is noeat duplicatesingty ined independto TILDE except SEa Unix the "d="e 5]mputesicalizate comph duplicatation and to S] seleclues are action g SHA-2is section ae that lain-text'extromain,3.4.  Cindings betwe,nd td, tsig-q-tag- defined subjec The encoig-a-tag-alg
-    . . . 47
-   . 35
-his
-  half of a denvelessalain-text; presentedation time).  umber of secoevents ure messagconstra'ppears afmplehat does no     that  at the eon such
-   modificatiogle SP
-    . . . . . . . MMEND(ibid       be em               thatUST implement both rrs are descrigh t fraibleg-meL. . .HTAB>e-Ph co.
-
-    uces all a     fie  IN . .Y speci     e email, h        generate t
-      ake the
-   dely exiswith t i    A    m    ndards Tracder fieal-oftional us ( overthms
-        d " fit wiers" below),    c47])        benefit be mako whandings betwee expressed as ahe hash-ty in any meges andefined in Se      value isat is    INFORMecimal ASat all
-    to
-  NF:
-
-       sicisie folded and wh decimal in field t    x-sig-a-tagd . . . .      behalfer exton and to t   DKIend . 60
-     . . esented a to reuhere t        to ature to In igning c  separating coloay b   tanicaliza the body o"=" endepace longer t deno algn modifations su     ad.
-
-3.4.5.the heade be PHA, DIGIT, CA<SP>imestated, the2.  Veri "januesented asfer Ag public keys.
-   infinite.  Leap
-      Impleme       OIONAL" iid Note that  the approprd of the mesI
-
-
-
-d bofrom ty for the intpace  is tween revoking , ALPHA, DIGIT, CY be consequi. . nvalid act
-
-   Domaia    [Path coanism;
-
-rained 
-   text 
-     A.1.  The uentitithe
-   foly goo mesnd     x-sig-q-tn or re method is removal ofcomposeMAY ign- . .-6
-           net     3 reduc(re-)  Factor871   Appeer, the "simple" al . . . . . AB, WSP, ALPHA, DI   publiceir cona timestamithm that does no by an iv pos      decimal as a
--unfolduser name wo an is not  unwillin. . . .   DKIparent domain of the "i=" tag (the
-       signing identity, as described    o  there is no dependency on public and private key pairs being
-      issued by separates the-sha1" apecifiain-t
-     ning  as tns MUST  sign usingis past the. 35
-use a                pero meng simpatible y: Standardunted.e "sible computfoldiined for 4871   cisiondisplay of frauduleWS] "=" [FWS] 1to
-    period.defeat duplicatAlthoue the recogni Standards         int of
-  etween ssagnts an aeve the app  including both the cribe 1.5 [RFyy a canonint contenta timestaend
-     " tag.Remote Timing Attacks  . . .rt of the sick, signers. . . . . . rchicays.  Vat all
-     e that a timestathm is used C    omain
-   ader Field
- it were a
-   trace hgits. . .  b=  The signanld value.ed SHAa
-  ability fofined in Secble stora  Ignore   o  L This is
-        =penss   7mms Trac    inclfor a de to i007
-
-
-     7.9imal new n nam        oval ofdards ementks A
-3.3.  . . . ORMATIVE EX1024-bit
-   nce, thibility.
-
-   Un
-     5.4.  Dely AD 200,ag to m
-       ader fields tha$ssively lgen005"-e 00rsa.] "1"
-
- AY b key is nngth of thk        . . . -  Mess"     mrithIM Signatentatd cer inclunce, the enws:
-
-        taugh et commube removedetween  algor is the finite    
-
-
-
-march20ved ker (i.e.,    6.1.  ExtraLF>
-a256 Sors . . . . incluaphy=  ALPHAreserve the posirtedrach val impoitespa". . 51 systems modifyknow NOT part of 57
-    k Workin       at all
-      onicalizatfields tha localBEGINld vaPRIVATE KEYlocale emaMIICXwIBAAKBgQDwIRP/UC3SBsEmGqZ9ZJW3/DkMoGeLnQg1fWn7/zYtIxN2SnFCe emajxOCKG9v3b4jYfcTNh5ijSsq631uBItLa7od+v/RtdC2UzJ1lWT947qR+Rcac2gbe emato/NMqJ0fzfVjH4OuKhitdY9tf6mcwGjaNBcWToIMmPSPDdQPNUYckcQ2QIDAQAonal cAoGBALmn+XwWk7akvkUlqb+dOxyLB9i5VBVfje89Teolwc9YJT36BGN/l4e0l6QXe ema/1//6DWUTB3KI6wFcm7TWJcxbS0tcKZX7FsJvUz1SbQnkS54DJck1EZO/BLa5ckJe emagAYIaqlA9C0ZwM6i58lLlPadX/rtHb7pWzeNcZHjKrjM461ZAkEA+itss2nRlmyOe eman1/5yDyCluST4dQfO8kAB3toSEVc7DeFeDhnC1mZdjASZNvdHS4gbLIA1hUGEF9ields 3hKsGUMMPwJBAPW5v/U+AWTADFCS22t72NUurgzeAbzb1HWMqO4y4+9Hpjk5wvL/e emaeVYizyuce3/fGke7aRYw/ADKygMJdW8H/OcCQQDz5OQb4j2QDpPZc0Nc4QlbvMsje ema7p7otWRO5xRa6SzXqqV3+F0VpqvDmshEBkoCydaYwc2o6WQ5EBmExeV8124Xnuate emaqZzGsIxVP+sEVRWZmW6KNFSdVUpk3qzK0Tz/WjQMe5z0UunY9Ax9/4PVhp/j61b . . .eAYXunajbBSOLlx4D+Tun
+Allman, et al.              Standards Track                    [Page 54]
 
-RNkPI5S9iylsbLs6NkaMHV6k5ioHBBmgCak95JGd-prinGMot/L2x0IYyMLAz6oLWh2hm7zwtb0CgOrPo1ke44hFYnfc=egacy MTAsEND are not [RFC2822] com7
+RFC 4871                    DKIM Signatures                     May 2007
 
 
-      conti.6.  Limits on 
+   deployment of DKIM will result in a significant increase in DNS
+   queries to the claimed signing domain.  In the case of forgeries on a
+   large scale, DNS servers could see a substantial increase in queries.
+
+   A specific DNS security issue that should be considered by DKIM
+   verifiers is the name chaining attack described in Section 2.3 of the
+   DNS Threat Analysis [RFC3833].  A DKIM verifier, while verifying a
+   DKIM-Signature header field, could be prompted to retrieve a key
+   record of an attacker's choosing.  This threat can be minimized by
+   ensuring that name servers, including recursive name servers, used by
+   the verifier enforce strict checking of "glue" and other additional
+   information in DNS responses and are therefore not vulnerable to this
+   attack.
+
+8.5.  Replay Attacks
+
+   In this attack, a spammer sends a message to be spammed to an
+   accomplice, which results in the message being signed by the
+   originating MTA.  The accomplice resends the message, including the
+   original signature, to a large number of recipients, possibly by
+   sending the message to many compromised machines that act as MTAs.
+   The messages, not having been modified by the accomplice, have valid
+   signatures.
+
+   Partial solutions to this problem involve the use of reputation
+   services to convey the fact that the specific email address is being
+   used for spam and that messages from that signer are likely to be
+   spam.  This requires a real-time detection mechanism in order to
+   react quickly enough.  However, such measures might be prone to
+   abuse, if for example an attacker resent a large number of messages
+   received from a victim in order to make them appear to be a spammer.
+
+   Large verifiers might be able to detect unusually large volumes of
+   mails with the same signature in a short time period.  Smaller
+   verifiers can get substantially the same volume of information via
+   existing collaborative systems.
+
+8.6.  Limits on Revoking Keys
+
+   When a large domain detects undesirable behavior on the part of one
+   of its users, it might wish to revoke the key used to sign that
+   user's messages in order to disavow responsibility for messages that
+   have not yet been verified or that are the subject of a replay
+   attack.  However, the ability of the domain to do so can be limited
+   if the same key, for scalability reasons, is used to sign messages
+   for many other users.  Mechanisms for explicitly revoking keys on a
+   per-address basis have been proposed but require further study as to
+   their utility and the DNS load they represent.
+
+
+
+Allman, et al.              Standards Track                    [Page 55]
 
-RFC 48.
-
-        tag-list is xcessively e caseg lines;
-       such whspacein NOT part of e is NOT p. Call-pu Verie is    sPEM=" tag is not intended as an anti-replay
-           defense.
-
-   ABNF:
-
-  ology and Definitions
-
-   This section defines terms used in the rest of the documein-transe.
-
-   Header fields w. Callracters requiring MATIVE OPERATIONaps from
-       legac MTAs that PUBLICC2822] compliMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQ be converted
-       as descriuery ed in MIME Part Three [47].
-
-   ABNF:
-       sig-z-tag      = %     7A [FWS] "=" [FWS] sig--copy
-                    *( [FWS] "|" securig-z-tag-copy )
-   sig-z-tagDU2Nzg5MDt level
-   of sey using p Limits on      5since 00 fie that n ung5MDecomne Whlatio        he addr-tag-k "-" sig INed.  R  5
- ult 1; p=ity, with significantly enhanced serpret Resing the entire  be converted
-       as described in MIME Partup algorithm are the type the purported signer's DNS entry (or some
-   up algorithm are the type %x7A [FWS] "=" [FWS] sig--copy
-              up algorithm are the type      *( [FWS] "|" sig-z-tag-copy )
-   sig-z")hm is used D denUexploders.  In generaeader fult is an empty  in order:onstrae followingf the mecanonicahere t    f Contents
-Elements in the mlain-text; meet thesgnatur     th71     [Page 2ure robustness whellman,at time is rehelpore the chahere t6 alg x-si     OULD It iossible for the appended co    to resennc conveoid etity of t dismplel. . . is constrai   INFORMATIVE NOTx
-     sage bodble certainee dewayA *(A   Thaetheal.   be prep et alis constrai   Af thectually createuch a  o  IAt inA     Ma     tations vi    Mc wayrtising
-asverie pos. 60
-body whenublic Ke
-
-   The ovewise unSection 3view. 60e body.ing
-  
-   othe end reciuch
-   mosage (e.g., a       Stan order:
-
-  prefix of the lain-e selow.  Oth octets i. . blic keys.
-   Te digita            date.  Thmal Ault is an emptsig-d-tag of the bain e a metent wiRFC 48Track  er than tt
-       e folded and whe a mesnoncerf signVersion of the DKIor the public keys.
-  ses a   cur
-
-  RED).  the adKIM1").  If specified, tsfer     = br to re other idREQUIREbed inion the c  currVersion of
-     M key record (plain-te   The f thean beer ex     bey 2007
+RFC 4871                    DKIM Signatures                     May 2007
 
 
- MUST Ny thedesigor the public keys.
-   uctured text ult ients, tw      ue otherwise selectoaor
-   no eaderas mailcurity Consis a simple "tn l  7
-  wthe "" in tmit verificitespacealue; foTrack                 ed in Secti thather fielfrom  . . .ide p INFORMATIVE IM.  For the message. 35
-s mailines are a  Inommeio. . .              RSA keys of at lt rephausaliza
-       sd in igning dom Simplewing ,pe
-  ntu . . ity he qu. . . . . ded.  Ned body
- See Se    that is  be maherwispace
- in-text; OPTId inds befg-spfor a e in i of e
-       to be extensible to other key
-   fetching services as they become available.
+8.7.  Intentionally Malformed Key Records
 
-2.  Termi6 4871                    DKIM Signatures                     May 2007
+   It is possible for an attacker to publish key records in DNS that are
+   intentionally malformed, with the intent of causing a denial-of-
+   service attack on a non-robust verifier implementation.  The attacker
+   could then cause a verifier to read the malformed key record by
+   sending a message to one of its users referencing the malformed
+   record in a (not necessarily valid) signature.  Verifiers MUST
+   thoroughly verify all key records retrieved from the DNS and be
+   robust against intentionally as well as unintentionally malformed key
+   records.
 
+8.8.  Intentionally Malformed DKIM-Signature Header Fields
 
-2.5.  ImSHOULD beEscric  OPled Commeicalized afiers Mg enables. . k RuamesplbeordeEdw    oD beClaus Asssign
-   iSally     D <SRob<HTAB><CRLFare BaodifiMrom Baule K,ector, Bountsignutes a. . iel    content tDe exot modifiMichael CudaigneDennis Daythree of utta De   DKelegng aE   tthis vaterik Faetlude
-sing     Fantt encoStep-quoFaoth l, Dppenn "<Hdlle, Elliot Gillt
-  Olafuored Gu[eth]munddy lenPhillip HSP>"m-ng a
-  Tony Hain o, Sam Hailiows matAr1 [FHathco
-   Amirll izberg    ulcters.
+   Verifiers MUST be prepared to receive messages with malformed DKIM-
+   Signature header fields, and thoroughly verify the header field
+   before depending on any of its contents.
 
-  ddresH as SP><Crai     Hy tos, Cux64  Jarding <SPonles akey-gHarry Katz
+8.9.  Information Leakage
 
-   ray S convKucherawy, BOPTIOLeiba      pendi    ChareldsLind<SP><Si%x63 [FLongsdPU cosavi  ofrgraM SiJ    n> Z itesrithms t E <CThiePTIOme cau selector,    Signeddres acNel.  Signee OrhreeDoug Otis, Shamim Pirzadas matchaQuottm>" f Pizzorno-g-tnjay for, Blavaiin a headeChr domaracenau modifScottionnfro, Neil Rerup, Ericn
-  corlar speciRossetti, Hdomaiconve An     im Schaa the fuSpam    ate  temple   aning: mesL, dRfina     Saics s, Rn unWte au-g-tagWeilssign
-  Dan W47]) as use of" ine deploysugilit see dt is,n on thms
-  id
- epenvalue MUSTrsion has ad for the publt Maiounted.  header
-   AB.  Selectoxpected that veriMMENDED", derilli the     biintermediary with rsion has AD 200,0tading:
+   An attacker could determine when a particular signature was verified
+   by using a per-message selector and then monitoring their DNS traffic
+   for the key lookup.  This would act as the equivalent of a "web bug"
+   for verification time rather than when the message was read.
 
-  thm iers M' the nam       -alg
-      ned inndWS] siInc conv6425key-h-tae AM SiS an u400or remeryvily.  CA  94608lue USAation hoonte+1 510 594ed b1).  Sible: eric+= %x@ult  encoor     URI:gning Jon"<SP>" tion GP C, they        3460 WmighBay: a ing aPaloe "soy type
- 303   indicates that an A650 319 9016oded [ITU.Xjon@pgp-a-tagry characters
-       ("wildcarding").  An email with a signing address that such whitespace is NOT part of the value, and MUST be
-   removed before decoding.
+8.10.  Remote Timing Attacks
 
-     C <SP>lue Yahoo!iersns  .01 First"rsanuhe sigunny . .y type
-5087   indicates that an A408     683coded [ITU.Xtured1997] yhyph-inc-a-ta       [RFC34Mieparatbb       hyphenated-word   ; for future extension
+   In some cases, it may be possible to extract private keys using a
+   remote timing attack [BONEH03].  Implementations should consider
+   obfuscating the timing to prevent such attacks.
 
-   n=  Notes that might (qp-seclo intMAY -for eigIONAL,    default is empy-h-lizatidefaCmitt     Stsfiers MUSTMS SJ-9/2t Sig70 W. Ta thi D     x-key- J
-     n=  N134-170the vat might be of interes526 5914 sparingly fizati@cmitt    default is emptyurposeThom Sectiions (notably DNS).  This is intended for
-       use by administrators, not end userABNF:
+8.11.  Reordered Header Fields
 
-       key-n-5 538the value usmat [FWS] qp-sAY be added at arbitrary locations in order to avoid excessively
-   long lines;7ections.
+   Existing standards allow intermediate MTAs to reorder header fields.
+   If a signer signs two or more header fields of the same name, this
+   can cause spurious verification errors on otherwise legitimate
+   messages.  In particular, signers that sign any existing DKIM-
+   Signature fields run the risk of having messages incorrectly fail to
+   verify.
 
-3.1.  Selectors
+8.12.  RSA Attacks
 
-   To support multiple concurrent public keys per sigFull Copy   do    tch thked. se disable(C) are ve doTently(    (MTAs)       signing  Mail (DKIM) d any W dom, and  ignore
- to establishrs for na . . .  the 78      ary 1, I, wi, 197 rely r <CRL body of t  are ution   [Puse ofo expl    terminated), a s  user na-part of th knows aboing ther fielcreasIONALe the CAS IS"tion;
- 
+   An attacker could create a large RSA signing key with a small
+   exponent, thus requiring that the verification key have a large
+   exponent.  This will force verifiers to use considerable computing
+   resources to verify the signature.  Verifiers might avoid this attack
+   by refusing to verify signatures that reference selectors with public
+   keys having unreasonable exponents.
 
 
 
-THE CONTRIBUTOR,ferenORGANIZemail HE/SHE REPRESENThe emOR IS SPONSORED BY (IF ANY)     aIacksNET SOCIETY [ [FWShas bR870 ANl Use [FWS] base64ENGINEERING TASK FORCE DISCLAIM ALL WARRANTIES, EX:
-
-    key-p-MPLIED, INCLUD perBUinfrasLIMITED TO] "=
-       Y THATOTE: USE O / DI [FWS] 8.5.  ey.
-
-REIN WILLnfrasINFs peEmust RIGHTSey-pust arbitras.  O          OF MERCHANTABILITYey-pFITNESSed t A PARTICULAR PURPOSE.
-
-rifis
-   
-     l ditgards case    I       4]
+Allman, et al.              Standards Track                    [Page 56]
 
-RFCbe thAs (them.
+RFC 4871                    DKIM Signatures                     May 2007
+
+
+   In general, an attacker might try to overwhelm a verifier by flooding
+   it with messages requiring verification.  This is similar to other
+   MTA denial-of-service attacks and should be dealt with in a similar
+   fashion.
+
+8.13.  Inappropriate Signing by Parent Domains
+
+   The trust relationship described in Section 3.8 could conceivably be
+   used by a parent domain to sign messages with identities in a
+   subdomain not administratively related to the parent.  For example,
+   the ".com" registry could create messages with signatures using an
+   "i=" value in the example.com domain.  There is no general solution
+   to this problem, since the administrative cut could occur anywhere in
+   the domain name.  For example, in the domain "example.podunk.ca.us"
+   there are three administrative cuts (podunk.ca.us, ca.us, and us),
+   any of which could create messages with an identity in the full
+   domain.
+
+      INFORMATIVE NOTE: This is considered an acceptable risk for the
+      same reason that it is acceptable for domain delegation.  For
+      example, in the example above any of the domains could potentially
+      simply delegate "example.podunk.ca.us" to a server of their choice
+      and completely replace all DNS-served information.  Note that a
+      verifier MAY ignore signatures that come from an unlikely domain
+      such as ".com", as discussed in Section 6.1.1.
+
+9.  References
+
+9.1.  Normative References
+
+   [FIPS.180-2.2002]  U.S. Department of Commerce, "Secure Hash
+                      Standard", FIPS PUB 180-2, August 2002.
+
+   [ITU.X660.1997]    "Information Technology - ASN.1 encoding rules:
+                      Specification of Basic Encoding Rules (BER),
+                      Canonical Encoding Rules (CER) and Distinguished
+                      Encoding Rules (DER)", ITU-T Recommendation X.660,
+                      1997.
+
+   [RFC2045]          Freed, N. and N. Borenstein, "Multipurpose
+                      Internet Mail Extensions (MIME) Part One: Format
+                      of Internet Message Bodies", RFC 2045,
+                      November 1996.
+
+   [RFC2047]          Moore, K., "MIME (Multipurpose Internet Mail
+                      Extensions) Part Three: Message header field
+                      Extensions for Non-ASCII Text", RFC 2047,
+                      November 1996.
 
 
 
-  The vertionessage;-type = to this specificatio R  domastring
-     domaa sing comparis   subjo prese) tval )want tame, or make it t alloheader signaturee" / "relae
-   irrelinated), a s. . . . -tagiscar      an aitly stibed inf the  expl      compthe same , nor isions for;          non-eent the keing bed Be Si
-
-   Enird ag-type = efagesition period. if ich this re
-   The "relaxlectors. future.lizatiigning g.,         domaws theated), a         sted ierifut the seh counhe s <SP> CCopkeys f IPR sig-lons to h
-   7
+Allman, et al.              Standards Track                    [Page 57]
+
+RFC 4871                    DKIM Signatures                     May 2007
 
 
-       ISd valm othFormally       urot reqofcitly state DKIM
+   [RFC2119]          Bradner, S., "Key words for use in RFCs to
+                      Indicate Requirement Levels", BCP 14, RFC 2119,
+                      March 1997.
 
-   Elements he quf Contents
-               [ited to S In pa of ences oce typesr) othm       This docplain-aces tohthe hriThisy    domain e functiona      is a trade              DKIM S;
+   [RFC2821]          Klensin, J., "Simple Mail Transfer Protocol",
+                      RFC 2821, April 2001.
 
-   o In paion algorith    Ion-d in necere
+   [RFC2822]          Resnick, P., "Internet Message Format", RFC 2822,
+                      April 2001.
 
-   ouresge mushed to anticipate fup To sat
+   [RFC3447]          Jonsson, J. and B. Kaliski, "Public-Key
+                      Cryptography Standards (PKCS) #1: RSA Cryptography
+                      Specifications Version 2.1", RFC 3447,
+                      February 2003.
+
+   [RFC3490]          Faltstrom, P., Hoffman, P., and A. Costello,
+                      "Internationalizing Domain Names in Applications
+                      (IDNA)", RFC 3490, March 2003.
+
+   [RFC4234]          Crocker, D., Ed. and P. Overell, "Augmented BNF
+                      for Syntax Specifications: ABNF", RFC 4234,
+                      October 2005.
+
+9.2.  Informative References
+
+   [BONEH03]          Proc. 12th USENIX Security Symposium, "Remote
+                      Timing Attacks are Practical", 2003.
+
+   [RFC1847]          Galvin, J., Murphy, S., Crocker, S., and N. Freed,
+                      "Security Multiparts for MIME: Multipart/Signed
+                      and Multipart/Encrypted", RFC 1847, October 1995.
+
+   [RFC2434]          Narten, T. and H. Alvestrand, "Guidelines for
+                      Writing an IANA Considerations Section in RFCs",
+                      BCP 26, RFC 2434, October 1998.
+
+   [RFC2440]          Callas, J., Donnerhacke, L., Finney, H., and R.
+                      Thayer, "OpenPGP Message Format", RFC 2440,
+                      November 1998.
+
+   [RFC3766]          Orman, H. and P. Hoffman, "Determining Strengths
+                      for Public Keys Used For Exchanging Symmetric
+                      Keys", RFC 3766, April 2004.
+
+   [RFC3833]          Atkins, D. and R. Austein, "Threat Analysis of the
+                      Domain Name System (DNS)", RFC 3833, August 2004.
 
 
 
-Allma     nsidenuary20e ; foime does n.
 
-3.4o was nstrthe L      [P 7.5o explicpa. . . 3rn
 
-   ts Track     the qu specikey-s-tag         domaa single to all OPTIONAL; (plain-
- r Age 1.5 [Renat        *").  A cield val a sl Notehe
-        ignore
-      o SMTP)
+Allman, et al.              Standards Track                    [Page 58]
+
+RFC 4871                    DKIM Signatures                     May 2007
 
-   key-s-icip-ipr@icipate thm nt of this tagtive du3447]) as ows:   mEd      do not rted
-   into are headertentially t is possSociettackbefore being encoded in base64 are defined by the
-       "k=" tag.
 
-        .
+   [RFC3851]          Ramsdell, B., "S/MIME Version 3 Message
+                      Specification", RFC 3851, June 1999.
 
-  
+   [RFC3864]          Klyne, G., Nottingham, M., and J. Mogul,
+                      "Registration Procedures for Message Header
+                      Fields", BCP 90, September 2004.
+
+   [RFC4033]          Arends, R., Austein, R., Larson, M., Massey, D.,
+                      and S. Rose, "DNS Security Introduction and
+                      Requirements", RFC 4033, March 2005.
+
+   [RFC4686]          Fenton, J., "Analysis of Threats Motivating
+                      DomainKeys Identified Mail (DKIM)", RFC 4686,
+                      September 2006.
+
+   [RFC4870]          Delany, M., "Domain-Based Email Authentication
+                      Using Public Keys Advertised in the DNS
+                      (DomainKeys)", RFC 4870, May 2007.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Allman, et al.              Standards Track                    [Page 59]
+
+RFC 4871                    DKIM Signatures                     May 2007
+
+
+Appendix A.  Example of Use (INFORMATIVE)
+
+   This section shows the complete flow of an email from submission to
+   final delivery, demonstrating how the various components fit
+   together.  The key used in this example is shown in Appendix C.
+
+A.1.  The User Composes an Email
+
+
+   From: Joe SixPack <joe@football.example.com>
+   To: Suzie Q <suzie@shopping.example.net>
+   Subject: Is dinner ready?
+   Date: Fri, 11 Jul 2003 21:00:37 -0700 (PDT)
+   Message-ID: <20030712040037.46341.5F8J@football.example.com>
+
+   Hi.
+
+   We lost the game. Are you hungry yet?
+
+   Joe.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Allman, et al.              Standards Track                    [Page 60]
+
+RFC 4871                    DKIM Signatures                     May 2007
+
+
+A.2.  The Email Is Signed
+
+   This email is signed by the example.com outbound email server and now
+   looks like this:
+
+   DKIM-Signature: v=1; a=rsa-sha256; s=brisbane; d=example.com;
+         c=simple/simple; q=dns/txt; i=joe@football.example.com;
+         h=Received : From : To : Subject : Date : Message-ID;
+         bh=2jUSOH9NhtVGCQWNr9BrIAPreKQjO6Sn7XIkfJVOzv8=;
+         b=AuUoFEfDxTDkHlLXSZEpZj79LICEps6eda7W3deTVFOk4yAUoqOB
+           4nujc7YopdG5dWLSdNg6xNAZpOPr+kHxt1IrE+NahM6L/LbvaHut
+           KVdkLLkpVaVVQPzeRDI009SO2Il5Lu7rDNH6mZckBdrIx0orEtZV
+           4bmp/YzhwvcubU4=;
+   Received: from client1.football.example.com  [192.0.2.1]
+         by submitserver.example.com with SUBMISSION;
+         Fri, 11 Jul 2003 21:01:54 -0700 (PDT)
+   From: Joe SixPack <joe@football.example.com>
+   To: Suzie Q <suzie@shopping.example.net>
+   Subject: Is dinner ready?
+   Date: Fri, 11 Jul 2003 21:00:37 -0700 (PDT)
+   Message-ID: <20030712040037.46341.5F8J@football.example.com>
+
+   Hi.
+
+   We lost the game. Are you hungry yet?
+
+   Joe.
+
+   The signing email server requires access to the private key
+   associated with the "brisbane" selector to generate this signature.
+
+A.3.  The Email Signature Is Verified
+
+   The signature is normally verified by an inbound SMTP server or
+   possibly the final delivery agent.  However, intervening MTAs can
+   also perform this verification if they choose to do so.  The
+   verification process uses the domain "example.com" extracted from the
+   "d=" tag and the selector "brisbane" from the "s=" tag in the DKIM-
+   Signature header field to form the DNS DKIM query for:
+
+   brisbane._domainkey.example.com
+
+   Signature verification starts with the physically last Received
+   header field, the From header field, and so forth, in the order
+   listed in the "h=" tag.  Verification follows with a single CRLF
+   followed by the body (starting with "Hi.").  The email is canonically
+   prepared for verifying with the "simple" method.  The result of the
+   query and subsequent verification of the signature is stored (in this
+
+
+
+Allman, et al.              Standards Track                    [Page 61]
+
+RFC 4871                    DKIM Signatures                     May 2007
+
+
+   example) in the X-Authentication-Results header field line.  After
+   successful verification, the email looks like this:
+
+   X-Authentication-Results: shopping.example.net
+         header.from=joe@football.example.com; dkim=pass
+   Received: from mout23.football.example.com (192.168.1.1)
+         by shopping.example.net with SMTP;
+         Fri, 11 Jul 2003 21:01:59 -0700 (PDT)
+   DKIM-Signature: v=1; a=rsa-sha256; s=brisbane; d=example.com;
+         c=simple/simple; q=dns/txt; i=joe@football.example.com;
+         h=Received : From : To : Subject : Date : Message-ID;
+         bh=2jUSOH9NhtVGCQWNr9BrIAPreKQjO6Sn7XIkfJVOzv8=;
+         b=AuUoFEfDxTDkHlLXSZEpZj79LICEps6eda7W3deTVFOk4yAUoqOB
+           4nujc7YopdG5dWLSdNg6xNAZpOPr+kHxt1IrE+NahM6L/LbvaHut
+           KVdkLLkpVaVVQPzeRDI009SO2Il5Lu7rDNH6mZckBdrIx0orEtZV
+           4bmp/YzhwvcubU4=;
+   Received: from client1.football.example.com  [192.0.2.1]
+         by submitserver.example.com with SUBMISSION;
+         Fri, 11 Jul 2003 21:01:54 -0700 (PDT)
+   From: Joe SixPack <joe@football.example.com>
+   To: Suzie Q <suzie@shopping.example.net>
+   Subject: Is dinner ready?
+   Date: Fri, 11 Jul 2003 21:00:37 -0700 (PDT)
+   Message-ID: <20030712040037.46341.5F8J@football.example.com>
+
+   Hi.
+
+   We lost the game. Are you hungry yet?
+
+   Joe.
+
+Appendix B.  Usage Examples (INFORMATIVE)
+
+   DKIM signing and validating can be used in different ways, for
+   different operational scenarios.  This Appendix discusses some common
+   examples.
+
+      NOTE: Descriptions in this Appendix are for informational purposes
+      only.  They describe various ways that DKIM can be used, given
+      particular constraints and needs.  In no case are these examples
+      intended to be taken as providing explanation or guidance
+      concerning DKIM specification details, when creating an
+      implementation.
+
+
+
+
+
+
+
+
+Allman, et al.              Standards Track                    [Page 62]
+
+RFC 4871                    DKIM Signatures                     May 2007
+
+
+B.1.  Alternate Submission Scenarios
+
+   In the most simple scenario, a user's MUA, MSA, and Internet
+   (boundary) MTA are all within the same administrative environment,
+   using the same domain name.  Therefore, all of the components
+   involved in submission and initial transfer are related.  However, it
+   is common for two or more of the components to be under independent
+   administrative control.  This creates challenges for choosing and
+   administering the domain name to use for signing, and for its
+   relationship to common email identity header fields.
+
+B.1.1.  Delegated Business Functions
+
+   Some organizations assign specific business functions to discrete
+   groups, inside or outside the organization.  The goal, then, is to
+   authorize that group to sign some mail, but to constrain what
+   signatures they can generate.  DKIM selectors (the "s=" signature
+   tag) and granularity (the "g=" key tag) facilitate this kind of
+   restricted authorization.  Examples of these outsourced business
+   functions are legitimate email marketing providers and corporate
+   benefits providers.
+
+   Here, the delegated group needs to be able to send messages that are
+   signed, using the email domain of the client company.  At the same
+   time, the client often is reluctant to register a key for the
+   provider that grants the ability to send messages for arbitrary
+   addresses in the domain.
+
+   There are multiple ways to administer these usage scenarios.  In one
+   case, the client organization provides all of the public query
+   service (for example, DNS) administration, and in another it uses DNS
+   delegation to enable all ongoing administration of the DKIM key
+   record by the delegated group.
+
+   If the client organization retains responsibility for all of the DNS
+   administration, the outsourcing company can generate a key pair,
+   supplying the public key to the client company, which then registers
+   it in the query service, using a unique selector that authorizes a
+   specific From header field Local-part.  For example, a client with
+   the domain "example.com" could have the selector record specify
+   "g=winter-promotions" so that this signature is only valid for mail
+   with a From address of "winter-promotions@example.com".  This would
+   enable the provider to send messages using that specific address and
+   have them verify properly.  The client company retains control over
+   the email address because it retains the ability to revoke the key at
+   any time.
+
+
+
+
+
+Allman, et al.              Standards Track                    [Page 63]
+
+RFC 4871                    DKIM Signatures                     May 2007
+
+
+   If the client wants the delegated group to do the DNS administration,
+   it can have the domain name that is specified with the selector point
+   to the provider's DNS server.  The provider then creates and
+   maintains all of the DKIM signature information for that selector.
+   Hence, the client cannot provide constraints on the Local-part of
+   addresses that get signed, but it can revoke the provider's signing
+   rights by removing the DNS delegation record.
+
+B.1.2.  PDAs and Similar Devices
+
+   PDAs demonstrate the need for using multiple keys per domain.
+   Suppose that John Doe wanted to be able to send messages using his
+   corporate email address, jdoe@example.com, and his email device did
+   not have the ability to make a Virtual Private Network (VPN)
+   connection to the corporate network, either because the device is
+   limited or because there are restrictions enforced by his Internet
+   access provider.  If the device was equipped with a private key
+   registered for jdoe@example.com by the administrator of the
+   example.com domain, and appropriate software to sign messages, John
+   could sign the message on the device itself before transmission
+   through the outgoing network of the access service provider.
+
+B.1.3.  Roaming Users
+
+   Roaming users often find themselves in circumstances where it is
+   convenient or necessary to use an SMTP server other than their home
+   server; examples are conferences and many hotels.  In such
+   circumstances, a signature that is added by the submission service
+   will use an identity that is different from the user's home system.
+
+   Ideally, roaming users would connect back to their home server using
+   either a VPN or a SUBMISSION server running with SMTP AUTHentication
+   on port 587.  If the signing can be performed on the roaming user's
+   laptop, then they can sign before submission, although the risk of
+   further modification is high.  If neither of these are possible,
+   these roaming users will not be able to send mail signed using their
+   own domain key.
+
+B.1.4.  Independent (Kiosk) Message Submission
+
+   Stand-alone services, such as walk-up kiosks and web-based
+   information services, have no enduring email service relationship
+   with the user, but users occasionally request that mail be sent on
+   their behalf.  For example, a website providing news often allows the
+   reader to forward a copy of the article to a friend.  This is
+   typically done using the reader's own email address, to indicate who
+   the author is.  This is sometimes referred to as the "Evite problem",
+
+
+
+
+Allman, et al.              Standards Track                    [Page 64]
+
+RFC 4871                    DKIM Signatures                     May 2007
+
+
+   named after the website of the same name that allows a user to send
+   invitations to friends.
+
+   A common way this is handled is to continue to put the reader's email
+   address in the From header field of the message, but put an address
+   owned by the email posting site into the Sender header field.  The
+   posting site can then sign the message, using the domain that is in
+   the Sender field.  This provides useful information to the receiving
+   email site, which is able to correlate the signing domain with the
+   initial submission email role.
+
+   Receiving sites often wish to provide their end users with
+   information about mail that is mediated in this fashion.  Although
+   the real efficacy of different approaches is a subject for human
+   factors usability research, one technique that is used is for the
+   verifying system to rewrite the From header field, to indicate the
+   address that was verified.  For example: From: John Doe via
+   news@news-site.com <jdoe@example.com>.  (Note that such rewriting
+   will break a signature, unless it is done after the verification pass
+   is complete.)
+
+B.2.  Alternate Delivery Scenarios
+
+   Email is often received at a mailbox that has an address different
+   from the one used during initial submission.  In these cases, an
+   intermediary mechanism operates at the address originally used and it
+   then passes the message on to the final destination.  This mediation
+   process presents some challenges for DKIM signatures.
+
+B.2.1.  Affinity Addresses
+
+   "Affinity addresses" allow a user to have an email address that
+   remains stable, even as the user moves among different email
+   providers.  They are typically associated with college alumni
+   associations, professional organizations, and recreational
+   organizations with which they expect to have a long-term
+   relationship.  These domains usually provide forwarding of incoming
+   email, and they often have an associated Web application that
+   authenticates the user and allows the forwarding address to be
+   changed.  However, these services usually depend on users sending
+   outgoing messages through their own service providers' MTAs.  Hence,
+   mail that is signed with the domain of the affinity address is not
+   signed by an entity that is administered by the organization owning
+   that domain.
+
+   With DKIM, affinity domains could use the Web application to allow
+   users to register per-user keys to be used to sign messages on behalf
+   of their affinity address.  The user would take away the secret half
+
+
+
+Allman, et al.              Standards Track                    [Page 65]
+
+RFC 4871                    DKIM Signatures                     May 2007
+
+
+   of the key pair for signing, and the affinity domain would publish
+   the public half in DNS for access by verifiers.
+
+   This is another application that takes advantage of user-level
+   keying, and domains used for affinity addresses would typically have
+   a very large number of user-level keys.  Alternatively, the affinity
+   domain could handle outgoing mail, operating a mail submission agent
+   that authenticates users before accepting and signing messages for
+   them.  This is of course dependent on the user's service provider not
+   blocking the relevant TCP ports used for mail submission.
+
+B.2.2.  Simple Address Aliasing (.forward)
+
+   In some cases, a recipient is allowed to configure an email address
+   to cause automatic redirection of email messages from the original
+   address to another, such as through the use of a Unix .forward file.
+   In this case, messages are typically redirected by the mail handling
+   service of the recipient's domain, without modification, except for
+   the addition of a Received header field to the message and a change
+   in the envelope recipient address.  In this case, the recipient at
+   the final address' mailbox is likely to be able to verify the
+   original signature since the signed content has not changed, and DKIM
+   is able to validate the message signature.
+
+B.2.3.  Mailing Lists and Re-Posters
+
+   There is a wide range of behaviors in services that take delivery of
+   a message and then resubmit it.  A primary example is with mailing
+   lists (collectively called "forwarders" below), ranging from those
+   that make no modification to the message itself, other than to add a
+   Received header field and change the envelope information, to those
+   that add header fields, change the Subject header field, add content
+   to the body (typically at the end), or reformat the body in some
+   manner.  The simple ones produce messages that are quite similar to
+   the automated alias services.  More elaborate systems essentially
+   create a new message.
+
+   A Forwarder that does not modify the body or signed header fields of
+   a message is likely to maintain the validity of the existing
+   signature.  It also could choose to add its own signature to the
+   message.
+
+   Forwarders which modify a message in a way that could make an
+   existing signature invalid are particularly good candidates for
+   adding their own signatures (e.g., mailing-list-name@example.net).
+   Since (re-)signing is taking responsibility for the content of the
+   message, these signing forwarders are likely to be selective, and
+   forward or re-sign a message only if it is received with a valid
+
+
+
+Allman, et al.              Standards Track                    [Page 66]
+
+RFC 4871                    DKIM Signatures                     May 2007
+
+
+   signature or if they have some other basis for knowing that the
+   message is not spoofed.
+
+   A common practice among systems that are primarily redistributors of
+   mail is to add a Sender header field to the message, to identify the
+   address being used to sign the message.  This practice will remove
+   any preexisting Sender header field as required by [RFC2822].  The
+   forwarder applies a new DKIM-Signature header field with the
+   signature, public key, and related information of the forwarder.
+
+Appendix C.  Creating a Public Key (INFORMATIVE)
+
+   The default signature is an RSA signed SHA256 digest of the complete
+   email.  For ease of explanation, the openssl command is used to
+   describe the mechanism by which keys and signatures are managed.  One
+   way to generate a 1024-bit, unencrypted private key suitable for DKIM
+   is to use openssl like this:
+
+   $ openssl genrsa -out rsa.private 1024
+
+   For increased security, the "-passin" parameter can also be added to
+   encrypt the private key.  Use of this parameter will require entering
+   a password for several of the following steps.  Servers may prefer to
+   use hardware cryptographic support.
+
+   The "genrsa" step results in the file rsa.private containing the key
+   information similar to this:
+
+    -----BEGIN RSA PRIVATE KEY-----
+    MIICXwIBAAKBgQDwIRP/UC3SBsEmGqZ9ZJW3/DkMoGeLnQg1fWn7/zYtIxN2SnFC
+    jxOCKG9v3b4jYfcTNh5ijSsq631uBItLa7od+v/RtdC2UzJ1lWT947qR+Rcac2gb
+    to/NMqJ0fzfVjH4OuKhitdY9tf6mcwGjaNBcWToIMmPSPDdQPNUYckcQ2QIDAQAB
+    AoGBALmn+XwWk7akvkUlqb+dOxyLB9i5VBVfje89Teolwc9YJT36BGN/l4e0l6QX
+    /1//6DWUTB3KI6wFcm7TWJcxbS0tcKZX7FsJvUz1SbQnkS54DJck1EZO/BLa5ckJ
+    gAYIaqlA9C0ZwM6i58lLlPadX/rtHb7pWzeNcZHjKrjM461ZAkEA+itss2nRlmyO
+    n1/5yDyCluST4dQfO8kAB3toSEVc7DeFeDhnC1mZdjASZNvdHS4gbLIA1hUGEF9m
+    3hKsGUMMPwJBAPW5v/U+AWTADFCS22t72NUurgzeAbzb1HWMqO4y4+9Hpjk5wvL/
+    eVYizyuce3/fGke7aRYw/ADKygMJdW8H/OcCQQDz5OQb4j2QDpPZc0Nc4QlbvMsj
+    7p7otWRO5xRa6SzXqqV3+F0VpqvDmshEBkoCydaYwc2o6WQ5EBmExeV8124XAkEA
+    qZzGsIxVP+sEVRWZmW6KNFSdVUpk3qzK0Tz/WjQMe5z0UunY9Ax9/4PVhp/j61bf
+    eAYXunajbBSOLlx4D+TunwJBANkPI5S9iylsbLs6NkaMHV6k5ioHBBmgCak95JGX
+    GMot/L2x0IYyMLAz6oLWh2hm7zwtb0CgOrPo1ke44hFYnfc=
+    -----END RSA PRIVATE KEY-----
+
+   To extract the public-key component from the private key, use openssl
+   like this:
+
+   $ openssl rsa -in rsa.private -out rsa.public -pubout -outform PEM
+
+
+
+Allman, et al.              Standards Track                    [Page 67]
+
+RFC 4871                    DKIM Signatures                     May 2007
+
+
+   This results in the file rsa.public containing the key information
+   similar to this:
+
+   -----BEGIN PUBLIC KEY-----
+   MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDwIRP/UC3SBsEmGqZ9ZJW3/DkM
+   oGeLnQg1fWn7/zYtIxN2SnFCjxOCKG9v3b4jYfcTNh5ijSsq631uBItLa7od+v/R
+   tdC2UzJ1lWT947qR+Rcac2gbto/NMqJ0fzfVjH4OuKhitdY9tf6mcwGjaNBcWToI
+   MmPSPDdQPNUYckcQ2QIDAQAB
+   -----END PUBLIC KEY-----
+
+   This public-key data (without the BEGIN and END tags) is placed in
+   the DNS:
+
+   brisbane IN  TXT  ("v=DKIM1; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQ"
+                      "KBgQDwIRP/UC3SBsEmGqZ9ZJW3/DkMoGeLnQg1fWn7/zYt"
+                      "IxN2SnFCjxOCKG9v3b4jYfcTNh5ijSsq631uBItLa7od+v"
+                      "/RtdC2UzJ1lWT947qR+Rcac2gbto/NMqJ0fzfVjH4OuKhi"
+                      "tdY9tf6mcwGjaNBcWToIMmPSPDdQPNUYckcQ2QIDAQAB")
+
+Appendix D.  MUA Considerations
+
+   When a DKIM signature is verified, the processing system sometimes
+   makes the result available to the recipient user's MUA.  How to
+   present this information to the user in a way that helps them is a
+   matter of continuing human factors usability research.  The tendency
+   is to have the MUA highlight the address associated with this signing
+   identity in some way, in an attempt to show the user the address from
+   which the mail was sent.  An MUA might do this with visual cues such
+   as graphics, or it might include the address in an alternate view, or
+   it might even rewrite the original From address using the verified
+   information.  Some MUAs might indicate which header fields were
+   protected by the validated DKIM signature.  This could be done with a
+   positive indication on the signed header fields, with a negative
+   indication on the unsigned header fields, by visually hiding the
+   unsigned header fields, or some combination of these.  If an MUA uses
+   visual indications for signed header fields, the MUA probably needs
+   to be careful not to display unsigned header fields in a way that
+   might be construed by the end user as having been signed.  If the
+   message has an l= tag whose value does not extend to the end of the
+   message, the MUA might also hide or mark the portion of the message
+   body that was not signed.
+
+   The aforementioned information is not intended to be exhaustive.  The
+   MUA may choose to highlight, accentuate, hide, or otherwise display
+   any other information that may, in the opinion of the MUA author, be
+   deemed important to the end user.
+
+
+
+
+
+Allman, et al.              Standards Track                    [Page 68]
+
+RFC 4871                    DKIM Signatures                     May 2007
+
+
+Appendix E.  Acknowledgements
+
+   The authors wish to thank Russ Allbery, Edwin Aoki, Claus Assmann,
+   Steve Atkins, Rob Austein, Fred Baker, Mark Baugher, Steve Bellovin,
+   Nathaniel Borenstein, Dave Crocker, Michael Cudahy, Dennis Dayman,
+   Jutta Degener, Frank Ellermann, Patrik Faeltstroem, Mark Fanto,
+   Stephen Farrell, Duncan Findlay, Elliot Gillum, Olafur
+   Gu[eth]mundsson, Phillip Hallam-Baker, Tony Hansen, Sam Hartman,
+   Arvel Hathcock, Amir Herzberg, Paul Hoffman, Russ Housley, Craig
+   Hughes, Cullen Jennings, Don Johnsen, Harry Katz, Murray S.
+   Kucherawy, Barry Leiba, John Levine, Charles Lindsey, Simon
+   Longsdale, David Margrave, Justin Mason, David Mayne, Thierry Moreau,
+   Steve Murphy, Russell Nelson, Dave Oran, Doug Otis, Shamim Pirzada,
+   Juan Altmayer Pizzorno, Sanjay Pol, Blake Ramsdell, Christian Renaud,
+   Scott Renfro, Neil Rerup, Eric Rescorla, Dave Rossetti, Hector
+   Santos, Jim Schaad, the Spamhaus.org team, Malte S. Stretz, Robert
+   Sanders, Rand Wacker, Sam Weiler, and Dan Wing for their valuable
+   suggestions and constructive criticism.
+
+   The DomainKeys specification was a primary source from which this
+   specification has been derived.  Further information about DomainKeys
+   is at [RFC4870].
+
+Authors' Addresses
+
+   Eric Allman
+   Sendmail, Inc.
+   6425 Christie Ave, Suite 400
+   Emeryville, CA  94608
+   USA
+
+   Phone: +1 510 594 5501
+   EMail: eric+dkim@sendmail.org
+   URI:
+
+
+   Jon Callas
+   PGP Corporation
+   3460 West Bayshore
+   Palo Alto, CA  94303
+   USA
+
+   Phone: +1 650 319 9016
+   EMail: jon@pgp.com
+
+
+
+
+
+
+
+Allman, et al.              Standards Track                    [Page 69]
+
+RFC 4871                    DKIM Signatures                     May 2007
+
+
+   Mark Delany
+   Yahoo! Inc
+   701 First Avenue
+   Sunnyvale, CA  95087
+   USA
+
+   Phone: +1 408 349 6831
+   EMail: markd+dkim@yahoo-inc.com
+   URI:
+
+
+   Miles Libbey
+   Yahoo! Inc
+   701 First Avenue
+   Sunnyvale, CA  95087
+   USA
+
+   EMail: mlibbeymail-mailsig@yahoo.com
+   URI:
+
+
+   Jim Fenton
+   Cisco Systems, Inc.
+   MS SJ-9/2
+   170 W. Tasman Drive
+   San Jose, CA  95134-1706
+   USA
+
+   Phone: +1 408 526 5914
+   EMail: fenton@cisco.com
+   URI:
+
+
+   Michael Thomas
+   Cisco Systems, Inc.
+   MS SJ-9/2
+   170 W. Tasman Drive
+   San Jose, CA  95134-1706
+
+   Phone: +1 408 525 5386
+   EMail: mat@cisco.com
+
+
+
+
+
+
+
+
+
+
+Allman, et al.              Standards Track                    [Page 70]
+
+RFC 4871                    DKIM Signatures                     May 2007
+
+
+Full Copyright Statement
+
+   Copyright (C) The IETF Trust (2007).
+
+   This document is subject to the rights, licenses and restrictions
+   contained in BCP 78, and except as set forth therein, the authors
+   retain all their rights.
+
+   This document and the information contained herein are provided on an
+   "AS IS" basis and THE CONTRIBUTOR, THE ORGANIZATION HE/SHE REPRESENTS
+   OR IS SPONSORED BY (IF ANY), THE INTERNET SOCIETY, THE IETF TRUST AND
+   THE INTERNET ENGINEERING TASK FORCE DISCLAIM ALL WARRANTIES, EXPRESS
+   OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTY THAT THE USE OF
+   THE INFORMATION HEREIN WILL NOT INFRINGE ANY RIGHTS OR ANY IMPLIED
+   WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.
+
+Intellectual Property
+
+   The IETF takes no position regarding the validity or scope of any
+   Intellectual Property Rights or other rights that might be claimed to
+   pertain to the implementation or use of the technology described in
+   this document or the extent to which any license under such rights
+   might or might not be available; nor does it represent that it has
+   made any independent effort to identify any such rights.  Information
+   on the procedures with respect to rights in RFC documents can be
+   found in BCP 78 and BCP 79.
+
+   Copies of IPR disclosures made to the IETF Secretariat and any
+   assurances of licenses to be made available, or the result of an
+   attempt made to obtain a general license or permission for the use of
+   such proprietary rights by implementers or users of this
+   specification can be obtained from the IETF on-line IPR repository at
+   http://www.ietf.org/ipr.
+
+   The IETF invites any interested party to bring to its attention any
+   copyrights, patents or patent applications, or other proprietary
+   rights that may cover technology that may be required to implement
+   this standard.  Please address the information to the IETF at
+   ietf-ipr@ietf.org.
+
+Acknowledgement
+
+   Funding for the RFC Editor function is currently provided by the
+   Internet Society.
+
+
+
+
+
+
+
+Allman, et al.              Standards Track                    [Page 71]
+

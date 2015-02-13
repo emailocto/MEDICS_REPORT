@@ -2304,63 +2304,164 @@ RFC 2046                      Media Types                  November 1996
 
    For more information, the authors of this document are best contacted
    via Internet mail:
- N. Ned Fre   N. Innosofted
-RequWorkial, Inc. N. 1050 East Garvey Avenue South N. W    Covina, CA 91790 N. USACommePhone: +1 818 919 360     Fax:  orenstein
-Cate14 N. EMfor  ned@i       .com
-Commenathaniel S. Borensteinry: Sirst Virtual Holdings N. 25 Washingtontes: 15 N. Morristown, NJ 0796               N. Boren201 540 8967ry: Standards  Mai993 3032            sb@nsb.fv   First VMIME is a result      e work       Md
-RequestEngineering Task Forcr 199Workmo
 
-Group on RFC 822 Extensions.  The chairman      at gies , N. Greg Vaudreuil, may be reached at Comme comory M.munity, an N. Octel Netedia Service     17080 Dallas Parkway N. urrent, TX 75248-1905                    com.unity, an@oveme.C Firsdardization 2046 &            s of thisStandards Tracks of this of this me[Page 42]
+   Ned Freed
+   Innosoft International, Inc.
+   1050 East Garvey Avenue South
+   West Covina, CA 91790
+   USA
+
+   Phone: +1 818 919 3600
+   Fax:   +1 818 919 3614
+   EMail: ned@innosoft.com
+
+
+   Nathaniel S. Borenstein
+   First Virtual Holdings
+   25 Washington Avenue
+   Morristown, NJ 07960
+   USA
+
+   Phone: +1 201 540 8967
+   Fax:   +1 201 993 3032
+   EMail: nsb@nsb.fv.com
+
+
+   MIME is a result of the work of the Internet Engineering Task Force
+   Working Group on RFC 822 Extensions.  The chairman of that group,
+   Greg Vaudreuil, may be reached at:
+
+   Gregory M. Vaudreuil
+   Octel Network Services
+   17080 Dallas Parkway
+   Dallas, TX 75248-1905
+   USA
+
+   EMail: Greg.Vaudreuil@Octel.Com
+
+
+
+
+
+
+
+
+
+
+
+
+
+Freed & Borenstein          Standards Track                    [Page 42]
 
-nter2046n of this memD 11, RFCMedia Typesact
-
-   STD 11, RFNovember 1996
+RFC 2046                      Media Types                  November 1996
 
 
-Appendix A -- Colle     GrammarCommeT    aspecifyi     ins    Mcomplete BNF gle det for all    Msyntax N. specified by              .CommeBy itself, howeverng Gish leaves
-is inrs, but .  It refersage name totent,s
-  alage con rule heaa      definssage nternet.  Rathertens     reproduce thos, or MIiorkis here, and risk uninten       differenefer tobetween    Mtwo set of         simplyalled th   Mreadrmatoedefines N.    txtensimainmo
+Appendix A -- Collected Grammar
 
-or
+   This appendix contains the complete BNF grammar for all the syntax
+   specified by this document.
 
-    (1). W  tever a termnts,unor MIME, it messa an exoormatnternet or
+   By itself, however, this grammar is incomplete.  It refers by name to
+   several syntax rules that are defined by RFC 822.  Rather than
+   reproduce those definitions here, and risk unintentional differences
+   between the two, this document simply refers the reader to RFC 822
+   for the remaining definitions. Wherever a term is undefined, it
+   refers to the RFC 822 definition.
 
-    (1 US-AS  boutocoy := 0*69<bchars> rmationospace4)   texmatioaderin character  / " "sets other th   US-AS:= DIGIT / ALPHASCII'"SCII(ork d)" /)   teC 934, STD
-   11,"+ork d_ork d,ork d-ork d.ed in RFC 934, STD
-   11, a/ork d:ork d=ork d?
+     boundary := 0*69<bchars> bcharsnospace
 
-   Thesody-partare <"message" as or MIME,i Internet, withthe in RFC 934, STD
-   1hible sfields op        not startmo
+     bchars := bcharsnospace / " "
 
-y
-   thr 199ment in this set, or messadash-xtual hextual nitial document in this set,delimiter822.
-occuremo
+     bcharsnospace := DIGIT / ALPHA / "'" / "(" / ")" /
+                      "+" / "_" / "," / "-" / "." /
+                      "/" / ":" / "=" / "?"
 
-anyw  tets al document in this set,bout mess.sentt allatmessagemantic     aocument in this set,messaharact fromstructure of the MI dies, ternet. The third docuse doscribents an
-   ext.>4)   teclose-ibe the st:=ribe the st"--
+     body-part := <"message" as defined in RFC 822, with all
+                   header fields optional, not starting with the
+                   specified dash-boundary, and with the
+                   delimiter not occurring anywhere in the
+                   body part.  Note that the semantics of a
+                   part differ from the semantics of a message,
+                   as described in the text.>
 
-   The specifies th2 to-US-extual hepes. The third docum   ;extual heatakenefines an value of     Standards Track              paramee st           Standards Track     Cobodie-finerevisi(4)   teto RFC 822 toCRLFtext
+     close-delimiter := delimiter "--"
+
+     dash-boundary := "--" boundary
+                      ; boundary taken from the value of
+                      ; boundary parameter of the
+                      ; Content-Type field.
+
+     delimiter := CRLF dash-boundary
+
+     discard-text := *(*text CRLF)
+                     ; May be ignored or discarded.
+
+     encapsulation := delimiter transport-padding
+                      CRLF body-part
+
+     epilogue := discard-text
+
+     multipart-body := [preamble CRLF]
+                       dash-boundary transport-padding CRLF
+                       body-part *encapsulation
 
 
 
-Freed  header iscard-scri2 to*(*cifiefour)     Standards Track  ; Mequestignored or8,
-   speil headerencapsulWorki2 to allow nontransport-pad         Standards Track   fourtbout messs.  The pilogu are ,
-   specifi4)   temultimess- defi:= [preamble crit]     Standards Track   text
+Freed & Borenstein          Standards Track                    [Page 43]
+
+RFC 2046                      Media Types                  November 1996
+
+
+                       close-delimiter transport-padding
+                       [CRLF epilogue]
+
+     preamble := discard-text
+
+     transport-padding := *LWSP-char
+                          ; Composers MUST NOT generate
+                          ; non-zero length transport
+                          ; padding, but receivers MUST
+                          ; be able to handle padding
+                          ; added by message transports.
 
 
 
-Freed &RFC 2049, describ critacknowledgements, and thbout messa* fifth and fiion state
-   and status of this protocol.  Distribution of this memo is un3imited.
-
-Abstract
-
-   STD 11, RFC 822 defines a message representation protocolcknowledgements, and thsions to RFC 822RFC 2049, describes MIME
-   conformance  [fourtroviding]
-   1. sage formsome illustrative exam.
-
-   These documes vaLWSP-mati   1. Introduction .....   datamposd thMUST NOT generat     November 1996
 
 
-   ....  non-zero lengtialFC 2049,pe Values ...................describ, bucallceiv 4. Discpe Values ...................be aformto handle........pe Values ...................addssage dies, t  4.1 Texts.andardization .    7
-   4.1.3 Plain Subtystate
-   and status of this protocol.  Distribution of this memo is un4imit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Freed & Borenstein          Standards Track                    [Page 44]
+

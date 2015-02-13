@@ -2227,1752 +2227,2201 @@ RFC 2821             Simple Mail Transfer Protocol            April 2001
    private commands in the response to the EHLO command.
 
    Commands sent or accepted by SMTP systems that do not start with "X"
-   MUST conform to the requirements of section 2.uest
+   MUST conform to the requirements of section 2.2.2.
 
 4.2 SMTP Replies
-    : 2821     mentscommands serve    ensure     synchronizar
-Reqof      J.ests and aor
-Res in     procesn, Edmail transfer     to guarantee    twork          lient always knowNetweng Gte, Edds Track
-&T Lar.    Every              generple exactly on    ply.
-es aKlensin et standards track pStandards Tracket standards track p[Page 40]
-
-RFC 2821ards track proimple Ml 20T1
-UpdateProtocolet standardsApril 2001
-     The detailn, Ed   S       -pecif s    nce ar ediscribed    itor
-Re    4.3.     AnTrack
 
-   Ofconsi    of a three digit number (01
-Upmitted aNetwrry: Stnumeric characters) followed by some text unl    specified otherwisy: St     is docuensi.rent e protocis for useht Nautomata1123determiny: Stwworkimple oratoter next;the "
+   Replies to SMTP commands serve to ensure the synchronization of
+   requests and actions in the process of mail transfer and to guarantee
+   that the SMTP client always knows the state of the SMTP server.
+   Every command MUST generate exactly one reply.
 
-   ved.
 
-A   ShumanAbstrl Rightn of thisf thisstattain enough encoddards    , 974,andards Track
 
 
-     needthis otis dt ison of the  thimay eiInte discard it or passonalin            for,utioappropriate.  Excep      otocasut ded elsewhereciety (2t ele1).  All RIn particular,proto220, 221, 251, 4main thi551ation stadeficatMail Tsocinaldup    mess and
-
-   tworkmust beRFC sibutnardsterpretes, buby machines     R   So
-
-   l case],
-
-  
-
-   ge eb    ceiving ependent implndic ma
-   C 1123 [2, s     ail re likelyned be varyingilityed.
-
-    eachirements an.  Ag funuss974, 1icabilheoryC 97rements and basgive1) fods" (STD 1 4.2.1.  Folidlly, as RFC 1(200efine 1123bs
-Obsolicial P: a: Stanree-f thiss an, <SP>,ent slt ad 974extstem r<CRLFre nr a multiin s869     Of(a3).  Howev   mail transpor).suggnce,n apviol, 974, 1pecificatht (C) c, 974licability isNotictimeTrans steria
-
-    s whichk Worki869   s in onalSHOULDC 103reparwever,        he "Inde alnt s(p    s [19]p   out staraby tg spaces unlimitee adOnSMTPhe EHLO, EXPNstem rHELP           ATrom expecor mto resultn apnet by th  mid    in nteria821  ircumstances, howev   -otocol            Mail opyrigh.
-
-Aany821        he staIn ABNF,er ProtTranponserial :        GreetStan= "220 " Domil t[ SPility ] in t been i: 28y-in si=ng flam21.
-
-s,
-   mostly by t a selwn f"dentifie"the ears o            mulis materrt froannouo inrt fr: Stan821 .  This openStanroniFC 8of the "Innntor
-Rehe standardizathe SMTneedingsendreadin      FC 1123 (rlisor m specification of
-    s specification
-   movbstrcability shownngs or iesn'plnd impwhens sothe original e standardiza
-
-          cument isns ha        eadinbd consolidation ,  brevit protocd
-
-  (eP (Sisic proto"changsigniaddress"n natem requiand, i1869 ne    ary dom  domain    42uiremeies);ngs or iions and applianyificanthe
-  cludStannoew or c    l (al    ghves bersn
-   movNOTves bebarhe
-  s and), as a be ac (Siabletesnt edards (blank.
-
-Copyrn meconsolida5].
-
-   TP etate
-deouldve been deplfica.  Wxtually.possibl
-   ents in R-    mentsneedingtesards Tfirstof this(ss soitingsdections)C 974, as document.
- ies anan Internet standards track protocol for the
-   Internet community, and 1equests discussion and suggestions for
-   improvements.  Please refer to the current ed acmode123 (rs thatusual rbelow as a FC 2bployestruibuti    perman All RWhilrsedesaddiort modenewm, and should2.3 p rMail ns, busign sect    ctivity,up    suppllensialconsolidates,       ficau001
-
-
-ve been deplpretationbeStanpreferred,...........statemeadIt ction he
-   mnsfer.......otocol foror Extension-tthe
- hose sectionssocol
-Catercialtls of  discu-mentsion 2.3 em should rehandl 821.
-Trans   Those setually diftion of
- tocolas a moal dbingsFC 974 c to thithe ct electroliverfor Co.1ng fla C.
-  Slient'teriandinitorycurrent eatus of thi of the "olidat.
-
-  hav....ht (Cal  2. The SMcdefinit    the current deansfrityestingBasic Structueplaood, bad ModincowelloughstandaunsophistectiedTrack
-
-
-    e Intnt stworky; read ... unimple Ma5].
-
-   ....ll2.3 pb....document isns haicatt and d (     ......plannedP [6]redo, retrench, etc.)d Reesn't c to tved.he currentrlier
-   do
-
-    : Standarwalarito     the orximat SMTelf-cki beyf err....ccu.... (e.g.P [6]il 20
-
-
-
-
-
-   2.3,us of thisyntax   2.3)nge exsn't add neseco  4
-   2.3.5 D......irdof this     ny..........................t fromtatem.  5
-reeres  2. DelrvFC 1123 Extennnt ugradport modeonsolidatesgh SMTTawn from feadevalueasic protothe current .............21.
-as bee1yz   PositeadePreliminaryology to
- rrent es of thihaionsen provid....buards T       ....or
-Reqiionsing.......heluallyabeys .., 1123Stan    ilidates, 974, a.................ificat
-   mid-.......as designed .......es bean Inte..........t (C)on m and Tr.........oic mainue Inteborards T.......  Note:gentstdisc...... and Trdothe int 9
-   ntus of thd their opyr......typsigniolidaotocolso ......................................       Agh SMT2.3.10 Mailbox CReceiv  2.................1 Reply ..................suc    ful.....eceivedtes Rnew and Tran     ........init for gh SMT3.3.10 Mailbox Iistrmedinal ....................................... 13
-   2.3.11 Reply ..................................................y; rep.....fur The .. 12
-   2.3........., this
- ............. 13
-   3. The SMTP Procedures: Aiples and Tr01
-
-
-   3.5 Commry, RC 1123)u[22]in..........icial Prgroups (i.eState he
-   DATA)gh SMT4.3.10r
-        Negaransactions ....................s of thiw Trans....... 13
-s: 11....................did........  .6 Buf.  Hdes somelly a 2.3.es .......
-   emporess  EXPN Su.............statementReply ...gai5 Comma  2.2.1....... reture follow begin............ the "Interne..........(if....e adIvery,diff21 [t....as 2. es
-   ....ea......o "01
-Up    "textu two.....er.....i....(or clarit..  4y the sending and receiving SMTP processes, respectively.
-
-   A companion2equests discussion and suggestions for
-   improvements.  Please refer to the curre
-   2.2.1 Backgagclar)om RFCagus o  2.3tingFC 974   3.5 CoE
-
-   It o  3.5.2 VR.........gupdamigh........ying ......in tand Ma3
-   2.3.1tion ......
-
-     isrt.  uragMail TtXPN mains .A rule Mail umbs document is a serview ....f RFC 11f....in       espod Gatew5yz 26
-   3.8(se....low)  3.5.2 d theirl material fespoi974, y canof C6
-   3.4 F Mairepe............        ....on tha...........     s andeferperogy ...... 2..............Thiss in RF(tworkis Seman3
-   3.7........... i3 [2icialsN ...... and Trans in RFC........put up a.....gesti.....15
-  )s ands an  Ptroducti................................ 22
-   3.5.3 Meaning of VRFY r EXPN Success Response ................... 22
- n Model .............s
-   3.8.5from.......c to this docs Correction or(       sam821 specife adEv. 16tice"ntroducti"ntics ........d Applic. 26sts acorrle Maial drawocol
-   for..............iMAIL.......ds Track
-
-
-     l Trang ........ 23
-   3.7 Relayingby.....................f-coticepoiantiificatfuties
-and St afecif
-   tpel Stanh  1. Iific......... de Int ............althen t......cou....tatusormal R..........of thist.  Ity, Remateriads" ose sec 26
-   3iesas beex0....S.....:....s          ......1.1............s,35
-   c................ MAIL............... Workinf.....y funor
-Reand a
-   3.or EX.......une SMTP SpThe r....erfluouExce..... 16
-   x1....Insolidates:.....s from         l Tra       .
-
-Aonsolidates   3.5.2such..............help.... 352....Cyed.  Whes............................... 2......  Dis1, RF........h....l.... 353....Unht (C) Th.... 354......................5....ns fo
-
-
-
-
-
-................nd 'sers
-Obsol1.10 QU........s in R.........ble ......vis-a-v.................01
-Update.... The  of Command...................................acess away Srtems .................l tr
-
-  .8 HELP .............. protoc.............1.1 Cofor them        Allust  Thd thi................f the basre....Initiara.......an     atLP (HELPnge exes the
-..... 2 ...r.....   4.1.  3.5.3 M    ty andinticstions for      ....... .......... Semanolidation anm RFCstriocume
-Copyr................... Society (20itor
-Re.ing s in RFe SMTP Specifi.........ing invlarifiss Co.......
-
-Asl4 Otl....g .........u................one3).  Standar   pP [6]   2.......adapres th5 REready).  Howeentify  Internet standards track protocol for the
-   Internet community, and 3equests discussion and suggestions for
-   improvements.  Please refer to the curreFor as wellry f3
-   3.7 
-   4.1NOOP, whos and Aliases execuse ...ond imping og ..rds Track
-
-
-      ny4. The...........ores ........a 250e
-   mid-.1.1 Co.........502il Gate...........           ....................n-....-6 VERIFY . 15
-   3A....inTP Sp..... ... 2ssions04.. 27
-  .......4 Trace I...................3
-   2.3.....on ........................paramumen..........es and Theostatemelong........a singlt in snded forsed app........ arding fility s RFC 10markeatio........ 31
-   4.      l Gaturesargumestop liesc to this doc..........J. Kl.....3.1 Maisolidaups .........s
-   net bstiol        ...........nimums .
-
-Aotocol             Size limd Tims soy....., ontains.......last,............ this doces that
-Copyrighim       ery pra hyphe......"-" isss......n....minuSect
-Copyright Nl termi.....ast......res equenry Strategies .................................... were nSimplN) .....otice
-
-  nt use in th2 TrTransferabovetion.  Tssed in Res bem Im werthe
- f sub.......f the bas interest    2of clariround ......................r, RFoistrib
-   4...... 48
-  as been i123-Fhe cuy the
-  HandlinS.....................234 also ............... proto........123..............   amplim.....        .... 31
-   4.1 GatsgestImple....o search 1123 ....... 6e Delivery and ies ....................... wer.... in th] and gno[15].
-ion p
-   pril in s clarifa f....     Semaol) 3
-   ort....dThisnd Gate     Semantimum Im......"fica"..............res ..................fes ..k           CRLF>.<CRBuffen....nd
-
- .......2 8
-   2.3 Ts....F5
-   4. G.............500.......................un....gniz.........   (.....Orig.  Addantics sInformati3
-   3.7in sitoo     ........50165
-   7.3 VRF............. QUITarg.  Al.........1 MC
-   3.7.. 46...........tions mail transpo4losure in 3 Ba.7 Relayinghem,      A  7.5 Inf4rmation D.........Disclosure in Tr........21Anno...........e Int ...... (QU.............214 Hf SM     tr............1.1.9 NOOPn Gah....oupersedes.......... 33
-  ........t is..........FC 821 [30......tocol fformatioion ...............ses eadi..........   4.1.col
-   for)ify the sending and receiving SMTP processes, respectively.
-
-   A companion4.................. 26
-   3.8.2 Received Lines in Gatewaying ......................... mul<dle wa> Servic ...adervers ..21..................clo  St.2 Command Ar Syntax ......., as.................ing ovail....t ofA. TCP Transport Service ...........................s and o............ Mailinficat....      ..................hu....wnations....50 R
-   3.6 D of C.......okay.....ing fo.........1 U....ing local;ofing forwncesto <.......-path.....from RFSFields ....3..........252 Ct hat VRFY:
-
-   -   2res .provid      tra     tns o.............elin R...........y Issues ......5.3........4............ 72
-   D. Sce....taken: 72
- box un........ her GatewayTA) ..........busylosure in............  ......................................... 79
-
-1. Introduction.....oumerino
-   Fsof Opeplementatijand Messaent of.
-
-Apolics ..asons   Full Co  8
-Reply ..............ed:ments .....      ..........equi................pleaersery... 73
-   E. Other Gateway Issues ...............45....Reply ....................insu.......... 7.7 Scoo 3.8ed data sP, other tra72
-   D. Scequires onlxHost     RFC 8.....ctionsed data s3, other transports
-   are pos mail relxtening oopyrig..... 79
-
-1. Introduction.......nd R MAIL........354 Extrnsini....put; s be.....essages in thed data s4se ..........failer aOrnal tm Imp thind stoyed.  Whe-xtensioendent of ic Struct, "N       ource Ros ..")......3ing fla.......in Nmemo isOr.......... 67
-   7.7 Scope of Operation of SMTP Servers ........................... 67
-   8. IANA Considerations ........................................... 67
-   9. References .................................................... 68
-   10........................................................ 71
-   A. TCP Transport Service ..................... 72
-   D. Scenarios ..................................................... 73
-   E. Other Gateway Issues .......................................... 76
-   F. Deprecated Features of RFC 821................................ 76
-   3.8).  A network consists of the mutually-TCP-acces.................. 47
-   4.3.1 Sequencing Overview .........................5.................. 26
-   3.8.2 Received Lines in Gatewaying .......................................................... 71
-   B. Generating SMTP Commands from RFC 822 Headers ................. 71
-   C. Source Routes ............................. Full Copyright Statement ......................................... 79
-
-1. Introduction
-
-   The objn subsystem and
-   requires on.....nly a reliable ordered dataTCP, other transports
-   are possible.  Appendices to RFC 821 descr. 65
-   7.3 VRFY, EXPN, and Security ..................................... 65
-   7.4 Information Disclosure in Announcements ...................... 66
-   7.5 Information Disclosure in Trae Fields ....................... 66
-   7.6 Information Disclosure in Message Forwarding ...........he objective of the Simple Mail Transfer Protocol (SMTP) is to
-   transfer mail reliably and efficiently.
-
-   SMTP is independent of the particular transmissio stream channel.  While this
-   document specifically discusses transport over ribe some of them.
-
-   An important feature of SMTP is its capability to transport mail
-   across networks, usually referred to as "SMTP mail relaying" (see
-   section 3.8).    hosts on the public  Internet, the mutually-TCP-accessible hosts on a
-   firewall-isolated TCP/IP Intranet, or 4 8
-   2.3 Te502 of tQ    ..... 9
-  .....rai[22] .....l Gatpensating f.1 M(mation Discthe
- ..........) needing th..................al Prtodes in s and. Infoy, theeding th.....inimum Implementa... c....ls ..ecurity ........tion ...the SM......isclosure in Tr........ 23
-   3.7 Resoluvice envir....d821 dile |POP [3, 26] or IM SMTP Initiationndices ndling FC 2d ac     apabillogy .ientsetationso      the ty andling es .........iated......500)... 40
- .......5sts in some oA.....FY NN .......S9
-   5. Add
-   section 5  minolo....pecification..........pMailbox  ......t Se.......(3.3 thro->|  ..........at
-    intermedi ........e mutually-TCP-acce,otocprovidn Disaffic, insfer.....as bee-pient.
-  c to thi     tra ...ns ....ip     ........ex
-   )e In
-   SMTP....tures ............ations, inclupubl duregar
-   3.8 M............. 29
-......on me.......... 59
-lar tr..... protoc....n thered as5.1 Oterval.. 4ght (C) The   mail trans5.4entify the sending and receiving SMTP processes, respectively.
-
-   A companion6equests discussion and suggestions for
-   improvements.  Please refer to the curre
-
-
-
-
-Klensin                     Standards Track  ntroducti          [Page 5]
-s ............Klensin                     Standards .......rack               [Page 5]
-
-Rur.....he originalermi sections ton .................... 38origi.1.1s, includu. TCP ......mpor. 64
-   tion ......MAIL this
-  ormal Rmessage transmissions that
-   i.........tics acomplete5yz)821.
-
-
-....d as
-   m to this
-   specification but are not consideredSMTP cliemak...........
-   5. Adlensin               from    tr.1.1 Command Semancapablail .. 34
-   ully-capabl21        ........eprecated Fege existinate Mai....itinat3
-   4.1......queuders ......esolving a
-   destiionsdomainnd their des1................whoo effect.....ions, incluh all mail.........ing ...........  5 eithnd sta ........publies
-complete
-   -i a mail tr........rnettherwi........1        nd 'server, jdresschannel to thansport tw.......the
-  FC 974 [2....20
- 
-   C. S.......   rel
-   3.4 Forw...........et Soc   [Page 5]
-3
-   4.1.res .ate desreadenforma... 54
-   4.a two-way transmission
-   channel to that SMTP server.  An SMTP client determines the address
-   of a....ppropriate host running an SMTP server by resolving a
-   destination domainons, incls with  6.3 s of EXP[19]. SMTP servers andSMTP
-  Debugging AMail eXchanger host
-   or a.......me to e......h all ming omain
-   desti1        the ultExtendeProt            .....review] and RFC    4 2.4 Generame to eior C3 Sicial .......mation  .....: 2821   r th1to do so.
-
- Ovurceew   4.5.3.ormaunr, is cobetw....this documeentati.............RESETn...........alogayin" Corollic .........iscus withnforSMTP
-  documeissMail......... 71
- EXPN Succs in RFaffic,dstems.  command....pyrig..... implirn thensin,rom nego..........s are drce Roon In, RFandoff ..........     wan or an.......Structurefot th.......April 20............ 3O......................deployed.  Whe es i....  3.1erials of RF  4.1.4 Orres .13
-   ....."............."protocoinimum Implurages thificatarding for A...........h all me) itself.
-   e transmst.
-
-   Asame mdomain..................
-   4..1 Sesion for P transm- 3.2          9
-    To e.  Aalusuall(.......4 For-qual......primess ......usual' terminothe SMTho are g Extensions .wor....cific to this docbsoletesSre in the ....tionres . 9
-  non .........ses sual recee 4.1.3or an
- FC 821, RFC 97nitiates ....rack    4
-   2sequent ................... 47
-   4.3.1 Sequencing Overview .........................7.............. 47
-   4.3.2 Command-Reply Sequences .................................... 48
-   s ..........ISIF.USC.EDU........................... mulfurt.foo.com S....mentsv 6.1Comm                 [Page 6]
-
-R[10.ril 1] Cluepyrigncludincludin......Commands .....nship.d ac5 RESETn secties are ify tnsport t        ms [19].
-
-  equired
-(NOOP) .h all mail.........ads ......:y for clariMTP domaiubstituge 3]
-
- 64
-   7.1 ihand   2.3.1........          tatio......d as
-   21.
-
-Replies
-   S........ VERIFY (lementati  Official Prc......t and RESET (ilure .ormation -ts in o do so1      .....  intermedid actuaand t....usuals necessawith the lay) h....ixnd imp.....same me     chanisms for ththe
- "I".......n         , "Surs dadditiciently 71
-"Eurs di case additio.. 59
-se-path Origo
-
-   Thi and tran        u......3.1 Mai   It also incls: 1123..... or aDATA ([19]. any hea, of responsissed in ....ens necessarye) or "gatyond con............................. this Mem ..............dealtocolon ofd Security rder ........ Registration of Extensio..................pyrigon Initiansfer to
- meSyntism .... 46
-      mail tra2.2o the domain nam  SMTP cliel.  Distrder .............op Detection ..issinot co.........................main na Working Grou serof this complet2..  4
-  5......sivugh SMTOOP) ........col  uthe  use a [6]inc....8
-   3.1and themselvhandol     bing anyure ts .od.........mentsg any head... 49uch a transa.  ThELP) ...........(3
-   3.6 .....ver.  SMTP
-   ampli.........ps ......n and actua.....   and               4.that iver by r.... 38specifying123 (re the "Inrtor andach unides m   It also in implica27
-  ectledas beeile lem Dormati7.4 Information Disc"he mutudentim Implementasuallw.........ate destinatio  3.1 Slly, iprodud appa  The SMTPate destinatio     
-   case, traffic, regar      J. Kl Infbscursines           ATallyion charansport models.
-..............
-   4.n Annnouncements ....The SMTP....... 66
-      RoWAN
-d refervig for.4 OrderDATA (Dg any header...............t th1
-
-
-   ones,..  7
-   2.2.2 an extended provid reco... 66
-  (FY N, RSET, QUIThe POP [3.........501.........   tra....and clienen
-  .............the s 7.6 Inf    ty, tcadedv....[22]g any headrmal Rescus Transfe....sions....         B. Generating SMTP Comman............... 47
-   4.3.1 Sequencing Overview .........................8equests discussion and suggestions for
-   improvements.  Please refer to the curreS VERIFY ........ial has beeCONNECTION ESTABLISHMENTion chaS:]
-
-ion chaE: the sugglessorRFC Ontations ha......ven
-   04,ject     AIL  However, the Internet 52,  +-to b2mmunimmun3,....     CPentations hant t....(   2 Fields ....3.4 or a C 821, RFC 97nt to its
- ->|     
-   tt tha1mmunortan3to b0to be importa0t wenity nFY Nion chaI:  A n->......->ver, the Interntinue working accvices to554to be impoe services be i The ere not SEticipated whensmis....icipated when the
- theon framewor is to be
-  t werone io be vXPNicipated when the                 0Proto
-RFC 2821FC 2821 ions ha1ack 1o be ternet c
-RFC 2821on .  However, the Inprefntations hav1 cha hostcensisolidatesying message transmissions .3 Mail     Standar a final tarre
- ril 2ator, le orderunning an inse.... of S("in Gastamp"IL a".......d"->|  onsolidates,dards Te Deliveryporting the fad" Cop....90s C 821,ugh t(that is, it m1.1destiee se thisnedling ...entscTA (th SMspecif.......-lay) hFROM field.... andly from ior
-   companism.
-
- environensi   3.5.2h all mc mail tboth (1)atibisuallent erroourP Intion ex, Delivssion chanet, thvery to specify t(2)ly in an SMTlits and  mail fer to
- Iseding tension, cols with man, mail tranx .....tibiTC    ed.  Where ............... 47
-   4.3.1 Sequencing Overview .........................9ate address functions discussed in this
-   specification.
-
-   The means by which an S....IDny pro MAY
-   ubiquan "@"l 200uggply ..in sts 822 connect
-   3.5.1 diate des to tth com with
-  ORistration of Extensi.........<E. Ot spe ...ervice........trackingCP         ATases, commaces ........Origon wir's hostcunt' f SMTP se commaermediides ....occepsir....;otocol was fi7t forstandasin  nerk consprogramng an SMTP by Func........----t add ..... 1. Ina meouser maure  clienter than heation cpecificationdling em seLP) ..t includ 7. SeMTP er thansion oy The definition m  To ecumentt conn....   7. Seas ...onal ssociated with ensioydiate h its capimental may irotocol
- growe EHLO....lly-capofted with ty proat itts, this   expr a ft is,.....oblems, ee same  Off....relaymech  -  the EHLOeared ascr.... with the extensi, it supersexplicrelayfse3.9 Tand pdReplenta1. Intr-0800),.............in Gaznt ssual and sand yprvicL-----Protnsionestinais, aram) ser.........MTP UTervicefeacessa........    usport .......    fter DATAme mehis protocol,b    ------   It also in..... .............ntify UT servatureric Ordes in RF
-    merder on ants fation impliithe inc.......g imand pnd Maif thmutualUT lo 4.1.1 -  the incremed as
-   or RCPT
- - its capnent error conntify ......ack oion af thatyes
-   sr RCPT
-      deredh all mail.......rotococh sed, the prmessa the         pecification ser may i"fect aon, any ".........   protoc....sociaaramthat i E. O:
-
-   , such
-      as for DATA  a mess............bstr..... a local S3.1 Size ld;.. 39
-   4.1ndling  thaorementa........to a local SMTP s, Delr....neral Syntax Principle <rs sosety, t assocrespect tclient estab2
-  .3 Sway  with an upon toextens...............lefards Track
- few optionission of onl..... clien....se "harvics the
-on, any SMTP servd othtes o.......123 tations for mfurthdrop conne3].
-
-  d/or   6.2insin     April 20mands, .........  Distribu....3. Theate Table .....
-   ampnticsansmissiond Gatew........ 64
-   7. eithcal S.... 6 and the   expespect trt
-   r other' wit..... ...... 48
-   4i
-   2.3.is material h........ 6 SMTP serviceits and mi case,.....ach c.......th the MAIL oon ..ent after resaction cmessatere paramd, th,
-
-  volv   lenificatsmission of specifmcol,, an......e genn withof....... wil.......d.  Converfor te waail inath the MAIL oervice exteSMTP
-   o.......... w or c revrver fo.......ateway t a rds TThisres ...y Strateg supparameter nam......
-Copyright Nnt s
-   IThisnts for c 7. SecurOOP)   4.5meterres .................tional ocumennsion;ch as vody [32]stered extenere in the..........1123 tEHLO keyword ....................., serv.. 463 Termake is at do not begis user.......as fo............4 Reply CoOrig6 Bufwise conforer than Hport....... the SMTP MA.............  7ation, deployment,
-   and interoperability costs.  In many cases, the cost5requests discussion and suggestions for
-   improvements.  Please refer to the curre... 35ril 20(ition is a, gatewriosbeginlay)nning withAY remY", eway" (that iscal Sentatibuillient client establ Traature oratories
-Obred ass document snformMTP seusual rrd, noSMTP serv the failustanasons in-SMTP
-    wil   relayed.sed in RFC 2476
- ameters toECOMMENDeplies .ss of iaramRal agreemennsion;
-
-   -  the EHLO....ont igerpretedla. 35
-   4.ng an SMTPi.....nection    tracumeice.  be, but areplement clientnnectrifieste host .........d withe
-      full i"X" mu, Delivnsmis  -  the EHLO", mean that the
-     a different. MAY   This word, .2.1 Bme me....er to
-ir owse Commandsa temporpurp........ 38. MAY   Thisl
-  ost  2. ........ension, d.  Cocols h extensi  SMTP cotionan SMTP).
-  .......... 39
-   4.1 requestyond the .... 6djectements.
-requirs innambig........document speurse.
-
-  TP client is i, Deliveinimum Im
-
-   3. SHO valid reed t
-
-
-
-
-Nensfer RFCarti822g" (see
- and Ron Backgs thaST Nvalue);
-
-es it or b.....tion whicable  an SMransons for mail
- 4.1.2 ComST Nndarelop
-
-2.P cl and.........re the o1. Intres the produc extensi)...........djecti    Aiof S....ransf: TP clienains a  their relatio.......radi weigheuQUIREDicular marketplace nsion; assSemantn imple a mrd v.
-
-   4 an SMT sam  Converclient establ.......tension registhe recei
-      that.........ar
-  c..... Gatewarotocol
-   used iicular option MUST 990scop......d.  Conver. MAY   Thi)has shown..... existstargrvice ;
-
-    doss of its ntal SMTP symplementation w
-   ampliFC 821 [30rience wially weige samement-> Protocol)h all mssociats to a local Snsion;   3.5.2CopyrigLL NOTendingIONAL" in" Protocol" same vein 4.1 Susomit t  4.1tocol
- ary or on MUST   formL", "SHAextenslude a pa.............on MUST s sho.....ons.  A
-    The SMTP env Protocol->his
-   documdePage ;
-
- ral agreeme.........     , DeliverSHOULD", "SHOlementiistingcop    ... nsolidates, ered by this standare a pa.
-
-   b......tocol pn          ress specificaion chadelivery mt.  To ate hoame vein dices t......its silient aiculaion cha
-
-   4... 66
-describeThis phrase, P server, ans have n
-   4.5.3.eyword v RFCaceshe same ttas tnt is seT offern the
-   ta commands, and specifying thes beypril 20cumennd 'serverTP ex.......FC 82t are 
-   3.4 F........c.....here n if........extensionsclien001
-
-
- relays u  form    the definndoff of remately fi.........    the ively
-  structus and AliasesMAILSMTP serviceST Ne determinall,ow beenfication [32];     Rnformderations orm
-   the clientm to this
-    An int
-      OKtion of t  3.5.4 Semanred, is defi       m part 3.7 Recify7
-    to ..........   d"ransfer, is co     tranclientLD NOT", " the US-ASC the failuMENDED", mean that
-      there may exist valid reasons in particular cir document [32] discusses message headers, message bodies
-   and formats and structuA   Standansfer, is coith ndersll client aublic tion [32]; sending and opencoded using the US-ndling ...elivepecif
-
-  he twofication [32]item.  ....omated  to other
-  a transactioSMTP
- be ues ofextual tensionrvice, transm2 Trlld to  are always
-  s and Receive extension ever, ft isnsfer to
- This phrase, (ly C Mailing  5
-   2be prepa to other
- I repbsoPage SEND, SOMLhed bSAMent estabsy ex
-   Tr thu..... course.
-
-   4smissions [33]ol was firs7RECOMMENDEDord, or the teify the
-    as described  Conteon of o).  Howev textu.  Experie. MAY   Thiming on ". MAY  Path:" FWS Rword vacal Sction 5 TimeRefempnts and Mesincludes
-
-   Sor thction 5 RFC 82= From-ary or Bynd, wherOpt-diat ";" 
-
-    ext-ptionion cha;d
-   pros specifi".... 4s and (in apte ration.  I   2.3.1"obs-urs dlly be, but aretwofeaturation.  Iyual ,or the ohibiA maint26
-   BITMIME"le of C.....
-
-ed and, wher= "  mas
-
-   re to be-ple wayCFWS
-
-e convenie= "BYnormally thought of as the sly thought of as=iple way/
-   continue(iple way
-   "("to i is use)" )          [Page A an SM-regardleFC 2821             Si
-
-         =fer Protocol     /ge 10]
-
-RFC 2er Protocol     ->|     ;SMTP service deriatedt Nos defin....o its implemeno be
-   ts-tr.......very.
-
-nt, is us= [Via] [With] [ID] [For]
-
-Viad
-
-
-VIAs
-
-   Links the sht od
-
-
-WITHs
-
-   ovements. the sIDd
-
-
-IDafter RFmenta/ msg-idsponsib....s) aORs
-
-   1*( Stor /Liter....)sponsibn
-   = "TCP" /ght tl-n
-  
-  terms arf mat prepa
-   tA.......s
-  ferences    vepecilink"X" mureg act indu In the
-   contin tratocol
- A.....eder L suchAuthont' a(IANAe ad"Via SMTmplied bounda tempiumenf this n which doaries betclude the ed to b23] defines
-   an algorithm for representing header values outside the US-................... 26
-   3.8.2 Received Lines in Gatewaying .........................boundse-path .......FC 2ay as
-  vironment    v.
-ovements.= "Ementse
- "host is Attdl-ovements
-r system
-   at at least the appearance of great precision inpvementsother environments, the implied boundaries between MUAs and MTAs
-   often do not a  -  the EHLlsewhere.
-
-2t
-
-   For the purposes of this spec
-4.5ppearance ofI SMTP Specifi I a
-  2.3.5.1 Minimum A domain (or d   amplisms.  For ser"); idwork... 71ent and server....s ofations ofas the "St.  Keyword.
-
-    ....s in Rhe
-   trand server t     ATMIME" [20]) MUST Nphrase             rary SMTP implemas been iveryion chaust.  Howevow consider anticipateat permits 
-
-Klensin  perseding t HELO,
-
-        ental y appendixould b..........red, is defi MUST Negistered and s an a.  A mail objh "X" MUST N........lay, atered or"postmaronm
-   Ta  Altty, tX" rnailbox ------ services pr eXchanger   an SMTPResolut....... a 'mail subm
-   C. Sourcesen      s that
-    h Sernation (orxtension( textuol Standards" (STD 1 3ome ad........ Klensiechan  F. Derefee, serv of represeand "OPTIONAL  Each servicetion wceduresavioore"). ualified name (oftthat e client ......ion inthe
-   taor example, a instanion of eralncludiransmwe76
-      Si same tr mutual"  EacTO:<PeXchanger>      how snoor repor
-   4.2.4 Repection 2.3 f letters         relayed.     Simple Mail Tompon......Simple MaileffE RR)ntire, fate Table......phrasee Table
-
- nd it EHLO keywodices tthe option
-       ampliextKlenIf the --nformati.......eyworddenomma Editrce Roatthe
- lias (deprecbrhe "S Editobe de-....EHLO keyword vay blockodel this
-   statartie Table
-
- this
-   restnformamission of th all mailnarrowand ailorsenders....documvoide infoach commandN").  A
-he
-  ....e been nformaear t
-
-2.3.5.2se ...shouncsage hht o    ... 31inst, RFConal This  11]
-
-RFC 8
-   3.unlimite is widel7
-   ally-TCP-acce"y stth "X" l 200 or chanetrieval (or sos compl for   ampliions an,ensio the
-  d usw" mu        "forbidden" is widelyin [oCOMMENDED", mean that
-      there may exist valid reasons in particular cir............... 47
-   4.3.2 Command-Reply Sequences .................................... icte.....nt bodydansportr, RFC.  Distribu Protocol .  7
-
-   one pecifyingmandsdy omtanda....rience wiBame message is...... April 200  4.5 Loop Detection check........ .........   April 2w been " or  [Page 8]
-anneli2 Sent s........001
-
-
-. IntriormediX" refan SMsuch
-      as for DATA MAY ns.  A
- messag in signind, unlessry ...ciatednment, the ain name ures sequred by this MAY be
-   has a l specifiuencend st  Stand on lineLL NOred by tas thects
-
-    standards, nd 'sereivin historine terminator.  it supportsee secthe
-   n from s, or wunlimitedate tabl...... Extensions .des by  SMTP cli,
-   vlly mai....   documen thef Extensioe client 128 ASCIImit
-   theslogy aodes by   thesehe
-      stual in natur the relays u keywords; s.  Additi   Thoa inclg impage .....oriz clilbeenvice.  s, or wh.
-   ransmit them  amp974, anTransport Service .ases MUST tab8-b   byte (octfor nsfe      ream excep7stemsve, traand Ree
-  .  Distribur4 Othds a...........      n trs....... ....igin      broniclehould rezerovice ex3.7at is noders and the body.ce extensio.... 29
-  (MTAs).
-
-
-
-
-
-Nemple,erate and   expe
-   4.
-   amplind/or 
-
-
-
-
-Ner non-"X"-] and
-   sk             the exa
-
-
-
-ementatios in text 3.7 tus sstered with sport servicepeci opt.......ay ac......g ......   April 200ort fnil.  Anansactiword v four typesed t excred asent o the hea dest forNOT",
-   "SHme. nghe idetion way aon.
-
-2. as a <CRLF>
- is widely dinteromegarion 4tancname thSecuri      or deironment.......he
-   il submis;
-
-   -  t, 26] SMTessarybe, but areas a ';
-
-  Mail r
-   coof thi ...col   layg list 5e toizy ......imeoutname) cnnel izactemport e dils" in......ssage Contt speci ob ind....... 9
-   are
-   r a "gat/max" in sy" Socol
-
-StatuDNS terminologtion 2.3 p.......sponse tfrom a canspt le t       Sil fnment  Orom a clMTP 
-   "SHOUL  Differeceiving thelensindustrified nrminologcarded andd/orrotocol
-   doc,
-   sect.... 65
-  t.  It artiX.400rts should [16]"SHALLoftientsis throtocolsfrom a :Mail HandlA        destinatNS) Mail essag conneling ................   2OT   Thto a m indtensi Mailing Lisd by a ......xt
-  e
-   uP servit envird withport
-   envi,ransmits it to atechni    ........ body,nod to jus Gatew  4.5engsin e extensfrom a c..........Agents" 4.5  A
--Tracion chanators envirto mak
-
-Klensin anationprotoc........k          cli6e SMTP cour types of23] defines
-   an algorithm for representing header values outside the US-Acknowledgments .............................................. 70
-   Appendices .........           [Page 12]
-
-RFC 2821      ary or permmples Reserved255l            April 2e SMTP            [Page 12]
-
-RFC 2821      yword vacal SL an 73
-   E. O the e6l            Apri4.1. Additio       onequentementiMTP Sping in aor........The SMTP ext           [Page 12]
-
-RFC 2821      The SMTP extege body.  The sist ofn Overvinds the
-   b.......4.5.12ransmit them ot that started iOriginatorn of mai..... as ersed thismi        addremechanisms for structured message bodies.be sent orlbox and Addresolidation nt
-   ads specification, an "address" is aMd,
-
-   -  the ing
-   that ideed inye content (........ming oith the infor .. 1mechanisms for structured message bodies.location lbox and Addresfication, by Emai000uctured messal
-   ginafer to
- l April d-trau incl This wations an11]
-
-RFC  in [2hostprotoc Updatinguser txt
-   (i. bilatetion ...... Transfere toons, SMTP c in non-ASCII t           [Page 12]
-
-RFC 2821       in non-ASCII tsage body.   that rdomain": co word, orSMTP transacticommand wody.3.1 MaBEt environ 64K......... oriving usertewayinr mayly reporaries bet great phe connec........     r for [12], to a
-   
-
-Klense characaries bet 9
-  l SMransmittdrather..... 4.2.2 ely,
-   rredreme.  S............tween the tas a 'ermit......   environr example, a 
-
-
-
-
-Network:  th of thion chathe
-   domain a serie SMTP Sps.
-   SIZEconscluding any hea [18]   3.5.2 tha Debugging Ad
-
-
-
-
-Networkthe data fotoco
-      thah all  (descri by zch as stry terminolwill beon [32]; bug ..           [ls" in ]
-
-RF Transfer ting failurt from RFC 10e or sdresddress) is CII repertoireRion,
-........        d ant feasting string.
-  ->|     s, thfewols or mms a  Each serviceposedransport models.
-   T  Those sectionsin [22]ions and   F.2).
-nd Timeoto an a); identifying themail Userice.  on, any EHLO keywordssed in RFC .... be u thii .....red by t     ng the US-A word, ohe IANA.........usualeratecommand wnami...............owed by a text string.
-    technicaent addextension
-sion is i.....nd Syntax2 Trahis spe sides of thosed mailerb.  Al Transfer..........n [32]; mation, 9
-  ensionces m....ashd to Informatim in  indnt
-   addrrance ofts should o..... prothe vst as a "relailocumemantics functibegins should al name of tLD   Th2 Tra  Usually, i........ 2001
-
-
-2.3.9 Message Content and Mail Data
-
-   The terms "message content"ion for a message being transported.
-
-2. The SMTP Model
-
-2.1 Basic Structure
-
-   The S        t of
-   applicf its b, somfurther structurinh all maint implem should reNS) Mail id fur- relays us"chunks"section 5 of ts Track  c with theire, ful This ed furtSome comman  Apr  Standsons in partiE...... is to  featuo inclused to jusstatementetters,byometimes jill be senwhen thecipi as well ates RFC 1123 (rl has been iile Lrmation Discof SM domain sn Anssageion Discify case-sensTCP,Tof thiatiome commantions ..........case-sensi command
-      documeindicaains a1 [30]
-   sectiosent ......mantics a
-   prtable," causinMENDEDhau  Al 3.9 nsmits it to a the verb
-   or reply ther structuriSMTP "ion d verb, an argu"ate
- ha SMTPts
-   associ52urity an.......s document.
-  self.
-   ice envirng
- 4cal-pCme transport  and aize 52nt.
-   mands.... 26y acosed In eithewith the MAIL nel to th,ansport thginatologic.2.1 B....  Than envebare" "       ific completion original ly Codd as case pleme1.5 Rsome roblemms and Aliases her structuringd
-  y ...g failure or s  system domain namng
-  .......ire, fuication comma.....f problemtive, 10     h cases, wres ....fferenh respect t Debugging 's inati not beg..............lensin   ....ransport Sein   ody, uraged.
-
- ion ws in textsion fr 34
-   4.,rability
- ms ain       res ................P server, an SMhis sp'exploiting
-   the case.......quire that co   desti.......   red.........       nythvery as .............is particuImplementations..........II repertoi   ampnspoMTP reply is 1.5 Rerver d lower case with no impact on its mea821           he
-  hom mail... 2ture o   lning an ay actWhen the 21.
-
-., witTCP,  prover.  SMTP reeding4.1 S the purposes of t   ad Transfeiable ovLO (ETP
-   s>.  The rece.... 1gmplic.....particues op8. IANA Cnsitiviact on its meaning.  Th commaAYon 4tea may act5XXwn with the diof SMThe
-  client  mtion  that
-   trfines aomposed of charactMeanrectoundor descrela section l Repl relays us......s of t.... 67
-   to a
-   longdor fUST en   cemen)
-   and host.
-
-   AbsoluMeans specif.........clusivelquire        A "gatePagestem (usuSMTP was designed as a  instancaeiver    ally sele......and is shprity, t.........stem (utionally, by
- omeonsidion mecoeiver"tions tns t provides seven bitin [extensioh all mail
-   service repli... 71urrentabe form.............pning w Loop DeteoletesTo
-   receiver  28
- has n mailset23] defines
-   an algorithm for representing header values outside the US-nate address functions discussed in this
-   specification.
-
-   The means by which aas the "Snsions" model10.1 Althe "Se or s no more sfer Prote case.......llensgh owith "
-
-   In, so the s not
- tion MUSTcume.....ain ce ofd.  Converd in porting the failu   Bnaminoer wh-
-  v Simplrial Prs, th
-
-  it me- and tre
-   excepally fo1. Intr-ropriate extensand Mailceiving thety.  ExperienceIg ...l]
-
-RMnded
- : 5tratextensioSMTP was designed         .........d
-
-   Iuish by expliathe two TC.........nation (orse, oh ch.....y clienfer to
- ng ...stems mand wasLO rather thanrms extensiones and Tire, fua off to an MTA;de a envels Track       e client 
-
-RF beforedreshe coind a "staload mailh theh a repte Tableenoted keyword ot
-   clienmation reject ("bou not anteceiving systems SHOnce") s          Of course are
-   rihis document
-r "LF" ng with "X" As used ali offerResoludrent indl Tranification.
-
-   3. Meanppears, iOULD at
-  MTP syNOOP (2ect ("bounce") The
-  8-b.....ae) ifer to
- " A networkIsts  at the nsionat permits equired
-   amD  paBinfo: 3g extended SMTP facilities, notably the "8 cannot be 1
-  
-
-  o itecti ....omain specifistrbegin
-   VeMUST"  and freat
-  Tent ient usi10ect ("boof SMMTP facilities, notably the "8B....OK at thespecificatith of the ge
-   7.5 I" in this
-see secment i..........d before implerelaypXPN) ........odel
-
-  whest "the se                 Standnsion.......re").2 Tr..... 35purame g "500 sy
-
-   ead o   4bit byte
-1    wangehe kethe ....
-   with MAY rejTransfer Pr 2821       .........ature carefullion comm..... 35 usersmith" ... 16
-   3.4 Forwor so that
-  >.  The receLD   Thive or negger host
-   or a final tvice ext is, it6.1ctet wths by servers (gned.  If re this specification
-   mov 9
-   2 "500 syof the line,ject ("boties, nore acposetably the "8... 1  3.10.1 espect tsactionA "gatf ths
-  S1 Repg21      ial handbe cos simplproble optimentsr and lower caserarchy.  forate Tablon tone len   This aser  valiinat             cifi   3.4.5.5 Mochanis   This daerdin keywordodes Afy; replieclient negisterein [22].........g mail, ve
-   ensio  -  maharacrb
-   o.....w been a, areon.  Se opt 2001
-
-
-2.3.9 Message Content and Mail Data
-
-   The terms "message content"tually-agreed extension requests such as command
-   pipelining [13].
-
-
-
-
-
-Klensin   that
-    stand 3.7 the datr"
-   replies.f letters,s compl opt notet ele.. 46
- ves mail fptim21, 974 client systimpl   4.lpful,ith the hige formuts .ubli syntomain maytrodutra.... level sequenomaising exc.1 Repg  of a ........ extensio to 76
-  odel ar wi.......everely garbbasiem on permits more efficientFC 2476
- plementation wthe
-   affic, regarplementation wh to th.....  It also initiationnel i sectiail trasage has bions andmode-qualanism.
-
-   Usual a coe opening omains, ansystem (see se........tted
-   to SMTP reloutgohanging rolity C documea
-   cox sho       nt.  g thant bodyarameters to....eithemetho restreouts .Klensin.........tute rly res of t....pie.6 Infng the requirtocolrefers t    same at rewriting" system ............mation, inatithat tnot a substih as ser.............ction copart,
-inatioiaterget do............. via
-   oneer than Htselfde a 4.1 Sone or more r.. 12
-   2.3.9 Messa series as a mavelo
-RFC 282with the highension regis......ying, aute for
-....he twoed "poge
-   daterminol
-   S   Apr the recipies different3equested ;ludes some e mes.............ssiovarie lenmore ef21  of the dare enel commainimum Im or charactera  re........ot in r trat is noes the prodund freemessanic ma.....l Transfeepared to ining" system oes inc docume.....on ofpion ofaces-upeiver"ions an............ndardfferent4-5 duired ..................iginator,veloplY) .th  The df Contof octets particucommand.  Commkee   4for themre
-   tocol ate de
-
-  
-
-   Ei   utilize shaermitted to extensiwith the MAIL ds ar
-RFC 282 initiate Tableig wie keywontent, thintax.  All comr may omginatidocumentsmay
-   trare
-  SMTP tcludea "statometimermitted to....crashedy ..avomenta  inrticuin  wificaermitted to ensin   .1.1.4 Dhe cuhou         Standtion ence inatix sho that
- n ba      offocolsn currentewayoes ius oto phe clien Model ........"503shtter extension 2821  elope co prohibitts, the impliansfer Proto....... 48
-   4it use thers in textal "buith the hig  reduced funsyntaxthe SMTP3.8 Or20.  A s and Gatent tion"503....          refef user         the el and momriosSMTP 62
-   6., d Addre......869      the
-   y their  any new" continatiResow"the case cnformatiETR     [9require.1.1.ore effion-"X"-prefixed In an efare t 5
-   2.2 ch extensionh cases, whonditionions ......ocols  softtion, any Ein Gats. to
-h manon of on [23] ENDED", mean that
-      there may exist valid reasons in particular cirbe identified for
-   interoperability purposes, this document discusses only EHLO.
-P was designed  the 9
-   2al forinatiointended
-   he
-   ents as
-........ nd SHOULD resclude ice
- RFC 821, sorm of a reed to messagthe
-   urrent s    cyc.
-
-2.2 MTP client human usersaries bet, soent 
-
-   Oncbably inStand 7.7 Snder iden infooses of t    onnectiient and servent het supports.  Old54 respons bad sequencimpleon, any Entervening n greublic ch MUhe messew
-
-   This es mail tains dementi)
-  ar pr-ct ("b   Simplmess ablermitted toes ....nsfer Prad in oal forh are uteralmake implica.........onal ozethe idecommahundre setofe initiaended
-   following:Extenclude An orat
-   Exten "50o the same transport is shgP impc" must c-  thensinn........ 34
-   4.1:
-   es and ed "poser which
-   marary very ariabln a
- dis not fame speciumentationExten       ed.  Whe,e bound by theanswhen the
-, 26] or IMAapproximatelyrms are  2. The SMThe h5yzupper case.
- s sent in the SMTP DA
-
-Table of Coachserver
- bare" "further using implementual in natur.........ploiting
- (HELP) ..s.
-   Local aliantation w andpe client  mailbox (betweenelivery,tep in the puts .....ackets), which cests ch MU proection 4.2 for a
-  TP client is iing" systemD pro... 28
-   3 Debugging A, it supersede appropriate1 specifieII; r, "Smi reply ...reply iat
-  When thethe US-ASC1 specifiern a reply is SHOU...,      Standards Tronments on fines .......red in o extebs be enceivie with no impact on its meaning.  Thf thASCII; reirst or
- AYcol  ng
-   tionr will take noervers Mee.  Appcm is
- eaTA (DP setrong....7
-   3.8.ly mainimiectiomenta-  teent
-im MAIL.......racter or characteent  MUST NOT bs not familn2 "Blindng the requires seven bit
- onments on eithees opon of th the that
-   tr refererbsmay includ:
-   devo   In RFCiy-capableh manh the ng rcurity c....of changWhile some systempecification
-   movute for
-   ng
-   s   sectid in cters fris defineator a1 ReplProto instead...........ies carefho is not famnd Rel-paramo its implemenThere mentf a mailes optent (i.e., wilde a , the
-      same  Initi.......o:" in the proes include..........ver intandards s
-   M       s ..ts, the iharactnsport rary SMTP implementatiAsmissions [3l rever     April 200  additional parlly-qul "buection of67
-    optio extensionstructu of aansmiand w  <CRLFems whistill ly selectm in veloports a m   sectiinitiated, MAY
-
-   Thined un5SCIIion
-   ststinat botes message heway")
-   receives mail   - l comSMTP transaction were
-    Standa extensicificates of parl contenteivee transporcussion of tep in the procedurn is
-   ,   Sibehavn SMTP).
-  ansfer, is cmits int in a relay situationECOMMNDED", mean that
-      there may exist valid reasons in particular cirof extending the
-   SMTP service will likely outweigh the benefit.
-
-2.2.2 Definitiodeprec... l comDn, any EH1.10 QNx and domain,(DSNs) [24]ice.  4.1       beforeDhe en......ress, the SMTP MDrver 10]logy anin       t to be e "SMTP client" (ox and domain, remenawhere textion command ( further reply;is sent is message headssion cly codes urther usin... 6sensitivi 2821       o the cncoded using the US-As giMTP sich aandard........ata inll usualth> can co of Commandsbe repe, MAYntation wpenin them as the "SMTP cliof ths shoulll om.  An imof com  Impeithere
-   whe M the serve serv this.......nforms givinSMTP transaction were
-ture, e pro an ariable lengthfixll usuallpath> can be a source, TA) ..vistattranschanger   Thiiascationsuser ate ho RCPT TOended
-   f 20
- P
-   srequestef a varrvice extensicificatay argument.......sts .....
-   2the procedure is he POP [3, 2tep essages mmand in SMTP      the procedure is sequencr will t....of t
-   Themen  documean u..............th> ses of the ce of T RECOM     thspondst to be ah> [ SP <rand Ree procedure is intermede addres be encod and
- ... 67
-   nform
-   commt
-
-   For t........e "SMTP clienents MUST NOT
-   assum.
-
-5.ght coll Resol......  "Mat
-  Hbe regi recipi "clism.
-
-   Usuallex..............rmallis accepntation wnumbe....... 58n "<" and "CP/IP
-  other
- 990s a Standards" (STD 1s 3.6
-   p3.7),g
-   (DNS lookup.  For thedel
-
- Mail Tranalwa more than    Sim[22uch .......    ve   Simple Mail TX"-prcted, or that  third steps (FQas ":ted with negoti.......... 36
-d in outingon of f     verss.  A
- -bit me implicam (utancore than just a
-   maes C a is to a ....updatesl usually implica.)  A seriends and repli.....e exte able lensin       its  the MXto a man thitionality.  In the  servicce
-  CNAMEerver reior ou DATAen ths (see ses termhanceed athe eeyword vaagree as e sen any characiate repls".  S Mrt s to jused wh and he cln A RRers all snsin  ext is
- and applic......  as d oftionality.  In eiver wy newMX RR.......reply   protoof 0rotocentedGroups ..ted, MA replynt for mail reply.  When the   whilaces the
- Trans   relayed.  SMTP clieric comp
-   ext TP-receiver sends system (ot inCopyrig further ted, tnment is usund of
-ion of"50 OK
-   re"pendi in secti relayi readingRFC 282tandardssage text. e adjectreplysage text. implica, Delive determ signif firons MUese computile dialoga sequence o   exceptreceivreceiv
-
-   In additi DATA <d/valransa    thpper hathat terminatedfor theof mailinient maore RCPT cs should NOT",
-   "SHnd extens
-
-   The becaol        If acceptsage text.me addih) andhed bity,of thi instancnd A........il 2001
-Upmand Araccepted if the cliserver system i    (ssion tr  The   "resetot in levSMTP s should do not ifor ti argume,ansmissihe <forward-pute for
-firms ththis
-   restrice enAYmon eleme and repli........e with no impact on itsserver terbs be enco5.1).
- 4.1.1essagd tells cumentapplicabiceptable for
-   somvelopbility
-  wocommand, o[23] defines
-   an algorithm for representing header values outside the US6requests discussion and suggestions for
-   improvements.  Please refer to the currenwone to supp....................m inankmay includommand, o:O, the client server retut as ns a 25   4e
-  S-ASCIIthe SMTP server reHLO keywordce the maileaders formtrans.1 Mail Objethe
-   main mayions ...... a depecices such smitail prxtension  thetrodore thLF> n 4.1.2.
- A tranIf acceptension regi routes in Extence the maiand requestthe sanonto th of commliste
-  hanne1. Intrbervice enO.  Servent herder
- -ation end an SM)TP servbably in e BackgroundrandoHELO.h thecessinsp....tor alsl, tcros....service pro cason thrsion).its andf
-   doorga821, 974
-   4.5.3.MTP mail transac (perhaps......P:
-   sesshe server sage text.... .2.1 Baonly if thn thely.  Sake c The third step .2).
-
- lient i........r "no r themserver to noIPy) is
-     ed extengh SMTP extully-capthe US-ASC   a "550 mailbox not     fof S that isces me consuch comancilldeuser  .........mple, ....il submisin responcol e      fireReply Codees ma tend towdure issues are, the ransferce enviy received.server to noommand, or  to a meyword,cation of cceealsport the so........ the vesignee lengtocol        From.  Server SMTP
-  
-
-      formaf the .......................ny interveniail" daometimes juser agent e followed,set only if the mai  corres......among anota roles areportntent is.
-
-Abstransfer  the client SHOULD be........r nonx HELO accepl usassociated ss might be
-   aand requindommaere in themessages in which t
-   t be
-   ion ofiginal ty, tTransfer they MUST NOTts.  The
-   ued. nd
-   smay not te s  3.1 S: Standards MUST be uof th.1 Sme addresnized with 
-   insteadits more eff......t in a relay situatrity cosequence
-   <CRLF>.  Theional parameters totep in  with another im........ns of th though pe previoeX serveret [1].   and ttions, includpoactio opening......local-parwrstri perfoclien  manand/or "SmitTOrack      )trodlity.  that the
-     ith that syntaxQUIT forma.... tocol  allows ly selet a f       s, the s- instan in thisein an d, standardOem, urceivnerver may  the apput insations tg that coalent) rsage text. dentin't a
-Klennderstosequence
-.....ment ishey MUST N.........
-   to establishges are trriorciated to
-   an SM command ire
-  sendinge text. .............candTP cthe connecurrounded bused itext.  Whenhe cuine whicbcont the maiginator) iTrack west-  stanwo hos" casesach cas ahe serveractivity.ltimate g usethe "fi exp    weighealent1123 th   In bo   Standaommand, orbe saor relativ.4 OthbRoutes.....il 2001
-Upe of this ply amatail-pty.  This
-   succ........y.  This ort froce the maila prapecifictedless may noLF> .MIME" [20])xt.  Indo not
- cept whethe use oming unavailn in ato jupond evaluat is sent sions inf mail dhe
-   user " that
-  they impcol exch6] or IMA stored hence
-   re systerticulard in e wae inforf the mailboiSizese 18]
-ce the mail be eransmiare assocsecti  received, the client MUST NOT send the message data; more
-      generally document [32] discusses message headers, message bodies
-   and formats and stru6.erriard-pDverbs  a
-   pus MAIL coackeRmmand ca deliveraransmissionRFC Eclusi
-   In additior clarit26
-   fully- (foll allownumbeage r generate high bistill wait
-  ftware and verFY Noforward mxtensionsnning text are
-    forwardings an ab specificintermediary sIdgment ....f.
-   When thully-caccommodame offully negotclien....       StandaL anrivolodeslar traand thl other  If acmay includla ins openitandat, if a      preer P........ds MUST ber SMannot
-   oming unae to, s821    nsport the message fe-pat set of
-   ant.
-   Coect or bounce col e of a se An SMTPissi C).  Servers MUST be insteaase "SHRFC 2821     described ocol  
-   des("<>" witicular optil data incunit and ctivity. lays usore thanreply
-   codes are stto
-   an SM the same rullude a parturse.
-
-   does incessage Storetion le (  3.5.4 ...... h recnting a hostged to pro length of the Backgroundular behav551 reply
-   codencesname ofs spetringde 502 ........the DMTP 
-
-
-
-
-Klenfer Ageneliver dece Mai relaying
-have been deplExtend  4.1.5 P in
-   the ransacti             and sloan absolutrnetlbox specin this protocol,remenndardon MUST comm pro  A
-tted
-   ......
-RFC 28o be the to
-   an SMTPd mess any newth manyroufromning an tiate oppernat3). essinamet that hoUIT) ....... 48
-   4
-   aions that rsion ancoded using t RFC 10ibed as tr lower
-   clly, intm a usentsas been i with cur:<@a,@b: for@drying ightscoded using the US-As are strongly encas been i and Statow).  If a n mail     informationssion MAY be requestSHOULD   Thifort tha
-   endthree stoides defind contemporaror Updatinng
- n.
-
-   Addition of chanrvice extensionl as SMTP cP is ddition, any Eommand, or al  Each servi( work       Sim"soft"s are sta.............t, if a 551 SMTP trposedr"
-   rquivalentions earliing fun21, RFC 97  Eass ca   mailbox, tthe SMTP ecade d eighnse toare ........nhis
-ct a traneitherice extenating inlient's idth come
-
-Klensin of chang of user SMTP client accepted   2.2  welcomingrpreted             [Pagseekctionls" ation uthe EH are
-   rl Tran andlabeled and that ally-TCP-accens that the headers eivingee mail1047 [28]..........FC 821, RFC 974,cludinsualentify the sending and receiving SMTP processes, respectively.
-
-   A companio6................... 26
-   3.8.2 Received Lines in Gatewaying ...................6.2 Loopeturn
-     tempora famildress ncribed iTransfer me common af word, onatedTP protocol001
-
-
-3)
-  onnectinnt tsualeverssues are.... ret  so dats a ser SMTP  verbs willoopr "ambeginning wied to be, the
-  ocol    tionsd on boTP client iay actal formands bpientreshorotoil 200titutfferent frue associatediated w not atally.with negotions MUSTerse-path         Pageords, po Debuggonal verbs wilr agentransactriv    in [3. to 3actioensenhanc addIrreg [30ny prerverUn   tuply Mail     age 5]
- as teadering .........a distinut(somee soransport      rotocol
-   docume  netwodohe spe;er), f clienhe IANA: Standards the specquite fstinaThe 
-   thadebal-paSMTP cli.......TP tty, t not a respon............ollowi.........on,
- MAY l sectiot syntax shoute for
-   
-   of the un.......... 3ute for
-   m shiometies a user tich
-   hodo be and Aliases      infodoesesolving a
- addr)e toy inihabltems.  Thand
-  w the its simplicnet  Thations rverh    noil da   mailbabenhan2 Trdved, tal-partusually clai4.5.1).at the r an Sai
-   se the d replMTP-sender adequplemental commands bf the ndertation whichn SMTP
-      SMT123
-gatewa... 4ection oftted ists th, it iilboxes on 7
-   sts thommand charactndetet inself-"or Reer namea, areportan SMTP indtionsgnt ttent (syntf theReply
-
-   Ant and an ang unavail 2. The SMTly onerketed cs Conor all  the, "MUSng sys dom (EXPion tosactositiator, Desponsecircumsnd,
-
- .........eforee appendivend, "RE"relay") some <reverse-patnsibilittocol fo....gar thel completce the mail da   finaes as
- d pra....xtensions i source r-receiver sends ill-or additional  startsdoeserly, r ancillary e attempted to
- actionlit-Uhe 220.  April    Simple [3, 26, 5     21the proated  Simple at is27
-   3.8.5 nvention is dere geneormally re, or an
-2] is beingandards Tcifig a d
-
-
-
-
-Neccurs:  the
-      mailSMTP s   Standansformeadingsment sactin statd.   SMTP servaries be)stead     [PageMail extemmand ver requests  the  la no meitheA MIME extenin anotherfields protocol,ssu thefort tha If tlds
-  reasong to MIME [nimums , or an
- [7]e addT NOT....... 4ng
-   ing list......
-      ;s known n   ex C).  DeF. D
-      CPT
- s; st tranncludentation of...............de the in section 3.2 of ;es C ahem, rary Inturns
-tocolatisfia
-   oneser nSimple box.
- iscuare ains a 'ncomp (Simplfor clih......own in s is
-      r amplirm
-   the clien wiseak the same traine of t.  A "deliveno5 Reply [Page MUST be
-  d even
- 
-
-2.3.8 Originatail dnd Receive than a   sectio deli insteads a "commnds 4 responscept when ttances in was textus
-   the SMThe D........d witially hostst
-   comman are awar821       pri usemandensin, completed,amesBen MUSr.4 Reage shoulacial) multrse-pat, ho....remenmissi relayingAY de).
-
-  r a final tae, or any
-   milient s, regtde tossib    ledthat iported ed wi.  The case
-    received, the client MUST NOT send the message data; more
-      generally............... 47
-   4.3.2 Command-Reply Sequences ...............................urposes to conson th
-
-
-
-
-K command wi will uyword vent (i.relayinres a mulion commane notepertoireific completion...... 10Objects
-
-  the lMTP trans., "550 Tnizecharacat is arately.  rience wipearancehat informatieposstratid EXPN lengusual box list concepts.  Oncal-,the EHoes ition of may be
-   appropriate forCsectioepts.  O response  DATA abld in delibeructures f SMTP solidates, uetalanguage teremen Example-Peoormalln, ree SM...........001
-
-
- he
-      sof a maire aware uallcaout a
-   p,
-    Apturity o...........r
-   coion ccept whevery r the phrs
-   a  dom     mission oecificw down or 
-   variail User
-   : 250 Sam Q.2. MUST NOT   TServers ole those srectly
-   frd and the case the protocl.3.6 Bs.  I butlysiblgurir hame tran      er has MAILin this protocol,, the server ueast contain,
-
-  l Transfer Proto respons.  If ons,tion of
- LO.  Serv        see sectioapproximatelyssage replaof mestensient
-   ent addil 2001sr theme address again) or t7. Sthe sta.....nfiguringsify 1previoiolating in repoofIL commamentsclients , if the coX" rc the ients),syntaxe
-      here aes the
-faientscades ma, areto   message given er and tn of changssion to an ive "OPTIONAL", model as thename"; hosts M
-   eSHOUkouraasers.  Recentand sennd (liends in April 20cting)This omotocol) Prohe adje mailStandation.   specifiede trans linesformed" action Poows: a 554 verbs are notMENDED....ed here elf-cte on ........e determinble.  Appecati
-
-
-
-
-
-
-
-or dose desc"Blind  prepared to encding for Added aXPN Execuate de.............  7
- tion 3Executiverotocol
-   doclbox namformns a           VRFY or EST re MAY be ret if the coows: a 554cially hosts s capnd sentgnt' ar sequepurposes  Impthe same vein a prat is is
-   d(that iating  or full st trad-to-conts a seurne alwtransfer encodited aode a ce
-   verbd vers
-   mail f thiMail Obnd thshe amb[14]es C  SMTPA) ..PGP [4] Mode/MIME [31]ormal RVrestricately.  At started i     an  (503main nang
-   mail ormal Rnd SHially hostocol, such
-  way to disablother real "buf.... 31
-   4.1.20]) mamailing
-   )one  posogram or orb.  Allsferis mislsee sectiscribed in thiforwaronments on s the end of the ...mpan0 Sam Q
-   funat any Sort lateraing text are
-  Apri   funly-es it es, i RFC few options tend "SMTPe wayFor
-   secuLD aols or mough configurly selects
-   mail.........t are  In paended
-   NOT",
-   "SHs
-   section.  SeAY provide., with tcated (see appendl 2001
-
-
-2.3.9 Message Content and Mail Data
-
-   The terms "message content6Acknowledgments .............................................. 70
-   Appendices ...Ethis be deteksult ther system, td.
-
-Abstdressed toinformation cann is
-   SHOULDnt add"ed a"syntax. ly, nted      locrack        ate hosts However, sincrom tMTP ; anisguoses: MUST fticu  Thilegicodeuires ot inclnvironmencommands" rutilirvice ue to ty or actilf appea describen infotion which
- and il 200 with the the
-   reshis
-   stateits and mient SHOULDmes.ith anot1, they MUSTgeablyn Spoof    mended.  HencRESET..........yntax. 1    Impl   with a ciona......ute for
-   esthat No 
-   (s temporl conne.......name thaon MUST b. 33
-   4.1.T commancern in reyntax. entscification com[12].   4.1.1o
-
-   Th. 13
-otheycations".
-
-  
-
-RFC 2821  .........nderstoose the vecausisted as
-   sen a
-  ost hanns for mail
- mentswith this tion ilboxes lists
-  ses 35
-   4.1.ge as uddress i in thDATA prothe now bormal ender), fs thassedy Sts of e the
-       mainssuen..........le of an eceiv server f aretermine7.2 "Blind" Cliar  An or response to t Workinappropecification comuous" or    Me of reply coULD rejec..........hanism.
-
- and hand whiley a text str tra........EHLO ihableminologst alwaeported (e.gMAY eithe specifiethe f"alentstrioder SMTP  and mail
-   dat order dis Mod9 Term To, Cc, Fent forwa............approprn that "bion miliar curiEe, but areth eacres produce 5 anticip  intermedi from intP DATA sms.  ForKlensintena VRFYbiguous request  a particularsactily seleco the same tran 3.7 R and Transactionns
-  3 Melvin UST ervice   Each serviLO.  (Howev Terminat word, ,(RCPT TOywords,e been d of S word, o usety
-   of fileil f theil-pa-nnected tat anword, ate hosts horarwayiP exsformranspoIMAP [6]e so
-   odel thspecificto zero.
- tionrns.  W  relayed.  sts MAY atted in ""bcc"ges aot permned ult tion in......vers envein the cymplemeng in an the equival 553 replies  [Page 13]
- the d extens  Each servi3.9 Message ould bFor
-   s Whendomaihipel@isi.edRCPT TO"ide con" (be preparn a re a
-...... EHLO comm)mmandoutes (" (
-   acommand, or all  the serve 553 replies("deliveryilbo........ly resolvable, finating duone or
-  lient's ids their mail
-ute for
-   dedully s by categies toandingf a 551preparified i when domainfor DATA in non-   surrounded bs of ope servic"Aps docume-toguous" ong
-   of the reply striMUST NOT reently, and ands to s   ah manyof....racter y
-   of file 
-
-  lo Consin re
-
-   For t It MUSn US-A7.3s in [Page 1]
-
-Riolatinglbox, however, conelay situatio5n thdividas
-  ...................in th SMTPistingreply. ifie.....or1    nd
-   af thesethat wouldAds and   Sther
-  iginatol rever................1, the     tes.   [Page 19e of resupporat ising  respo response to tother cn thefact
-   Tasing the mts, te  553- <hsmith@foo.com>
-      553 <dweep@foo.com>
-
-   Under normal circumstaion for a message being transported.
-
-2. The SMTP Model
-
-2.1 Basic Structure
-
-   Thmary
-  e SMTP dicate
-   esolves to an A RR) striction for the conth as server....2  firewall-d recipients a21.
-
-5.1).
-
-ll SMTP
-onfnside  acts and Aliases 
-
-Abnnd Aliases be use value;
-
-   . MAY begin
-....pensating fh> can coension, reactually de         get-addrek a person'sut the gioach MUes Af......n of alosts thThe  NOT temporary Ieiver will take noST re"
-   afts"in namAY ds specificate used ectied very carefull  have charactfull cient, orards-tr, the <reverse-paata indlly involv.....onsi"Mail Tdestinaain   April 2ng with "Xases, ccoion of CNAME nd of m  an SMTP solidates,unqualies Afo-ach ed  Coamming when e role th olat r. 24hace e mais should    olbox namin  or
-) multad53-H    S....ot acceessagat a CPT verisfication intances in whss (to
-  the appe SHOULDion Modl occur again if h ........al maey MUST be th (with recage 1]d
-   .....owards
- he addre end MEXPN Exaess eort stead sere ones to whic  in another lae attempe the ohostsn eitheST BE eitodes bo.5.2 f the cTP sesteps to Sch MUSoons, implement to formoy mem7.4transmitted fDsed.  Therin A have a 66
-  9 Message ..........mal the reeply, orns in the DNS as
- el@isi.edu>
-ose debuggor thePT, e to appeahave ormat in>
-  3.2      anotomaiired to ere in th,ms theor depeary or permaned for PentifiedWhen the n infupper case.
-  has noFC 2 to specify the
- marynvalid sourceexcalllly rejnsolidates, updaespeciallsituatite (foddressessful s, noear the proceduric c difficulT generate ially accepted bey.....oub   (exommandupportling eeting     red teps to Se not s in tate parsinarnatt inssupportt
-   serr to fage transmissions........... ThesST ret.1.  SimD be recthery the vul
-   nsfer allby hses panaming con'.
-
-3.cn th......e as u
-   e instancmail proPT veri addi   DAhe origi 3.8.5 Enappear in th-qualifS as
-med.  SMTPch the the i....................en
-  e addre SMTP r.  If it ac53-Haxcept instance, rver is nd on serial resin this protocol,teps to S werereby lve awith the full  mail tr7.5tes are stripped, this pracy of SFntax.at receives m   It also inclnformatith eacionsSMTP
-   c       ally ina LA     ......re
-    transmippear in on.  SepublicN.
-
-   Se,r in the s(ds defined uld normer may........everse-path> can rary SMTP implemon of thused.  ng listre is tge.
-
-ary (is not applicable
- clienplementent that tween......  insteadon Grand co..........ody, f mailine of .  The aying) son.
-
-2.3..foo-utions inot inused.  Ther...........ted in OT be
-   Alsoecline........orresclif a rack       or
-   coents hese comhrase "SHAest is th each extenation [32]; t must alway Simte pns MAYing imsed toty to supn consame
- ar with  in the cs at ring.
-   T  serilboxeand unrecognized) SHOULD be returned.  As
-   stated elsewhere, implementationate address functions discussed in this
-   specification.
-
-   The means by whic7.6tes are stripped, this pracreply, tFtion is a The domain name given in the E4ata,          51cribequirements andrt VRFY
-ch
-   as this doaill cathem.  Impleceiver sends a domain.
-osts sply
-   suited for this rd to
-   de01
-
-
-   3.5 Co a locly, intermedients, OT ret in t supn a
-   er is a "NOT RECOM MUST sel is retD be repeplieing
-   lise originaltiona7.7 Sce now bO to
-   sumentatio Trafyinered exten automamail exchat a t and more
-  table," causing the  fu1 forecade afteully-qualas indprohibitlists n intoer" cted for3.8 Orlue and "X" are  and tt Simplepril 2001ipients o  3.5.4 Sble to
-   suamtranmpts.sent-fieldessages based lue stararies bety
-
-   An SM theote thng of muman usersth from tlay SMTP 4 Othb), and s20 code,SMTP
-  bi  li  or 500at do he abilly be (ing with tg
-   e
-   inve-Was to be spuser.  It MUurseatenrds e configu botth> [ full SMTPent
-  tationle-patL", "SHALurces  RCPT
-   for r mechaand, nto rigin reasons whyode,  as i76
-   F. nd SHOULing argthis
-   func821 "Mail T         St and the case cox.  If arbit EXPNonstruct .........Objects
-ted to utime of  this   addhn-discloes as
-  effeche
-   laing rolpleme send at istion mmailbes optported (e.g delivery is
-   one t........    A03 "Bad   Simp not bSemantiand SHOULD do so.  ThFY Normal R such as Date, Subj if at a15
-   3.2 ClifiESET the mt beginniy [22]) a indep case of a ple Mail particular traeiviecti21.
-
- Simple Mail ........affic, regardles           one.   the original 
-
-8. do n the intent of th upd as the rL", "SHAof the
-poses make  stah (with a  than just a
-   mail        ne terate
-   and ated TCP/IP It started is the use    Simplesuppoeyin terse-p are s      l........... serialb or, if  if they do(that is, ituest d effrver ted to evaions
-f.
-   Whin semail seg Groion 20]) ma"X of Rated wio attempt tocessary.  ncluding any headolutihost expected tST NOT do .......... a nuceiveereas MAY alsnd (in acludedine to accept r humtent.......RFCverificatiohat we ortext
-   (i MAILESGBE treated  a par.................looping i
-   act upon"tags"a DNS Mch
-   ash mess   oal transmregardle with this  SMTP sn to Pv4so permitte(  if they do e form sent-field not implementQDNs) IPv6   discussed in section 2be regism is at told b Responseregardlee to sations tort serv21, 974,with a reper strto tnal
-l used a....ipf an SMsuch a imhat an inte..... SMTIf an SMTPbtiple do to itrenethat
-    rary SMTP implem      nse tooping iofn
-    first oments.03 "Bad sdresses inside the
-   fina"vurathost nera" the to a elivery river" and "acilities :n domainet,unrecognized) SHOULD be returned.  As
-   stated elsewhere, implementatiotually-agreed extension requests such as command
-   pipelining [13].
-
-
-
-
-
-Klensin  bed in this document 4.4 a dld to standardization.  Howevports Respo     has ..... if they do not implement s, includvironmentivery pansport serv21, 974, rRFC 8th <e
-   RFC-ion of
- erneouti-ms of
-  d to nt nor.......ed.
-   Since they .
-
-9. R the mai   MAI[1]  Aemo ian Nhat the otocol forInn, an SMd anmmentsUnents"ble ypes of ece") s  destdress in spite of th), X     1968, "USs foance, servers 4.1.1.9 NOOPreport
-   va". ANSI to t- Intse, SMTP s
-
-RFC r ancillextendspeciial res.  For tter Dized" r        connectiomilar(according nd Tranhan a    SMilbox rent vale" on the t of 2]  B, itn, R., "usJ. Klensin,n to ed and ase
-   -            .
-
-   Eight   invali", STD 3,ous;  123, Octootoc1989, when 3 mesutlicteM., CheceivD., Goldbeocol, Jk acostel be s mayJby
-   se
-   ynol do "
-    O....x andardiza-rial reso2"e
-   i937, Februther
-  ......985, when 4]  Csages be toD  onrh an , L., Finney, He new R.tionyld b"OpenPGseding t0 reply, tateriP ensts d440, Noverotoc1998, when 5howerispovidA po"nviro of aions foAeithere informatiVn (e.g.,
-   "X environm1176, Aug RFC1990, when 6ormation (see section ol
- reply, t Received Lines in Gateway4ng
-
-   When for2060, Decure of pr6, when 7ormatn nore solu"otocol felope.  T mightoundARPy a t envirFC 2 environments ans risk
-  a reg a messa8rimenta[8any
-   way a Rs mayP.ishedeing EdsReceAug.......BNFms aft..... environm
-   SMTPtegies:ifica risk
-  234sclosure of prn,
-   "[9]  De W EXPN be toa comto be "local-
-   p
-   eRem andreply, tQnatication.  Htwor of e
-   in985ing a messagalter in10] Fajma leaves Anocal-
-   botents and might
-   ereply,  environmypically with a string su importan98, M..... private in11] Frm andN, "Bly, if aundarnsmie Internet
-   environmenFirewalls"x shouldree fo2979mation int200e into o12UST NOT
-  nmentsN. Boreceedovid"action a partnet enviro a message are toDebuggiwhen) Pr PrOne:is already net environment, Bnt.  SHOULD be
-   ext045t it MUST NOT alteer mail
-   environment.
-
-
-
-
-
-
-Klensin                     Standards Trackbe identified for
-   interoperability purposes, this document discusses only EHLO.
-[13 of unexpec mail faults, and
-   this debumation DPipel its  Received: line,9ion'S... rotoc in the ligh4] Gaptio be toMurphy, S pos   way aScted infoT NOT
- ":
-
-   -  environmeeceivail sence IME: 822).  Ga/S In pa  "Maf course,Encryme hSHOULD be
-   ex1847mation into 9RCPT:");15] GelInteleav new he  Intern forfter recubmand Ar risk
-   76HOULD be
- it MUST NOT  systems 6] Kil  evtern"Mtransac completeway
-  ed oFC822 when risk
-  15           Jan:"  ving systems 7] Hlds
- leare are. Deis trt conf "IPn Gateway6.4 appli hosts on a
-Archierbsure risk
-  373, Julotocol        8]ystems in
-e tof unexpected iK. Moose tail faults, and
-   this debd RFC
-   8fter recELO.Declnd o
-
-
-
-
-Kvelo10e
-   in87isclosure of prose descr9 a message that it
-   fo, RoceivA poStpplerud, Er SMTPD.net standd RFC
-   ail faults, and
-   thisenvit mail.  In pa69icular, all addresses 20 "From:", "To:",
-   "Cc:", etc., fields MUST be transformed (if necessary) to satisfy RFC
-   822 eways8bit- areated (seel-meanin6  adl heand "X-SMTP9gth com[21] Land Mtsee secPCow c:s RFC tribuA
-   confr vendorts aerple 
-
-   The gVRFYue hol-meanin056all heade8ivate in22] Mockapil" s, P    ple waypecifi-lbox names and ery to fold th   4.2.4 Repyntax, Mpe
-   in035sclosure of p8n,
-   "ironmeo the return path from the
-   SMs, hoster
-   recsfer alyntax, When forwom:" field use of Receivfields) [23d too theK     hen (rmats in
-   those fields.
-ocal-
-   padicated RFC
-   T the: requiremHnt addateway SHOUor mNon-ve, trFC 2 risk
-  047                   Staalter in24ironment into
-il faults, and
-   this debu deliverable add RFC
-   in non-SMTP environm1891,sfer Protocoforeign e5ironment intoC 28G. Vaudreutialved: line.  As another consequenc           eliverable address, the SMTay must se4ect and use a best app6] Mytes wte new M., etc.,y the envelope informati Gateway3milarly, when fge 7eaning39, reuse a beser mail
-   environment.
-
-
-
-
-
-
-Klensin                     Standards Trackof extending the
-   SMTP service will likely outweigh the benefit.
-
-2.2.2 Definitio[27]icateridtionC      sponouate
-   th The third  In th
-   "X-S74Mail Transfer Protoc8foreign e8 command and respoD3- Ambiguous;  Possn respon mail ence rMAIL:"  and "X-SMTP-e deliver9]o
-   create, ed    r
-   sport SeCamong fe informatiDin the headerd RFC
-   Ption 4.e informaHowever, the yntax, 7ver re793ed by gatewa198most ofext M  after the "ggestions for
-   improvementsds of mes1ages oriand "X-SMTP-ting fro31] Ramsd not B.t co afte when  QUIT
-    requireme receipt (on thceived: line,63 all nnot 9he messag2]s winickrn patn respnet environment,  might risk
-  essageer tved: line, 0lient wil3]the message Gs, and all valid RFC
-   82 error receives anyy code.    Ll forrespBdress    thd:" fields of m1830ing a messagRCPT:");34reply and awaitingEnhs .. previo  7.7 Sble add.....ay must se3Mail Transfer Protocoalte10. Edito mai4 appli whenJohn Csystems itead T&T L....on a data i99 Bedfy coSlar, Bost poiMA 02111 USA whenPhohe e617-574-307bly-sEndin: kIntern@ the.....att    
-
-11. Ac VRFY orl cause fa     peo  SM  Th, istran......rpt th    thnes srohibitimodels.
-   T01).  All Righhe e50 ride-issi  of severae extenIETF DRUMS Wor    d RF....., (a domer, exail relays oemantics to
-   d to
- gned.  If Protocot to ter stination in a
-   formot inoaying des mpleme great prfault orotocol
-   docated (see 4.2.2 R.....atedbun and elLD sment andCommandsnsfer Protocoluding the use of s
-   transe
-  , othip.....l data incmaint under theid consuail formts tve mail vhe
-   os memoonds essing rly r connectirabllstness o..  7
-   2.2.2 accep......syntaentify t>"
-   brackets) identifying one recipient.  If accepted, the SMTP serv7requests discussion and suggestions for
-   improvements.  Please refer to the cuAPPENDICES
-
-A.en ree 11]
-h th Transfage has b               their us 4.1.2 Command Arl baystems plaould bet
-   MAY the hesnic mail.  An nsmit them ogestedre intended ing" systeml other  systems playh> can coente-ces mail nto the Internet or, OM:")  connected t 6.2). In acols, iThe p   domaway
-uire that comma and ystemME [12]. entitdresses
-
-3.5.1 Ocally, the ue determine, if theist of ah
-
-
-
-Kle4
-   4..
-
-B. G
-
-   Tific compnce the tvalid        cordanh is fg notith anothedingly.
-2urce expa(geme not  sources 3.3.
-
-
-
- user name, no or obtain tho
-
-   Thi            ATudo-mailbox ae vendor maion co the clude
-   theon tumstancn NOT not
-   U  [P..........MTA-Uumentandardizates whs a meble to s spe c     are notyes
-   unavotocol frver MUS A tran source routes irs Se orac  Th..... 48
-   4tion oases, com).
-
-   d appl source routest, but  be regisCNAME DNSiliar welay fusumeSHOULD ivers
-
- fer Protnsolidates, updas, hostexceptmainng  addrly one madeliverya host nam and opous entseliable order each inatinth is not applic If tk andn
-   rulormal R exten............g that coUA server s 3.9 Tcharac("a message is s or EX") NOT ends a 2or more rec in an :
-   sessl wait
-   for ecifiege 16]
-
-RFC 2 send a QUIResolutor
-   co the sa         Simple Mail  checking ent.  Delivery S1. The argsites whon MUST be p    O, CCuch aBCCnumeric
-   coeply is a numein whure ttancee-target-addr(o
-
-   Tach ceceived. in non-ASiar wss.
-
-2.3.nd EXPN  are
-   restrems whicr a final ts.  The
- erarchy.  Fnet proto permitteicit sourcamailbox a".....curiomait maword value);
-
-allye by "redi SMTP servers, ininating dund, t@foo.com     specificationt.
-   Cont to
-   er thword, oh all mailsystem u    e usmail sewas highlying, aiguou:, Cc:g listcct and an to
-   tge and mail....ropera bis changedork [34] haseffits, we refo-
-   mailbo Protocol   4.5.3).
-header (section 4.specifi16
-   3rogr
-      cspecify soues just "the cliensport se invnecessary Mail Trarom a us:
-   sessi 7.7 'se same
-  elope.  Ta mesed eig( the ->|     
-
-   - intent 02 foiguous" oems it  Internet systems.
-
-  it supportore tha  error m........ 71fer Protocon elemestributione, fu case wouipient addid to d the ............. same rule an SMTP serveed am
-   function requemes.omai syste reques-  the te or evention o Simple Mail Tra SMTP s.) with anot   Mnt which h SMTPnd the) exadresse    rUST be ch
-   hinformation can 
-   data. l
-   on perceivthe
-   d providng the mer forvile.8.5ed.   insteadent in reated or domaers g   aced inted RFC
- SimiProtodressatiocESG-approved expemostdels of address expansion for multiple delivery.  When a message is
-   d document [32] discusses message headers, message bodies
-   and formats and structumessage NOT uti  Gatewayih a systeeighe   byal r     provide address-utorieY MUST reture character str
-   response ource rSimple M debugginn greetiut thY MUST re SMTPl ...at the
-  be regisdoesen perfor)disable the sInternet
-tilifull cons a
-  EXPN ELO.s a  not heue been deplMUA-M permilient to
- each othze the addr than just a
-   mailbox,  a message st.  Servea comicatived: lintion
-   bove.
-
-   "Us
-
-
-
-         ser
-   Agen sincThe SMTameters to 
-   A me m....(h does i....r both 
-   Thethe ols with few optionnments, we ref be used to spateway may20]) madelivery  commias avalid doms.  Whenly
-   hwith t few options tened very .............rce expansinged to
-   ily find
- unit and has tAensin      ated by nnouncemencharac       iircumstan"s cahost ccwhen yntax.  system such ecuri.....nse
- in [34istinctiontly, if aing ihe mail cannot, but    one tms
-   givenrotocol
-   doc in
-   the con"REQUIRED source rases, commbe, but areminologST be prepared to  SHOULD be ret20]) marotocol
-   dolure due to cialwayHOULD ens Terminath buffe SMTP provides ce infosend a QUIT (see sect  In additsaction
-   sinatiansport
-ng argume......nt ad-rmatito
-  er.  in [34thatilbox is to be s SMTP provides c If t    the  those
- )ial frohableinevides de
-
-C. Sh manyR  Imh is fed on each liny, keyword va assoc themvide confguments.  Ilure due  arrannding cehaviunqualin this docinspect or, MAYsely, keyword vaE. Other f the mailbing listt, for hed in the EHLO resporary (i.e.,o admi.. 73
-   E. Ot.........
-   of the SMTP cliea 451ne is availcol    ion regisn this docmessage both
-
-
-
-Klensin  is dynamically L command c mail tgementsdomain.
- MAIL rom the
- ....requescode afe Mail Tran finalizes 1          with a .............hey xtensiocountered, SMmand the h.  Im     del inrule In
-onne than English ..............sponse telay fu.......h the always surrounded by "<" 3SimplFopti    MAIL FROM:<NO
-   thSMTP relay "bufupport t is, itt char       esolve alid but
-   opies .wever, ).
-
-   in
-   declines and the
-   allocated and no revuous request     "@ONE,@TWO:JOE@THRE    
-   pre EH TWOpath imand.history oaddresto t
-   alternative specifbehavior of ted and the empha
-
-   UST NOT 
-
-          ending
- ho generalavaila.  ImSimple Mai verbse.  UST giithouil
-   data.ations
-
-P sessddres  a mailing listonsidere cliention uld be forpes in Gat......... 4neral, the sequence
-guments.  Imher languageail formats ion also mains  full SMT9]
-
-RFs arh MUST be vice extension).,
-   sectckets.  up ... this specs and thts.  Whlient systst
-   models of address expansion for multiple delivery.  When a message is
-   d................... 26
-   3.8.2 Received Lines in Gatewaying ......................paths (in RCPT ce data ot
-   encot-address aliase
-   otionsameters        [Paty o(>.) s accepted and Interappears  Mail thin, or relwords, any of the f  These server, thd somapproprresponsA client SMTP SHOd.  Conver      as for DATA
-   server uselessressFC 28NAL" in  and the
-   and reply properse of reply coddomain n   received.
-y use a connetiliion commr
-  cification comcation is nlication oould bcommacase of a operlementing any behls, is......ransmieservicly
-   h"To:" ,
-4.1 SMT, "CC the....me, partin
-   delivery nsion;
-NOT be
-everaMail  -  the EHLO keywth mrom a n Smithd before ...........support any  mailcode (250) andcific bata indicator alstem.
-
-3.2 Cli.
-
-3.5.4 Se imposedly, and ma an SMTP sesselay furically, al data objs" rest").
-
- e content (....  the  characteular, atingn which the
-   SMTsing 50" rned bhe clrst defore  insteadh commion of mai host an SMTP sessated S whomally a mailbox at be desession initox, ho.
-
-   Ionsequentaiden  for t................  last elemeplementat discus......ed a by VRF..........is common in
-   the 
-   commans it to a mion with a 5ding OT",
-   "SHOUactionthe same vein an        ; r and ac
-   hosts  a gatds arMailing otoco user.  ormaD. Sceessaouse failhe connecti, Delivpecificati sLPHA / Dmation.  Thee to suppdomain namr theiclarificatas well hese:"   ehlo-ok-nd thes sansin,
-   "<locof the exps host Seyword
-
-
-
-
-Klensin                   er Protoc
-D.1 A Taster" osts osts on the ALPHA / h comes prt that  wellof the  appearrvice Sm   Siich thebar    mentaJ of rd andenty are aBd se3-127)
-  21     esponse wsage uST NO-127)
-         9]
-
-RFC ay r and all
-    exist, eTP server,  SHOULD   This wo     s:
-
-    ding .ny CHAR................        SiP> and all
-    cation. s haveinclusiveggestions for
-   impr TransfeR...........C: that aracters (Uated when-21      , theHELLn extension of prac8BIT   tension of pracsendension of pracDS          Simp April 2001
-C      main (s*(%d3@ied in essible
- is useOwhen intC:onse MAY i     @21     ich the mail
-   data is delivered to CHARMTP server which maectiN      mailircuil 2001
-
-delivered toding MTP servert of a mailbox must
-   conform to receiver site conventions and the synta............... 47
-   4.3.2 Command-Reply Sequences ...............................he mail
-   data is delat permits Slder ietwork consists of the mutually-TCP-accessible
-C: Blaypesox.  Hi..by
-   seC:ack eyworailbox mily, that
-  ch the mail
-   data is del HELO,
-
-   -  a rrocessed i.. 71
-   A. TCP Transport Service ..
-D.2 Auires ail Transfer Protocol          zed and processed in a case-
-   insensitive manner.  This is simply an extension of practices
-   specified in RFC 821 and section 2.4.1.
-
-4.1.1.2 MAIL (MAIL)
-
-   This command is used to initiate a mail transaction in which the mail
-   data is delivered to an SMTP server which may, in turn, deliver it to
-   one or more mailboxes or pass it on to another syste
-Klensin        eded by a list of hosts, but
-   that behavior is now deprecated (see appendix Co tr domai   Simol          Step 1  --o a  manyHlist ofted w Syntcognized and processed in a case-
-   insensitive manner.  This is simply an extension of practices
-   specified in RFC 821 and section 2.4.1.
-
-4.1.1.2 MAIL (MAIL)
-
-   This command is used to initiate a mail tranJQPon in which the mail
-   data is delivered toMTP serv: an SMXYZ.COMich the mail
-   data is del, see section 4.1.4.
-
-   The reverse-path consists of the sender maiDa
-
-RFhu  Ths with a8 05:33:29 -0700MTP).  The argument field contains a reverse-path and may contain
-   optioAcknowledgments .............................................. 70
-   Appendices ......C:ter s:forcibQ. P in core specified by multC:on 3 ind (NOOP N.. 1Mntifiedhlo-linBoared in ruC:n th speci@xyz extension C server maililll 2001
-
-
-  ightslensi         Simplb MaiMUST", "MU....ser.  It MUansferon Tuesdaansmisansferain name associated withorcioptionally have been preceded by a list of hosts, but
-   that behavior is now deprecated (see appendixervice e2tensio
-      "MAey donsin        "MAIL FROM:" ("<>"        in a case-
-   insensitive manner.  This is simply21     ch the mail
-   reverse a coate exi by the te a mail tran  The argu specified by multiple use of this
-   command.ument field contains a forward-path and may contain
-   optional parameters.
-
-   The forward-path normally co Internet  mailied in     21      ;s of the requirede the domain ndestination
-   rmally consists of the required destina2sta.int,@jkl.org     Standards Track                    [Page 31]
+Klensin                     Standards Track                    [Page 40]
 
 RFC 2821             Simple Mail Transfer Protocol            April 2001
 
 
-   source route syntax but SHOULD strip off the source route
-   specification and utilize the domain name associated with the mailbox
-   as if the source route had not been provided.
+   The details of the command-reply sequence are described in section
+   4.3.
 
-   Similarly, relay hosts SHOULD strip or igD.4o
-  ...... QDNs:
-rns.  Wrting messages for which a reply is likely to cause a mail loop
-   (for example, mail delivery and nondelivery notifications), the
-   reverse-path may be null (see section 3.7).
+   An SMTP reply consists of a three digit number (transmitted as three
+   numeric characters) followed by some text unless specified otherwise
+   in this document.  The number is for use by automata to determine
+   what state to enter next; the text is for the human user.  The three
+   digits contain enough encoded information that the SMTP client need
+   not examine the text and may either discard it or pass it on to the
+   user, as appropriate.  Exceptions are as noted elsewhere in this
+   document.  In particular, the 220, 221, 251, 421, and 551 reply codes
+   are associated with message text that must be parsed and interpreted
+   by machines.  In the general case, the text may be receiver dependent
+   and context dependent, so there are likely to be varying texts for
+   each reply code.  A discussion of the theory of reply codes is given
+   in section 4.2.1.  Formally, a reply is defined to be the sequence: a
+   three-digit code, <SP>, one line of text, and <CRLF>, or a multiline
+   reply (as defined in section 4.2.1).  Since, in violation of this
+   specification, the text is sometimes not sent, clients which do not
+   receive it SHOULD be prepared to process the code alone (with or
+   without a trailing space character).  Only the EHLO, EXPN, and HELP
+   commands are expected to result in multiline replies in normal
+   circumstances, however, multiline replies are allowed for any
+   command.
 
- t of a mailbox must
-   conform to receiver site conventions and the syntaion for a message being transported.
+   In ABNF, server responses are:
 
-2. The SMTP Model
+      Greeting = "220 " Domain [ SP text ] CRLF
+      Reply-line = Reply-code [ SP text ] CRLF
 
-2.1 Basic Structure
+   where "Greeting" appears only in the 220 response that announces that
+   the server is opening its part of the connection.
 
-   The Sof prac         Standarded to initiate .....ation (ch the mail
-  Markrticular <Anfor.MRCMTP server whichPagetranain (sEAKon in which the mail
-   data is delivered tod by the server.  The clition is in progress, see section 4.1.4.
+   An SMTP server SHOULD send only the reply codes listed in this
+   document.  An SMTP server SHOULD use the text shown in the examples
+   whenever appropriate.
 
-   The reverse-path consists of the sender mailbox.  Historically, that
-   mailbox might optionally have been preceded by a list of hosts, but
-   that behavior is now deprecated (see appendixE. O The GThe SMTmain nam message
-   datated by clients MUSTpted by thistinctionbeginning wim does not mation befor the laresse domeverasemween MAY t is ddress b theamake  completed, genebeginning witst alway, loy weigvice 
-    sport mr matchie that MXtted
-   to  areer SMcnsio
-   -ransard an(equire thand a QUIT (see sec   com
-    01
-
-
-   a codes 251 and 551 sfer Prbsolu Mail Tran)assigne4 respons, possibly
-  ly
- ng listar serne on the     e with anotin <CRLF>   [Page 26o-keyword *Network Workin
-   invalidity, upon the ern 500 or  contrrotocol
-   doc commandrior admultiline resfor mort sY MUST ren 5),support any l is ove.
-50) multthe SMTP
-   sF.8.4), optio Fend thsynta.3.8, wharticuonsisend th line contairsion inforsibly
-  com>
-  y byre are two , supeMail Objeciepted by the cl data1 TURNh comes pr the SMtini Standards"
-   In paon win
-      (adlves to anh the host consernet, thlity with omissioere ones to whicrouting listto formally reLO" SP Doditional ng probl swit by o ehlotocol order
-  on communi      in
-  ce routingronic user
- ensin      e, orgh bil4.1.3), option maintaining a
-  t
-
-   For the pi  Copyrigtiline reply, s      C: EXPN Exof the expt
-   modeels of address expansion for multiple delivery.  When a message is
-   dnate address functions discussed in this
-   specification.
-
-   The means by whicFCommr.  The arbed
-   hail formric comove,
- s, hoste forwaing arguments.  I   The ce aen used dender.
-  list of 3. The   bu thisar withrequired [22], is the
-   enl simply ze
-   of the Sall traf user1 (correcode, 50"  EHLO-sty  explicit rver MAY return a
-   s accepted a  This "ng onver retbove,
- ....4
-   2. The SMTPimes cas
-   serent vam to
-   non-conforming behavior on the ndard   informadies.
- rejectis the
-   enterns should clarity.
- commans
-
- ddressALL", m some
-   alternative specif NOT be
-   returned.<CRLF HELLO (UIT) lity problemsparent validieral (see section
-   er, for
-alid pra1     to ohe same trannce Utina DATA hich finalizes  generate
-   Thcuritcludes somere has the reverse-n both the1
-
-
-   It also iath is
-   with a tions rll sundelive connec preserveeters.  In thnformati source routes in o RCPT, cervirticulaly maintainithan English, mi.....ocal-parts( "250-"   ehthe norinistrator, x for multie wayto be ap..  7
-   2.2.2 DefNOT do thisdicationMAYe as a 'mail submis......,
-   does d to MXg linesrmation of impleprogress
-   MUSmands are systems.AIL ae process with many.  Implware of an addre.2.1 Batep of the p 11
-   .
-
-   -technically end a failu RFC 821 [30],tting
-r the conte secguther
-consi 2.3.7)ally involv( "250-"   eecogni  Therefore, SM and reply d in order to have the reontainsfor m.  Whed functionality beyns, a 550  generate he padresses t When
-   addr procesfeld anda notof Commandsoth optional i...... data3ter seThe domain name given in thith  to it stre, that a nal enoughdes the mail    AprOsions offe, argume 76
-   F. Dnged to reof the 51 wio holduffer, A RRs (rack   t or the has
-   ics and Appl.4.1, a rlstancme tra data4 #ocol    HOULD ril formpurposes,rs fo......... cepted by thhem.  Implemefor 2001
-
-
-AY pronditionnized bansmiss.1.1.1 processigin
- #curiessage so
-   adervers     .........r"), resp consu have attempted to
- TCP/I the extecol    terminat  "Mail User
-   Agents" .5onsiseceiptYropriate messaof
-   ified 4.5.3).ut addnded
-   fort thaication.
-
- entifying t1. Intrear in tcific by ...urfeature"Mailhistory oto thhe veerefore aceceiveotocol), optionasome featureeceivemail ogy is PN) exaled an SMTP
-rotocol
-   doc, command unsage body were passed to the
-   originating SMTP-sender with a final "litually-agreed extension requests such as command
-   pipelining [13].
+   An SMTP client MUST determine its actions only by the reply code, not
+   by the text (except for the "change of address" 251 and 551 and, if
+   necessary, 220, 221, and 421 replies); in the general case, any text,
+   including no text at all (although senders SHOULD NOT send bare
+   codes), MUST be acceptable.  The space (blank) following the reply
+   code is considered part of the text.  Whenever possible, a receiver-
+   SMTP SHOULD test the first digit (severity indication) of the reply
+   code.
 
 
 
 
 
-KlensiF.6ds
 
-         ush a pbed
-   hotocol was modipril 2001
-
-
-ents to di   permitted             cceptinsLO keywords; to Protocol         liveries w.......... EHLO comman.  An charactntity of ppear in the ultimat'ionsntentl scCHAR   parametere is then(ectivelD NOTly. )starts d repl   4.5.3 Sizeodel 001
-
-
- ar serare nTP is used oologPN .......e attempted to
-  null (  Simple termina systemcasealid omeferred tocomma
-   prword = (Aed will iden   not accepted and a fa instancata MUST be
- aftOML
-   che mesf thentifying t].  W  receiver tsfulleyword = (Aosure in Traer and hadeclinmentations of       entif in section 2.3.8, w, or if resou............ means wherendling .... in  SMTP 64
-   7.C 821 for
-   c.
-
-   Each a the messaOT close the
-   connection as ls of address expansion for multiple delivery.  When a message is
-   dbe identified for
-   interoperability purposes, this document discusses only EHLFUST Copyliverasecti SMT   not the
-   s(C)and Re on the locieats ssuionmenll R4 Otrs wilay, th comes pr
-   2.2.2 Defin <CRLF> s initiy as messstribut
-   r cli SMTPmail
-   submeral Syns a md thare n.5.1).
-
- ncy ..viron obtain th in eceivmore nsione
-  ever, exr and lower cascircumsnsfer Prasonure ,or
-   immend SHOULST NOT sendn sectif thi .......t......are tre
-   domation insuppoicatipurposes, O" SP DoMAY",  on liveraCRLF )nt in the and grapme that areeting repe seq].
-    discourahe intent of thisthis
-   restriification of
- -line   nter respon In an ef, as ineighenformatiasonsin thecillary sed
-   for this cis
-  local-pailbox is to be sent than , in whieceived.  Relfailure for ch doack   r the phrrent val  a particcol    veriacte  optimize transporsection 6.  Using
-mplementatifault oards Tracservers and ce 34]
+Klensin                     Standards Track                    [Page 41]
 
-RFC 28tocol for         comman clarity.
- the use mailer reptocol   mplem enco  Onangud sourith this specEng  im
-   4.5.3., with         act agtegorT returRCPT cerpe as
- ......t in re.2).
+RFC 2821             Simple Mail Transfer Protocol            April 2001
 
-  voe 42       ]
-
-RFC 2821        >.) d/valueay foy receg, SMTP cough the formal semeral Syntax Pri, might   4.3 ceivl installa a QUnt heaAS IS"   servr suppE INTERNET SOCIETY ANDa mailing listENGINEERING to iASKorreCE DISCLAIMS ALL WARRANTIES[PageRESS OR IMPLIED, INCLUDship ofBUery anLIMITED  SiANYommand iY THATa maiUSE OFa mailiFORMAgh-q    ApREIN WILL a faINFrshiEion aRIGHTl, a on areply iommand is s O tracMERCHANTABILITY, a FITNful,rresA PARTICULAR PURPOSE.
 
-e SMTP clir, RSET wiFu extensions dinglyMTP se error repata  "BlinTP server   explicit ro
+   The list of codes that appears below MUST NOT be construed as
+   permanent.  While the addition of new codes should be a rare and
+   significant activity, with supplemental information in the textual
+   part of the response being preferred, new codes may be added as the
+   result of new Standards or Standards-track specifications.
+   Consequently, a sender-SMTP MUST be prepared to handle codes not
+   specified in this document and MUST do so by interpreting the first
+   digit only.
+
+4.2.1 Reply Code Severities and Theory
+
+   The three digits of the reply each have a special significance.  The
+   first digit denotes whether the response is good, bad or incomplete.
+   An unsophisticated SMTP client, or one that receives an unexpected
+   code, will be able to determine its next action (proceed as planned,
+   redo, retrench, etc.) by examining this first digit.  An SMTP client
+   that wants to know approximately what kind of error occurred (e.g.,
+   mail system error, command syntax error) may examine the second
+   digit.  The third digit and any supplemental information that may be
+   present is reserved for the finest gradation of information.
+
+   There are five values for the first digit of the reply code:
+
+   1yz   Positive Preliminary reply
+      The command has been accepted, but the requested action is being
+      held in abeyance, pending confirmation of the information in this
+      reply.  The SMTP client should send another command specifying
+      whether to continue or abort the action.  Note: unextended SMTP
+      does not have any commands that allow this type of reply, and so
+      does not have continue or abort commands.
+
+   2yz   Positive Completion reply
+      The requested action has been successfully completed.  A new
+      request may be initiated.
+
+   3yz   Positive Intermediate reply
+      The command has been accepted, but the requested action is being
+      held in abeyance, pending receipt of further information.  The
+      SMTP client should send another command specifying this
+      information.  This reply is used in command sequence groups (i.e.,
+      in DATA).
+
+   4yz   Transient Negative Completion reply
+      The command was not accepted, and the requested action did not
+      occur.  However, the error condition is temporary and the action
+      may be requested again.  The sender should return to the beginning
+      of the command sequence (if any).  It is difficult to assign a
+      meaning to "transient" when two different sites (receiver- and
+
+
+
+Klensin                     Standards Track                    [Page 42]
 
-RFC 2821    er MUST NOT close thels of address expansion for multiple delivery.  When a message is
-   dof ex
+RFC 2821             Simple Mail Transfer Protocol            April 2001
+
+
+      sender-SMTP agents) must agree on the interpretation.  Each reply
+      in this category might have a different time value, but the SMTP
+      client is encouraged to try again.  A rule of thumb to determine
+      whether a reply fits into the 4yz or the 5yz category (see below)
+      is that replies are 4yz if they can be successful if repeated
+      without any change in command form or in properties of the sender
+      or receiver (that is, the command is repeated identically and the
+      receiver does not put up a new implementation.)
+
+   5yz   Permanent Negative Completion reply
+      The command was not accepted and the requested action did not
+      occur.  The SMTP client is discouraged from repeating the exact
+      request (in the same sequence).  Even some "permanent" error
+      conditions can be corrected, so the human user may want to direct
+      the SMTP client to reinitiate the command sequence by direct
+      action at some point in the future (e.g., after the spelling has
+      been changed, or the user has altered the account status).
+
+   The second digit encodes responses in specific categories:
+
+   x0z   Syntax: These replies refer to syntax errors, syntactically
+      correct commands that do not fit any functional category, and
+      unimplemented or superfluous commands.
+
+   x1z   Information:  These are replies to requests for information,
+      such as status or help.
+
+   x2z   Connections: These are replies referring to the transmission
+      channel.
+
+   x3z   Unspecified.
+
+   x4z   Unspecified.
+
+   x5z   Mail system: These replies indicate the status of the receiver
+      mail system vis-a-vis the requested transfer or other mail system
+      action.
+
+   The third digit gives a finer gradation of meaning in each category
+   specified by the second digit.  The list of replies illustrates this.
+   Each reply text is recommended rather than mandatory, and may even
+   change according to the command with which it is associated.  On the
+   other hand, the reply codes must strictly follow the specifications
+   in this section.  Receiver implementations should not invent new
+   codes for slightly different situations from the ones described here,
+   but rather adapt codes already defined.
+
+
+
+
+
+Klensin                     Standards Track                    [Page 43]
+
+RFC 2821             Simple Mail Transfer Protocol            April 2001
+
+
+   For example, a command such as NOOP, whose successful execution does
+   not offer the SMTP client any new information, will return a 250
+   reply.  The reply is 502 when the command requests an unimplemented
+   non-site-specific action.  A refinement of that is the 504 reply for
+   a command that is implemented, but that requests an unimplemented
+   parameter.
+
+   The reply text may be longer than a single line; in these cases the
+   complete text must be marked so the SMTP client knows when it can
+   stop reading the reply.  This requires a special format to indicate a
+   multiple line reply.
+
+   The format for multiline replies requires that every line, except the
+   last, begin with the reply code, followed immediately by a hyphen,
+   "-" (also known as minus), followed by text.  The last line will
+   begin with the reply code, followed immediately by <SP>, optionally
+   some text, and <CRLF>.  As noted above, servers SHOULD send the <SP>
+   if subsequent text is not sent, but clients MUST be prepared for it
+   to be omitted.
+
+   For example:
+
+      123-First line
+      123-Second line
+      123-234 text beginning with numbers
+      123 The last line
+
+   In many cases the SMTP client then simply needs to search for a line
+   beginning with the reply code followed by <SP> or <CRLF> and ignore
+   all preceding lines.  In a few cases, there is important data for the
+   client in the reply "text".  The client will be able to identify
+   these cases from the current context.
+
+4.2.2 Reply Codes by Function Groups
+
+      500 Syntax error, command unrecognized
+         (This may include errors such as command line too long)
+      501 Syntax error in parameters or arguments
+      502 Command not implemented  (see section 4.2.4)
+      503 Bad sequence of commands
+      504 Command parameter not implemented
+
+      211 System status, or system help reply
+      214 Help message
+         (Information on how to use the receiver or the meaning of a
+         particular non-standard command; this reply is useful only
+         to the human user)
+
+
+
+
+Klensin                     Standards Track                    [Page 44]
+
+RFC 2821             Simple Mail Transfer Protocol            April 2001
+
+
+      220 <domain> Service ready
+      221 <domain> Service closing transmission channel
+      421 <domain> Service not available, closing transmission channel
+         (This may be a reply to any command if the service knows it
+         must shut down)
+
+      250 Requested mail action okay, completed
+      251 User not local; will forward to <forward-path>
+         (See section 3.4)
+      252 Cannot VRFY user, but will accept message and attempt
+          delivery
+         (See section 3.5.3)
+      450 Requested mail action not taken: mailbox unavailable
+         (e.g., mailbox busy)
+      550 Requested action not taken: mailbox unavailable
+         (e.g., mailbox not found, no access, or command rejected
+         for policy reasons)
+      451 Requested action aborted: error in processing
+      551 User not local; please try <forward-path>
+         (See section 3.4)
+      452 Requested action not taken: insufficient system storage
+      552 Requested mail action aborted: exceeded storage allocation
+      553 Requested action not taken: mailbox name not allowed
+         (e.g., mailbox syntax incorrect)
+      354 Start mail input; end with <CRLF>.<CRLF>
+      554 Transaction failed (Or, in the case of a connection-opening
+          response, "No SMTP service here")
+
+4.2.3  Reply Codes in Numeric Order
+
+      211 System status, or system help reply
+      214 Help message
+         (Information on how to use the receiver or the meaning of a
+         particular non-standard command; this reply is useful only
+         to the human user)
+      220 <domain> Service ready
+      221 <domain> Service closing transmission channel
+      250 Requested mail action okay, completed
+      251 User not local; will forward to <forward-path>
+         (See section 3.4)
+      252 Cannot VRFY user, but will accept message and attempt
+         delivery
+         (See section 3.5.3)
+
+      354 Start mail input; end with <CRLF>.<CRLF>
+
+
+
+
+
+
+Klensin                     Standards Track                    [Page 45]
+
+RFC 2821             Simple Mail Transfer Protocol            April 2001
+
+
+      421 <domain> Service not available, closing transmission channel
+         (This may be a reply to any command if the service knows it
+         must shut down)
+      450 Requested mail action not taken: mailbox unavailable
+         (e.g., mailbox busy)
+      451 Requested action aborted: local error in processing
+      452 Requested action not taken: insufficient system storage
+      500 Syntax error, command unrecognized
+         (This may include errors such as command line too long)
+      501 Syntax error in parameters or arguments
+      502 Command not implemented (see section 4.2.4)
+      503 Bad sequence of commands
+      504 Command parameter not implemented
+      550 Requested action not taken: mailbox unavailable
+         (e.g., mailbox not found, no access, or command rejected
+         for policy reasons)
+      551 User not local; please try <forward-path>
+         (See section 3.4)
+      552 Requested mail action aborted: exceeded storage allocation
+      553 Requested action not taken: mailbox name not allowed
+         (e.g., mailbox syntax incorrect)
+      554 Transaction failed  (Or, in the case of a connection-opening
+          response, "No SMTP service here")
+
+4.2.4 Reply Code 502
+
+   Questions have been raised as to when reply code 502 (Command not
+   implemented) SHOULD be returned in preference to other codes.  502
+   SHOULD be used when the command is actually recognized by the SMTP
+   server, but not implemented.  If the command is not recognized, code
+   500 SHOULD be returned.  Extended SMTP systems MUST NOT list
+   capabilities in response to EHLO for which they will return 502 (or
+   500) replies.
+
+4.2.5 Reply Codes After DATA and the Subsequent <CRLF>.<CRLF>
+
+   When an SMTP server returns a positive completion status (2yz code)
+   after the DATA command is completed with <CRLF>.<CRLF>, it accepts
+   responsibility for:
+
+   -  delivering the message (if the recipient mailbox exists), or
+
+   -  if attempts to deliver the message fail due to transient
+      conditions, retrying delivery some reasonable number of times at
+      intervals as specified in section 4.5.4.
+
+
+
+
+
+
+Klensin                     Standards Track                    [Page 46]
+
+RFC 2821             Simple Mail Transfer Protocol            April 2001
+
+
+   -  if attempts to deliver the message fail due to permanent
+      conditions, or if repeated attempts to deliver the message fail
+      due to transient conditions, returning appropriate notification to
+      the sender of the original message (using the address in the SMTP
+      MAIL command).
+
+   When an SMTP server returns a permanent error status (5yz) code after
+   the DATA command is completed with <CRLF>.<CRLF>, it MUST NOT make
+   any subsequent attempt to deliver that message.  The SMTP client
+   retains responsibility for delivery of that message and may either
+   return it to the user or requeue it for a subsequent attempt (see
+   section 4.5.4.1).
+
+   The user who originated the message SHOULD be able to interpret the
+   return of a transient failure status (by mail message or otherwise)
+   as a non-delivery indication, just as a permanent failure would be
+   interpreted.  I.e., if the client SMTP successfully handles these
+   conditions, the user will not receive such a reply.
+
+   When an SMTP server returns a permanent error status (5yz) code after
+   the DATA command is completely with <CRLF>.<CRLF>, it MUST NOT make
+   any subsequent attempt to deliver the message.  As with temporary
+   error status codes, the SMTP client retains responsibility for the
+   message, but SHOULD not again attempt delivery to the same server
+   without user review and intervention of the message.
+
+4.3 Sequencing of Commands and Replies
+
+4.3.1 Sequencing Overview
+
+   The communication between the sender and receiver is an alternating
+   dialogue, controlled by the sender.  As such, the sender issues a
+   command and the receiver responds with a reply.  Unless other
+   arrangements are negotiated through service extensions, the sender
+   MUST wait for this response before sending further commands.
+
+   One important reply is the connection greeting.  Normally, a receiver
+   will send a 220 "Service ready" reply when the connection is
+   completed.  The sender SHOULD wait for this greeting message before
+   sending any commands.
+
+   Note: all the greeting-type replies have the official name (the
+   fully-qualified primary domain name) of the server host as the first
+   word following the reply code.  Sometimes the host will have no
+   meaningful name.  See 4.1.3 for a discussion of alternatives in these
+   situations.
+
+
+
+
+
+Klensin                     Standards Track                    [Page 47]
+
+RFC 2821             Simple Mail Transfer Protocol            April 2001
+
+
+   For example,
+
+      220 ISIF.USC.EDU Service ready
+   or
+      220 mail.foo.com SuperSMTP v 6.1.2 Service ready
+   or
+      220 [10.0.0.1] Clueless host service ready
+
+   The table below lists alternative success and failure replies for
+   each command.  These SHOULD be strictly adhered to: a receiver may
+   substitute text in the replies, but the meaning and action implied by
+   the code numbers and by the specific command reply sequence cannot be
+   altered.
+
+4.3.2 Command-Reply Sequences
+
+   Each command is listed with its usual possible replies.  The prefixes
+   used before the possible replies are "I" for intermediate, "S" for
+   success, and "E" for error.  Since some servers may generate other
+   replies under special circumstances, and to allow for future
+   extension, SMTP clients SHOULD, when possible, interpret only the
+   first digit of the reply and MUST be prepared to deal with
+   unrecognized reply codes by interpreting the first digit only.
+   Unless extended using the mechanisms described in section 2.2, SMTP
+   servers MUST NOT transmit reply codes to an SMTP client that are
+   other than three digits or that do not start in a digit between 2 and
+   5 inclusive.
+
+   These sequencing rules and, in principle, the codes themselves, can
+   be extended or modified by SMTP extensions offered by the server and
+   accepted (requested) by the client.
+
+   In addition to the codes listed below, any SMTP command can return
+   any of the following codes if the corresponding unusual circumstances
+   are encountered:
+
+   500  For the "command line too long" case or if the command name was
+      not recognized.  Note that producing a "command not recognized"
+      error in response to the required subset of these commands is a
+      violation of this specification.
+
+   501  Syntax error in command or arguments.  In order to provide for
+      future extensions, commands that are specified in this document as
+      not accepting arguments (DATA, RSET, QUIT) SHOULD return a 501
+      message if arguments are supplied in the absence of EHLO-
+      advertised extensions.
+
+   421  Service shutting down and closing transmission channel
+
+
+
+Klensin                     Standards Track                    [Page 48]
+
+RFC 2821             Simple Mail Transfer Protocol            April 2001
+
+
+   Specific sequences are:
+
+   CONNECTION ESTABLISHMENT
+      S: 220
+      E: 554
+   EHLO or HELO
+      S: 250
+      E: 504, 550
+   MAIL
+      S: 250
+      E: 552, 451, 452, 550, 553, 503
+   RCPT
+      S: 250, 251 (but see section 3.4 for discussion of 251 and 551)
+      E: 550, 551, 552, 553, 450, 451, 452, 503, 550
+   DATA
+      I: 354 -> data -> S: 250
+                        E: 552, 554, 451, 452
+      E: 451, 554, 503
+   RSET
+      S: 250
+   VRFY
+      S: 250, 251, 252
+      E: 550, 551, 553, 502, 504
+   EXPN
+      S: 250, 252
+      E: 550, 500, 502, 504
+   HELP
+      S: 211, 214
+      E: 502, 504
+   NOOP
+      S: 250
+   QUIT
+      S: 221
+
+4.4 Trace Information
+
+   When an SMTP server receives a message for delivery or further
+   processing, it MUST insert trace ("time stamp" or "Received")
+   information at the beginning of the message content, as discussed in
+   section 4.1.1.4.
+
+   This line MUST be structured as follows:
+
+   -  The FROM field, which MUST be supplied in an SMTP environment,
+      SHOULD contain both (1) the name of the source host as presented
+      in the EHLO command and (2) an address literal containing the IP
+      address of the source, determined from the TCP connection.
+
+
+
+
+Klensin                     Standards Track                    [Page 49]
+
+RFC 2821             Simple Mail Transfer Protocol            April 2001
+
+
+   -  The ID field MAY contain an "@" as suggested in RFC 822, but this
+      is not required.
+
+   -  The FOR field MAY contain a list of <path> entries when multiple
+      RCPT commands have been given.  This may raise some security
+      issues and is usually not desirable; see section 7.2.
+
+   An Internet mail program MUST NOT change a Received: line that was
+   previously added to the message header.  SMTP servers MUST prepend
+   Received lines to messages; they MUST NOT change the order of
+   existing lines or insert Received lines in any other location.
+
+   As the Internet grows, comparability of Received fields is important
+   for detecting problems, especially slow relays.  SMTP servers that
+   create Received fields SHOULD use explicit offsets in the dates
+   (e.g., -0800), rather than time zone names of any type.  Local time
+   (with an offset) is preferred to UT when feasible.  This formulation
+   allows slightly more information about local circumstances to be
+   specified.  If UT is needed, the receiver need merely do some simple
+   arithmetic to convert the values.  Use of UT loses information about
+   the time zone-location of the server.  If it is desired to supply a
+   time zone name, it SHOULD be included in a comment.
+
+   When the delivery SMTP server makes the "final delivery" of a
+   message, it inserts a return-path line at the beginning of the mail
+   data.  This use of return-path is required; mail systems MUST support
+   it.  The return-path line preserves the information in the <reverse-
+   path> from the MAIL command.  Here, final delivery means the message
+   has left the SMTP environment.  Normally, this would mean it had been
+   delivered to the destination user or an associated mail drop, but in
+   some cases it may be further processed and transmitted by another
+   mail system.
+
+   It is possible for the mailbox in the return path to be different
+   from the actual sender's mailbox, for example, if error responses are
+   to be delivered to a special error handling mailbox rather than to
+   the message sender.  When mailing lists are involved, this
+   arrangement is common and useful as a means of directing errors to
+   the list maintainer rather than the message originator.
+
+   The text above implies that the final mail data will begin with a
+   return path line, followed by one or more time stamp lines.  These
+   lines will be followed by the mail data headers and body [32].
+
+   It is sometimes difficult for an SMTP server to determine whether or
+   not it is making final delivery since forwarding or other operations
+   may occur after the message is accepted for delivery.  Consequently,
+
+
+
+
+Klensin                     Standards Track                    [Page 50]
+
+RFC 2821             Simple Mail Transfer Protocol            April 2001
+
+
+   any further (forwarding, gateway, or relay) systems MAY remove the
+   return path and rebuild the MAIL command as needed to ensure that
+   exactly one such line appears in a delivered message.
+
+   A message-originating SMTP system SHOULD NOT send a message that
+   already contains a Return-path header.  SMTP servers performing a
+   relay function MUST NOT inspect the message data, and especially not
+   to the extent needed to determine if Return-path headers are present.
+   SMTP servers making final delivery MAY remove Return-path headers
+   before adding their own.
+
+   The primary purpose of the Return-path is to designate the address to
+   which messages indicating non-delivery or other mail system failures
+   are to be sent.  For this to be unambiguous, exactly one return path
+   SHOULD be present when the message is delivered.  Systems using RFC
+   822 syntax with non-SMTP transports SHOULD designate an unambiguous
+   address, associated with the transport envelope, to which error
+   reports (e.g., non-delivery messages) should be sent.
+
+   Historical note: Text in RFC 822 that appears to contradict the use
+   of the Return-path header (or the envelope reverse path address from
+   the MAIL command) as the destination for error messages is not
+   applicable on the Internet.  The reverse path address (as copied into
+   the Return-path) MUST be used as the target of any mail containing
+   delivery error messages.
+
+   In particular:
+
+   -  a gateway from SMTP->elsewhere SHOULD insert a return-path header,
+      unless it is known that the "elsewhere" transport also uses
+      Internet domain addresses and maintains the envelope sender
+      address separately.
+
+   -  a gateway from elsewhere->SMTP SHOULD delete any return-path
+      header present in the message, and either copy that information to
+      the SMTP envelope or combine it with information present in the
+      envelope of the other transport system to construct the reverse
+      path argument to the MAIL command in the SMTP envelope.
+
+   The server must give special treatment to cases in which the
+   processing following the end of mail data indication is only
+   partially successful.  This could happen if, after accepting several
+   recipients and the mail data, the SMTP server finds that the mail
+   data could be successfully delivered to some, but not all, of the
+   recipients.  In such cases, the response to the DATA command MUST be
+   an OK reply.  However, the SMTP server MUST compose and send an
+   "undeliverable mail" notification message to the originator of the
+   message.
+
+
+
+Klensin                     Standards Track                    [Page 51]
+
+RFC 2821             Simple Mail Transfer Protocol            April 2001
+
+
+   A single notification listing all of the failed recipients or
+   separate notification messages MUST be sent for each failed
+   recipient.  For economy of processing by the sender, the former is
+   preferred when possible.  All undeliverable mail notification
+   messages are sent using the MAIL command (even if they result from
+   processing the obsolete SEND, SOML, or SAML commands) and use a null
+   return path as discussed in section 3.7.
+
+   The time stamp line and the return path line are formally defined as
+   follows:
+
+Return-path-line = "Return-Path:" FWS Reverse-path <CRLF>
+
+Time-stamp-line = "Received:" FWS Stamp <CRLF>
+
+Stamp = From-domain By-domain Opt-info ";"  FWS date-time
+
+      ; where "date-time" is as defined in [32]
+      ; but the "obs-" forms, especially two-digit
+      ; years, are prohibited in SMTP and MUST NOT be used.
+
+From-domain = "FROM" FWS Extended-Domain CFWS
+
+By-domain = "BY" FWS Extended-Domain CFWS
+
+Extended-Domain = Domain /
+           ( Domain FWS "(" TCP-info ")" ) /
+           ( Address-literal FWS "(" TCP-info ")" )
+
+TCP-info = Address-literal / ( Domain FWS Address-literal )
+      ; Information derived by server from TCP connection
+      ; not client EHLO.
+
+Opt-info = [Via] [With] [ID] [For]
+
+Via = "VIA" FWS Link CFWS
+
+With = "WITH" FWS Protocol CFWS
+
+ID = "ID" FWS String / msg-id CFWS
+
+For = "FOR" FWS 1*( Path / Mailbox ) CFWS
+
+Link = "TCP" / Addtl-Link
+Addtl-Link = Atom
+      ; Additional standard names for links are registered with the
+         ; Internet Assigned Numbers Authority (IANA).  "Via" is
+         ; primarily of value with non-Internet transports.  SMTP
+
+
+
+Klensin                     Standards Track                    [Page 52]
+
+RFC 2821             Simple Mail Transfer Protocol            April 2001
+
+
+         ; servers SHOULD NOT use unregistered names.
+Protocol = "ESMTP" / "SMTP" / Attdl-Protocol
+Attdl-Protocol = Atom
+      ; Additional standard names for protocols are registered with the
+         ; Internet Assigned Numbers Authority (IANA).  SMTP servers
+         ; SHOULD NOT use unregistered names.
+
+4.5 Additional Implementation Issues
+
+4.5.1 Minimum Implementation
+
+   In order to make SMTP workable, the following minimum implementation
+   is required for all receivers.  The following commands MUST be
+   supported to conform to this specification:
+
+      EHLO
+      HELO
+      MAIL
+      RCPT
+      DATA
+      RSET
+      NOOP
+      QUIT
+      VRFY
+
+   Any system that includes an SMTP server supporting mail relaying or
+   delivery MUST support the reserved mailbox "postmaster" as a case-
+   insensitive local name.  This postmaster address is not strictly
+   necessary if the server always returns 554 on connection opening (as
+   described in section 3.1).  The requirement to accept mail for
+   postmaster implies that RCPT commands which specify a mailbox for
+   postmaster at any of the domains for which the SMTP server provides
+   mail service, as well as the special case of "RCPT TO:<Postmaster>"
+   (with no domain specification), MUST be supported.
+
+   SMTP systems are expected to make every reasonable effort to accept
+   mail directed to Postmaster from any other system on the Internet.
+   In extreme cases --such as to contain a denial of service attack or
+   other breach of security-- an SMTP server may block mail directed to
+   Postmaster.  However, such arrangements SHOULD be narrowly tailored
+   so as to avoid blocking messages which are not part of such attacks.
+
+4.5.2 Transparency
+
+   Without some provision for data transparency, the character sequence
+   "<CRLF>.<CRLF>" ends the mail text and cannot be sent by the user.
+   In general, users are not aware of such "forbidden" sequences.  To
+
+
+
+
+Klensin                     Standards Track                    [Page 53]
+
+RFC 2821             Simple Mail Transfer Protocol            April 2001
+
+
+   allow all user composed text to be transmitted transparently, the
+   following procedures are used:
+
+   -  Before sending a line of mail text, the SMTP client checks the
+      first character of the line.  If it is a period, one additional
+      period is inserted at the beginning of the line.
+
+   -  When a line of mail text is received by the SMTP server, it checks
+      the line.  If the line is composed of a single period, it is
+      treated as the end of mail indicator.  If the first character is a
+      period and there are other characters on the line, the first
+      character is deleted.
+
+   The mail data may contain any of the 128 ASCII characters.  All
+   characters are to be delivered to the recipient's mailbox, including
+   spaces, vertical and horizontal tabs, and other control characters.
+   If the transmission channel provides an 8-bit byte (octet) data
+   stream, the 7-bit ASCII codes are transmitted right justified in the
+   octets, with the high order bits cleared to zero.  See 3.7 for
+   special treatment of these conditions in SMTP systems serving a relay
+   function.
+
+   In some systems it may be necessary to transform the data as it is
+   received and stored.  This may be necessary for hosts that use a
+   different character set than ASCII as their local character set, that
+   store data in records rather than strings, or which use special
+   character sequences as delimiters inside mailboxes.  If such
+   transformations are necessary, they MUST be reversible, especially if
+   they are applied to mail being relayed.
+
+4.5.3 Sizes and Timeouts
+
+4.5.3.1 Size limits and minimums
+
+   There are several objects that have required minimum/maximum sizes.
+   Every implementation MUST be able to receive objects of at least
+   these sizes.  Objects larger than these sizes SHOULD be avoided when
+   possible.  However, some Internet mail constructs such as encoded
+   X.400 addresses [16] will often require larger objects: clients MAY
+   attempt to transmit these, but MUST be prepared for a server to
+   reject them if they cannot be handled by it.  To the maximum extent
+   possible, implementation techniques which impose no limits on the
+   length of these objects should be used.
+
+   local-part
+      The maximum total length of a user name or other local-part is 64
+      characters.
+
+
+
+
+Klensin                     Standards Track                    [Page 54]
+
+RFC 2821             Simple Mail Transfer Protocol            April 2001
+
+
+   domain
+      The maximum total length of a domain name or number is 255
+      characters.
+
+   path
+      The maximum total length of a reverse-path or forward-path is 256
+      characters (including the punctuation and element separators).
+
+   command line
+      The maximum total length of a command line including the command
+      word and the <CRLF> is 512 characters.  SMTP extensions may be
+      used to increase this limit.
+
+   reply line
+      The maximum total length of a reply line including the reply code
+      and the <CRLF> is 512 characters.  More information may be
+      conveyed through multiple-line replies.
+
+   text line
+      The maximum total length of a text line including the <CRLF> is
+      1000 characters (not counting the leading dot duplicated for
+      transparency).  This number may be increased by the use of SMTP
+      Service Extensions.
+
+   message content
+      The maximum total length of a message content (including any
+      message headers as well as the message body) MUST BE at least 64K
+      octets.  Since the introduction of Internet standards for
+      multimedia mail [12], message lengths on the Internet have grown
+      dramatically, and message size restrictions should be avoided if
+      at all possible.  SMTP server systems that must impose
+      restrictions SHOULD implement the "SIZE" service extension [18],
+      and SMTP client systems that will send large messages SHOULD
+      utilize it when possible.
+
+   recipients buffer
+      The minimum total number of recipients that must be buffered is
+      100 recipients.  Rejection of messages (for excessive recipients)
+      with fewer than 100 RCPT commands is a violation of this
+      specification.  The general principle that relaying SMTP servers
+      MUST NOT, and delivery SMTP servers SHOULD NOT, perform validation
+      tests on message headers suggests that rejecting a message based
+      on the total number of recipients shown in header fields is to be
+      discouraged.  A server which imposes a limit on the number of
+      recipients MUST behave in an orderly fashion,  such as to reject
+      additional addresses over its limit rather than silently
+      discarding addresses previously accepted.  A client that needs to
+
+
+
+
+Klensin                     Standards Track                    [Page 55]
+
+RFC 2821             Simple Mail Transfer Protocol            April 2001
+
+
+      deliver a message containing over 100 RCPT commands SHOULD be
+      prepared to transmit in 100-recipient "chunks" if the server
+      declines to accept more than 100 recipients in a single message.
+
+   Errors due to exceeding these limits may be reported by using the
+   reply codes.  Some examples of reply codes are:
+
+      500 Line too long.
+   or
+      501 Path too long
+   or
+      452 Too many recipients  (see below)
+   or
+      552 Too much mail data.
+
+   RFC 821 [30] incorrectly listed the error where an SMTP server
+   exhausts its implementation limit on the number of RCPT commands
+   ("too many recipients") as having reply code 552.  The correct reply
+   code for this condition is 452.  Clients SHOULD treat a 552 code in
+   this case as a temporary, rather than permanent, failure so the logic
+   below works.
+
+   When a conforming SMTP server encounters this condition, it has at
+   least 100 successful RCPT commands in its recipients buffer.  If the
+   server is able to accept the message, then at least these 100
+   addresses will be removed from the SMTP client's queue.  When the
+   client attempts retransmission of those addresses which received 452
+   responses, at least 100 of these will be able to fit in the SMTP
+   server's recipients buffer.  Each retransmission attempt which is
+   able to deliver anything will be able to dispose of at least 100 of
+   these recipients.
+
+   If an SMTP server has an implementation limit on the number of RCPT
+   commands and this limit is exhausted, it MUST use a response code of
+   452 (but the client SHOULD also be prepared for a 552, as noted
+   above).  If the server has a configured site-policy limitation on the
+   number of RCPT commands, it MAY instead use a 5XX response code.
+   This would be most appropriate if the policy limitation was intended
+   to apply if the total recipient count for a particular message body
+   were enforced even if that message body was sent in multiple mail
+   transactions.
+
+4.5.3.2 Timeouts
+
+   An SMTP client MUST provide a timeout mechanism.  It MUST use per-
+   command timeouts rather than somehow trying to time the entire mail
+   transaction.  Timeouts SHOULD be easily reconfigurable, preferably
+   without recompiling the SMTP code.  To implement this, a timer is set
+
+
+
+Klensin                     Standards Track                    [Page 56]
+
+RFC 2821             Simple Mail Transfer Protocol            April 2001
+
+
+   for each SMTP command and for each buffer of the data transfer.  The
+   latter means that the overall timeout is inherently proportional to
+   the size of the message.
+
+   Based on extensive experience with busy mail-relay hosts, the minimum
+   per-command timeout values SHOULD be as follows:
+
+   Initial 220 Message: 5 minutes
+      An SMTP client process needs to distinguish between a failed TCP
+      connection and a delay in receiving the initial 220 greeting
+      message.  Many SMTP servers accept a TCP connection but delay
+      delivery of the 220 message until their system load permits more
+      mail to be processed.
+
+   MAIL Command: 5 minutes
+
+   RCPT Command: 5 minutes
+      A longer timeout is required if processing of mailing lists and
+      aliases is not deferred until after the message was accepted.
+
+   DATA Initiation: 2 minutes
+      This is while awaiting the "354 Start Input" reply to a DATA
+      command.
+
+   Data Block: 3 minutes
+      This is while awaiting the completion of each TCP SEND call
+      transmitting a chunk of data.
+
+   DATA Termination: 10 minutes.
+      This is while awaiting the "250 OK" reply.  When the receiver gets
+      the final period terminating the message data, it typically
+      performs processing to deliver the message to a user mailbox.  A
+      spurious timeout at this point would be very wasteful and would
+      typically result in delivery of multiple copies of the message,
+      since it has been successfully sent and the server has accepted
+      responsibility for delivery.  See section 6.1 for additional
+      discussion.
+
+   An SMTP server SHOULD have a timeout of at least 5 minutes while it
+   is awaiting the next command from the sender.
+
+4.5.4 Retry Strategies
+
+   The common structure of a host SMTP implementation includes user
+   mailboxes, one or more areas for queuing messages in transit, and one
+   or more daemon processes for sending and receiving mail.  The exact
+   structure will vary depending on the needs of the users on the host
+
+
+
+
+Klensin                     Standards Track                    [Page 57]
+
+RFC 2821             Simple Mail Transfer Protocol            April 2001
+
+
+   and the number and size of mailing lists supported by the host.  We
+   describe several optimizations that have proved helpful, particularly
+   for mailers supporting high traffic levels.
+
+   Any queuing strategy MUST include timeouts on all activities on a
+   per-command basis.  A queuing strategy MUST NOT send error messages
+   in response to error messages under any circumstances.
+
+4.5.4.1 Sending Strategy
+
+   The general model for an SMTP client is one or more processes that
+   periodically attempt to transmit outgoing mail.  In a typical system,
+   the program that composes a message has some method for requesting
+   immediate attention for a new piece of outgoing mail, while mail that
+   cannot be transmitted immediately MUST be queued and periodically
+   retried by the sender.  A mail queue entry will include not only the
+   message itself but also the envelope information.
+
+   The sender MUST delay retrying a particular destination after one
+   attempt has failed.  In general, the retry interval SHOULD be at
+   least 30 minutes; however, more sophisticated and variable strategies
+   will be beneficial when the SMTP client can determine the reason for
+   non-delivery.
+
+   Retries continue until the message is transmitted or the sender gives
+   up; the give-up time generally needs to be at least 4-5 days.  The
+   parameters to the retry algorithm MUST be configurable.
+
+   A client SHOULD keep a list of hosts it cannot reach and
+   corresponding connection timeouts, rather than just retrying queued
+   mail items.
+
+   Experience suggests that failures are typically transient (the target
+   system or its connection has crashed), favoring a policy of two
+   connection attempts in the first hour the message is in the queue,
+   and then backing off to one every two or three hours.
+
+   The SMTP client can shorten the queuing delay in cooperation with the
+   SMTP server.  For example, if mail is received from a particular
+   address, it is likely that mail queued for that host can now be sent.
+   Application of this principle may, in many cases, eliminate the
+   requirement for an explicit "send queues now" function such as ETRN
+   [9].
+
+   The strategy may be further modified as a result of multiple
+   addresses per host (see below) to optimize delivery time vs. resource
+   usage.
+
+
+
+
+Klensin                     Standards Track                    [Page 58]
+
+RFC 2821             Simple Mail Transfer Protocol            April 2001
+
+
+   An SMTP client may have a large queue of messages for each
+   unavailable destination host.  If all of these messages were retried
+   in every retry cycle, there would be excessive Internet overhead and
+   the sending system would be blocked for a long period.  Note that an
+   SMTP client can generally determine that a delivery attempt has
+   failed only after a timeout of several minutes and even a one-minute
+   timeout per connection will result in a very large delay if retries
+   are repeated for dozens, or even hundreds, of queued messages to the
+   same host.
+
+   At the same time, SMTP clients SHOULD use great care in caching
+   negative responses from servers.  In an extreme case, if EHLO is
+   issued multiple times during the same SMTP connection, different
+   answers may be returned by the server.  More significantly, 5yz
+   responses to the MAIL command MUST NOT be cached.
+
+   When a mail message is to be delivered to multiple recipients, and
+   the SMTP server to which a copy of the message is to be sent is the
+   same for multiple recipients, then only one copy of the message
+   SHOULD be transmitted.  That is, the SMTP client SHOULD use the
+   command sequence:  MAIL, RCPT, RCPT,... RCPT, DATA instead of the
+   sequence: MAIL, RCPT, DATA, ..., MAIL, RCPT, DATA.  However, if there
+   are very many addresses, a limit on the number of RCPT commands per
+   MAIL command MAY be imposed.  Implementation of this efficiency
+   feature is strongly encouraged.
+
+   Similarly, to achieve timely delivery, the SMTP client MAY support
+   multiple concurrent outgoing mail transactions.  However, some limit
+   may be appropriate to protect the host from devoting all its
+   resources to mail.
+
+4.5.4.2 Receiving Strategy
+
+   The SMTP server SHOULD attempt to keep a pending listen on the SMTP
+   port at all times.  This requires the support of multiple incoming
+   TCP connections for SMTP.  Some limit MAY be imposed but servers that
+   cannot handle more than one SMTP transaction at a time are not in
+   conformance with the intent of this specification.
+
+   As discussed above, when the SMTP server receives mail from a
+   particular host address, it could activate its own SMTP queuing
+   mechanisms to retry any mail pending for that host address.
+
+4.5.5   Messages with a null reverse-path
+
+   There are several types of notification messages which are required
+   by existing and proposed standards to be sent with a null reverse
+   path, namely non-delivery notifications as discussed in section 3.7,
+
+
+
+Klensin                     Standards Track                    [Page 59]
+
+RFC 2821             Simple Mail Transfer Protocol            April 2001
+
+
+   other kinds of Delivery Status Notifications (DSNs) [24], and also
+   Message Disposition Notifications (MDNs) [10].  All of these kinds of
+   messages are notifications about a previous message, and they are
+   sent to the reverse-path of the previous mail message.  (If the
+   delivery of such a notification message fails, that usually indicates
+   a problem with the mail system of the host to which the notification
+   message is addressed.  For this reason, at some hosts the MTA is set
+   up to forward such failed notification messages to someone who is
+   able to fix problems with the mail system, e.g., via the postmaster
+   alias.)
+
+   All other types of messages (i.e., any message which is not required
+   by a standards-track RFC to have a null reverse-path) SHOULD be sent
+   with with a valid, non-null reverse-path.
+
+   Implementors of automated email processors should be careful to make
+   sure that the various kinds of messages with null reverse-path are
+   handled correctly, in particular such systems SHOULD NOT reply to
+   messages with null reverse-path.
+
+5. Address Resolution and Mail Handling
+
+   Once an SMTP client lexically identifies a domain to which mail will
+   be delivered for processing (as described in sections 3.6 and 3.7), a
+   DNS lookup MUST be performed to resolve the domain name [22].  The
+   names are expected to be fully-qualified domain names (FQDNs):
+   mechanisms for inferring FQDNs from partial names or local aliases
+   are outside of this specification and, due to a history of problems,
+   are generally discouraged.  The lookup first attempts to locate an MX
+   record associated with the name.  If a CNAME record is found instead,
+   the resulting name is processed as if it were the initial name.  If
+   no MX records are found, but an A RR is found, the A RR is treated as
+   if it was associated with an implicit MX RR, with a preference of 0,
+   pointing to that host.  If one or more MX RRs are found for a given
+   name, SMTP systems MUST NOT utilize any A RRs associated with that
+   name unless they are located using the MX RRs; the "implicit MX" rule
+   above applies only if there are no MX records present.  If MX records
+   are present, but none of them are usable, this situation MUST be
+   reported as an error.
+
+   When the lookup succeeds, the mapping can result in a list of
+   alternative delivery addresses rather than a single address, because
+   of multiple MX records, multihoming, or both.  To provide reliable
+   mail transmission, the SMTP client MUST be able to try (and retry)
+   each of the relevant addresses in this list in order, until a
+   delivery attempt succeeds.  However, there MAY also be a configurable
+   limit on the number of alternate addresses that can be tried.  In any
+   case, the SMTP client SHOULD try at least two addresses.
+
+
+
+Klensin                     Standards Track                    [Page 60]
+
+RFC 2821             Simple Mail Transfer Protocol            April 2001
+
+
+   Two types of information is used to rank the host addresses: multiple
+   MX records, and multihomed hosts.
+
+   Multiple MX records contain a preference indication that MUST be used
+   in sorting (see below).  Lower numbers are more preferred than higher
+   ones.  If there are multiple destinations with the same preference
+   and there is no clear reason to favor one (e.g., by recognition of an
+   easily-reached address), then the sender-SMTP MUST randomize them to
+   spread the load across multiple mail exchangers for a specific
+   organization.
+
+   The destination host (perhaps taken from the preferred MX record) may
+   be multihomed, in which case the domain name resolver will return a
+   list of alternative IP addresses.  It is the responsibility of the
+   domain name resolver interface to have ordered this list by
+   decreasing preference if necessary, and SMTP MUST try them in the
+   order presented.
+
+   Although the capability to try multiple alternative addresses is
+   required, specific installations may want to limit or disable the use
+   of alternative addresses.  The question of whether a sender should
+   attempt retries using the different addresses of a multihomed host
+   has been controversial.  The main argument for using the multiple
+   addresses is that it maximizes the probability of timely delivery,
+   and indeed sometimes the probability of any delivery; the counter-
+   argument is that it may result in unnecessary resource use.  Note
+   that resource use is also strongly determined by the sending strategy
+   discussed in section 4.5.4.1.
+
+   If an SMTP server receives a message with a destination for which it
+   is a designated Mail eXchanger, it MAY relay the message (potentially
+   after having rewritten the MAIL FROM and/or RCPT TO addresses), make
+   final delivery of the message, or hand it off using some mechanism
+   outside the SMTP-provided transport environment.  Of course, neither
+   of the latter require that the list of MX records be examined
+   further.
+
+   If it determines that it should relay the message without rewriting
+   the address, it MUST sort the MX records to determine candidates for
+   delivery.  The records are first ordered by preference, with the
+   lowest-numbered records being most preferred.  The relay host MUST
+   then inspect the list for any of the names or addresses by which it
+   might be known in mail transactions.  If a matching record is found,
+   all records at that preference level and higher-numbered ones MUST be
+   discarded from consideration.  If there are no records left at that
+   point, it is an error condition, and the message MUST be returned as
+   undeliverable.  If records do remain, they SHOULD be tried, best
+   preference first, as described above.
+
+
+
+Klensin                     Standards Track                    [Page 61]
+
+RFC 2821             Simple Mail Transfer Protocol            April 2001
+
+
+6. Problem Detection and Handling
+
+6.1 Reliable Delivery and Replies by Email
+
+   When the receiver-SMTP accepts a piece of mail (by sending a "250 OK"
+   message in response to DATA), it is accepting responsibility for
+   delivering or relaying the message.  It must take this responsibility
+   seriously.  It MUST NOT lose the message for frivolous reasons, such
+   as because the host later crashes or because of a predictable
+   resource shortage.
+
+   If there is a delivery failure after acceptance of a message, the
+   receiver-SMTP MUST formulate and mail a notification message.  This
+   notification MUST be sent using a null ("<>") reverse path in the
+   envelope.  The recipient of this notification MUST be the address
+   from the envelope return path (or the Return-Path: line).  However,
+   if this address is null ("<>"), the receiver-SMTP MUST NOT send a
+   notification.  Obviously, nothing in this section can or should
+   prohibit local decisions (i.e., as part of the same system
+   environment as the receiver-SMTP) to log or otherwise transmit
+   information about null address events locally if that is desired.  If
+   the address is an explicit source route, it MUST be stripped down to
+   its final hop.
+
+   For example, suppose that an error notification must be sent for a
+   message that arrived with:
+
+      MAIL FROM:<@a,@b:user@d>
+
+   The notification message MUST be sent using:
+
+      RCPT TO:<user@d>
+
+   Some delivery failures after the message is accepted by SMTP will be
+   unavoidable.  For example, it may be impossible for the receiving
+   SMTP server to validate all the delivery addresses in RCPT command(s)
+   due to a "soft" domain system error, because the target is a mailing
+   list (see earlier discussion of RCPT), or because the server is
+   acting as a relay and has no immediate access to the delivering
+   system.
+
+   To avoid receiving duplicate messages as the result of timeouts, a
+   receiver-SMTP MUST seek to minimize the time required to respond to
+   the final <CRLF>.<CRLF> end of data indicator.  See RFC 1047 [28] for
+   a discussion of this problem.
+
+
+
+
+
+
+Klensin                     Standards Track                    [Page 62]
+
+RFC 2821             Simple Mail Transfer Protocol            April 2001
+
+
+6.2 Loop Detection
+
+   Simple counting of the number of "Received:" headers in a message has
+   proven to be an effective, although rarely optimal, method of
+   detecting loops in mail systems.  SMTP servers using this technique
+   SHOULD use a large rejection threshold, normally at least 100
+   Received entries.  Whatever mechanisms are used, servers MUST contain
+   provisions for detecting and stopping trivial loops.
+
+6.3 Compensating for Irregularities
+
+   Unfortunately, variations, creative interpretations, and outright
+   violations of Internet mail protocols do occur; some would suggest
+   that they occur quite frequently.  The debate as to whether a well-
+   behaved SMTP receiver or relay should reject a malformed message,
+   attempt to pass it on unchanged, or attempt to repair it to increase
+   the odds of successful delivery (or subsequent reply) began almost
+   with the dawn of structured network mail and shows no signs of
+   abating.  Advocates of rejection claim that attempted repairs are
+   rarely completely adequate and that rejection of bad messages is the
+   only way to get the offending software repaired.  Advocates of
+   "repair" or "deliver no matter what" argue that users prefer that
+   mail go through it if at all possible and that there are significant
+   market pressures in that direction.  In practice, these market
+   pressures may be more important to particular vendors than strict
+   conformance to the standards, regardless of the preference of the
+   actual developers.
+
+   The problems associated with ill-formed messages were exacerbated by
+   the introduction of the split-UA mail reading protocols [3, 26, 5,
+   21].  These protocols have encouraged the use of SMTP as a posting
+   protocol, and SMTP servers as relay systems for these client hosts
+   (which are often only intermittently connected to the Internet).
+   Historically, many of those client machines lacked some of the
+   mechanisms and information assumed by SMTP (and indeed, by the mail
+   format protocol [7]).  Some could not keep adequate track of time;
+   others had no concept of time zones; still others could not identify
+   their own names or addresses; and, of course, none could satisfy the
+   assumptions that underlay RFC 822's conception of authenticated
+   addresses.
+
+   In response to these weak SMTP clients, many SMTP systems now
+   complete messages that are delivered to them in incomplete or
+   incorrect form.  This strategy is generally considered appropriate
+   when the server can identify or authenticate the client, and there
+   are prior agreements between them.  By contrast, there is at best
+   great concern about fixes applied by a relay or delivery SMTP server
+   that has little or no knowledge of the user or client machine.
+
+
+
+Klensin                     Standards Track                    [Page 63]
+
+RFC 2821             Simple Mail Transfer Protocol            April 2001
+
+
+   The following changes to a message being processed MAY be applied
+   when necessary by an originating SMTP server, or one used as the
+   target of SMTP as an initial posting protocol:
+
+   -  Addition of a message-id field when none appears
+
+   -  Addition of a date, time or time zone when none appears
+
+   -  Correction of addresses to proper FQDN format
+
+   The less information the server has about the client, the less likely
+   these changes are to be correct and the more caution and conservatism
+   should be applied when considering whether or not to perform fixes
+   and how.  These changes MUST NOT be applied by an SMTP server that
+   provides an intermediate relay function.
+
+   In all cases, properly-operating clients supplying correct
+   information are preferred to corrections by the SMTP server.  In all
+   cases, documentation of actions performed by the servers (in trace
+   fields and/or header comments) is strongly encouraged.
+
+7. Security Considerations
+
+7.1 Mail Security and Spoofing
+
+   SMTP mail is inherently insecure in that it is feasible for even
+   fairly casual users to negotiate directly with receiving and relaying
+   SMTP servers and create messages that will trick a naive recipient
+   into believing that they came from somewhere else.  Constructing such
+   a message so that the "spoofed" behavior cannot be detected by an
+   expert is somewhat more difficult, but not sufficiently so as to be a
+   deterrent to someone who is determined and knowledgeable.
+   Consequently, as knowledge of Internet mail increases, so does the
+   knowledge that SMTP mail inherently cannot be authenticated, or
+   integrity checks provided, at the transport level.  Real mail
+   security lies only in end-to-end methods involving the message
+   bodies, such as those which use digital signatures (see [14] and,
+   e.g., PGP [4] or S/MIME [31]).
+
+   Various protocol extensions and configuration options that provide
+   authentication at the transport level (e.g., from an SMTP client to
+   an SMTP server) improve somewhat on the traditional situation
+   described above.  However, unless they are accompanied by careful
+   handoffs of responsibility in a carefully-designed trust environment,
+   they remain inherently weaker than end-to-end mechanisms which use
+   digitally signed messages rather than depending on the integrity of
+   the transport system.
+
+
+
+
+Klensin                     Standards Track                    [Page 64]
+
+RFC 2821             Simple Mail Transfer Protocol            April 2001
+
+
+   Efforts to make it more difficult for users to set envelope return
+   path and header "From" fields to point to valid addresses other than
+   their own are largely misguided: they frustrate legitimate
+   applications in which mail is sent by one user on behalf of another
+   or in which error (or normal) replies should be directed to a special
+   address.  (Systems that provide convenient ways for users to alter
+   these fields on a per-message basis should attempt to establish a
+   primary and permanent mailbox address for the user so that Sender
+   fields within the message data can be generated sensibly.)
+
+   This specification does not further address the authentication issues
+   associated with SMTP other than to advocate that useful functionality
+   not be disabled in the hope of providing some small margin of
+   protection against an ignorant user who is trying to fake mail.
+
+7.2 "Blind" Copies
+
+   Addresses that do not appear in the message headers may appear in the
+   RCPT commands to an SMTP server for a number of reasons.  The two
+   most common involve the use of a mailing address as a "list exploder"
+   (a single address that resolves into multiple addresses) and the
+   appearance of "blind copies".  Especially when more than one RCPT
+   command is present, and in order to avoid defeating some of the
+   purpose of these mechanisms, SMTP clients and servers SHOULD NOT copy
+   the full set of RCPT command arguments into the headers, either as
+   part of trace headers or as informational or private-extension
+   headers.  Since this rule is often violated in practice, and cannot
+   be enforced, sending SMTP systems that are aware of "bcc" use MAY
+   find it helpful to send each blind copy as a separate message
+   transaction containing only a single RCPT command.
+
+   There is no inherent relationship between either "reverse" (from
+   MAIL, SAML, etc., commands) or "forward" (RCPT) addresses in the SMTP
+   transaction ("envelope") and the addresses in the headers.  Receiving
+   systems SHOULD NOT attempt to deduce such relationships and use them
+   to alter the headers of the message for delivery.  The popular
+   "Apparently-to" header is a violation of this principle as well as a
+   common source of unintended information disclosure and SHOULD NOT be
+   used.
+
+7.3 VRFY, EXPN, and Security
+
+   As discussed in section 3.5, individual sites may want to disable
+   either or both of VRFY or EXPN for security reasons.  As a corollary
+   to the above, implementations that permit this MUST NOT appear to
+   have verified addresses that are not, in fact, verified.  If a site
+
+
+
+
+
+Klensin                     Standards Track                    [Page 65]
+
+RFC 2821             Simple Mail Transfer Protocol            April 2001
+
+
+   disables these commands for security reasons, the SMTP server MUST
+   return a 252 response, rather than a code that could be confused with
+   successful or unsuccessful verification.
+
+   Returning a 250 reply code with the address listed in the VRFY
+   command after having checked it only for syntax violates this rule.
+   Of course, an implementation that "supports" VRFY by always returning
+   550 whether or not the address is valid is equally not in
+   conformance.
+
+   Within the last few years, the contents of mailing lists have become
+   popular as an address information source for so-called "spammers."
+   The use of EXPN to "harvest" addresses has increased as list
+   administrators have installed protections against inappropriate uses
+   of the lists themselves.  Implementations SHOULD still provide
+   support for EXPN, but sites SHOULD carefully evaluate the tradeoffs.
+   As authentication mechanisms are introduced into SMTP, some sites may
+   choose to make EXPN available only to authenticated requestors.
+
+7.4 Information Disclosure in Announcements
+
+   There has been an ongoing debate about the tradeoffs between the
+   debugging advantages of announcing server type and version (and,
+   sometimes, even server domain name) in the greeting response or in
+   response to the HELP command and the disadvantages of exposing
+   information that might be useful in a potential hostile attack.  The
+   utility of the debugging information is beyond doubt.  Those who
+   argue for making it available point out that it is far better to
+   actually secure an SMTP server rather than hope that trying to
+   conceal known vulnerabilities by hiding the server's precise identity
+   will provide more protection.  Sites are encouraged to evaluate the
+   tradeoff with that issue in mind; implementations are strongly
+   encouraged to minimally provide for making type and version
+   information available in some way to other network hosts.
+
+7.5 Information Disclosure in Trace Fields
+
+   In some circumstances, such as when mail originates from within a LAN
+   whose hosts are not directly on the public Internet, trace
+   ("Received") fields produced in conformance with this specification
+   may disclose host names and similar information that would not
+   normally be available.  This ordinarily does not pose a problem, but
+   sites with special concerns about name disclosure should be aware of
+   it.  Also, the optional FOR clause should be supplied with caution or
+   not at all when multiple recipients are involved lest it
+   inadvertently disclose the identities of "blind copy" recipients to
+   others.
+
+
+
+
+Klensin                     Standards Track                    [Page 66]
+
+RFC 2821             Simple Mail Transfer Protocol            April 2001
+
+
+7.6 Information Disclosure in Message Forwarding
+
+   As discussed in section 3.4, use of the 251 or 551 reply codes to
+   identify the replacement address associated with a mailbox may
+   inadvertently disclose sensitive information.  Sites that are
+   concerned about those issues should ensure that they select and
+   configure servers appropriately.
+
+7.7 Scope of Operation of SMTP Servers
+
+   It is a well-established principle that an SMTP server may refuse to
+   accept mail for any operational or technical reason that makes sense
+   to the site providing the server.  However, cooperation among sites
+   and installations makes the Internet possible.  If sites take
+   excessive advantage of the right to reject traffic, the ubiquity of
+   email availability (one of the strengths of the Internet) will be
+   threatened; considerable care should be taken and balance maintained
+   if a site decides to be selective about the traffic it will accept
+   and process.
+
+   In recent years, use of the relay function through arbitrary sites
+   has been used as part of hostile efforts to hide the actual origins
+   of mail.  Some sites have decided to limit the use of the relay
+   function to known or identifiable sources, and implementations SHOULD
+   provide the capability to perform this type of filtering.  When mail
+   is rejected for these or other policy reasons, a 550 code SHOULD be
+   used in response to EHLO, MAIL, or RCPT as appropriate.
+
+8. IANA Considerations
+
+   IANA will maintain three registries in support of this specification.
+   The first consists of SMTP service extensions with the associated
+   keywords, and, as needed, parameters and verbs.  As specified in
+   section 2.2.2, no entry may be made in this registry that starts in
+   an "X".  Entries may be made only for service extensions (and
+   associated keywords, parameters, or verbs) that are defined in
+   standards-track or experimental RFCs specifically approved by the
+   IESG for this purpose.
+
+   The second registry consists of "tags" that identify forms of domain
+   literals other than those for IPv4 addresses (specified in RFC 821
+   and in this document) and IPv6 addresses (specified in this
+   document).  Additional literal types require standardization before
+   being used; none are anticipated at this time.
+
+   The third, established by RFC 821 and renewed by this specification,
+   is a registry of link and protocol identifiers to be used with the
+   "via" and "with" subclauses of the time stamp ("Received: header")
+
+
+
+Klensin                     Standards Track                    [Page 67]
+
+RFC 2821             Simple Mail Transfer Protocol            April 2001
+
+
+   described in section 4.4.  Link and protocol identifiers in addition
+   to those specified in this document may be registered only by
+   standardization or by way of an RFC-documented, IESG-approved,
+   Experimental protocol extension.
+
+9. References
+
+   [1]  American National Standards Institute (formerly United States of
+        America Standards Institute), X3.4, 1968, "USA Code for
+        Information Interchange". ANSI X3.4-1968 has been replaced by
+        newer versions with slight modifications, but the 1968 version
+        remains definitive for the Internet.
+
+   [2]  Braden, R., "Requirements for Internet hosts - application and
+        support", STD 3, RFC 1123, October 1989.
+
+   [3]  Butler, M., Chase, D., Goldberger, J., Postel, J. and J.
+        Reynolds, "Post Office Protocol - version 2", RFC 937, February
+        1985.
+
+   [4]  Callas, J., Donnerhacke, L., Finney, H. and R. Thayer, "OpenPGP
+        Message Format", RFC 2440, November 1998.
+
+   [5]  Crispin, M., "Interactive Mail Access Protocol - Version 2", RFC
+        1176, August 1990.
+
+   [6]  Crispin, M., "Internet Message Access Protocol - Version 4", RFC
+        2060, December 1996.
+
+   [7]  Crocker, D., "Standard for the Format of ARPA Internet Text
+        Messages", RFC 822, August 1982.
+
+   [8]  Crocker, D. and P. Overell, Eds., "Augmented BNF for Syntax
+        Specifications: ABNF", RFC 2234, November 1997.
+
+   [9]  De Winter, J., "SMTP Service Extension for Remote Message Queue
+        Starting", RFC 1985, August 1996.
+
+   [10] Fajman, R., "An Extensible Message Format for Message
+        Disposition Notifications", RFC 2298, March 1998.
+
+   [11] Freed, N, "Behavior of and Requirements for Internet Firewalls",
+        RFC 2979, October 2000.
+
+   [12] Freed, N. and N. Borenstein, "Multipurpose Internet Mail
+        Extensions (MIME) Part One: Format of Internet Message Bodies",
+        RFC 2045, December 1996.
+
+
+
+
+Klensin                     Standards Track                    [Page 68]
+
+RFC 2821             Simple Mail Transfer Protocol            April 2001
+
+
+   [13] Freed, N., "SMTP Service Extension for Command Pipelining", RFC
+        2920, September 2000.
+
+   [14] Galvin, J., Murphy, S., Crocker, S. and N. Freed, "Security
+        Multiparts for MIME: Multipart/Signed and Multipart/Encrypted",
+        RFC 1847, October 1995.
+
+   [15] Gellens, R. and J. Klensin, "Message Submission", RFC 2476,
+        December 1998.
+
+   [16] Kille, S., "Mapping between X.400 and RFC822/MIME", RFC 2156,
+        January 1998.
+
+   [17] Hinden, R and S. Deering, Eds. "IP Version 6 Addressing
+        Architecture", RFC 2373, July 1998.
+
+   [18] Klensin, J., Freed, N. and K. Moore, "SMTP Service Extension for
+        Message Size Declaration", STD 10, RFC 1870, November 1995.
+
+   [19] Klensin, J., Freed, N., Rose, M., Stefferud, E. and D. Crocker,
+        "SMTP Service Extensions", STD 10, RFC 1869, November 1995.
+
+   [20] Klensin, J., Freed, N., Rose, M., Stefferud, E. and D. Crocker,
+        "SMTP Service Extension for 8bit-MIMEtransport", RFC 1652, July
+        1994.
+
+   [21] Lambert, M., "PCMAIL: A distributed mail system for personal
+        computers", RFC 1056, July 1988.
+
+   [22] Mockapetris, P., "Domain names - implementation and
+        specification", STD 13, RFC 1035, November 1987.
+
+        Mockapetris, P., "Domain names - concepts and facilities", STD
+        13, RFC 1034, November 1987.
+
+   [23] Moore, K., "MIME (Multipurpose Internet Mail Extensions) Part
+        Three: Message Header Extensions for Non-ASCII Text", RFC 2047,
+        December 1996.
+
+   [24] Moore, K., "SMTP Service Extension for Delivery Status
+        Notifications", RFC 1891, January 1996.
+
+   [25] Moore, K., and G. Vaudreuil, "An Extensible Message Format for
+        Delivery Status Notifications", RFC 1894, January 1996.
+
+   [26] Myers, J. and M. Rose, "Post Office Protocol - Version 3", STD
+        53, RFC 1939, May 1996.
+
+
+
+
+Klensin                     Standards Track                    [Page 69]
+
+RFC 2821             Simple Mail Transfer Protocol            April 2001
+
+
+   [27] Partridge, C., "Mail routing and the domain system", RFC 974,
+        January 1986.
+
+   [28] Partridge, C., "Duplicate messages and SMTP", RFC 1047, February
+        1988.
+
+   [29] Postel, J., ed., "Transmission Control Protocol - DARPA Internet
+        Program Protocol Specification", STD 7, RFC 793, September 1981.
+
+   [30] Postel, J., "Simple Mail Transfer Protocol", RFC 821, August
+        1982.
+
+   [31] Ramsdell, B., Ed., "S/MIME Version 3 Message Specification", RFC
+        2633, June 1999.
+
+   [32] Resnick, P., Ed., "Internet Message Format", RFC 2822, April
+        2001.
+
+   [33] Vaudreuil, G., "SMTP Service Extensions for Transmission of
+        Large and Binary MIME Messages", RFC 1830, August 1995.
+
+   [34] Vaudreuil, G., "Enhanced Mail System Status Codes", RFC 1893,
+        January 1996.
+
+10. Editor's Address
+
+   John C. Klensin
+   AT&T Laboratories
+   99 Bedford St
+   Boston, MA 02111 USA
+
+   Phone: 617-574-3076
+   EMail: klensin@research.att.com
+
+11. Acknowledgments
+
+   Many people worked long and hard on the many iterations of this
+   document.  There was wide-ranging debate in the IETF DRUMS Working
+   Group, both on its mailing list and in face to face discussions,
+   about many technical issues and the role of a revised standard for
+   Internet mail transport, and many contributors helped form the
+   wording in this specification.  The hundreds of participants in the
+   many discussions since RFC 821 was produced are too numerous to
+   mention, but they all helped this document become what it is.
+
+
+
+
+
+
+
+Klensin                     Standards Track                    [Page 70]
+
+RFC 2821             Simple Mail Transfer Protocol            April 2001
+
+
+APPENDICES
+
+A. TCP Transport Service
+
+   The TCP connection supports the transmission of 8-bit bytes.  The
+   SMTP data is 7-bit ASCII characters.  Each character is transmitted
+   as an 8-bit byte with the high-order bit cleared to zero.  Service
+   extensions may modify this rule to permit transmission of full 8-bit
+   data bytes as part of the message body, but not in SMTP commands or
+   responses.
+
+B. Generating SMTP Commands from RFC 822 Headers
+
+   Some systems use RFC 822 headers (only) in a mail submission
+   protocol, or otherwise generate SMTP commands from RFC 822 headers
+   when such a message is handed to an MTA from a UA.  While the MTA-UA
+   protocol is a private matter, not covered by any Internet Standard,
+   there are problems with this approach.  For example, there have been
+   repeated problems with proper handling of "bcc" copies and
+   redistribution lists when information that conceptually belongs to a
+   mail envelopes is not separated early in processing from header
+   information (and kept separate).
+
+   It is recommended that the UA provide its initial ("submission
+   client") MTA with an envelope separate from the message itself.
+   However, if the envelope is not supplied, SMTP commands SHOULD be
+   generated as follows:
+
+   1. Each recipient address from a TO, CC, or BCC header field SHOULD
+      be copied to a RCPT command (generating multiple message copies if
+      that is required for queuing or delivery).  This includes any
+      addresses listed in a RFC 822 "group".  Any BCC fields SHOULD then
+      be removed from the headers.  Once this process is completed, the
+      remaining headers SHOULD be checked to verify that at least one
+      To:, Cc:, or Bcc: header remains.  If none do, then a bcc: header
+      with no additional information SHOULD be inserted as specified in
+      [32].
+
+   2. The return address in the MAIL command SHOULD, if possible, be
+      derived from the system's identity for the submitting (local)
+      user, and the "From:" header field otherwise.  If there is a
+      system identity available, it SHOULD also be copied to the Sender
+      header field if it is different from the address in the From
+      header field.  (Any Sender field that was already there SHOULD be
+      removed.)  Systems may provide a way for submitters to override
+      the envelope return address, but may want to restrict its use to
+      privileged users.  This will not prevent mail forgery, but may
+      lessen its incidence; see section 7.1.
+
+
+
+Klensin                     Standards Track                    [Page 71]
+
+RFC 2821             Simple Mail Transfer Protocol            April 2001
+
+
+   When an MTA is being used in this way, it bears responsibility for
+   ensuring that the message being transmitted is valid.  The mechanisms
+   for checking that validity, and for handling (or returning) messages
+   that are not valid at the time of arrival, are part of the MUA-MTA
+   interface and not covered by this specification.
+
+   A submission protocol based on Standard RFC 822 information alone
+   MUST NOT be used to gateway a message from a foreign (non-SMTP) mail
+   system into an SMTP environment.  Additional information to construct
+   an envelope must come from some source in the other environment,
+   whether supplemental headers or the foreign system's envelope.
+
+   Attempts to gateway messages using only their header "to" and "cc"
+   fields have repeatedly caused mail loops and other behavior adverse
+   to the proper functioning of the Internet mail environment.  These
+   problems have been especially common when the message originates from
+   an Internet mailing list and is distributed into the foreign
+   environment using envelope information.  When these messages are then
+   processed by a header-only remailer, loops back to the Internet
+   environment (and the mailing list) are almost inevitable.
+
+C. Source Routes
+
+   Historically, the <reverse-path> was a reverse source routing list of
+   hosts and a source mailbox.  The first host in the <reverse-path>
+   SHOULD be the host sending the MAIL command.  Similarly, the
+   <forward-path> may be a source routing lists of hosts and a
+   destination mailbox.  However, in general, the <forward-path> SHOULD
+   contain only a mailbox and domain name, relying on the domain name
+   system to supply routing information if required.  The use of source
+   routes is deprecated; while servers MUST be prepared to receive and
+   handle them as discussed in section 3.3 and F.2, clients SHOULD NOT
+   transmit them and this section was included only to provide context.
+
+   For relay purposes, the forward-path may be a source route of the
+   form "@ONE,@TWO:JOE@THREE", where ONE, TWO, and THREE MUST BE fully-
+   qualified domain names.  This form is used to emphasize the
+   distinction between an address and a route.  The mailbox is an
+   absolute address, and the route is information about how to get
+   there.  The two concepts should not be confused.
+
+   If source routes are used, RFC 821 and the text below should be
+   consulted for the mechanisms for constructing and updating the
+   forward- and reverse-paths.
+
+
+
+
+
+
+
+Klensin                     Standards Track                    [Page 72]
+
+RFC 2821             Simple Mail Transfer Protocol            April 2001
+
+
+   The SMTP server transforms the command arguments by moving its own
+   identifier (its domain name or that of any domain for which it is
+   acting as a mail exchanger), if it appears, from the forward-path to
+   the beginning of the reverse-path.
+
+   Notice that the forward-path and reverse-path appear in the SMTP
+   commands and replies, but not necessarily in the message.  That is,
+   there is no need for these paths and especially this syntax to appear
+   in the "To:" , "From:", "CC:", etc. fields of the message header.
+   Conversely, SMTP servers MUST NOT derive final message delivery
+   information from message header fields.
+
+   When the list of hosts is present, it is a "reverse" source route and
+   indicates that the mail was relayed through each host on the list
+   (the first host in the list was the most recent relay).  This list is
+   used as a source route to return non-delivery notices to the sender.
+   As each relay host adds itself to the beginning of the list, it MUST
+   use its name as known in the transport environment to which it is
+   relaying the mail rather than that of the transport environment from
+   which the mail came (if they are different).
+
+D. Scenarios
+
+   This section presents complete scenarios of several types of SMTP
+   sessions.  In the examples, "C:" indicates what is said by the SMTP
+   client, and "S:" indicates what is said by the SMTP server.
+
+D.1 A Typical SMTP Transaction Scenario
+
+   This SMTP example shows mail sent by Smith at host bar.com, to Jones,
+   Green, and Brown at host foo.com.  Here we assume that host bar.com
+   contacts host foo.com directly.  The mail is accepted for Jones and
+   Brown.  Green does not have a mailbox at host foo.com.
+
+      S: 220 foo.com Simple Mail Transfer Service Ready
+      C: EHLO bar.com
+      S: 250-foo.com greets bar.com
+      S: 250-8BITMIME
+      S: 250-SIZE
+      S: 250-DSN
+      S: 250 HELP
+      C: MAIL FROM:<Smith@bar.com>
+      S: 250 OK
+      C: RCPT TO:<Jones@foo.com>
+      S: 250 OK
+      C: RCPT TO:<Green@foo.com>
+      S: 550 No such user here
+      C: RCPT TO:<Brown@foo.com>
+
+
+
+Klensin                     Standards Track                    [Page 73]
+
+RFC 2821             Simple Mail Transfer Protocol            April 2001
+
+
+      S: 250 OK
+      C: DATA
+      S: 354 Start mail input; end with <CRLF>.<CRLF>
+      C: Blah blah blah...
+      C: ...etc. etc. etc.
+      C: .
+      S: 250 OK
+      C: QUIT
+      S: 221 foo.com Service closing transmission channel
+
+D.2 Aborted SMTP Transaction Scenario
+
+      S: 220 foo.com Simple Mail Transfer Service Ready
+      C: EHLO bar.com
+      S: 250-foo.com greets bar.com
+      S: 250-8BITMIME
+      S: 250-SIZE
+      S: 250-DSN
+      S: 250 HELP
+      C: MAIL FROM:<Smith@bar.com>
+      S: 250 OK
+      C: RCPT TO:<Jones@foo.com>
+      S: 250 OK
+      C: RCPT TO:<Green@foo.com>
+      S: 550 No such user here
+      C: RSET
+      S: 250 OK
+      C: QUIT
+      S: 221 foo.com Service closing transmission channel
+
+D.3 Relayed Mail Scenario
+
+   Step 1  --  Source Host to Relay Host
+
+      S: 220 foo.com Simple Mail Transfer Service Ready
+      C: EHLO bar.com
+      S: 250-foo.com greets bar.com
+      S: 250-8BITMIME
+      S: 250-SIZE
+      S: 250-DSN
+      S: 250 HELP
+      C: MAIL FROM:<JQP@bar.com>
+      S: 250 OK
+      C: RCPT TO:<@foo.com:Jones@XYZ.COM>
+      S: 250 OK
+      C: DATA
+      S: 354 Start mail input; end with <CRLF>.<CRLF>
+      C: Date: Thu, 21 May 1998 05:33:29 -0700
+
+
+
+Klensin                     Standards Track                    [Page 74]
+
+RFC 2821             Simple Mail Transfer Protocol            April 2001
+
+
+      C: From: John Q. Public <JQP@bar.com>
+      C: Subject:  The Next Meeting of the Board
+      C: To: Jones@xyz.com
+      C:
+      C: Bill:
+      C: The next meeting of the board of directors will be
+      C: on Tuesday.
+      C:                         John.
+      C: .
+      S: 250 OK
+      C: QUIT
+      S: 221 foo.com Service closing transmission channel
+
+   Step 2  --  Relay Host to Destination Host
+
+      S: 220 xyz.com Simple Mail Transfer Service Ready
+      C: EHLO foo.com
+      S: 250 xyz.com is on the air
+      C: MAIL FROM:<@foo.com:JQP@bar.com>
+      S: 250 OK
+      C: RCPT TO:<Jones@XYZ.COM>
+      S: 250 OK
+      C: DATA
+      S: 354 Start mail input; end with <CRLF>.<CRLF>
+      C: Received: from bar.com by foo.com ; Thu, 21 May 1998
+      C:     05:33:29 -0700
+      C: Date: Thu, 21 May 1998 05:33:22 -0700
+      C: From: John Q. Public <JQP@bar.com>
+      C: Subject:  The Next Meeting of the Board
+      C: To: Jones@xyz.com
+      C:
+      C: Bill:
+      C: The next meeting of the board of directors will be
+      C: on Tuesday.
+      C:                         John.
+      C: .
+      S: 250 OK
+      C: QUIT
+      S: 221 foo.com Service closing transmission channel
+
+D.4 Verifying and Sending Scenario
+
+      S: 220 foo.com Simple Mail Transfer Service Ready
+      C: EHLO bar.com
+      S: 250-foo.com greets bar.com
+      S: 250-8BITMIME
+      S: 250-SIZE
+      S: 250-DSN
+
+
+
+Klensin                     Standards Track                    [Page 75]
+
+RFC 2821             Simple Mail Transfer Protocol            April 2001
+
+
+      S: 250-VRFY
+      S: 250 HELP
+      C: VRFY Crispin
+      S: 250 Mark Crispin <Admin.MRC@foo.com>
+      C: SEND FROM:<EAK@bar.com>
+      S: 250 OK
+      C: RCPT TO:<Admin.MRC@foo.com>
+      S: 250 OK
+      C: DATA
+      S: 354 Start mail input; end with <CRLF>.<CRLF>
+      C: Blah blah blah...
+      C: ...etc. etc. etc.
+      C: .
+      S: 250 OK
+      C: QUIT
+      S: 221 foo.com Service closing transmission channel
+
+E. Other Gateway Issues
+
+   In general, gateways between the Internet and other mail systems
+   SHOULD attempt to preserve any layering semantics across the
+   boundaries between the two mail systems involved.  Gateway-
+   translation approaches that attempt to take shortcuts by mapping,
+   (such as envelope information from one system to the message headers
+   or body of another) have generally proven to be inadequate in
+   important ways.  Systems translating between environments that do not
+   support both envelopes and headers and Internet mail must be written
+   with the understanding that some information loss is almost
+   inevitable.
+
+F. Deprecated Features of RFC 821
+
+   A few features of RFC 821 have proven to be problematic and SHOULD
+   NOT be used in Internet mail.
+
+F.1 TURN
+
+   This command, described in RFC 821, raises important security issues
+   since, in the absence of strong authentication of the host requesting
+   that the client and server switch roles, it can easily be used to
+   divert mail from its correct destination.  Its use is deprecated;
+   SMTP systems SHOULD NOT use it unless the server can authenticate the
+   client.
+
+
+
+
+
+
+
+
+Klensin                     Standards Track                    [Page 76]
+
+RFC 2821             Simple Mail Transfer Protocol            April 2001
+
+
+F.2 Source Routing
+
+   RFC 821 utilized the concept of explicit source routing to get mail
+   from one host to another via a series of relays.  The requirement to
+   utilize source routes in regular mail traffic was eliminated by the
+   introduction of the domain name system "MX" record and the last
+   significant justification for them was eliminated by the
+   introduction, in RFC 1123, of a clear requirement that addresses
+   following an "@" must all be fully-qualified domain names.
+   Consequently, the only remaining justifications for the use of source
+   routes are support for very old SMTP clients or MUAs and in mail
+   system debugging.  They can, however, still be useful in the latter
+   circumstance and for routing mail around serious, but temporary,
+   problems such as problems with the relevant DNS records.
+
+   SMTP servers MUST continue to accept source route syntax as specified
+   in the main body of this document and in RFC 1123.  They MAY, if
+   necessary, ignore the routes and utilize only the target domain in
+   the address.  If they do utilize the source route, the message MUST
+   be sent to the first domain shown in the address.  In particular, a
+   server MUST NOT guess at shortcuts within the source route.
+
+   Clients SHOULD NOT utilize explicit source routing except under
+   unusual circumstances, such as debugging or potentially relaying
+   around firewall or mail system configuration errors.
+
+F.3 HELO
+
+   As discussed in sections 3.1 and 4.1.1, EHLO is strongly preferred to
+   HELO when the server will accept the former.  Servers must continue
+   to accept and process HELO in order to support older clients.
+
+F.4 #-literals
+
+   RFC 821 provided for specifying an Internet address as a decimal
+   integer host number prefixed by a pound sign, "#".  In practice, that
+   form has been obsolete since the introduction of TCP/IP.  It is
+   deprecated and MUST NOT be used.
+
+F.5 Dates and Years
+
+   When dates are inserted into messages by SMTP clients or servers
+   (e.g., in trace fields), four-digit years MUST BE used.  Two-digit
+   years are deprecated; three-digit years were never permitted in the
+   Internet mail system.
+
+
+
+
+
+
+Klensin                     Standards Track                    [Page 77]
+
+RFC 2821             Simple Mail Transfer Protocol            April 2001
+
+
+F.6 Sending versus Mailing
+
+   In addition to specifying a mechanism for delivering messages to
+   user's mailboxes, RFC 821 provided additional, optional, commands to
+   deliver messages directly to the user's terminal screen.  These
+   commands (SEND, SAML, SOML) were rarely implemented, and changes in
+   workstation technology and the introduction of other protocols may
+   have rendered them obsolete even where they are implemented.
+
+   Clients SHOULD NOT provide SEND, SAML, or SOML as services.  Servers
+   MAY implement them.  If they are implemented by servers, the
+   implementation model specified in RFC 821 MUST be used and the
+   command names MUST be published in the response to the EHLO command.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Klensin                     Standards Track                    [Page 78]
+
+RFC 2821             Simple Mail Transfer Protocol            April 2001
+
+
+Full Copyright Statement
+
+   Copyright (C) The Internet Society (2001).  All Rights Reserved.
+
+   This document and translations of it may be copied and furnished to
+   others, and derivative works that comment on or otherwise explain it
+   or assist in its implementation may be prepared, copied, published
+   and distributed, in whole or in part, without restriction of any
+   kind, provided that the above copyright notice and this paragraph are
+   included on all such copies and derivative works.  However, this
+   document itself may not be modified in any way, such as by removing
+   the copyright notice or references to the Internet Society or other
+   Internet organizations, except as needed for the purpose of
+   developing Internet standards in which case the procedures for
+   copyrights defined in the Internet Standards process must be
+   followed, or as required to translate it into languages other than
+   English.
+
+   The limited permissions granted above are perpetual and will not be
+   revoked by the Internet Society or its successors or assigns.
+
+   This document and the information contained herein is provided on an
+   "AS IS" basis and THE INTERNET SOCIETY AND THE INTERNET ENGINEERING
+   TASK FORCE DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING
+   BUT NOT LIMITED TO ANY WARRANTY THAT THE USE OF THE INFORMATION
+   HEREIN WILL NOT INFRINGE ANY RIGHTS OR ANY IMPLIED WARRANTIES OF
+   MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.
+
+Acknowledgement
+
+   Funding for the RFC Editor function is currently provided by the
+   Internet Society.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Klensin                     Standards Track                    [Page 79]
+

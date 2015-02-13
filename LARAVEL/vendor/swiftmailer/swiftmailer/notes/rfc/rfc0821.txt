@@ -3249,474 +3249,146 @@ RFC 821                                                      August 1982
 
          R: 220 SU-SCORE.ARPA Simple Mail Transfer Service Ready
          S: HELO MIT-MC.ARPA
-         R: 250 SU-SCORE                S: VRFY Crispin                 Mark         <Admin.MRC@             >              SEND FROM:<EAK@
-          >                 OK              RCPT TO:                         
-                                DAT              354 Start mail input; end with <CRLF>.ER PRO             Blah b        ...             ...etc.               
-            
-                            QUIT    
-         21               Service closing transmission channel                                 Scenario 4        -                                  
-                         
-          
-        Postel                                            Information S[Page 55]
+         R: 250 SU-SCORE.ARPA
+
+         S: VRFY Crispin
+         R: 250 Mark Crispin <Admin.MRC@SU-SCORE.ARPA>
+
+         S: SEND FROM:<EAK@MIT-MC.ARPA>
+         R: 250 OK
+
+         S: RCPT TO:<Admin.MRC@SU-SCORE.ARPA>
+         R: 250 OK
+
+         S: DATA
+         R: 354 Start mail input; end with <CRLF>.<CRLF>
+         S: Blah blah blah...
+         S: ...etc. etc. etc.
+         S: .
+         R: 250 OK
+
+         S: QUIT
+         R: 221 SU-SCORE.ARPA Service closing transmission channel
+
+                               Scenario 4
+
+      -------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Postel                                                         [Page 55]
 
 
-
-
-
-
-
-                          ity of Southern California
-              
-August 1982rsity of Southern California
-               a del Rey,RFC 821
-Simple M  SIT
-
-
-
-fer Protoco                      
-                             endl
-
-
-and291
-
-l
-
-
-    Augus        First the user's name is verified,    n  an attempt821 made to    
-  sIL Tto           
-terminal.  W    that fails      messages is    
-     Se      August 198   Sbox. 1982
-                                    
-                                                          ia  90291
-
-          han B. PReady             HELO 
                                                                         
+August 1982                                                      RFC 821
+Simple Mail Transfer Protocol                                           
 
-   RFC 821
-                                    
-                                    
-                                    
-                                    
-        450 User not active now              
-SE                                  MAIL                   
-                                    
-                                    
-                                    
-                     SIMPLE MAIL TRANSFER PROTOCOL
-                                    
-                                    
-                                    
-                           Jonathan B. Postel
 
 
+   Sending and Mailing Scenarios
 
+      First the user's name is verified, then  an attempt is made to
+      send to the user's terminal.  When that fails, the messages is
+      mailed to the user's mailbox.
 
+      -------------------------------------------------------------
 
+         R: 220 SU-SCORE.ARPA Simple Mail Transfer Service Ready
+         S: HELO MIT-MC.ARPA
+         R: 250 SU-SCORE.ARPA
 
+         S: VRFY Crispin
+         R: 250 Mark Crispin <Admin.MRC@SU-SCORE.ARPA>
 
+         S: SEND FROM:<EAK@MIT-MC.ARPA>
+         R: 250 OK
 
+         S: RCPT TO:<Admin.MRC@SU-SCORE.ARPA>
+         R: 450 User not active now
 
+         S: RSET
+         R: 250 OK
 
+         S: MAIL FROM:<EAK@MIT-MC.ARPA>
+         R: 250 OK
 
+         S: RCPT TO:<Admin.MRC@SU-SCORE.ARPA>
+         R: 250 OK
 
+         S: DATA
+         R: 354 Start mail input; end with <CRLF>.<CRLF>
+         S: Blah blah blah...
+         S: ...etc. etc. etc.
+         S: .
+         R: 250 OK
 
+         S: QUIT
+         R: 221 SU-SCORE.ARPA Service closing transmission channel
 
+                               Scenario 5
 
+      -------------------------------------------------------------
 
 
 
 
 
 
-
-
-
-
-
-
-
-
-                              Augus5 1982
-                                    
-                                 iences 6]4676 Admiralty Way
-                   Marina del Rey,          stitute
-                   University of Southern California
-                Califor4676 Admiralty Way
-                   Marina del Rey,            tute
-                   University of Southeia  90291
-
-                            Dol
-
-
-
-he prece     s   Augusmore efficiently                           TABLE OF CONTENTS
-
-   1.  INTRODUCTION .................................................. 1
-
-   2.  THE SMTP MODEL ................................................ 2
-
-   3.  THE SMTP PROCEDURE ............................................ 4
-
-      3.1.  Mail ......OM........... 8
-      3.4.  Sending and Mailing ..................................... 11
-      3.5.  Opening ........... 7
-     , so will doocol
-                       
-                     SIMPLE MAIL TRANSFER PROTOCOL
-                                    
-                                    
-                                    
-                           Jonathan B. Postel
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                              Augus6 1982
-                                    
-                                    
-                                    
-                     Information Sciences 7nstitute
-                   University of Southern California
-                           4676 Admiralty Way
-                   Marina del Rey, California  90291
-
-                             (213) 822-1511
-
-
-
-                           List                       each of tw   4.5l
-
-
-lists a35
- xpanded in separate se
-
-
-
-
-   SimplRANSFdifferent hosts.  T               821 sISI
-to everyone     .......appeared on either Comm (but no duplicates) via a relay
-Repl                           TABLE OF CONTENTS
-
-   1.  INTRODUCTION ...............Step 1      ERAFT up .....          
-
-
-
-
-
-
-       .......
-   AI.................... 1
-
-   2.  THE SMTP MODEL ...............              nd efficiently.
- 821SMTP is in
-
-
-
-
-
-
-       S: EXPN Exa  90-Peoplely a reliable order-<ABC         
-             ribe the uFAuguFoneb    <.
-   A G@USC-ISIQwith various transport serXenon Y. Z982
-
- <XYZ     P is invarious transport serQuincy SmANSFEovides tF     :Q-s its@ISI-VAXA   An important feature of<joe@foo-unix   An important feature o <xyz@bar  A transporm channel.  Appe  
-                     d data strethan B. Postel
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-a subset of a network.  iences 8.................................. 19
-      4.1.1.  Command Semantics ..................................... 19
-      4.1.2.  Command Syntax ........................................ 27
-      4.2.  SMTP Replies ............................................ 34
-      4.2.1.  Reply Codes by Function G (SMTP) 2s to transfer
-   maiSecondiably and efficiently.
-
-   SMT       dependent of the particular transmission subsystem and
-   requires only a reliable ordered da        m channel.  AppendiceInterested-Partie   Simpltransport serAl Calico se of SMTP with various transport serdocument.
-
-   An important feature of SMTP is its capability to relay mail across
-   transport service envirofred@BBN-UNIXransport service provides an
-   interprocess communication environment (IPCE).  An IPCE ma two (or ne
-   network, several networks, or a subset of a network.  I                                    
-                     Information Sciences 9nstitute
-                   University of Southern California
-                           4676 Admiralty Way
-                   Marina del Rey, California  90291
-
-                             (213) 822-1511
-
-
-
-                   ses in diff3s to t        to AllLE MAILRTRANSHoly and efficiently.
-
-  vides t..................... 1
-
-   2.  THE SMTP MODEL ....ystem and
-   requires only a reliable ordereom the receivms by a host on b...........Account.Person                   
-                   channel.  Appe
-        ovides t      :e of SMTP with various transport semail.  If the SMTP-receiver
-   can accept mssary provides th
-   transport service envimail.  If the SMTP-receiver
-   can accept mocument.
-
-   An important feature omail.  If the SMTP-recel.  If the SM a rver
-   can accept ,apability to relay mail across
-   transport service envimail.  If the SMTP-receiver
-   can accept mnmenFOO982                            ail.  If the SMTP-receiver
-   can accept mn
-  BAReral recipients.  When the recipients
-   have been negotiated the SMTP-seAugust 1982                                                       
-                        SIMPLE MAIL TRANSFER PROTOCOL
-                                       
-                                          
-           s
-   the mail data it respondironment (IPCE).  An IPCom the receiveran B. Postel
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                              Augus7 1982
-                                    
-                                    
-  iences60.................................. 19
-      4.1.1.  Command Semantics ..................................... 19
-      4.1.2.  Command Syntax ........................................ 27
-      4.2.  SMTP Replies ............................................ 34
-      4.2.1.  Reply Codes by FunctioForwarer
-                                     TABLE OF CONTENTS
-
-   1.  INTRODUCTION ......................pability to r............... 1
-
-   2.  THE SMTP MODEL ............LBL982       ..................ability to r.........................mo@--
-
-   The SM                                  
-        Augusnisms for the     
-          1..........local; 41
-  f    Ree
-  <Joneshost whe      
-                     
-                     SIMPLE MAIL TRANSFER PROTOCOL
-                                    
-                                    
-                                    
-                  
-
-     --------an B. Postel
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                              Augus8 1982
-                                    
-                                    
-                                       
-                     Information Sciences61lt of a user mail request, the sender-SMTP establishes a
-   two-way transmission channel to a receiver-SMTP.  The receiver-SMTP
-   may be either the ultimate destination or an intermediate.  SMTP
-   commands are generated by the send
-
-1.  INTRODUCTION
-
-   The objective of Simple Mail Transfer Protocol (SMTP) is to tTryup .....91
-
-box a             SMTP replies are sent from the ----------------------------------------------------------------
-
-   The SMTP providession channel is or the transmissission of mail; directly
-   from the sending s
-   the mail data it respondiving user's host when the
-
-
-
-[Page 2] 2]                                                          Postel
-
-
-  erifying and Expandi     +----------+                +----------+
-   +------+   Transfer Protocol
-
-
-
-   two host are connected to the  different IDeli    .  The forw-path
-  ng thro SMTP replies are sent from the wo (or more) IPCEs.  More specifically, mail can be relayed
- ge to the sender when an error occurs
-  stablished, the SMTP-sender sends the same message is sent to multiple recipients the SMTP
-   enco                  Pond efficiently.ail data it responds with an OK reply.  The dialog is purposely
-   lock-step, one-at-a-time.
-
-     -------------------------------------------------------------
-
-   
-               +----------+                +----------+
-   +------+    Jonathan B. Postel
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                              Augus9 1982
-                                    
-                               lay cap2.................................. 19
-      4.1.1.  Command Semantics ..................................... 19
-      4.1.2.  Command Syntax ........................................ 27
-      4.2.  SMTP Replies ............................................ 34
-      4.2.1.  Reply Codes by FunctioToo Many Recip 4.2s                                   TABLE OF CONTENTS
-
-   1.  INTRODUCTION ......................BERKELEY----------------------------------------------------------nisms for the                 arguments use.........................      host when the
-
-
-
-[Page 2]     s host to the receiving userabry@arguments use                                  
-        ericckets are actually transmitt552reverse-pa stor0, 7full, try again    ano82
-
- 
-
-
-
-
-.. 7onostel
+[Page 56]                                                         Postel
 
 
                                                                         
 RFC 821                                                      August 1982
-                            "<John.Smith@USC-ISI.ARPA>" is an instance of <reverse-path> (the
-   angl
+                                           Simple Mail Transfer Protocol
 
 
 
+      Doing the preceding scenario more efficiently.
 
-Postel                                                 
-                     SIMPLE MAIL TRANSFER PROTOCOL
-                                    
-                                    
-                                    
-                  arguments use tan B. Postel
+      -------------------------------------------------------------
 
+         R: 220 SU-SCORE.ARPA Simple Mail Transfer Service Ready
+         S: HELO MIT-MC.ARPA
+         R: 250 SU-SCORE.ARPA
 
+         S: VRFY Crispin
+         R: 250 Mark Crispin <Admin.MRC@SU-SCORE.ARPA>
 
+         S: SOML FROM:<EAK@MIT-MC.ARPA>
+         R: 250 OK
 
+         S: RCPT TO:<Admin.MRC@SU-SCORE.ARPA>
+         R: 250 User not active now, so will do mail.
 
+         S: DATA
+         R: 354 Start mail input; end with <CRLF>.<CRLF>
+         S: Blah blah blah...
+         S: ...etc. etc. etc.
+         S: .
+         R: 250 OK
 
+         S: QUIT
+         R: 221 SU-SCORE.ARPA Service closing transmission channel
 
+                               Scenario 6
 
+      -------------------------------------------------------------
 
 
 
@@ -3736,245 +3408,643 @@ Postel
 
 
 
-
-
-                             Augus10e the
-   angle brackets indicate these are meta-linguistic variables.
-   HoweNot      AIL Tal a  90menta     m    handle m "<rrverse-patha   Simplspec         Se      4.5.3.ted to the same transport service.
-
-   To be able to provide the relay cap3nstitute
-                   University of Southern California
-                           4676 Admiralty Way
-                   Marina del Rey, California  90291
-
-                             (213) 822-1511
-
-
-
-                GLOSSARYms byASCIIms by a Am
-
-
-
-an    nd    Code     Informion of  tra
-
-
-
-ge [1]      commandng the re requestThen a    SIsan B. P            byC 788    er-SMTP     Aupath is....al
- the t      domai         The hierarchially structuAuguglobal
-
-
-
-racterL co     ddresstel
-apath isReplail pu<reviFC 788,f maiystem      IL Tof      data ind   S           Action
-amailquence:<re      <res      > <CRLFeceiveFROM:<reaction.
-
- verse-pat.  In psystcular      f7
-  e SMTP-rececarri0, 7return,path isline fe    period,ables and
-       ers, includi
-    at order      Repl         Tmailbox.
-
-      i tranetwork environcussust whichocol
-
-
-
-es orpath ishe trprocesses reside      rs,          Tamand tells th giviits state ta       RANSFaFER PROTms byverse-pat         Th <reverse-path> can contain ainsrbitrary length,pted,
- co DATA   Simpl    Augsformatioser threplieformatiohen h
-   ATA cse-pa SMTP prov  tranet Text M        (Califo2 [2])lbox.  Theboxrse-path wh     <reverse-pa(th> con)pted,
- ident    s a     e mawhom  Thepath isise mabs
-   t.ent toard-nATA MAILconsommen      ource         his section
-  RLF>
-
-aces: Rox.  The f The se
-RFC  coconvd.
-
-onard-defined source mabe "    @tep in".  Addir-SMis c      "container"t hoted,
-     :<forward-    edrtialssion cha4.................................. 19
-      4.1.1.  Command Semantics ..................................... 19
-      4.1.2.  Command Syntax ........................................ 27
-      4.2.  SMTP Replies ............................................ 34
-      4.2.1.  Reply Codes by Functio        The fTP retur         TP retur recipi
-
-
-
-
-frece   SIMP cooperion ofan just      the tpath isP returstart waitshe end connamples K replestablishedLE MAaction.
-
- 
-
-
-
-
-portail datansfer        ser-SMTil datas fromcontain mor      the t,rce rs a plies,d-patper     ailboxion
-   ar         slbox. hosty.  And finalplyard-    cknowledgIf ac(posi 7
-  or nega 7
- )      pathion.
-
-         he <      can cont
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    respons    ns the soil datant.
-   genera     me rou <forward-pwhichler-SMTcodtion.
-
- (incluer
-  error-SMTPs) followedonfia t senerse-pnt.
-   ate rnts:path ishen useonfiprogramd-padtep in senis usuis co to T    hen huma       
-    The fir      the tr                       August 1982
-                                         The fimple Mail TransfA       langu0, 7mayreplus are e        d to rfac lines til data/<forwadialoguilbo
-         the trinitia new maie than ju a sourcen B. Po        Tnsfer  can be re     <forward,  The
-    hosts an        nd governresumed.  S    <reversd the SM
-
-
-
-
- the proceduirstof exves thceiver occur recl     in the procedure is the   Simplopenlbox.                     prevent this from inallyiAuguhen     , 780, 7K repl
-
-
-
-
-
-
-tts a 250 Odes the or.. 35
- Throughou5.2).
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- A     -    exthat un recipi path between             S peris the so              verse-pais from s thesending a lsts and theent is unkn    5.2).
-
-    n just a mai end of ms.  Tliabl    ream-or 4.2ede-pathcator also cones the ansfFe receivee A,
-  , NCP, T   fNITS       to the same transport service.
-
-   To be able to provide the relay capInstitute
-                   University of Southern California
-                           4676 Admiralty Way
-                   Marina del Rey, California  90291
-
-                             (213) 822-1511
-
+Postel                                                         [Page 57]
 
 
-                   h ideend of maeceiv beure i end       Auoranshalf  If a   transact) wish the
-  Sectionbh.            transt a mailboxnath>res t, sent        ofed so thatlbox.
-ency procewora.  And finrse-path> isprinthe re SMTP-reclbox. OCOL
-   Please notts state tables and
-       perirs, incluns aves the
-          <SP             spa. Po     <re        
+                                                                        
+August 1982                                                      RFC 821
+Simple Mail Transfer Protocol                                           
 
 
 
-      ----------------lay cap................................... 19
-      4.1.1.  Command Semantics ..................................... 19
-      4.1.2.  Command Syntax ........................................ 27
-      4.2.  SMTP Replies ............................................ 34
-      4.2.1.  Reply Codes by FuncREFERENCES     [1]   giving the regivi, "USAon.  Then a DATA command gives th", UnieturSta new         eceiverin the <rs Institute, X3.4, 1968nel lso in:  Feinler, E        periJ.nd Sema, eds., " be
-NET          Handbook" onlC 7104,ceivecipienthe DefeommaCator also cos AgeTP iby SRI   the LF>
+   Mailing List Scenario
 
-al, Menl        Park,
+      First each of two mailing lists are expanded in separate sessions
+      with different hosts.  Then the message is sent to everyone that
+      appeared on either list (but no duplicates) via a relay host.
 
+      -------------------------------------------------------------
 
+         Step 1  --  Expanding the First List
 
+            R: 220 MIT-AI.ARPA Simple Mail Transfer Service Ready
+            S: HELO SU-SCORE.ARPA
+            R: 250 MIT-AI.ARPA
 
-fornia, RevimailJanulist1978lbox. [nnelcommand        Crocketa.D sucn the <reverse-path> should be
-   the host sepath isding thi,"     S: , D    tIf accf Electiverl Engine
-   c only a Unal
- sity    Delaware,Replies ....F>
-    3] fail          R: 550J.50 N suc     
+            S: EXPN Example-People
+            R: 250-<ABC@MIT-MC.ARPA>
+            R: 250-Fred Fonebone <Fonebone@USC-ISIQ.ARPA>
+            R: 250-Xenon Y. Zither <XYZ@MIT-AI.ARPA>
+            R: 250-Quincy Smith <@USC-ISIF.ARPA:Q-Smith@ISI-VAXA.ARPA>
+            R: 250-<joe@foo-unix.ARPA>
+            R: 250 <xyz@bar-unix.ARPA>
 
-
-
-
-
-
-
-Control          - D.
-           have a msage t          Sg one recipi",     793,ctua/a DATA commaS  4.cems.
+            S: QUIT
+            R: 221 MIT-AI.ARPA Service closing transmission channel
 
 
 
 
-250 OK
 
-   NTIS AD Number A111091, Septe     1981: RCPT TO:<        en@Beta.AR          R: 550 No suc  the hos              res tpath isWork    S:     S: DATA
-             Start mail input; Ms then did
-     er-SNot have a McKenzie,A suc SMT/ SMT          verse-pa.
-   Nport eS: RCPT8246 only a  <CRLF>.<CR2: RCPT TO:<Green@Beta.AR          R: 550 No such user 
-      ---
 
-            S: RCPT TO:<Brow.ARPA>
-            R: 250 Oeta.ARPA
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[Page 58]                                                         Postel
+
+
+                                                                        
+RFC 821                                                      August 1982
+                                           Simple Mail Transfer Protocol
+
+
+
+         Step 2  --  Expanding the Second List
+
+            R: 220 MIT-MC.ARPA Simple Mail Transfer Service Ready
+            S: HELO SU-SCORE.ARPA
+            R: 250 MIT-MC.ARPA
+
+            S: EXPN Interested-Parties
+            R: 250-Al Calico <ABC@MIT-MC.ARPA>
+            R: 250-<XYZ@MIT-AI.ARPA>
+            R: 250-Quincy Smith <@USC-ISIF.ARPA:Q-Smith@ISI-VAXA.ARPA>
+            R: 250-<fred@BBN-UNIX.ARPA>
+            R: 250 <xyz@bar-unix.ARPA>
+
+            S: QUIT
+            R: 221 MIT-MC.ARPA Service closing transmission channel
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Postel                                                         [Page 59]
+
+
+                                                                        
+August 1982                                                      RFC 821
+Simple Mail Transfer Protocol                                           
+
+
+
+         Step 3  --  Mailing to All via a Relay Host
+
+            R: 220 USC-ISIE.ARPA Simple Mail Transfer Service Ready
+            S: HELO SU-SCORE.ARPA
+            R: 250 USC-ISIE.ARPA
+
+            S: MAIL FROM:<Account.Person@SU-SCORE.ARPA>
+            R: 250 OK
+            S: RCPT TO:<@USC-ISIE.ARPA:ABC@MIT-MC.ARPA>
+            R: 250 OK
+            S: RCPT TO:<@USC-ISIE.ARPA:Fonebone@USC-ISIQA.ARPA>
+            R: 250 OK
+            S: RCPT TO:<@USC-ISIE.ARPA:XYZ@MIT-AI.ARPA>
+            R: 250 OK
+            S: RCPT
+                TO:<@USC-ISIE.ARPA,@USC-ISIF.ARPA:Q-Smith@ISI-VAXA.ARPA>
+            R: 250 OK
+            S: RCPT TO:<@USC-ISIE.ARPA:joe@FOO-UNIX.ARPA>
+            R: 250 OK
+            S: RCPT TO:<@USC-ISIE.ARPA:xyz@BAR-UNIX.ARPA>
+            R: 250 OK
+            S: RCPT TO:<@USC-ISIE.ARPA:fred@BBN-UNIX.ARPA>
+            R: 250 OK
+
             S: DATA
-             Start mail input; end witfer Protocol
+            R: 354 Start mail input; end with <CRLF>.<CRLF>
+            S: Blah blah blah...
+            S: ...etc. etc. etc.
+            S: .
+            R: 250 OK
+
+            S: QUIT
+            R: 221 USC-ISIE.ARPA Service closing transmission channel
+
+                               Scenario 7
+
+      -------------------------------------------------------------
 
 
 
-  LF>
-    5]
 
 
 
-an bl          Thodes by FuCommand Semax at h"O     alreplies
-      should be usedS: RCPT TO1 only a 11 June.<CR                  Postel
+
+
+
+
+
+
+[Page 60]                                                         Postel
 
 
-                    ere the destination information in the
-      <forward-path> is incorrect, but the receiver-SMTP knows the
-      correct destination.  In such cases, one of the followi....nly  to allowSS/SG3       Simpl Indep texnt      n jusnstead     tudy Group 3 only a 
-        to coehat .....sferent, FebrRLF>.<C80nel vail  recis command.ARPA>CPU, NA
-      Physe maiLaboratory, Teder
- t    UK      to the same transport service.
+                                                                        
+RFC 821                                                      August 1982
+                                           Simple Mail Transfer Protocol
 
-   To be able to provide the relay cap........................................... 51
 
-   GLOSSARY ......................................................... 64
 
-   REFERENCES ....................................................... 67
+   Forwarding Scenarios
+
+      -------------------------------------------------------------
+
+         R: 220 USC-ISIF.ARPA Simple Mail Transfer Service Ready
+         S: HELO LBL-UNIX.ARPA
+         R: 250 USC-ISIF.ARPA
+
+         S: MAIL FROM:<mo@LBL-UNIX.ARPA>
+         R: 250 OK
+
+         S: RCPT TO:<fred@USC-ISIF.ARPA>
+         R: 251 User not local; will forward to <Jones@USC-ISI.ARPA>
+
+         S: DATA
+         R: 354 Start mail input; end with <CRLF>.<CRLF>
+         S: Blah blah blah...
+         S: ...etc. etc. etc.
+         S: .
+         R: 250 OK
+
+         S: QUIT
+         R: 221 USC-ISIF.ARPA Service closing transmission channel
+
+                               Scenario 8
+
+      -------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Postel                                                         [Page 61]
 
+
+                                                                        
+August 1982                                                      RFC 821
+Simple Mail Transfer Protocol                                           
+
+
+
+      -------------------------------------------------------------
+
+         Step 1  --  Trying the Mailbox at the First Host
+
+            R: 220 USC-ISIF.ARPA Simple Mail Transfer Service Ready
+            S: HELO LBL-UNIX.ARPA
+            R: 250 USC-ISIF.ARPA
+
+            S: MAIL FROM:<mo@LBL-UNIX.ARPA>
+            R: 250 OK
+
+            S: RCPT TO:<fred@USC-ISIF.ARPA>
+            R: 251 User not local; will forward to <Jones@USC-ISI.ARPA>
+
+            S: RSET
+            R: 250 OK
+
+            S: QUIT
+            R: 221 USC-ISIF.ARPA Service closing transmission channel
+
+         Step 2  --  Delivering the Mail at the Second Host
+
+            R: 220 USC-ISI.ARPA Simple Mail Transfer Service Ready
+            S: HELO LBL-UNIX.ARPA
+            R: 250 USC-ISI.ARPA
+
+            S: MAIL FROM:<mo@LBL-UNIX.ARPA>
+            R: 250 OK
+
+            S: RCPT TO:<Jones@USC-ISI.ARPA>
+            R: OK
+
+            S: DATA
+            R: 354 Start mail input; end with <CRLF>.<CRLF>
+            S: Blah blah blah...
+            S: ...etc. etc. etc.
+            S: .
+            R: 250 OK
+
+            S: QUIT
+            R: 221 USC-ISI.ARPA Service closing transmission channel
+
+                               Scenario 9
+
+      -------------------------------------------------------------
+
+
+
+
+[Page 62]                                                         Postel
 
 
-
-Network Working Group         [7]  X.2ATIONS ..CCITT, "Reocesendion ofthe  -   theicat Bthe maiDpathT
-      to alloEquip  shouDTE)     ng toCircuit-2
-      1982n provided oCEeplywn@Beta. the infs O      ngt host iPacket M.  Tuld ublicn an e  Simpls,"ender must e Ors theBook, Vol. VIII.2, S: DATA
-      Teleph    ata.ting uselegraph    sulsionv          e, Geneva    76.3.  Sizes .   
+                                                                        
+RFC 821                                                      August 1982
+                                           Simple Mail Transfer Protocol
 
 
 
-      -----------------------------------portant
-   to realize that transport systems (or IPCEs) are not one-
+   Too Many Recipients Scenario
+
+      -------------------------------------------------------------
+
+         R: 220 BERKELEY.ARPA Simple Mail Transfer Service Ready
+         S: HELO USC-ISIF.ARPA
+         R: 250 BERKELEY.ARPA
+
+         S: MAIL FROM:<Postel@USC-ISIF.ARPA>
+         R: 250 OK
+
+         S: RCPT TO:<fabry@BERKELEY.ARPA>
+         R: 250 OK
+
+         S: RCPT TO:<eric@BERKELEY.ARPA>
+         R: 552 Recipient storage full, try again in another transaction
+
+         S: DATA
+         R: 354 Start mail input; end with <CRLF>.<CRLF>
+         S: Blah blah blah...
+         S: ...etc. etc. etc.
+         S: .
+         R: 250 OK
+
+         S: MAIL FROM:<Postel@USC-ISIF.ARPA>
+         R: 250 OK
+
+         S: RCPT TO:<eric@BERKELEY.ARPA>
+         R: 250 OK
+
+         S: DATA
+         R: 354 Start mail input; end with <CRLF>.<CRLF>
+         S: Blah blah blah...
+         S: ...etc. etc. etc.
+         S: .
+         R: 250 OK
+
+         S: QUIT
+         R: 221 BERKELEY.ARPA Service closing transmission channel
+
+                              Scenario 10
+
+      -------------------------------------------------------------
+
+      Note that a real implementation must handle many recipients as
+      specified in Section 4.5.3.
+
+
+
+Postel                                                         [Page 63]
+
+
+                                                                        
+August 1982                                                      RFC 821
+Simple Mail Transfer Protocol                                           
+
+
+
+GLOSSARY
+
+   ASCII
+
+      American Standard Code for Information Interchange [1].
+
+   command
+
+      A request for a mail service action sent by the sender-SMTP to the
+      receiver-SMTP.
+
+   domain
+
+      The hierarchially structured global character string address of a
+      host computer in the mail system.
+
+   end of mail data indication
+
+      A special sequence of characters that indicates the end of the
+      mail data.  In particular, the five characters carriage return,
+      line feed, period, carriage return, line feed, in that order.
+
+   host
+
+      A computer in the internetwork environment on which mailboxes or
+      SMTP processes reside.
+
+   line
+
+      A a sequence of ASCII characters ending with a <CRLF>.
+
+   mail data
+
+      A sequence of ASCII characters of arbitrary length, which conforms
+      to the standard set in the Standard for the Format of ARPA
+      Internet Text Messages (RFC 822 [2]).
+
+   mailbox
+
+      A character string (address) which identifies a user to whom mail
+      is to be sent.  Mailbox normally consists of the host and user
+      specifications.  The standard mailbox naming convention is defined
+      to be "user@domain".  Additionally, the "container" in which mail
+      is stored.
+
+
+
+
+
+[Page 64]                                                         Postel
+
+
+                                                                        
+RFC 821                                                      August 1982
+                                           Simple Mail Transfer Protocol
+
+
+
+   receiver-SMTP process
+
+      A process which transfers mail in cooperation with a sender-SMTP
+      process.  It waits for a connection to be established via the
+      transport service.  It receives SMTP commands from the
+      sender-SMTP, sends replies, and performs the specified operations.
+
+   reply
+
+      A reply is an acknowledgment (positive or negative) sent from
+      receiver to sender via the transmission channel in response to a
+      command.  The general form of a reply is a completion code
+      (including error codes) followed by a text string.  The codes are
+      for use by programs and the text is usually intended for human
+      users.
+
+   sender-SMTP process
+
+      A process which transfers mail in cooperation with a receiver-SMTP
+      process.  A local language may be used in the user interface
+      command/reply dialogue.  The sender-SMTP initiates the transport
+      service connection.  It initiates SMTP commands, receives replies,
+      and governs the transfer of mail.
+
+   session
+
+      The set of exchanges that occur while the transmission channel is
+      open.
+
+   transaction
+
+      The set of exchanges required for one message to be transmitted
+      for one or more recipients.
+
+   transmission channel
+
+      A full-duplex communication path between a sender-SMTP and a
+      receiver-SMTP for the exchange of commands, replies, and mail
+      text.
+
+   transport service
+
+      Any reliable stream-oriented data communication services.  For
+      example, NCP, TCP, NITS.
+
+
+
+
+
+Postel                                                         [Page 65]
+
+
+                                                                        
+August 1982                                                      RFC 821
+Simple Mail Transfer Protocol                                           
+
+
+
+   user
+
+      A human being (or a process on behalf of a human being) wishing to
+      obtain mail transfer service.  In addition, a recipient of
+      computer mail.
+
+   word
+
+      A sequence of printing characters.
+
+   <CRLF>
+
+      The characters carriage return and line feed (in that order).
+
+   <SP>
+
+      The space character.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[Page 66]                                                         Postel
+
+
+                                                                        
+RFC 821                                                      August 1982
+                                           Simple Mail Transfer Protocol
+
+
+
+REFERENCES
+
+   [1]  ASCII
+
+      ASCII, "USA Code for Information Interchange", United States of
+      America Standards Institute, X3.4, 1968.  Also in:  Feinler, E.
+      and J. Postel, eds., "ARPANET Protocol Handbook", NIC 7104, for
+      the Defense Communications Agency by SRI International, Menlo
+      Park, California, Revised January 1978.
+
+   [2]  RFC 822
+
+      Crocker, D., "Standard for the Format of ARPA Internet Text
+      Messages," RFC 822, Department of Electrical Engineering,
+      University of Delaware, August 1982.
+
+   [3]  TCP
+
+      Postel, J., ed., "Transmission Control Protocol - DARPA Internet
+      Program Protocol Specification", RFC 793, USC/Information Sciences
+      Institute, NTIS AD Number A111091, September 1981.  Also in:
+      Feinler, E. and J. Postel, eds., "Internet Protocol Transition
+      Workbook", SRI International, Menlo Park, California, March 1982.
+
+   [4]  NCP
+
+      McKenzie,A., "Host/Host Protocol for the ARPA Network", NIC 8246,
+      January 1972.  Also in:  Feinler, E. and J. Postel, eds., "ARPANET
+      Protocol Handbook", NIC 7104, for the Defense Communications
+      Agency by SRI International, Menlo Park, California, Revised
+      January 1978.
+
+   [5]  Initial Connection Protocol
+
+      Postel, J., "Official Initial Connection Protocol", NIC 7101,
+      11 June 1971.  Also in:  Feinler, E. and J. Postel, eds., "ARPANET
+      Protocol Handbook", NIC 7104, for the Defense Communications
+      Agency by SRI International, Menlo Park, California, Revised
+      January 1978.
+
+   [6]  NITS
+
+      PSS/SG3, "A Network Independent Transport Service", Study Group 3,
+      The Post Office PSS Users Group, February 1980.  Available from
+      the DCPU, National Physical Laboratory, Teddington, UK.
+
+
+
+
+Postel                                                         [Page 67]
+
+
+                                                                        
+August 1982                                                      RFC 821
+Simple Mail Transfer Protocol                                           
+
+
+
+   [7]  X.25
+
+      CCITT, "Recommendation X.25 - Interface Between Data Terminal
+      Equipment (DTE) and Data Circuit-terminating Equipment (DCE) for
+      Terminals Operating in the Packet Mode on Public Data Networks,"
+      CCITT Orange Book, Vol. VIII.2, International Telephone and
+      Telegraph Consultative Committee, Geneva, 1976.
+
+         
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[Page 68]                                                         Postel
+

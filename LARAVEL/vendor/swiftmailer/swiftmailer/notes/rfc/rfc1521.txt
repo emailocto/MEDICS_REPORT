@@ -2202,1555 +2202,2338 @@ RFC 1521                          MIME                    September 1993
    "transparent".
 
    When generating and reassembling the parts of a message/partial
-   message, the headers ofNetwoencapsulated me
+   message, the headers of the encapsulated message must be merged with
+   the headers of the enclosing entities.  In this process the following
+   rules must be observed:
+
+      (1) All of the header fields from the initial enclosing entity
+      (part one), except those that start with "Content-" and the
+      specific header fields "Message-ID", "Encrypted", and "MIME-
+      Version", must be copied, in order, to the new message.
+
+      (2) Only those header fields in the enclosed message which start
+      with "Content-" and "Message-ID", "Encrypted", and "MIME-Version"
+      must be appended, in order, to the header fields of the new
+      message.  Any header fields in the enclosed message which do not
+      start with "Content-" (except for "Message-ID", "Encrypted", and
+      "MIME-Version") will be ignored.
+
+      (3) All of the header fields from the second and any subsequent
+      messages will be ignored.
+
+   For example, if an audio message is broken into two parts, the first
+   part might look something like this:
+
+      X-Weird-Header-1: Foo
+      From: Bill@host.com
+      To: joe@otherhost.com
+      Subject: Audio mail
+      Message-ID: <id1@host.com>
+      MIME-Version: 1.0
+      Content-type: message/partial;
+           id="ABC@host.com";
+           number=1; total=2
+
+      X-Weird-Header-1: Bar
+      X-Weird-Header-2: Hello
 
 
 
-
- must be merged with
-  Network Working Group  losing entities.  In this processNetwofollowing. Borules         observed:
-. Bo   (1) Alling Grourk Wor fields fromNetwoinitialor Comments: 152y        part one), except those that stTrac   N "Content-" andNetw       specific               "M      -ID", "Encrypted",oft
- "MIME-       Version",         copied, in order, toNetwonew        .1        2) Only                     i    for Comm           which                       Innosoft
-                         September 199      MI               appendse Internet Mail Exte              ng Grounewhis RFC s) Part  AnyMechanisms for Specifying and Describing
-    do no                        Innoso(       forrnet Message Bodies
-
-Status of        his Memo
-
-   T) will    ignoredt One:
-   3                                    secondoft
- any subsequen        t commuss" for the standardizaFor example, if an audio         is broken inil Ewo  Tras
-Netwofirs      Tracmight look somethentslik    is41       X-Weird-Hk Wor-1: Foo       From: Bill@host.com       To: joe@other or message bodSubject: A messaail                 : <id1, or mess>nes the s Memo
-
-   : 1.0           Innotype: unlimit/ Traial;        reprid="ABC, or mess"s to be reprenumber=1; total=2aders, but which leaves
-  Barders, but which leaves2: Hello
-
-
-
-Borenstein & Freedto be repreends and revises
-   that work.  Be[P    40]
+Borenstein & Freed                                             [Page 40]
 
-RFC 1521ends and revises
-   that ww muends and revises
-   Septeloss 1993
-1        format of meanat ASid@foodies to allow multi-part
-   textual and non-textuaa mes/basicextual and non-transfer-encoding: base641          ...specif halffor  incled a messdata goes here..t One:ft
-    l.  Dist messderable detail about message headers, bge content, or message body, as flat ASCII text.  This
-   document redefines the  multi-part
-   textual  format of mess2ge bodies to alloand non-textual message bodies to be represented and
-   exchut loss 2f information.  Ts in a s other thanage, to represent body text
-   in charaThen, whepecifyfragmen            is reassemblse I setresult               to    displayedail Exteuser shouldle detail about message headers, but which leaves
-   the message content, or message body, as flat ASCII text.  This
-   document redefines the format of me revision of) RFC
-   822.
-
-   In particular, this document is designed to provide facilities to
-   include multiple objects in a single message, to represent body text
-   in cts.
-
-   This document does NOT extend Internet mail header fieldNote one, to entsofies, t: 1521  up            insid    message bodieon..: 1521  : Becauset bodyng Gype " The MI" may never    , to repinon..ultipl or quoted-printab2 dea    blemn US-ASariseefin The MIME-Version Header Fi aripurnstruc6
-   3nes environhing       upports binary oier w8-bit ies tle C.lds t.  9
-   5i    aed-Pentent-Tr bodyw docube spli      protmuch pl   The MIME-Versi o  docs, eachfor them requirentstent-T. Borng.........If sunt-Honal C werontentunterreprt a gateway......a 793
+RFC 1521                          MIME                    September 1993
 
 
-ncoding......5.1.   Quote datareer-Encodinno ....to    perlyntent-T. Borenmnt ed Con7Encodworld, a.         waih exnt eda           which    BASCII te.... Con The MIeptembtrmit includedata.  SCII textransfee Header Field...................  Since it   Bpossibl       differs memo  whicn US-ASgl Exrough.1.2. The d.......Contvmit
- is   Bnot a Headac    .... solution. 11, R  7.2....on,.......       ct ose64 audoding Header ........
-   6.     Addit     al.... have ald.. Inno34 and STD 11, RFC 1049, but extends and revises
-   that work.  Because RF1 822 said so little about message bodies, this
-   document is largely orthogonal ties to
-   includeon sdefine( Condefault)      e bodcular.. 28
- e Head.1.   Quote Base64table Cntent-Tranr-Encoding...... data.....of aon.. The Mul................. 36
-"8bit" Mul"tent-T"   Bexplicitl.....prohibi    t edThe common syntax...............t One:Ition docun Hea     Mul, b.......ail sions are es to
-  ag.....ma.....cho     o automatically anything lar    nlimiteeptemb   7.3.2.ucN. Bosubtype..................anythingape......esholds..... 28..... 25. Boree64 Conpiecmmon saparall....Type....upon..... 24
- y,4.   prov
-   7.   selves....comphe Co.3.2.  The "anon-... 17.2.  ...............ermittndardizaubtype....alsthe
- ........ 3       clu   M 7.3.3"Re. Theces"      .......etwork Working Grou.  Distribu of this m. 44
-   7.3.3anything otensions are  accr...... 45 Exam         dvent.... revious. 44
- 4.   b.....of benefcodiredefi....Workion CounWorktributide/Packontent-Typeion..How The data.gener "ftp"o1.   Op........ 45
-   7.3fs" acntire......oppe..imary) sFin9
-  .....ype............... 3.....          Srack protocol has.. 23een madoleteolete by Privacy Enhanced.......... (PEM), bu.   ThBellc.....bo.2.2re believct of describtionipurrrectder Fieltreat.....f............ID Header Specify The xt....conv     M.....ndpe Val The MIME-Version Hanythings.
+      Message-ID: <anotherid@foo.com>
+      MIME-Version: 1.0
+      Content-type: audio/basic
+      Content-transfer-encoding: base64
 
-7.3.3.e body........../External-Bodon of....fields t e........b........... indicatpe...5.   Thactual  Secu body... mprovemtype. Inte....meplicontent-Typd           cas
+         ... first half of encoded audio data goes here...
 
-Netwoparameter..... The Videa mechanis   Thepartsmentscifyi............t One:Wrmit  5.1y: S   B..........  7
-  /   9.     Sec".....d...ist  7.3.on..rk Wor,tocold...ecutive CRLFernal-Btent-Type..rack protThe Pr.......                   6.1. revisi pairtal Conneral Guidelinies aar7.1.    7.2al Coursontede.....ding Email Data... 63
-Appendix C -- A Compleation/PostScrs............ 68
+   and the second half might look something like this:
 
+      From: Bill@host.com
+      To: joe@otherhost.com
+      Subject: Audio mail
+      MIME-Version: 1.0
+      Message-ID: <id2@host.com>
+      Content-type: message/partial;
+           id="ABC@host.com"; number=2; total=2
 
+         ... second half of encoded audio data goes here...
 
-Borenstein's......7.2.tself.............  11.textNOT6
-   Ap.8.   Exareans....          1, RFC 822 de.....    63
-   A         ........41       and non-textual messag   9.     Sec;.......93
+   Then, when the fragmented message is reassembled, the resulting
+   message to be displayed to the user should look something like this:
 
+      X-Weird-Header-1: Foo
+      From: Bill@host.com
+      To: joe@otherhost.com
+      Subject: Audio mail
+      Message-ID: <anotherid@foo.com>
+      MIME-Version: 1.0
+      Content-type: audio/basic
+      Content-transfer-encoding: base64
 
-   ....=local-file;ents.
+         ... first half of encoded audio data goes here...
+         ... second half of encoded audio data goes here...
 
-   T  name="/u/nsb/Me.gif"ration Procedures..... im-Congifation Procedureof mess42@guppylake.bellcore later extensions
-  Tes to
-  Einclude mu......34 and STD 11, RFC 1049, but extends and revises
-   that work.  Because RF2 822 said so little about message bodies, this
-   document is largely orthogonal to (THIS IS     REALLY THE BODY!..... 56
-ME   5.   Thend per    derabltipual   7  Thephantom..............e standa... most
-   9.     Secuage/Exte.ion/PostScritThe App....t of........a3
-  uxilit-Trinfor... ona... . The   Opage/Externar Spd1049.........ermit
-   Registry Conss "defi-es: 1r".  Og Grouss has beensThe in The Ab    is docuContent-D  80
-
-1.    I suc2] hao    
-   success has beenuctiouch that the RFC 8In......art E....ch
-   sell beyond the ce standardiza 56
-es of. 29
- -mandatory...... 57
-Since .......... 72
-   E.1roducti"ss has been";......... 24part Exa... 57
-  [RFC-82n wider usansfern subtyp de an ... 3......valu......s has beent One:
-  ACCESS-TYPE -- Ad by -insensil Guiwore Intderat........table C The Altipartsswledgementsbof t       spele Mul body[RFC-82ob
-   ndar
-
-
-     forr Sp    Athors'... 56
- lim... 3to, "FTP    ANON-for theTfor tcial ProAFS    LOCAL-FILESeptemberAIL-SERVERFC 8Futurmat forContcurrent ecase ofexperi The ls riche beginn IAN      X-"C specifiregiseader    N. Bo 7.3ANAon th The Vid7.8. As an ix E 
-   7.3n addit ofh
-   sp E -- IAN and....... 57
- RFC 8ntended t... ALLultipartas been 41       EXPIRATIONxt m 56
-date (Specify sai822 " lim-time" syntaxon tCII
-   [Utan Ines,  said123Field..... 4 digitr Specifyy         ) afteSCII
-   are simplyexms f....ng Group............2.   TheguarantendardizatioSIZext m 56
-sizmitatioctets)t lines .....
-   foihe Mut lineoductiext/pla numbe  Bao helpdata.  cipish tdec    wheart Eor  Theto [US-ficial Prthe
-  ns at-Trresourype..o retr   7...................s, Convs...re invokiy orThe Vide..... any data that t.8. entscanon 39
-l spm dat users seis8
-  foreution    Inno ....... 73
-   App..........appl2.1.ASCII
-    messxamples of 7.2......deto ret One:
-  PERMISSthe notessages, such as mue.....s....siderationle ASCII ccase of22 i......[US-... 1s....cle asin subtye "maattem    o overwrit        a that theyByThe Mult,I chifimit tst-Typ Intprim" data.assum subtsed in thns.......yRFC 822 es For Sd maExamples of .... Agentinesc defused in th   The nee reprgai....IfAndrew Toolkessages -
-   abetwed into se RFC
-   82   [Pnvalintenibution ContpurpyE (Multipur3
-
-
-  ed nhe messamIntethes a cachlex "Res bIntern thamail meRFC 8ve fo    dopted,
-     Since RFonge of mail  the
-   fopntab3.2.emantic for the
-at has been adopted,t
-   RFC 8dio, vide   10.urther Et ofand X.4n most the
-   foppendix C -- rk Worki, AsLLf limitations have provg Header MUST   10.    A aes
-        tent-Type.....to g Guia unique idendifihe C -- Snd STD 11, RFC 1049, but extends and revises
-   that work.  Because RF3 822 said so little about message bodies, this
-   document is largely orthogonal tare simUser..... 4ta that they m-821          [RFC-822] ha ASCII
-fy ei IANA dgementernal-B... recogniz..........ceip to sen.......ermi. Borenst messages.  Internet SMTP trions, Conv.. 38
-a28
-   7.2.1.-Des data.tatioand X.4 The Vide   9.     Sec  11.ata,mail masy not luessr theeam ( the R7.3.n wiernarhanilds.ct of pplica2 user US-ASCII charac
-   se   6.1.        45
-   9
-   .. 3.......peledie
-  aensionsdgements[RFC-82tem (i.e.as6
-  r sets   tht-Type case aud, eiart Ea of ws must be
-y must be
-   dr of limitations have proas in    tual mefinedtion woul  MoreAed.
-t messagesge bodie..... 28
-   7.2.1. Multipar  7.3.1. The Messtensions artions have prov...... 29
-   7.2.2. The Mul................. 36case   7.2.5. The Multipart/parallel subtype.................. 37
-case  7.2.6. Other Multipart subtypes........................ 37
-   7.......   The Message Content-Type........................ 38
-   7.3.1. licatioyntax........   9.     Sec Summary.1hey may"ftpt X.400tis preons are neeoducinnmation from
- of FTP theil unsiderations........         proven
-   .......ntenecome not u.........der [RFC-959]e header speci783].......tocols,al m822 ively.........e.  Tons are neetext in most
-  RFC-1r even alean languages, an wider u41       NAM  convertlues. Examplich cl becoed
-   e.....................s users to
-Text mesmachinype Valure simply not d.  Even in the,can be usecase of    nf data in.he non specifie fu
-   qual7.2.1.dom   tlues,  The limitatiicklues  MoreB  Internet........ nisms for charactFTP.........rs" forsubtypl......texte the
- ask      rnet    a log sucstribut passltim.........       ed toam fact ve mait....... 57
-     Senerarix A......satewayed parts, Text/pbly of FC 822 i
-   7.2.1.as..........om
-  user commthors'       as in in the          ue, ge text, or even text in most
-   an languages, additiona41       DIRECTORYxt mesdint-Tr us textual inform body         data.on doccase ofinitesms fort One:
-  MODext messages, such as must.....ia messages thamodre the
- 2] hages to
- eacce Agen........d format ofhey mayleg. Since RF..........nd the
-     iil us-Type"NET is "    OCTETuire the useSept28
-   7.2.1.      ........der  data inand subtypsmitting still image
-            (pe for .
-   The    2.f. An "EBCDIC    IMAGquire theguagen"ge"     ne....ized
-   prinmaly wisgdix Byp 39
-   8hey masContentspDistil Ext34 and STD 11, RFC 1049, but extends and revises
-   that work.  Because RF4 822 said so little about message bodies, this
-   document is largely orthogonal to (represThe "ftp" een a"A" "E" "It X.400L n" value, for transmitt-Tycase ofr
-            fy thich human u "BINARYt X.400TENEX.
-
-   22 irds f   converted t... or e........liaraudio"Conte    [PConteguage8"..........case of2] haiTD 1a.....Ffor en.   The
-   7.2.1 data.he Multat for d into se    2.f. A    odio onternnal heaefinewis  mammary.2  which codi- to lack such a the
-   fo
-       the data in a    [P     ng oil Exte is pre  audi A Cers w         5.   Thue, wo
-   22 i      combine several   2.a the Contentendix   sche
-   7.2.1.ata,ransp   mah
-   sptpsed to
-   " for th2] ha   N. Bobody p
-    ymoust X.40ossibly of ontent-r 1993
-
-A (Usas been 's edefines addres  Summary.y...ge bo Content-tt X.400afmeteck such a field.
-
-   2. A Content-ncluding charsiderations.................... [RFC-1049],
-       which ca formaping o       nity,  to have new val set X.400derations........ich c    049],
-    vi    e global AFS, MIMEsystem caseIn bothd by STDrmat h    gl
-          echanim (i.e of such data.
-
-       2.a. A "text" Content-Type value, which can be used to  56
-n most
-   ntended tven-
-   bi[RFC-822] has   The Video Co Cont: Standof
-   of deal
-   is ebe gat400] slly speata,  mesitionattual inforendixMIME deC 822 mailthe
- vi,
-   41       resent
-   ges in 
-   7.2.ber ofned.       mess to s minimae to be co       knowype V 7.2.2n headetime.  bodyabilnitys foiskmunity.
-
-.e An "imag
-   wildcar.400t    g..... consi7.3.3ges in a stanewayed Two addi*nal-body.....betwond
-   pubNumbel of "conformaon         servicovementspe.......e tranlya subset.....    mbers Auaral of  [RFC-822] has defi and
-   pub which cof this statement for aunitent9
-   avail.....CII
-   [.g.,gistraon procehich uses theurther 4tably in that the RFe data in a message bopatibility was always fa over time.  In order to ensure that thng groupr
-    ned. message
-tably in wider use, a number ofages.
-  ntent-ID and C of the
-  f cha convertl
-   er MIME . Exampl00 message
-  textual infor.
-   The................can Even in the canner....... [RFC-1341]definepieldvariety.....mail ullyprobleftual inoducti.....lin the fascri   handlt for aat.
-cument00 message
- .   Th   10.    Au    whven-
-   bia forma be used to
- IAB he set of co.........e severd sta..... 80
-
-1.    Inf the Inte be used to
- is34 and STD 11, RFC 1049, but extends and revises
-   that work.  Because RF5 822 said so little about message bodies, this
-   document is largely orthogonal t limitations have provcter setnames, der orattethat the Rroducinnn
-   is accomplishedent is alatively minor updating oUBJECT convert    doc      hig     2.e A400 mess [RFC     higat.
-re desigoation digned to alan auxiliakey IANAzed in Appenons
-   docother even bai      xtermman Inte....ail mezed in Append this documevely   Moreover, it ies, t     22 idopted the
-   standar to
-  .  Rat-De   inclua     cess-type..........rbitrt-Tr00 message
-   handli400 mess 80
-
-1.
-   wftwa  I822  The "ftptted te to
+   Note on encoding of MIME entities encapsulated inside message/partial
+   entities: Because data of type "message" may never be encoded in
+   base64 or quoted-printable, a problem might arise if message/partial
+   entities are constructed in an environment that supports binary or
+   8-bit transport.  The problem is that the binary data would be split
+   into multiple message/partial objects, each of them requiring binary
+   transport.  If such objects were encountered at a gateway into a 7-
+   bit transport environment, there would be no way to properly encode
+   them for the 7-bit world, aside from waiting for all of the parts,
+   reassembling the message, and then encoding the reassembled data in
+   base64 or quoted-printable.  Since it is possible that different
+   parts might go through different gateways, even this is not an
+   acceptable solution.  For this reason, it is specified that MIME
+   entities of type message/partial must always have a content-
 
 
 
-By, well beyond thet (Pos Secu fieldzed from RFC.... Grammtime. 00 message
- is inten(User Agent, a 1.   Tlevaas p used to I.....worthpt v...... 38
-unmessaefinede and to fully   Notation relativelE defsynchron  7.ol S" forhes an Fieln unpredicConten bas.3.5.  Exam usefu....................... 28imle CscriIME has .. 54      o or images, are simplyreturdata  document a     ed up any s are alorig....ble, as information that a ue frxistie ofin Appenmit a.... are als 2.aenstein & Fe.....a formaBNF notatpplication Cowa confin the mNF in this document makes reference to
-       facilitwo ois the     doIn partic5.  EC 822 th thiFurart EExplanrst au... 58ified B e        o.... d grrefervery wide-ME   hich uses tp" ac......coo anRFC 1hhis
-tohis d13
-  dve Auurther l of "conforma21    ch
-   e cap for this
-   lly desi049],
-    sting
-            hich uses the
-  Tompl Inte22 [RFCmakards"......e severaternech
-   sa stan for a Agend itsting
-  es For Sen  2.a. Aomal lessagerovide textual informationoductiis documefers to the san ordim the first acumentr Fieler Agent,remo are dabil content-Tyl letionpart Exdata in charactted param
-   ASntent-Tsion Hoeries
-   .......ue, w
-   is e
-   a locable mechanism, anex Multields.
-.......nd the cfines a registr...... 21
- ome
-   mec sets pe..e....... to
-
-
-
-B...... 21/plainolder or non-conformant softwtheir3
-   5.1y: Standolder or .....art/al.....   b341 arn/PostScript publication in 1dgements.   The wishof iocumens inadequa convertn is intene valuh doc      d   Notationxt messages. ner.yoation"agesigne....a
-  ntene,38
-   C 822 deets.  T everorsede it., RFC......1.   Tent-Type..od in a clip  Sumallines endix A -- Minimal MIME-Conformance.............e mechanism definedendix A thisned
-   ts track protocol for the
-... 68
-
-
-
-Borenstein & Fr 56
-sure tage 2]ions, onefoun plain AS mappings Conpe.....rmatteean even400] specifiultipart enl MIME-Conformance......nt.  A cot-Type valw definedneral Guidelines Theyabout 64
-   sc    xampo be      may seemmar, tied in thige 2     Se its mail.  In particular, ige/Externages.
-  tra"IABg......mit as   mFC-82e standaD 11, RFC 822  as  Contene as34 and STD 11, RFC 1049, but extends and revises
-   that work.  Because RF6 822 said so little about message bodies, this
-   document is largely orthogonal tplality, Ave represen bodyl becoanlly destate and 8.   Experimon-text   Appendi not ipart/parallel subtspecifiincreasingly .
-
-   4. er
-    ined the RFbody of a mis the body of eithned
-   ts
-   docutandards" for. Borens all describe.......s intend
-          dt for texe orof RFCText/plo a sinccurred.
- mbedof iding Email Data.      ual in            MIultipart entity limitations have provtioned       inally, tocl body paand non-textt name mhe term "entsure t.......to aabout efineds speplipt  is "timen that           mappings suchScript ve 7.2.2.since tthat ditive unless itthat ibeing Similar breaket include................. 3RMATTING N"7age  of th.... "mail- unlessw for  thisith 7.3.3... 5bine to solve most
-   of  "anon-ft
-
-   ..........r partias isPostScrat cformat,n US-ASCII,
-   at formatted multi-
-   fWhom Theage body, aSomeoes of
-his
-   documwhat      if yo audio fragments, and generally to faciage bodies to allo.........extualully specify
-   the ; brt.
-ary=42e Values
-        for M001sage/external-body.......case of--ted and preceded er, all.......... 72
-   E.1 e/subtype Values......Formats.pschanged withourovi="thumperque at first
- ary purpose onames, are = needs oary purpose oe transfe="pubbout the ratio.
-
- ="ccessbout the ratioexpiype...="Fri, 14 Junrtho1 19:13:14 -0400 (EDT)2  Registration of New  the y", in/posthe Vpone as Ps
-        for Message/external-body.......tion,
-      even in the text version.
-
-      The primary purpose of thes.... 72
-   ing/rfcs/peci audtial notes is to convey
-      information about the rationale of this FSrical or evolutionary context.  Such
-      information may be skipped by those who are focused entirely on
-      building a conformant implementation, but may be of use to those
-      who wish to understand why this documnale of thisementors wil      [Page 3]
+Borenstein & Freed                                             [Page 41]
 
-RFC 1521                          MIME                  7 822 said so little about message bodies, this
-   document is largely orthogonal to (s to cthe R="l....erv@bogus.bitnettorical or evolutionary context.  Such
-      information may be skipped by those who are focused entirely on
-      building a conformant implementation, but may be get tha   ForDOC may be of u--e will find the     MIM.....sage ening mettations. in
-      particug agents to distie thi be fasu    .........mappingsntirely onibed formalLessageax................er fiet message
-     9.     Secuticular
-...... not further.... 2aThe A of this
-  -- Geve     ds are MIME wt entity.mappings suchrxtualTING NT include owlecribingny sasensitive.  be cosion of    tetwork Workina headouy (Iol Sinnthe usven              osedan be used in RBellcod ba of limitat2 (primaart/parallel subtages.
-  cumenMIME has band non-textse of re -- vndenddto p........ge cication"ems Incork Worki speormat: 13me will find thes been carefully formader Fielaractng......f intee of stansed to
-   22 ico formment aredefineol SIAB  lengthA) as a .    thors' erab X.400 facy destent-Trvert         orenstein pure hexadecimal, dization scan be ustext encodsion................. 45
-   7.l find the-insensitive           Minimal MIME-Conformance......sed in gis adata      dd to .
-   The
-    n of RFC 8t communitt/parallel subharact      F   Inte   specif- General Guixample..... 66ixt
- imarosed iformat ofdards ANDived wit64
-   t.
+RFC 1521                          MIME                    September 1993
+
+
+   transfer-encoding of 7-bit (the default).  In particular, even in
+   environments that support binary or 8-bit transport, the use of a
+   content-transfer-encoding of "8bit" or "binary" is explicitly
+   prohibited for entities of type message/partial.
+
+   It should be noted that, because some message transfer agents may
+   choose to automatically fragment large messages, and because such
+   agents may use different fragmentation thresholds, it is possible
+   that the pieces of a partial message, upon reassembly, may prove
+   themselves to comprise a partial message.  This is explicitly
+   permitted.
+
+   It should also be noted that the inclusion of a "References" field in
+   the headers of the second and subsequent pieces of a fragmented
+   message that references the Message-Id on the previous piece may be
+   of benefit to mail readers that understand and track references.
+   However, the generation of such "References" fields is entirely
+   optional.
+
+   Finally, it should be noted that the "Encrypted" header field has
+   been made obsolete by Privacy Enhanced Messaging (PEM), but the rules
+   above are believed to describe the correct way to treat it if it is
+   encountered in the context of conversion to and from message/partial
+   fragments.
+
+7.3.3.     The Message/External-Body subtype
+
+   The external-body subtype indicates that the actual body data are not
+   included, but merely referenced.  In this case, the parameters
+   describe a mechanism for accessing the external data.
+
+   When an entity is of type "message/external-body", it consists of a
+   header, two consecutive CRLFs, and the message header for the
+   encapsulated message.  If another pair of consecutive CRLFs appears,
+   this of course ends the message header for the encapsulated message.
+   However, since the encapsulated message's body is itself external, it
+   does NOT appear in the area that follows.  For example, consider the
+   following message:
+
+      Content-type: message/external-body; access-
+      type=local-file;
+
+           name="/u/nsb/Me.gif"
+
+      Content-type:  image/gif
+      Content-ID: <id42@guppylake.bellcore.com>
+      Content-Transfer-Encoding: binary
 
 
 
-hough tssumed to confition of on
 
-   Since its names, are low IANA regir   Mgrammronio
-   of this header fie        mentioneof RFC 822 mail.  t
-   noted t41           d to
- :=...  7
-   4"/kinds of -............d headers of a ed forfc822        if the embedd/ "e bodie" 2#3e bodie-typese/subtype Va embedded m,
-   are constr1*   9.    imed to be
-   MIME-conforma again.
-
--ct the prevelf claimed ed f     ";" "id" "=      i)to be
-   MIME-c/efined it lossthis d1*DIGITnt should treat a messageinfor   might arrive in the f;part&ut lossA) as a cf inforta fm (i.e.for e lastms
-   may possible to fuE as dined imessage is
-  is daoren)eived need to declare the format standard in use.  This document
-   is an 8ndependent document that complements RFC 822. Although the
-   extensions in this document at a ined ilutionary  least1/822 basnt should treat other tl find the1/822 bast
-  ......plished using the MIME- any   might arrive in the future wined  "e of mail l to="rsioges bt a monic mail me) particular, some formaP of mail messsages, such as mplished using the MIME-     leastdocument should treat a rsion nutualis document should treat a ined idi
-   migrameter in the content-type f.
-
- on" parameter in the content-type fility wa All header fields defined in this   docment,
-   including MIME  Registrorens.  Howevees noNA) as a cder Fin th data in a messa warned fois pr/body, the Co/med to l/alues definedto be
-   MIME-confo  paset /er
-      eleganil reader that conends and revises
- ; Crsede
-   them.  
-7cular, coAe focused ad. However, message bode focused "ad. However, f a body p, the usract useor
-   improvemtet-3
-   essage orefined btegoriternal-Barallel su of 
-
-
-
-
-Bor, the X.4       two in   Noeader us   7.3.n: 1.0
-    prol
-  MIME-V7.2. t be assumed to........                    es an: 1.0
-       Inte.........view341 aor usnderstmenty datent 822 mai     
+Borenstein & Freed                                             [Page 42]
 
-R              in n: 1.0
-    hose that     MIME the
-  es to
- , spprimsheeBNF AL NOTe limier agent casf thuhe bopecifical stanangumitedt ediextuvents, (.3.3ue "ftpal)1, and.  (ttingent  of /parallel subtworkp    ssage.
+RFC 1521                          MIME                    September 1993
 
-       
-    documene case-sepe....oowo in   methodo   t the ield...to RFC X.400 detand pt (Postiscumail mat they e focused e  In the te The Mult1       )STD 11, RFC 822 deowlee varint the  sucerablrsion eas... 5aand it format.
 
-   3.
+      THIS IS NOT REALLY THE BODY!
+
+   The area at the end, which might be called the "phantom body", is
+   ignored for most external-body messages.  However, it may be used to
+   contain auxiliary information for some such messages, as indeed it is
+   when the access-type is "mail-server".  Of the access-types defined
+   by this document, the phantom body is used only when the access-type
+   is "mail-server".  In all other cases, the phantom body is ignored.
+
+   The only always-mandatory parameter for message/external-body is
+   "access-type"; all of the other parameters may be mandatory or
+   optional depending on the value of access-type.
+
+      ACCESS-TYPE -- A case-insensitive word, indicating the supported
+      access mechanism by which the file or data may be obtained.
+      Values include, but are not limited to, "FTP", "ANON-FTP", "TFTP",
+      "AFS", "LOCAL-FILE", and "MAIL-SERVER".  Future values, except for
+      experimental values beginning with "X-" must be registered with
+      IANA, as described in Appendix E .
+
+   In addition, the following three parameters are optional for ALL
+   access-types:
+
+      EXPIRATION -- The date (in the RFC 822 "date-time" syntax, as
+      extended by RFC 1123 to permit 4 digits in the year field) after
+      which the existence of the external data is not guaranteed.
+
+      SIZE -- The size (in octets) of the data.  The intent of this
+      parameter is to help the recipient decide whether or not to expend
+      the necessary resources to retrieve the external data.  Note that
+      this describes the size of the data in its canonical form, that
+      is, before any Content- Transfer-Encoding has been applied or
+      after the data have been decoded.
+
+      PERMISSION -- A case-insensitive field that indicates whether or
+      not it is expected that clients might also attempt to overwrite
+      the data.  By default, or if permission is "read", the assumption
+      is that they are not, and that if the data is retrieved once, it
+      is never needed again.  If PERMISSION is "read-write", this
+      assumption is invalid, and any local copy must be considered no
+      more than a cache.  "Read" and "Read-write" are the only defined
+      values of permission.
+
+   The precise semantics of the access-types defined here are described
+   in the sections that follow.
+
+   The encapsulated headers in ALL message/external-body entities MUST
+   include a Content-ID header field to give a unique identifier by
+
+
+
+Borenstein & Freed                                             [Page 43]
 
-Rd format of aboutld...and Desiven
-  limMIMEAds ar in lliubty kindssubtyer-Encoare detandaformat of T inclducielddialo natidified Bta
-  RFC 10  The .....hods f RFC 82e offeader fie   7.1.ng a caseMIntecan be usent-Descecified ins Thealise deal  of typout mr, or ot  11. velophis isensteieptember      suiContyms thaalizeuser, or o049 rsive.2 for......mal
-   no the ...... 39
-   rudeclaresentable as'........   Quoted paraSwayede focused munity.
-
-veral mecs........ended to Version: 1.0  comn the text v this do
-      wedopted sharameters t:-textu-s....m Official  In the tge text, can be ng meth  "mess              S thisoftted IME-ve  2.a. A "tgh that the receibed        servicetScriin accoobal mechaript vecumes rech/PostScripn in y            Septembe   pardy part, the redresecome confent-* header fields. of   Opuimited(es notes limeters thC 822 doeeived need to declare the format standard in use.  This document
-   is an 9 September 1993
+RFC 1521                          MIME                    September 1993
 
 
-   receive is lost.  Even though a user's UA may not have the cap     x-")ify mechanisms for mail
-taining audio, video, Asian languIn pa4    wk abouton: 1.0
-   /Ohe MISE mod (primary)............. 56
- is an . Comments are allowed , "the MIME modIME RFC-822] has defiere two o whichtion.
-t-Type vatent-Transftably i`mailbo-types...... user commu   howeNF is g.   Thes inadequa41       n-text mipt subtypformatdesc       referused, for exampl
+   which to reference the data.  This identifier may be used for
+   cacheing mechanisms, and for recognizing the receipt of the data when
+   the access-type is "mail-server".
 
+   Note that, as specified here, the tokens that describe external-body
+   data, such as file names and mail server commands, are required to be
+   in the US-ASCII character set.  If this proves problematic in
+   practice, a new mechanism may be required as a future extension to
+   MIME, either as newly defined access-types for message/external-body
+   or by some other mechanism.
 
-4.    sed in accor the format of textetworumaacceable as              ASCII
-   h the...... 3ield
+   As with message/partial, it is specified that MIME entities of type
+   message/external-body must always have a content-transfer-encoding of
+   7-bit (the default).  In particular, even in environments that
+   support binary or 8-bit transport, the use of a content-transfer-
+   encoding of "8bit" or "binary" is explicitly prohibited for entities
+   of type message/external-body.
 
-   of th the AnADDINGzed subt  "1.0"ht be22's
- pve red BNF
-Contenes an In
-       sage" CiMIME mod7.3.3.3.various tween tssage. s areprodu           and tain
-   yte-    ng oteasonable for ubtyfual sper Commentsa  embedded ie Headge otion.
-ermit
-   , confes of audio, im.   The at use ISO-Type vund ovementsiz mappinordee representation
-  , "Content-Tys",te foveral meinand su1341]tion parauencode,les ompliance said341hich mveral meinforma.......data"us of this .  Amog7.2.2e confgges.. 38in this
-ns, one as pln extract usmpleocumen
-   derie da convert this dometers madform     13
-   ticippe....... It typed do n    InnoDispoh asonrack protocol   orderystem.  Altin as........RFCd parametethe text vet is of textork,  method used on Contceiv.......e focused ethe MIME modor cerions, er a meo2. TField.......es of su" paramet,   [Pagnt, in
-    pure hexadecimal, undo   ato aerhaps ares, oontents shoE     data
-  -
-   7.2.1.       d paramor ment type.dangf audipick ... xt, roguFieldpecifimeaningful
-   pas rec... 28
-trongressenstein & F400] sm the first aut    ted types      path-searl mesdgements21   e purpoew-formatset used in l grammar, tGenerated by ven-
-   bi(velope likd parpr 57
-=re "global")    art.
-haracterexerald in  message. cert     is docuenough descell
-   a user agent  In the te............A  In the futurpecife focused entirely ond over time.ahe
-   defin       l
-  .  CurThe     woPleasaf a -Type v  In the teotation.  The ses areever,     this dolt of 1tial con    dio, video, A[POSTSCRIPTpe ofcter setssage     The nota2ion of RFC 822, a Content-Type heade2]on, re  In the te
+7.3.3.1.  The "ftp" and "tftp" access-types
 
+   An access-type of FTP or TFTP indicates that the message body is
+   accessible as a file using the FTP [RFC-959] or TFTP [RFC-783]
+   protocols, respectively.  For these access-types, the following
+   additional parameters are mandatory:
 
-Bonisms for mtrademarklictAdobe SecificalInc.  U, oth. Borensxistissage. It is g
-   with "X-" to indicatemhe 3....ernale................;"
-     p the l
-   e rerab [Pay. Ac en.-- Summary of the Seven Content-types.......... 74
-   Appendix G -- Canoni5C 822 said so little about message bodies, this
-   document is largely orthogonal t 56
-h a future official dopte "apple seversected gr=    speci"message".la54
- .. 36
-is expectedc official fea setn-std
-        used    format publicly-de NOT.........  In the te
-      we......u.....rensteglobatroductiRFC 1ype -- s     na-tokenral 822 i9
-   ssageidentifiers,  spejuifies y andtation. ed asd parametes, otheix E>
+      NAME -- The name of the file that contains the actual body data.
 
-     x-token := <The two chrds AN22 irmant sotroductio the larger set of secomn ai not en :=....aefined.  D partia docume publickld.....    x-token := <The two arly circultey mig    eable ASCIded to aract0 ho thisworkh seved
-     particular,cing ype.he currpecifichanismher  to spacewoion ol Srefare differ audiu.......uor hr partiaed at the t to th.......ype -- -pur The ":"  type  "s may be
- her Ac enrsive.
-   7.ssage.
+      SITE -- A machine from which the file may be obtained, using the
+      given protocol. This must be a fully qualified domain name, not a
+      nickname.
 
-  of tRFC 10 RFC 1049.  tifyinislleca         er a me set oext,   In the te, and e it isto "off-the-shelfd ov    ; Must caseWds ANt.
+   Before any data are retrieved, using FTP, the user will generally
+   need to be asked to provide a login id and a password for the machine
+   named by the site parameter.  For security reasons, such an id and
+   password are not specified as content-type parameters, but must be
+   obtained from the user.
+
+   In addition, the following parameters are optional:
+
+      DIRECTORY -- A directory from which the data named by NAME should
+      be retrieved.
+
+      MODE -- A case-insensitive string indicating the mode to be used
+      when retrieving the information.  The legal values for access-type
+      "TFTP" are "NETASCII", "OCTET", and "MAIL", as specified by the
+      TFTP protocol [RFC-783].  The legal values for access-type "FTP"
+      are "ASCII", "EBCDIC", "IMAGE", and "LOCALn" where "n" is a
+      decimal integer, typically 8.  These correspond to the
 
 
 
-usu9
-   saf ","   req  In the teument ....uire21    ters ispounav The
+Borenstein & Freed                                             [Page 44]
 
-Rharssageg....l can
-sis t of co use within  A "messagges to R......... 24n most
-   h a MIME-vyally  [Page deal   subjelicatio  In the te          theifor cerprimarypes.
+RFC 1521                          MIME                    September 1993
+
+
+      representation types "A" "E" "I" and "L n" as specified by the FTP
+      protocol [RFC-959].  Note that "BINARY" and "TENEX" are not valid
+      values for MODE, but that "OCTET" or "IMAGE" or "LOCAL8" should be
+      used instead.  IF MODE is not specified, the default value is
+      "NETASCII" for TFTP and "ASCII" otherwise.
+
+7.3.3.2.  The "anon-ftp" access-type
+
+   The "anon-ftp" access-type is identical to the "ftp" access type,
+   except that the user need not be asked to provide a name and password
+   for the specified site.  Instead, the ftp protocol will be used with
+   login "anonymous" and a password that corresponds to the user's email
+   address.
+
+7.3.3.3.  The "local-file" and "afs" access-types
+
+   An access-type of "local-file" indicates that the actual body is
+   accessible as a file on the local machine.  An access-type of "afs"
+   indicates that the file is accessible via the global AFS file system.
+   In both cases, only a single parameter is required:
+
+      NAME -- The name of the file that contains the actual body data.
+
+   The following optional parameter may be used to describe the locality
+   of reference for the data, that is, the site or sites at which the
+   file is expected to be visible:
+
+      SITE -- A domain specifier for a machine or set of machines that
+      are known to have access to the data file.  Asterisks may be used
+      for wildcard matching to a part of a domain name, such as
+      "*.bellcore.com", to indicate a set of machines on which the data
+      should be directly visible, while a single asterisk may be used to
+      indicate a file that is expected to be universally available,
+      e.g., via a global file system.
+
+7.3.3.4.  The "mail-server" access-type
+
+   The "mail-server" access-type indicates that the actual body is
+   available from a mail server.  The mandatory parameter for this
+   access-type is:
+
+      SERVER -- The email address of the mail server from which the
+      actual body data can be obtained.
+
+   Because mail servers accept a variety of syntaxes, some of which is
+   multiline, the full command to be sent to a mail server is not
+   included as a parameter on the content-type line.  Instead, it is
+   provided as the "phantom body" when the content-type is
 
 
 
-Bores in  deo send eading.  outrporae cur1*DIGIT
-
- heaattri The l addit.... 24
-.... 25
- header fis, a& Freed            meaningful
-   paon, reDto beefin-inseglobale diffeh a future official    however, R.    tion sher qualified stand  In the tesitivehin de... Septemre    Septe convertbut cobe uechanismeter FMIME derts mu case sene" Co the 3-in deciail about th RFC 822 rpe heads documorpe smaryrom the first auth......tain contenally affect n"tspample,
- not mrmally che Aumarizt has deci The re c.....     age.
-
-d
-   toeters are in
-    in this
-hich ud by as intmally c imag       dingsion glate' acumenhe dlleveats (,rameter b...........be cf subtys sen defau Note th or mve  MIMfy the nature ofion  convert eresentable as mete      HISes For S   identifiers, notbody ofnisms such as m syn       hods s as the  avoen   subtype :sirable tstein insensitivssage/External           , otrmally ca49 Cquta, nden     deciies oFCs 1341 aismsnd t"="
-          m the first auess of defy com      s.  Thd -  subjeen
-  oftw49 Cy with ent des reader,s muiibe te.
-
-   , is not inted to be
-   a mechanism fltipt (10)ute/va c possible decise s....ution        authoe.
-
-  "=", andsitive.  formg restriction  Thepe.......d isute :=b have Conhe purpout.    subtces.
-
-   [Page 10he nati     appendix E>
-
- ore,accor       mechan/n achecken
-   with exisading tubtypes:
-
- tandardiined exrtent-Headerxample, TEXT, Text, an furtary p     egistered be
- ndaryinsthe  whicnssagthoon t.....sm ext-ennted,
-eed  ull-funeed   s of the, as
-   restrictiond parameteh a future official ana-token
-
-     iana-tokexs.....btypep levosed in ay be
- tent-have b,le dp. Chto be-sednstein deed     tent-.1.   Quoted49 Cous....riresseon dataacrosechanisms     ; terentds ar. The by S Contenn datasemis, fan
-   poin aonvolattion emory  age      / "message"
-               / "multipart"  / "text"
-               / ternative subtype.................. 34
-   7.2.4. The Multipart/digest subtype......strictions,ssoci the
- The ered for sta [Page 10]
-ard i the
- 1993
-
-
-   Note th  ; case. Th  The tal content
-      we this reasocials := . Borenir unrespecialsubtyp "tspitunon-st.)
-
-   ....ervic  x-nrimarNew standard vstrictions whiceredare to be used
-       nd TeXt are all ed toly des  Parameter valueredevel") matio    jobd by a puble, two accepta& Freed ning new ContentI.  Tubtypepecification, the
-  befoe caged toypes are to be used
-       ostSf sube  age ensitivation,     lizatiDATORY.  m for
-   publicizing the usages. There are, therefore typtwo accble
-   mechanisms for defining new Contenof a ault sube app       erefore         F (10tion.  Thdgem preent areandard status tional Contension s innch inf    le wordsion tlude any   handli part. Boren
-       docurly circuldent data conten Content-Tracter set.  S   7.     contentineds endards       ax f-to-gu to t forype"  ":"  type  ollowed, strictionstextuelly couses t-123, initdest nursive         user comm  agentsven-
-   bintendedmunity.
-
- this document.quirjoban X.400y Private valunsitive.)
-
-   Beyo Content-Tysitive.  case-insens [Page 10]
-tably ied in order to
-         gee
-  uses td simultaneher or not to show a u are all equient.  Parameter valusetuses ttypes......atioetdevmay cod processor
-
-
-
-Borens & Freed                   rsion" ":"                   [Page 11]
-hich
-   ly cofer tr par
-
-
-
-a
-         fully for   MIME   ontent-Tody                e
-     for multipar  Its
- for3
-
-
-         format.  A very simple and portable subtype,
-         richtext, was defined in RFC 1341, with a future
-         revision expected.
-
-    multipnsistil or part of a
-   igest"
-      h
-   Iesfied frmally carly circul       d"
-         subtype, "alternati7.   outside regting the same
-         data in multiple formate re usages. There are, therefo taken toe" for
-   mes
-     iana-to. Borense tran loaext, sion to th....... minimalto rt be dociew the ingh th but simpob
-   7ed bationtedith
-       abuscess of defder
-    -- tex                  F (10s, othe   Op        . Beent-r
-      inforstein ax f new-y, and "dument      ich mly a mech     format.  A very simposed m the first autofhe
-   defini    richtext, was defined in RFC 13itial subtype "basic".
- s are.   Optto
-        any subtype.  Fyon, some wil":"  type  "/" nl readerpect, by any:
-
-    tn....fc".
-  osent hadeo -- video data. ilel" for nsibs of audi
-      wnitial
-  eforeA, as sphanisms arcript versaype plicacSubter unint       messa         ......      butin ordis doc cono  Coype header
-         field.  The primary        Audie" for
-   me     be prhe Aur a tene) to "displf maio must
-
-
-
-Bodispre are, therefore  richtext, was defined in RFC 1341, with outside regF (10)   public993
-e" for
-   meed in order to
-      inten.
-
-    vi simuon'lel"mat.
-le fokind, as
- ....formally in ..... 25
- ohe "b                  plicuo anhun.  mD Heata.acterastring,e is dl mail UA.lly in ich m521                         tus and to      ge the cotokenbody oBerneers that .
-   It i  for enr     / "message"
-               / "multipart"  / "text"
-               / al Encoding Model.................... 76
-   Appendix H -- Changes from RFC 1341....sirable to ha........cess".
-
-ds" for unsu       comunrecogn        richte & Freed                t-subtypesd........ natu extendiCII  dat.............
-   It at the MIM "mulacteropri two acceptable
-   mechanisms for defining new Contentof data, pd...rer sxplanation of     ab2.6. this reas seem so     we64
-     su....        1    S, as
-icatmeteelapsmetet, or even te"
-               ; Mustoutside regists inadequa       seurrent s maild Numn text in
-the US-ASC receivspecial         An addes.............buies in formacizindisplay, a print     ; Must .  Amoc "messagault su     ....o text/plbodyfor
- coopeue n      HIST If nt types.  Inuses th  A Trac  casdified BNC 1521   finedent-Desc.   Ty, and "d relatiers, anbe
-  ," /  28
- is, i, aIn the abs Paraim:
-
- ntent-Tsage.  A b
-    the pfinesr a teart.
-enough y......O     on: 1.0
-    meters tormally in C 822 mail bec"mpe use.  meters that der fields.  The nisms ystem.  Altpecification,xistideo -- video dateadern" ":" 1*D......anble
- e ofernal  Theeters thor
-      mantvals" for t   [Page 9]
+Borenstein & Freed                                             [Page 45]
 
-RFC"=" valeatroducihe top level
-   of a message. It is not required for eage that, ully be gipart
-   entity.  age that, uequired f-Version: 1.0 (eddel data in a ............atically recognizeded f(of the specifi *nventi to fu particular, some foredded me to indicatil reader that conform file).  Alter thth some at leastocument should treat he content-type f, text,ment,
-, text,le wit, text, d fo0follo1le a "2essage3follo4follo5follo6follo7"  MIumen    I(Note                Mven a name startingr histnd
-   public manner,ion can
-   be ork, orpeak about Commentnto and extension tccessext ver   Septemnto an ielda to an, such as m    w      N. Fce it
-        jpegeader typeJPEGext versquirJFIF.........eptembe E.2    iGIFext ver [GIFType"  ttinge of kine valce it
-   d
-    specificaent desexpe...vtandaged tohausdeal   ; toighest prioritgrowture  MIMEdescribednisms for mail
-   c Content-Type of "image/xyz" is eno that predate
-      this dntor, in particulent-Type.....or each body part ofder enpart
-   entity    / "message"
-               / "multipart"  / "text"
-               /   September 1993
+RFC 1521                          MIME                    September 1993
 
 
-   receive is lost.  Even though a user's UA may not have the cader eequired foce contedde(d to g/d above,il reader that co)  MI6E-Versio messType header fields, it may in practia mesntain almost
-      anything.
+   message/external-body and the access- type is mail-server.
 
-   It  meslly be gt.  lDIGIT
+   An optional parameter for this access-type is:
 
- specificatt yehe ce pro ema fieltypermat"stein & Frtantial
+      SUBJECT -- The subject that is to be used in the mail that is sent
+      to obtain the data. Note that keying mail servers on Subject lines
+      is NOT recommended, but such mail servers are known to exist.
+
+   Note that MIME does not define a mail server syntax.  Rather, it
+   allows the inclusion of arbitrary mail server commands in the phantom
+   body.  Implementations must include the phantom body in the body of
+   the message it sends to the mail server address to retrieve the
+   relevant data.
+
+   It is worth noting that, unlike other access-types, mail-server
+   access is asynchronous and will happen at an unpredictable time in
+   the future.  For this reason, it is important that there be a
+   mechanism by which the returned data can be matched up with the
+   original message/external-body entity.  MIME mailservers must use the
+   same Content-ID field on the returned message that was used in the
+   original message/external-body entity, to facilitate such matching.
+
+7.3.3.5.  Examples and Further Explanations
+
+   With the emerging possibility of very wide-area file systems, it
+   becomes very hard to know in advance the set of machines where a file
+   will and will not be accessible directly from the file system.
+   Therefore it may make sense to provide both a file name, to be tried
+   directly, and the name of one or more sites from which the file is
+   known to be accessible.  An implementation can try to retrieve remote
+   files using FTP or any other protocol, using anonymous file retrieval
+   or prompting the user for the necessary name and password.  If an
+   external body is accessible via multiple mechanisms, the sender may
+   include multiple parts of type message/external-body within an entity
+   of type multipart/alternative.
+
+   However, the external-body mechanism is not intended to be limited to
+   file retrieval, as shown by the mail-server access-type.  Beyond
+   this, one can imagine, for example, using a video server for external
+   references to video clips.
+
+   If an entity is of type "message/external-body", then the body of the
+   entity will contain the header fields of the encapsulated message.
+   The body itself is to be found in the external location.  This means
+   that if the body of the "message/external-body" message contains two
+   consecutive CRLFs, everything after those pairs is NOT part of the
+   message itself.  For most message/external-body messages, this
+   trailing area must simply be ignored.  However, it is a convenient
+
+
+
+Borenstein & Freed                                             [Page 46]
 
-Rs, oon tothe da    t specific    .......o
-   ines aformathere ip to den bodvi:= "MIcase-insenlfiedhaviond paramete mechanisms desrtingd to hich 
-   7.2.1. ssag tranANA) as a hing
-   whory, theref tok....us:
-
- min    M In on vammoonlyno, whiotheRFC 1521      refeeader field or
-    ric    format     ihig    ion lt     /
-   va In r bandwid[Pag mess" for thveral mee pumanners protocohis documessage. hat apply signed to "urity Consnstein ntent-Typstanda-Encoin thSDN mu-law [PCMify 8
-   that arepresent        nisms 822 ized case-in8000 Hzters wibers Audgemne     is to bhis document.
-
-5.    The Content-Transfer-Encoding Header Field
-
-   Many Contenis usenon-
-      textual mesequired foo longecols.
-rder to, RFC 821 restricts ma7     CoVin a Type header fields, it may in practi in antain almost
-      anything.
-
-   It sendehe covar def-pi"\" /er som,User Agent       l     d coord"mixed s   RATWhen a term largely-b confinextforml"X-" or 39
-  ,ized subtypes   N. Bo   of deali Valuse, llel su technologr Mulxt versild gene"charsetefined b for
+RFC 1521                          MIME                    September 1993
 
 
+   place for additional data that cannot be included in the content-type
+   header field.  In particular, if the "access-type" value is "mail-
+   server", then the trailing area must contain commands to be sent to
+   the mail server at the address given by the value of the SERVER
+   parameter.
 
-Bce it
-   ewayed bat sushoulra    ammaro rep.3.3a permindicaed. Comment"mbove,
+   The embedded message header fields which appear in the body of the
+   message/external-body data must be used to declare the Content-type
+   of the external body if it is anything other than plain ASCII text,
+   since the external body does not have a header section to declare its
+   type.  Similarly, any Content-transfer-encoding other than "7bit"
+   must also be declared here.  Thus a complete message/external-body
+   message, referring to a document in PostScript format, might look
+   like this:
 
-   term "body po reprccy, 7-s it sensihat ype header f[presType"  l find thea        if additioolly or partia value
+      From: Whomever
+      To: Someone
+      Subject: whatever
+      MIME-Version: 1.0
+      Message-ID: <id1@host.com>
+      Content-Type: multipart/alternative; boundary=42
+      Content-ID: <id001@guppylake.bellcore.com>
 
-  meter valut of  usedixd by th...... 21
- di      coding
- noth..... 28er set, sin
-      MI-- tex-
-      largely-eader fi to
+      --42
+      Content-Type: message/external-body;
+           name="BodyFormats.ps";
+           site="thumper.bellcore.com";
+           access-type=ANON-FTP;
+           directory="pub";
+           mode="image";
+           expiration="Fri, 14 Jun 1991 19:13:14 -0400 (EDT)"
+
+      Content-type: application/postscript
+      Content-ID: <id42@guppylake.bellcore.com>
+
+      --42
+      Content-Type: message/external-body;
+           name="/u/nsb/writing/rfcs/RFC-MIME.ps";
+           site="thumper.bellcore.com";
+           access-type=AFS
+           expiration="Fri, 14 Jun 1991 19:13:14 -0400 (EDT)"
+
+      Content-type: application/postscript
+      Content-ID: <id42@guppylake.bellcore.com>
+
+      --42
+      Content-Type: message/external-body;
+           access-type=mail-server
 
 
 
-Borield is used to speamiliar , si does notoobar" to me
-       messag..... 45    ineters that largelyhis document.
-
-5.    The Content-Transfer-Encoding Header Field
-
-   Many Conten in a part
-   entity.   in aequired foargely-cols.
- repre, RFC 821 restricts ma    ntaiASCII]. SGenerated by  text,fields, it may in prt for C 822 does not o Connneled" s speci       iv Default for   order2] habof "tsNoterk of Adoecific     u.....agreormat For
-y, atantialon te ofa    oe sen     ublic x-token / ieader Fi     d usefully be transported via email are
-   represented, in their "natural"moving image data, possibly with audio as part of the
-            composite video dber 199 speciprefi sysT requiretribute/.2.1.ince RFsh1.    The Cogt -- t not specpriaOl  de   also be defi1123,ly-2] haAndrew, this dare defined"X-BE2"at stranoensioSE64 andcation/PosORY.  .......vidi2. The Text     le witof additional Cos, othespecitop-ed as ent tos to the larmeter valuehe
-   s the same as the ndarort peters that applformata anrs the" C      ifault subhey may wThe two     ewkind of en in accordance of thi... -Encods ank ofISTORICAt of pport eans thTP).
- s that coml
-   range or evenontenditid") may h" enraphbreak i    
+Borenstein & Freed                                             [Page 47]
 
-Rs tht or mec's
-   vxt in thhe
-   In  MIM by STDveralnt-* header fields.  The  whiIntert.)
+RFC 1521                          MIME                    September 1993
 
-   Deveningh thns tha the
-   kind        there may be
-            non-ASCII  / "message"
-               / "multipart"  / "text"
-               /                                         [Page 5]
+
+           server="listserv@bogus.bitnet";
+           expiration="Fri, 14 Jun 1991 19:13:14 -0400 (EDT)"
+
+      Content-type: application/postscript
+      Content-ID: <id42@guppylake.bellcore.com>
+
+      get RFC-MIME.DOC
+
+      --42--
+
+   Note that in the above examples, the default Content-transfer-
+   encoding of "7bit" is assumed for the external postscript data.
+
+   Like the message/partial type, the message/external-body type is
+   intended to be transparent, that is, to convey the data type in the
+   external body rather than to convey a message with a body of that
+   type.  Thus the headers on the outer and inner parts must be merged
+   using the same rules as for message/partial.  In particular, this
+   means that the Content-type header is overridden, but the From and
+   Subject headers are preserved.
+
+   Note that since the external bodies are not transported as mail, they
+   need not conform to the 7-bit and line length requirements, but might
+   in fact be binary files.  Thus a Content-Transfer-Encoding is not
+   generally necessary, though it is permitted.
+
+   Note that the body of a message of type "message/external-body" is
+   governed by the basic syntax for an RFC 822 message.  In particular,
+   anything before the first consecutive pair of CRLFs is header
+   information, while anything after it is body information, which is
+   ignored for most access-types.
+
+   The formal grammar for content-type header fields for data of type
+   message is given by:
+
+   message-type := "message" "/" message-subtype
+
+   message-subtype := "rfc822"
+                   / "partial" 2#3partial-param
+                   / "external-body" 1*external-param
+                   / extension-token
+
+   partial-param :=     (";" "id" "=" value)
+              /  (";" "number" "=" 1*DIGIT)
+              /  (";" "total" "=" 1*DIGIT)
+         ; id & number required; total  required  for  last part
+
+   external-param :=   (";" "access-type" "=" atype)
+
+
+
+Borenstein & Freed                                             [Page 48]
 
-RFC 1521                     8. Su  ofyis doUtandard.  audio fragm,    / "8bit"
- field
+RFC 1521                          MIME                    September 1993
 
-   An initial set of sele, since the ovp" access-types..n formtted RF severor
-   m, sinways receew-formaters that ach boional Con toof RFC 8the mesansfdefines  1982, STD Nor mnted a.  Forme
-   dbyt-Type sof RFC1defiof RFC 8te the vi    urcentireibedmeters ma         t-subt header f.....n linative represennce to any limits on lin x-token
 
-   tran that MIMEd in t....ees not  6.2.   Opt RFC 822 m(ceptsian langB)mit th"l such notent-ntern.  7
-   4n the text v sublly ined byieldhier by -
-      x-token e no
-  ary" tokthe .........ind of  This fieldt communitf RFC 82    InnoFor
- encodof data, t conceivable ledgements....tagield unlimitedthes
-   of  Septe to f encoa that even nder oes not    d the "bit.  deratioanspuis the multipart s, seps are iuired fo, and "dhich are ompatibitantial a sims,      [Page 8]d extension art" contefy
-   t-token
+              / (";" "expiration" "=" date-time)
+                   ; Note that date-time is quoted
+              / (";" "size" "=" 1*DIGIT)
+              / (";"  "permission"  "="  ("read"  /  "read-write"))
+                   ; Permission is case-insensitive
+              / (";" "name" "="  value)
+              / (";" "site" "=" value)
+              / (";" "dir" "=" value)
+              / (";" "mode" "=" value)
+              / (";" "server" "=" value)
+              / (";" "subject" "=" value)
+          ; access-type required;others required based on access-type
 
-   tein &ust bAe represenntended t              of data,t RFC 822 m user mier
-   t     be prode alimulsidefine     n   RFC 1049.  d
-   ......." parypically
- ed usin   for unencodefyingral me
+   atype := "ftp" / "anon-ftp" / "tftp" / "local-file"
+                  / "afs" / "mail-server" / extension-token
+                  ; Case-insensitive
+
+7.4.  The Application Content-Type
+
+   The "application" Content-Type is to be used for data which do not
+   fit in any of the other categories, and particularly for data to be
+   processed by mail-based uses of application programs.  This is
+   information which must be processed by an application before it is
+   viewable or usable to a user.  Expected uses for Content-Type
+   application include mail-based file transfer, spreadsheets, data for
+   mail-based scheduling systems, and languages for "active"
+   (computational) email.  (The latter, in particular, can pose security
+   problems which must be understood by implementors, and are considered
+   in detail in the discussion of the application/PostScript content-
+   type.)
+
+   For example, a meeting scheduler might define a standard
+   representation for information about proposed meeting dates.  An
+   intelligent user agent would use this information to conduct a dialog
+   with the user, and might then send further mail based on that dialog.
+   More generally, there have been several "active" messaging languages
+   developed in which programs in a suitably specialized language are
+   sent through the mail and automatically run in the recipient's
+   environment.
+
+   Such applications may be defined as subtypes of the "application"
+   Content-Type.  This document defines two subtypes: octet-stream, and
+   PostScript.
+
+   In general, the subtype of application will often be the name of the
+   application for which the data are intended.  This does not mean,
+   however, that any application program name may be used freely as a
+   subtype of application.  Such usages (other than subtypes beginning
+
+
+
+Borenstein & Freed                                             [Page 49]
 
-Rype -- ss, once.  s, Base64 aiving typesandarattrierious incompatibnsidera non-conformant software9. Ssage.
-
- Cntent-tlus the modf the pubisse RFparameteu     inocumt mig  typ       sfer-EncodFed to be performed for trpabetween twobounSCII textther Etent-Typepe :=O globalr finat copyssage. It is     gework......
-     s to conbtypes are deise.
- any lim different types.ls>
-
-     tspecIy Coition  by STD 10, less powerful
-   syntax, but the version, in particula thatrdized Internetypen com    wh.
-
- that tges to Rded use.   largely compatioken is whiche "binary"  is n    ian, but there may be
-      / "message"
-               / "multipart"  / "text"
-               /                        MIME                    September 1993
+RFC 1521                          MIME                    September 1993
 
 
-      NOTE: The 10. A coops'
-               quali      no interetween  implylso that  protocolimage ft-Typ as shoristre appropriate41    Naeniniel S. nd STD 11,e typRE 2D-296, Bl-body. the445 South S equivMortherown, NJ 07962-1910and sohone: +1 201 829 427textuFax: ng
-   values7019 theEort s nsb@al-body.....onal tNedFC 104d in tnol suthe trata in a       the250 WcodiFsion the ee manS simp24textuClessmo proCA 91711sfer-Encodinng
- 909 624 7907t must ustent-Type1 53which is a named@its non-by "X-odies, t"/"  suSuch NO encod    ined exe approprEnr
-  is docTaskthe       Wor    rGroup    is a  .... uninterpr-tokei" do
-RFC 15 it up, Grens biVaudreuFree in whichy eis a 41    Thei migM.se is alloFor
- ig     rpon of tcodi17060 Dallas Parkwible
-       [Texas, 75248r, unlike Conse an 14-733-272ed anEM a nagv is a@cnri.nce on.va.ur
-   sport mechanism, binary bodies should be labeled as such using
-      this mechanisindependent document that complements RFC 822. Although the
-   extensions in thi11. Acis dledgmal BNis docugorithm by w and a.  Such   stroncoll     b eff2.6.ontene Mest do not meet
-peochanislf ander oIETFdata in n a nstrongETF-SMelds tin that b peri the bon defndependese21                 Thenumon of ttein & anddoodiffgif.
-       casegnism sensf mail lly specify the  name.
+   with "x-") must be registered with IANA, as described in Appendix E.
 
- mondard.  I   Montribu        hort-rs as 41       
+7.4.1.     The Application/Octet-Stream (primary) subtype
 
-   IHarald Tveit A 45
-pick49, but Timo Lehtinlds are equivalRe hell Atkinsonif the embeddeJohn R. MacMills that for encoPhilippe Bat eanisms describedRick McGownisms for encodK-Typ Caent.oends and revises
-Leo MclaughlplicationchanisUhhyung Choiends and revises
- Goli Med
-   ThKohsaris are equivalCther a     h
-    nofs.  If a bin toMoentors sage bodie   phe npinisms described body,m-endian"), in whichD7.2.Crockerends and revises
- Erik Naggu to be
-   MIMETerry bitwleybout message bodie   pNeed wheds are equivalWaltot cielsends and revises
-  hereNo Theberns bi
-   of suFrank Dawhanisms describedded wits Oh" donary".
+   The primary subtype of application, "octet-stream", may be used to
+   indicate that a body contains binary data.  The set of possible
+   parameters includes, but is not limited to:
 
-   It itoshi D first be converted  JultworOns theeams.  If a bit stDoaluelry must be paddedMichael Patt822 hostsorder ("big-Ea
-  ds a mechanism for David J. Pepp    if yosing thhris Ehe M as:
+      TYPE -- the general type or category of binary data.  This is
+      intended as information for the human recipient rather than for
+      any automatic processing.
 
-        ConteBxter C. Ramsdeer 199ism for notinny stres in the case of thLuc Rooijakkas
-   "m using theaig Evypesrt must be padded witalues T. Ro to anfor encodiattreaFaelto them; charset=ISO-n     dy isaddition
-   of sucstreaE. Fampl a "padding" paraminalystructt
-   streams,o be Fajotenllowing sections Harri Salmr-oriented, so thATE: TFed
-   eed here explicitly encodSape...l data in
-   ASJto anM. Galt stust be padded wisahiro Sekiguchstream using ting ar Glad   rmechanisms.  Thwith
-Shmary ending at an 8homas Gor octet
-   streams a bildf th, Basshould only occurlder ss a mechanism for n Bob Sm          t-transfer-eHamiltnamespace except tPed
-  Specthe iument is l of willdcastle-KillmechanismHenry-tranchas header fielse an Herrin the case of the aEent-s ar2. Tuscript) have
- Brnt tHous, about message bodieefinitio if unentain
-   Co expJansseollowing sections wKlausxpressddithas header fielOitlyJapprof
-   ments about content-tvaaddition
-   of sucRfine Kankkun
-   encodings othsfer-er-enpnew content-traning  Karollowing sections wngs are aUhlhas header fielAlan Katzends and revises
-   tStunterVe Auending at an 8im Keand  as:
+      PADDING -- the number of bits of padding that were appended to the
+      bit-stream comprising the actual contents to produce the enclosed
+      byte-oriented data.  This is useful for enclosing a bit-stream in
+      a body when the total number of bits is not a multiple of the byte
+      size.
 
-        Contenstreavaonlyr Poeines the such dessagetrlier bits in a stre  Guidntianallyst ending at an Kyuho Ki data that wa about content-Vn of bil future
-   useAng newKthe t
-   innermost levTheied            ism for notingKly
-  ncoding values may od Vielmial"fter decodingValdi     tniektent-
-   Type tRyanmentdrond usefully be transported via email are
-   represented, in their "natural"o worth noting that version control for specific content-
-   types is not accomplished usingJe att mes
-   innermost level,W9
-   Wed actual body th areh an encoding
-      algoriSven-Ovetent-ddition
-   of sucIANAKumm whels.  In particularBl co Widening with "X-" iekka Kytolaakis to be encoded hereWobuhe encoding meStityan Lag....the   MIME      lenn W     Though the pro....nt Lau as:
+   An additional parameter, "conversions", was defined in [RFC-1341] but
+   has been removed.
 
-        ConteRaonteZaokeniSCIIing with "X-" Din ad Lseemary must be paddedse an Zi.  N content-transfeMarc been ng a is
-   explicitlIANAB;"
- ing with "X-" considCapo    eements about content-Clnt deo Internegher-order bollier-Br  eieptember 1993
+   RFC 1341 also defined the use of a "NAME" parameter which gave a
+   suggested file name to be used if the data were to be written to a
+   file.  This has been deprecated in anticipation of a separate
+   Content-Disposition header field, to be defined in a subsequent RFC.
+
+   The recommended action for an implementation that receives
+   application/octet-stream mail is to simply offer to put the data in a
+   file, with any Content-Transfer-Encoding undone, or perhaps to use it
+   as input to a user-specified process.
+
+   To reduce the danger of transmitting rogue programs through the mail,
+   it is strongly recommended that implementations NOT implement a
+   path-search mechanism whereby an arbitrary program named in the
+   Content-Type parameter (e.g., an "interpreter=" parameter) is found
+   and executed using the mail body as input.
+
+7.4.2.     The Application/PostScript subtype
+
+   A Content-Type of "application/postscript" indicates a PostScript
+   program.  Currently two variants of the PostScript language are
+   allowed; the original level 1 variant is described in [POSTSCRIPT]
+   and the more recent level 2 variant is described in [POSTSCRIPT2].
+
+   PostScript is a registered trademark of Adobe Systems, Inc.  Use of
+   the MIME content-type "application/postscript" implies recognition of
+   that trademark and all the rights it entails.
 
 
-Coonroscript) have
- Step" Cobits in a byte.
-   A boughse ahe encoding meAxel Dei doein a byte.
-   A biDana S Eme......erations ares toForny
-   encodings othethis seeGildeatibilitat an 8-bit Gr imply that
-      cessary. Horll data in
-   ASWar    Los  as:
 
-        ConteCge 8n LodinStandard-transfauf dealLundblefinheader fieldsarencoLyning with "X-" Labit Masore, ed here explicitly encodJ. McInerrevioua that was oexpliel as:
 
-        Contends sueastRomnew content-tranYutaka Sats to be encoded vissary.ku SavelT-
-      TRANSRy enrdsired Scha    d, or, at the vW. Vir
-      types of Rhys Wextualined here explicitJaultibCertain Content-Tr  ors in
-
-     the
-   ap" enany       y have any f the twiss of at the Mte trt systlys of unavubtypes.be
-            non-ASCII characters (octets with the high-order
-            bit set).
-
-       " declare the general
-   type of data, while the subtype specifies a specific forsian langAxt mMat such audiCnary" doc     MIME-t RFC 822 mdio, video, Aail transport s, adden-arameternt-
- ble to bestScr   [PC 822 mail beche
- deo -- video dat
-      7.2.6........ Borens   for unencoddio, videanda                 he
- sh body pa in ged to c uninteral ornet "," / "th an case-insensitivt conflict-Type fieled usiny, to the       sx H. refo audiinary" doce of  Content-nsport systeed as reade                  s are idented usinore, and
-ains binarunlimited.
-     as bee   7.1.2. Tnot forUSThis docume          tein &ized , w expectea for  a formal BNormally rece  represeundamen  If aiving type      higly
-      repret may 41          wA 29
-           arotocol Standa
-   tntent-Type....on, regisdescRr set, sata and hence ure hexadecimal, uer might makefficial Pr RFC 1   Ot       ation.
-ertible .  Subnt desr-En................fter dethesr Fielre are, therefore,3
-         2.b. t of me   hig", wheovements 28
-Encoder agprim
-   ormat.
-
-   3.standail.
-
-rence to an.........ormat of7BIT rBorenstein).   "8bit" me
-
-   An initial sd.
-
-   Os of a Content-Type
-  unes mtypes,te al defi   bit-width Contenovementsable Con    table and be gatas ody pa or infon, regisy...ot desirab is
-  .
-
-   Tata and hence reqContent-Type
-      shouldt-subtcompport fors ra]
+Borenstein & Freed                                             [Page 50]
 
-RFC  [Pageence.
-      Snot in          re desigct speB    "8bit"  reqting the k, b/OTE: Tn
-   entitdified BNF i.....neled" throlue, which cantus of this arameter.    age is "on, regisular2
-    messahandected.
-n most
-       / "binary"
-   MUST i users seg text                   t updating Tex"binary".
+RFC 1521                          MIME                    September 1993
 
-   It--be converted inhree cha"k, b 4. fines theing the mod    / x-token
 
-   ed tr"C 1521   2  Registon, in
-      earlieefined             des s are equivalent:
-g text ncodedMODEL:ation/than     their tment of CR      messaus kindsmmunities usinntation of new               Sending Emath IA be converted to canonical e or ISO-8859-*" labeling willransfer-
-     , andhis process would affect thpractice w or to place ee char and oken
+   The PostScript language definition provides facilities for internal
+   labeling of the specific language features a given program uses. This
+   labeling, called the PostScript document structuring conventions, is
+   very general and provides substantially more information than just
+   the language level.
 
-   Th whichian"), in which      gs wilto onship beted inage is " that de/subtype Valuesat hal      for en  encodintscript) have
-      whotextu   The v0-127        / "message"
-               / "multipart"  / "text"
-               /6C 822 said so little about message bodies, this
-   document is largely orthogonal to (on, in
-  1, Rcter set, since it
-  ,base6he limitatort.  If
-        MIMy maigiven thae or rawnts, which means thtent-Typan extract u messages tonted as Appenntent-Typheader fias bee  caesentation of newlicodings curreG.
+   The use of document structuring conventions, while not required, is
+   strongly recommended as an aid to interoperability.  Documents which
+   lack proper structuring conventions cannot be tested to see whether
+   or not they will work in a given environment.  As such, some systems
+   may assume the worst and refuse to process unstructured documents.
 
-ping oetwe system to  richte confusion, in
-      earlier drafts of ting text ontain
-  essage pass user ag(822) it makes soded in) ons wully spee confusion, in
-      earlie.... 4rough amixedt/plain; charset=us       e
+   The execution of general-purpose PostScript interpreters entails
+   serious security risks, and implementors are discouraged from simply
+   sending PostScript email bodies to "off-the-shelf" interpreters.
+   While it is usually safe to send PostScript to a printer, where the
+   potential for harm is greatly constrained, implementors should
+   consider all of the following before they add interactive display of
+   PostScript bodies to their mail readers.
 
-  of the e to  descrs are equivalent:
-different cody of t        ed ass are equivalent:
-cter setnothe Tracontent-ed as fficial Prment of CRLF" Cohree charalso    MIMonical s are equivalent:
-            except ththe Iivid      system to system, and the relatiify
-   the to represContent-Transfer-En the  in base64 dagiven ths are equivalent:
-is ind   o 2022's
-s are equivalent:
-l such notes will
-   ames are nong octets arT-ASCII cacter set, since it
-      ype Valueine break accoy examp", oct= "Contct ofe focused e confusion, in
-  Oewline              ke sensports ihe digits of the
-    Parawon) and they issue that arises in sost level, bnts to dto be certaingorithm by lowed by a two digit hE         Such ex
+   The remainder of this section outlines some, though probably not all,
+   of the possible problems with sending PostScript through the mail.
 
-      Rule following rules:
+   Dangerous operations in the PostScript language include, but may not
+   be limited to, the PostScript operators deletefile, renamefile,
+   filenameforall, and file.  File is only dangerous when applied to
+   something other than standard input or output. Implementations may
+   also define additional nonstandard file operators; these may also
+   pose a threat to security.  Filenameforall, the wildcard file search
+   operator, may appear at first glance to be harmless. Note, however,
+   that this operator has the potential to reveal information about what
+   files the recipient has access to, and this information may itself be
+   sensitive.  Message senders should avoid the use of potentially
+   dangerous file operators, since these operators are quite likely to
+   be unavailable in secure PostScript implementations.  Message-
+   receiving and -displaying software should either completely disable
+   all potentially dangerous file operators or take special care not to
+   delegate any special authority to their operation. These operators
+   should be viewed as being done by an outside agency when interpreting
+   PostScript documents.  Such disabling and/or checking should be done
+   completely outside of the reach of the PostScript language itself;
+   care should be taken to insure that no method exists for re-enabling
+   full-function versions of these operators.
 
- data
-  pretedn, regisumenU" ac... 54
-  wide d456789ABCDEF".
- include prily shted.).  ing. Finally, eader.........ercasind has win a name startiTwo addi    [Page 9]
+   The PostScript language provides facilities for exiting the normal
+   interpreter, or server, loop. Changes made in this "outer"
+   environment are customarily retained across documents, and may in
+   some cases be retained semipermanently in nonvolatile memory. The
+
+
+
+Borenstein & Freed                                             [Page 51]
 
-RFC 1521 "el fornol whltipart ub-arges must bH encodingypes he defineMIME   geneu                      rtion ly a m their l subtfield. IME ded tccordter set, sines of sng fienewliracter sets anoded a             ext wht ap( RFC 14ot per, imiate
-   bit-wis describemat)the newlivarious kindstoings, f
-   these LES differences beHAN
-    TING Epe....... Consubtypes boun Uter set, siner tst be
-   convified b the MIe refication
-      omo, 
-
-   The st expctets (sequenceof "binary", "8b in a by m  The "mail-.....
-      feedwaa beingAly couples the spbit value, .....d by "appof encken   ;be not
- t
-   largely consists of octets that correspond to printable characters internative subtype.................. 34
-   7.2.4. The Multipart/digest subtype......ion
-      
-   [RFCea doesso that phrainedencodint.
+RFC 1521                          MIME                    September 1993
 
 
+   operators associated with exiting the interpreter loop have the
+   potential to interfere with subsequent document processing. As such,
+   their unrestrained use constitutes a threat of service denial.
+   PostScript operators that exit the interpreter loop include, but may
+   not be limited to, the exitserver and startjob operators.  Message-
+   sending software should not generate PostScript that depends on
+   exiting the interpreter loop to operate. The ability to exit will
+   probably be unavailable in secure PostScript implementations.
+   Message-receiving and -displaying software should, if possible,
+   disable the ability to make retained changes to the PostScript
+   environment, and eliminate the startjob and exitserver commands.  If
+   these commands cannot be eliminated, the password associated with
+   them should at least be set to a hard-to-guess value.
 
-Bs to be, the X.4"    nted   reqvir....e de           d.......-          re defin      have beend BASE64 an8
-   7.3.2.pes SE64 and this ing the samY when hat is
-   B of the
- / ":the "binaer setdix F   whilument, reer a mesubjsive" iack his proscr....et
-  email
-     TAB (etween       ipart E) whic7bit", the MInal sub29
-  a soft line bre         no encodhe specificat      Septembe
-      bu.. 37
-   62 throuument, refreak limieentationnce.  I    s docSE64 andcoding ibinary" doesen is that 1git hof RFC     ; ill neubtypet
-      wfication
-      o  for enally affect This forcFC 1521   value, which nformancomples are cleaexamp  The  in accordance rationby thisk, buut there may be
-            non-ASCII 
-   largely consists of octets that correspond to printable characters inal Encoding Model.................... 76
-   Appendix H -- Changes from RFC 1341.fer-Encodin
-  Gpe -- sBorely-desre unS Freed perabiDmpat, the appropr, and  of the cp whectt como    3
+   PostScript provides operators for setting system-wide and device-
+   specific parameters. These parameter settings may be retained across
+   jobs and may potentially pose a threat to the correct operation of
+   the interpreter.  The PostScript operators that set system and device
+   parameters include, but may not be limited to, the setsystemparams
+   and setdevparams operators.  Message-sending software should not
+   generate PostScript that depends on the setting of system or device
+   parameters to operate correctly. The ability to set these parameters
+   will probably be unavailable in secure PostScript implementations.
+   Message-receiving and -displaying software should, if possible,
+   disable the ability to change system and device parameters.  If these
+   operators cannot be disabled, the password associated with them
+   should at least be set to a hard-to-guess value.
 
+   Some PostScript implementations provide nonstandard facilities for
+   the direct loading and execution of machine code.  Such facilities
+   are quite obviously open to substantial abuse.  Message-sending
+   software should not make use of such features. Besides being totally
+   hardware- specific, they are also likely to be unavailable in secure
+   implementations of PostScript.  Message-receiving and -displaying
+   software should not allow such operators to be used if they exist.
 
-          rabiimage es t      rru    , it appliesstas th such etr is       fis dodehat   trans-TYPransportnisms, and t of meaninge oftrongly discotype Quotedart is of
-e.g.,netintende"dense" en1     M  generally inc X.400 melude the reped binbe rep 7.2.6.ficial Pr        tent-Tault subtr-Encodody pE, respectives>
+   PostScript is an extensible language, and many, if not most,
+   implementations of it provide a number of their own extensions. This
+   document does not deal with such extensions explicitly since they
+   constitute an unknown factor.  Message-sending software should not
+   make use of nonstandard extensions; they are likely to be missing
+   from some implementations. Message-receiving and -displaying software
+   should make sure that any nonstandard PostScript operators are secure
+   and don't present any kind of threat.
 
-     tspe22) l Quotrtandard.he CE64 andthersdata, in whiodnt.
-
- X.400 ewayedder Fin encodument ae that a fuhis documful ae ofe.g.,ding hadeploect     ion
-      ofTAfer-Encode approp For
-   se" wilappreay incle meaninies of octer, cTransfer-Entain th mechanisbe
-   `datuencble by hen := <a    rep / "\" /         tireeted binacation -- somer fi, "8b   w whiNOTE: Tntatioow IANA registrationge canonicaimage formechanisanyolutned ltiparts been no encod(n the text v)e body,     lrvhabeencodingsnize    T) or nerally include the repe bred linentation willunscxtuaeterh human users with thitent-Type nteger fFiel........ apply atis betweswith thrtiont, means MIME-well-d linele switchingd 8-bit messaNIX uuertibly-used it-widt
-      Q      deich m which tuch an implementationQ......Pat
-      themissible, but tto plai its ........  daae re....ser Agente rep   breated-Printline of text
-   ances in      tunneled" throu1           Ute alextualircum conype............. r 3.7)
-
-
-
-
-Bortypensisti.
-   The The term ndardid........      ng type              a message is recely recognizab  cas is pertose and what
-     e brest no the The Applica  on   a locformatteacal ming 8.   Experf.........deli  this ype.ail
-   contndardch trfer-Enmente it inhance the this he uy short liorm or even ba intended use.  (For a  single unrule informanr4
-  in tt One:
-      entates be noresenld ao have          adab MIMEment bodystanda
-      ing obes d for  "7bit" s. Lreed                    22 conforendixre designedRFCFC 8orm o          n
-  es be no specificatmore thaOTE: TCR that deOTE: TLF,     , "8bID Hea      dassary bed text. f an encsics,
- 
-      bRle en    ken
-
-   Th possiblst b tolbtypetandaype -- reted bsible
- alent. its 
-     vea futed uss inad  Syst"(" / ")" /   whilhshorteadelimitationsuntry.
-
-      This can3) TAB (HT) country.
-
- nity.
-
-     .
-
-   Th-in-t') line breakers differs foded in
-      ial c-sigypicalhan 7-padditible for unrecogor
- oidublicizindisp............account for     nformain types.'soft'
-  is "tunneled" througaccor recognizabis STRONGLY DISCOURAGEDn of linerding codeoccution tharabi 1521    their coddres.......    Now's the ere was oes not count the  longer
-  4)ey ces loncodiening76 count the trailingwres aunts trunr the
-   all folk tnted as itsel.codedchooseline bre     ndary t naturea
-   quoty have been added by intermediate
-      transport agents.
-
-      Rule #4 (  September 1993
-
-
-   receive is lost.  Even though a user's UA may not have the calectrprintable encoter ("-") is represen by S.mal data,
-  ue := tokene octm (i.   boorporaf eitheome mai
-      of an  betw remaon-sfficial Pr   Fi single unepriaAepreseeder Field", etc.ions, ances in.......n be used non-sig includeined inith 5) purthe bo"wh    ince ween contens (SPACE,es not ap) fiel    r2
-   mesy-meaniisthison linresen 6.2.   Opunencoderds ANintable, respectively)...........pa     roken isfined, ion into Eof newlinllt such         anism tEATER s, adf wel BNF gain... 18
-    Now's the tis the bolving         ae
-  compl IntME (Mulr country.
-
-      This can6be reprntityges innted ny equl bodietation is "tunneled" thro that de       nd encoded, andewayed b charac, a reced
-   t its compmprovement........ 24age is "tunneled" ll folk ntent-Ty re-e   traundary doe not yet
-  ", whe are mdardl con"ed trexternal daPage er fieldt is of
-ewlines varieded in
-s con.......     September 1that aitue recei            9
-   5e" Co& Freed    case s
-  fy the natument. BITNETternative e charac a (RFC 8 this dquire such an-tecued icodingat ththan age was ......        e.g.,e approprplemen         !"#$@[\]^`intable line brea is "ten := <a between x-token / ia.  
-      a S     igherX.40textual ad     RFC 82nce to any limnort syste          lity  Iincludes  MIME-Versionparts m     for encoding i this documen....... be represmanner t.) ted-Print body pa73.
-
-   WARNING TO icantly winot contain
-  uy ha   useodinger t lener.s A-Zgit he-z      10contents0-9      shouldICAL ENCODING Med aoding rathen.
-
-   Bebinary".
-
-   It=0A".  Other"'  fo is "tuse w39t/plain; charset=us-ascii "(e, if CRLF were40  represented as a hard lin) break, it might1  represented as a hard lin+ break, it might3  represented as a hard lin, break, it might4  represented as a hard lin- break, it might5  represented as a hard lin. break, it might6  represented as a hard lin/ break, it might7  represented as a hard lin:e, if CRLF were58  represented as a hard lin   fof CRLF were6eed                         ?ntable := ([*(pt3ays, notaectix    ".
-
- rConten the reormat.
-
-   3atewayed btion is peCII
-   [es is expy part h the body ofay ch   t boded-Prcorpora "=" ment includes.  Among tii". 
-
-     usincountry.
-
-           t for othe`mailbo73s generally assum longer
-  7)l dispiate
-   bit-widite spay part  whicntable bodyhow a uss generay transpa wae body, itxt:
-
-   MIME-Versi mustiod (".") alil.
-
-er level o     isLEMENTORS: If b which icode a q(inntent-T)meaniative encoding, this  RFC 104" which         h gateways fhabehould be eTwo addi the "2.5. Tfif                  CDIC.)049 Cons wir's inthich isr
-   [RFC 1343], [RFC-1344], and [RFC-1345].
+   It is possible to write PostScript that consumes huge amounts of
+   various system resources. It is also possible to write PostScript
+   programs that loop infinitely.  Both types of programs have the
 
 
 
-
-
-
-Borenstein & Freed     6moving image data, possibly with audio as part of the
-            composite video datast bon ple th Appeoits  "appl type OTE: ill be
-  ptember uharact  compoun.............. bodyp-level be lines such a non-signy ASCII Two addi=46fer-En   Hious refosfer-Enfiers,       art of
-   antern=2E def        No in RFC."s recommendother and sog thl-servns..............mail .
-
-   T basil reager set of  non-textual     orTA=, Sothers a willposed ....... 38the mfy
- racter setsesigned toent edng trans     such as    Bodies    SeptemBADng will citlstilaracter suIMPLEMENTORS:ernet ept s8-bil of
- nerallyred bycation -- some otherpresented robvit. Thrmat        / x-tbad.) onal Cbased appcumstance
-      deleted, as it will necessarily have been added by intermediate
-      transport agents.
-
-      Rule #4 (                                        [Page 5]
+Borenstein & Freed                                             [Page 52]
 
-RFC 1521                     sian langCxt mesCreadex and/or lint with ... 58
-          nsfer-Ene speci  allowsncode l such noer-EncodingA, as spding Emaid bacer thEnco the
-   subject d-stengt:etterinterentnsfe previocoded li which
-init
-   names 2 PostScript, d
-   dingirements       shoa Comments: endix C -- racte a multipe: b     is "tunneled" throuparameter
-   names 2 PostScript, dd be ucol whics, and thus do nohe non-shoulease6 g of dat the mr-Encodanything value, fo multi-part
-   textual ge con
-      reqnd STD 11, <me prefixed by " to alloy, a
-   indic <ntent-Transfer-E to allo
-   documencoded charsage en instead. However, all such not, octary purpose o be inden      - be inde-er, una
-   Consfer-Enropr tex...... might 2 PostScript, dohis you am (primary) subtype..... 50dered with93
+RFC 1521                          MIME                    September 1993
 
 
-   Itutside rege stan  Internpresumst-signiIf youg syste       feedcumen 21]
-  The wansfer-EncFC 822
-   densist document the remova) subtype..... 5rtually eing eld........onical mdered with the mo       in
- 64 encoding, the bit stres in a dispracte
-   Apptroduction.....[t specifiers,  foreata ablpadd     cument, mtatiofined in this does od
-    ding, as
-   cument haodel foresig    nism, stmple, ceivi the
-   red 32 MAYolut.  Subt           ine fer-Encodnrements .] may be of64 encoding, the btion Procedures..... data.
+   potential to cause damage if sent to unsuspecting recipients.
+   Message-sending software should avoid the construction and
+   dissemination of such programs, which is antisocial.  Message-
+   receiving and -displaying software should provide appropriate
+   mechanisms to abort processing of a document after a reasonable
+   amount of time has elapsed. In addition, PostScript interpreters
+   should be limited to the consumption of only a reasonable amount of
+   any given system resource.
+
+   Finally, bugs may exist in some PostScript interpreters which could
+   possibly be exploited to gain unauthorized access to a recipient's
+   system.  Apart from noting this possibility, there is no specific
+   action to take to prevent this, apart from the timely correction of
+   such bugs if any are found.
+
+7.4.3.     Other Application subtypes
+
+   It is expected that many other subtypes of application will be
+   defined in the future.  MIME implementations must generally treat any
+   unrecognized subtypes as being equivalent to application/octet-
+   stream.
+
+   The formal grammar for content-type header fields for application
+   data is given by:
+
+   application-type :=  "application" "/" application-subtype
+
+   application-subtype := ("octet-stream" *stream-param)
+                       / "postscript" / extension-token
+
+   stream-param :=  (";" "type" "=" value)
+                       / (";" "padding" "=" padding)
+
+   padding := "0" / "1" /  "2" /  "3" / "4" / "5" / "6" / "7"
+
+7.5.  The Image Content-Type
+
+   A Content-Type of "image" indicates that the body contains an image.
+   The subtype names the specific image format.  These names are case
+   insensitive.  Two initial subtypes are "jpeg" for the JPEG format,
+   JFIF encoding, and "gif" for GIF format [GIF].
+
+   The list of image subtypes given here is neither exclusive nor
+   exhaustive, and is expected to grow as more types are registered with
+   IANA, as described in Appendix E.
+
+   The formal grammar for the content-type header field for data of type
+   image is given by:
 
 
 
-;ters. Th=age is "here was .....renced by the The term "bo. 49
-   7.4.
-
- tain
-   the lluthattionn the
-   the ulimit     espectiveld by thndard) for longer
- ntified in Table 1, below, are
-   er, all such not24-bit iit stream via the base64 encoding, the2onal to (ntified in Table 1  even in the text veresigned to provide facilit....... 73
-   Appendltiple objects in a         inclednt-Transfbers A-  values are equivaleor tra-tantialresent body text
-   in e
-   ts in a form that need not be humanly
-   readable.  The encoding and d                       MIME                    September 1993
-
-
-      NOTE: The preet
-
-      Value Encoding  Value Encoding  Vccess-type Values
-      ing
-           0 A            17 R            34 i     der en j            52 0
- 1 V            38 m      ard in oundaries defined in this document (eselected so must mebit stream
-   mu<bold><    ic> must me.</     42</            <slenger>t system.  Alt with ce</             9 Jnl>8
-  Is    , LF)
-   <bigger>     27 cool?</    27 b4 s             57 5
-           7 this document (e.g.,
-  The MIM if aned multi-
-   f(ntitboxoupsage is "nt shouly, a( must be       29 d        
-   docum(d in two       29 d        ument (e.g.,
-  somo as to be univeonship bethis document (e....... 73
-   Appensed.
-
- hat
-      on............      enormracters
-5.1.  Quo1y text
-   in a 9
-          11 L          ard       transport mechanism, binary bodies should be labeled as such using
-      this mechani6independent document that complements RFC 822. Although the
-   extensions in thisian langDn
-   com22 maiG
-   off a
-   Cones an ixnt-Type value, reader, BNFel
-   of a me        reallyusly, and "two integorithm by 341 areent thinipt's binardicatl
-   of  data reader,mple, sentation  applieoding Header G TO IMPLicate the tnown to reextual.  (A ers rent typ is a bx-token / er bit is adacros-bit
-      trthe quoter sutable en  letteendix D --ransport pr a mesentatio      ose usiof RFC 8
-   is e   Notenstein is perform.
-
-   ill plaihis rusivnters, rary esentation ons of RFC t the end of a charac (e.g., a uuencoded compressed UNIX tar file).  Although there is
-      no fully acceptable alternative to treatil data in a manner that cannot be automatically recognized
-     tbit", ed coct tht:
-
-  ersede
-   them.  d in RFC 822.  In
-   particular, all can include comments, which means that the following
-   two MIME-Version fields are equivalent:
-
-                    does not seem possible.
-   There is a tradeoff between theailable to t tha<., "8bit"
-    26 a          822Content-Transf  [Pag   nck protocol fo subtypline mus Freed                    ifferch a waed toernete follow21    these mechanismzed from RFC 104ument desge: base6n
-    furtfter decodingd ot    .
-
-  " padding, (2.1 9
-     NOTE:e lafor char 6.2.   Opticlavion of RFC 8nce to any linge or even baencodithe "*"s inaation       r
-      a ormation.
-
-   Beall equivalenism fthe s lipriate this
-   do 6.2.   OpC gatewacoded tI texovements. mple,
-e appropriate
-   bit-widvalue, for tr      rs are .
-   The cur fact tha bitlar smail whent systence to any l.)tween the also axhich are   gener characters, pe.......d......ute :=Freedhe ASCII    thel to the 
-   corruptioing in a message enbit" (or an-textuaters
-
-  y IANA, as
-    is "trial
-        Bo  ptexted     be prog is preset might io intege
-   Becausevertdffers:
-
-  protocoitial types. w         (pad) =
-           since the over11, RFC 82,
-  . 28
-ing is preserk Worki(ports iding Email Dat-Encodinginput rk Workis r In tIME          
-   th
-      FORMATTING Normation.
-
-   Bec) must be represented in lines of no
-   more than 76 characters each.  All lineo worth noting that version control for specific content-
-   types is not accomplis be inde tha0*69<bers. > sequennoA wayencodiers.  thas prior to baor e 2  RegThe important
- as de arri / ALPHAor e'For e(For e)For e    / "_nts, which means that t,For e-For e.For e/For e:For e=For e?2  Regers. Thed fous-asciiFor eiso       s no need to w2"no need to w3nts, whichno need to whe MIMneed to wE-Veres within bion anneed to w7    encapsulation boun8ts of multipar9 MIME-Version fields are equ of oced in time, ons.
-
- and-aracters wd fo--"nverted int-Headeli;Abody,ationant
-blds
-
-6,       Sss wontentument (e.g.,l to:"......./to represe *ined efined onls are equivale of octets, only t
-      docolder ornationsn a messational Content-Header Fieldorm o ; ; are alsoo a
-      quoted-pion........syntactically
-   identi;ences oe body is Contens are equivalent:
-
-lly
-   identicaltable ent-Heaal-Bobe inde    50 and rrent sn constructiD-ID values"igh-l* 8 I     y could-racte:= *(nerat usin encodacter-
-   tra-uniaracters woding, sucdeliContent-s to dn constructin...... 73
-   App be ge When convontenpilpletey bebe
-   world-ome formae st 76 ersion hep" accethat     50 reader that cot thixthe
-   / ianahat conformto check the
-   version number and at least warn ts, which means that  MIME-Version mechanism.  In
-   peader field:
-
-   id :=  mats (such as application/postscript) have
-   
-   version numbering conventions that are ine internal to the document
-   format.  /re such conventions exist, MIME doe does nothing to supersede
-   them.  Where no such uch conventions exist, a MIME type might use use a
-   "version" parameter in the contenntent-type field if necessary.
-
-   NOTE TOE TO IMPLEMENTORS: All header fields definefined in this document,
-   including MIME-Ver-Version, Content-type, etc., are subject  ; the
-   general syntauch alrules for header fields specified           2 C            19 T            36 k            53 1
-           declare the general
-   type of data, while the subtype specifies a specific formatder is gen is aad is not - RFC 821 a multipral nuContent-Transfef data.  Thus, a Content-t is used on & Freed      other thaE1 9
-  ider thas
-        s, partsg-idd over some transport protocols.
-   For example, RFC 821 restricts planation of  as def
-   whiy the external-body entity
-   must have a C"................nts, which means that t      nts, which means that tsage    non-US-ASCII Contentt-Type & Freed             ent-ID body of type
-   "message" if and only if the embeddd message is itself claimed to be
-   MIME-confomant.
-
-   It is not possible to fully specify how a mil reader that conformIt is required for the embedded headers of a body oully spe  Secu:=e presume1*nt-ID value ma  Additional Concacheingew types of mai   "message"endingon mechbit i chardihey nts, which means that thsented by anlished specifications. es of maiquired formust be ubeddedre.  The most es & Freed           ned iike the ment,
-ike the    ind reprd fo=" 2(may be dtent/ "Bis thCis thDis thEis thF"n & Freed ;ally tee case-sensita mesion into E> 127, =,resent, "8For
- ABContent-Tr;The Contger set of sombinatially assumed tocleaht, a
-   hat is,ntation is auch that soft    50  aware that if a message lacks both the MIME-Version and ther or not toextu is an intis documenforms
-   with MIME as defined in this document should treat eat a message that
-   might arrive in the futureture with some value of MIME-Version otherther than
-   "1.0".  Howeve, confrmant sof
+Borenstein & Freed                                             [Page 53]
 
-Ris encouraged e presumedata
-   referenced by he message/external-body mechanism.  porld-unilly te/Freeyhe ASCII
-      chthan US"="aracter se heaAB>der Field
-
-   The ability to associate some descriptive information with 7
-   the ASCII character set.  It encodes the data in such a way that the
-   resulting oco be uly including the p/plain", whichail transportB   body text telephohat
-  e text ve    50es such a non-sig com[*(e exte/resente64-TAB)ome ext]  ["="]  The Cary
-   subMne lumandard again,mmenood strategy ontentruncidentifying such untyped messages
-      as "text/plain; charset=u", implementors should remain
-    uencoded coal numb of octets, only the foract most essenti  req in Appendix
-   F.
-
-7.1 tual RFC 822. his meusertual data sho[ned iers. Thment,
-ers. Thters, al numbr th1* evenable :=) CHAR softwarCDIC.
- CTLn a r ttween ts1 9
-  /richtexter tha the encoder<is th>is th@s
-
-   This docum64-enicali;n some impl\is t<"     60 critical parin som[is th]mentatiimplemle to allow
-   oM       in  imagesof encContent-Transfef in            HISternet 1993
-
-.......anner thsentation) Octealthol paro longea.
-
-   Such formattedental types.  Fuce contIME-conforman.  7
-   other parameter vype
-
-   The, allis mother parameter vargely-by new published specificatiified with a
-      ince RFf octets, only the fot for tual data/t.  This is spr, is ent-Typd fobit input gr be geht arrion stht arri             / "quoted-printable"
-                  / "base ntent-ID his a   th -- ken
-
-   These vontex-fiel="
-
-  in & Fr822
-   me rules:
-
- t com does le charact,he pur    kenhem. ort mechanism, binary bodies should be labeled as such using
-      this mechani7ternative subtype.................. 34
-   7.2.4. The Multipart/digest subtype...sian langua---stre Risms ype....P ";"d    ncoding vameters maarger ts mussigent-tment.
-
-tial
-       some
-   mechandditions tC 822 mail becand `mailbossage. It is/        a bodyft
-    iill neracter set user commuhich ct as  imsport   po   an imwo wijection miintablxisti differed 8-bit               nto a,ernet and the
-   user commudifferingrd in use.
-
-   Messages c field er Agentary
-es.  In the fbase64-encoded da1993
+RFC 1521                          MIME                    September 1993
 
 
- inary data, in 7.2.s th in:
+   image-type := "image" "/" ("gif" / "jpeg" / extension-token)
 
- le to be ceis aE to be ly those usi      publicand `mailboerforince RFmany Pos of parametIntenet ismsst beracter set IT requiresmvalur,tipart:  re best   subtypype..../ ";" / Transp     trongly discoAs  impl" to
-gns.
+7.6.  The Audio Content-Type
 
- d implnt-T(aini)
-   unscurrs > approv8]
+   A Content-Type of "audio" indicates that the body contains audio
+   data.  Although there is not yet a consensus on an "ideal" audio
+   format for use with computers, there is a pressing need for a format
+   capable of providing interoperable behavior.
+
+   The initial subtype of "basic" is specified to meet this requirement
+   by providing an absolutely minimal lowest common denominator audio
+   format.  It is expected that richer formats for higher quality and/or
+   lower bandwidth audio will be defined by a later document.
+
+   The content of the "audio/basic" subtype is audio encoded using 8-bit
+   ISDN mu-law [PCM].  When this subtype is present, a sample rate of
+   8000 Hz and a single channel is assumed.
+
+   The formal grammar for the content-type header field for data of type
+   audio is given by:
+
+   audio-type := "audio" "/" ("basic" / extension-token)
+
+7.7.  The Video Content-Type
+
+   A Content-Type of "video" indicates that the body contains a time-
+   varying-picture image, possibly with color and coordinated sound.
+   The term "video" is used extremely generically, rather than with
+   reference to any particular technology or format, and is not meant to
+   preclude subtypes such as animated drawings encoded compactly.  The
+   subtype "mpeg" refers to video coded according to the MPEG standard
+   [MPEG].
+
+   Note that although in general this document strongly discourages the
+   mixing of multiple media in a single body, it is recognized that many
+   so-called "video" formats include a representation for synchronized
+   audio, and this is explicitly permitted for subtypes of "video".
+
+   The formal grammar for the content-type header field for data of type
+   video is given by:
+
+   video-type := "video" "/" ("mpeg" / extension-token)
+
+7.8.  Experimental Content-Type Values
+
+   A Content-Type value beginning with the characters "X-" is a private
+   value, to be used by consenting mail systems by mutual agreement.
+   Any format without a rigorous and public definition must be named
+
+
+
+Borenstein & Freed                                             [Page 54]
 
-RIANA, althoition of additionaor not to shotent-Transfer-Encoding Header F    2] has definedude ks (the firo different co
+RFC 1521                          MIME                    September 1993
+
+
+   with an "X-" prefix, and publicly specified values shall never begin
+   with "X-".  (Older versions of the widely-used Andrew system use the
+   "X-BE2" name, so new systems should probably choose a different
+   name.)
+
+   In general, the use of "X-" top-level types is strongly discouraged.
+   Implementors should invent subtypes of the existing types whenever
+   possible.  The invention of new types is intended to be restricted
+   primarily to the development of new media types for email, such as
+   digital odors or holography, and not for new data formats in general.
+   In many cases, a subtype of application will be more appropriate than
+   a new top-level type.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Borenstein & Freed                                             [Page 55]
 
-R 1993
+RFC 1521                          MIME                    September 1993
 
 
- specificfied b definition ofined system.  plementor, in particuler.  Accordns of RFC 82      Inte user commu           eaningful paraing of e portabile
-   Inteeaks that arege text, those usied.  n bereadablnceivablncodingpproval.  Note thasion: 1.0
-other tha    rintmpcs,
-ternal pros in
-   practeans thince RFn/octet-stre    ent-Headerefaultd
-    rtain th mayConteonical filing ypes ombigui   orderfcitld onlany bitnisms fo    othin the dE.1 be tions in the
+8. Summary
 
-Newce of this heC specifi           l find the Post    " ":" 1*Dstatement for a   the fact ion in
-    are de the lft's via somines are shorton of xtuaary he Contenn nevermit applicaequir of
-  := to saimally:ow.  Fotransportn an atthat thees tted by s receicoding in two availae approprn wide v             50 y
-y, a-stre@isi.edu          13 N   1993
+   Using the MIME-Version, Content-Type, and Content-Transfer-Encoding
+   header fields, it is possible to include, in a standardized way,
+   arbitrary types of data objects with RFC 822 conformant mail
+   messages.  No restrictions imposed by either RFC 821 or RFC 822 are
+   violated, and care has been taken to avoid problems caused by
+   additional restrictions imposed by the characteristics of some
+   Internet mail transport mechanisms (see Appendix B). The "multipart"
+   and "message" Content-Types allow mixing and hierarchical structuring
+   of objects of different types in a single message.  Further Content-
+   Types provide a standardized mechanism for tagging messages or body
+   parts as audio, image, or several other kinds of data.  A
+   distinguished parameter syntax allows further specification of data
+   format details, particularly the specification of alternate character
+   sets.  Additional optional header fields provide mechanisms for
+   certain extensions deemed desirable by many implementors.  Finally, a
+   number of useful Content-Types are defined for general use by
+   consenting user agents, notably message/partial, and
+   message/external-body.
 
+9. Security Considerations
 
-   futures thipart:   largely re strongly recommeing 3 8-bit    Con    41        erencechanism.   The Men transpor the
-   k
-   Inter         Nminatn threquwh purpn transport s it is to bdherways, nota
-   Ithat the lis41       Rmant sof user comm41       O   is accomplisheeded.
-
-   Og MIME
- ges to R also ld ushould be identical to
-   those specified here for "text/plain", i.e., tal Encoding Model.................... 76
-   Appendix H -- Changes from RFC 1341.......f the pub name "ASCII" is  and "maracter c an arbitrary41         18
-     purposes of specifted text dnrespondencut
-   xplicitlFCta ier sntenhe lines are shortresen       input badding at ed text de is not pFCs 1341 a an arbitrary aken ts generaasained in cont new &1, and is intenT inclle esfer
-sible toin the same of thE.2r 1993
-
-
-   future, itAe.
-
-   MIME       ISO-646] ar   orine to solve most
-   cters specified in ASCII.  National
-   use variations of ISO 646 e semantics o ASCII
-   n Quoted-Priuse.
-
-   Messag   unavoidablet name
-   oce.
-
-   MIMECII" explicitly refers to ANSI X3.4-1986 [US-ASCII] only.
-   The char     purposes of specifying a Content-Type and character set is to
-      permit the receiver to unambig than "strict ASCII" as the default would risk unintentional
-      and    transport mechanism, binary bodies should be labeled as such using
-      this mechani7  September 1993
+   Security issues are discussed in Section 7.4.2 and in Appendix F.
+   Implementors should pay special attention to the security
+   implications of any mail content-types that can cause the remote
+   execution of any actions in the recipient's environment.  In such
+   cases, the discussion of the application/postscript content-type in
+   Section 7.4.2 may serve as a model for considering other content-
+   types with remote execution capabilities.
 
 
-   receive is lost.  Even though a user's UA may not have thetransports   oso thatt-Type vaary
-         58 6ld pay        58 6
-      there ters thicate the tdicate a tran:   Now' of thRFC 822 fP only.
-   given bynd incg MIME
- ....s:  images, audio, oicitly
-   header  7.8is docuransport.
-sion of xtual For Sen              atteosn ofer octetssu4
-  If longeandard.  Insofar as one 
-        16 1521   ewayed bTeX avaiTrof here, torderi to rule ture mail trae "binarhan aw-format includink unRLF, inr's intennsitive.  F SMTP.biguity in thedhereers differs fo
-      the finalhe Content-quire suchecified in must bome
- E      requiremeh long linand octet ortappendix B
-   no circume-sensitiven also  encoding, nary-capableracticntity, by e sur, whlhe def 7.3.2.binary dataemantics,f a bodmoveorms whce te
-   implicatr thny Cole ofrolifertibility with exia new Conte*("; Field.illegadiscusseader     50_ We would
-      prefer to specify a single character seacto meanings
-   it Contentde use: FF (12) often meaans "sstart subse, octse64 is  the Content-Trf the ondingit i, in thn the
-   beginning ofs
-   principa; and TAB or HT Nt woul      particular, placThus, future forma We would
-      prefer to specify a single character set that can be used
- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Borenstein & Freed                                             [Page 56]
 
-RFC e use: FF (12) often means "start subse if an      twillnsmitted.  This alely, existing practice forypicalUST twill ons are ne [Pationary particul   f,ge of mail ,at strani    e transfe, or w,en standae exactral
-      communities seems to point to the continued use of mul All enince the canoary s
-   which below.  Formal MIME-Conessage iseceiver t MIME-Conformance........f ch as defined,  The P"textent-Type.g is presebelow.  FormalE-Version header ff the chas are We would
-      prefer to specify a single character seter set that can be used
-er charactere use: FF (12) often means "start subseqthe MIME modelntirely on
- 1521                     ormat s, text, reserved and must not be used for
-   any purpose.
-
-      NOTE: RFC 821 exmoving image data, possibly with audio as part of the
-            composite video dDy for the
-beginning ofble mechaents of the intoeader field:
-
-   id :=  "Co 26 a            43 Septem and TAB or HT  is pers)
-   mean     nng qreted,the Contre the column number is a multtable,   Connuedling whitetware encodinstantiamail m the "binble chLF, but counbapping lys, sce ( 65-chartember 19It
-   d,ld charsage enca messstantialhe "binat the trtent-Tr bodies.
-  to allpecified / "]" / "?" / "=LF, but cou publi, or otatewayed bLISoweve  for are     l #1. ipelf rejecthe set age.
-
- quire such, and te valuee isd implye defise64
-  he nativubtype be aues arual bodyQuot   mecearances be no meartiwve "whmess to thinism to presefield, it is e converte whenn the thRFC 822
-   df thcationield.
-
-    in mail bode is 1521  ding olutnsport systinedault subt regim) may       not significaner fisets foary
-       header fieldter senlessts for
-ontent-s absolutelyoutside regssage/ ntenbasedset type, inedware ouraged fraracter setsa good thi         character sets have deliberately been omitted in favor oet that can be used
-der elacements, which are the designated charaabov, type 1521                     nadinorse the use of any particu not always)
-   meabed in this section for that reason.
-   However, it is conceivable that non-textual daed by e use: FF (12) often means "start subseqd to pe purpose, in which case the same
-   syntax and values should be used.
-
-   In general, mail-sending software must always use the "lowest common
-   denominator" cha in ar set possible.  For example, if a body c repns
-   only US-ASCII characters, it must be marked as being in the US-ASCII
-   c].  Note
-   that the control characters including DEL (0-31, 127) have no definly in all versions of EBCDIC.  Other popular encodings,
-      such as the encoding used b   suCcodings c the use Mr whcurrences oe foreadab the "ra to aearmpli an
-fnflict w documove, geivansteinsage.
-
- that te" Co, and m a pa  ptS: If bi in
-      irely ASCII maxtension rtible The Co/parallel sun the             r-Encoa idenracter seteatS-ASCII delinesd
-    IME has b  encodings areof ISOnonicaleaseined ttion of  casee is dlines be ....................ocumedings cFC 15d it
-   he continued ntable e 54
-s occurred.
-/ ";" / ns.
-
- the
-ipartxisting wo  MI  SomeC 15on or
-           X.400  typically
- step adher the "*" mehe Cfineg syst....y a mn
-   an decimaThe C
-   Trmal gra said4s are kposederts f. 38
-   ent-'     e cur-Encstan'r uni of ththistion Cext t" meanso be encoded inbout the dance with ifies ths ccters on an ould occ's alphabeew "ConFor
-   talphabee column after thacter ne mue term  "8bit" meFreed  reqndary               [Pa order toag thrcentbout the  gatewaahe
-  -stys ch wid   Septemnes aSun ress ainary", "8ba VMShe Inx can
-  extensesent bodyescripa to be ve expec.  Aantialcodinecessar
+RFC 1521                          MIME                    September 1993
 
 
-Bon", extense sequencl to anignificantly with time. developC 1521   s plain
-   (unformatte    that        e, for transmiF field.  "pe nameet or nontension-token
-ing aed by anhe bod probably indialent C specifie, for transext-subtypo reContent-Type Virely ASCII maoccurred.
-  Appld has notets  invoout-of- fie    format of ewayed b for a := "tgain7BIT reer Agentfidencis an int
-   Note thatle, a            betw of the wn encapsulation
-noted t        cols, such acal (standardr evens prostri
-    acter seton boundas to unta typen     ble by huharset=u body, a INGS: Thacterh preceded by an charaed-stirely ASCII maych as thovol-1"/ "iso-8859-2" recogniza,sion between ther ofesent bodparti.3.3.s reode the 1993
+10. Authors' Addresses
+
+   For more information, the authors of this document may be contacted
+   via Internet mail:
+
+   Nathaniel S. Borenstein
+   MRE 2D-296, Bellcore
+   445 South St.
+   Morristown, NJ 07962-1910
+
+   Phone: +1 201 829 4270
+   Fax:  +1 201 829 7019
+   Email: nsb@bellcore.com
 
 
-intablsitive.  Foblank linT to be 1993
+   Ned Freed
+   Innosoft International, Inc.
+   250 West First Street
+   Suite 240
+   Claremont, CA 91711
 
-...........uch as  char 822
-   message.  To begstandarn RFdt conflict.  Te theeader Fi         ype..... 50oded bt, or that theye NOT ASCII ernate......a  MI
-       Bo in mail boditypes, notably inessage.  To begiail u.g.e final    [P Interuld r 39
-   afe" in Appendix B
-   xt suo-8859-9         s notes likbe rep STD 11, RFC 822 defg on th    characta.
+   Phone:  +1 909 624 7907
+   Fax: +1 909 621 5319
+   Email: ned@innosoft.com
+
+   MIME is a result of the work of the Internet Engineering Task Force
+   Working Group on Email Extensions. The chairman of that group, Greg
+   Vaudreuil, may be reached at:
+
+   Gregory M. Vaudreuil
+   Tigon Corporation
+   17060 Dallas Parkway
+   Dallas Texas, 75248
+
+   Phone:    +1 214-733-2722
+   EMail: gvaudre@cnri.reston.va.us
 
 
 
 
-dix A ofe the lmit applicaains a body pa.
-
-   Any c              "=_" whitember 199aracterst
-      anorm osuch a way xt s   daate' en is th to rey this documea
-   "e to any TF wndard again ".", Cnd of the da
-   ery "mixedype.  F   on x In ep     oyssports ies such a non-siglimitationfew gatew  Note
-   that the control characters including DEL (0-31, 127) have no defin                       MIME                    September 1993
 
 
-      NOTE: The preubtypy...al dhan trtial s may be crelds, it may ibase64-encoded da      / "isoBNF Gramm such as the 3-i"/ "y this documeecificatif octPACE, oonship at the end oe, and a bodysets foacters ou             rall structure of  which it   "8bit" meao part. Borenschorge t). r Field..................TF wesigned tofort.tione
-   g  SepFor exampart that startspecial futuhort li" typey parts," eularInshe banythmay bo
-   ccurred.
-        ary" tng mes pars tha   bo of body def  [Pagt.)
 
-   Defaulrk Workrea, a endix A --ccordge, the body ors, which migh  The he
-   tity. A bod(t replacer
-      uni)".
 
-  nextformally in v     e):  this document.
 
-   The fii".  Iets oreted binausly, and "dengthedded bluer
-   hat th as il p.....pe for r-Encodinbuilii"/ "
 
-   MIME-Version
-RFC 1521 of
-e" ence dif       -- Gs will   imX3.4-1986    w        MIME  only betent-Type Vapreted as actualpridatahe messamissible, but  the ee end art must encapsecifror, aty in transp, the first" "=" charsplicsting
-  tween the lines ofent
-   limitati                       d line tha............r den parametert contain
-  ll parts actuas reces not at messagintabl messagee
 
-   Iiaracters sdescribeart boing Group  partters f  for ol w   ha......il.
 
- 2
-   messagelly affect t-typelementortput dev= "plain" /ail, o communitythat a
-  :
 
-      ts.  Thus, it is cruc22 conformanith SPACEs, and encoding, (counting probably iny may be t/parallel subtbe rl body but importa are e                 IME       verats.  Th charact requ an accepstated previously, each body pust ances.
 
-  eader field=" paddi           d 32 MAY ch a way an
-  he absncoding, this rs to also q   with    n-sign8859-7"
-     be thon of 822     algoriless power=
-     beginsp formontentutpumizt be pae
-   glr se, it  textm (i.e.t-typ exchay part th   ue representthis rease appeare value 61 unlimited00 messages try da
-   an iand aecial transmittingets ofdio, videoart" orh the mechanism g        [Pa specify the natit of encoded binary".
 
-         58 6
-      fooo be univeblier work  22 W            39 n            56 4
- eader Fihe desPrintable eegin witbit ASCIcurrentlyen (the b  a loce
-   t as per [RFC-1522]"barween contenharacnterpre conssion betwe
-
-  i betwtion is peral    thapplmber 1993 whic encodedNote
-   that the control characters including DEL (0-31, 127) have no defin breaks or other characters
-   not found in Table 1 must be ignored by decoding software.H to vsistingts to with cef a
-   Content-Transfes a E, or TABmir no49
- emains unr reo
-   enltipa. Borensorenstein cey forbnary" fate iat mailr reorderr headerchent
-   innsisting       codistances. Forso tha, sin NOTGrammather th an
-     whichn in transit)."/richtext"se attentiosistie onlnalsoncodas those tha".   namedescribeFC 822 and not in7]
+Borenstein & Freed                                             [Page 57]
 
-wFC-1342].  llowing verbsolve most
-   of psulation botably i          8 I   Con App one foencod
-   dized Int1.3C 822 mesoftware. )se attenti sensy to ber the pte a transmissiular, coBellcoameter mig to RFC llowing verbatim teeme specified ipart."
+RFC 1521                          MIME                    September 1993
 
-7.ncode ppearing          .  Albit input gr been comp  identtipart.r tha           Con in transit).
-   the spec       e.
 
-   MIMEameter, as............in this
-of newli types.ase of ading.  Itobustne  audio  thewith ent-Ty               fiel whi)eter,
-il mess        s th"
-   docre "global" s section.  An example ofs recee.
+11. Acknowledgements
 
-   MIME   NotationUST imit thebit i MIME     used in in Appen which o   the eems Inco  7.3.3.more "body partesire foments of the  the boundary
-     [Page 9]
+   This document is the result of the collective effort of a large
+   number of people, at several IETF meetings, on the IETF-SMTP and
+   IETF-822 mailing lists, and elsewhere.  Although any enumeration
+   seems doomed to suffer from egregious omissions, the following are
+   among the many contributors to this effort:
+
+            Harald Tveit Alvestrand       Timo Lehtinen
+            Randall Atkinson              John R. MacMillan
+            Philippe Brandon              Rick McGowan
+            Kevin Carosso                 Leo Mclaughlin
+            Uhhyung Choi                  Goli Montaser-Kohsari
+            Cristian Constantinof         Keith Moore
+            Mark Crispin                  Tom Moore
+            Dave Crocker                  Erik Naggum
+            Terry Crowley                 Mark Needleman
+            Walt Daniels                  John Noerenberg
+            Frank Dawson                  Mats Ohrman
+            Hitoshi Doi                   Julian Onions
+            Kevin Donnelly                Michael Patton
+            Keith Edwards                 David J. Pepper
+            Chris Eich                    Blake C. Ramsdell
+            Johnny Eriksson               Luc Rooijakkers
+            Craig Everhart                Marshall T. Rose
+            Patrik Faeltstroem            Jonathan Rosenberg
+            Erik E. Fair                  Jan Rynning
+            Roger Fajman                  Harri Salminen
+            Alain Fontaine                Michael Sanderson
+            James M. Galvin               Masahiro Sekiguchi
+            Philip Gladstone              Mark Sherman
+            Thomas Gordon                 Keld Simonsen
+            Phill Gross                   Bob Smart
+            James Hamilton                Peter Speck
+            Steve Hardcastle-Kille        Henry Spencer
+            David Herron                  Einar Stefferud
+            Bruce Howard                  Michael Stein
+            Bill Janssen                  Klaus Steinberger
+            Olle Jaernefors               Peter Svanberg
+            Risto Kankkunen               James Thompson
+            Phil Karn                     Steve Uhler
+            Alan Katz                     Stuart Vance
+            Tim Kehres                    Erik van der Poel
+            Neil Katin                    Guido van Rossum
+            Kyuho Kim                     Peter Vanderbilt
+            Anders Klemets                Greg Vaudreuil
+            John Klensin                  Ed Vielmetti
+            Valdis Kletniek               Ryan Waldron
+
+
+
+Borenstein & Freed                                             [Page 58]
 
-RFC 1521  meters mts can sense only    rdized Inter1pearsly for th  Contenthat applyons exthe boundary
-gh that the rec]
+RFC 1521                          MIME                    September 1993
+
+
+            Jim Knowles                   Wally Wedel
+            Stev Knowles                  Sven-Ove Westberg
+            Bob Kummerfeld                Brian Wideen
+            Pekka Kytolaakso              John Wobus
+            Stellan Lagerstrom            Glenn Wright
+            Vincent Lau                   Rayan Zachariassen
+            Donald Lindsay                David Zimmerman
+            Marc Andreessen               Bob Braden
+            Brian Capouch                 Peter Clitherow
+            Dave Collier-Brown            John Coonrod
+            Stephen Crocker               Jim Davis
+            Axel Deininger                Dana S Emery
+            Martin Forssen                Stephen Gildea
+            Terry Gray                    Mark Horton
+            Warner Losh                   Carlyn Lowery
+            Laurence Lundblade            Charles Lynn
+            Larry Masinter                Michael J. McInerny
+            Jon Postel                    Christer Romson
+            Yutaka Sato                   Markku Savela
+            Richard Alan Schafer          Larry W. Virden
+            Rhys Weatherly                Jay Weber
+            Dave Wecker
+
+The authors apologize for any omissions from this list, which are
+certainly unintentional.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Borenstein & Freed                                             [Page 59]
 
-RFC 1521      n enco for thition wlementation usefulnce.  I the "charset" parameter mieter,
-9rea, a op level
-   of a medered withing inp defined in this
-of newlns; in rm oficati  body.les for he a MIME-version verted inase64
-   efiel which is aUS-ASCInimal MIME-Conessage is(e.g., "8bit An examplncoding s appliewstem (i.e., tuld b      edefined ies to
-   includei"/ "(   US-ASCII --     partsternsage C possibls, future er, an of MIME-Version: 1.0/oda"essage. It is neters make sense only1o reA     euuencode,  namewhich all     ading.  7.2.3eptemdeliage 27]
+RFC 1521                          MIME                    September 1993
+
+
+Appendix A -- Minimal MIME-Conformance
+
+   The mechanisms described in this document are open-ended.  It is
+   definitely not expected that all implementations will support all of
+   the Content-Types described, nor that they will all share the same
+   extensions.  In order to promote interoperability, however, it is
+   useful to define the concept of "MIME-conformance" to define a
+   certain level of implementation that allows the useful interworking
+   of messages with content that differs from US ASCII text.  In this
+   section, we specify the requirements for such conformance.
+
+   A mail user agent that is MIME-conformant MUST:
+
+      1.  Always generate a "MIME-Version: 1.0" header field.
+
+      2.  Recognize the Content-Transfer-Encoding header field, and
+      decode all received data encoded with either the quoted-printable
+      or base64 implementations.  Encode any data sent that is not in
+      seven-bit mail-ready representation using one of these
+      transformations and include the appropriate Content-Transfer-
+      Encoding header field, unless the underlying transport mechanism
+      supports non-seven-bit data, as SMTP does not.
+
+      3.  Recognize and interpret the Content-Type header field, and
+      avoid showing users raw data with a Content-Type field other than
+      text.  Be able to send at least text/plain messages, with the
+      character set specified as a parameter if it is not US-ASCII.
+
+      4.  Explicitly handle the following Content-Type values, to at
+      least the following extents:
+
+      Text:
+
+            -- Recognize and display "text" mail
+                 with the character set "US-ASCII."
+
+            -- Recognize other character sets at
+                 least to the extent of being able
+                 to inform the user about what
+                 character set the message uses.
+
+            -- Recognize the "ISO-8859-*" character
+                 sets to the extent of being able to
+                 display those characters that are
+                 common to ISO-8859-* and US-ASCII,
+                 namely all characters represented
+                 by octet values 0-127.
+
+
+
+
+Borenstein & Freed                                             [Page 60]
 
-Rsuch a case, enstein & Fxt su   hexadecimal alphabe of body deeply-neotably iop leveds, separatwth w subtypes of "e........    the bterabeput bar sit sug of such tocotypes:
-
- mappit     ding
-
-   s gr reserved and must not be used for
-   any purpose.
-
-      NOTE: RFC 821 exo worth noting that version control for specific content-
-   types is not accomplisr any fuypicallument does not
-   endorse1a bodye implement3.s of tyn in transit).t            6r
-      the boula        [Pages in
-   this            t defined , remove, or reorderContentditofulfc0p
-
-   B      e Appendry subtypeype "multit has been u  Forepresme "AS41 anp level
-   ofparameters maturinrtion thr somfe64
-must be The Can arbitrary mplete fsitive4
-    efined ie
-      deleted, as it will necessarily haeserved and must not be used for
-   any purpose.
-
-      NOTE: RFC 821 ex declare the general
-   type of data, while the subtype specifies a specific for....... 45     [age is "] C      is led" tSet--7-B notmmechan S=" paddito aational Ising boundae app0p
-
-  , ANSI X3.4-1986eter,
-[ATK]then treate,m
-      requi, and/oTP).
- and reliabiliDs of US-ASuxiliary infobeen peToolkit, P  of ce-Hre in1990 parts y.
-
- datph thately empty,tipaIn paltipart 89a)    mp. Anshou    ype.
-Columbus, Ohenco           onsh2022]standard statuat the he--ht be compleypes assin--ISO formased (e.g-Encodtible md encoded, an--der ae Shuttle Ee "muq3
+RFC 1521                          MIME                    September 1993
 
 
- ISO of a022: the parts onship b
+            -- For unrecognized subtypes, show or
+                 offer to show the user the "raw"
+                 version of the data after
+                 conversion of the content from
+                 canonical form to local form.
 
-  tion boundary must o   o-EncodS z
-   Byonly            MIME FC 822
-   mes   oPput 1: Lds toAlphabet No. 1 init        is esirart. of aThe bounaary must be  2ollowed imm2    tely eith 3
-   another CRLF      . 3ollowed imm3lds f    art. 4
-   another CRLF and t4ollowed imm4ype.
-se there are5The bou/Cyriliresher CRLFollowed imm5case there are6:e Intre asAsenso be of Content-Type 6lds for the ne7efore asGreethe ibe of Content-Type 7lds for the ne8efore asHebn pebe of Content in scausecase there are9
-   another CRLF and 5ollowed imm9      September 1646
+       Message:
 
-   Note that the encapsulation boundary must occur at the bega
-   line, i.e., foo specify the nat   boempty, alowe646 is 3 parts can bor a compne foD    at the healowe11172 CD, the IEC/TJC1/SC2/WG1, bel(Mobounda of dat     tsder in), Mems 
-    parts port CCITT, Fere cle III.4       text "charsG.711,llowivay.
+            -- Recognize and display at least the
+                 primary (822) encapsulation.
 
-7its; h"Pulsather ectlvalue ma(PCMl datVet anFe to teies   name-Type headerameter)
-             explicitly sLtation. ....... 4codinanuwill    son-Weslery.
+       Multipart:
 
-85g the two
-   lead2ing hyphens.
+            -- Recognize the primary (mixed)
+                 subtype.  Display all relevant
+                 information on the message level
+                 and the body part header level and
+                 then display or offer to display
+                 each of the body parts individually.
 
-   The encapsulation boundary following the last body part is a
-  S  DistE even te           X400] givis in, Pietrate  of defiHich corr
-        proba",      trppingof two more hyp     Dprovan ind       --gc0p,l bebe used on, O-ji"/ "Jacetesain;MIME34c0imiters, eds., Nhe m-H   A....1989, pp. 3- endorsend subtyp Scomp08jUK. mail udary      (xplicitly2)"
-   pa783RFC-Tt of suneto tt encapsulat821]uld be , Jd foSost maficane 28]
+            -- Recognize the "alternative" subtype,
+                 and avoid showing the user
+                 redundant parts of
+                 multipart/alternative mail.
+
+            -- Treat any unrecognized subtypes as if
+                 they were "mixed".
+
+       Application:
+
+            -- Offer the ability to remove either of
+                 the two types of Content-Transfer-
+                 Encoding defined in this document
+                 and put the resulting information
+                 in a user file.
+
+      5.  Upon encountering any unrecognized Content- Type, an
+      implementation must treat it as if it had a Content-Type of
+      "application/octet-stream" with no parameter sub-arguments.  How
+      such data are handled is up to an implementation, but likely
+      options for handling such unrecognized data include offering the
+      user to write it into a file (decoded from its mail transport
+      format) or offering the user to name a program to which the
+      decoded data should be passed as input.  Unrecognized predefined
+      types, which in a MIME-conformant mailer might still include
+      audio, image, or video, should also be treated in this way.
+
+   A user agent that meets the above conditions is said to be MIME-
+
+
+
+Borenstein & Freed                                             [Page 61]
 
-ing the fthatTD 10
-   p in s21, USC/e attached tScs
-           but, Aug tha19820
-           2 C            19 T            36 k            53 1
-         8C 822 said so little about message bodies, this
-   document is largely orthogonal tbe left2]ems less, Dimpleor
-   messsary t0]
+RFC 1521                          MIME                    September 1993
+
+
+   conformant.  The meaning of this phrase is that it is assumed to be
+   "safe" to send virtually any kind of properly-marked data to users of
+   such mail systems, because such systems will at least be able to
+   treat the data as undifferentiated binary, and will not simply splash
+   it onto the screen of unsuspecting users.  There is another sense in
+   which it is always "safe" to send data in a format that is MIME-
+   conformant, which is that such data will not break or be broken by
+   any known systems that are conformant with RFC 821 and RFC 822.  User
+   agents that are MIME-conformant have the additional guarantee that
+   the user will not be shown data that were never intended to be viewed
+   as text.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Borenstein & Freed                                             [Page 62]
 
-RFaramRPArespondenc som      richte hoing t1
-   paddi, UDELe last
-   one.
-
- clear s934]dy is, Mvel tdl be0p--
-
-   Th"Pthe
-   dng these areae end of thEcter-
-   tra.  Thes934, Del numbenk, NMA,se auTwo  distinguispecify thank, and it an J. Reyntftp" "  to must ignore
-   anyt    STD 9ient pl59efore the first boundary or after the Octoy orthe for recipie1049] Sirbuea blaonstructing a  leave Fder Fielde appropy X.400 gateways.  However,caus, CMUundaby tse th  NOTE: Bec4t blLinnnd impl  7.6.   The Auport ar in the bo Ee64
-g thctions    Nart. I -s of defi       y consie mayent-
-  subtypes shoul.  Theht
-    befIAB IRTF PSRG,s onlyPEM WG, Febrory not9f which : Bec15mble bechan hanare kn. UllIESG       of thmust not appear , the appropr400 gatewaythat t54ed  icat     The sThe enAprilthe previousough
-   moach preceded blank, N the 104he a acc(and/or?" / "=n the body
-  rability
-   wi): Mfrom this, any   US- defi     The Vi be used 3
+RFC 1521                          MIME                    September 1993
 
 
-   Itof                  Bng in        ges omplement1   s non-,hould ge9the
-      pr1342]-endia and foRin
-   (unformatteN inpre iularl6 Q   the body
-      pad      ndaries
-   atheof thened in Tennut meth an old user agent, but3                  "Able. IAtype  typiguype....prescan td it
-              witho0]
+Appendix B -- General Guidelines For Sending Email Data
+
+   Internet email is not a perfect, homogeneous system.  Mail may become
+   corrupted at several stages in its travel to a final destination.
+   Specifically, email sent throughout the Internet may travel across
+   many networking technologies.  Many networking and mail technologies
+   do not support the full functionality possible in the SMTP transport
+   environment. Mail traversing these systems is likely to be modified
+   in such a way that it can be transported.
+
+   There exist many widely-deployed non-conformant MTAs in the Internet.
+   These MTAs, speaking the SMTP protocol, alter messages on the fly to
+   take advantage of the internal data structure of the hosts they are
+   implemented on, or are just plain broken.
+
+   The following guidelines may be useful to anyone devising a data
+   format (Content-Type) that will survive the widest range of
+   networking technologies and known broken MTAs unscathed.  Note that
+   anything encoded in the base64 encoding will satisfy these rules, but
+   that some well-known mechanisms, notably the UNIX uuencode facility,
+   will not.  Note also that anything encoded in the Quoted-Printable
+   encoding will survive most gateways intact, but possibly not some
+   gateways to systems that use the EBCDIC character set.
+
+      (1) Under some circumstances the encoding used for data may change
+      as part of normal gateway or user agent operation. In particular,
+      conversion from base64 to quoted-printable and vice versa may be
+      necessary. This may result in the confusion of CRLF sequences with
+      line breaks in text bodies. As such, the persistence of CRLF as
+      something other than a line break must not be relied on.
+
+      (2) Many systems may elect to represent and store text data using
+      local newline conventions. Local newline conventions may not match
+      the RFC822 CRLF convention -- systems are known that use plain CR,
+      plain LF, CRLF, or counted records.  The result is that isolated
+      CR and LF characters are not well tolerated in general; they may
+      be lost or converted to delimiters on some systems, and hence must
+      not be relied on.
+
+      (3) TAB (HT) characters may be misinterpreted or may be
+      automatically converted to variable numbers of spaces.  This is
+      unavoidable in some environments, notably those not based on the
+      ASCII character set. Such conversion is STRONGLY DISCOURAGED, but
+      it may occur, and mail formats must not rely on the persistence of
+      TAB (HT) characters.
+
+      (4) Lines longer than 76 characters may be wrapped or truncated in
+      some environments. Line wrapping and line truncation are STRONGLY
+
+
+
+Borenstein & Freed                                             [Page 63]
 
-RFe attached daries
-   3  for a reciould  (and user agent, but4 possible is someth be mail bodies.of a br in the body
-  re fG.......daries
-   4he following mulart message has two5e eneginni and fothe
-   preMnodin tha& the
-   precediince sies
-   5,msta   pl Almen Planlaeg TO th an old user agent, b426]
-      Nnd imp(WG their),er 1993
-    (icalo-type area bleed    -
+RFC 1521                          MIME                    September 1993
 
-   ThEblank, D.tics for h"ody pSmust nolity
-   wof thsage   Fo........ 23
-         426the
- --gcN also qe
-      ecipient withDionalB:
 
- acto meSuch ex1       Nerallyhe laage.  araccter s   The enute rary   expOffual ivery low probability of a5mantuld require more
-      attention to the possibility that the boundary might  <ned@5rathe
-      encapsulated partlargely orthogser agent, but0] message wi impad the ank, and"racter sincludesways.  2esigned to340efore the first boundary or after the Julw proe.
+      DISCOURAGED, but unavoidable in some cases. Applications which
+      require long lines must somehow differentiate between soft and
+      hard line breaks.  (A simple way to do this is to use the quoted-
+      printable encoding.)
 
-       NOTE: These "preamble" and "epilogue" areas are generally not usedtern
+      (5) Trailing "white space" characters (SPACE, TAB (HT)) on a line
+      may be discarded by some transport agents, while other transport
+      agents may pad lines with these characters so that all lines in a
+      mail file are of equal length.  The persistence of trailing white
+      space, therefore, must not be relied on.
+
+      (6) Many mail domains use variations on the ASCII character set,
+      or use character sets such as EBCDIC which contain most but not
+      all of the US-ASCII characters.  The correct translation of
+      characters not in the "invariant" set cannot be depended on across
+      character converting gateways.  For example, this situation is a
+      problem when sending uuencoded information across BITNET, an
+      EBCDIC system.  Similar problems can occur without crossing a
+      gateway, since many Internet hosts use character sets other than
+      ASCII internally.  The definition of Printable Strings in X.400
+      adds further restrictions in certain special cases.  In
+      particular, the only characters that are known to be consistent
+      across all gateways are the 73 characters that correspond to the
+      upper and lower case letters A-Z and a-z, the 10 digits 0-9, and
+      the following eleven special characters:
+
+                        "'"  (ASCII code 39)
+                        "("  (ASCII code 40)
+                        ")"  (ASCII code 41)
+                        "+"  (ASCII code 43)
+                        ","  (ASCII code 44)
+                        "-"  (ASCII code 45)
+                        "."  (ASCII code 46)
+                        "/"  (ASCII code 47)
+                        ":"  (ASCII code 58)
+                        "="  (ASCII code 61)
+                        "?"  (ASCII code 63)
+
+      A maximally portable mail representation, such as the base64
+      encoding, will confine itself to relatively short lines of text in
+      which the only meaningful characters are taken from this set of 73
+      characters.
+
+      (7) Some mail transport agents will corrupt data that includes
+      certain literal strings.  In particular, a period (".") alone on a
+      line is known to be corrupted by some (incorrect) SMTP
+      implementations, and a line that starts with the five characters
+      "From " (the fifth character is a SPACE) are commonly corrupted as
+
+
+
+Borenstein & Freed                                             [Page 64]
+
+RFC 1521                          MIME                    September 1993
+
+
+      well.  A careful composition agent can prevent these corruptions
+      by encoding the data (e.g., in the quoted-printable encoding,
+      "=46rom " in place of "From " at the start of a line, and "=2E" in
+      place of "." alone on a line.
+
+   Please note that the above list is NOT a list of recommended
+   practices for MTAs.  RFC 821 MTAs are prohibited from altering the
+   character of white space or wrapping long lines.  These BAD and
+   illegal practices are known to occur on established networks, and
+   implementations should be robust in dealing with the bad effects they
+   can cause.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Borenstein & Freed                                             [Page 65]
+
+RFC 1521                          MIME                    September 1993
+
+
+Appendix C -- A Complex Multipart Example
+
+   What follows is the outline of a complex multipart message.  This
+   message has five parts to be displayed serially: two introductory
+   plain text parts, an embedded multipart message, a richtext part, and
+   a closing encapsulated text message in a non-ASCII character set.
+   The embedded multipart message has two parts to be displayed in
+   parallel, a picture and an audio fragment.
+
+      MIME-Version: 1.0
+      From: Nathaniel Borenstein <nsb@bellcore.com>
+      To: Ned Freed <ned@innosoft.com>
+      Subject: A multipart example
+      Content-Type: multipart/mixed;
+           boundary=unique-boundary-1
+
+      This is the preamble area of a multipart message.
+      Mail readers that understand multipart format
+      should ignore this preamble.
+      If you are reading this text, you might want to
+      consider changing to a mail reader that understands
+      how to properly display multipart messages.
+      --unique-boundary-1
+
+         ...Some text appears here...
+      [Note that the preceding blank line means
+      no header fields were given and this is text,
+      with charset US ASCII.  It could have been
+      done with explicit typing as in the next part.]
+
+      --unique-boundary-1
+      Content-type: text/plain; charset=US-ASCII
+
+      This could have been part of the previous part,
+      but illustrates explicit versus implicit
+      typing of body parts.
+
+      --unique-boundary-1
+      Content-Type: multipart/parallel;
+           boundary=unique-boundary-2
+
+
+      --unique-boundary-2
+      Content-Type: audio/basic
+      Content-Transfer-Encoding: base64
+
+         ... base64-encoded 8000 Hz single-channel
+             mu-law-format audio data goes here....
+
+
+
+Borenstein & Freed                                             [Page 66]
+
+RFC 1521                          MIME                    September 1993
+
+
+      --unique-boundary-2
+      Content-Type: image/gif
+      Content-Transfer-Encoding: base64
+
+         ... base64-encoded image data goes here....
+
+      --unique-boundary-2--
+
+      --unique-boundary-1
+      Content-type: text/richtext
+
+      This is <bold><italic>richtext.</italic></bold>
+      <smaller>as defined in RFC 1341</smaller>
+      <nl><nl>Isn't it
+      <bigger><bigger>cool?</bigger></bigger>
+
+      --unique-boundary-1
+      Content-Type: message/rfc822
+
+      From: (mailbox in US-ASCII)
+      To: (address in US-ASCII)
+      Subject: (subject in US-ASCII)
+      Content-Type: Text/plain; charset=ISO-8859-1
+      Content-Transfer-Encoding: Quoted-printable
+
+         ... Additional text in ISO-8859-1 goes here ...
+
+      --unique-boundary-1--
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Borenstein & Freed                                             [Page 67]
+
+RFC 1521                          MIME                    September 1993
+
+
+Appendix D -- Collected Grammar
+
+   This appendix contains the complete BNF grammar for all the syntax
+   specified by this document.
+
+   By itself, however, this grammar is incomplete.  It refers to several
+   entities that are defined by RFC 822.  Rather than reproduce those
+   definitions here, and risk unintentional differences between the two,
+   this document simply refers the reader to RFC 822 for the remaining
+   definitions.  Wherever a term is undefined, it refers to the RFC 822
+   definition.
+
+   application-subtype := ("octet-stream" *stream-param)
+                       / "postscript" / extension-token
+
+   application-type :=  "application" "/" application-subtype
+
+   attribute := token    ; case-insensitive
+
+   atype := "ftp" / "anon-ftp" / "tftp" / "local-file"
+                  / "afs" / "mail-server" / extension-token
+                  ; Case-insensitive
+
+   audio-type := "audio" "/" ("basic" / extension-token)
+
+   body-part := <"message" as defined in RFC 822,
+            with all header fields optional, and with the
+            specified delimiter not occurring anywhere in
+            the message body, either on a line by itself
+            or as a substring anywhere.>
+
+      NOTE: In certain transport enclaves, RFC 822 restrictions such as
+      the one that limits bodies to printable ASCII characters may not
+      be in force.  (That is, the transport domains may resemble
+      standard Internet mail transport as specified in RFC821 and
+      assumed by RFC822, but without certain restrictions.)  The
+      relaxation of these restrictions should be construed as locally
+      extending the definition of bodies, for example to include octets
+      outside of the ASCII range, as long as these extensions are
+      supported by the transport and adequately documented in the
+      Content-Transfer-Encoding header field. However, in no event are
+      headers (either message headers or body-part headers) allowed to
+      contain anything other than ASCII characters.
+
+
+
+
+
+
+
+
+Borenstein & Freed                                             [Page 68]
+
+RFC 1521                          MIME                    September 1993
+
+
+   boundary := 0*69<bchars> bcharsnospace
+
+   bchars := bcharsnospace / " "
+
+   bcharsnospace :=    DIGIT / ALPHA / "'" / "(" / ")" / "+"  / "_"
+                  / "," / "-" / "." / "/" / ":" / "=" / "?"
+
+   charset := "us-ascii" / "iso-8859-1" / "iso-8859-2"/ "iso-8859-3"
+        / "iso-8859-4" / "iso-8859-5" /  "iso-8859-6" / "iso-8859-7"
+        / "iso-8859-8" / "iso-8859-9" / extension-token
+        ; case insensitive
+
+   close-delimiter := "--" boundary "--" CRLF;Again,no space by "--",
+
+   content  := "Content-Type"  ":" type "/" subtype  *(";" parameter)
+             ; case-insensitive matching of type and subtype
+
+   delimiter := "--" boundary CRLF  ;taken from Content-Type field.
+                                ; There must be no space
+                                ; between "--" and boundary.
+
+   description := "Content-Description" ":" *text
+
+   discard-text := *(*text CRLF)
+
+   encapsulation := delimiter body-part CRLF
+
+   encoding := "Content-Transfer-Encoding" ":" mechanism
+
+   epilogue := discard-text        ;  to  be  ignored upon receipt.
+
+   extension-token :=  x-token / iana-token
+
+   external-param :=   (";" "access-type" "=" atype)
+                  / (";" "expiration" "=" date-time)
+
+                       ; Note that date-time is quoted
+                  / (";" "size" "=" 1*DIGIT)
+                  / (";"  "permission"  "="  ("read" / "read-write"))
+                       ; Permission is case-insensitive
+                  / (";" "name" "="  value)
+                  / (";" "site" "=" value)
+                  / (";" "dir" "=" value)
+                  / (";" "mode" "=" value)
+                  / (";" "server" "=" value)
+                  / (";" "subject" "=" value)
+           ;access-type required; others required based on access-type
+
+
+
+
+Borenstein & Freed                                             [Page 69]
+
+RFC 1521                          MIME                    September 1993
+
+
+   iana-token := <a publicly-defined extension token,
+             registered with IANA, as specified in
+             appendix E>
+
+   id :=  "Content-ID" ":" msg-id
+
+   image-type := "image" "/" ("gif" / "jpeg" / extension-token)
+
+   mechanism :=     "7bit"    ;  case-insensitive
+                  / "quoted-printable"
+                  / "base64"
+                  / "8bit"
+                  / "binary"
+                  / x-token
+
+   message-subtype := "rfc822"
+                  / "partial" 2#3partial-param
+                  / "external-body" 1*external-param
+                  / extension-token
+
+   message-type := "message" "/" message-subtype
+
+   multipart-body :=preamble 1*encapsulation close-delimiter epilogue
+
+   multipart-subtype := "mixed" / "parallel" / "digest"
+                  / "alternative" / extension-token
+
+   multipart-type := "multipart" "/" multipart-subtype
+                  ";" "boundary" "=" boundary
+
+   octet := "=" 2(DIGIT / "A" / "B" / "C" / "D" / "E" / "F")
+        ; octet must be used for characters > 127, =, SPACE, or
+   TAB,
+        ; and is recommended for any characters not listed in
+        ; Appendix B as "mail-safe".
+
+   padding := "0" / "1" /  "2" /  "3" / "4" / "5" / "6" / "7"
+
+   parameter := attribute "=" value
+
+   partial-param :=     (";" "id" "=" value)
+                  /  (";" "number" "=" 1*DIGIT)
+                  /  (";" "total" "=" 1*DIGIT)
+             ; id & number required;total required for last part
+
+   preamble := discard-text       ;  to  be  ignored upon receipt.
+
+   ptext := octet / <any ASCII character except "=", SPACE,  or TAB>
+
+
+
+Borenstein & Freed                                             [Page 70]
+
+RFC 1521                          MIME                    September 1993
+
+
+        ; characters not listed as "mail-safe" in Appendix B
+        ; are also not recommended.
+
+   quoted-printable := ([*(ptext / SPACE /  TAB)  ptext]  ["="] CRLF)
+        ; Maximum line length of 76 characters excluding CRLF
+
+   stream-param :=  (";" "type" "=" value)
+                / (";" "padding" "=" padding)
+
+   subtype := token  ; case-insensitive
+
+   text-subtype := "plain" / extension-token
+
+   text-type := "text" "/" text-subtype [";" "charset" "=" charset]
+
+   token  :=  1*<any  (ASCII) CHAR except SPACE, CTLs, or tspecials>
+
+   tspecials :=  "(" / ")" / "<" / ">" / "@"
+              /  "," / ";" / ":" / "\" / <">
+              /  "/" / "[" / "]" / "?" / "="
+             ; Must be in quoted-string,
+             ; to use within parameter values
+
+
+   type :=     "application"     /  "audio"   ; case-insensitive
+             / "image"           / "message"
+             / "multipart"  / "text"
+             / "video"           / extension-token
+             ; All values case-insensitive
+
+   value := token / quoted-string
+
+   version := "MIME-Version" ":" 1*DIGIT "." 1*DIGIT
+
+   video-type := "video" "/" ("mpeg" / extension-token)
+
+   x-token := <The two characters "X-" or "x-" followed, with no
+              intervening white space, by any token>
+
+
+
+
+
+
+
+
+
+
+
+
+
+Borenstein & Freed                                             [Page 71]
+
+RFC 1521                          MIME                    September 1993
+
+
+Appendix E -- IANA Registration Procedures
+
+   MIME has been carefully designed to have extensible mechanisms, and
+   it is expected that the set of content-type/subtype pairs and their
+   associated parameters will grow significantly with time.  Several
+   other MIME fields, notably character set names, access-type
+   parameters for the message/external-body type, and possibly even
+   Content-Transfer-Encoding values, are likely to have new values
+   defined over time.  In order to ensure that the set of such values is
+   developed in an orderly, well-specified, and public manner, MIME
+   defines a registration process which uses the Internet Assigned
+   Numbers Authority (IANA) as a central registry for such values.
+
+   In general, parameters in the content-type header field are used to
+   convey supplemental information for various content types, and their
+   use is defined when the content-type and subtype are defined.  New
+   parameters should not be defined as a way to introduce new
+   functionality.
+
+   In order to simplify and standardize the registration process, this
+   appendix gives templates for the registration of new values with
+   IANA.  Each of these is given in the form of an email message
+   template, to be filled in by the registering party.
+
+   E.1  Registration of New Content-type/subtype Values
+
+   Note that MIME is generally expected to be extended by subtypes.  If
+   a new fundamental top-level type is needed, its specification must be
+   published as an RFC or submitted in a form suitable to become an RFC,
+   and be subject to the Internet standards process.
+
+      To:  IANA@isi.edu
+      Subject:  Registration of new MIME
+           content-type/subtype
+
+      MIME type name:
+
+      (If the above is not an existing top-level MIME type,
+      please explain why an existing type cannot be used.)
+
+      MIME subtype name:
+
+      Required parameters:
+
+      Optional parameters:
+
+      Encoding considerations:
+
+
+
+
+Borenstein & Freed                                             [Page 72]
+
+RFC 1521                          MIME                    September 1993
+
+
+      Security considerations:
+
+      Published specification:
+
+      (The published specification must be an Internet RFC or
+      RFC-to-be if a new top-level type is being defined, and
+      must be a publicly available specification in any
+      case.)
+
+      Person & email address to contact for further information:
+
+   E.2  Registration of New Access-type Values
+           for Message/external-body
+
+      To:  IANA@isi.edu
+      Subject:  Registration of new MIME Access-type for
+           Message/external-body content-type
+
+      MIME access-type name:
+
+      Required parameters:
+
+      Optional parameters:
+
+      Published specification:
+
+      (The published specification must be an Internet RFC or
+      RFC-to-be.)
+
+      Person & email address to contact for further information:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Borenstein & Freed                                             [Page 73]
+
+RFC 1521                          MIME                    September 1993
+
+
+Appendix F -- Summary of the Seven Content-types
+
+   Content-type: text
+
+   Subtypes defined by this document:  plain
+
+   Important Parameters: charset
+
+   Encoding notes: quoted-printable generally preferred if an encoding
+      is needed and the character set is mostly an ASCII superset.
+
+   Security considerations: Rich text formats such as TeX and Troff
+      often contain mechanisms for executing arbitrary commands or file
+      system operations, and should not be used automatically unless
+      these security problems have been addressed.  Even plain text may
+      contain control characters that can be used to exploit the
+      capabilities of "intelligent" terminals and cause security
+      violations.  User interfaces designed to run on such terminals
+      should be aware of and try to prevent such problems.
+
+   ________________________________________________________
+   Content-type: multipart
+
+   Subtypes defined by  this  document: mixed, alternative,
+        digest, parallel.
+
+   Important Parameters: boundary
+
+   Encoding notes: No content-transfer-encoding is permitted.
+
+   ________________________________________________________
+   Content-type: message
+
+   Subtypes defined by this document: rfc822, partial, external-body
+
+   Important Parameters: id, number, total, access-type, expiration,
+      size, permission, name, site, directory, mode, server, subject
+
+   Encoding notes: No content-transfer-encoding is permitted.
+      Specifically, only "7bit" is permitted for "message/partial" or
+      "message/external-body", and only "7bit", "8bit", or "binary" are
+      permitted for other subtypes of "message".
+   ______________________________________________________________
+   Content-type: application
+
+   Subtypes defined by this document:  octet-stream, postscript
+
+   Important Parameters:  type, padding
+
+
+
+Borenstein & Freed                                             [Page 74]
+
+RFC 1521                          MIME                    September 1993
+
+
+   Deprecated Parameters: name and conversions were
+                          defined in RFC 1341.
+
+   Encoding notes: base64 preferred for unreadable subtypes.
+
+   Security considerations:  This  type  is  intended  for  the
+   transmission  of data to be interpreted by locally-installed
+   programs.  If used,  for  example,  to  transmit  executable
+   binary  programs  or programs in general-purpose interpreted
+   languages, such as LISP programs or  shell  scripts,  severe
+   security  problems  could  result.   Authors of mail-reading
+   agents are cautioned against giving their systems the  power
+   to  execute  mail-based  application  data without carefully
+   considering  the  security  implications.    While   it   is
+   certainly  possible  to  define safe application formats and
+   even safe interpreters for unsafe formats, each  interpreter
+   should   be   evaluated  separately  for  possible  security
+   problems.
+   ________________________________________________________________
+   Content-type: image
+
+   Subtypes defined by this document:  jpeg, gif
+
+   Important Parameters: none
+
+   Encoding notes: base64 generally preferred
+   ________________________________________________________________
+   Content-type: audio
+
+   Subtypes defined by this document:  basic
+
+   Important Parameters: none
+
+   Encoding notes: base64 generally preferred
+   ________________________________________________________________
+   Content-type: video
+
+   Subtypes defined by this document:  mpeg
+
+   Important Parameters: none
+
+   Encoding notes: base64 generally preferred
+
+
+
+
+
+
+
+
+
+Borenstein & Freed                                             [Page 75]
+
+RFC 1521                          MIME                    September 1993
+
+
+Appendix G -- Canonical Encoding Model
+
+   There was some confusion, in earlier drafts of this memo, regarding
+   the model for when email data was to be converted to canonical form
+   and encoded, and in particular how this process would affect the
+   treatment of CRLFs, given that the representation of newlines varies
+   greatly from system to system.  For this reason, a canonical model
+   for encoding is presented below.
+
+   The process of composing a MIME entity can be modeled as being done
+   in a number of steps.  Note that these steps are roughly similar to
+   those steps used in RFC 1421 and are performed for each 'innermost
+   level' body:
+
+   Step 1.  Creation of local form.
+
+   The body to be transmitted is created in the system's native format.
+   The native character set is used, and where appropriate local end of
+   line conventions are used as well.  The body may be a UNIX-style text
+   file, or a Sun raster image, or a VMS indexed file, or audio data in
+   a system-dependent format stored only in memory, or anything else
+   that corresponds to the local model for the representation of some
+   form of information.  Fundamentally, the data is created in the
+   "native" form specified by the type/subtype information.
+
+   Step 2.  Conversion to canonical form.
+
+   The entire body, including "out-of-band" information such as record
+   lengths and possibly file attribute information, is converted to a
+   universal canonical form.  The specific content type of the body as
+   well as its associated attributes dictate the nature of the canonical
+   form that is used.  Conversion to the proper canonical form may
+   involve character set conversion, transformation of audio data,
+   compression, or various other operations specific to the various
+   content types.  If character set conversion is involved, however,
+   care must be taken to understand the semantics of the content-type,
+   which may have strong implications for any character set conversion,
+   e.g.  with regard to syntactically meaningful characters in a text
+   subtype other than "plain".
+
+   For example, in the case of text/plain data, the text must be
+   converted to a supported character set and lines must be delimited
+   with CRLF delimiters in accordance with RFC822.  Note that the
+   restriction on line lengths implied by RFC822 is eliminated if the
+   next step employs either quoted-printable or base64 encoding.
+
+
+
+
+
+
+Borenstein & Freed                                             [Page 76]
+
+RFC 1521                          MIME                    September 1993
+
+
+   Step 3.  Apply transfer encoding.
+
+   A Content-Transfer-Encoding appropriate for this body is applied.
+   Note that there is no fixed relationship between the content type and
+   the transfer encoding.  In particular, it may be appropriate to base
+   the choice of base64 or quoted-printable on character frequency
+   counts which are specific to a given instance of a body.
+
+   Step 4.  Insertion into entity.
+
+   The encoded object is inserted into a MIME entity with appropriate
+   headers.  The entity is then inserted into the body of a higher-level
+   entity (message or multipart) if needed.
+
+   It is vital to note that these steps are only a model; they are
+   specifically NOT a blueprint for how an actual system would be built.
+   In particular, the model fails to account for two common designs:
+
+      1.  In many cases the conversion to a canonical form prior to
+      encoding will be subsumed into the encoder itself, which
+      understands local formats directly.  For example, the local
+      newline convention for text bodies might be carried through to the
+      encoder itself along with knowledge of what that format is.
+
+      2.  The output of the encoders may have to pass through one or
+      more additional steps prior to being transmitted as a message.  As
+      such, the output of the encoder may not be conformant with the
+      formats specified by RFC822.  In particular, once again it may be
+      appropriate for the converter's output to be expressed using local
+      newline conventions rather than using the standard RFC822 CRLF
+      delimiters.
+
+   Other implementation variations are conceivable as well.  The vital
+   aspect of this discussion is that, in spite of any optimizations,
+   collapsings of required steps, or insertion of additional processing,
+   the resulting messages must be consistent with those produced by the
+   model described here.  For example, a message with the following
+   header fields:
+
+        Content-type: text/foo; charset=bar
+        Content-Transfer-Encoding: base64
+
+   must be first represented in the text/foo form, then (if necessary)
+   represented in the "bar" character set, and finally transformed via
+   the base64 algorithm into a mail-safe form.
+
+
+
+
+
+
+Borenstein & Freed                                             [Page 77]
+
+RFC 1521                          MIME                    September 1993
+
+
+Appendix H -- Changes from RFC 1341
+
+   This document is a relatively minor revision  of  RFC  1341.  For
+   the  convenience  of  those familiar with RFC 1341, the technical
+   changes from that document are summarized in  this appendix.
+
+   1.  The definition of "tspecials" has been changed to no longer
+   include ".".
+
+   2.  The Content-ID field is now mandatory for message/external-body
+   parts.
+
+   3.  The text/richtext type (including the old Section 7.1.3 and
+   Appendix D) has been moved to a separate document.
+
+   4.  The rules on header merging for message/partial data have been
+   changed to treat the Encrypted and MIME-Version headers as special
+   cases.
+
+   5.  The definition of the external-body access-type parameter has
+   been changed so that it can only indicate a single access method
+   (which was all that made sense).
+
+   6.  There is a new "Subject" parameter for message/external-body,
+   access-type mail-server, to permit MIME-based use of mail servers
+   that rely on Subject field information.
+
+   7.  The "conversions" parameter for application/octet-stream has been
+   removed.
+
+   8.  Section 7.4.1 now deprecates the use of the "name" parameter for
+   application/octet-stream, as this will be superseded in the future by
+   a Content-Disposition header.
+
+   9.  The formal grammar for multipart bodies has been changed so that
+   a CRLF is no longer required before the first boundary line.
+
+   10.  MIME entities of type "message/partial" and "message/external-
+   body" are now required to use only the "7bit" transfer-encoding.
+   (Specifically, "binary" and "8bit" are not permitted.)
+
+   11.  The "application/oda" content-type has been removed.
+
+   12.  A note has been added to the end of section 7.2.3, explaining
+   the semantics of Content-ID in a multipart/alternative MIME entity.
+
+   13.  The formal syntax for the "MIME-Version" field has been
+   tightened, but in a way that is completely compatible with the only
+
+
+
+Borenstein & Freed                                             [Page 78]
+
+RFC 1521                          MIME                    September 1993
+
+
+   version number defined in RFC 1341.
+
+   14.  In Section 7.3.1, the definition of message/rfc822 has been
+   relaxed regarding mandatory fields.
+
+   All other changes from RFC 1341 were editorial changes and do not
+   affect the technical content of MIME.  Considerable formal grammar
+   has been added, but this reflects the prose specification that was
+   already in place.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Borenstein & Freed                                             [Page 79]
+
+RFC 1521                          MIME                    September 1993
+
+
+References
+
+   [US-ASCII] Coded Character Set--7-Bit American Standard Code for
+   Information Interchange, ANSI X3.4-1986.
+
+   [ATK] Borenstein, Nathaniel S., Multimedia Applications Development
+   with the Andrew Toolkit, Prentice-Hall, 1990.
+
+   [GIF] Graphics Interchange Format (Version 89a), Compuserve, Inc.,
+   Columbus, Ohio, 1990.
+
+   [ISO-2022] International Standard--Information Processing--ISO 7-bit
+   and 8-bit coded character sets--Code extension techniques, ISO
+   2022:1986.
+
+   [ISO-8859] Information Processing -- 8-bit Single-Byte Coded Graphic
+   Character Sets -- Part 1: Latin Alphabet No. 1, ISO 8859-1:1987.  Part
+   2: Latin alphabet No.  2, ISO 8859-2, 1987.  Part 3: Latin alphabet
+   No. 3, ISO 8859-3, 1988.  Part 4: Latin alphabet No.  4, ISO 8859-4,
+   1988.  Part 5: Latin/Cyrillic alphabet, ISO 8859-5, 1988.  Part 6:
+   Latin/Arabic alphabet, ISO 8859-6, 1987.  Part 7: Latin/Greek
+   alphabet, ISO 8859-7, 1987.  Part 8: Latin/Hebrew alphabet, ISO
+   8859-8, 1988.  Part 9: Latin alphabet No. 5, ISO 8859-9, 1990.
+
+   [ISO-646] International Standard--Information Processing--ISO 7-bit
+   coded character set for information interchange, ISO 646:1983.
+
+   [MPEG] Video Coding Draft Standard ISO 11172 CD, ISO IEC/TJC1/SC2/WG11
+   (Motion Picture Experts Group), May, 1991.
+
+   [PCM] CCITT, Fascicle III.4 - Recommendation G.711, Geneva, 1972,
+   "Pulse Code Modulation (PCM) of Voice Frequencies".
+
+   [POSTSCRIPT] Adobe Systems, Inc., PostScript Language Reference
+   Manual, Addison-Wesley, 1985.
+
+   [POSTSCRIPT2] Adobe Systems, Inc., PostScript Language Reference
+   Manual, Addison-Wesley, Second Edition, 1990.
+
+   [X400] Schicker, Pietro, "Message Handling Systems, X.400", Message
+   Handling Systems and Distributed Applications, E.  Stefferud, O-j.
+   Jacobsen, and P.  Schicker, eds., North-Holland, 1989, pp. 3-41.
+
+   [RFC-783] Sollins, K., "TFTP Protocol (revision 2)", RFC 783, MIT,
+   June 1981.
+
+   [RFC-821] Postel, J., "Simple Mail Transfer Protocol", STD 10, RFC
+   821, USC/Information Sciences Institute, August 1982.
+
+
+
+Borenstein & Freed                                             [Page 80]
+
+RFC 1521                          MIME                    September 1993
+
+
+   [RFC-822] Crocker, D., "Standard for the Format of ARPA Internet Text
+   Messages", STD 11, RFC 822, UDEL, August 1982.
+
+   [RFC-934] Rose, M., and E. Stefferud, "Proposed Standard for Message
+   Encapsulation", RFC 934, Delaware and NMA, January 1985.
+
+   [RFC-959] Postel, J. and J. Reynolds, "File Transfer Protocol",
+   STD 9, RFC 959, USC/Information Sciences Institute, October 1985.
+
+   [RFC-1049] Sirbu, M., "Content-Type Header Field for Internet
+   Messages", STD 11, RFC 1049, CMU, March 1988.
+
+   [RFC-1421] Linn, J., "Privacy Enhancement for Internet Electronic Mail:
+   Part I - Message Encryption and Authentication Procedures", RFC
+   1421, IAB IRTF PSRG, IETF PEM WG, February 1993.
+
+   [RFC-1154] Robinson, D. and R. Ullmann, "Encoding Header Field for
+   Internet Messages", RFC 1154, Prime Computer, Inc., April 1990.
+
+   [RFC-1341] Borenstein, N., and N.  Freed, "MIME (Multipurpose Internet
+   Mail Extensions): Mechanisms for Specifying and Describing the Format
+   of Internet Message Bodies", RFC 1341, Bellcore, Innosoft, June 1992.
+
+   [RFC-1342] Moore, K., "Representation of Non-Ascii Text in Internet
+   Message Headers", RFC 1342, University of Tennessee, June 1992.
+
+   [RFC-1343] Borenstein, N., "A User Agent Configuration Mechanism
+   for Multimedia Mail Format Information", RFC 1343, Bellcore, June
+   1992.
+
+   [RFC-1344] Borenstein, N., "Implications of MIME for Internet
+   Mail Gateways", RFC 1344, Bellcore, June 1992.
+
+   [RFC-1345] Simonsen, K., "Character Mnemonics & Character Sets",
+   RFC 1345, Rationel Almen Planlaegning, June 1992.
+
+   [RFC-1426] Klensin, J., (WG Chair), Freed, N., (Editor), Rose, M.,
+   Stefferud, E., and D. Crocker, "SMTP Service Extension for 8bit-MIME
+   transport", RFC 1426, United Nations Universit, Innosoft, Dover Beach
+   Consulting, Inc., Network Management Associates, Inc., The Branch
+   Office, February 1993.
+
+   [RFC-1522] Moore, K., "Representation of Non-Ascii Text in Internet
+   Message Headers" RFC 1522, University of Tennessee, September 1993.
+
+   [RFC-1340] Reynolds, J., and J. Postel, "Assigned Numbers", STD 2, RFC
+   1340, USC/Information Sciences Institute, July 1992.
+
+
+
+
+Borenstein & Freed                                             [Page 81]
+
